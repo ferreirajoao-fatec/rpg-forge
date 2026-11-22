@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <g data-anchor="legs">
+      <!-- Pernas -->
+      <path fill="#{skin}" d="M190 468 L254 468 L252 600 C251 648 249 690 247 716 L211 716 C208 688 203 640 199 600 Z"/>
+      <path fill="#{skin}" d="M322 468 L258 468 L260 600 C261 648 263 690 265 716 L301 716 C304 688 309 640 313 600 Z"/>
+      <path fill="#{skin-dark}" stroke="none" opacity="0.35" d="M240 480 L252 480 L250 600 C249 648 248 690 246 712 L238 712 C240 680 242 640 242 600 Z"/>
+      <path fill="#{skin-dark}" stroke="none" opacity="0.35" d="M272 480 L260 480 L262 600 C263 648 264 690 266 712 L274 712 C272 680 270 640 270 600 Z"/>
+      <!-- Pés -->
+      <path fill="#{skin}" d="M209 712 L249 712 L252 730 C252 740 244 744 232 744 L206 744 C198 744 196 736 202 730 Z"/>
+      <path fill="#{skin}" d="M303 712 L263 712 L260 730 C260 740 268 744 280 744 L306 744 C314 744 316 736 310 730 Z"/>
+    </g>
+    <g data-anchor="torso">
+      <!-- Braços -->
+      <path fill="#{skin}" d="M170 296 C152 308 146 348 147 390 C148 432 149 472 151 506 L177 506 C177 470 180 432 182 392 C184 360 187 330 188 310 Z"/>
+      <path fill="#{skin}" d="M342 296 C360 308 366 348 365 390 C364 432 363 472 361 506 L335 506 C335 470 332 432 330 392 C328 360 325 330 324 310 Z"/>
+      <path fill="#{skin-dark}" stroke="none" opacity="0.3" d="M170 330 C166 360 166 400 168 440 L176 440 C176 400 178 360 182 330 Z"/>
+      <path fill="#{skin-dark}" stroke="none" opacity="0.3" d="M342 330 C346 360 346 400 344 440 L336 440 C336 400 334 360 330 330 Z"/>
+      <!-- Mãos -->
+      <path fill="#{skin}" d="M150 502 C144 512 144 532 152 542 C160 550 172 548 177 538 C181 528 180 512 178 502 Z"/>
+      <path fill="#{skin}" d="M362 502 C368 512 368 532 360 542 C352 550 340 548 335 538 C331 528 332 512 334 502 Z"/>
+      <!-- Tronco -->
+      <path fill="#{skin}" d="M198 282 C222 270 290 270 314 282 L342 298 C350 330 338 362 326 382 L320 440 C318 454 322 464 326 472 L186 472 C190 464 194 454 192 440 L186 382 C174 362 162 330 170 298 Z"/>
+      <path fill="#{skin-dark}" stroke="none" opacity="0.28" d="M226 330 C240 340 272 340 286 330 C282 346 272 352 256 352 C240 352 230 346 226 330 Z"/>
+      <path fill="#{skin-dark}" stroke="none" opacity="0.22" d="M300 300 C318 330 316 380 312 440 L320 440 L326 382 C338 362 350 330 342 298 Z"/>
+      <!-- Pescoço -->
+      <path fill="#{skin}" d="M238 226 L274 226 L278 284 C268 292 244 292 234 284 Z"/>
+      <path fill="#{skin-dark}" stroke="none" opacity="0.35" d="M238 230 L274 230 L275 252 C264 258 248 258 237 252 Z"/>
+    </g>
+    <g data-anchor="legs">
+      <!-- Roupa de baixo neutra -->
+      <path fill="#7a6552" d="M184 464 L328 464 L332 520 L266 526 L256 504 L246 526 L180 520 Z"/>
+    </g>
+  </g>
+</svg>

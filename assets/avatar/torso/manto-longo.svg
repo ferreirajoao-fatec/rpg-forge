@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+    <g data-anchor="torso">
+      <path fill="#{primary}" d="M168 296 C144 316 132 372 126 430 C122 470 124 500 128 520 L192 516 C190 480 190 440 192 400 C192 360 192 330 190 310 Z"/>
+      <path fill="#{primary}" d="M344 296 C368 316 380 372 386 430 C390 470 388 500 384 520 L320 516 C322 480 322 440 320 400 C320 360 320 330 322 310 Z"/>
+      <path fill="#{secondary}" d="M128 506 L192 502 L192 518 L128 522 Z M384 506 L320 502 L320 518 L384 522 Z"/>
+      <path fill="#{primary}" d="M194 280 C222 292 290 292 318 280 L346 298 C354 332 344 364 332 386 L330 440 C344 520 360 620 374 724 C300 740 212 740 138 724 C152 620 168 520 182 440 L180 386 C168 364 158 332 166 298 Z"/>
+      <path fill="#{primary-dark}" stroke="none" opacity="0.45" d="M300 300 C322 340 322 400 320 440 C334 520 346 620 356 728 L374 724 C360 620 344 520 330 440 L332 386 C344 364 354 332 346 298 Z"/>
+      <path fill="#{secondary}" d="M244 292 L268 292 L272 732 L240 732 Z"/>
+      <path fill="none" stroke="#{secondary-deep}" stroke-width="2" d="M250 330 L262 330 M249 380 L263 380 M248 430 L264 430 M247 480 L265 480"/>
+    </g>
+  </g>
+</svg>

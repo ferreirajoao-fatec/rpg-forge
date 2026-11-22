@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g fill="#{hair}" stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+    <path d="M190 150 C180 210 176 290 184 352 C210 362 302 362 328 352 C336 290 332 210 322 150 C312 110 290 88 256 88 C222 88 200 110 190 150 Z"/>
+    <path fill="#{hair-dark}" stroke="none" opacity="0.4" d="M200 250 C198 290 200 330 206 350 L224 352 C216 320 212 290 214 250 Z M312 250 C314 290 312 330 306 350 L288 352 C296 320 300 290 298 250 Z"/>
+  </g>
+</svg>

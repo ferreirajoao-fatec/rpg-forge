@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g fill="none" stroke-linecap="round">
+    <path stroke="#{skin-deep}" stroke-width="4" d="M220 138 L242 206"/>
+    <path stroke="#{skin-light}" stroke-width="1.5" d="M221 140 L241 202"/>
+    <path stroke="#{skin-deep}" stroke-width="2" d="M220 156 L232 152 M224 174 L236 170 M229 190 L241 186"/>
+  </g>
+</svg>

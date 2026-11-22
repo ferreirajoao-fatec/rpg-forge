@@ -4,7 +4,7 @@
 
 generator client {
   provider = "prisma-client"
-  output   = "../src/generated/prisma"
+  output   = "../apps/web/src/generated/prisma"
 }
 
 datasource db {
@@ -29,6 +29,8 @@ model User {
   auditLogs       AuditLog[]
   gmApprovals     GmApproval[]      @relation("ApprovedBy")
   approvalRequests GmApproval[]     @relation("RequestedBy")
+  avatars         Avatar[]
+  avatarPresets   AvatarPreset[]
 }
 
 /// Sessões no servidor; apenas o hash SHA-256 do token é armazenado.
@@ -160,6 +162,7 @@ model Character {
   versions       CharacterVersion[]
   gmApprovals    GmApproval[]
   diceRolls      DiceRoll[]
+  avatar         Avatar?
 
   @@index([ownerId])
   @@index([campaignId])
@@ -180,6 +183,54 @@ model CharacterVersion {
   character   Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
 
   @@unique([characterId, number])
+}
+
+// ---------------------------------------------------------------- Avatares
+
+/// Aparência do personagem: configuração estruturada (AvatarConfig do
+/// @rpg-forge/avatar-engine), nunca só a imagem. É puramente visual: não
+/// concede nem altera nenhuma regra da ficha.
+model Avatar {
+  id            String           @id @default(cuid())
+  characterId   String           @unique
+  ownerId       String
+  config        Json
+  /// Versão do catálogo de peças usada (assets/avatar/catalog.json).
+  assetsVersion String
+  /// Controle de concorrência otimista para o salvamento automático.
+  revision      Int              @default(0)
+  createdAt     DateTime         @default(now())
+  updatedAt     DateTime         @updatedAt
+  character     Character        @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  owner         User             @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  revisions     AvatarRevision[]
+
+  @@index([ownerId])
+}
+
+/// Versão nomeada do avatar. Restaurar cria uma nova versão, nunca apaga.
+model AvatarRevision {
+  id        String   @id @default(cuid())
+  avatarId  String
+  number    Int
+  label     String   @default("")
+  config    Json
+  createdAt DateTime @default(now())
+  avatar    Avatar   @relation(fields: [avatarId], references: [id], onDelete: Cascade)
+
+  @@unique([avatarId, number])
+}
+
+/// Visual salvo pelo usuário para reaproveitar em outros personagens.
+model AvatarPreset {
+  id        String   @id @default(cuid())
+  ownerId   String
+  name      String
+  config    Json
+  createdAt DateTime @default(now())
+  owner     User     @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+
+  @@index([ownerId])
 }
 
 // ---------------------------------------------------------------- Campanhas

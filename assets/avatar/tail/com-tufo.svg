@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g data-anchor="legs">
+    <path fill="none" stroke="#{line}" stroke-width="12" stroke-linecap="round" d="M294 472 C346 500 368 560 360 630"/>
+    <path fill="none" stroke="#{skin}" stroke-width="6" stroke-linecap="round" d="M294 472 C346 500 368 560 360 630"/>
+    <path fill="#{hair}" stroke="#{line}" stroke-width="3" stroke-linejoin="round" d="M360 618 C374 630 380 656 372 684 C366 700 352 704 346 690 C340 672 342 640 352 622 Z"/>
+    <path fill="none" stroke="#{hair-dark}" stroke-width="2" d="M358 636 L356 682 M366 642 L364 680"/>
+  </g>
+</svg>

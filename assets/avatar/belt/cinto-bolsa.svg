@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+    <g data-anchor="torso">
+      <path fill="#{primary}" d="M184 450 C220 458 292 458 328 450 L330 468 C292 476 220 476 182 468 Z"/>
+      <rect fill="#{metal}" x="244" y="452" width="24" height="20" rx="3"/>
+      <rect fill="#{primary}" x="250" y="458" width="12" height="8" rx="2"/>
+      <path fill="#{primary-dark}" d="M290 466 L318 462 L320 494 C312 500 298 500 290 494 Z"/>
+      <path fill="none" stroke="#{primary-deep}" stroke-width="2" d="M290 474 L319 470"/>
+    </g>
+  </g>
+</svg>

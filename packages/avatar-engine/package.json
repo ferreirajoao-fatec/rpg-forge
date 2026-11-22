@@ -1,0 +1,26 @@
+{
+  "name": "@rpg-forge/avatar-engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Modelo, catálogo e composição de avatares 2D por camadas; renderizador PixiJS. Independente do motor de regras.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./pixi": "./src/pixi/renderer.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "assets:build": "tsx scripts/build-assets.ts"
+  },
+  "dependencies": {
+    "pixi.js": "8.22.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@rpg-forge/config": "workspace:*",
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^5.1.1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "extends": "@rpg-forge/config/tsconfig.base.json",
+  "include": [
+    "src"
+  ]
+}

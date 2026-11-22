@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+    <path fill="#{primary}" d="M182 240 C170 170 186 104 226 82 C246 72 266 72 286 82 C326 104 342 170 330 240 C328 200 318 150 296 122 C282 108 268 104 256 104 C244 104 230 108 216 122 C194 150 184 200 182 240 Z"/>
+    <path fill="#{primary}" d="M182 236 C196 262 220 278 236 284 L276 284 C292 278 316 262 330 236 C344 260 352 290 346 304 C322 296 190 296 166 304 C160 290 168 260 182 236 Z"/>
+    <path fill="#{primary-light}" stroke="none" opacity="0.35" d="M226 88 C246 80 266 80 286 88 C268 86 244 86 226 94 Z"/>
+    <path fill="none" stroke="#{secondary}" stroke-width="4" d="M186 236 C184 196 194 150 218 124 C232 110 244 106 256 106 C268 106 280 110 294 124 C318 150 328 196 326 236"/>
+    <path fill="#{primary-deep}" d="M204 110 C210 100 222 96 230 100 C226 110 218 118 208 122 Z"/>
+    <path fill="#{primary-deep}" d="M308 110 C302 100 290 96 282 100 C286 110 294 118 304 122 Z"/>
+  </g>
+</svg>

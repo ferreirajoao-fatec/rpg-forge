@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#{skin-dark}" stroke="none" opacity="0.4" d="M246 204 C250 196 262 196 266 204 C262 210 250 210 246 204 Z"/>
+    <path fill="none" stroke="#{skin-deep}" stroke-width="2.5" d="M247 205 C250 210 262 210 265 205"/>
+  </g>
+</svg>

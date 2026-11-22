@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <rect width="512" height="768" fill="#{bg-deep}"/>
+  <path fill="#{bg}" stroke="#{line}" stroke-width="4" d="M56 768 L56 300 C56 150 146 60 256 60 C366 60 456 150 456 300 L456 768 Z"/>
+  <path fill="#{bg-light}" stroke="none" opacity="0.5" d="M96 768 L96 310 C96 180 168 100 256 100 C344 100 416 180 416 310 L416 768 Z"/>
+  <rect y="740" width="512" height="28" fill="#{bg-dark}"/>
+</svg>

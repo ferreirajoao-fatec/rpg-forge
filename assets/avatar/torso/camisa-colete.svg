@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+    <g data-anchor="torso">
+      <path fill="#{secondary}" d="M168 296 C150 310 144 350 145 392 L146 424 L184 424 L186 394 C188 360 190 330 190 310 Z"/>
+      <path fill="#{secondary}" d="M344 296 C362 310 368 350 367 392 L366 424 L328 424 L326 394 C324 360 322 330 322 310 Z"/>
+      <path fill="#{secondary-dark}" stroke="none" opacity="0.4" d="M146 408 L184 408 L184 424 L146 424 Z M328 408 L366 408 L366 424 L328 424 Z"/>
+      <path fill="#{secondary}" d="M196 280 C222 290 290 290 316 280 L344 298 C352 330 340 362 328 382 L324 440 C322 454 324 464 328 476 L184 476 C188 464 190 454 188 440 L184 382 C172 362 160 330 168 298 Z"/>
+      <path fill="none" stroke="#{secondary-deep}" stroke-width="2.5" d="M244 286 L256 306 L268 286"/>
+      <path fill="#{primary}" d="M196 282 L240 300 L246 476 L186 476 C190 464 192 454 190 440 L186 384 C176 364 170 340 172 312 Z"/>
+      <path fill="#{primary}" d="M316 282 L272 300 L266 476 L326 476 C322 464 320 454 322 440 L326 384 C336 364 342 340 340 312 Z"/>
+      <path fill="#{primary-dark}" stroke="none" opacity="0.4" d="M300 300 C318 330 320 380 318 440 L324 476 L314 476 C310 440 310 380 296 300 Z"/>
+      <circle fill="#{metal}" cx="232" cy="350" r="4"/>
+      <circle fill="#{metal}" cx="234" cy="390" r="4"/>
+      <circle fill="#{metal}" cx="236" cy="430" r="4"/>
+    </g>
+  </g>
+</svg>

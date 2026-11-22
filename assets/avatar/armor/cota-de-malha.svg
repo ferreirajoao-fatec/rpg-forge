@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <defs>
+    <pattern id="aneis" width="10" height="8" patternUnits="userSpaceOnUse">
+      <rect width="10" height="8" fill="#{metal}"/>
+      <path d="M0 4 A5 4 0 0 1 10 4" fill="none" stroke="#{metal-deep}" stroke-width="1.4"/>
+      <path d="M-5 8 A5 4 0 0 1 5 8 M5 8 A5 4 0 0 1 15 8" fill="none" stroke="#{metal-dark}" stroke-width="1.2"/>
+    </pattern>
+  </defs>
+  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+    <g data-anchor="torso">
+      <path fill="url(#aneis)" d="M168 296 C150 310 145 340 146 372 L186 372 C188 350 190 326 190 310 Z"/>
+      <path fill="url(#aneis)" d="M344 296 C362 310 367 340 366 372 L326 372 C324 350 322 326 322 310 Z"/>
+      <path fill="url(#aneis)" d="M194 282 C222 292 290 292 318 282 L346 298 C354 332 344 364 330 386 L328 440 C330 466 334 490 336 506 C300 514 212 514 176 506 C178 490 182 466 184 440 L182 386 C168 364 158 332 166 298 Z"/>
+      <path fill="#{metal-deep}" stroke="none" opacity="0.3" d="M300 300 C320 340 318 400 316 440 C318 466 322 490 324 508 L336 506 C334 490 330 466 328 440 L330 386 C344 364 354 332 346 298 Z"/>
+      <path fill="none" stroke="#{metal-deep}" stroke-width="3" d="M176 506 C212 514 300 514 336 506"/>
+    </g>
+  </g>
+</svg>

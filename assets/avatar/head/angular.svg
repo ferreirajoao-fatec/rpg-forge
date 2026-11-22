@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+    <path fill="#{skin}" d="M256 90 C302 90 320 122 320 164 L316 208 C308 234 286 250 256 252 C226 250 204 234 196 208 L192 164 C192 122 210 90 256 90 Z"/>
+    <path fill="#{skin-dark}" stroke="none" opacity="0.28" d="M302 116 C318 146 318 196 312 210 C304 232 284 248 256 252 C286 232 304 200 302 116 Z"/>
+    <path fill="none" stroke="#{skin-dark}" stroke-width="2" opacity="0.5" d="M214 214 C222 226 232 232 240 234 M298 214 C290 226 280 232 272 234"/>
+  </g>
+</svg>

@@ -1,0 +1,101 @@
+{
+  "$comment": "Catálogo de peças do avatar. Cada peça aponta para SVGs desta pasta (512×768, mesmas âncoras). Cores: marcadores #{região} e #{região-light|dark|deep|blush}. Rode `pnpm assets:build` depois de alterar.",
+  "version": "1.1.0",
+  "parts": [
+    { "id": "body:humanoide", "slot": "body", "name": "Humanoide", "tags": ["humanoide"], "layers": [{ "layer": "body", "file": "body/humanoide.svg" }] },
+
+    { "id": "head:oval", "slot": "head", "name": "Oval", "layers": [{ "layer": "head", "file": "head/oval.svg" }] },
+    { "id": "head:redonda", "slot": "head", "name": "Redonda", "layers": [{ "layer": "head", "file": "head/redonda.svg" }] },
+    { "id": "head:angular", "slot": "head", "name": "Angular", "layers": [{ "layer": "head", "file": "head/angular.svg" }] },
+
+    { "id": "ears:humana", "slot": "ears", "name": "Humanas", "layers": [{ "layer": "ears", "file": "ears/humana.svg" }] },
+    { "id": "ears:pontuda", "slot": "ears", "name": "Pontudas", "tags": ["fantastico"], "layers": [{ "layer": "ears", "file": "ears/pontuda.svg" }] },
+    { "id": "ears:longa", "slot": "ears", "name": "Longas", "tags": ["fantastico"], "layers": [{ "layer": "ears", "file": "ears/longa.svg" }] },
+
+    { "id": "eyes:amendoados", "slot": "eyes", "name": "Amendoados", "layers": [{ "layer": "eyes", "file": "eyes/amendoados.svg" }] },
+    { "id": "eyes:redondos", "slot": "eyes", "name": "Redondos", "layers": [{ "layer": "eyes", "file": "eyes/redondos.svg" }] },
+    { "id": "eyes:estreitos", "slot": "eyes", "name": "Estreitos", "layers": [{ "layer": "eyes", "file": "eyes/estreitos.svg" }] },
+    { "id": "eyes:reptilianos", "slot": "eyes", "name": "Reptilianos (pupila vertical)", "tags": ["fantastico"], "layers": [{ "layer": "eyes", "file": "eyes/reptilianos.svg" }] },
+    { "id": "eyes:brilhantes", "slot": "eyes", "name": "Brilhantes", "tags": ["fantastico"], "layers": [{ "layer": "eyes", "file": "eyes/brilhantes.svg" }] },
+
+    { "id": "brows:naturais", "slot": "brows", "name": "Naturais", "layers": [{ "layer": "brows", "file": "brows/naturais.svg" }] },
+    { "id": "brows:grossas", "slot": "brows", "name": "Grossas", "layers": [{ "layer": "brows", "file": "brows/grossas.svg" }] },
+    { "id": "brows:arqueadas", "slot": "brows", "name": "Arqueadas", "layers": [{ "layer": "brows", "file": "brows/arqueadas.svg" }] },
+    { "id": "brows:franzidas", "slot": "brows", "name": "Franzidas", "layers": [{ "layer": "brows", "file": "brows/franzidas.svg" }] },
+
+    { "id": "nose:reto", "slot": "nose", "name": "Reto", "layers": [{ "layer": "nose", "file": "nose/reto.svg" }] },
+    { "id": "nose:arrebitado", "slot": "nose", "name": "Arrebitado", "layers": [{ "layer": "nose", "file": "nose/arrebitado.svg" }] },
+    { "id": "nose:aquilino", "slot": "nose", "name": "Aquilino", "layers": [{ "layer": "nose", "file": "nose/aquilino.svg" }] },
+
+    { "id": "mouth:neutra", "slot": "mouth", "name": "Neutra", "layers": [{ "layer": "mouth", "file": "mouth/neutra.svg" }] },
+    { "id": "mouth:sorriso", "slot": "mouth", "name": "Sorriso", "layers": [{ "layer": "mouth", "file": "mouth/sorriso.svg" }] },
+    { "id": "mouth:seria", "slot": "mouth", "name": "Séria", "layers": [{ "layer": "mouth", "file": "mouth/seria.svg" }] },
+    { "id": "mouth:presas", "slot": "mouth", "name": "Com presas", "tags": ["fantastico"], "layers": [{ "layer": "mouth", "file": "mouth/presas.svg" }] },
+
+    { "id": "beard:curta", "slot": "beard", "name": "Rala", "layers": [{ "layer": "beard", "file": "beard/curta.svg" }] },
+    { "id": "beard:cavanhaque", "slot": "beard", "name": "Cavanhaque", "layers": [{ "layer": "beard", "file": "beard/cavanhaque.svg" }] },
+    { "id": "beard:cheia", "slot": "beard", "name": "Cheia", "layers": [{ "layer": "beard", "file": "beard/cheia.svg" }] },
+    { "id": "beard:longa-trancada", "slot": "beard", "name": "Longa trançada", "defaults": { "metal": "#b08d57" }, "layers": [{ "layer": "beard", "file": "beard/longa-trancada.svg" }] },
+
+    { "id": "hair:curto", "slot": "hair", "name": "Curto", "layers": [{ "layer": "hairFront", "file": "hair/curto-frente.svg" }] },
+    { "id": "hair:longo", "slot": "hair", "name": "Longo", "layers": [{ "layer": "hairBack", "file": "hair/longo-costas.svg" }, { "layer": "hairFront", "file": "hair/longo-frente.svg" }] },
+    { "id": "hair:tranca", "slot": "hair", "name": "Trança", "defaults": { "metal": "#b08d57" }, "layers": [{ "layer": "hairBack", "file": "hair/tranca-costas.svg" }, { "layer": "hairFront", "file": "hair/curto-frente.svg" }] },
+    { "id": "hair:coque", "slot": "hair", "name": "Coque", "layers": [{ "layer": "hairFront", "file": "hair/coque-frente.svg" }], "variants": [{ "whenSlot": "hood", "note": "Sob o capuz, o penteado alto vira franja.", "layers": [{ "layer": "hairFront", "file": "hair/curto-frente.svg" }] }] },
+    { "id": "hair:moicano", "slot": "hair", "name": "Moicano", "layers": [{ "layer": "hairFront", "file": "hair/moicano-frente.svg" }], "variants": [{ "whenSlot": "hood", "note": "Sob o capuz, o penteado alto vira franja.", "layers": [{ "layer": "hairFront", "file": "hair/curto-frente.svg" }] }] },
+
+    { "id": "horns:curvados", "slot": "horns", "name": "Curvados", "tags": ["fantastico"], "adjust": { "scale": [0.75, 1.3], "dy": [-24, 24] }, "layers": [{ "layer": "horns", "file": "horns/curvados.svg" }] },
+    { "id": "horns:retos", "slot": "horns", "name": "Retos", "tags": ["fantastico"], "adjust": { "scale": [0.75, 1.3], "dy": [-24, 24] }, "layers": [{ "layer": "horns", "file": "horns/retos.svg" }] },
+    { "id": "horns:para-tras", "slot": "horns", "name": "Para trás", "tags": ["fantastico"], "adjust": { "scale": [0.75, 1.3], "dy": [-24, 24] }, "layers": [{ "layer": "horns", "file": "horns/para-tras.svg" }] },
+    { "id": "horns:pequenos", "slot": "horns", "name": "Pequenos", "tags": ["fantastico"], "adjust": { "scale": [0.75, 1.5], "dy": [-24, 24] }, "layers": [{ "layer": "horns", "file": "horns/pequenos.svg" }] },
+
+    {
+      "id": "hood:capuz", "slot": "hood", "name": "Capuz", "hides": ["hairBack"],
+      "defaults": { "primary": "#4a5a3c", "secondary": "#b08d57" },
+      "layers": [{ "layer": "hoodBack", "file": "hood/capuz-costas.svg" }, { "layer": "hoodFront", "file": "hood/capuz-frente.svg" }],
+      "variants": [{ "whenSlot": "horns", "note": "Com chifres, o capuz usa a versão com aberturas.", "layers": [{ "layer": "hoodBack", "file": "hood/capuz-costas.svg" }, { "layer": "hoodFront", "file": "hood/capuz-aberto-frente.svg" }] }]
+    },
+
+    { "id": "cape:capa", "slot": "cape", "name": "Capa", "defaults": { "primary": "#6b2a34", "metal": "#b08d57" }, "layers": [{ "layer": "capeBack", "file": "cape/capa-costas.svg" }, { "layer": "capeFront", "file": "cape/capa-frente.svg" }] },
+
+    { "id": "torso:tunica", "slot": "torso", "name": "Túnica", "defaults": { "primary": "#5b6e8c", "secondary": "#c9a66b" }, "layers": [{ "layer": "torso", "file": "torso/tunica.svg" }] },
+    { "id": "torso:camisa-colete", "slot": "torso", "name": "Camisa e colete", "defaults": { "primary": "#6b4a32", "secondary": "#e8dcc4", "metal": "#b08d57" }, "layers": [{ "layer": "torso", "file": "torso/camisa-colete.svg" }] },
+    { "id": "torso:manto-longo", "slot": "torso", "name": "Manto longo", "defaults": { "primary": "#3c3a6b", "secondary": "#c9a66b" }, "layers": [{ "layer": "torso", "file": "torso/manto-longo.svg" }] },
+
+    { "id": "legs:calca", "slot": "legs", "name": "Calça", "defaults": { "primary": "#4a3b30" }, "layers": [{ "layer": "legs", "file": "legs/calca.svg" }] },
+    { "id": "legs:saia", "slot": "legs", "name": "Saia", "defaults": { "primary": "#6b2a34", "secondary": "#c9a66b" }, "layers": [{ "layer": "legs", "file": "legs/saia.svg" }] },
+
+    { "id": "feet:botas", "slot": "feet", "name": "Botas", "defaults": { "primary": "#5a3b26" }, "layers": [{ "layer": "feet", "file": "feet/botas.svg" }] },
+    { "id": "feet:sandalias", "slot": "feet", "name": "Sandálias", "defaults": { "primary": "#8a6a46" }, "layers": [{ "layer": "feet", "file": "feet/sandalias.svg" }] },
+
+    { "id": "armor:couro", "slot": "armor", "name": "Couro", "defaults": { "primary": "#7a5232", "metal": "#b08d57" }, "layers": [{ "layer": "armor", "file": "armor/couro.svg" }] },
+    { "id": "armor:cota-de-malha", "slot": "armor", "name": "Cota de malha", "defaults": { "metal": "#9aa0a6" }, "layers": [{ "layer": "armor", "file": "armor/cota-de-malha.svg" }] },
+    { "id": "armor:peitoral", "slot": "armor", "name": "Peitoral de placas", "defaults": { "metal": "#a9b0b8", "secondary": "#6b2a34" }, "layers": [{ "layer": "armor", "file": "armor/peitoral.svg" }] },
+
+    { "id": "belt:cinto-bolsa", "slot": "belt", "name": "Cinto com bolsa", "defaults": { "primary": "#5a3b26", "metal": "#b08d57" }, "layers": [{ "layer": "belt", "file": "belt/cinto-bolsa.svg" }] },
+    { "id": "necklace:pingente", "slot": "necklace", "name": "Colar com pingente", "defaults": { "metal": "#c9a66b", "secondary": "#3f8f7a" }, "layers": [{ "layer": "necklace", "file": "necklace/pingente.svg" }] },
+    { "id": "earrings:argolas", "slot": "earrings", "name": "Argolas", "defaults": { "metal": "#c9a66b" }, "layers": [{ "layer": "earrings", "file": "earrings/argolas.svg" }] },
+
+    { "id": "wings:penas", "slot": "wings", "name": "Asas de penas", "tags": ["fantastico"], "defaults": { "primary": "#efe9dc" }, "layers": [{ "layer": "wings", "file": "wings/penas.svg" }] },
+    { "id": "wings:morcego", "slot": "wings", "name": "Asas de morcego", "tags": ["fantastico"], "defaults": { "primary": "#5a2a34" }, "layers": [{ "layer": "wings", "file": "wings/morcego.svg" }] },
+    { "id": "wings:fada", "slot": "wings", "name": "Asas translúcidas", "tags": ["fantastico"], "defaults": { "primary": "#9fd8e8" }, "layers": [{ "layer": "wings", "file": "wings/fada.svg" }] },
+
+    { "id": "tail:demoniaca", "slot": "tail", "name": "Demoníaca", "tags": ["fantastico"], "layers": [{ "layer": "tail", "file": "tail/demoniaca.svg" }] },
+    { "id": "tail:reptiliana", "slot": "tail", "name": "Reptiliana", "tags": ["fantastico"], "layers": [{ "layer": "tail", "file": "tail/reptiliana.svg" }] },
+    { "id": "tail:felpuda", "slot": "tail", "name": "Felpuda", "tags": ["fantastico"], "layers": [{ "layer": "tail", "file": "tail/felpuda.svg" }] },
+    { "id": "tail:com-tufo", "slot": "tail", "name": "Com tufo", "tags": ["fantastico"], "layers": [{ "layer": "tail", "file": "tail/com-tufo.svg" }] },
+
+    { "id": "shield:redondo", "slot": "shield", "name": "Escudo redondo", "defaults": { "primary": "#7a5232", "metal": "#9aa0a6" }, "layers": [{ "layer": "shield", "file": "shield/redondo.svg" }] },
+    { "id": "shield:heraldico", "slot": "shield", "name": "Escudo heráldico", "defaults": { "primary": "#3c3a6b", "secondary": "#c9a66b", "metal": "#a9b0b8" }, "layers": [{ "layer": "shield", "file": "shield/heraldico.svg" }] },
+
+    { "id": "marks:cicatriz-olho", "slot": "marks", "name": "Cicatriz no olho", "pivot": [231, 172], "layers": [{ "layer": "marks", "file": "marks/cicatriz-olho.svg" }] },
+    { "id": "marks:cicatriz-bochecha", "slot": "marks", "name": "Cicatriz na bochecha", "pivot": [284, 205], "layers": [{ "layer": "marks", "file": "marks/cicatriz-bochecha.svg" }] },
+    { "id": "marks:sardas", "slot": "marks", "name": "Sardas", "pivot": [256, 195], "layers": [{ "layer": "marks", "file": "marks/sardas.svg" }] },
+    { "id": "marks:tatuagem-tribal", "slot": "marks", "name": "Tatuagem tribal", "pivot": [290, 190], "defaults": { "ink": "#1f3a6b" }, "layers": [{ "layer": "marks", "file": "marks/tatuagem-tribal.svg" }] },
+    { "id": "marks:runa-testa", "slot": "marks", "name": "Runa na testa", "pivot": [256, 140], "defaults": { "ink": "#3f8f7a" }, "layers": [{ "layer": "marks", "file": "marks/runa-testa.svg" }] },
+    { "id": "marks:pintura-de-guerra", "slot": "marks", "name": "Pintura de guerra", "pivot": [256, 210], "defaults": { "ink": "#8a2f2f" }, "layers": [{ "layer": "marks", "file": "marks/pintura-de-guerra.svg" }] },
+
+    { "id": "background:pergaminho", "slot": "background", "name": "Pergaminho", "defaults": { "bg": "#d9c9a3" }, "layers": [{ "layer": "background", "file": "background/pergaminho.svg" }] },
+    { "id": "background:arco", "slot": "background", "name": "Arco de pedra", "defaults": { "bg": "#7d7468" }, "layers": [{ "layer": "background", "file": "background/arco.svg" }] },
+    { "id": "background:estrelado", "slot": "background", "name": "Céu estrelado", "defaults": { "bg": "#2c3560" }, "layers": [{ "layer": "background", "file": "background/estrelado.svg" }] }
+  ]
+}

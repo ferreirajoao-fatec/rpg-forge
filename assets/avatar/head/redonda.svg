@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+    <path fill="#{skin}" d="M256 96 C308 96 326 132 324 174 C322 214 298 244 256 246 C214 244 190 214 188 174 C186 132 204 96 256 96 Z"/>
+    <path fill="#{skin-dark}" stroke="none" opacity="0.25" d="M304 122 C322 152 322 200 302 226 C290 240 274 245 256 246 C286 232 308 198 304 122 Z"/>
+    <ellipse fill="#{skin-blush}" stroke="none" opacity="0.4" cx="218" cy="200" rx="16" ry="9"/>
+    <ellipse fill="#{skin-blush}" stroke="none" opacity="0.4" cx="294" cy="200" rx="16" ry="9"/>
+  </g>
+</svg>

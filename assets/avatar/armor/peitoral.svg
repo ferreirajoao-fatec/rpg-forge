@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+    <g data-anchor="torso">
+      <path fill="#{metal}" d="M200 288 C224 300 288 300 312 288 L324 302 C330 336 324 370 316 392 L314 440 C316 452 318 462 320 468 L192 468 C194 462 196 452 198 440 L196 392 C188 370 182 336 188 302 Z"/>
+      <path fill="#{metal-light}" stroke="none" opacity="0.7" d="M214 312 C222 340 226 370 224 400 L236 400 C238 370 234 336 226 312 Z"/>
+      <path fill="#{metal-dark}" stroke="none" opacity="0.5" d="M294 300 C312 330 314 380 310 440 L320 468 C318 462 316 452 314 440 L316 392 C324 370 330 336 324 302 Z"/>
+      <path fill="none" stroke="#{metal-deep}" stroke-width="2.5" d="M256 300 L256 420 M200 420 C230 430 282 430 312 420"/>
+      <path fill="#{metal}" d="M160 300 C162 276 190 268 208 282 C212 296 206 314 196 324 C182 330 164 324 160 300 Z"/>
+      <path fill="#{metal}" d="M352 300 C350 276 322 268 304 282 C300 296 306 314 316 324 C330 330 348 324 352 300 Z"/>
+      <path fill="#{metal-light}" stroke="none" opacity="0.7" d="M170 292 C176 282 190 278 198 284 C188 286 178 292 172 302 Z M342 292 C336 282 322 278 314 284 C324 286 334 292 340 302 Z"/>
+      <path fill="#{secondary}" d="M196 452 L316 452 L320 470 L192 470 Z"/>
+    </g>
+  </g>
+</svg>

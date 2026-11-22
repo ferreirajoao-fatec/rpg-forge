@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g fill="#{hair}" stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+    <ellipse cx="256" cy="74" rx="32" ry="26"/>
+    <path fill="#{hair-dark}" stroke="none" opacity="0.4" d="M232 70 C244 82 268 82 280 70 C276 90 236 90 232 70 Z"/>
+    <path d="M192 164 C186 112 220 86 258 86 C298 86 328 112 320 164 C316 140 300 118 282 112 C262 106 246 108 230 112 C212 118 198 138 192 164 Z"/>
+    <path fill="#{hair-light}" stroke="none" opacity="0.5" d="M226 102 C246 94 270 94 290 104 C270 102 246 104 226 110 Z"/>
+  </g>
+</svg>

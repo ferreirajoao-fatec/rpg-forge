@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round" fill="#{skin}">
+    <path d="M200 160 C176 152 140 138 112 116 C124 150 146 182 172 198 C184 206 194 206 200 200 Z"/>
+    <path d="M312 160 C336 152 372 138 400 116 C388 150 366 182 340 198 C328 206 318 206 312 200 Z"/>
+    <path fill="#{skin-blush}" stroke="none" opacity="0.5" d="M190 166 C170 160 146 148 128 134 C140 156 158 176 178 188 Z M322 166 C342 160 366 148 384 134 C372 156 354 176 334 188 Z"/>
+  </g>
+</svg>

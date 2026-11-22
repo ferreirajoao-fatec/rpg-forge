@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g data-anchor="legs" stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+    <path fill="#{skin}" d="M286 452 C360 470 412 540 422 620 C428 680 410 722 380 742 C398 700 398 650 380 604 C360 546 330 506 286 500 Z"/>
+    <path fill="#{skin-light}" stroke="none" opacity="0.5" d="M300 492 C340 512 370 556 384 604 C396 646 396 690 386 726 C404 690 406 640 392 596 C376 548 346 512 300 486 Z"/>
+    <path fill="none" stroke="#{skin-dark}" stroke-width="2" d="M330 476 L326 500 M360 500 L350 520 M386 534 L372 550 M402 572 L386 584 M412 614 L394 622 M414 656 L398 660"/>
+  </g>
+</svg>

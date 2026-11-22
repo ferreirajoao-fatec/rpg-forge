@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g fill="none" stroke="#{metal}" stroke-width="3">
+    <circle cx="188" cy="204" r="7"/>
+    <circle cx="324" cy="204" r="7"/>
+  </g>
+</svg>

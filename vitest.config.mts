@@ -1,7 +1,6 @@
 import { defineConfig } from "vitest/config";
-import path from "node:path";
 
+// Roda os testes de todos os pacotes do monorepo: `pnpm test`.
 export default defineConfig({
-  resolve: { alias: { "@": path.resolve(__dirname, "src") } },
-  test: { include: ["src/**/*.test.ts"], environment: "node" },
+  test: { projects: ["apps/*/vitest.config.mts", "packages/*/vitest.config.mts"] },
 });

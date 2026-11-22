@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+    <g data-anchor="torso">
+      <path fill="#{primary}" d="M168 296 C148 310 142 350 143 392 C144 432 145 466 146 494 L182 494 C182 466 184 432 186 394 C188 360 190 330 190 310 Z"/>
+      <path fill="#{primary}" d="M344 296 C364 310 370 350 369 392 C368 432 367 466 366 494 L330 494 C330 466 328 432 326 394 C324 360 322 330 322 310 Z"/>
+      <rect fill="#{secondary}" x="144" y="484" width="40" height="12" rx="3"/>
+      <rect fill="#{secondary}" x="328" y="484" width="40" height="12" rx="3"/>
+      <path fill="#{primary}" d="M194 280 C220 290 240 300 256 312 C272 300 292 290 318 280 L346 298 C354 332 344 364 330 386 L328 440 C332 470 336 500 340 524 C300 532 212 532 172 524 C176 500 180 470 184 440 L182 386 C168 364 158 332 166 298 Z"/>
+      <path fill="#{primary-dark}" stroke="none" opacity="0.45" d="M300 300 C320 340 318 400 316 440 C318 470 322 500 326 522 L340 524 C336 500 332 470 328 440 L330 386 C344 364 354 332 346 298 Z"/>
+      <path fill="none" stroke="#{secondary}" stroke-width="5" d="M206 288 C226 298 242 306 256 318 C270 306 286 298 306 288"/>
+      <path fill="none" stroke="#{primary-deep}" stroke-width="2" opacity="0.6" d="M220 400 C224 440 224 480 220 520 M292 400 C288 440 288 480 292 520"/>
+    </g>
+  </g>
+</svg>

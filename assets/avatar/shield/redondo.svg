@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g data-anchor="torso" stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+    <circle fill="#{primary}" cx="156" cy="470" r="66"/>
+    <circle fill="none" stroke="#{metal}" stroke-width="8" cx="156" cy="470" r="60"/>
+    <path fill="none" stroke="#{primary-dark}" stroke-width="2" d="M106 446 L206 446 M100 470 L212 470 M106 494 L206 494"/>
+    <circle fill="#{metal}" cx="156" cy="470" r="16"/>
+    <circle fill="#{metal-light}" stroke="none" cx="151" cy="465" r="5"/>
+  </g>
+</svg>

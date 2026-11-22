@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <defs><filter id="brilho" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter></defs>
+  <g stroke="#{line}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <ellipse fill="#{eyeL}" stroke="none" cx="230" cy="172" rx="22" ry="14" opacity="0.45" filter="url(#brilho)"/>
+    <path fill="#{eyeL-light}" d="M215 173 C222 162 238 162 245 172 C238 181 222 182 215 173 Z"/>
+    <circle fill="#ffffff" stroke="none" cx="230" cy="172" r="4" opacity="0.9"/>
+    <path fill="none" stroke-width="3.5" d="M214 173 C222 160 238 160 246 171"/>
+    <ellipse fill="#{eyeR}" stroke="none" cx="282" cy="172" rx="22" ry="14" opacity="0.45" filter="url(#brilho)"/>
+    <path fill="#{eyeR-light}" d="M267 173 C274 162 290 162 297 172 C290 181 274 182 267 173 Z"/>
+    <circle fill="#ffffff" stroke="none" cx="282" cy="172" r="4" opacity="0.9"/>
+    <path fill="none" stroke-width="3.5" d="M266 173 C274 160 290 160 298 171"/>
+  </g>
+</svg>

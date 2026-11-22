@@ -1,0 +1,323 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* Componentes do pacote de UI do monorepo. */
+@source "../../../../packages/ui/src";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-display);
+  --color-gold: var(--gold);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-gm: var(--gm);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  /* Claro: palha e areia, vermelho e bronze */
+  --background: oklch(0.93 0.032 82);
+  --foreground: oklch(0.24 0.025 50);
+  --card: oklch(0.965 0.028 88);
+  --card-foreground: oklch(0.24 0.025 50);
+  --popover: oklch(0.965 0.028 88);
+  --popover-foreground: oklch(0.24 0.025 50);
+  --primary: oklch(0.47 0.17 27);
+  --primary-foreground: oklch(0.98 0.02 88);
+  --secondary: oklch(0.89 0.04 80);
+  --secondary-foreground: oklch(0.27 0.03 50);
+  --muted: oklch(0.895 0.035 80);
+  --muted-foreground: oklch(0.44 0.04 55);
+  --accent: oklch(0.84 0.07 65);
+  --accent-foreground: oklch(0.3 0.07 50);
+  --destructive: oklch(0.55 0.21 30);
+  --border: oklch(0.81 0.045 72);
+  --input: oklch(0.79 0.05 70);
+  --ring: oklch(0.58 0.11 58);
+  --gold: oklch(0.5 0.1 55);
+  --success: oklch(0.48 0.12 150);
+  --warning: oklch(0.58 0.14 65);
+  --gm: oklch(0.47 0.14 300);
+  --chart-1: oklch(0.47 0.17 27);
+  --chart-2: oklch(0.58 0.11 58);
+  --chart-3: oklch(0.48 0.12 150);
+  --chart-4: oklch(0.47 0.14 300);
+  --chart-5: oklch(0.45 0.03 55);
+  --radius: 0.5rem;
+  --sidebar: oklch(0.91 0.035 80);
+  --sidebar-foreground: oklch(0.24 0.025 50);
+  --sidebar-primary: oklch(0.47 0.17 27);
+  --sidebar-primary-foreground: oklch(0.98 0.02 88);
+  --sidebar-accent: oklch(0.87 0.045 78);
+  --sidebar-accent-foreground: oklch(0.24 0.025 50);
+  --sidebar-border: oklch(0.81 0.045 72);
+  --sidebar-ring: oklch(0.58 0.11 58);
+}
+
+.dark {
+  /* Escuro: preto, chumbo e roxo */
+  --background: oklch(0.15 0.006 290);
+  --foreground: oklch(0.93 0.012 290);
+  --card: oklch(0.215 0.01 285);
+  --card-foreground: oklch(0.93 0.012 290);
+  --popover: oklch(0.215 0.01 285);
+  --popover-foreground: oklch(0.93 0.012 290);
+  --primary: oklch(0.55 0.2 298);
+  --primary-foreground: oklch(0.98 0.01 300);
+  --secondary: oklch(0.28 0.012 285);
+  --secondary-foreground: oklch(0.93 0.012 290);
+  --muted: oklch(0.26 0.01 285);
+  --muted-foreground: oklch(0.72 0.018 290);
+  --accent: oklch(0.32 0.07 300);
+  --accent-foreground: oklch(0.9 0.06 300);
+  --destructive: oklch(0.65 0.19 25);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 16%);
+  --ring: oklch(0.66 0.17 300);
+  --gold: oklch(0.78 0.11 300);
+  --success: oklch(0.72 0.13 150);
+  --warning: oklch(0.8 0.13 80);
+  --gm: oklch(0.74 0.13 300);
+  --chart-1: oklch(0.6 0.19 300);
+  --chart-2: oklch(0.72 0.02 285);
+  --chart-3: oklch(0.72 0.13 150);
+  --chart-4: oklch(0.65 0.19 25);
+  --chart-5: oklch(0.55 0.01 285);
+  --sidebar: oklch(0.18 0.008 288);
+  --sidebar-foreground: oklch(0.93 0.012 290);
+  --sidebar-primary: oklch(0.55 0.2 298);
+  --sidebar-primary-foreground: oklch(0.98 0.01 300);
+  --sidebar-accent: oklch(0.28 0.012 285);
+  --sidebar-accent-foreground: oklch(0.93 0.012 290);
+  --sidebar-border: oklch(1 0 0 / 12%);
+  --sidebar-ring: oklch(0.66 0.17 300);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+@layer base {
+  h1, h2, h3 {
+    font-family: var(--font-display), serif;
+    letter-spacing: 0.01em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Ficha impressa (/app/personagens/[id]/ficha)                        */
+/* O papel é sempre claro, inclusive no tema escuro, para imprimir.   */
+/* ------------------------------------------------------------------ */
+
+.ficha {
+  --sheet-paper: oklch(0.955 0.03 85);
+  --sheet-panel: oklch(0.98 0.02 88);
+  --sheet-ink: oklch(0.22 0.012 60);
+  --sheet-muted: oklch(0.45 0.02 60);
+  --sheet-line: oklch(0.55 0.03 60);
+  --sheet-accent: oklch(0.45 0.16 27);
+  --sheet-ribbon: oklch(0.88 0.05 70);
+  color: var(--sheet-ink);
+  max-width: 210mm;
+}
+
+.ficha-page {
+  background: var(--sheet-paper);
+  padding: 8mm 8mm 6mm;
+  min-height: 297mm;
+  box-shadow: 0 1px 3px oklch(0 0 0 / 0.15), 0 8px 24px oklch(0 0 0 / 0.08);
+  border: 1px solid var(--sheet-line);
+}
+
+.ficha-box {
+  position: relative;
+  background: var(--sheet-panel);
+  border: 1.5px solid var(--sheet-ink);
+  border-radius: 3px 10px 4px 12px;
+  padding: 0.85rem 0.7rem 0.6rem;
+  box-shadow: inset 0 0 0 3px var(--sheet-panel), inset 0 0 0 4px oklch(0.55 0.03 60 / 0.45);
+}
+
+/* Faixa com pontas recortadas, como um pergaminho dobrado. */
+.ficha-ribbon {
+  position: relative;
+  background: var(--sheet-ribbon);
+  border-block: 1.5px solid var(--sheet-ink);
+  padding: 0.15rem 1.4rem;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 50%, 100% 100%, 0 100%, 10px 50%);
+  color: var(--sheet-ink);
+  line-height: 1.15;
+  white-space: nowrap;
+}
+/* Cabeçalho: espaço embaixo para as faixas de classe, nome e raça. */
+.ficha-header {
+  padding-bottom: 2.9rem;
+}
+
+.ficha-ribbon-main {
+  padding-block: 0.3rem;
+  background: var(--sheet-panel);
+}
+.ficha-ribbon-side {
+  margin-bottom: 0.35rem;
+}
+
+.ficha-portrait {
+  width: 118px;
+  height: 118px;
+  border-radius: 9999px;
+  border: 2px solid var(--sheet-ink);
+  background: var(--sheet-paper);
+  box-shadow: inset 0 0 0 4px var(--sheet-panel), inset 0 0 0 5px var(--sheet-line);
+  overflow: hidden;
+}
+.ficha-portrait svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Selo de atributo: modificador grande, valor do atributo no círculo menor. */
+.ficha-ability {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  background: var(--sheet-panel);
+  border: 1.5px solid var(--sheet-ink);
+  border-radius: 14px 14px 30px 30px;
+  padding: 5px 4px 14px;
+  margin-bottom: 8px;
+}
+.ficha-ability-score {
+  position: absolute;
+  bottom: -9px;
+  min-width: 26px;
+  padding: 0 4px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 9pt;
+  background: var(--sheet-ribbon);
+  border: 1.5px solid var(--sheet-ink);
+  border-radius: 9999px;
+}
+
+.ficha-stat {
+  border: 1px solid var(--sheet-line);
+  border-radius: 4px;
+  padding: 4px;
+  min-height: 58px;
+}
+
+/* Defesa num escudo. */
+.ficha-shield {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-height: 58px;
+  background: var(--sheet-ribbon);
+  border: 1.5px solid var(--sheet-ink);
+  clip-path: polygon(0 0, 100% 0, 100% 62%, 50% 100%, 0 62%);
+  padding-bottom: 10px;
+}
+
+.ficha-coin {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 9999px;
+  border: 1.5px solid var(--sheet-ink);
+  background: var(--sheet-ribbon);
+  font-family: var(--font-display), serif;
+  font-size: 7.5pt;
+  font-weight: 600;
+}
+
+/* Linhas em branco para escrever à mão. */
+.ficha-lines {
+  background-image: repeating-linear-gradient(to bottom, transparent 0 17px, var(--sheet-line) 17px 18px);
+  opacity: 0.5;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  html,
+  body {
+    background: white !important;
+  }
+  .ficha {
+    max-width: none;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .ficha-page {
+    box-shadow: none;
+    border: 0;
+    min-height: 297mm;
+  }
+  .ficha-box {
+    break-inside: avoid;
+  }
+}

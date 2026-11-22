@@ -1,0 +1,24 @@
+{
+  "name": "@rpg-forge/rules-engine",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Motor de regras determinístico e independente de interface (D&D 5e 2014/2024, Tormenta20 2020).",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./core/*": "./src/core/*.ts",
+    "./systems/*": "./src/systems/*.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@rpg-forge/config": "workspace:*",
+    "@types/node": "^22.20.5",
+    "typescript": "^5",
+    "vitest": "^5.1.1"
+  }
+}

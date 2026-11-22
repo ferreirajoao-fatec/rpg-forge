@@ -17,7 +17,7 @@
  * do livro, que é Conteúdo Open Game, com os termos de Identidade do Produto
  * substituídos e as frases de ambientação que citam o cenário removidas.
  */
-import type { ContentEntry, ContentPack } from "../../src/rules/core/content";
+import type { ContentEntry, ContentPack } from "../../packages/rules-engine/src/core/content";
 // Gerados por scripts/tormenta20/extract.py (Conteúdo Open Game, termos de Identidade do Produto substituídos).
 import deitiesData from "./data/deities.json";
 import equipmentData from "./data/equipment.json";
@@ -25,6 +25,9 @@ import featuresData from "./data/features.json";
 import magicItemsData from "./data/magic-items.json";
 import powersData from "./data/powers.json";
 import spellsData from "./data/spells.json";
+import creaturesData from "./data/creatures.json";
+import hazardsData from "./data/hazards.json";
+import gmRulesData from "./data/gm-rules.json";
 
 const BOOK = "t20-2020";
 const LICENSE = "OGL-1.0a";
@@ -707,13 +710,16 @@ const origins: ContentEntry[] = ORIGINS.map(([id, name, page, sk, powers, unique
 
 const generated = [deitiesData, powersData, featuresData, spellsData, equipmentData, magicItemsData].flat() as unknown as ContentEntry[];
 
+/** Ferramentas do mestre (Capítulos 6 a 8 e apêndice): ameaças, perigos, regras e condições. */
+const gm = [creaturesData, hazardsData, gmRulesData].flat() as unknown as ContentEntry[];
+
 /* ------------------------------------------------------------------ */
 
 export const tormenta20Pack: ContentPack = {
   format: "rpg-forge.content-pack",
   formatVersion: 1,
   rulesetId: "tormenta20-2020",
-  packVersion: "0.3.1",
+  packVersion: "0.4.0",
   sourcebooks: [
     {
       id: BOOK,
@@ -725,7 +731,7 @@ export const tormenta20Pack: ContentPack = {
         "Conteúdo Open Game sob a Open Game License 1.0a. Tormenta20, Copyright 2020, Jambô Editora. Autores Guilherme Dei Svaldi, J.M. Trevisan, Leonel Caldela, Marcelo Cassaro e Rogerio Saladino. Texto completo da licença em content/tormenta20-2020/LICENSE-OGL.txt.",
     },
   ],
-  entries: [...skills, ...races, ...classes, ...arcanistPaths, ...origins, ...generated],
+  entries: [...skills, ...races, ...classes, ...arcanistPaths, ...origins, ...generated, ...gm],
 };
 
 export default tormenta20Pack;

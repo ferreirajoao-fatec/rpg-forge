@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+    <g data-anchor="torso">
+      <path fill="#{primary}" d="M196 290 C220 302 292 302 316 290 L328 302 C332 330 326 360 320 384 L318 440 C318 452 320 462 322 470 L190 470 C192 462 194 452 194 440 L192 384 C186 360 180 330 184 302 Z"/>
+      <path fill="#{primary-dark}" stroke="none" opacity="0.45" d="M296 300 C312 330 314 380 312 440 L316 470 L322 470 C320 462 318 452 318 440 L320 384 C326 360 332 330 328 302 Z"/>
+      <path fill="none" stroke="#{primary-light}" stroke-width="2" stroke-dasharray="5 5" d="M200 306 C220 316 292 316 312 306 M198 380 L314 380 M196 440 L316 440"/>
+      <path fill="#{primary-deep}" d="M176 292 L206 284 L212 312 L184 322 Z M336 292 L306 284 L300 312 L328 322 Z"/>
+      <circle fill="#{metal}" cx="196" cy="304" r="4"/>
+      <circle fill="#{metal}" cx="316" cy="304" r="4"/>
+    </g>
+  </g>
+</svg>

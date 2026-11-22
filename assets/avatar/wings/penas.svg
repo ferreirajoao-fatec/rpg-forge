@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g data-anchor="torso">
+    <g><path fill="#{primary}" stroke="#{line}" stroke-width="3" stroke-linejoin="round" d="M228 330 C176 262 104 200 46 214 C66 250 58 290 74 322 C60 350 70 392 98 414 C104 444 134 468 168 470 C190 430 208 384 228 356 Z"/><path fill="#{primary-light}" stroke="none" opacity="0.6" d="M210 330 C170 280 116 236 70 226 C110 250 150 290 190 340 Z"/><path fill="none" stroke="#{primary-dark}" stroke-width="2" d="M200 344 C160 316 110 292 78 290 M196 368 C160 352 120 346 90 352 M190 392 C164 388 134 392 108 402 M186 416 C170 422 156 432 146 446"/></g>
+    <g transform="translate(512 0) scale(-1 1)"><path fill="#{primary}" stroke="#{line}" stroke-width="3" stroke-linejoin="round" d="M228 330 C176 262 104 200 46 214 C66 250 58 290 74 322 C60 350 70 392 98 414 C104 444 134 468 168 470 C190 430 208 384 228 356 Z"/><path fill="#{primary-light}" stroke="none" opacity="0.6" d="M210 330 C170 280 116 236 70 226 C110 250 150 290 190 340 Z"/><path fill="none" stroke="#{primary-dark}" stroke-width="2" d="M200 344 C160 316 110 292 78 290 M196 368 C160 352 120 346 90 352 M190 392 C164 388 134 392 108 402 M186 416 C170 422 156 432 146 446"/></g>
+  </g>
+</svg>

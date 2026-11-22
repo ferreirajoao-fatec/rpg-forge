@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+    <g data-anchor="legs">
+      <path fill="#{primary}" d="M202 636 L254 636 L252 712 L256 732 C256 744 248 750 232 750 L200 750 C190 750 188 738 198 730 L204 712 Z"/>
+      <path fill="#{primary}" d="M310 636 L258 636 L260 712 L256 732 C256 744 264 750 280 750 L312 750 C322 750 324 738 314 730 L308 712 Z"/>
+      <path fill="#{primary-light}" d="M200 630 L256 630 L256 652 L200 652 Z M312 630 L256 630 L256 652 L312 652 Z"/>
+      <path fill="#{primary-deep}" stroke="none" d="M190 742 L256 742 L256 750 L196 750 Z M322 742 L256 742 L256 750 L316 750 Z"/>
+    </g>
+  </g>
+</svg>

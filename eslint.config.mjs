@@ -6,6 +6,7 @@ const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
   {
+    settings: { next: { rootDir: "apps/web/" } },
     rules: {
       "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_", varsIgnorePattern: "^_" }],
     },
@@ -17,7 +18,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
-    "src/generated/**",
+    "**/.next/**",
+    "**/next-env.d.ts",
+    "apps/web/src/generated/**",
   ]),
 ]);
 

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g stroke="#{line}" stroke-width="2" stroke-linejoin="round">
+    <g data-anchor="torso">
+      <path fill="none" stroke="#{metal}" stroke-width="3" d="M236 282 C240 304 250 314 256 316 C262 314 272 304 276 282"/>
+      <path fill="#{secondary}" d="M256 312 L266 326 L256 342 L246 326 Z"/>
+      <path fill="#ffffff" stroke="none" opacity="0.6" d="M252 322 L256 316 L258 324 Z"/>
+    </g>
+  </g>
+</svg>

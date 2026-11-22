@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g fill="none" stroke="#{line}" stroke-width="3" stroke-linecap="round">
+    <path d="M240 226 C248 229 264 229 272 226"/>
+    <path stroke="#{skin-deep}" stroke-width="2" opacity="0.6" d="M248 234 C253 236 259 236 264 234"/>
+  </g>
+</svg>

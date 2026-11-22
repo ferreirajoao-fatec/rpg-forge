@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g stroke="#{line}" stroke-width="2.5" stroke-linejoin="round">
+    <g data-anchor="legs">
+      <path fill="#{primary-dark}" d="M198 740 L254 740 L254 748 L198 748 Z M314 740 L258 740 L258 748 L314 748 Z"/>
+      <path fill="none" stroke="#{primary}" stroke-width="5" d="M206 730 L250 718 M206 718 L248 730 M212 700 L246 700 M306 730 L262 718 M306 718 L264 730 M300 700 L266 700"/>
+    </g>
+  </g>
+</svg>

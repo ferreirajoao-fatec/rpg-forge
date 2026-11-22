@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+    <g data-anchor="torso">
+      <path fill="#{primary}" d="M196 280 C220 296 292 296 316 280 L346 298 C344 310 340 318 334 322 C310 310 202 310 178 322 C172 318 168 310 166 298 Z"/>
+      <circle fill="#{metal}" cx="232" cy="300" r="8"/>
+      <circle fill="#{metal}" cx="280" cy="300" r="8"/>
+      <path fill="none" stroke="#{metal-dark}" stroke-width="2.5" d="M240 300 C250 306 262 306 272 300"/>
+    </g>
+  </g>
+</svg>

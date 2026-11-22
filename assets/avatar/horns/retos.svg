@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g fill="#{horn}" stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+    <path d="M216 116 C214 90 212 62 214 40 C222 60 230 88 232 110 Z"/>
+    <path d="M296 116 C298 90 300 62 298 40 C290 60 282 88 280 110 Z"/>
+    <path fill="#{horn-light}" stroke="none" opacity="0.6" d="M218 104 C217 84 216 66 216 54 C220 68 224 86 225 104 Z M294 104 C295 84 296 66 296 54 C292 68 288 86 287 104 Z"/>
+  </g>
+</svg>

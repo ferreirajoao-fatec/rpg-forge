@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g data-anchor="torso" stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+    <path fill="#{primary}" d="M96 400 L216 400 L216 470 C216 520 188 556 156 576 C124 556 96 520 96 470 Z"/>
+    <path fill="#{secondary}" stroke="none" d="M156 400 L216 400 L216 470 C216 520 188 556 156 576 Z"/>
+    <path fill="none" stroke="#{metal}" stroke-width="6" d="M100 404 L212 404 L212 470 C212 518 186 552 156 570 C126 552 100 518 100 470 Z"/>
+    <path fill="#{metal}" d="M156 440 L168 470 L156 500 L144 470 Z"/>
+  </g>
+</svg>
