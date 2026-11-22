@@ -73,7 +73,11 @@ export default function Home() {
 
       <footer className="mx-auto w-full max-w-5xl px-4 py-6 text-xs text-muted-foreground">
         Inclui material do System Reference Document 5.1 e 5.2.1 da Wizards of the Coast LLC, licenciado sob CC-BY-4.0, e
-        Conteúdo Open Game sob a Open Game License 1.0a (avisos de copyright nos pacotes de conteúdo).
+        Conteúdo Open Game sob a Open Game License 1.0a (
+        <Link href="/licenca" className="underline underline-offset-4 hover:text-foreground">
+          texto da licença e avisos de copyright
+        </Link>
+        ).
         RPG Forge não é afiliado à Wizards of the Coast nem à Jambô Editora.
       </footer>
     </div>

@@ -58,6 +58,7 @@ Identificação do Conteúdo Open Game deste pacote (seção 8):
 
 Todo o texto de regras de content/tormenta20-2020/ (campos name, summary e data de cada entrada) é Conteúdo Open Game derivado do Tormenta20 (2020).
 Raças, classes, origens e perícias (pack.ts) trazem resumos das regras. Poderes, magias, divindades, equipamento, itens superiores e itens mágicos (pasta data/) reproduzem o texto de regras do livro, com os nomes do cenário substituídos e as frases de ambientação que citam personagens ou lugares do cenário removidas.
+Ameaças, perigos (armadilhas, venenos e doenças), regras do mestre, condições e tabelas de tesouro (data/creatures.json, data/hazards.json e data/gm-rules.json) reproduzem o texto de regras dos capítulos do mestre, sem nomes do cenário.
 As descrições de crenças, objetivos e símbolos sagrados das divindades não foram incluídas.
 Dos artefatos, só as frases de regras foram incluídas; a história e a mitologia ligadas a eles ficaram de fora.
 Não há Identidade do Produto neste pacote: nomes do cenário (deuses, lugares, povos e fenômenos) foram substituídos por nomes genéricos e a classe inventor está presente apenas como nome e referência de página, sem regras.

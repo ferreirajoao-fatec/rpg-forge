@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { listEngines } from "@rpg-forge/rules-engine";
 import { db } from "@/server/db";
 
@@ -17,7 +18,11 @@ export default async function RulesPage() {
     <div className="mx-auto max-w-4xl">
       <h1 className="text-2xl font-semibold">Regras e fontes</h1>
       <p className="mt-1 text-sm text-muted-foreground">
-        A plataforma só usa conteúdo cuja reprodução é permitida. Toda regra registra fonte, edição e versão.
+        A plataforma só usa conteúdo cuja reprodução é permitida. Toda regra registra fonte, edição e versão. Veja o{" "}
+        <Link href="/licenca" className="text-gold underline-offset-4 hover:underline">
+          texto da Open Game License
+        </Link>
+        .
       </p>
       <div className="mt-6 space-y-4">
         {engines.map((e) => {
