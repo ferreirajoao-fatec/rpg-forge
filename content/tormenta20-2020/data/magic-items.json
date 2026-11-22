@@ -1,0 +1,5486 @@
+[
+ {
+  "id": "equipment:ameacadora",
+  "kind": "equipment",
+  "name": "Ameaçadora",
+  "summary": "A margem de ameaça da arma duplica.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 321
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A margem de ameaça da arma duplica. Por exemplo, uma espada longa ameaçadora tem margem de ameaça 17. Efeitos que duplicam a margem de ameaça são aplicados antes de quaisquer efeitos que a aumentem.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Duplica margem de ameaça",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "01-05"
+   }
+  }
+ },
+ {
+  "id": "equipment:anticriatura",
+  "kind": "equipment",
+  "name": "Anticriatura",
+  "summary": "A arma é letal contra um tipo de criatura (ou uma raça de humanoides).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 321
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma é letal contra um tipo de criatura (ou uma raça de humanoides). Quando ataca uma criatura desse tipo, você pode gastar 2 PM. Se fizer isso e acertar o ataque, causa +4d8 de dano. Para determinar o tipo de criatura aleatoriamente, role 1d6: 1) animal; 2) construto; 3) espírito; 4) monstro; 5) morto-vivo; 6) uma raça de humanoides.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Bônus contra um tipo de criatura",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "06-10"
+   }
+  }
+ },
+ {
+  "id": "equipment:arremesso",
+  "kind": "equipment",
+  "name": "Arremesso",
+  "summary": "A arma pode ser arremessada em alcance curto.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 321
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma pode ser arremessada em alcance curto. Caso já pudesse ser arremessada, seu alcance aumenta em uma categoria. No fim do seu turno, a arma volta voando para você. Pegar a arma é uma ação livre.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Pode ser arremessada",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "11-12"
+   }
+  }
+ },
+ {
+  "id": "equipment:assassina",
+  "kind": "equipment",
+  "name": "Assassina",
+  "summary": "A arma aumenta os dados de dano extra de um ataque furtivo para d8.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 321
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma aumenta os dados de dano extra de um ataque furtivo para d8. Além disso, quando faz um Ataque Furtivo, você pode gastar 2 PM. Se fizer isso, pode rolar novamente quaisquer resultados 1 nos dados de dano extra.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Aumenta ataque furtivo",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "13-14"
+   }
+  }
+ },
+ {
+  "id": "equipment:cacadora",
+  "kind": "equipment",
+  "name": "Caçadora",
+  "summary": "A arma persegue o alvo, anulando penalidades por camuflagem e cobertura (mas não cobertura total).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 321
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma persegue o alvo, anulando penalidades por camuflagem e cobertura (mas não cobertura total). Caso a arma seja de ataque à distância, seu alcance também aumenta em uma categoria.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Ignora camuflagem e cobertura",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "15-16"
+   }
+  }
+ },
+ {
+  "id": "equipment:congelante",
+  "kind": "equipment",
+  "name": "Congelante",
+  "summary": "A arma causa +1d6 de dano de frio.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 321
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma causa +1d6 de dano de frio. Quando ataca, você pode gastar 2 PM. Se fizer isso e acertar o ataque, a vítima fica enredada por uma rodada. Uma arma congelante é coberta por uma camada de gelo e névoa.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "+1d6 de dano de frio",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "17-21"
+   }
+  }
+ },
+ {
+  "id": "equipment:conjuradora",
+  "kind": "equipment",
+  "name": "Conjuradora",
+  "summary": "Um conjurador pode lançar na arma uma magia que tenha como alvo uma criatura ou que afete uma área.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 321
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um conjurador pode lançar na arma uma magia que tenha como alvo uma criatura ou que afete uma área. A magia não gera efeito na hora; em vez disso, fica guardada no item. Quando acerta um ataque com a arma, você pode lançar a magia guardada como uma ação livre e sem pagar seu custo. Ela tem como alvo a criatura atingida ou como centro de sua área o ponto atingido pelo ataque. Uma vez que a magia seja lançada, outra pode ser armazenada.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Pode guardar e lançar magias",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "22-23"
+   }
+  }
+ },
+ {
+  "id": "equipment:corrosiva",
+  "kind": "equipment",
+  "name": "Corrosiva",
+  "summary": "A arma causa +1d6 de dano de ácido.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 321
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma causa +1d6 de dano de ácido. Quando ataca, você pode gastar 2 PM. Se fizer isso e acertar o ataque, a vítima sofre 4d4 pontos de dano de ácido na próxima rodada. Uma arma corrosiva exala vapores e goteja líquido tóxico.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "+1d6 de dano de ácido",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "24-28"
+   }
+  }
+ },
+ {
+  "id": "equipment:dancarina",
+  "kind": "equipment",
+  "name": "Dançarina",
+  "summary": "Você pode gastar uma ação de movimento e 1 PM para fazer a arma flutuar e atacar uma criatura em alcance curto a sua escolha, com as mesmas estatísticas que teria se você a estivesse empunhando.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 321
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você pode gastar uma ação de movimento e 1 PM para fazer a arma flutuar e atacar uma criatura em alcance curto a sua escolha, com as mesmas estatísticas que teria se você a estivesse empunhando. Você pode gastar 1 PM no início de cada um de seus turnos para manter esse efeito. Se não o fizer, a arma cai no chão.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Ataca sozinha",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "29-30"
+   }
+  }
+ },
+ {
+  "id": "equipment:defensora",
+  "kind": "equipment",
+  "name": "Defensora",
+  "summary": "A arma se movimenta para aparar ataques contra você.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 321
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma se movimenta para aparar ataques contra você. Você recebe +2 na Defesa.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Defesa +2",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "31-34"
+   }
+  }
+ },
+ {
+  "id": "equipment:destruidora",
+  "kind": "equipment",
+  "name": "Destruidora",
+  "summary": "Se usada contra construtos e objetos (com a manobra quebrar), a arma fornece +2 no teste de ataque e causa +2d8 de dano.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 321
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Se usada contra construtos e objetos (com a manobra quebrar), a arma fornece +2 no teste de ataque e causa +2d8 de dano.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Bônus contra construtos",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "35-36"
+   }
+  }
+ },
+ {
+  "id": "equipment:drenante",
+  "kind": "equipment",
+  "name": "Drenante",
+  "summary": "Quando você faz um acerto crítico em uma criatura viva, a criatura fica fraca e você ganha 2d10 pontos de vida temporários.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 321
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Quando você faz um acerto crítico em uma criatura viva, a criatura fica fraca e você ganha 2d10 pontos de vida temporários. Uma arma drenante emite um brilho púrpura.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Crítico drena vítima",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "37-38"
+   }
+  }
+ },
+ {
+  "id": "equipment:eletrica",
+  "kind": "equipment",
+  "name": "Elétrica",
+  "summary": "A arma causa +1d6 de dano de eletricidade.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 321
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma causa +1d6 de dano de eletricidade. Quando ataca, você pode gastar 2 PM. Se fizer isso e acertar o ataque, um raio atinge outra criatura em alcance curto, causando 3d8 pontos de dano de eletricidade. Uma arma elétrica emite faíscas e é coberta de arcos voltaicos.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "+1d6 de dano de eletricidade",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "39-43"
+   }
+  }
+ },
+ {
+  "id": "equipment:energetica",
+  "kind": "equipment",
+  "name": "Energética",
+  "summary": "A arma tem sua parte perigosa (a lâmina de uma espada, a ponta de uma lança...) transformada em magia pura.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 321
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma tem sua parte perigosa (a lâmina de uma espada, a ponta de uma lança...) transformada em magia pura. Ela fornece +4 em testes de ataque, ignora resistência a dano, converte todo o dano causado para essência e emana luz como uma tocha.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Bônus em ataque",
+   "encantos": 2,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "44-45"
+   },
+   "requiresEnchantment": "Formidável"
+  }
+ },
+ {
+  "id": "equipment:excruciante",
+  "kind": "equipment",
+  "name": "Excruciante",
+  "summary": "A arma inflige dor terrível.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 322
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma inflige dor terrível. Uma criatura viva atingida fica fraca. Se já estiver fraca, fica debilitada (a condição máxima que esta arma pode causar).",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Causa fraqueza",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "46-47"
+   }
+  }
+ },
+ {
+  "id": "equipment:flamejante",
+  "kind": "equipment",
+  "name": "Flamejante",
+  "summary": "A arma causa +1d6 de dano de fogo.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 322
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma causa +1d6 de dano de fogo. Quando ataca, você pode gastar 2 PM. Se fizer isso, em vez do ataque normal você dispara uma bola de fogo contra um alvo em alcance médio. O alvo sofre 6d6 pontos de dano (Ref reduz à metade). Uma arma flamejante emana chamas como uma tocha.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "+1d6 de dano de fogo",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "48-52"
+   }
+  }
+ },
+ {
+  "id": "equipment:formidavel",
+  "kind": "equipment",
+  "name": "Formidável",
+  "summary": "A arma é encantada para desferir golpes precisos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 322
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma é encantada para desferir golpes precisos. Ela fornece +2 em testes de ataque e rolagens de dano.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Ataque e dano +2",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "53-62"
+   }
+  }
+ },
+ {
+  "id": "equipment:lancinante",
+  "kind": "equipment",
+  "name": "Lancinante",
+  "summary": "A arma inflige ferimentos mortais.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 322
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma inflige ferimentos mortais. Quando faz um acerto crítico com a arma, além de multiplicar os dados de dano, você também multiplica quaisquer bônus numéricos.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Causa crítico terrível",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "63-64"
+   }
+  }
+ },
+ {
+  "id": "equipment:magnifica",
+  "kind": "equipment",
+  "name": "Magnífica",
+  "summary": "A arma é encantada para desferir golpes perfeitos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 322
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma é encantada para desferir golpes perfeitos. Ela fornece +4 em testes de ataque e rolagens de dano.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Ataque e dano +4",
+   "encantos": 2,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "65-72"
+   },
+   "requiresEnchantment": "Formidável"
+  }
+ },
+ {
+  "id": "equipment:piedosa",
+  "kind": "equipment",
+  "name": "Piedosa",
+  "summary": "A arma causa +1d8 de dano, mas todo o dano causado é não letal.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 322
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma causa +1d8 de dano, mas todo o dano causado é não letal. Você pode gastar 1 PM para desativar e ativar este encanto.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Dano não letal",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "73-74"
+   }
+  }
+ },
+ {
+  "id": "equipment:profana",
+  "kind": "equipment",
+  "name": "Profana",
+  "summary": "A arma causa +2d8 de dano contra devotos de deuses do Bem (que canalizam apenas energia positiva) e criaturas bondosas (a critério do mestre).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 322
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma causa +2d8 de dano contra devotos de deuses do Bem (que canalizam apenas energia positiva) e criaturas bondosas (a critério do mestre). Uma arma profana emite luz rubra pulsante.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Bônus contra devotos do Bem",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "75-76"
+   }
+  }
+ },
+ {
+  "id": "equipment:sagrada",
+  "kind": "equipment",
+  "name": "Sagrada",
+  "summary": "A arma causa +2d8 de dano contra devotos de deuses do Mal (que canalizam apenas energia negativa) e criaturas malignas (a critério do mestre).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 322
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma causa +2d8 de dano contra devotos de deuses do Mal (que canalizam apenas energia negativa) e criaturas malignas (a critério do mestre). Uma arma sagrada emite uma sutil luz pura.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Bônus contra devotos do Mal",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "77-78"
+   }
+  }
+ },
+ {
+  "id": "equipment:sanguinaria",
+  "kind": "equipment",
+  "name": "Sanguinária",
+  "summary": "Uma criatura viva atingida fica sangrando.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 322
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma criatura viva atingida fica sangrando. Sangramento causado pela arma é cumulativo — uma criatura atingida duas vezes sofre 2d6 pontos de dano de sangramento por rodada.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Causa sangramento",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "79-80"
+   }
+  }
+ },
+ {
+  "id": "equipment:trovejante",
+  "kind": "equipment",
+  "name": "Trovejante",
+  "summary": "A arma emite um trovão ribombante a cada golpe.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 322
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma emite um trovão ribombante a cada golpe. Quando você faz um acerto crítico, a criatura deve fazer um teste de Fortitude. Se falhar, fica atordoada por uma rodada.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Causa atordoamento",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "81-82"
+   }
+  }
+ },
+ {
+  "id": "equipment:tumular",
+  "kind": "equipment",
+  "name": "Tumular",
+  "summary": "A arma causa +1d8 de dano de trevas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 322
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma causa +1d8 de dano de trevas. Quando ataca, você pode gastar 2 PM. Se fizer isso, o bônus de dano aumenta para +2d8, mas você sofre 1d8 pontos de dano de trevas. Uma arma tumular drena o calor ao redor.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "+1d8 de dano de trevas",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "83-84"
+   }
+  }
+ },
+ {
+  "id": "equipment:veloz",
+  "kind": "equipment",
+  "name": "Veloz",
+  "summary": "Quando usa a ação atacar com a arma, você pode gastar 2 PM para realizar um ataque adicional com ela.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 322
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Quando usa a ação atacar com a arma, você pode gastar 2 PM para realizar um ataque adicional com ela. Se possuir a habilidade Ataque Extra, em vez disso seu custo diminui em –1 PM.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Fornece ataque extra",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "85-88"
+   }
+  }
+ },
+ {
+  "id": "equipment:venenosa",
+  "kind": "equipment",
+  "name": "Venenosa",
+  "summary": "Quando ataca, você pode gastar 2 PM.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 322
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Quando ataca, você pode gastar 2 PM. Se fizer isso e acertar o ataque, a vítima fica envenenada, sofrendo 1d12 pontos de dano por rodada durante 1d6 rodadas. Uma arma venenosa verte um líquido verde e viscoso.",
+   "category": "encanto",
+   "target": "arma",
+   "effectSummary": "Causa envenenamento",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-arma",
+    "range": "89-90"
+   }
+  }
+ },
+ {
+  "id": "equipment:arco-do-poder",
+  "kind": "equipment",
+  "name": "Arco do Poder",
+  "summary": "O arco do poder conta como um arco longo formidável, mas parece apenas um pedaço de um arco — não tem corda e não aceita flechas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 322
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "O arco do poder conta como um arco longo formidável, mas parece apenas um pedaço de um arco — não tem corda e não aceita flechas. Contudo, quando você o empunha e faz o gesto de puxar a corda inexistente, o arco cria uma corda e uma flecha de energia dourada. O arco do poder é capaz de ler suas intenções, produzindo diferentes tipos de flechas energéticas a sua escolha. Quando você lança uma magia de cura, ela cura +2 pontos de vida por dado.",
+   "category": "arma-magica",
+   "price": 45000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "arma-especifica",
+    "range": "61-67"
+   },
+   "baseItemId": "equipment:arco-longo",
+   "enchantments": [
+    "equipment:formidavel"
+   ]
+  }
+ },
+ {
+  "id": "equipment:cajado-do-poder",
+  "kind": "equipment",
+  "name": "Cajado do Poder",
+  "summary": "Este bordão magnífico tem cabo reto e liso, com uma joia cintilante na ponta.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 323
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este bordão magnífico tem cabo reto e liso, com uma joia cintilante na ponta. O custo de suas magias arcanas diminui em –1 PM e a CD para resistir a elas aumenta em +2.",
+   "category": "arma-magica",
+   "price": 90000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "arma-especifica",
+    "range": "93-95"
+   },
+   "baseItemId": "equipment:bordao",
+   "enchantments": [
+    "equipment:magnifica"
+   ]
+  }
+ },
+ {
+  "id": "equipment:espada-baronial",
+  "kind": "equipment",
+  "name": "Espada Baronial",
+  "summary": "Estas espadas longas de guarda reta eram dadas por reis-imperadores a vassalos dignos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 323
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Estas espadas longas de guarda reta eram dadas por reis-imperadores a vassalos dignos. Uma espada baronial fornece +1 em testes de ataque e rolagens de dano. Este bônus aumenta em +1 se você possuir um código de conduta (de honra, do herói...), for devoto do Deus da Justiça ou for treinado em Nobreza. Os bônus são cumulativos — um personagem com um código de conduta, devoto do Deus da Justiça e treinado em Nobreza recebe +4 em ataque e dano.",
+   "category": "arma-magica",
+   "price": 15000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "arma-especifica",
+    "range": "06-15"
+   },
+   "baseItemId": "equipment:espada-longa"
+  }
+ },
+ {
+  "id": "equipment:espada-sortuda",
+  "kind": "equipment",
+  "name": "Espada Sortuda",
+  "summary": "Esta espada curta formidável é cravejada de brilhantes.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 323
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta espada curta formidável é cravejada de brilhantes. Você recebe +2 nos testes de resistência e pode gastar 3 PM para rolar novamente um teste qualquer recém realizado (apenas uma vez por teste). Se possuir o poder Sortudo, em vez disso seu custo diminui em –1 PM.",
+   "category": "arma-magica",
+   "price": 55000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "arma-especifica",
+    "range": "83-87"
+   },
+   "baseItemId": "equipment:espada-curta",
+   "enchantments": [
+    "equipment:formidavel"
+   ]
+  }
+ },
+ {
+  "id": "equipment:florete-fugaz",
+  "kind": "equipment",
+  "name": "Florete Fugaz",
+  "summary": "Este florete formidável tem o cabo e a guarda trabalhados com prata e pedrarias.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 323
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este florete formidável tem o cabo e a guarda trabalhados com prata e pedrarias. Quando usa a ação atacar, você pode gastar 1 PM. Se fizer isso e acertar um crítico no turno, pode fazer um ataque adicional contra a mesma criatura. • Flecha normal. 3d8 pontos de dano de essência. • Flecha piedosa. 4d8 pontos de dano não letal. • Flecha explosiva. 3d6 pontos de dano de fogo no alvo e em todas as criaturas adjacentes a ele (essas têm direito a um teste de Reflexos contra CD 20 para reduzir o dano à metade). • Flecha-rede. Não causa dano, mas deixa a vítima agarrada por uma rede de energia. A criatura pode se soltar passando em um teste de Força (CD 20). A rede se dissipa quando a criatura se solta ou no fim da cena.",
+   "category": "arma-magica",
+   "price": 25000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "arma-especifica",
+    "range": "36-40"
+   },
+   "baseItemId": "equipment:florete",
+   "enchantments": [
+    "equipment:formidavel"
+   ]
+  }
+ },
+ {
+  "id": "equipment:avalanche",
+  "kind": "equipment",
+  "name": "Avalanche",
+  "summary": "Este machado de guerra de gelo eterno congelante formidável fornece resistência a fogo 10.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 323
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este machado de guerra de gelo eterno congelante formidável fornece resistência a fogo 10. Você pode gastar uma ação padrão e 6 PM para brandi-lo acima de sua cabeça e invocar uma tempestade de gelo que afeta alcance curto ao seu redor. Criaturas na área recebem camuflagem e sofrem 3d6 pontos de dano de impacto e 3d6 pontos de frio por rodada. Você não sofre os efeitos nocivos da tempestade (o dano e a chance de falha pela camuflagem) e pode gastar 1 PM no início de cada um de seus turnos para mantê-la.",
+   "category": "arma-magica",
+   "price": 70000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "arma-especifica",
+    "range": "88-92"
+   },
+   "baseItemId": "equipment:machado-de-guerra",
+   "enchantments": [
+    "equipment:congelante",
+    "equipment:formidavel"
+   ],
+   "materialId": "equipment:gelo-eterno"
+  }
+ },
+ {
+  "id": "equipment:azagaia-dos-relampagos",
+  "kind": "equipment",
+  "name": "Azagaia dos Relâmpagos",
+  "summary": "Quando arremessada, esta azagaia se transforma em um Relâmpago (6d6 de dano de eletricidade numa linha com alcance médio).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 323
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Quando arremessada, esta azagaia se transforma em um Relâmpago (6d6 de dano de eletricidade numa linha com alcance médio). Quando atinge o fim do alcance ela volta a ser uma azagaia e cai no chão.",
+   "category": "arma-magica",
+   "price": 15000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "arma-especifica",
+    "range": "01-05"
+   },
+   "baseItemId": "equipment:azagaia"
+  }
+ },
+ {
+  "id": "equipment:besta-explosiva",
+  "kind": "equipment",
+  "name": "Besta Explosiva",
+  "summary": "Esta besta pesada formidável é feita de madeira escurecida, similar a carvão.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 323
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta besta pesada formidável é feita de madeira escurecida, similar a carvão. Quando usa uma besta explosiva, você pode gastar 3 PM para transformar o virote disparado por ela em uma Bola de Fogo. Você pode mirar esta Bola de Fogo em uma criatura ou em um ponto no chão em alcance médio. No primeiro caso, faça um ataque contra o alvo. Se acertar, ele sofre o dano do disparo mais 6d6 de fogo. Além disso, todas as criaturas a até 6m do alvo sofrem 6d6 pontos de dano de fogo (Ref reduz à metade). Porém, se o ataque errar, o virote se desfaz em uma nuvem de cinzas inofensivas. No segundo caso, ela funciona como a magia de mesmo nome. Nenhum teste de ataque é necessário e todas as criaturas a 6m do ponto escolhido sofrem 6d6 pontos de dano de fogo (Ref reduz à metade).",
+   "category": "arma-magica",
+   "price": 50000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "arma-especifica",
+    "range": "73-77"
+   },
+   "baseItemId": "equipment:besta-pesada",
+   "enchantments": [
+    "equipment:formidavel"
+   ]
+  }
+ },
+ {
+  "id": "equipment:cajado-da-destruicao",
+  "kind": "equipment",
+  "name": "Cajado da Destruição",
+  "summary": "Este bordão formidável escuro e reforçado com ponteiras de metal é procurado por conjuradores de batalha.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 323
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este bordão formidável escuro e reforçado com ponteiras de metal é procurado por conjuradores de batalha. Quando você lança uma magia de dano, ela causa +1 ponto de dano por dado.",
+   "category": "arma-magica",
+   "price": 30000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "arma-especifica",
+    "range": "41-45"
+   },
+   "baseItemId": "equipment:bordao",
+   "enchantments": [
+    "equipment:formidavel"
+   ]
+  }
+ },
+ {
+  "id": "equipment:cajado-da-vida",
+  "kind": "equipment",
+  "name": "Cajado da Vida",
+  "summary": "Este bordão formidável branco com runas prateadas é valorizado por curandeiros.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 323
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este bordão formidável branco com runas prateadas é valorizado por curandeiros.",
+   "category": "arma-magica",
+   "price": 30000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "arma-especifica",
+    "range": "46-50"
+   },
+   "baseItemId": "equipment:bordao",
+   "enchantments": [
+    "equipment:formidavel"
+   ]
+  }
+ },
+ {
+  "id": "equipment:abascanto",
+  "kind": "equipment",
+  "name": "Abascanto",
+  "summary": "Você recebe +5 em testes de resistência contra magia.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 324
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe +5 em testes de resistência contra magia.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Resistência contra magia",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "01-06"
+   }
+  }
+ },
+ {
+  "id": "equipment:abencoado",
+  "kind": "equipment",
+  "name": "Abençoado",
+  "summary": "Você recebe resistência a trevas 10 e +5 em testes de resistência contra efeitos de necromancia.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 324
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe resistência a trevas 10 e +5 em testes de resistência contra efeitos de necromancia. Um item abençoado é decorado com gravuras de símbolos sagrados de deuses do Bem.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Resistência contra trevas",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "07-10"
+   }
+  }
+ },
+ {
+  "id": "equipment:acrobatico",
+  "kind": "equipment",
+  "name": "Acrobático",
+  "summary": "Você recebe +5 em Acrobacia e ignora a penalidade de armadura do item para testes dessa perícia.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 324
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe +5 em Acrobacia e ignora a penalidade de armadura do item para testes dessa perícia.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Bônus em Acrobacia",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "11-12"
+   }
+  }
+ },
+ {
+  "id": "equipment:alado",
+  "kind": "equipment",
+  "name": "Alado",
+  "summary": "Você pode gastar 2 PM para fazer asas emergirem de suas costas e receber deslocamento de voo 12m por uma rodada.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 324
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você pode gastar 2 PM para fazer asas emergirem de suas costas e receber deslocamento de voo 12m por uma rodada. Você pode gastar 1 PM no início de cada um de seus turnos para manter o efeito.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Deslocamento de voo 12m",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "13-14"
+   }
+  }
+ },
+ {
+  "id": "equipment:animado",
+  "kind": "equipment",
+  "name": "Animado",
+  "summary": "Você pode gastar uma ação de movimento e 1 PM para fazer o escudo flutuar ao seu redor até o fim da cena.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 324
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você pode gastar uma ação de movimento e 1 PM para fazer o escudo flutuar ao seu redor até o fim da cena. Você recebe o mesmo bônus na Defesa que receberia se estivesse empunhando o escudo, mas fica com as duas mãos livres. Você só pode ser protegido por um escudo ao mesmo tempo.",
+   "category": "encanto",
+   "target": "escudo",
+   "effectSummary": "Escudo defende sozinho",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "15-16"
+   }
+  }
+ },
+ {
+  "id": "equipment:assustador",
+  "kind": "equipment",
+  "name": "Assustador",
+  "summary": "Você pode gastar uma ação de movimento e 2 PM para emitir uma aura de medo.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 324
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você pode gastar uma ação de movimento e 2 PM para emitir uma aura de medo. Todos os inimigos em alcance curto devem passar num teste de Vontade ou ficarão abalados até o fim da cena. Um item assustador possui manchas de sangue, ossos pendurados e outras decorações horripilantes.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Causa efeito de medo",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "17-18"
+   }
+  }
+ },
+ {
+  "id": "equipment:caustica",
+  "kind": "equipment",
+  "name": "Cáustica",
+  "summary": "Você recebe resistência a ácido 10 e pode gastar uma ação de movimento e 2 PM para fazer o item gotejar ácido.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 324
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe resistência a ácido 10 e pode gastar uma ação de movimento e 2 PM para fazer o item gotejar ácido. Se fizer isso, seus ataques causam +1d4 de dano de ácido até o fim da cena.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Resistência contra ácido",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "19-22"
+   }
+  }
+ },
+ {
+  "id": "equipment:defensor",
+  "kind": "equipment",
+  "name": "Defensor",
+  "summary": "O item é encantado para desviar golpes.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 324
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "O item é encantado para desviar golpes. O bônus na Defesa do item aumenta em +2.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Defesa +2",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "23-32"
+   }
+  }
+ },
+ {
+  "id": "equipment:escorregadio",
+  "kind": "equipment",
+  "name": "Escorregadio",
+  "summary": "Você recebe +10 em testes de Acrobacia para escapar e em testes de manobra contra agarrar.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 324
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe +10 em testes de Acrobacia para escapar e em testes de manobra contra agarrar. Um item escorregadio parece estar sempre coberto de óleo levemente gorduroso.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Bônus para escapar",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "33-34"
+   }
+  }
+ },
+ {
+  "id": "equipment:lamina-da-luz",
+  "kind": "equipment",
+  "name": "Lâmina da Luz",
+  "summary": "De lâmina prateada e reluzente, esta espada bastarda formidável é concedida a cavaleiros da Luz de honra e virtude comprovadas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 324
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "De lâmina prateada e reluzente, esta espada bastarda formidável é concedida a cavaleiros da Luz de honra e virtude comprovadas. Você pode gastar uma ação de movimento e 2 PM para erguer a lâmina da luz acima de sua cabeça. Se fizer isso, ela irradia luz brilhante em alcance médio até o fim da cena. Todos os inimigos dentro da luz ficam ofuscados.",
+   "category": "arma-magica",
+   "price": 20000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "arma-especifica",
+    "range": "16-25"
+   },
+   "baseItemId": "equipment:espada-bastarda",
+   "enchantments": [
+    "equipment:formidavel"
+   ]
+  }
+ },
+ {
+  "id": "equipment:lanca-animalesca",
+  "kind": "equipment",
+  "name": "Lança Animalesca",
+  "summary": "Espinhos e folhas vivas brotam desta lança formidável.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 324
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Espinhos e folhas vivas brotam desta lança formidável. Se você usar a habilidade Forma Selvagem, aplica o bônus de +2 em ataque e dano da lança animalesca em suas armas naturais.",
+   "category": "arma-magica",
+   "price": 20000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "arma-especifica",
+    "range": "26-30"
+   },
+   "baseItemId": "equipment:lanca",
+   "enchantments": [
+    "equipment:formidavel"
+   ]
+  }
+ },
+ {
+  "id": "equipment:lingua-do-deserto",
+  "kind": "equipment",
+  "name": "Língua do Deserto",
+  "summary": "Esta cimitarra formidável vem dos grandes desertos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 324
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta cimitarra formidável vem dos grandes desertos. Você pode gastar uma ação de movimento e 2 PM para transformar a lâmina dela em chamas até o fim da cena. Nessa condição, o dano da arma aumenta em um passo e passa a ser do tipo fogo. Você pode gastar uma ação de movimento e 2 PM para fazer as chamas brilharem com muita força. Isso deixa os inimigos em alcance curto desprevenidos por uma rodada.",
+   "category": "arma-magica",
+   "price": 45000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "arma-especifica",
+    "range": "68-72"
+   },
+   "baseItemId": "equipment:cimitarra",
+   "enchantments": [
+    "equipment:formidavel"
+   ]
+  }
+ },
+ {
+  "id": "equipment:maca-do-terror",
+  "kind": "equipment",
+  "name": "Maça do Terror",
+  "summary": "Esta maça formidável é feita com um osso e um crânio e permite que você lance a magia Amedrontar.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 324
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta maça formidável é feita com um osso e um crânio e permite que você lance a magia Amedrontar. Caso já conheça a magia, o custo para lançá-la diminui em –1 PM.",
+   "category": "arma-magica",
+   "price": 20000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "arma-especifica",
+    "range": "31-35"
+   },
+   "baseItemId": "equipment:maca",
+   "enchantments": [
+    "equipment:formidavel"
+   ]
+  }
+ },
+ {
+  "id": "equipment:machado-silvestre",
+  "kind": "equipment",
+  "name": "Machado Silvestre",
+  "summary": "O cabo e a lâmina deste machado de batalha formidável são cobertos de gravuras representando plantas e animais selvagens.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 324
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "O cabo e a lâmina deste machado de batalha formidável são cobertos de gravuras representando plantas e animais selvagens. Quando você usa o machado silvestre em um ambiente ermo e ao ar livre, causa +1d8 de dano e recebe o poder Trespassar. Caso já possua este poder, pode utilizá-lo sem pagar pontos de mana.",
+   "category": "arma-magica",
+   "price": 35000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "arma-especifica",
+    "range": "51-55"
+   },
+   "baseItemId": "equipment:machado-de-batalha",
+   "enchantments": [
+    "equipment:formidavel"
+   ]
+  }
+ },
+ {
+  "id": "equipment:martelo-dos-anoes",
+  "kind": "equipment",
+  "name": "Martelo dos Anões",
+  "summary": "Este martelo de guerra formidável é feito de pedra e aço.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 324
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este martelo de guerra formidável é feito de pedra e aço. Quando empunhado por um anão, adquire o encanto arremesso e aumenta seu dano em +1d8 (ou +2d8 se usada contra criaturas Grandes ou maiores).",
+   "category": "arma-magica",
+   "price": 35000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "arma-especifica",
+    "range": "56-60"
+   },
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 324"
+   },
+   "baseItemId": "equipment:martelo-de-guerra",
+   "enchantments": [
+    "equipment:formidavel"
+   ]
+  }
+ },
+ {
+  "id": "equipment:punhal-da-traicao",
+  "kind": "equipment",
+  "name": "Punhal da Traição",
+  "summary": "Esta adaga assassina formidável venenosa tem lâmina negra e ondulada.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 324
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta adaga assassina formidável venenosa tem lâmina negra e ondulada. Você pode gastar uma ação padrão e 2 PM para transformar o punhal da Traição em um objeto inofensivo de tamanho similar, como uma colher ou pena. Nenhuma magia é capaz de detectar essa transformação. Transformar o punhal em arma é uma ação livre.",
+   "category": "arma-magica",
+   "price": 50000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "arma-especifica",
+    "range": "78-82"
+   },
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 324"
+   },
+   "baseItemId": "equipment:adaga",
+   "enchantments": [
+    "equipment:assassina",
+    "equipment:formidavel",
+    "equipment:venenosa"
+   ]
+  }
+ },
+ {
+  "id": "equipment:vingadora-sagrada",
+  "kind": "equipment",
+  "name": "Vingadora Sagrada",
+  "summary": "Esta espada longa formidável revela todo o seu poder apenas quando empunhada por um paladino.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 324
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta espada longa formidável revela todo o seu poder apenas quando empunhada por um paladino. Nessa situação, ela fornece +5 em testes de ataque e rolagens de dano, +5 nos testes de resistência contra magia ao paladino e aliados em alcance curto, e reduz o custo de Golpe Divino em –1 PM.",
+   "category": "arma-magica",
+   "price": 100000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "arma-especifica",
+    "range": "96-100"
+   },
+   "baseItemId": "equipment:espada-longa",
+   "enchantments": [
+    "equipment:formidavel"
+   ]
+  }
+ },
+ {
+  "id": "equipment:reluzente",
+  "kind": "equipment",
+  "name": "Reluzente",
+  "summary": "Você pode gastar uma ação de movimento e 2 PM para emitir um clarão de luz.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 325
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você pode gastar uma ação de movimento e 2 PM para emitir um clarão de luz. Todos os inimigos em alcance curto devem passar num teste de Reflexos ou ficarão cegos por uma rodada. Um item reluzente é polido e brilhante.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Causa efeito de cegueira",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "85-86"
+   }
+  }
+ },
+ {
+  "id": "equipment:sombrio",
+  "kind": "equipment",
+  "name": "Sombrio",
+  "summary": "Você recebe +5 em Furtividade e ignora a penalidade de armadura do item para testes dessa perícia.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 325
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe +5 em Furtividade e ignora a penalidade de armadura do item para testes dessa perícia. Um item sombrio é escuro, fosco e bem lubrificado, para não fazer barulho.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Bônus em Furtividade",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "87-88"
+   }
+  }
+ },
+ {
+  "id": "equipment:zeloso",
+  "kind": "equipment",
+  "name": "Zeloso",
+  "summary": "Uma vez por rodada, se um aliado adjacente for alvo de um ataque, você pode gastar 1 PM para se tornar o alvo do ataque, que então é resolvido normalmente.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 325
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma vez por rodada, se um aliado adjacente for alvo de um ataque, você pode gastar 1 PM para se tornar o alvo do ataque, que então é resolvido normalmente.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Atrai ataques em aliados",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "89-90"
+   }
+  }
+ },
+ {
+  "id": "equipment:esmagador",
+  "kind": "equipment",
+  "name": "Esmagador",
+  "summary": "Este escudo fornece +2 em ataques e dano e tem seu dano aumentado em um passo.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 325
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este escudo fornece +2 em ataques e dano e tem seu dano aumentado em um passo.",
+   "category": "encanto",
+   "target": "escudo",
+   "effectSummary": "Escudo causa mais dano",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "35-36"
+   }
+  }
+ },
+ {
+  "id": "equipment:fantasmagorico",
+  "kind": "equipment",
+  "name": "Fantasmagórico",
+  "summary": "Você pode lançar a magia Manto de Sombras.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 325
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você pode lançar a magia Manto de Sombras. Um item fantasmagórico é cinzento e esfumaçado.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Lança Manto de Sombras",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "37-38"
+   }
+  }
+ },
+ {
+  "id": "equipment:fortificado",
+  "kind": "equipment",
+  "name": "Fortificado",
+  "summary": "Você recebe 25% de chance (para escudos) e 50% de chance (para armaduras) de ignorar o dano extra de acertos críticos e ataques furtivos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 325
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe 25% de chance (para escudos) e 50% de chance (para armaduras) de ignorar o dano extra de acertos críticos e ataques furtivos.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Chance de ignorar crítico",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "39-40"
+   }
+  }
+ },
+ {
+  "id": "equipment:gelido",
+  "kind": "equipment",
+  "name": "Gélido",
+  "summary": "Você recebe resistência a frio 10 e pode gastar uma ação de movimento e 2 PM para se cobrir de gelo até o fim da cena.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 325
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe resistência a frio 10 e pode gastar uma ação de movimento e 2 PM para se cobrir de gelo até o fim da cena. Se fizer isso, recebe 10 PV temporários. Um item gélido é azulado e frio ao toque.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Resistência contra frio",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "41-44"
+   }
+  }
+ },
+ {
+  "id": "equipment:guardiao",
+  "kind": "equipment",
+  "name": "Guardião",
+  "summary": "O item emite um campo de força que desvia ataques.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 325
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "O item emite um campo de força que desvia ataques. O bônus na Defesa do item aumenta em +4.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Defesa +4",
+   "encantos": 2,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "45-54"
+   },
+   "requiresEnchantment": "Defensor"
+  }
+ },
+ {
+  "id": "equipment:hipnotico",
+  "kind": "equipment",
+  "name": "Hipnótico",
+  "summary": "Você pode gastar uma ação padrão e 3 PM para emitir luzes multicoloridas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 325
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você pode gastar uma ação padrão e 3 PM para emitir luzes multicoloridas. Inimigos em alcance curto devem passar num teste de Vontade ou ficarão fascinados pela cena. Este é um efeito de encantamento que termina se qualquer criatura afetada for atacada. Um item hipnótico é espalhafatoso e colorido.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Causa efeito de fascinar",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "55-56"
+   }
+  }
+ },
+ {
+  "id": "equipment:ilusorio",
+  "kind": "equipment",
+  "name": "Ilusório",
+  "summary": "Você pode gastar uma ação de movimento e 1 PM para fazer o item adquirir a aparência de uma roupa comum, mas mantendo suas propriedades (bônus na CA, penalidade de armadura...).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 325
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você pode gastar uma ação de movimento e 1 PM para fazer o item adquirir a aparência de uma roupa comum, mas mantendo suas propriedades (bônus na CA, penalidade de armadura...). A magia Visão da Verdade revela o item disfarçado.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Camufla-se como item comum",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "57-58"
+   }
+  }
+ },
+ {
+  "id": "equipment:incandescente",
+  "kind": "equipment",
+  "name": "Incandescente",
+  "summary": "Você recebe resistência a fogo 10 e pode gastar uma ação de movimento e 2 PM para fazer o item emitir labaredas até o fim da cena.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 325
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe resistência a fogo 10 e pode gastar uma ação de movimento e 2 PM para fazer o item emitir labaredas até o fim da cena. Se fizer isso, no início de cada um de seus turnos você causa 1d6 pontos de dano de fogo em todas as criaturas adjacentes. Um item incandescente é avermelhado e quente ao toque.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Resistência contra fogo",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "59-62"
+   }
+  }
+ },
+ {
+  "id": "equipment:invulneravel",
+  "kind": "equipment",
+  "name": "Invulnerável",
+  "summary": "Você recebe resistência a dano 2 (para escudos) ou 5 (para armaduras).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 325
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe resistência a dano 2 (para escudos) ou 5 (para armaduras).",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Resistência a dano",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "63-68"
+   }
+  }
+ },
+ {
+  "id": "equipment:opaco",
+  "kind": "equipment",
+  "name": "Opaco",
+  "summary": "Você recebe resistência a ácido, eletricidade, fogo e frio 10.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 325
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe resistência a ácido, eletricidade, fogo e frio 10. Um item opaco parece sem cor, totalmente comum e desinteressante.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Resistência a energia",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "69-72"
+   }
+  }
+ },
+ {
+  "id": "equipment:protetor",
+  "kind": "equipment",
+  "name": "Protetor",
+  "summary": "Você recebe +2 em testes de resistência.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 325
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe +2 em testes de resistência.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Resistência +2",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "73-78"
+   }
+  }
+ },
+ {
+  "id": "equipment:refletor",
+  "kind": "equipment",
+  "name": "Refletor",
+  "summary": "Uma vez por rodada, quando você é alvo de uma magia, pode gastar PM igual ao custo dela para refleti-la de volta ao conjurador.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 325
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma vez por rodada, quando você é alvo de uma magia, pode gastar PM igual ao custo dela para refleti-la de volta ao conjurador. As características da magia (efeitos, CD...) se mantêm, mas você toma qualquer decisão exigida por ela. Um item refletor parece espelhado.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Reflete magia",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "79-80"
+   }
+  }
+ },
+ {
+  "id": "equipment:relampejante",
+  "kind": "equipment",
+  "name": "Relampejante",
+  "summary": "Você recebe resistência a eletricidade 10 e pode gastar uma ação de movimento e 2 PM para gerar arcos voltaicos até o fim da cena.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 325
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe resistência a eletricidade 10 e pode gastar uma ação de movimento e 2 PM para gerar arcos voltaicos até o fim da cena. Se fizer isso, qualquer criatura que o ataque em corpo a corpo sofre 2d6 pontos de dano de eletricidade. Um item relampejante é decorado com ouro, prata e cobre.",
+   "category": "encanto",
+   "target": "armadura-escudo",
+   "effectSummary": "Resistência contra eletricidade",
+   "encantos": 1,
+   "roll": {
+    "table": "encanto-armadura",
+    "range": "81-84"
+   }
+  }
+ },
+ {
+  "id": "equipment:armadura-da-luz",
+  "kind": "equipment",
+  "name": "Armadura da Luz",
+  "summary": "Esta armadura completa banhada a ouro reforçada guardiã zelosa possui o símbolo do Deus da Justiça gravado no peitoral.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 326
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta armadura completa banhada a ouro reforçada guardiã zelosa possui o símbolo do Deus da Justiça gravado no peitoral. Se você possuir um código de conduta (de honra, do herói...) ou for devoto de uma divindade do Bem, recebe resistência a dano igual ao seu modificador de Carisma.",
+   "category": "armadura-magica",
+   "price": 75000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "armadura-especifica",
+    "range": "94-100"
+   },
+   "baseItemId": "equipment:armadura-completa",
+   "modifications": [
+    "equipment:banhado-a-ouro",
+    "equipment:reforcada"
+   ],
+   "enchantments": [
+    "equipment:guardiao",
+    "equipment:zeloso"
+   ]
+  }
+ },
+ {
+  "id": "equipment:baluarte-anao",
+  "kind": "equipment",
+  "name": "Baluarte Anão",
+  "summary": "Esta armadura completa reforçada defensora de adamante fornece proteção sem igual.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 326
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta armadura completa reforçada defensora de adamante fornece proteção sem igual. Se você não se deslocar em seu turno, a RD que ela fornece aumenta para 10 até seu próximo turno.",
+   "category": "armadura-magica",
+   "price": 25000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "armadura-especifica",
+    "range": "50-59"
+   },
+   "baseItemId": "equipment:armadura-completa",
+   "modifications": [
+    "equipment:reforcada"
+   ],
+   "enchantments": [
+    "equipment:defensor"
+   ],
+   "materialId": "equipment:adamante"
+  }
+ },
+ {
+  "id": "equipment:carapaca-demoniaca",
+  "kind": "equipment",
+  "name": "Carapaça Demoníaca",
+  "summary": "Esta armadura completa macabra reforçada guardiã é forjada para fazer com que seu usuário pareça um demônio — o elmo tem o formato de uma cabeça demoníaca com chifres e o usuário enxerga através da boca aberta e…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 326
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta armadura completa macabra reforçada guardiã é forjada para fazer com que seu usuário pareça um demônio — o elmo tem o formato de uma cabeça demoníaca com chifres e o usuário enxerga através da boca aberta e repleta de dentes. Se você for devoto de uma divindade do Mal, a armadura exala energia negativa, fazendo os seus ataques corpo a corpo causarem +1d8 de dano de trevas.",
+   "category": "armadura-magica",
+   "price": 32000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "armadura-especifica",
+    "range": "77-83"
+   },
+   "baseItemId": "equipment:armadura-completa",
+   "modifications": [
+    "equipment:macabro",
+    "equipment:reforcada"
+   ],
+   "enchantments": [
+    "equipment:guardiao"
+   ]
+  }
+ },
+ {
+  "id": "equipment:cota-elfica",
+  "kind": "equipment",
+  "name": "Cota Élfica",
+  "summary": "Composta de anéis finíssimos, esta cota de malha defensora de mitral parece ser feita de seda.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 326
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Composta de anéis finíssimos, esta cota de malha defensora de mitral parece ser feita de seda. Ela permite que você aplique seu bônus de Destreza na Defesa como se fosse uma armadura leve.",
+   "category": "armadura-magica",
+   "price": 15000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "armadura-especifica",
+    "range": "01-10"
+   },
+   "baseItemId": "equipment:cota-de-malha",
+   "enchantments": [
+    "equipment:defensor"
+   ],
+   "materialId": "equipment:mitral"
+  }
+ },
+ {
+  "id": "equipment:couraca-do-comando",
+  "kind": "equipment",
+  "name": "Couraça do Comando",
+  "summary": "Esta couraça banhada a ouro sob medida defensora irradia uma aura de autoridade.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 326
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta couraça banhada a ouro sob medida defensora irradia uma aura de autoridade. Você recebe +2 em Carisma. Se usar o poder Comandar, o bônus fornecido aumenta para +2.",
+   "category": "armadura-magica",
+   "price": 23000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "armadura-especifica",
+    "range": "43-49"
+   },
+   "baseItemId": "equipment:couraca",
+   "modifications": [
+    "equipment:banhado-a-ouro",
+    "equipment:sob-medida"
+   ],
+   "enchantments": [
+    "equipment:defensor"
+   ],
+   "bonuses": [
+    {
+     "target": "ability:car",
+     "value": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:couro-de-monstro",
+  "kind": "equipment",
+  "name": "Couro de Monstro",
+  "summary": "Usado por chefes bárbaros, este gibão de peles defensor é feito do couro de monstros, como basiliscos e wyverns.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 326
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Usado por chefes bárbaros, este gibão de peles defensor é feito do couro de monstros, como basiliscos e wyverns. Se você usar o poder Ataque Poderoso ou fizer uma investida, recebe um bônus de +2d6 nas rolagens de dano.",
+   "category": "armadura-magica",
+   "price": 18000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "armadura-especifica",
+    "range": "11-20"
+   },
+   "baseItemId": "equipment:gibao-de-peles",
+   "enchantments": [
+    "equipment:defensor"
+   ]
+  }
+ },
+ {
+  "id": "equipment:loriga-do-centuriao",
+  "kind": "equipment",
+  "name": "Loriga do Centurião",
+  "summary": "Esta loriga segmentada defensora é dourada com detalhes em vermelho e possui o símbolo do Deus da Força, antigo Deus da Força, gravado no peitoral.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 326
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta loriga segmentada defensora é dourada com detalhes em vermelho e possui o símbolo do Deus da Força, antigo Deus da Força, gravado no peitoral. Se estiver liderando uma ou mais criaturas (em termos de jogo, se estiver usando o poder Comandar ou similar), seus ataques corpo a corpo causam +2d6 de fogo.",
+   "category": "armadura-magica",
+   "price": 22000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "armadura-especifica",
+    "range": "26-32"
+   },
+   "baseItemId": "equipment:loriga-segmentada",
+   "enchantments": [
+    "equipment:defensor"
+   ]
+  }
+ },
+ {
+  "id": "equipment:manto-da-noite",
+  "kind": "equipment",
+  "name": "Manto da Noite",
+  "summary": "Este couro batido ajustado defensor sombrio é negro com partes metálicas foscas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 326
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este couro batido ajustado defensor sombrio é negro com partes metálicas foscas. Quando usa esta armadura, você não sofre penalidade em testes de Furtividade por se mover em seu deslocamento normal e a penalidade que você sofre em testes de Furtividade por atacar diminui para –10.",
+   "category": "armadura-magica",
+   "price": 22500.0,
+   "tier": "maior",
+   "roll": {
+    "table": "armadura-especifica",
+    "range": "33-42"
+   },
+   "baseItemId": "equipment:couro-batido",
+   "modifications": [
+    "equipment:ajustada"
+   ],
+   "enchantments": [
+    "equipment:defensor",
+    "equipment:sombrio"
+   ]
+  }
+ },
+ {
+  "id": "equipment:escudo-do-deus-do-sol",
+  "kind": "equipment",
+  "name": "Escudo do Deus do Sol",
+  "summary": "Este escudo pesado guardião é forjado na forma de um sol estilizado.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 326
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este escudo pesado guardião é forjado na forma de um sol estilizado. Você pode gastar uma ação padrão e 10 PM para fazê-lo emitir uma luz brilhante e quente num cone com alcance curto. A luz gera os efeitos da magia Visão da Verdade e causa 6d6 pontos de dano de fogo em todos os seus inimigos (mortos-vivos e criaturas vulneráveis a luz solar sofrem 6d8 pontos de dano). Você pode gastar 1 PM no início de cada um de seus turnos para manter a luz.",
+   "category": "armadura-magica",
+   "price": 70000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "armadura-especifica",
+    "range": "89-93"
+   },
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 326"
+   },
+   "baseItemId": "equipment:escudo-pesado",
+   "enchantments": [
+    "equipment:guardiao"
+   ]
+  }
+ },
+ {
+  "id": "equipment:escudo-do-conjurador",
+  "kind": "equipment",
+  "name": "Escudo do Conjurador",
+  "summary": "Este escudo leve defensor tem uma pequena tira de couro na parte interna, sobre a qual um conjurador pode lançar uma magia.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 326
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este escudo leve defensor tem uma pequena tira de couro na parte interna, sobre a qual um conjurador pode lançar uma magia. A magia não surte efeito na hora; em vez disso, fica inscrita na tira. A tira pode então ser lida como um pergaminho. Uma vez que a magia seja lançada, outra pode ser inscrita.",
+   "category": "armadura-magica",
+   "price": 20000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "armadura-especifica",
+    "range": "21-25"
+   },
+   "baseItemId": "equipment:escudo-leve",
+   "enchantments": [
+    "equipment:defensor"
+   ]
+  }
+ },
+ {
+  "id": "equipment:escudo-do-eclipse",
+  "kind": "equipment",
+  "name": "Escudo do Eclipse",
+  "summary": "Este escudo pesado defensor é completamente negro e parece absorver a luz.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 326
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este escudo pesado defensor é completamente negro e parece absorver a luz. Ele fornece resistência a trevas 10 e causa +1d8 de dano de trevas num ataque. Além disso, você pode gastar uma ação de movimento e 2 PM para lançar Escuridão.",
+   "category": "armadura-magica",
+   "price": 35000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "armadura-especifica",
+    "range": "84-88"
+   },
+   "baseItemId": "equipment:escudo-pesado",
+   "enchantments": [
+    "equipment:defensor"
+   ]
+  }
+ },
+ {
+  "id": "equipment:escudo-espinhoso",
+  "kind": "equipment",
+  "name": "Escudo Espinhoso",
+  "summary": "Este escudo pesado defensor é coberto de espinhos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 326
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este escudo pesado defensor é coberto de espinhos. Você pode gastar uma ação de movimento e 2 PM para disparar um espinho em um alvo em alcance curto. O espinho acerta automaticamente e causa 1d10+2 pontos de dano de perfuração.",
+   "category": "armadura-magica",
+   "price": 25000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "armadura-especifica",
+    "range": "60-66"
+   },
+   "baseItemId": "equipment:escudo-pesado",
+   "enchantments": [
+    "equipment:defensor"
+   ]
+  }
+ },
+ {
+  "id": "equipment:escudo-do-leao",
+  "kind": "equipment",
+  "name": "Escudo do Leão",
+  "summary": "Este escudo pesado defensor é forjado como uma cabeça de leão rugindo.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 326
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este escudo pesado defensor é forjado como uma cabeça de leão rugindo. Uma vez por rodada, você pode gastar 2 PM para fazer a cabeça criar vida e morder uma criatura adjacente. A mordida acerta automaticamente e causa 2d6+2 de dano de perfuração.",
+   "category": "armadura-magica",
+   "price": 25000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "armadura-especifica",
+    "range": "67-76"
+   },
+   "baseItemId": "equipment:escudo-pesado",
+   "enchantments": [
+    "equipment:defensor"
+   ]
+  }
+ },
+ {
+  "id": "equipment:amuleto-da-robustez",
+  "kind": "equipment",
+  "name": "Amuleto da Robustez",
+  "summary": "Este disco dourado é ligado a uma corrente de ouro e usado como um colar.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este disco dourado é ligado a uma corrente de ouro e usado como um colar. Você recebe +5 em Constituição.",
+   "category": "acessorio",
+   "price": 8500.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "59-64"
+   },
+   "bonuses": [
+    {
+     "target": "ability:con",
+     "value": 5
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:anel-da-energia",
+  "kind": "equipment",
+  "name": "Anel da Energia",
+  "summary": "Você recebe +5 PM.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe +5 PM. Os efeitos do anel só se ativam após um dia de uso.",
+   "category": "acessorio",
+   "price": 7000.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "19-24"
+   }
+  }
+ },
+ {
+  "id": "equipment:anel-da-liberdade",
+  "kind": "equipment",
+  "name": "Anel da Liberdade",
+  "summary": "Forjado em ouro, este anel é uma relíquia da Igreja da Deusa da Ambição.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Forjado em ouro, este anel é uma relíquia da Igreja da Deusa da Ambição. Você fica permanentemente sob efeito de Libertação.",
+   "category": "acessorio",
+   "price": 20000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "73-77"
+   }
+  }
+ },
+ {
+  "id": "equipment:anel-da-protecao",
+  "kind": "equipment",
+  "name": "Anel da Proteção",
+  "summary": "Este anel desvia ataques contra seu usuário.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este anel desvia ataques contra seu usuário. Você recebe +2 de Defesa.",
+   "category": "acessorio",
+   "price": 3000.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "90-96"
+   },
+   "bonuses": [
+    {
+     "target": "defense",
+     "value": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:anel-da-regeneracao",
+  "kind": "equipment",
+  "name": "Anel da Regeneração",
+  "summary": "Você recebe Cura Acelerada 5.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe Cura Acelerada 5. Os efeitos do anel só se ativam após um dia de uso.",
+   "category": "acessorio",
+   "price": 50000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "97-98"
+   }
+  }
+ },
+ {
+  "id": "equipment:anel-da-vitalidade",
+  "kind": "equipment",
+  "name": "Anel da Vitalidade",
+  "summary": "Você recebe +10 PV.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe +10 PV. Os efeitos do anel só se ativam após um dia de uso.",
+   "category": "acessorio",
+   "price": 7000.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "25-30"
+   }
+  }
+ },
+ {
+  "id": "equipment:anel-de-invisibilidade",
+  "kind": "equipment",
+  "name": "Anel de Invisibilidade",
+  "summary": "Ao colocar este anel de prata, você fica sob efeito de Invisibilidade.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Ao colocar este anel de prata, você fica sob efeito de Invisibilidade. O efeito termina se você fizer um ataque ou lançar uma magia ofensiva, mas você pode tirar e recolocar o anel (uma ação padrão) para que ele volte a funcionar.",
+   "category": "acessorio",
+   "price": 7000.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "31-34"
+   }
+  }
+ },
+ {
+  "id": "equipment:anel-de-telecinesia",
+  "kind": "equipment",
+  "name": "Anel de Telecinesia",
+  "summary": "Você pode lançar Telecinesia.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você pode lançar Telecinesia. Caso já conheça a magia, o custo para lançá-la diminui em –1 PM.",
+   "category": "acessorio",
+   "price": 3500.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "01-04"
+   }
+  }
+ },
+ {
+  "id": "equipment:anel-do-escudo-mental",
+  "kind": "equipment",
+  "name": "Anel do Escudo Mental",
+  "summary": "Você recebe imunidade a magias de adivinhação.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe imunidade a magias de adivinhação.",
+   "category": "acessorio",
+   "price": 3000.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "97-98"
+   }
+  }
+ },
+ {
+  "id": "equipment:anel-do-sustento",
+  "kind": "equipment",
+  "name": "Anel do Sustento",
+  "summary": "Você não precisa comer ou beber e precisa dormir apenas duas horas por noite para descansar.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você não precisa comer ou beber e precisa dormir apenas duas horas por noite para descansar. Os efeitos do anel só se ativam após uma semana de uso.",
+   "category": "acessorio",
+   "price": 1000.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "01-02"
+   }
+  }
+ },
+ {
+  "id": "equipment:anel-refletor",
+  "kind": "equipment",
+  "name": "Anel Refletor",
+  "summary": "Este aro de platina é poderoso contra conjuradores.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este aro de platina é poderoso contra conjuradores. Uma vez por rodada, quando você é alvo de uma magia, pode gastar PM igual ao custo dela para refleti-la de volta ao seu conjurador. As características da magia (efeitos, CD...) se mantêm, mas você toma qualquer decisão exigida por ela.",
+   "category": "acessorio",
+   "price": 17000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "53-57"
+   }
+  }
+ },
+ {
+  "id": "equipment:bainha-magica",
+  "kind": "equipment",
+  "name": "Bainha Mágica",
+  "summary": "Esta bainha de couro curtido e prata muda de tamanho para acomodar qualquer arma corpo a corpo.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta bainha de couro curtido e prata muda de tamanho para acomodar qualquer arma corpo a corpo. Você pode lançar Arma Mágica em qualquer arma na bainha sem pagar seu custo em PM.",
+   "category": "acessorio",
+   "price": 1000.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "03-07"
+   }
+  }
+ },
+ {
+  "id": "equipment:bola-de-cristal",
+  "kind": "equipment",
+  "name": "Bola de Cristal",
+  "summary": "Esta esfera com 15cm de diâmetro revela pessoas e lugares distantes.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta esfera com 15cm de diâmetro revela pessoas e lugares distantes. Olhar através dela é uma ação completa e gera a magia Vidência.",
+   "category": "acessorio",
+   "price": 3500.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "05-08"
+   }
+  }
+ },
+ {
+  "id": "equipment:botas-aladas",
+  "kind": "equipment",
+  "name": "Botas Aladas",
+  "summary": "Você pode gastar 2 PM para fazer asas brotarem dos calcanhares destas botas e receber deslocamento de voo 12m por uma rodada.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você pode gastar 2 PM para fazer asas brotarem dos calcanhares destas botas e receber deslocamento de voo 12m por uma rodada. Você pode gastar 1 PM no início de cada um de seus turnos para manter esse efeito.",
+   "category": "acessorio",
+   "price": 5000.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "11-14"
+   }
+  }
+ },
+ {
+  "id": "equipment:botas-velozes",
+  "kind": "equipment",
+  "name": "Botas Velozes",
+  "summary": "Você recebe +3m em seu deslocamento e pode lançar Velocidade (apenas sobre você mesmo).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe +3m em seu deslocamento e pode lançar Velocidade (apenas sobre você mesmo).",
+   "category": "acessorio",
+   "price": 8500.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "65-68"
+   }
+  }
+ },
+ {
+  "id": "equipment:bracadeiras-do-arqueiro",
+  "kind": "equipment",
+  "name": "Braçadeiras do Arqueiro",
+  "summary": "Estes protetores de punho fornecem +2 em rolagens de dano com armas de ataque à distância.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Estes protetores de punho fornecem +2 em rolagens de dano com armas de ataque à distância.",
+   "category": "acessorio",
+   "price": 7000.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "35-38"
+   }
+  }
+ },
+ {
+  "id": "equipment:braceletes-de-bronze",
+  "kind": "equipment",
+  "name": "Braceletes de Bronze",
+  "summary": "Estes braceletes protegem seu usuário com um campo de força invisível, porém tangível.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Estes braceletes protegem seu usuário com um campo de força invisível, porém tangível. Você recebe +4 em Defesa, cumulativo com outros itens mágicos, mas não com armaduras.",
+   "category": "acessorio",
+   "price": 5500.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "15-18"
+   },
+   "bonuses": [
+    {
+     "target": "defense",
+     "value": 4,
+     "stacks": true,
+     "noArmor": true
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:braceletes-de-ouro",
+  "kind": "equipment",
+  "name": "Braceletes de Ouro",
+  "summary": "Como braceletes de bronze, mas fornece +8 em Defesa.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Como braceletes de bronze, mas fornece +8 em Defesa.",
+   "category": "acessorio",
+   "price": 21500.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "83-87"
+   },
+   "bonuses": [
+    {
+     "target": "defense",
+     "value": 8,
+     "stacks": true,
+     "noArmor": true
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:brincos-da-sagacidade",
+  "kind": "equipment",
+  "name": "Brincos da Sagacidade",
+  "summary": "Este par de brincos de safira aguça o raciocínio.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 328
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este par de brincos de safira aguça o raciocínio. Você recebe +2 em Inteligência (mas não recebe perícias treinadas extras).",
+   "category": "acessorio",
+   "price": 1500.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "35-40"
+   },
+   "bonuses": [
+    {
+     "target": "ability:int",
+     "value": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:cinto-do-campeao",
+  "kind": "equipment",
+  "name": "Cinto do Campeão",
+  "summary": "Este cinturão de ouro é cravejado de joias e possui gravuras de gladiadores e pugilistas minotauros.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 329
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este cinturão de ouro é cravejado de joias e possui gravuras de gladiadores e pugilistas minotauros. Você recebe +2 em Força e a habilidade Briga (veja a página 76). Caso já a possua, seu dano desarmado será calculado como se você possuísse quatro níveis de lutador a mais (máximo 2d12). Por fim, caso possua o poder Torcida, o bônus que você recebe por ele aumenta para +3. Em tempos antigos, estes cintos eram dados aos vencedores dos jogos gladiatoriais do Império do Deus da Força.",
+   "category": "acessorio",
+   "price": 17000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "58-60"
+   },
+   "bonuses": [
+    {
+     "target": "ability:for",
+     "value": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:colar-guardiao",
+  "kind": "equipment",
+  "name": "Colar Guardião",
+  "summary": "Este diamante lapidado preso em uma corrente de platina deflete ataques contra seu usuário.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 329
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este diamante lapidado preso em uma corrente de platina deflete ataques contra seu usuário. Você recebe +5 em Defesa.",
+   "category": "acessorio",
+   "price": 17000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "61-67"
+   },
+   "bonuses": [
+    {
+     "target": "defense",
+     "value": 5
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:corda-da-escalada",
+  "kind": "equipment",
+  "name": "Corda da Escalada",
+  "summary": "Esta corda de 15m é bastante fina, mas forte o suficiente para suportar até 1.500 kg.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 329
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta corda de 15m é bastante fina, mas forte o suficiente para suportar até 1.500 kg. Com um comando (uma ação de movimento), a corda se move em qualquer direção (incluindo para cima) a 3m por rodada, fixando-se firmemente onde seu usuário desejar. Ela pode se desamarrar e voltar da mesma forma.",
+   "category": "acessorio",
+   "price": 1000.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "08-12"
+   }
+  }
+ },
+ {
+  "id": "equipment:brincos-da-deusa-da-paz",
+  "kind": "equipment",
+  "name": "Brincos da Deusa da Paz",
+  "summary": "Este par de brincos brancos é abençoado pela Deusa da Paz.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 329
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este par de brincos brancos é abençoado pela Deusa da Paz. A primeira criatura que o atacar em uma cena deve fazer um teste de Vontade. Se falhar, perderá a ação. Se você atacar uma criatura, o efeito dos brincos é cancelado por um dia. Se você possuir Aparência Inofensiva (ou um poder similar) os efeitos acumulam, afetando as duas primeiras criaturas que o atacarem em uma cena.",
+   "category": "acessorio",
+   "price": 7000.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "39-42"
+   },
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 329"
+   }
+  }
+ },
+ {
+  "id": "equipment:caveira-maldita",
+  "kind": "equipment",
+  "name": "Caveira Maldita",
+  "summary": "Esta pedra esculpida em formato de crânio gera permanentemente o efeito da magia Profanar, com o próprio crânio como ponto de origem.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 329
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta pedra esculpida em formato de crânio gera permanentemente o efeito da magia Profanar, com o próprio crânio como ponto de origem. Mortos-vivos e devotos de deuses do Mal na área de efeito recebem +2 em testes e Defesa.",
+   "category": "acessorio",
+   "price": 3500.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "09-10"
+   }
+  }
+ },
+ {
+  "id": "equipment:chapeu-do-disfarce",
+  "kind": "equipment",
+  "name": "Chapéu do Disfarce",
+  "summary": "Você pode lançar Disfarce Ilusório com o aprimoramento que inclui odores e sensações e muda o bônus em Enganação para disfarces para +20 sem pagar seu custo em PM.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 329
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você pode lançar Disfarce Ilusório com o aprimoramento que inclui odores e sensações e muda o bônus em Enganação para disfarces para +20 sem pagar seu custo em PM. Você não pode usar outros aprimoramentos. Como parte do disfarce, o chapéu pode mudar para um elmo, faixa, tiara, gorro, touca, pente e assim por diante.",
+   "category": "acessorio",
+   "price": 2000.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "78-82"
+   }
+  }
+ },
+ {
+  "id": "equipment:cinto-da-forca-do-gigante",
+  "kind": "equipment",
+  "name": "Cinto da Força do Gigante",
+  "summary": "Este cinto largo é feito de couro com rebites de ferro.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 329
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este cinto largo é feito de couro com rebites de ferro. Você recebe +5 em Força.",
+   "category": "acessorio",
+   "price": 8500.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "69-74"
+   },
+   "bonuses": [
+    {
+     "target": "ability:for",
+     "value": 5
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:coroa-majestosa",
+  "kind": "equipment",
+  "name": "Coroa Majestosa",
+  "summary": "Esta coroa de ouro possui dezenas de pedras preciosas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta coroa de ouro possui dezenas de pedras preciosas. Você recebe +5 em Carisma.",
+   "category": "acessorio",
+   "price": 8500.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "75-80"
+   },
+   "bonuses": [
+    {
+     "target": "ability:car",
+     "value": 5
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:elmo-do-teletransporte",
+  "kind": "equipment",
+  "name": "Elmo do Teletransporte",
+  "summary": "Você pode lançar Salto Dimensional e Teletransporte, mas apenas em você mesmo.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você pode lançar Salto Dimensional e Teletransporte, mas apenas em você mesmo. Caso já conheça as magias, o custo para lançá-las diminui em –1 PM.",
+   "category": "acessorio",
+   "price": 10000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "01-02"
+   }
+  }
+ },
+ {
+  "id": "equipment:espelho-da-oposicao",
+  "kind": "equipment",
+  "name": "Espelho da Oposição",
+  "summary": "Este item lembra um espelho normal com cerca de 1m de comprimento e 1,5m de altura.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este item lembra um espelho normal com cerca de 1m de comprimento e 1,5m de altura. Pode ser fixado em qualquer superfície e ativado (ou desativado) com um comando. Quando uma criatura observa seu reflexo, o espelho cria uma cópia sua, com as mesmas habilidades e equipamento. A duplicata ataca a criatura original; quando um dos dois é derrotado, a duplicata e seus itens desaparecem.",
+   "category": "acessorio",
+   "price": 25000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "88-89"
+   }
+  }
+ },
+ {
+  "id": "equipment:espelho-do-aprisionamento",
+  "kind": "equipment",
+  "name": "Espelho do Aprisionamento",
+  "summary": "Este item de cristal, com 1,5m de altura e moldura de metal, pode ser fixado em qualquer superfície e ativado (ou desativado) com um comando.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este item de cristal, com 1,5m de altura e moldura de metal, pode ser fixado em qualquer superfície e ativado (ou desativado) com um comando. Qualquer criatura que se aproxime a alcance curto do espelho do aprisionamento e enxergue seu próprio reflexo deve passar em um teste de Reflexos ou será transportada magicamente para um espaço extradimensional dentro do espelho, ficando presa ali. O tamanho da criatura não importa — mas construtos, mortos-vivos e objetos não podem ser transportados. Com um comando, é possível conversar com uma criatura presa no espelho ou libertá-la. Se o espelho for quebrado, todas as criaturas dentro dele são libertadas.",
+   "category": "acessorio",
+   "price": 75000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "99-100"
+   }
+  }
+ },
+ {
+  "id": "equipment:estatueta-animista",
+  "kind": "equipment",
+  "name": "Estatueta Animista",
+  "summary": "Esta estatueta de pedra é esculpida na forma de um animal e tem cerca de 10cm de altura.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta estatueta de pedra é esculpida na forma de um animal e tem cerca de 10cm de altura. Quando é atirada no chão e a palavra de comando é proferida, transforma-se no animal correspondente. O animal fornece os benefícios de um aliado veterano até o fim da cena, quando então volta à sua forma de estatueta. O tipo de aliado é definido pelo animal: raposa (aliado ajudante), onça (assassino), águia (atirador), lobo (combatente), leão (fortão) ou urso (guardião).",
+   "category": "acessorio",
+   "price": 17000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "68-72"
+   }
+  }
+ },
+ {
+  "id": "equipment:estola-da-serenidade",
+  "kind": "equipment",
+  "name": "Estola da Serenidade",
+  "summary": "Esta faixa de pano com inscrições mágicas é usada sobre a nuca, com as duas extremidades caindo paralelas na frente do corpo.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta faixa de pano com inscrições mágicas é usada sobre a nuca, com as duas extremidades caindo paralelas na frente do corpo. Você recebe +5 em Sabedoria.",
+   "category": "acessorio",
+   "price": 8500.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "81-86"
+   },
+   "bonuses": [
+    {
+     "target": "ability:sab",
+     "value": 5
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:faixas-do-pugilista",
+  "kind": "equipment",
+  "name": "Faixas do Pugilista",
+  "summary": "Estas faixas de pano surrado são amarradas nos punhos, nos braços ou na testa.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Estas faixas de pano surrado são amarradas nos punhos, nos braços ou na testa. Você recebe +2 em testes de ataque e rolagens de dano com ataques desarmados.",
+   "category": "acessorio",
+   "price": 7000.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "43-46"
+   }
+  }
+ },
+ {
+  "id": "equipment:ferraduras-da-velocidade",
+  "kind": "equipment",
+  "name": "Ferraduras da Velocidade",
+  "summary": "Este conjunto de ferraduras pode ser fixado nos cascos de um cavalo (ou outro aliado montaria, a critério do mestre) para aumentar seu deslocamento em +3m.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este conjunto de ferraduras pode ser fixado nos cascos de um cavalo (ou outro aliado montaria, a critério do mestre) para aumentar seu deslocamento em +3m.",
+   "category": "acessorio",
+   "price": 1000.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "13-14"
+   }
+  }
+ },
+ {
+  "id": "equipment:flauta-fantasma",
+  "kind": "equipment",
+  "name": "Flauta Fantasma",
+  "summary": "Você pode lançar Esculpir Sons sem pagar seu custo em PM.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você pode lançar Esculpir Sons sem pagar seu custo em PM. Você só pode usar a flauta fantasma se for treinado em Atuação.",
+   "category": "acessorio",
+   "price": 2000.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "83-84"
+   }
+  }
+ },
+ {
+  "id": "equipment:garrafa-da-fumaca-eterna",
+  "kind": "equipment",
+  "name": "Garrafa da Fumaça Eterna",
+  "summary": "Quando a tampa desta ânfora de metal é retirada, uma grande quantidade de fumaça é liberada, gerando o efeito da magia Névoa.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Quando a tampa desta ânfora de metal é retirada, uma grande quantidade de fumaça é liberada, gerando o efeito da magia Névoa. A fumaça persiste até a garrafa ser tampada. Após isso, dissipa-se no fim da cena (ou após 4 rodadas, sob vento forte, ou 1 rodada, sob um vendaval).",
+   "category": "acessorio",
+   "price": 1000.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "15-19"
+   }
+  }
+ },
+ {
+  "id": "equipment:gema-da-luminosidade",
+  "kind": "equipment",
+  "name": "Gema da Luminosidade",
+  "summary": "Este cristal tem a aparência de um longo prisma.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este cristal tem a aparência de um longo prisma. Com um comando, emite luz equivalente a uma tocha ou então um raio brilhante, que força uma criatura em alcance curto a passar em um teste de Fortitude ou ficar cega por 1d4 rodadas.",
+   "category": "acessorio",
+   "price": 1000.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "20-24"
+   }
+  }
+ },
+ {
+  "id": "equipment:gema-da-telepatia",
+  "kind": "equipment",
+  "name": "Gema da Telepatia",
+  "summary": "Você pode lançar Compreensão e Enfeitiçar sem pagar seu custo em PM.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você pode lançar Compreensão e Enfeitiçar sem pagar seu custo em PM.",
+   "category": "acessorio",
+   "price": 10000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "03-04"
+   }
+  }
+ },
+ {
+  "id": "equipment:gema-elemental",
+  "kind": "equipment",
+  "name": "Gema Elemental",
+  "summary": "Você pode lançar Conjurar Elemental sem pagar seu custo em PM.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você pode lançar Conjurar Elemental sem pagar seu custo em PM.",
+   "category": "acessorio",
+   "price": 10000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "05-09"
+   }
+  }
+ },
+ {
+  "id": "equipment:lanterna-da-revelacao",
+  "kind": "equipment",
+  "name": "Lanterna da Revelação",
+  "summary": "Este item funciona como um lampião normal, mas sua luz revela todas as criaturas e objetos invisíveis em alcance curto.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este item funciona como um lampião normal, mas sua luz revela todas as criaturas e objetos invisíveis em alcance curto.",
+   "category": "acessorio",
+   "price": 2000.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "85-89"
+   }
+  }
+ },
+ {
+  "id": "equipment:luvas-da-delicadeza",
+  "kind": "equipment",
+  "name": "Luvas da Delicadeza",
+  "summary": "Estas luvas de tecido fino permitem manipulação delicada.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Estas luvas de tecido fino permitem manipulação delicada. Você recebe +2 em Destreza.",
+   "category": "acessorio",
+   "price": 1500.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "41-46"
+   },
+   "bonuses": [
+    {
+     "target": "ability:des",
+     "value": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:manoplas-da-forca-do-ogro",
+  "kind": "equipment",
+  "name": "Manoplas da Força do Ogro",
+  "summary": "Este par de luvas é feito de couro grosso com rebites de ferro.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este par de luvas é feito de couro grosso com rebites de ferro. Você recebe +2 em Força.",
+   "category": "acessorio",
+   "price": 1500.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "47-52"
+   },
+   "bonuses": [
+    {
+     "target": "ability:for",
+     "value": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:manto-da-aranha",
+  "kind": "equipment",
+  "name": "Manto da Aranha",
+  "summary": "Este manto é feito de seda negra com fios de prata bordados.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este manto é feito de seda negra com fios de prata bordados. Você recebe deslocamento de escalada igual ao seu deslocamento terrestre, +5 em testes de resistência contra venenos e imunidade a teias mundanas ou mágicas. Além disso, pode lançar Teia. Caso já conheça a magia, o custo para lançá-la diminui em –1 PM.",
+   "category": "acessorio",
+   "price": 7000.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "47-50"
+   }
+  }
+ },
+ {
+  "id": "equipment:manto-da-resistencia",
+  "kind": "equipment",
+  "name": "Manto da Resistência",
+  "summary": "Este manto de tecido grosso e pesado protege seu usuário.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este manto de tecido grosso e pesado protege seu usuário. Você recebe +2 em testes de resistência.",
+   "category": "acessorio",
+   "price": 1500.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "53-59"
+   },
+   "bonuses": [
+    {
+     "target": "saves",
+     "value": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:manto-do-fascinio",
+  "kind": "equipment",
+  "name": "Manto do Fascínio",
+  "summary": "Este manto de veludo possui bordados de ouro.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este manto de veludo possui bordados de ouro. Você recebe +2 em Carisma.",
+   "category": "acessorio",
+   "price": 1500.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "60-65"
+   },
+   "bonuses": [
+    {
+     "target": "ability:car",
+     "value": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:manto-do-morcego",
+  "kind": "equipment",
+  "name": "Manto do Morcego",
+  "summary": "Este manto marrom escuro ou negro fornece +5 em Furtividade e permite que você fique pendurado de ponta-cabeça no teto, como um morcego.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 330
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este manto marrom escuro ou negro fornece +5 em Furtividade e permite que você fique pendurado de ponta-cabeça no teto, como um morcego. Além disso, você pode gastar uma ação padrão para segurar as pontas do manto e se transformar em um morcego. Seu tamanho muda para Minúsculo e você recebe deslocamento de voo 12m e uma arma natural de mordida (dano 1d4, perfuração). Em outros aspectos, isso funciona como a Forma Selvagem do druida. Você só pode se transformar em morcego à noite ou em ambientes escuros.",
+   "category": "acessorio",
+   "price": 8500.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "87-88"
+   }
+  }
+ },
+ {
+  "id": "equipment:manto-elfico",
+  "kind": "equipment",
+  "name": "Manto Élfico",
+  "summary": "Indistinguível de um manto cinza comum.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Indistinguível de um manto cinza comum. Entretanto, quando usado com o capuz cobrindo o rosto, fornece +5 em Furtividade.",
+   "category": "acessorio",
+   "price": 1000.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "25-29"
+   }
+  }
+ },
+ {
+  "id": "equipment:manual-do-bom-exercicio",
+  "kind": "equipment",
+  "name": "Manual do Bom Exercício",
+  "summary": "Este tomo volumoso contém exercícios de musculação, mas escondido entre as palavras há um poderoso efeito mágico.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este tomo volumoso contém exercícios de musculação, mas escondido entre as palavras há um poderoso efeito mágico. Ler o livro leva uma semana e aumenta seu valor de Força em +1 permanentemente. Um valor de atributo pode aumentar no máximo em +5 pelo uso de livros e da magia Desejo. Assim que o livro é lido, a magia desaparece de suas páginas e ele se torna um item mundano.",
+   "category": "acessorio",
+   "price": 10000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "16-21"
+   }
+  }
+ },
+ {
+  "id": "equipment:manual-dos-movimentos-precisos",
+  "kind": "equipment",
+  "name": "Manual dos Movimentos Precisos",
+  "summary": "Este tomo volumoso descreve exercícios de coordenação e equilíbrio, mas mesclado às palavras há um poderoso efeito mágico.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este tomo volumoso descreve exercícios de coordenação e equilíbrio, mas mesclado às palavras há um poderoso efeito mágico. Funciona como um Manual do Bom Exercício, mas fornece +1 de Destreza.",
+   "category": "acessorio",
+   "price": 10000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "22-27"
+   }
+  }
+ },
+ {
+  "id": "equipment:manual-da-saude-corporal",
+  "kind": "equipment",
+  "name": "Manual da Saúde Corporal",
+  "summary": "Este tomo volumoso contém exercícios de resistência e dietas saudáveis, mas suas palavras trazem um poderoso efeito mágico.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este tomo volumoso contém exercícios de resistência e dietas saudáveis, mas suas palavras trazem um poderoso efeito mágico. Funciona como um Manual do Bom Exercício, mas fornece +1 de Constituição.",
+   "category": "acessorio",
+   "price": 10000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "10-15"
+   }
+  }
+ },
+ {
+  "id": "equipment:medalhao-da-deusa-da-vida",
+  "kind": "equipment",
+  "name": "Medalhão da Deusa da Vida",
+  "summary": "Quando você é reduzido a 0 ou menos PV, esta joia emite uma explosão de energia positiva que cura 100 PV (antes que você caia).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Quando você é reduzido a 0 ou menos PV, esta joia emite uma explosão de energia positiva que cura 100 PV (antes que você caia). Este poder só se ativa uma vez por dia.",
+   "category": "acessorio",
+   "price": 10000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "28-34"
+   },
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 331"
+   }
+  }
+ },
+ {
+  "id": "equipment:mochila-de-carga",
+  "kind": "equipment",
+  "name": "Mochila de Carga",
+  "summary": "Este item, que parece uma simples mochila de pano, está na verdade ligado a um espaço interdimensional — fazendo com que seja maior por dentro do que por fora.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este item, que parece uma simples mochila de pano, está na verdade ligado a um espaço interdimensional — fazendo com que seja maior por dentro do que por fora. Você pode guardar até 100 kg dentro de uma mochila de carga, mas ela pesará no máximo 5 kg. Se a mochila for rasgada, os objetos em seu interior são destruídos. Criaturas vivas colocadas no interior da mochila podem sobreviver até 10 minutos, mas depois disso ficarão sem ar.",
+   "category": "acessorio",
+   "price": 1000.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "30-34"
+   }
+  }
+ },
+ {
+  "id": "equipment:orbe-das-tempestades",
+  "kind": "equipment",
+  "name": "Orbe das Tempestades",
+  "summary": "Esta esfera de vidro com 20cm de diâmetro contém fumaça e raios em seu interior.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta esfera de vidro com 20cm de diâmetro contém fumaça e raios em seu interior. Você pode lançar Controlar o Clima e Fúria do Panteão. Caso já conheça as magias, o custo para lançá-las diminui em –1 PM. Além disso, você e todos os seus aliados adjacentes ficam sob efeito de Suporte Ambiental.",
+   "category": "acessorio",
+   "price": 32500.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "95-96"
+   }
+  }
+ },
+ {
+  "id": "equipment:pingente-da-saude",
+  "kind": "equipment",
+  "name": "Pingente da Saúde",
+  "summary": "O usuário desta joia verde em um cordão de prata recebe imunidade a doenças e venenos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "O usuário desta joia verde em um cordão de prata recebe imunidade a doenças e venenos. Os efeitos só se ativam após uma semana de uso.",
+   "category": "acessorio",
+   "price": 3000.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "99-100"
+   }
+  }
+ },
+ {
+  "id": "equipment:pingente-da-sensatez",
+  "kind": "equipment",
+  "name": "Pingente da Sensatez",
+  "summary": "Esta pequena pérola é ligada a uma corrente leve e usada como um colar.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta pequena pérola é ligada a uma corrente leve e usada como um colar. Você recebe +2 em Sabedoria.",
+   "category": "acessorio",
+   "price": 1500.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "66-71"
+   },
+   "bonuses": [
+    {
+     "target": "ability:sab",
+     "value": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:pulseiras-da-celeridade",
+  "kind": "equipment",
+  "name": "Pulseiras da Celeridade",
+  "summary": "Esta pulseira de platina aguça todos os seus movimentos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta pulseira de platina aguça todos os seus movimentos. Você recebe +5 em Destreza.",
+   "category": "acessorio",
+   "price": 8500.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "89-94"
+   },
+   "bonuses": [
+    {
+     "target": "ability:des",
+     "value": 5
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:robe-do-arquimago",
+  "kind": "equipment",
+  "name": "Robe do Arquimago",
+  "summary": "Este traje pesado alinha-se com as energias arcanas emitidas por seu usuário para gerar um campo protetor.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este traje pesado alinha-se com as energias arcanas emitidas por seu usuário para gerar um campo protetor. Se você for um conjurador arcano, recebe um bônus na Defesa igual a 5 + o círculo de magia mais alto que puder lançar e um bônus em testes de resistência igual à metade do bônus na Defesa. Assim, um arcanista de 9º nível (capaz de lançar magias de 3º círculo) recebe +8 em Defesa e +4 em testes de resistência.",
+   "category": "acessorio",
+   "price": 30000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "90-94"
+   }
+  }
+ },
+ {
+  "id": "equipment:simbolo-abencoado",
+  "kind": "equipment",
+  "name": "Símbolo Abençoado",
+  "summary": "Um colar com o símbolo de um dos deuses do Panteão, feito de metal para resistir a viagens e aventuras.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um colar com o símbolo de um dos deuses do Panteão, feito de metal para resistir a viagens e aventuras. Se você for devoto desse deus, o custo de suas magias divinas diminui em –1 PM. Apenas artífices devotos do deus em questão podem fabricar um símbolo abençoado.",
+   "category": "acessorio",
+   "price": 7000.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "55-58"
+   }
+  }
+ },
+ {
+  "id": "equipment:tapete-voador",
+  "kind": "equipment",
+  "name": "Tapete Voador",
+  "summary": "Com um comando, este tapete flutua, fornecendo deslocamento de voo 12m.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Com um comando, este tapete flutua, fornecendo deslocamento de voo 12m. O tapete tem 3m x 3m e pode carregar seis criaturas Médias (ou 600kg). Se você estiver em alcance longo do tapete, pode comandar o voo dele.",
+   "category": "acessorio",
+   "price": 20000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "78-82"
+   }
+  }
+ },
+ {
+  "id": "equipment:tiara-da-sapiencia",
+  "kind": "equipment",
+  "name": "Tiara da Sapiência",
+  "summary": "Esta tiara delicada possui uma gema que descansa sobre a testa.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta tiara delicada possui uma gema que descansa sobre a testa. Você recebe +5 em Inteligência (mas não recebe perícias treinadas extras).",
+   "category": "acessorio",
+   "price": 8500.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "95-100"
+   },
+   "bonuses": [
+    {
+     "target": "ability:int",
+     "value": 5
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:tomo-da-compreensao",
+  "kind": "equipment",
+  "name": "Tomo da Compreensão",
+  "summary": "Este livro volumoso contém ensinamentos para tornar o leitor mais cen�trado e aguçar sua percepção, mas também possui um poderoso efeito mágico.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este livro volumoso contém ensinamentos para tornar o leitor mais cen�trado e aguçar sua percepção, mas também possui um poderoso efeito mágico. Funciona como um Manual do Bom Exercício, mas fornece +1 de Sabedoria.",
+   "category": "acessorio",
+   "price": 10000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "35-40"
+   }
+  }
+ },
+ {
+  "id": "equipment:tomo-da-lideranca-e-influencia",
+  "kind": "equipment",
+  "name": "Tomo da Liderança e Influência",
+  "summary": "Este livro de encadernação luxuosa contém instruções detalhadas para convencer e inspirar os demais, mas as páginas escondem um poderoso efeito mágico.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este livro de encadernação luxuosa contém instruções detalhadas para convencer e inspirar os demais, mas as páginas escondem um poderoso efeito mágico. Funciona como um Manual do Bom Exercício, mas fornece +1 de Carisma.",
+   "category": "acessorio",
+   "price": 10000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "41-46"
+   }
+  }
+ },
+ {
+  "id": "equipment:tomo-dos-grandes-pensamentos",
+  "kind": "equipment",
+  "name": "Tomo dos Grandes Pensamentos",
+  "summary": "Este livro pesado contém exercícios para aprimorar o raciocínio e a memória, mas mesclado às palavras há um poderoso efeito mágico.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este livro pesado contém exercícios para aprimorar o raciocínio e a memória, mas mesclado às palavras há um poderoso efeito mágico. Funciona como um Manual do Bom Exercício, mas fornece +1 de Inteligência.",
+   "category": "acessorio",
+   "price": 10000.0,
+   "tier": "maior",
+   "roll": {
+    "table": "acessorio-maior",
+    "range": "47-52"
+   }
+  }
+ },
+ {
+  "id": "equipment:torque-do-vigor",
+  "kind": "equipment",
+  "name": "Torque do Vigor",
+  "summary": "O acabamento deste colar ou bracelete remete a um animal poderoso, como um urso ou lobo.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "O acabamento deste colar ou bracelete remete a um animal poderoso, como um urso ou lobo. Você recebe +2 em Constituição.",
+   "category": "acessorio",
+   "price": 1500.0,
+   "tier": "menor",
+   "roll": {
+    "table": "acessorio-menor",
+    "range": "72-77"
+   },
+   "bonuses": [
+    {
+     "target": "ability:con",
+     "value": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:vassoura-voadora",
+  "kind": "equipment",
+  "name": "Vassoura Voadora",
+  "summary": "Como um tapete voador, mas pode carregar apenas duas pessoas (ou 200kg).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 331
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Como um tapete voador, mas pode carregar apenas duas pessoas (ou 200kg).",
+   "category": "acessorio",
+   "price": 7000.0,
+   "tier": "medio",
+   "roll": {
+    "table": "acessorio-medio",
+    "range": "51-54"
+   }
+  }
+ },
+ {
+  "id": "equipment:pocao-de-abencoar-alimentos-oleo",
+  "kind": "equipment",
+  "name": "Poção de Abençoar Alimentos (óleo)",
+  "summary": "Contém a magia Abençoar Alimentos (óleo).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Abençoar Alimentos (óleo). Óleo: aplicado em um objeto com uma ação padrão.",
+   "category": "pocao",
+   "price": 30.0,
+   "roll": {
+    "table": "pocao",
+    "range": "01"
+   },
+   "form": "óleo",
+   "spellId": "spell:abencoar-alimentos"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-area-escorregadia-granada",
+  "kind": "equipment",
+  "name": "Poção de Área Escorregadia (granada)",
+  "summary": "Contém a magia Área Escorregadia (granada).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Área Escorregadia (granada). Granada: arremessada em alcance curto com uma ação padrão; o efeito é centrado no ponto atingido.",
+   "category": "pocao",
+   "price": 30.0,
+   "roll": {
+    "table": "pocao",
+    "range": "02-03"
+   },
+   "form": "granada",
+   "spellId": "spell:area-escorregadia"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-arma-magica-oleo",
+  "kind": "equipment",
+  "name": "Poção de Arma Mágica (óleo)",
+  "summary": "Contém a magia Arma Mágica (óleo).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Arma Mágica (óleo). Óleo: aplicado em um objeto com uma ação padrão.",
+   "category": "pocao",
+   "price": 30.0,
+   "roll": {
+    "table": "pocao",
+    "range": "04-06"
+   },
+   "form": "óleo",
+   "spellId": "spell:arma-magica"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-compreensao",
+  "kind": "equipment",
+  "name": "Poção de Compreensão",
+  "summary": "Contém a magia Compreensão.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Compreensão.",
+   "category": "pocao",
+   "price": 30.0,
+   "roll": {
+    "table": "pocao",
+    "range": "07"
+   },
+   "form": "poção",
+   "spellId": "spell:compreensao"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-curar-ferimentos-2d8-2-pv",
+  "kind": "equipment",
+  "name": "Poção de Curar Ferimentos (2d8+2 PV)",
+  "summary": "Contém a magia Curar Ferimentos (2d8+2 PV).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Curar Ferimentos (2d8+2 PV).",
+   "category": "pocao",
+   "price": 30.0,
+   "roll": {
+    "table": "pocao",
+    "range": "08-15"
+   },
+   "form": "poção",
+   "spellId": "spell:curar-ferimentos"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-disfarce-ilusorio",
+  "kind": "equipment",
+  "name": "Poção de Disfarce Ilusório",
+  "summary": "Contém a magia Disfarce Ilusório.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Disfarce Ilusório.",
+   "category": "pocao",
+   "price": 30.0,
+   "roll": {
+    "table": "pocao",
+    "range": "16-18"
+   },
+   "form": "poção",
+   "spellId": "spell:disfarce-ilusorio"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-enfeiticar",
+  "kind": "equipment",
+  "name": "Poção de Enfeitiçar",
+  "summary": "Contém a magia Enfeitiçar.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Enfeitiçar.",
+   "category": "pocao",
+   "price": 30.0,
+   "roll": {
+    "table": "pocao",
+    "range": "19-20"
+   },
+   "form": "poção",
+   "spellId": "spell:enfeiticar"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-escuridao-oleo",
+  "kind": "equipment",
+  "name": "Poção de Escuridão (óleo)",
+  "summary": "Contém a magia Escuridão (óleo).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Escuridão (óleo). Óleo: aplicado em um objeto com uma ação padrão.",
+   "category": "pocao",
+   "price": 30.0,
+   "roll": {
+    "table": "pocao",
+    "range": "21-22"
+   },
+   "form": "óleo",
+   "spellId": "spell:escuridao"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-luz-oleo",
+  "kind": "equipment",
+  "name": "Poção de Luz (óleo)",
+  "summary": "Contém a magia Luz (óleo).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Luz (óleo). Óleo: aplicado em um objeto com uma ação padrão.",
+   "category": "pocao",
+   "price": 30.0,
+   "roll": {
+    "table": "pocao",
+    "range": "23-24"
+   },
+   "form": "óleo",
+   "spellId": "spell:luz"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-nevoa-granada",
+  "kind": "equipment",
+  "name": "Poção de Névoa (granada)",
+  "summary": "Contém a magia Névoa (granada).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Névoa (granada). Granada: arremessada em alcance curto com uma ação padrão; o efeito é centrado no ponto atingido.",
+   "category": "pocao",
+   "price": 30.0,
+   "roll": {
+    "table": "pocao",
+    "range": "25-26"
+   },
+   "form": "granada",
+   "spellId": "spell:nevoa"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-primor-atletico",
+  "kind": "equipment",
+  "name": "Poção de Primor Atlético",
+  "summary": "Contém a magia Primor Atlético.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Primor Atlético.",
+   "category": "pocao",
+   "price": 30.0,
+   "roll": {
+    "table": "pocao",
+    "range": "27-28"
+   },
+   "form": "poção",
+   "spellId": "spell:primor-atletico"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-protecao-divina",
+  "kind": "equipment",
+  "name": "Poção de Proteção Divina",
+  "summary": "Contém a magia Proteção Divina.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Proteção Divina.",
+   "category": "pocao",
+   "price": 30.0,
+   "roll": {
+    "table": "pocao",
+    "range": "29-30"
+   },
+   "form": "poção",
+   "spellId": "spell:protecao-divina"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-resistencia-a-energia",
+  "kind": "equipment",
+  "name": "Poção de Resistência a Energia",
+  "summary": "Contém a magia Resistência a Energia.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Resistência a Energia.",
+   "category": "pocao",
+   "price": 30.0,
+   "roll": {
+    "table": "pocao",
+    "range": "31-32"
+   },
+   "form": "poção",
+   "spellId": "spell:resistencia-a-energia"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-sono",
+  "kind": "equipment",
+  "name": "Poção de Sono",
+  "summary": "Contém a magia Sono.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Sono.",
+   "category": "pocao",
+   "price": 30.0,
+   "roll": {
+    "table": "pocao",
+    "range": "33-34"
+   },
+   "form": "poção",
+   "spellId": "spell:sono"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-suporte-ambiental",
+  "kind": "equipment",
+  "name": "Poção de Suporte Ambiental",
+  "summary": "Contém a magia Suporte Ambiental.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Suporte Ambiental.",
+   "category": "pocao",
+   "price": 30.0,
+   "roll": {
+    "table": "pocao",
+    "range": "35"
+   },
+   "form": "poção",
+   "spellId": "spell:suporte-ambiental"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-tranca-arcana-oleo",
+  "kind": "equipment",
+  "name": "Poção de Tranca Arcana (óleo)",
+  "summary": "Contém a magia Tranca Arcana (óleo).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Tranca Arcana (óleo). Óleo: aplicado em um objeto com uma ação padrão.",
+   "category": "pocao",
+   "price": 30.0,
+   "roll": {
+    "table": "pocao",
+    "range": "36"
+   },
+   "form": "óleo",
+   "spellId": "spell:tranca-arcana"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-visao-mistica",
+  "kind": "equipment",
+  "name": "Poção de Visão Mística",
+  "summary": "Contém a magia Visão Mística.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Visão Mística.",
+   "category": "pocao",
+   "price": 30.0,
+   "roll": {
+    "table": "pocao",
+    "range": "37"
+   },
+   "form": "poção",
+   "spellId": "spell:visao-mistica"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-vitalidade-fantasma",
+  "kind": "equipment",
+  "name": "Poção de Vitalidade Fantasma",
+  "summary": "Contém a magia Vitalidade Fantasma.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Vitalidade Fantasma.",
+   "category": "pocao",
+   "price": 30.0,
+   "roll": {
+    "table": "pocao",
+    "range": "38"
+   },
+   "form": "poção",
+   "spellId": "spell:vitalidade-fantasma"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-escudo-da-fe-aprimoramento-para-duracao-cena",
+  "kind": "equipment",
+  "name": "Poção de Escudo da Fé (aprimoramento para duração cena)",
+  "summary": "Contém a magia Escudo da Fé (aprimoramento para duração cena).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Escudo da Fé (aprimoramento para duração cena).",
+   "category": "pocao",
+   "price": 120.0,
+   "roll": {
+    "table": "pocao",
+    "range": "39-41"
+   },
+   "form": "poção",
+   "spellId": "spell:escudo-da-fe"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-alterar-tamanho",
+  "kind": "equipment",
+  "name": "Poção de Alterar Tamanho",
+  "summary": "Contém a magia Alterar Tamanho.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Alterar Tamanho.",
+   "category": "pocao",
+   "price": 270.0,
+   "roll": {
+    "table": "pocao",
+    "range": "42-43"
+   },
+   "form": "poção",
+   "spellId": "spell:alterar-tamanho"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-aparencia-perfeita",
+  "kind": "equipment",
+  "name": "Poção de Aparência Perfeita",
+  "summary": "Contém a magia Aparência Perfeita.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Aparência Perfeita.",
+   "category": "pocao",
+   "price": 270.0,
+   "roll": {
+    "table": "pocao",
+    "range": "44-45"
+   },
+   "form": "poção",
+   "spellId": "spell:aparencia-perfeita"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-armamento-da-natureza-oleo",
+  "kind": "equipment",
+  "name": "Poção de Armamento da Natureza (óleo)",
+  "summary": "Contém a magia Armamento da Natureza (óleo).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Armamento da Natureza (óleo). Óleo: aplicado em um objeto com uma ação padrão.",
+   "category": "pocao",
+   "price": 270.0,
+   "roll": {
+    "table": "pocao",
+    "range": "46"
+   },
+   "form": "óleo",
+   "spellId": "spell:armamento-da-natureza"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-bola-de-fogo-granada",
+  "kind": "equipment",
+  "name": "Poção de Bola de Fogo (granada)",
+  "summary": "Contém a magia Bola de Fogo (granada).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Bola de Fogo (granada). Granada: arremessada em alcance curto com uma ação padrão; o efeito é centrado no ponto atingido.",
+   "category": "pocao",
+   "price": 270.0,
+   "roll": {
+    "table": "pocao",
+    "range": "47-52"
+   },
+   "form": "granada",
+   "spellId": "spell:bola-de-fogo"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-camuflagem-ilusoria",
+  "kind": "equipment",
+  "name": "Poção de Camuflagem Ilusória",
+  "summary": "Contém a magia Camuflagem Ilusória.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Camuflagem Ilusória.",
+   "category": "pocao",
+   "price": 270.0,
+   "roll": {
+    "table": "pocao",
+    "range": "53"
+   },
+   "form": "poção",
+   "spellId": "spell:camuflagem-ilusoria"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-concentracao-de-combate-aprimoramento-para-duracao-cena",
+  "kind": "equipment",
+  "name": "Poção de Concentração de Combate (aprimoramento para duração cena)",
+  "summary": "Contém a magia Concentração de Combate (aprimoramento para duração cena).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Concentração de Combate (aprimoramento para duração cena).",
+   "category": "pocao",
+   "price": 270.0,
+   "roll": {
+    "table": "pocao",
+    "range": "54-55"
+   },
+   "form": "poção",
+   "spellId": "spell:concentracao-de-combate"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-curar-ferimentos-4d8-4-pv",
+  "kind": "equipment",
+  "name": "Poção de Curar Ferimentos (4d8+4 PV)",
+  "summary": "Contém a magia Curar Ferimentos (4d8+4 PV).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Curar Ferimentos (4d8+4 PV).",
+   "category": "pocao",
+   "price": 270.0,
+   "roll": {
+    "table": "pocao",
+    "range": "56-62"
+   },
+   "form": "poção",
+   "spellId": "spell:curar-ferimentos"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-fisico-divino",
+  "kind": "equipment",
+  "name": "Poção de Físico Divino",
+  "summary": "Contém a magia Físico Divino.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Físico Divino.",
+   "category": "pocao",
+   "price": 270.0,
+   "roll": {
+    "table": "pocao",
+    "range": "63-66"
+   },
+   "form": "poção",
+   "spellId": "spell:fisico-divino"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-mente-divina",
+  "kind": "equipment",
+  "name": "Poção de Mente Divina",
+  "summary": "Contém a magia Mente Divina.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Mente Divina.",
+   "category": "pocao",
+   "price": 270.0,
+   "roll": {
+    "table": "pocao",
+    "range": "67-68"
+   },
+   "form": "poção",
+   "spellId": "spell:mente-divina"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-metamorfose",
+  "kind": "equipment",
+  "name": "Poção de Metamorfose",
+  "summary": "Contém a magia Metamorfose.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Metamorfose.",
+   "category": "pocao",
+   "price": 270.0,
+   "roll": {
+    "table": "pocao",
+    "range": "69-70"
+   },
+   "form": "poção",
+   "spellId": "spell:metamorfose"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-purificacao",
+  "kind": "equipment",
+  "name": "Poção de Purificação",
+  "summary": "Contém a magia Purificação.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Purificação.",
+   "category": "pocao",
+   "price": 270.0,
+   "roll": {
+    "table": "pocao",
+    "range": "71-75"
+   },
+   "form": "poção",
+   "spellId": "spell:purificacao"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-velocidade",
+  "kind": "equipment",
+  "name": "Poção de Velocidade",
+  "summary": "Contém a magia Velocidade.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Velocidade.",
+   "category": "pocao",
+   "price": 270.0,
+   "roll": {
+    "table": "pocao",
+    "range": "76-77"
+   },
+   "form": "poção",
+   "spellId": "spell:velocidade"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-vestimenta-da-fe-oleo",
+  "kind": "equipment",
+  "name": "Poção de Vestimenta da Fé (óleo)",
+  "summary": "Contém a magia Vestimenta da Fé (óleo).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Vestimenta da Fé (óleo). Óleo: aplicado em um objeto com uma ação padrão.",
+   "category": "pocao",
+   "price": 270.0,
+   "roll": {
+    "table": "pocao",
+    "range": "78-79"
+   },
+   "form": "óleo",
+   "spellId": "spell:vestimenta-da-fe"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-voz-divina",
+  "kind": "equipment",
+  "name": "Poção de Voz Divina",
+  "summary": "Contém a magia Voz Divina.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Voz Divina.",
+   "category": "pocao",
+   "price": 270.0,
+   "roll": {
+    "table": "pocao",
+    "range": "80"
+   },
+   "form": "poção",
+   "spellId": "spell:voz-divina"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-arma-magica-oleo-aprimoramento-para-bonus-3",
+  "kind": "equipment",
+  "name": "Poção de Arma Mágica (óleo; aprimoramento para bônus +3)",
+  "summary": "Contém a magia Arma Mágica (óleo; aprimoramento para bônus +3).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Arma Mágica (óleo; aprimoramento para bônus +3). Óleo: aplicado em um objeto com uma ação padrão.",
+   "category": "pocao",
+   "price": 750.0,
+   "roll": {
+    "table": "pocao",
+    "range": "81-82"
+   },
+   "form": "óleo",
+   "spellId": "spell:arma-magica"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-curar-ferimentos-7d8-7-pv",
+  "kind": "equipment",
+  "name": "Poção de Curar Ferimentos (7d8+7 PV)",
+  "summary": "Contém a magia Curar Ferimentos (7d8+7 PV).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Curar Ferimentos (7d8+7 PV).",
+   "category": "pocao",
+   "price": 1080.0,
+   "roll": {
+    "table": "pocao",
+    "range": "83-88"
+   },
+   "form": "poção",
+   "spellId": "spell:curar-ferimentos"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-fisico-divino-aprimoramento-para-tres-atributos",
+  "kind": "equipment",
+  "name": "Poção de Físico Divino (aprimoramento para três atributos)",
+  "summary": "Contém a magia Físico Divino (aprimoramento para três atributos).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Físico Divino (aprimoramento para três atributos).",
+   "category": "pocao",
+   "price": 1080.0,
+   "roll": {
+    "table": "pocao",
+    "range": "89"
+   },
+   "form": "poção",
+   "spellId": "spell:fisico-divino"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-invisibilidade-aprimoramento-para-duracao-cena",
+  "kind": "equipment",
+  "name": "Poção de Invisibilidade (aprimoramento para duração cena)",
+  "summary": "Contém a magia Invisibilidade (aprimoramento para duração cena).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Invisibilidade (aprimoramento para duração cena).",
+   "category": "pocao",
+   "price": 1080.0,
+   "roll": {
+    "table": "pocao",
+    "range": "90-92"
+   },
+   "form": "poção",
+   "spellId": "spell:invisibilidade"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-bola-de-fogo-granada-aprimoramento-para-10d6-de-dano",
+  "kind": "equipment",
+  "name": "Poção de Bola de Fogo (granada; aprimoramento para 10d6 de dano)",
+  "summary": "Contém a magia Bola de Fogo (granada; aprimoramento para 10d6 de dano).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Bola de Fogo (granada; aprimoramento para 10d6 de dano). Granada: arremessada em alcance curto com uma ação padrão; o efeito é centrado no ponto atingido.",
+   "category": "pocao",
+   "price": 1470.0,
+   "roll": {
+    "table": "pocao",
+    "range": "93-96"
+   },
+   "form": "granada",
+   "spellId": "spell:bola-de-fogo"
+  }
+ },
+ {
+  "id": "equipment:pocao-de-curar-ferimentos-11d8-11-pv",
+  "kind": "equipment",
+  "name": "Poção de Curar Ferimentos (11d8+11 PV)",
+  "summary": "Contém a magia Curar Ferimentos (11d8+11 PV).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Itens Mágicos",
+   "page": 327
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contém a magia Curar Ferimentos (11d8+11 PV).",
+   "category": "pocao",
+   "price": 3000.0,
+   "roll": {
+    "table": "pocao",
+    "range": "97-100"
+   },
+   "form": "poção",
+   "spellId": "spell:curar-ferimentos"
+  }
+ },
+ {
+  "id": "equipment:a-espada-divina",
+  "kind": "equipment",
+  "name": "A Espada Divina",
+  "summary": "A Espada Divina é uma espada longa atroz precisa pungente ameaçadora magnífica veloz, com dano básico de 2d12.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Artefatos",
+   "page": 332
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A Espada Divina é uma espada longa atroz precisa pungente ameaçadora magnífica veloz, com dano básico de 2d12. Por isso, a espada divina ignora resistência a dano e seus acertos críticos afetam até mesmo criaturas imunes a acertos críticos. A espada divina é indestrutível. Apenas personagens com pelo menos 15 níveis em classes com Luta como perícia inicial podem usar a espada divina. Os demais erram todos os ataques com a arma.",
+   "category": "artefato",
+   "tiers": [],
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 332"
+   }
+  }
+ },
+ {
+  "id": "equipment:a-joia-da-alma",
+  "kind": "equipment",
+  "name": "A Joia da Alma",
+  "summary": "Isso torna o contato prolongado algo perigoso, capaz de causar danos irreparáveis ao espírito do portador.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Artefatos",
+   "page": 332
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Isso torna o contato prolongado algo perigoso, capaz de causar danos irreparáveis ao espírito do portador. Portar a Joia da Alma fornece +6 em Inteligência. Para magos, o custo para lançar magias arcanas diminui para 0 PM (custos de aprimoramentos ainda precisam ser pagos). Empunhar a Joia da Alma exige um teste de Vontade (CD 25). Se falhar, o personagem fica atordoado por uma rodada e larga o artefato no chão. Mesmo assim, precisa repetir o teste no início de cada dia, com a CD aumentando cumulativamente em +1 por dia. Se falhar, fica frustrado. Se falhar novamente, fica esmorecido. Se falhar num terceiro teste, sua sanidade se esvai. Se for um personagem jogador, torna-se um NPC sob controle do mestre — a Joia não foi feita para ser empunhada por mortais. A Joia da Alma é uma gema indestrutível e semi-transparente, lapidada com vinte faces iguais.",
+   "category": "artefato",
+   "tiers": []
+  }
+ },
+ {
+  "id": "equipment:o-baralho-do-caos",
+  "kind": "equipment",
+  "name": "O Baralho do Caos",
+  "summary": "Este artefato parece um baralho comum, com cartas bastante gastas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Artefatos",
+   "page": 333
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este artefato parece um baralho comum, com cartas bastante gastas. Ele pode ser usado para jogos de cartas e fornece +10 em testes de Jogatina para seu usuário — mas caso ele abuse da sorte, o bônus se transforma em uma penalidade de –10. O mestre decide o que é “abusar da sorte”. Porém, o verdadeiro poder do Baralho do Caos se revela quando um personagem diz “Eu aposto tudo” e saca de uma a quatro cartas, a sua escolha. O artefato muda para ter 22 cartas, cada uma com um símbolo específico. As cartas devem ser sacadas ao mesmo tempo e seus efeitos acontecem instantaneamente — para o bem ou para o mal. Role 1d% na tabela ao lado para cada carta, para saber qual foi sacada (role novamente resultados repetidos). Um personagem treinado em Jogatina pode fazer um teste (CD 30) para ignorar uma carta que não queira e sacar outra no lugar (apenas uma vez).",
+   "category": "artefato",
+   "tiers": [
+    {
+     "name": "Abismo",
+     "roll": "01-05",
+     "summary": "Receba resistência a dano",
+     "text": "As profundezas do mar o protegem. Você recebe resistência 10 a um tipo de dano definido aleatoriamente."
+    },
+    {
+     "name": "Amigo",
+     "roll": "06-09",
+     "summary": "Um de seus aliados o trai",
+     "text": "Um de seus aliados racionais irá traí-lo no pior momento possível (fornecendo seu benefício para um inimigo ou fazendo outra coisa, a critério do mestre). A traição ocorre em no máximo um ano."
+    },
+    {
+     "name": "Anel",
+     "roll": "10-14",
+     "summary": "+5 pontos de mana",
+     "text": "Um aro de energia colorida surge ao seu redor e então desaparece. Você recebe +5 pontos de mana permanentemente. Árvore. A árvore da vida fortalece seu corpo. Você recebe +10 PV permanentemente. Coração. Você recebe +2 em um atributo a sua escolha permanentemente."
+    },
+    {
+     "name": "Árvore",
+     "roll": "15-19",
+     "summary": "+10 pontos de vida",
+     "text": ""
+    },
+    {
+     "name": "Coração",
+     "roll": "20-24",
+     "summary": "+2 em um atributo a sua escolha",
+     "text": ""
+    },
+    {
+     "name": "Crânio",
+     "roll": "25-28",
+     "summary": "Enfrente cópia sombria",
+     "text": "Uma versão feita de sombras de você surge e o ataca. A sombra tem as mesmas estatísticas que você e é imune a qualquer ataque que não seja desferido por você. Seus amigos podem ajudá-lo fornecendo bônus."
+    },
+    {
+     "name": "Donzela",
+     "roll": "29-33",
+     "summary": "Derrote um monstro e suba de nível",
+     "text": "Uma bela mulher (ou homem) de sua raça surge e o chama. Se você for na direção da mulher, ela se transforma em um monstro com nível de desafio igual ao seu nível –1. Se você vencer o monstro sozinho, sobe de nível imediatamente. Se o monstro vencê-lo, deixa-o inconsciente e desaparece."
+    },
+    {
+     "name": "Fogo",
+     "roll": "34-38",
+     "summary": "Ressuscite quando morrer",
+     "text": "Uma chama queima dentro de seu peito. Ela não machuca — em vez disso, se você morrer, voltará à vida com todos os seus PV e PM restaurados. A chama então se apaga. Gema. Role 10 vezes na coluna “Maior” da. Lua. A carta aparece como uma lua cheia (quatro Desejos), nova (três), crescente (dois) ou minguante (um Desejo). Os Desejos devem ser usados até o fim da cena. Martelo. Um martelo de energia surge na sua frente e bate contra o chão. A onda de choque destrói todos os itens mágicos que estiverem com você."
+    },
+    {
+     "name": "Gema",
+     "roll": "39-43",
+     "summary": "Receba tesouro mundano",
+     "text": ""
+    },
+    {
+     "name": "Lua",
+     "roll": "44-48",
+     "summary": "Receba 1d4 Desejos",
+     "text": ""
+    },
+    {
+     "name": "Martelo",
+     "roll": "49-52",
+     "summary": "Perca todos os itens mágicos",
+     "text": ""
+    },
+    {
+     "name": "Noite",
+     "roll": "53-56",
+     "summary": "–1 em todos os testes de resistência",
+     "text": "Você sofre –1 em todos os testes de resistência permanentemente. Se for um devoto da Deusa das Trevas ou um morto-vivo, em vez disso role uma arma mágica maior. Se não gostar do resultado, você pode rolar uma segunda vez. Presas. Todo o dinheiro e itens mundanos que você possui — não apenas aqueles que estão com você — viram pó. Servo. O servo é alguém que morreu com uma dívida de honra. Ele vai se redimir servindo-o até seus serviços não serem mais requisitados. O servo é um aliado veterano de um tipo a sua escolha. Sol. Role uma arma mágica maior. Se não gostar do resultado, você pode rolar uma segunda vez. Se você for um devoto da Deusa das Trevas ou um morto-vivo, em vez disso sofre –1 em todos os testes de resistência permanentemente. Tentáculo. A visão enlouquecedora dos tentáculos impõe –2 em um atributo permanentemente. Para definir o atributo, role 1d6, sendo “1” Força, “2” Destreza e assim por diante. Tolo. Você perde 10.000 XP e saca outra carta. Esse efeito pode fazer com que você perca um nível, mas não pode reduzi-lo a menos de 0 XP. Trono. Você recebe +2 em Diplomacia permanentemente e se torna o senhor por direito de um pequeno feudo. O mestre decide onde o feudo fica. Em termos de jogo, você recebe os benefícios do poder Título, do cavaleiro."
+    },
+    {
+     "name": "Presas",
+     "roll": "57-60",
+     "summary": "Perca dinheiro e itens mundanos",
+     "text": ""
+    },
+    {
+     "name": "Servo",
+     "roll": "61-65",
+     "summary": "Receba os serviços de um espírito",
+     "text": ""
+    },
+    {
+     "name": "Sol",
+     "roll": "66-70",
+     "summary": "Receba uma arma mágica maior",
+     "text": ""
+    },
+    {
+     "name": "Tentáculo",
+     "roll": "71-75",
+     "summary": "–2 em um atributo aleatório",
+     "text": ""
+    },
+    {
+     "name": "Tolo",
+     "roll": "76-80",
+     "summary": "Perca 10.000 XP e saque outra carta",
+     "text": ""
+    },
+    {
+     "name": "Trono",
+     "roll": "81-85",
+     "summary": "+2 em Diplomacia e um feudo",
+     "text": ""
+    },
+    {
+     "name": "Vizir",
+     "roll": "86-90",
+     "summary": "Receba a resposta para uma pergunta",
+     "text": "Você recebe a resposta para uma pergunta qualquer. A resposta pode ser tão precisa ou vaga quanto o mestre decidir, mas nunca será mentirosa. Este benefício deve ser usado em até um ano."
+    },
+    {
+     "name": "Nada",
+     "roll": "91-94",
+     "summary": "Escape de um perigo qualquer",
+     "text": "Uma das forças primordiais da Criação surge para protegê-lo de qualquer ameaça. Em termos de jogo, quando você usa este benefício, qualquer ataque ou efeito contra você é anulado e você se torna imune a tudo por uma rodada. Este benefício deve ser usado em no máximo um ano."
+    },
+    {
+     "name": "Vazio",
+     "roll": "95-98",
+     "summary": "Sua alma deixa seu corpo",
+     "text": "Sua alma é transportada para o vazio entre os Planos. Seu corpo continua funcionando, mas em coma. Cabe aos outros personagens descobrir como salvá-lo! Converse com o mestre para construir um novo personagem ou jogar com um NPC aliado do grupo enquanto seu personagem original estiver preso."
+    },
+    {
+     "name": "Curinga",
+     "roll": "99-100",
+     "summary": "Ganhe 10.000 XP ou saque mais duas cartas",
+     "text": "Você escolhe entre ganhar poder pessoal (em termos de jogo, 10.000 XP) ou sacar mais duas cartas. A escolha é óbvia. Ou não?"
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:o-olho-do-deus-da-traicao",
+  "kind": "equipment",
+  "name": "O Olho do Deus da Traição",
+  "summary": "O cajado permite ao personagem lançar qualquer magia que conheça ou tenha ouvido falar — seja arcana ou divina — como se fosse uma habilidade mágica, sem precisar gastar pontos de mana.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Artefatos",
+   "page": 334
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "O cajado permite ao personagem lançar qualquer magia que conheça ou tenha ouvido falar — seja arcana ou divina — como se fosse uma habilidade mágica, sem precisar gastar pontos de mana. O personagem ainda pode usar aprimoramentos, mas precisa pagar por eles. Lançar uma magia exige um teste de Misticismo (CD 20 + o custo em PM da magia, incluindo aprimoramentos). Se o teste falhar, a magia não funciona ou provoca algum efeito imprevisível (alvo trocado, efeito invertido, Teletransporte para um local diferente...) ou assim parece. Reconhecê-lo e descobrir como usá-lo exige um teste de Conhecimento (CD 30).",
+   "category": "artefato",
+   "tiers": [],
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 334"
+   }
+  }
+ },
+ {
+  "id": "equipment:os-rubis-da-virtude",
+  "kind": "equipment",
+  "name": "Os Rubis da Virtude",
+  "summary": "Cada Rubi fornece a seu portador um nível de experiência em uma classe que ele já possua.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 8: Artefatos",
+   "page": 335
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Cada Rubi fornece a seu portador um nível de experiência em uma classe que ele já possua. Para isso, a gema deve ser incrustada no corpo da criatura, o que exige um teste de Cura (CD 25). Por sua invulnerabilidade, cada Rubi fornece resistência a dano 2 e +1 em testes de resistência, cumulativos com efeitos já existentes — incluindo outros rubis. Um conjurador que lance uma magia de adivinhação contra o portador de um destes artefatos deve passar em um teste de Misticismo (CD 25 + a quantidade de rubis) ou a magia não terá efeito.",
+   "category": "artefato",
+   "tiers": []
+  }
+ }
+]

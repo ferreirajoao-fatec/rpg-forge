@@ -1,0 +1,289 @@
+// RPG Forge — modelo de dados
+// Conteúdo de regras é armazenado de forma genérica (ContentEntry + JSON
+// validado pelo motor), permitindo novos sistemas sem migrações por sistema.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ---------------------------------------------------------------- Contas
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  displayName  String
+  passwordHash String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  sessions        Session[]
+  characters      Character[]
+  campaignsOwned  Campaign[]        @relation("CampaignOwner")
+  memberships     CampaignMember[]
+  diceRolls       DiceRoll[]
+  auditLogs       AuditLog[]
+  gmApprovals     GmApproval[]      @relation("ApprovedBy")
+  approvalRequests GmApproval[]     @relation("RequestedBy")
+}
+
+/// Sessões no servidor; apenas o hash SHA-256 do token é armazenado.
+model Session {
+  id        String   @id @default(cuid())
+  tokenHash String   @unique
+  userId    String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+// ---------------------------------------------------------------- Regras e fontes
+
+enum DataAvailability {
+  licensed
+  import_required
+}
+
+/// Um sistema + edição (ex.: dnd5e-2014). O id coincide com o id do motor.
+model Ruleset {
+  id               String           @id
+  name             String
+  system           String
+  edition          String
+  publisher        String
+  dataAvailability DataAvailability
+  versions         RulesetVersion[]
+  sourcebooks      Sourcebook[]
+  characters       Character[]
+  campaigns        Campaign[]
+}
+
+/// Versão publicada do catálogo (pacote de conteúdo). Erratas geram nova versão;
+/// personagens existentes só migram de forma explícita.
+model RulesetVersion {
+  id          String         @id @default(cuid())
+  rulesetId   String
+  packVersion String
+  importedAt  DateTime       @default(now())
+  importedBy  String?
+  changelog   String         @default("")
+  isCurrent   Boolean        @default(false)
+  ruleset     Ruleset        @relation(fields: [rulesetId], references: [id])
+  entries     ContentEntry[]
+  characters  Character[]
+
+  @@unique([rulesetId, packVersion])
+}
+
+enum ContentOrigin {
+  official
+  authorized
+  homebrew
+}
+
+model Sourcebook {
+  id          String  @id
+  rulesetId   String
+  title       String
+  publisher   String
+  version     String
+  license     String
+  url         String?
+  attribution String?
+  ruleset     Ruleset @relation(fields: [rulesetId], references: [id])
+  entries     ContentEntry[]
+}
+
+/// Classe, espécie, antecedente, talento, poder, magia, item... (campo kind).
+model ContentEntry {
+  pk               String         @id @default(cuid())
+  id               String // id lógico, ex.: "class:wizard"
+  rulesetVersionId String
+  kind             String
+  name             String
+  summary          String         @default("")
+  origin           ContentOrigin
+  sourcebookId     String
+  section          String?
+  page             Int?
+  license          String
+  prerequisites    Json?
+  roles            String[]
+  data             Json
+  /// Homebrew criado por um mestre para uma campanha específica.
+  campaignId       String?
+  rulesetVersion   RulesetVersion @relation(fields: [rulesetVersionId], references: [id], onDelete: Cascade)
+  sourcebook       Sourcebook     @relation(fields: [sourcebookId], references: [id])
+  campaign         Campaign?      @relation(fields: [campaignId], references: [id])
+
+  @@unique([rulesetVersionId, id])
+  @@index([rulesetVersionId, kind])
+}
+
+// ---------------------------------------------------------------- Personagens
+
+enum CharacterStatus {
+  draft
+  active
+  retired
+}
+
+model Character {
+  id               String          @id @default(cuid())
+  ownerId          String
+  rulesetId        String
+  /// Versão do catálogo usada pelo personagem (fixa até migração explícita).
+  rulesetVersionId String?
+  campaignId       String?
+  status           CharacterStatus @default(draft)
+  name             String          @default("")
+  level            Int             @default(1)
+  /// CharacterData validado por zod (src/rules/core/character.ts).
+  data             Json
+  /// Último relatório de validação calculado pelo motor.
+  validation       Json?
+  /// Controle de concorrência otimista para o salvamento automático.
+  revision         Int             @default(0)
+  createdAt        DateTime        @default(now())
+  updatedAt        DateTime        @updatedAt
+
+  owner          User               @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  ruleset        Ruleset            @relation(fields: [rulesetId], references: [id])
+  rulesetVersion RulesetVersion?    @relation(fields: [rulesetVersionId], references: [id])
+  campaign       Campaign?          @relation(fields: [campaignId], references: [id], onDelete: SetNull)
+  versions       CharacterVersion[]
+  gmApprovals    GmApproval[]
+  diceRolls      DiceRoll[]
+
+  @@index([ownerId])
+  @@index([campaignId])
+}
+
+/// Snapshot imutável. Criado em marcos (criação, subida de nível, edição
+/// manual relevante, restauração). Restaurar cria uma nova versão.
+model CharacterVersion {
+  id          String    @id @default(cuid())
+  characterId String
+  number      Int
+  reason      String // "created" | "level_up" | "edit" | "restore" | "migration"
+  summary     String    @default("")
+  level       Int
+  data        Json
+  createdAt   DateTime  @default(now())
+  createdById String
+  character   Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+
+  @@unique([characterId, number])
+}
+
+// ---------------------------------------------------------------- Campanhas
+
+enum CampaignRole {
+  gm
+  player
+}
+
+model Campaign {
+  id            String           @id @default(cuid())
+  name          String
+  description   String           @default("")
+  ownerId       String
+  rulesetId     String
+  startingLevel Int              @default(1)
+  /// Regras opcionais habilitadas e fontes permitidas.
+  settings      Json             @default("{}")
+  inviteCode    String           @unique
+  createdAt     DateTime         @default(now())
+  owner         User             @relation("CampaignOwner", fields: [ownerId], references: [id])
+  ruleset       Ruleset          @relation(fields: [rulesetId], references: [id])
+  members       CampaignMember[]
+  characters    Character[]
+  homebrew      ContentEntry[]
+  events        CampaignEvent[]
+  diceRolls     DiceRoll[]
+}
+
+model CampaignMember {
+  campaignId String
+  userId     String
+  role       CampaignRole
+  joinedAt   DateTime     @default(now())
+  campaign   Campaign     @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  user       User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([campaignId, userId])
+}
+
+model CampaignEvent {
+  id         String   @id @default(cuid())
+  campaignId String
+  kind       String // "note" | "xp" | "reward" | "milestone"
+  payload    Json
+  createdAt  DateTime @default(now())
+  campaign   Campaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+}
+
+enum ApprovalStatus {
+  pending
+  approved
+  rejected
+}
+
+/// Aprovação do mestre para escolhas excepcionais ou homebrew.
+model GmApproval {
+  id            String         @id @default(cuid())
+  characterId   String
+  slot          String
+  contentId     String
+  reason        String         @default("")
+  status        ApprovalStatus @default(pending)
+  requestedById String
+  approvedById  String?
+  decidedAt     DateTime?
+  createdAt     DateTime       @default(now())
+  character     Character      @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  requestedBy   User           @relation("RequestedBy", fields: [requestedById], references: [id])
+  approvedBy    User?          @relation("ApprovedBy", fields: [approvedById], references: [id])
+}
+
+// ---------------------------------------------------------------- Dados e auditoria
+
+model DiceRoll {
+  id          String     @id @default(cuid())
+  userId      String
+  characterId String?
+  campaignId  String?
+  label       String     @default("")
+  formula     String
+  total       Int
+  /// Detalhamento por termo (RollResult.terms).
+  detail      Json
+  breakdown   String
+  shared      Boolean    @default(false)
+  createdAt   DateTime   @default(now())
+  user        User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  character   Character? @relation(fields: [characterId], references: [id], onDelete: SetNull)
+  campaign    Campaign?  @relation(fields: [campaignId], references: [id], onDelete: SetNull)
+
+  @@index([userId, createdAt])
+  @@index([campaignId, createdAt])
+}
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  userId     String?
+  action     String
+  entityType String
+  entityId   String
+  diff       Json?
+  createdAt  DateTime @default(now())
+  user       User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+
+  @@index([entityType, entityId])
+}

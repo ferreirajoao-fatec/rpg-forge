@@ -1,0 +1,625 @@
+[
+ {
+  "id": "deity:deus-aberrante",
+  "kind": "deity",
+  "name": "Deus Aberrante",
+  "summary": "Devotos: Quaisquer. A tempestade aberrante aceita tudo e todos. Para ser um devoto com poderes, você deve ser de uma raça ou classe listada aqui. Humanos e clérigos podem ser devotos de qualquer deus.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 96
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "Quaisquer. A tempestade aberrante aceita tudo e todos. Para ser um devoto com poderes, você deve ser de uma raça ou classe listada aqui. Humanos e clérigos podem ser devotos de qualquer deus.",
+   "channelEnergy": "Negativa. O tipo de energia (positiva ou negativa) que a divindade canaliza. Isso define o tipo de dano (luz para energia positiva, trevas para energia negativa) e outras características de certas habilidades e magias. Alguns deuses permitem que o devoto escolha seu tipo de energia. Uma vez feita, essa escolha não pode ser mudada",
+   "favoredWeapon": "Corrente de espinhos. A arma típica de devotos da divindade, importante para certas habilidades e magias",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 96"
+   },
+   "obligations": "Quase todos os cultistas do Deus Aberrante são maníacos insanos, compelidos a praticar os atos mais abomináveis. No entanto, talvez devido à própria natureza alienígena e incompreensível deste deus, uns poucos devotos conseguem se resguardar. Conseguem preservar sua preciosa humanidade, abstendo-se de cometer crimes ou profanações. Ainda assim, o devoto do Deus Aberrante deve pagar um preço. No início de qualquer cena de ação, role 1d6. Com um resultado ímpar, você fica fascinado na primeira rodada, perdido em devaneios sobre a futilidade da vida. Se você for devoto do deus, deve seguir essas regras. Se violar uma delas, perde todos os seus pontos de mana e só pode recuperá-los a partir do próximo dia. Se violar uma dessas regras pela segunda vez na mesma aventura, perde todos os seus PM e só pode recuperá-los se fizer uma penitência (veja a perícia Religião).",
+   "grantedPowers": [
+    "power:afinidade-aberrante",
+    "power:percepcao-temporal",
+    "power:rejeicao-divina"
+   ]
+  }
+ },
+ {
+  "id": "deity:deusa-da-natureza",
+  "kind": "deity",
+  "name": "Deusa da Natureza",
+  "summary": "Devotos: meias-dríades, elfos, sílfides, bárbaros, caçadores, druidas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 97
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "meias-dríades, elfos, sílfides, bárbaros, caçadores, druidas.",
+   "channelEnergy": "Positiva",
+   "favoredWeapon": "Bordão",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 97"
+   },
+   "obligations": "Devotos da Deusa da Natureza não podem usar armaduras e escudos feitos de metal. Assim, você só pode usar armadura acolchoada, armadura de couro, gibão de peles e escudo leve. Devotos da Deusa da Natureza não podem descansar em nenhuma comunidade maior que uma aldeia (não perdem seus poderes, mas também não recuperam pontos de vida ou mana). Por isso, sempre preferem o relento a um quarto de estalagem.",
+   "grantedPowers": [
+    "power:dedo-verde",
+    "power:descanso-natural",
+    "power:voz-da-natureza"
+   ]
+  }
+ },
+ {
+  "id": "deity:deus-da-guerra",
+  "kind": "deity",
+  "name": "Deus da Guerra",
+  "summary": "Devotos: Anões, minotauros, bárbaros, cavaleiros, guerreiros, lutadores.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 98
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "Anões, minotauros, bárbaros, cavaleiros, guerreiros, lutadores.",
+   "channelEnergy": "Negativa",
+   "favoredWeapon": "Martelo de guerra",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 98"
+   },
+   "obligations": "Um devoto do Deus da Guerra é proibido de ser derrotado em qualquer tipo de combate ou disputa (como um teste oposto para ver quem é mais forte). Caso seu grupo seja derrotado, isso também constitui uma violação das obrigações.",
+   "grantedPowers": [
+    "power:conjurar-arma",
+    "power:coragem-total",
+    "power:sangue-de-ferro"
+   ]
+  }
+ },
+ {
+  "id": "deity:deus-do-sol",
+  "kind": "deity",
+  "name": "Deus do Sol",
+  "summary": "Devotos: descendentes celestiais, meios-gênios, arcanistas, bárbaros, caçadores, cavaleiros, guerreiros, nobres, paladinos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 98
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "descendentes celestiais, meios-gênios, arcanistas, bárbaros, caçadores, cavaleiros, guerreiros, nobres, paladinos.",
+   "channelEnergy": "Positiva",
+   "favoredWeapon": "Cimitarra",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 98"
+   },
+   "obligations": "O devoto do Deus do Sol deve manter o rosto sempre coberto (com uma máscara, capuz ou trapos). Sua face pode ser revelada apenas ao sumo-sacerdote ou em seu funeral. Devotos do Sol também devem doar para a igreja do Deus do Sol 20% de qualquer tesouro obtido. Essa doação deve ser feita em ouro, seja na forma de moedas ou itens.",
+   "grantedPowers": [
+    "power:espada-solar",
+    "power:habitante-do-deserto",
+    "power:inimigo-das-trevas"
+   ]
+  }
+ },
+ {
+  "id": "deity:deus-da-trapaca",
+  "kind": "deity",
+  "name": "Deus da Trapaça",
+  "summary": "Devotos: halflings, goblins, sílfides, bardos, bucaneiros, ladinos, artífices, nobres.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 98
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "halflings, goblins, sílfides, bardos, bucaneiros, ladinos, artífices, nobres.",
+   "channelEnergy": "Qualquer",
+   "favoredWeapon": "Adaga",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 98"
+   },
+   "obligations": "Um devoto do Deus da Trapaça não recusa participação em um golpe, trapaça ou artimanha (o que muitas vezes inclui missões para roubar... hã, resgatar tesouros), exceto quando prejudica seus próprios companheiros. O devoto também deve fazer um ato furtivo, ousado ou proibido por dia (ou por sessão de jogo, o que demorar mais), como oferenda ao Deus da Trapaça. Roubar uma bolsa, enganar um miliciano, invadir o quarto de um nobre... Em termos de jogo, uma ação exigindo um teste de Enganação ou Ladinagem com CD mínima 15 + metade do seu nível.",
+   "grantedPowers": [
+    "power:farsa-do-fingidor",
+    "power:forma-de-macaco",
+    "power:golpista-divino"
+   ]
+  }
+ },
+ {
+  "id": "deity:deus-dos-dragoes",
+  "kind": "deity",
+  "name": "Deus dos Dragões",
+  "summary": "Devotos: Elfos, medusas, descendentes abissais, arcanistas, cavaleiros, guerreiros, lutadores, nobres.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 99
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "Elfos, medusas, descendentes abissais, arcanistas, cavaleiros, guerreiros, lutadores, nobres.",
+   "channelEnergy": "Negativa",
+   "favoredWeapon": "Lança",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 99"
+   },
+   "obligations": "Para subir de nível, além de acumular XP suficiente, o devoto do Deus dos Dragões deve realizar uma oferenda em tesouro. O valor é igual à metade da diferença do dinheiro inicial do nível que vai alcançar para o nível atual (por exemplo, 200 moedas para subir para o 4° nível). Sabe-se, também, de devotos malignos que sacrificam vítimas ao Deus dos Dragões (não permitido para personagens jogadores).",
+   "grantedPowers": [
+    "power:aura-de-medo",
+    "power:escamas-draconicas",
+    "power:servos-do-dragao"
+   ]
+  }
+ },
+ {
+  "id": "deity:deus-da-justica",
+  "kind": "deity",
+  "name": "Deus da Justiça",
+  "summary": "Devotos: descendentes celestiais, anões, cavaleiros, guerreiros, nobres, paladinos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 99
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "descendentes celestiais, anões, cavaleiros, guerreiros, nobres, paladinos.",
+   "channelEnergy": "Positiva",
+   "favoredWeapon": "Espada longa",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 99"
+   },
+   "obligations": "Devotos do Deus da Justiça não podem recusar pedidos de ajuda feitos por pessoas inocentes. Também devem cumprir as ordens de superiores na hierarquia da igreja (qualquer devoto do Deus da Justiça de nível maior) e só podem usar itens mágicos criados por devotos do mesmo deus.",
+   "grantedPowers": [
+    "power:coragem-total",
+    "power:dom-da-verdade",
+    "power:espada-justiceira"
+   ]
+  }
+ },
+ {
+  "id": "deity:deusa-da-vida",
+  "kind": "deity",
+  "name": "Deusa da Vida",
+  "summary": "Devotos: meias-dríades, meios-gênios, nobres, paladinos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 99
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "meias-dríades, meios-gênios, nobres, paladinos.",
+   "channelEnergy": "Positiva",
+   "favoredWeapon": "Não há. Servos desta deusa não podem lançar a magia Arma Espiritual e similares",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 99"
+   },
+   "obligations": "Devotos da Deusa da Vida não podem causar dano letal a criaturas vivas (habilidades que aumentem o dano letal causado por seus aliados também são proibidas). Podem causar dano não letal e prejudicar seus inimigos (em termos de jogo, impondo condições), desde que não causem dano letal. Para um devoto da Deusa da Vida, é preferível perder a própria vida a tirá-la de outros. Apenas mulheres podem ser devotas da Deusa da Vida. Uma clériga precisa dar à luz pelo menos uma vez antes de receber seus poderes divinos. A fecundação é um mistério bem guardado pelas sacerdotisas; conta-se que a própria deusa vem semear suas discípulas. Paladinos da Deusa da Vida podem ser homens (são os únicos devotos masculinos permitidos) ou mulheres.",
+   "grantedPowers": [
+    "power:ataque-piedoso",
+    "power:aura-restauradora",
+    "power:cura-gentil",
+    "power:curandeira-perfeita"
+   ]
+  }
+ },
+ {
+  "id": "deity:deus-da-honra",
+  "kind": "deity",
+  "name": "Deus da Honra",
+  "summary": "Devotos: Anões, cavaleiros, guerreiros, nobres, paladinos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 100
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "Anões, cavaleiros, guerreiros, nobres, paladinos.",
+   "channelEnergy": "Qualquer",
+   "favoredWeapon": "Katana",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 100"
+   },
+   "obligations": "Antigas proibições quanto a devotos estrangeiros ou do gênero feminino não mais se aplicam. No entanto, devotos do Deus da Honra ainda devem demonstrar comportamento honrado, jamais recorrendo a mentiras e subterfúgios. Em termos de jogo, são proibidos de tentar qualquer ação que exigiria um teste de Enganação, Furtividade ou Ladinagem.",
+   "grantedPowers": [
+    "power:coragem-total",
+    "power:kiai-divino",
+    "power:mente-vazia"
+   ]
+  }
+ },
+ {
+  "id": "deity:deusa-da-paz",
+  "kind": "deity",
+  "name": "Deusa da Paz",
+  "summary": "Devotos: descendentes celestiais, elfos, halflings, meios-gênios, bardos, nobres, paladinos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 101
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "descendentes celestiais, elfos, halflings, meios-gênios, bardos, nobres, paladinos.",
+   "channelEnergy": "Positiva",
+   "favoredWeapon": "Não há. Devotos desta deusa não podem lançar a magia Arma Espiritual e similares",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 101"
+   },
+   "obligations": "Devotos da Deusa da Paz não podem causar dano e impor condições a criaturas, exceto fascinado e pasmo (habilidades que aumentem o dano causado por seus aliados também são proibidas). Em combate, só podem recorrer a ações como proteger ou curar — ou então fugir, render-se ou aceitar a morte. Um devoto da Deusa da Paz jamais vai causar violência, nem mesmo para se salvar.",
+   "grantedPowers": [
+    "power:aura-de-paz",
+    "power:palavras-de-bondade",
+    "power:talento-artistico"
+   ]
+  }
+ },
+ {
+  "id": "deity:deus-dos-monstros",
+  "kind": "deity",
+  "name": "Deus dos Monstros",
+  "summary": "Devotos: Goblins, medusas, minotauros, descendentes abissais, trogloditas, bárbaros, caçadores, druidas, lutadores.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 101
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "Goblins, medusas, minotauros, descendentes abissais, trogloditas, bárbaros, caçadores, druidas, lutadores.",
+   "channelEnergy": "Negativa",
+   "favoredWeapon": "Maça",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 101"
+   },
+   "obligations": "Devotos do Deus dos Monstros devem entregar-se à ferocidade, descontrole e impaciência. Você é proibido de tentar ações que exigem calma ou foco, como preparar uma ação, escolher 10 ou 20 em um teste ou lançar uma magia sustentada. O devoto também é obrigado a rejeitar os modos civilizados. Você é proibido de tentar qualquer teste de perícia baseada em Inteligência ou Carisma (exceto Intimidação).",
+   "grantedPowers": [
+    "power:olhar-amedrontador",
+    "power:urro-divino",
+    "power:voz-dos-monstros"
+   ]
+  }
+ },
+ {
+  "id": "deity:deus-do-caos",
+  "kind": "deity",
+  "name": "Deus do Caos",
+  "summary": "Devotos: Goblins, meios-gênios, sílfides, arcanistas, bárbaros, bardos, bucaneiros, artífices, ladinos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 102
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "Goblins, meios-gênios, sílfides, arcanistas, bárbaros, bardos, bucaneiros, artífices, ladinos.",
+   "channelEnergy": "Qualquer",
+   "favoredWeapon": "Nenhuma e todas! Ao usar um efeito que dependa de arma preferida, qualquer arma (ou outro objeto!) pode aparecer, de acordo com o mestre",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 102"
+   },
+   "obligations": "Por serem incapazes de seguir regras, estes devotos não têm “obrigações” verdadeiras (portanto, nunca perdem seus poderes concedidos). No entanto, sofrem certas restrições que não podem escolher ignorar. Devotos do Deus do Caos são loucos (ou agem como se fossem), não conseguindo convencer ninguém de coisa alguma. Você sofre –5 em testes de perícias baseadas em Carisma. Além disso, no início de cada cena de ação, role 1d6. Com um resultado 1, você fica confuso até o fim da cena.",
+   "grantedPowers": [
+    "power:poder-oculto",
+    "power:sorte-dos-loucos",
+    "power:transmissao-da-loucura"
+   ]
+  }
+ },
+ {
+  "id": "deity:deus-dos-mares",
+  "kind": "deity",
+  "name": "Deus dos Mares",
+  "summary": "Devotos: meias-dríades, halflings, minotauros, sereias/ tritões, bárbaros, bucaneiros, caçadores, druidas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 102
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "meias-dríades, halflings, minotauros, sereias/ tritões, bárbaros, bucaneiros, caçadores, druidas.",
+   "channelEnergy": "Qualquer",
+   "favoredWeapon": "Tridente",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 102"
+   },
+   "obligations": "As únicas armas permitidas para devotos do Deus dos Mares são a azagaia, a lança, o tridente e a rede. Podem usar apenas armaduras de couro. O devoto também não pode se manter afastado do oceano por mais de uma semana.",
+   "grantedPowers": [
+    "power:anfibio",
+    "power:arsenal-das-profundezas",
+    "power:mestre-dos-mares"
+   ]
+  }
+ },
+ {
+  "id": "deity:deus-da-traicao",
+  "kind": "deity",
+  "name": "Deus da Traição",
+  "summary": "Devotos: Medusas, arcanistas, bardos, bucaneiros, artífices, ladinos, nobres.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 103
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "Medusas, arcanistas, bardos, bucaneiros, artífices, ladinos, nobres.",
+   "channelEnergy": "Negativa",
+   "favoredWeapon": "Adaga",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 103"
+   },
+   "obligations": "O devoto deve fazer um ato de traição, intriga ou corrupção por dia (ou por sessão de jogo, o que demorar mais) como oferenda ao Deus da Traição. Pouco importa se o alvo é aliado ou inimigo — uns poucos da Traição usam seus métodos torpes para ajudar colegas aventureiros em suas missões, às vezes sem que eles próprios saibam. Sugerir a alguém que foi traído pelo cônjuge, influenciar um miliciano a aceitar suborno, instruir um mercador a roubar nos preços, levar alguém a ser culpado de um crime que não cometeu, forjar uma falsificação que incrimina um inocente, enganar um guerreiro para que mate um oponente rendido e inofensivo... Em termos de jogo, uma ação exigindo um teste de Enganação com CD mínima 15 + metade do seu nível.",
+   "grantedPowers": [
+    "power:astucia-da-serpente",
+    "power:presas-venenosas",
+    "power:sangue-ofidico"
+   ]
+  }
+ },
+ {
+  "id": "deity:deusa-do-conhecimento",
+  "kind": "deity",
+  "name": "Deusa do Conhecimento",
+  "summary": "Devotos: Golens, meios-gnomos, arcanistas, bardos, artífices, nobres, paladinos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 103
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "Golens, meios-gnomos, arcanistas, bardos, artífices, nobres, paladinos.",
+   "channelEnergy": "Qualquer",
+   "favoredWeapon": "Bordão",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 103"
+   },
+   "obligations": "Devotos da Deusa do Conhecimento jamais podem recusar uma missão que envolva a busca por um novo conhecimento ou informação; investigar rumores sobre um livro perdido, procurar uma aldeia lendária, pesquisar os hábitos de uma criatura desconhecida... Além disso, o devoto sempre deve dizer a verdade e nunca pode se recusar a responder uma pergunta direta, pouco importando as consequências. É proibido para ele esconder qualquer conhecimento.",
+   "grantedPowers": [
+    "power:conhecimento-enciclopedico",
+    "power:mente-analitica",
+    "power:voz-da-civilizacao"
+   ]
+  }
+ },
+ {
+  "id": "deity:deusa-das-trevas",
+  "kind": "deity",
+  "name": "Deusa das Trevas",
+  "summary": "Devotos: Anões, medusas, meios-gênios, esqueletos despertos, descendentes abissais, trogloditas, arcanistas, bardos, ladinos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 104
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "Anões, medusas, meios-gênios, esqueletos despertos, descendentes abissais, trogloditas, arcanistas, bardos, ladinos.",
+   "channelEnergy": "Negativa",
+   "favoredWeapon": "Adaga",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 104"
+   },
+   "obligations": "Deusa das Trevas proíbe que seus devotos sejam tocados pelo Deus do Sol, o odiado rival. O devoto deve se cobrir inteiramente durante o dia, sem expor ao sol nenhum pedaço de pele.",
+   "grantedPowers": [
+    "power:caricia-sombria",
+    "power:manto-da-penumbra",
+    "power:visao-nas-trevas"
+   ]
+  }
+ },
+ {
+  "id": "deity:deus-dos-goblinoides",
+  "kind": "deity",
+  "name": "Deus dos Goblinoides",
+  "summary": "Devotos: Qualquer humanoide (mas veja adiante).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 104
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "Qualquer humanoide (mas veja adiante).",
+   "channelEnergy": "Qualquer",
+   "favoredWeapon": "Machado de guerra",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 104"
+   },
+   "obligations": "Não importando sua raça, o devoto do Deus dos Goblinoides deve ser considerado goblinoides — ou seja, aceito como membro do povo goblinoide. Também deve se esforçar para que o modo de vida goblinoides tome o continente. Deve sempre procurar fazer alianças com goblinoides e só lutar contra eles em último caso.",
+   "grantedPowers": [
+    "power:furia-divina",
+    "power:olhar-amedrontador",
+    "power:tropas-goblinoides"
+   ]
+  }
+ },
+ {
+  "id": "deity:deus-da-profecia",
+  "kind": "deity",
+  "name": "Deus da Profecia",
+  "summary": "Devotos: descendentes celestiais, cavaleiros, guerreiros, artífices, lutadores, paladinos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 104
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "descendentes celestiais, cavaleiros, guerreiros, artífices, lutadores, paladinos.",
+   "channelEnergy": "Positiva",
+   "favoredWeapon": "Espada longa",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 104"
+   },
+   "obligations": "Devotos do Deus da Profecia são proibidos de matar seres inteligentes (Int 3 ou mais). Podem atacar e causar dano, mas jamais levar à morte. Por esse motivo, devotos do Deus da Profecia preferem armas e ataques que apenas incapacitam seus oponentes ou causam dano não letal.",
+   "grantedPowers": [
+    "power:ataque-piedoso",
+    "power:dom-da-imortalidade",
+    "power:dom-da-profecia",
+    "power:dom-da-ressurreicao"
+   ]
+  }
+ },
+ {
+  "id": "deity:deusa-da-magia",
+  "kind": "deity",
+  "name": "Deusa da Magia",
+  "summary": "Devotos: Elfos, golens, meios-gênios, sílfides, arcanistas, bardos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 105
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "Elfos, golens, meios-gênios, sílfides, arcanistas, bardos.",
+   "channelEnergy": "Qualquer",
+   "favoredWeapon": "Adaga",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 105"
+   },
+   "obligations": "Ainda que a magia jamais possa ser negada para quem a busca, devotos da Deusa da Magia devem praticar a bondade e a generosidade de sua deusa, jamais recusando um pedido de ajuda. Além disso, devotos da Deusa da Magia são proibidos de matar seres mágicos (elfos, meios-gênios, sílfides e outros a critério do mestre) e conjuradores arcanos.",
+   "grantedPowers": [
+    "power:bencao-do-mana",
+    "power:centelha-magica",
+    "power:escudo-magico",
+    "power:teurgista-mistico"
+   ]
+  }
+ },
+ {
+  "id": "deity:deusa-da-ambicao",
+  "kind": "deity",
+  "name": "Deusa da Ambição",
+  "summary": "Devotos: Aventureiros; membros de todas as classes podem ser devotos da Deusa da Ambição.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Religião",
+   "page": 105
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "devotees": "Aventureiros; membros de todas as classes podem ser devotos da Deusa da Ambição.",
+   "channelEnergy": "Positiva",
+   "favoredWeapon": "Mangual",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 105"
+   },
+   "obligations": "Deusa da Ambição odeia o conformismo. Seus devotos são proibidos de fixar moradia em um mesmo lugar, não podendo permanecer mais de 2d10+10 dias na mesma cidade (ou vila, aldeia, povoado...) ou 1d4+2 meses no mesmo reino. Devotos da Deusa da Ambição também são proibidos de se casar ou formar qualquer união estável.",
+   "grantedPowers": [
+    "power:armas-da-ambicao",
+    "power:coragem-total",
+    "power:liberdade-divina"
+   ]
+  }
+ }
+]

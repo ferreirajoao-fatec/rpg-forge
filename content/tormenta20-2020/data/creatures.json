@@ -1,0 +1,4789 @@
+[
+ {
+  "id": "creature:aranha-gigante",
+  "kind": "creature",
+  "name": "Aranha Gigante",
+  "summary": "ND 2 · Monstro 7, Grande · Masmorras",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 272
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro 7, Grande. Iniciativa +7, Percepção +3, Defesa 19, Fort +8, Ref +11, Von +3, PV 77, PM 7. Corpo a corpo: Mordida +12 (1d8+5 mais veneno).",
+   "nd": "2",
+   "creatureType": "Monstro",
+   "level": 7,
+   "size": "Grande",
+   "abilities": {
+    "for": 20,
+    "des": 19,
+    "con": 12,
+    "int": 1,
+    "sab": 10,
+    "car": 2
+   },
+   "actions": [
+    {
+     "name": "Teia",
+     "text": "A aranha gigante dispara teia em uma área de 3m de lado em alcance curto. Criaturas na área ficam enredadas (Reflexos CD 17 evita). Uma criatura enredada pode se soltar com uma ação completa e um teste de Força ou Acrobacia (CD 20) ou cortando a teia (cada espaço de 1,5m de teia tem 5 PV e RD 5). Fogo queima a teia em duas rodadas (e liberta as criaturas), mas causa 1d6 pontos de dano de fogo por rodada a todas as criaturas nela. A aranha gigante também pode usar a teia para cobrir uma área quadrada com 6m de lado. Por sua semitransparência, a teia é difícil de ver (Percepção CD 20) até ser tarde demais. Uma criatura que entre na área fica enredada. A aranha pode andar na própria teia sem se enredar. Ela percebe automaticamente (como se tivesse percepção às cegas) qualquer criatura na teia.",
+     "cost": "padrão, 2 PM"
+    },
+    {
+     "name": "Veneno",
+     "text": "Condição fraco (Fort CD 18 anula)."
+    }
+   ],
+   "initiative": 7,
+   "perception": 3,
+   "senses": "visão no escuro",
+   "defense": 19,
+   "fort": 8,
+   "ref": 11,
+   "will": 3,
+   "hp": 77,
+   "speed": "12m (8q), escalar 12m (8q)",
+   "mp": 7,
+   "melee": [
+    "Mordida +12 (1d8+5 mais veneno)"
+   ],
+   "skills": "Furtividade +9",
+   "treasure": "1d4 doses de veneno de aranha gigante (CD 15 para extrair, 75 moedas cada dose)",
+   "group": "Masmorras"
+  }
+ },
+ {
+  "id": "creature:centopeia-dragao",
+  "kind": "creature",
+  "name": "Centopeia-dragão",
+  "summary": "ND 7 · Monstro 13, Enorme · Masmorras",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 272
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro 13, Enorme. Iniciativa +9, Percepção +11, Defesa 26, Fort +19, Ref +13, Von +7, PV 247. Corpo a corpo: Mordida +24 (2d8+12 mais 2d6 de fogo).",
+   "nd": "7",
+   "creatureType": "Monstro",
+   "level": 13,
+   "size": "Enorme",
+   "abilities": {
+    "for": 35,
+    "des": 17,
+    "con": 29,
+    "int": 2,
+    "sab": 12,
+    "car": 10
+   },
+   "actions": [
+    {
+     "name": "Agarrar Aprimorado",
+     "text": "Quando a centopeia-dragão acerta um ataque de mordida, pode usar a manobra agarrar (bônus +29).",
+     "cost": "Livre"
+    },
+    {
+     "name": "Aura de Calor",
+     "text": "Quando enfurecida, esta criatura emana um calor intenso. No início de cada turno da centopeia-dragão, todas as criaturas em alcance curto sofrem 4d6+9 pontos de dano de fogo."
+    },
+    {
+     "name": "Engolir",
+     "text": "Se a centopeia-dragão começar seu turno agarrando uma criatura Média ou menor, poderá fazer um teste de agarrar contra ela. Se vencer, engole a criatura. Uma criatura engolida continua agarrada e sofre 2d6+12 pontos de dano de impacto, mais 4d6+9 pontos de dano de fogo, no início de cada turno da centopeia-dragão. Uma criatura engolida pode escapar causando 20 pontos de dano ao estômago da centopeia-dragão (Defesa 10). Isso faz com que a criatura seja regurgitada e fique caída na frente da centopeia-dragão.",
+     "cost": "Padrão"
+    }
+   ],
+   "initiative": 9,
+   "perception": 11,
+   "senses": "visão no escuro",
+   "defense": 26,
+   "fort": 19,
+   "ref": 13,
+   "will": 7,
+   "hp": 247,
+   "speed": "15m (10q), escavar 6m (4q)",
+   "melee": [
+    "Mordida +24 (2d8+12 mais 2d6 de fogo)"
+   ],
+   "treasure": "2d4 doses de essência abissal (CD para extrair 23)",
+   "group": "Masmorras"
+  }
+ },
+ {
+  "id": "creature:gargula",
+  "kind": "creature",
+  "name": "Gárgula",
+  "summary": "ND 2 · Construto 5, Médio · Masmorras",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 272
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Construto 5, Médio. Iniciativa +4, Percepção +4, Defesa 19, Fort +8, Ref +4, Von +2, PV 45. Corpo a corpo: 2 garras +12 (1d6+6).",
+   "nd": "2",
+   "creatureType": "Construto",
+   "level": 5,
+   "size": "Médio",
+   "abilities": {
+    "for": 22,
+    "des": 14,
+    "con": 19,
+    "int": 6,
+    "sab": 11,
+    "car": 7
+   },
+   "actions": [
+    {
+     "name": "Imobilidade",
+     "text": "Uma gárgula pode permanecer completamente imóvel. Se ela estiver assim, um personagem deve passar num teste de Percepção (CD 35) para perceber que ela é uma criatura e não uma estátua."
+    }
+   ],
+   "initiative": 4,
+   "perception": 4,
+   "senses": "visão no escuro",
+   "defense": 19,
+   "fort": 8,
+   "ref": 4,
+   "will": 2,
+   "defenses": "resistência a dano 5",
+   "hp": 45,
+   "speed": "12m (8q), voo 18m (12q)",
+   "melee": [
+    "2 garras +12 (1d6+6)"
+   ],
+   "treasure": "Padrão",
+   "group": "Masmorras"
+  }
+ },
+ {
+  "id": "creature:gosma-acida",
+  "kind": "creature",
+  "name": "Gosma Ácida",
+  "summary": "ND 1/4 · Monstro 1, Pequeno · Masmorras",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 272
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro 1, Pequeno. Iniciativa +2, Percepção +0, Defesa 13, Fort +2, Ref +2, Von –5, PV 10. Corpo a corpo: Pancada +4 (1d4 mais 1d4 ácido).",
+   "nd": "1/4",
+   "creatureType": "Monstro",
+   "level": 1,
+   "size": "Pequeno",
+   "abilities": {
+    "for": 10,
+    "des": 10,
+    "con": 10,
+    "int": null,
+    "sab": 1,
+    "car": 1
+   },
+   "initiative": 2,
+   "perception": 0,
+   "senses": "percepção às cegas",
+   "defense": 13,
+   "fort": 2,
+   "ref": 2,
+   "will": -5,
+   "defenses": "imunidade a ácido",
+   "hp": 10,
+   "speed": "9m (6q)",
+   "melee": [
+    "Pancada +4 (1d4 mais 1d4 ácido)"
+   ],
+   "treasure": "Nenhum",
+   "group": "Masmorras",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 272"
+   }
+  }
+ },
+ {
+  "id": "creature:golem-de-ferro",
+  "kind": "creature",
+  "name": "Golem de Ferro",
+  "summary": "ND 10 · Construto 20, Grande · Masmorras",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 273
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Construto 20, Grande. Iniciativa +9, Percepção +10, Defesa 34, Fort +26, Ref +9, Von +10, PV 300, PM 20. Corpo a corpo: 2 pancadas +30 (2d10+14).",
+   "nd": "10",
+   "creatureType": "Construto",
+   "level": 20,
+   "size": "Grande",
+   "abilities": {
+    "for": 38,
+    "des": 9,
+    "con": 30,
+    "int": null,
+    "sab": 11,
+    "car": 1
+   },
+   "actions": [
+    {
+     "name": "Imunidade a Magia",
+     "text": "O golem de ferro é imune a magias, com as seguintes exceções. Magias de eletricidade deixam o golem de ferro lento por 1d6 rodadas. Magias de fogo removem a condição lento e curam um ponto de vida para cada três pontos de dano que causariam."
+    },
+    {
+     "name": "Sopro",
+     "text": "O golem de ferro expele uma nuvem de gás venenoso que preenche um cubo de 3m de lado. Criaturas dentro da área sofrem 6d12 pontos de dano de veneno e ficam enjoadas (Fortitude CD 30 reduz o dano à metade e evita a condição enjoado).",
+     "cost": "Movimento, 6 PM"
+    }
+   ],
+   "initiative": 9,
+   "perception": 10,
+   "senses": "visão no escuro",
+   "defense": 34,
+   "fort": 26,
+   "ref": 9,
+   "will": 10,
+   "defenses": "resistência a dano 10",
+   "hp": 300,
+   "speed": "9m (6q)",
+   "mp": 20,
+   "melee": [
+    "2 pancadas +30 (2d10+14)"
+   ],
+   "treasure": "Nenhum",
+   "group": "Masmorras"
+  }
+ },
+ {
+  "id": "creature:guerreiro-de-chifres",
+  "kind": "creature",
+  "name": "Guerreiro de Chifres",
+  "summary": "ND 3 · Espírito 9, Médio · Masmorras",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 273
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Espírito 9, Médio. Iniciativa +11, Percepção +4, Defesa 21, Fort +12, Ref +11, Von +8, PV 72. Corpo a corpo: Machado de guerra +15 (1d12+11, x3).",
+   "nd": "3",
+   "creatureType": "Espírito",
+   "level": 9,
+   "size": "Médio",
+   "abilities": {
+    "for": 20,
+    "des": 16,
+    "con": 19,
+    "int": 6,
+    "sab": 11,
+    "car": 8
+   },
+   "actions": [
+    {
+     "name": "Marrada",
+     "text": "O guerreiro de chifres faz uma investida e ataca com seu machado de guerra e seus chifres (ataque +13, dano 2d6+10 impacto). Os dois ataques recebem o bônus de +2 da investida, mas devem ser feitos contra o mesmo alvo.",
+     "cost": "Completa"
+    }
+   ],
+   "initiative": 11,
+   "perception": 4,
+   "senses": "faro, visão no escuro",
+   "defense": 21,
+   "fort": 12,
+   "ref": 11,
+   "will": 8,
+   "defenses": "resistência a dano 5, resistência a fogo e frio 10, imunidade a ácido e venenos",
+   "hp": 72,
+   "speed": "9m (6q)",
+   "melee": [
+    "Machado de guerra +15 (1d12+11, x3)"
+   ],
+   "skills": "Atletismo +13, Intimidação +7",
+   "equipment": "Couraça, machado de guerra cruel",
+   "treasure": "Padrão",
+   "group": "Masmorras"
+  }
+ },
+ {
+  "id": "creature:manticora",
+  "kind": "creature",
+  "name": "Mantícora",
+  "summary": "ND 6 · Monstro 13, Grande · Masmorras",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 273
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro 13, Grande. Iniciativa +12, Percepção +11, Defesa 22, Fort +17, Ref +12, Von +7, PV 221, PM 13. Corpo a corpo: Mordida +17 (1d10+7) e 2 garras +17 (1d8+7).",
+   "nd": "6",
+   "creatureType": "Monstro",
+   "level": 13,
+   "size": "Grande",
+   "abilities": {
+    "for": 24,
+    "des": 15,
+    "con": 24,
+    "int": 7,
+    "sab": 12,
+    "car": 9
+   },
+   "actions": [
+    {
+     "name": "Espinhos",
+     "text": "A mantícora dispara 1d4 espinhos de sua cauda. Cada espinho atinge uma criatura em alcance médio, causando 1d8+7 pontos de dano de perfuração (Ref CD 19 reduz à metade).",
+     "cost": "Movimento, 3 PM"
+    }
+   ],
+   "initiative": 12,
+   "perception": 11,
+   "senses": "faro, visão no escuro",
+   "defense": 22,
+   "fort": 17,
+   "ref": 12,
+   "will": 7,
+   "hp": 221,
+   "speed": "9m (6q), voo 15m (10q)",
+   "mp": 13,
+   "melee": [
+    "Mordida +17 (1d10+7) e 2 garras +17 (1d8+7)"
+   ],
+   "treasure": "Padrão mais espinhos. Os espinhos da mantícora valem 100 moedas como matéria-prima para fabricar flechas superiores",
+   "group": "Masmorras"
+  }
+ },
+ {
+  "id": "creature:orc",
+  "kind": "creature",
+  "name": "Orc",
+  "summary": "ND 1/3 · Orc 2, Médio · Masmorras",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 274
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Orc 2, Médio. Iniciativa +3, Percepção +0, Defesa 14, Fort +5, Ref +1, Von +0, PV 8. Corpo a corpo: Machado de batalha +7 (1d8+5, x3).",
+   "nd": "1/3",
+   "creatureType": "Orc",
+   "level": 2,
+   "size": "Médio",
+   "abilities": {
+    "for": 18,
+    "des": 11,
+    "con": 14,
+    "int": 8,
+    "sab": 9,
+    "car": 8
+   },
+   "actions": [
+    {
+     "name": "Sensibilidade a Luz",
+     "text": "Quando exposto a luz do sol ou similar, o orc fica ofuscado."
+    }
+   ],
+   "initiative": 3,
+   "perception": 0,
+   "senses": "visão no escuro",
+   "defense": 14,
+   "fort": 5,
+   "ref": 1,
+   "will": 0,
+   "hp": 8,
+   "speed": "9m (6q)",
+   "melee": [
+    "Machado de batalha +7 (1d8+5, x3)"
+   ],
+   "skills": "Intimidação +4, Sobrevivência +0 (+2 em subterrâneos)",
+   "equipment": "Couro batido, escudo leve, machado de batalha",
+   "treasure": "Metade",
+   "group": "Masmorras"
+  }
+ },
+ {
+  "id": "creature:orc-chefe",
+  "kind": "creature",
+  "name": "Orc Chefe",
+  "summary": "ND 2 · Orc 6, Médio · Masmorras",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 274
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Orc 6, Médio. Iniciativa +7, Percepção +6, Defesa 18, Fort +9, Ref +5, Von +4, PV 36, PM 6. Corpo a corpo: Machado de batalha +11 (1d8+7, x3).",
+   "nd": "2",
+   "creatureType": "Orc",
+   "level": 6,
+   "size": "Médio",
+   "abilities": {
+    "for": 22,
+    "des": 14,
+    "con": 18,
+    "int": 8,
+    "sab": 12,
+    "car": 8
+   },
+   "actions": [
+    {
+     "name": "Fúria",
+     "text": "O orc chefe entra em fúria até o fim da cena, ou até passar uma rodada inteira sem atacar ou ser alvo de um efeito (ataque, habilidade, magia...) hostil. Ele recebe +2 nos testes de ataque e rolagens de dano corpo a corpo, mas não pode fazer nenhuma ação que exija calma e concentração.",
+     "cost": "Livre, 2 PM"
+    },
+    {
+     "name": "Sensibilidade a Luz",
+     "text": "Quando exposto a luz do sol ou similar, o orc chefe fica ofuscado."
+    }
+   ],
+   "initiative": 7,
+   "perception": 6,
+   "senses": "visão no escuro",
+   "defense": 18,
+   "fort": 9,
+   "ref": 5,
+   "will": 4,
+   "hp": 36,
+   "speed": "6m (4q)",
+   "mp": 6,
+   "melee": [
+    "Machado de batalha +11 (1d8+7, x3)"
+   ],
+   "skills": "Intimidação +6, Sobrevivência +4 (+6 em subterrâneos)",
+   "equipment": "Cota de malha, escudo pesado, machado de batalha",
+   "treasure": "Padrão",
+   "group": "Masmorras"
+  }
+ },
+ {
+  "id": "creature:rato-gigante",
+  "kind": "creature",
+  "name": "Rato Gigante",
+  "summary": "ND 1/4 · Animal 1, Pequeno · Masmorras",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 274
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Animal 1, Pequeno. Iniciativa +5, Percepção +3, Defesa 13, Fort +3, Ref +5, Von +1, PV 5. Corpo a corpo: Mordida +5 (1d4 mais doença).",
+   "nd": "1/4",
+   "creatureType": "Animal",
+   "level": 1,
+   "size": "Pequeno",
+   "abilities": {
+    "for": 10,
+    "des": 17,
+    "con": 12,
+    "int": 1,
+    "sab": 12,
+    "car": 4
+   },
+   "actions": [
+    {
+     "name": "Doença",
+     "text": "Uma criatura mordida por um rato gigante contrai a doença infecção do esgoto (Fort CD 13 evita). Veja as regras de doenças na página 303."
+    }
+   ],
+   "initiative": 5,
+   "perception": 3,
+   "senses": "faro, visão na penumbra",
+   "defense": 13,
+   "fort": 3,
+   "ref": 5,
+   "will": 1,
+   "hp": 5,
+   "speed": "12m (8q), escalar 6m (4q)",
+   "melee": [
+    "Mordida +5 (1d4 mais doença)"
+   ],
+   "treasure": "Nenhum",
+   "group": "Masmorras"
+  }
+ },
+ {
+  "id": "creature:bandido",
+  "kind": "creature",
+  "name": "Bandido",
+  "summary": "ND 1/4 · Humano 2, Médio · Ermos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 275
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Humano 2, Médio. Iniciativa +5, Percepção +1, Defesa 14, Fort +2, Ref +3, Von +1, PV 6. Corpo a corpo: Clava +5 (1d6+2).",
+   "nd": "1/4",
+   "creatureType": "Humano",
+   "level": 2,
+   "size": "Médio",
+   "abilities": {
+    "for": 15,
+    "des": 14,
+    "con": 13,
+    "int": 9,
+    "sab": 10,
+    "car": 8
+   },
+   "initiative": 5,
+   "perception": 1,
+   "defense": 14,
+   "fort": 2,
+   "ref": 3,
+   "will": 1,
+   "hp": 6,
+   "speed": "9m (6q)",
+   "melee": [
+    "Clava +5 (1d6+2)"
+   ],
+   "skills": "Furtividade +5, Intimidação +2",
+   "equipment": "Armadura de couro, clava",
+   "treasure": "Metade",
+   "group": "Ermos"
+  }
+ },
+ {
+  "id": "creature:chefe-bandido",
+  "kind": "creature",
+  "name": "Chefe Bandido",
+  "summary": "ND 1 · Humano 6, Médio · Ermos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 275
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Humano 6, Médio. Iniciativa +7, Percepção +3, Defesa 15, Fort +5, Ref +5, Von +3, PV 24. Corpo a corpo: Espada curta +8 (1d6+3, 19). À distância: Adaga +5 (1d4+3, 19).",
+   "nd": "1",
+   "creatureType": "Humano",
+   "level": 6,
+   "size": "Médio",
+   "abilities": {
+    "for": 17,
+    "des": 14,
+    "con": 15,
+    "int": 9,
+    "sab": 10,
+    "car": 8
+   },
+   "actions": [
+    {
+     "name": "Ataque Furtivo",
+     "text": "Uma vez por rodada, o chefe bandido causa +2d6 pontos de dano com ataques corpo a corpo, ou à distância em alcance curto, contra alvos desprevenidos ou que esteja flanqueando."
+    }
+   ],
+   "initiative": 7,
+   "perception": 3,
+   "defense": 15,
+   "fort": 5,
+   "ref": 5,
+   "will": 3,
+   "hp": 24,
+   "speed": "9m",
+   "melee": [
+    "Espada curta +8 (1d6+3, 19)"
+   ],
+   "ranged": [
+    "Adaga +5 (1d4+3, 19)"
+   ],
+   "skills": "Furtividade +7, Intimidação +4",
+   "equipment": "Adaga, couro batido, espada curta",
+   "treasure": "Padrão",
+   "group": "Ermos"
+  }
+ },
+ {
+  "id": "creature:basilisco",
+  "kind": "creature",
+  "name": "Basilisco",
+  "summary": "ND 4 · Monstro 9, Médio · Ermos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 275
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro 9, Médio. Iniciativa +6, Percepção +9, Defesa 20, Fort +12, Ref +10, Von +9, PV 126. Corpo a corpo: Mordida +12 (1d8+4 mais veneno).",
+   "nd": "4",
+   "creatureType": "Monstro",
+   "level": 9,
+   "size": "Médio",
+   "abilities": {
+    "for": 19,
+    "des": 14,
+    "con": 18,
+    "int": 2,
+    "sab": 12,
+    "car": 11
+   },
+   "actions": [
+    {
+     "name": "Olhar Petrificante",
+     "text": "No início de seu turno, cada personagem em alcance curto do basilisco deve fazer um teste de Reflexos (CD 18). Se passar, desvia o olhar. Se falhar, fica lento. Se já estiver lento, fica petrificado permanentemente. Um personagem pode fechar os olhos para ficar imune a esta habilidade, mas sofrerá os efeitos de estar cego. Efeitos que removem paralisia revertem a petrificação."
+    },
+    {
+     "name": "Veneno",
+     "text": "2d12 pontos de dano (Fort CD 18 reduz à metade)."
+    }
+   ],
+   "initiative": 6,
+   "perception": 9,
+   "senses": "visão no escuro",
+   "defense": 20,
+   "fort": 12,
+   "ref": 10,
+   "will": 9,
+   "defenses": "resistência a dano 5",
+   "hp": 126,
+   "speed": "9m (6q), natação 9m (6q)",
+   "melee": [
+    "Mordida +12 (1d8+4 mais veneno)"
+   ],
+   "treasure": "1d4 doses de veneno de basilisco (CD para extrair 17, 90 moedas cada dose), couro de basilisco (CD para extrair 17, vale 300 moedas como matéria-prima para fabricar uma armadura superior)",
+   "group": "Ermos"
+  }
+ },
+ {
+  "id": "creature:cao-do-inferno",
+  "kind": "creature",
+  "name": "Cão do Inferno",
+  "summary": "ND 3 · Espírito 7, Grande · Ermos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 275
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Espírito 7, Grande. Iniciativa +10, Percepção +10, Defesa 21, Fort +11, Ref +10, Von +8, PV 56, PM 7. Corpo a corpo: Mordida +15 (2d6+6 mais 2d6 de fogo).",
+   "nd": "3",
+   "creatureType": "Espírito",
+   "level": 7,
+   "size": "Grande",
+   "abilities": {
+    "for": 22,
+    "des": 17,
+    "con": 18,
+    "int": 6,
+    "sab": 12,
+    "car": 6
+   },
+   "actions": [
+    {
+     "name": "Sopro",
+     "text": "O cão do inferno cospe fogo em um cone com alcance curto. Criaturas na área sofrem 4d6+4 pontos de dano de fogo (Ref CD 17 reduz à metade).",
+     "cost": "padrão, 2 PM"
+    }
+   ],
+   "initiative": 10,
+   "perception": 10,
+   "senses": "faro, visão no escuro",
+   "defense": 21,
+   "fort": 11,
+   "ref": 10,
+   "will": 8,
+   "defenses": "imunidade a fogo, resistência a dano 10/mágico, vulnerabilidade a frio",
+   "hp": 56,
+   "speed": "12m (8q)",
+   "mp": 7,
+   "melee": [
+    "Mordida +15 (2d6+6 mais 2d6 de fogo)"
+   ],
+   "skills": "Atletismo +10",
+   "treasure": "1d4 doses de essência abissal (CD para extrair 15)",
+   "group": "Ermos"
+  }
+ },
+ {
+  "id": "creature:centauro",
+  "kind": "creature",
+  "name": "Centauro",
+  "summary": "ND 1 · Centauro 5, Grande · Ermos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 276
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Centauro 5, Grande. Iniciativa +3, Percepção +4, Defesa 15, Fort +6, Ref +3, Von +3, PV 20. Corpo a corpo: Tacape +9 (1d12+5, x3) e cascos +9 (1d8+5). À distância: Arco longo +5 (1d10+5, x3).",
+   "nd": "1",
+   "creatureType": "Centauro",
+   "level": 5,
+   "size": "Grande",
+   "abilities": {
+    "for": 20,
+    "des": 12,
+    "con": 14,
+    "int": 6,
+    "sab": 12,
+    "car": 7
+   },
+   "actions": [
+    {
+     "name": "Medo de Altura",
+     "text": "Se estiver adjacente a uma queda de 3m ou mais de altura, o centauro fica abalado."
+    }
+   ],
+   "initiative": 3,
+   "perception": 4,
+   "defense": 15,
+   "fort": 6,
+   "ref": 3,
+   "will": 3,
+   "hp": 20,
+   "speed": "12m (8q)",
+   "melee": [
+    "Tacape +9 (1d12+5, x3) e cascos +9 (1d8+5)"
+   ],
+   "ranged": [
+    "Arco longo +5 (1d10+5, x3)"
+   ],
+   "skills": "Sobrevivência +5",
+   "equipment": "Arco longo aumentado, flechas x20, gibão de peles, tacape aumentado",
+   "treasure": "Metade",
+   "group": "Ermos"
+  }
+ },
+ {
+  "id": "creature:centauro-xama",
+  "kind": "creature",
+  "name": "Centauro Xamã",
+  "summary": "ND 3 · Centauro 7, Grande · Ermos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 276
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Centauro 7, Grande. Iniciativa +4, Percepção +8, Defesa 16, Fort +6, Ref +4, Von +12, PV 35, PM 12. Corpo a corpo: Bordão +11 (1d8+4) e cascos +11 (1d8+4).",
+   "nd": "3",
+   "creatureType": "Centauro",
+   "level": 7,
+   "size": "Grande",
+   "abilities": {
+    "for": 18,
+    "des": 12,
+    "con": 16,
+    "int": 8,
+    "sab": 20,
+    "car": 10
+   },
+   "actions": [
+    {
+     "name": "Magias",
+     "text": "1º — Armamento da Natureza, Controlar Plantas, Curar Ferimentos; 2º — Enxame de Pestes. CD 18."
+    },
+    {
+     "name": "Medo de Altura",
+     "text": "Se estiver adjacente a uma queda de 3m ou mais de altura, o centauro xamã fica abalado."
+    },
+    {
+     "name": "Voz da Natureza",
+     "text": "O centauro xamã está sempre sob efeito da magia Voz Divina, apenas para falar com animais."
+    }
+   ],
+   "initiative": 4,
+   "perception": 8,
+   "defense": 16,
+   "fort": 6,
+   "ref": 4,
+   "will": 12,
+   "hp": 35,
+   "speed": "12m (8q)",
+   "mp": 12,
+   "melee": [
+    "Bordão +11 (1d8+4) e cascos +11 (1d8+4)"
+   ],
+   "skills": "Religião +12, Sobrevivência +14",
+   "equipment": "Bordão aumentado, gibão de peles reforçado, símbolo da Deusa da Natureza",
+   "treasure": "Metade",
+   "group": "Ermos"
+  }
+ },
+ {
+  "id": "creature:gnoll",
+  "kind": "creature",
+  "name": "Gnoll",
+  "summary": "ND 1/2 · Gnoll 3, Médio · Ermos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 276
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Gnoll 3, Médio. Iniciativa +3, Percepção +5, Defesa 17, Fort +4, Ref +3, Von +1, PV 15. Corpo a corpo: Lança +6 (1d6+3) e mordida +6 (1d6+3). À distância: Arco curto +5 (1d6, x3).",
+   "nd": "1/2",
+   "creatureType": "Gnoll",
+   "level": 3,
+   "size": "Médio",
+   "abilities": {
+    "for": 16,
+    "des": 14,
+    "con": 16,
+    "int": 6,
+    "sab": 11,
+    "car": 8
+   },
+   "initiative": 3,
+   "perception": 5,
+   "senses": "faro",
+   "defense": 17,
+   "fort": 4,
+   "ref": 3,
+   "will": 1,
+   "hp": 15,
+   "speed": "9m (6q)",
+   "melee": [
+    "Lança +6 (1d6+3) e mordida +6 (1d6+3)"
+   ],
+   "ranged": [
+    "Arco curto +5 (1d6, x3)"
+   ],
+   "equipment": "Arco curto, couro batido, escudo leve, flechas x20, lança",
+   "treasure": "Metade",
+   "group": "Ermos"
+  }
+ },
+ {
+  "id": "creature:gnoll-filibusteiro",
+  "kind": "creature",
+  "name": "Gnoll Filibusteiro",
+  "summary": "ND 2 · Gnoll 7, Médio · Ermos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 276
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Gnoll 7, Médio. Iniciativa +12, Percepção +6, Defesa 19, Fort +6, Ref +6, Von +4, PV 35. Corpo a corpo: Espada curta +10 (1d6+3, 19) e mordida +10 (1d6+3). À distância: Mosquete +12 (2d8+3, 19/x3).",
+   "nd": "2",
+   "creatureType": "Gnoll",
+   "level": 7,
+   "size": "Médio",
+   "abilities": {
+    "for": 16,
+    "des": 16,
+    "con": 16,
+    "int": 7,
+    "sab": 12,
+    "car": 8
+   },
+   "actions": [
+    {
+     "name": "Saque Rápido",
+     "text": "O gnoll filibusteiro pode sacar ou guardar itens como uma ação livre e recarregar seu mosquete como uma ação de movimento."
+    }
+   ],
+   "initiative": 12,
+   "perception": 6,
+   "senses": "faro",
+   "defense": 19,
+   "fort": 6,
+   "ref": 6,
+   "will": 4,
+   "hp": 35,
+   "speed": "9m (6q)",
+   "melee": [
+    "Espada curta +10 (1d6+3, 19) e mordida +10 (1d6+3)"
+   ],
+   "ranged": [
+    "Mosquete +12 (2d8+3, 19/x3)"
+   ],
+   "equipment": "Balas x10, couraça, espada curta, mosquete",
+   "treasure": "Padrão",
+   "group": "Ermos"
+  }
+ },
+ {
+  "id": "creature:lobo-crocodilo",
+  "kind": "creature",
+  "name": "Lobo-Crocodilo",
+  "summary": "ND 1 · Animal 4, Grande · Ermos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 276
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Animal 4, Grande. Iniciativa +6, Percepção +3, Defesa 16, Fort +9, Ref +6, Von +3, PV 36. Corpo a corpo: Mordida +11 (1d8+5, x3).",
+   "nd": "1",
+   "creatureType": "Animal",
+   "level": 4,
+   "size": "Grande",
+   "abilities": {
+    "for": 21,
+    "des": 14,
+    "con": 20,
+    "int": 2,
+    "sab": 12,
+    "car": 6
+   },
+   "actions": [
+    {
+     "name": "Agarrar Aprimorado",
+     "text": "Se o lobo-crocodilo acerta um ataque de mordida, pode usar a manobra agarrar (bônus +13).",
+     "cost": "livre"
+    }
+   ],
+   "initiative": 6,
+   "perception": 3,
+   "senses": "visão na penumbra",
+   "defense": 16,
+   "fort": 9,
+   "ref": 6,
+   "will": 3,
+   "hp": 36,
+   "speed": "12m (8q)",
+   "melee": [
+    "Mordida +11 (1d8+5, x3)"
+   ],
+   "skills": "Atletismo +9",
+   "treasure": "Nenhum",
+   "group": "Ermos",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 276"
+   }
+  }
+ },
+ {
+  "id": "creature:grifo",
+  "kind": "creature",
+  "name": "Grifo",
+  "summary": "ND 3 · Monstro 7, Grande · Ermos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 277
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro 7, Grande. Iniciativa +11, Percepção +9, Defesa 19, Fort +10, Ref +11, Von +5, PV 91. Corpo a corpo: Mordida +14 (2d6+5) e 2 garras +14 (1d6+5).",
+   "nd": "3",
+   "creatureType": "Monstro",
+   "level": 7,
+   "size": "Grande",
+   "abilities": {
+    "for": 20,
+    "des": 19,
+    "con": 16,
+    "int": 2,
+    "sab": 14,
+    "car": 8
+   },
+   "actions": [
+    {
+     "name": "Bote",
+     "text": "O grifo faz uma investida e ataca com sua mordida e suas duas garras. Os três ataques recebem o bônus de +2 da investida, mas devem ser feitos contra o mesmo alvo.",
+     "cost": "Completa"
+    }
+   ],
+   "initiative": 11,
+   "perception": 9,
+   "senses": "visão no escuro",
+   "defense": 19,
+   "fort": 10,
+   "ref": 11,
+   "will": 5,
+   "hp": 91,
+   "speed": "12m, voo 24m",
+   "melee": [
+    "Mordida +14 (2d6+5) e 2 garras +14 (1d6+5)"
+   ],
+   "treasure": "Um ninho de grifo tem 25% de chance de conter 1d4 ovos no valor de 2.500 moedas cada",
+   "group": "Ermos"
+  }
+ },
+ {
+  "id": "creature:guarda-de-cidade",
+  "kind": "creature",
+  "name": "Guarda de Cidade",
+  "summary": "ND 1/3 · Humano 2, Médio · Ermos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 278
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Humano 2, Médio. Iniciativa +2, Percepção +3, Defesa 15, Fort +5, Ref +2, Von +1, PV 8. Corpo a corpo: Maça +5 (1d8+2).",
+   "nd": "1/3",
+   "creatureType": "Humano",
+   "level": 2,
+   "size": "Médio",
+   "abilities": {
+    "for": 15,
+    "des": 12,
+    "con": 14,
+    "int": 9,
+    "sab": 10,
+    "car": 9
+   },
+   "initiative": 2,
+   "perception": 3,
+   "defense": 15,
+   "fort": 5,
+   "ref": 2,
+   "will": 1,
+   "hp": 8,
+   "speed": "9m (6q)",
+   "melee": [
+    "Maça +5 (1d8+2)"
+   ],
+   "skills": "Atletismo +5",
+   "equipment": "Apito, couro batido, escudo leve, maça",
+   "treasure": "Nenhum",
+   "group": "Ermos"
+  }
+ },
+ {
+  "id": "creature:sargento-da-guarda",
+  "kind": "creature",
+  "name": "Sargento da Guarda",
+  "summary": "ND 1 · Humano 7, Médio · Ermos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 278
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Humano 7, Médio. Iniciativa +4, Percepção +7, Defesa 18, Fort +9, Ref +4, Von +3, PV 28. Corpo a corpo: Maça +10 (1d8+3). À distância: Besta leve +8 (1d8, 19).",
+   "nd": "1",
+   "creatureType": "Humano",
+   "level": 7,
+   "size": "Médio",
+   "abilities": {
+    "for": 17,
+    "des": 12,
+    "con": 14,
+    "int": 9,
+    "sab": 10,
+    "car": 13
+   },
+   "actions": [
+    {
+     "name": "Ordens",
+     "text": "O sargento pode gastar uma ação de movimento para gritar ordens para seus aliados em alcance médio. Eles recebem +1 em testes de perícia até o fim da cena."
+    }
+   ],
+   "initiative": 4,
+   "perception": 7,
+   "defense": 18,
+   "fort": 9,
+   "ref": 4,
+   "will": 3,
+   "hp": 28,
+   "speed": "6m (4q)",
+   "melee": [
+    "Maça +10 (1d8+3)"
+   ],
+   "ranged": [
+    "Besta leve +8 (1d8, 19)"
+   ],
+   "skills": "Atletismo +10",
+   "equipment": "Apito, besta leve, cota de malha, escudo pesado, maça, virotes x10",
+   "treasure": "Metade",
+   "group": "Ermos"
+  }
+ },
+ {
+  "id": "creature:lobo",
+  "kind": "creature",
+  "name": "Lobo",
+  "summary": "ND 1/2 · Animal 3, Médio · Ermos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 278
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Animal 3, Médio. Iniciativa +4, Percepção +7, Defesa 16, Fort +6, Ref +6, Von +3, PV 21. Corpo a corpo: Mordida +8 (1d6+3).",
+   "nd": "1/2",
+   "creatureType": "Animal",
+   "level": 3,
+   "size": "Médio",
+   "abilities": {
+    "for": 16,
+    "des": 16,
+    "con": 16,
+    "int": 2,
+    "sab": 14,
+    "car": 6
+   },
+   "actions": [
+    {
+     "name": "Derrubar",
+     "text": "Se o lobo acerta um ataque de mordida, pode fazer a manobra derrubar (bônus +8).",
+     "cost": "livre"
+    },
+    {
+     "name": "Táticas de Alcateia",
+     "text": "Quando flanqueia um inimigo, o lobo recebe +2 no teste de ataque e na rolagem de dano (além do bônus normal por flanquear, para um total de +4 no ataque e +2 no dano)."
+    }
+   ],
+   "initiative": 4,
+   "perception": 7,
+   "senses": "faro, visão na penumbra",
+   "defense": 16,
+   "fort": 6,
+   "ref": 6,
+   "will": 3,
+   "hp": 21,
+   "speed": "15m (10q)",
+   "melee": [
+    "Mordida +8 (1d6+3)"
+   ],
+   "skills": "Sobrevivência +8",
+   "treasure": "Nenhum",
+   "group": "Ermos"
+  }
+ },
+ {
+  "id": "creature:lobo-das-cavernas",
+  "kind": "creature",
+  "name": "Lobo-das-Cavernas",
+  "summary": "ND 2 · Animal 7, Grande · Ermos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 278
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Animal 7, Grande. Iniciativa +5, Percepção +11, Defesa 19, Fort +12, Ref +9, Von +5, PV 63. Corpo a corpo: Mordida +16 (2d6+7).",
+   "nd": "2",
+   "creatureType": "Animal",
+   "level": 7,
+   "size": "Grande",
+   "abilities": {
+    "for": 24,
+    "des": 15,
+    "con": 21,
+    "int": 2,
+    "sab": 14,
+    "car": 6
+   },
+   "actions": [
+    {
+     "name": "Derrubar",
+     "text": "Se o lobo-das-cavernas acerta um ataque de mordida, pode fazer a manobra derrubar (bônus +18).",
+     "cost": "livre"
+    },
+    {
+     "name": "Táticas de Alcateia",
+     "text": "Quando flanqueia um inimigo, o lobo-\n-das-cavernas recebe +2 no teste de ataque e na rolagem de dano (além do bônus normal por flanquear, para um total de +4 no ataque e +2 no dano)."
+    }
+   ],
+   "initiative": 5,
+   "perception": 11,
+   "senses": "faro, visão na penumbra",
+   "defense": 19,
+   "fort": 12,
+   "ref": 9,
+   "will": 5,
+   "hp": 63,
+   "speed": "15m (10q)",
+   "melee": [
+    "Mordida +16 (2d6+7)"
+   ],
+   "skills": "Sobrevivência +11",
+   "treasure": "Nenhum",
+   "group": "Ermos"
+  }
+ },
+ {
+  "id": "creature:ogro",
+  "kind": "creature",
+  "name": "Ogro",
+  "summary": "ND 4 · Gigante 12, Grande · Ermos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 278
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Gigante 12, Grande. Iniciativa +7, Percepção +5, Defesa 21, Fort +16, Ref +7, Von +0, PV 84. Corpo a corpo: Tacape +18 (1d12+18).",
+   "nd": "4",
+   "creatureType": "Gigante",
+   "level": 12,
+   "size": "Grande",
+   "abilities": {
+    "for": 26,
+    "des": 12,
+    "con": 18,
+    "int": 5,
+    "sab": 8,
+    "car": 6
+   },
+   "actions": [
+    {
+     "name": "Burro Demais",
+     "text": "O ogro sofre –5 em testes de Intuição e Vontade (já contabilizados na ficha)."
+    },
+    {
+     "name": "...Para Morrer",
+     "text": "! Todo o dano de corte, impacto e perfuração que o ogro sofre é reduzido à metade."
+    }
+   ],
+   "initiative": 7,
+   "perception": 5,
+   "senses": "visão na penumbra",
+   "defense": 21,
+   "fort": 16,
+   "ref": 7,
+   "will": 0,
+   "hp": 84,
+   "speed": "9m (6q)",
+   "melee": [
+    "Tacape +18 (1d12+18)"
+   ],
+   "skills": "Atletismo +18, Intuição +0",
+   "equipment": "Gibão de peles, tacape aumentado",
+   "treasure": "Metade",
+   "group": "Ermos"
+  }
+ },
+ {
+  "id": "creature:troglodita",
+  "kind": "creature",
+  "name": "Troglodita",
+  "summary": "ND 1 · Troglodita 2, Médio · Ermos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 279
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "troglodita 2, Médio. Iniciativa +2, Percepção +1, Defesa 13, Fort +6, Ref +4, Von +1, PV 26, PM 2. Corpo a corpo: Machado de batalha +6 (1d8+3, x3) e mordida +6 (1d6+3). À distância: Azagaia +2 (1d6+3).",
+   "nd": "1",
+   "creatureType": "troglodita",
+   "level": 2,
+   "size": "Médio",
+   "abilities": {
+    "for": 16,
+    "des": 12,
+    "con": 16,
+    "int": 7,
+    "sab": 10,
+    "car": 8
+   },
+   "actions": [
+    {
+     "name": "Mau Cheiro",
+     "text": "O troglodita expele um gás fétido. Todas as criaturas (exceto trogloditas) em alcance curto devem passar em um teste de Fortitude contra veneno (CD 14) ou ficarão enjoadas durante 1d6 rodadas. Uma criatura que passe no teste de resistência fica imune a esta habilidade por um dia.",
+     "cost": "Padrão, 2 PM"
+    },
+    {
+     "name": "Sangue Frio",
+     "text": "O troglodita sofre 1 ponto de dano adicional por dado de dano de frio."
+    }
+   ],
+   "initiative": 2,
+   "perception": 1,
+   "senses": "visão no escuro",
+   "defense": 13,
+   "fort": 6,
+   "ref": 4,
+   "will": 1,
+   "hp": 26,
+   "speed": "9m (6q)",
+   "mp": 2,
+   "melee": [
+    "Machado de batalha +6 (1d8+3, x3) e mordida +6 (1d6+3)"
+   ],
+   "ranged": [
+    "Azagaia +2 (1d6+3)"
+   ],
+   "skills": "Furtividade +6",
+   "equipment": "Azagaias x2, escudo leve, machado de batalha",
+   "treasure": "Metade",
+   "group": "Ermos",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 279"
+   }
+  }
+ },
+ {
+  "id": "creature:urso-coruja",
+  "kind": "creature",
+  "name": "Urso-Coruja",
+  "summary": "ND 4 · Monstro 7, Grande · Ermos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 279
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro 7, Grande. Iniciativa +6, Percepção +8, Defesa 18, Fort +12, Ref +10, Von +4, PV 105. Corpo a corpo: Mordida +15 (1d8+8) e 2 garras +15 (1d6+8).",
+   "nd": "4",
+   "creatureType": "Monstro",
+   "level": 7,
+   "size": "Grande",
+   "abilities": {
+    "for": 27,
+    "des": 17,
+    "con": 21,
+    "int": 2,
+    "sab": 12,
+    "car": 6
+   },
+   "actions": [
+    {
+     "name": "Agarrar Aprimorado",
+     "text": "Se o urso-coruja acerta um ataque de garra, pode fazer a manobra agarrar (bônus +17).",
+     "cost": "Livre"
+    }
+   ],
+   "initiative": 6,
+   "perception": 8,
+   "senses": "faro, visão no escuro",
+   "defense": 18,
+   "fort": 12,
+   "ref": 10,
+   "will": 4,
+   "hp": 105,
+   "speed": "12m (8q)",
+   "melee": [
+    "Mordida +15 (1d8+8) e 2 garras +15 (1d6+8)"
+   ],
+   "treasure": "Nenhum",
+   "group": "Ermos"
+  }
+ },
+ {
+  "id": "creature:wyvern",
+  "kind": "creature",
+  "name": "Wyvern",
+  "summary": "ND 5 · Monstro 9, Grande · Ermos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 279
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro 9, Grande. Iniciativa +5, Percepção +9, Defesa 21, Fort +14, Ref +9, Von +5, PV 144.",
+   "nd": "5",
+   "creatureType": "Monstro",
+   "level": 9,
+   "size": "Grande",
+   "abilities": {
+    "for": 25,
+    "des": 12,
+    "con": 23,
+    "int": 6,
+    "sab": 12,
+    "car": 9
+   },
+   "actions": [
+    {
+     "name": "Ataques Corpo a Corpo",
+     "text": "Mordida +17 (2d6+7) e ferrão +17 (1d6+7 mais veneno)."
+    },
+    {
+     "name": "Agarrar Aprimorado",
+     "text": "Se o wyvern acerta um ataque de mordida, pode fazer a manobra agarrar (bônus +19).",
+     "cost": "Livre"
+    },
+    {
+     "name": "Veneno",
+     "text": "Uma criatura que sofra dano do ferrão do wyvern deve fazer um teste de Fortitude (CD 22). Se falhar, sofre 1d12 pontos de dano de veneno por rodada durante 1d6 rodadas."
+    }
+   ],
+   "initiative": 5,
+   "perception": 9,
+   "senses": "faro, visão no escuro",
+   "defense": 21,
+   "fort": 14,
+   "ref": 9,
+   "will": 5,
+   "defenses": "imunidade a paralisia",
+   "hp": 144,
+   "speed": "9m (6q), voo 18m (12q)",
+   "treasure": "1d4 doses de veneno de wyvern jovem (CD para extrair 19, 350 moedas cada dose)",
+   "group": "Ermos"
+  }
+ },
+ {
+  "id": "creature:recruta-fanatico",
+  "kind": "creature",
+  "name": "Recruta Fanático",
+  "summary": "ND 1/2 · Humano 2, Médio · Fanáticos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 280
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Humano 2, Médio. Iniciativa +4, Percepção +0, Defesa 16, Fort +6, Ref +2, Von +0, PV 10. Corpo a corpo: Alabarda +6 (1d10+3, x3).",
+   "nd": "1/2",
+   "creatureType": "Humano",
+   "level": 2,
+   "size": "Médio",
+   "abilities": {
+    "for": 16,
+    "des": 12,
+    "con": 16,
+    "int": 8,
+    "sab": 9,
+    "car": 8
+   },
+   "actions": [
+    {
+     "name": "Lutar em Formação",
+     "text": "Se o recruta estiver adjacente a um aliado que também possua este poder, recebe +1 em testes de ataque e Defesa."
+    }
+   ],
+   "initiative": 4,
+   "perception": 0,
+   "defense": 16,
+   "hp": 10,
+   "speed": "6m (4q)",
+   "melee": [
+    "Alabarda +6 (1d10+3, x3)"
+   ],
+   "equipment": "Alabarda, cota de malha",
+   "treasure": "Nenhum",
+   "fort": 6,
+   "ref": 2,
+   "will": 0,
+   "group": "Fanáticos",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 280"
+   }
+  }
+ },
+ {
+  "id": "creature:soldado-fanatico",
+  "kind": "creature",
+  "name": "Soldado Fanático",
+  "summary": "ND 1 · Humano 5, Médio · Fanáticos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 280
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Humano 5, Médio. Iniciativa +5, Percepção +1, Defesa 20, Fort +7, Ref +3, Von +1, PV 25. Corpo a corpo: Espada bastarda +10 (1d10+4, 19). À distância: Besta pesada +5 (1d12, 19).",
+   "nd": "1",
+   "creatureType": "Humano",
+   "level": 5,
+   "size": "Médio",
+   "abilities": {
+    "for": 18,
+    "des": 12,
+    "con": 16,
+    "int": 8,
+    "sab": 9,
+    "car": 8
+   },
+   "actions": [
+    {
+     "name": "Lutar em Formação",
+     "text": "Se o soldado estiver adjacente a um aliado que também possua este poder, recebe +1 em testes de ataque e Defesa."
+    }
+   ],
+   "initiative": 5,
+   "perception": 1,
+   "defense": 20,
+   "fort": 7,
+   "ref": 3,
+   "will": 1,
+   "hp": 25,
+   "speed": "6m (4q)",
+   "melee": [
+    "Espada bastarda +10 (1d10+4, 19)"
+   ],
+   "ranged": [
+    "Besta pesada +5 (1d12, 19)"
+   ],
+   "equipment": "Besta pesada, escudo pesado, espada bastarda, meia armadura, virotes x10",
+   "treasure": "Metade",
+   "group": "Fanáticos",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 280"
+   }
+  }
+ },
+ {
+  "id": "creature:sargento-mor",
+  "kind": "creature",
+  "name": "Sargento-mor",
+  "summary": "ND 3 · Humano 9, Médio · Fanáticos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 280
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Humano 9, Médio. Iniciativa +9, Percepção +3, Defesa 24, Fort +15, Ref +9, Von +7, PV 45. Corpo a corpo: Espada bastarda +14 (1d12+12, 19). À distância: Besta pesada +9 (1d12, 19).",
+   "nd": "3",
+   "creatureType": "Humano",
+   "level": 9,
+   "size": "Médio",
+   "abilities": {
+    "for": 20,
+    "des": 12,
+    "con": 16,
+    "int": 8,
+    "sab": 9,
+    "car": 10
+   },
+   "actions": [
+    {
+     "name": "Lutar em Formação",
+     "text": "Se o sargento-mor estiver adjacente a um aliado que também possua este poder, recebe +1 em testes de ataque e Defesa"
+    },
+    {
+     "name": "Varrer",
+     "text": "Uma vez por rodada, quando o sargento-mor faz um ataque corpo a corpo e reduz os pontos de vida do alvo para 0 ou menos, pode realizar um ataque adicional contra outra criatura dentro do seu alcance. Esse ataque usa os mesmos bônus de ataque e dano, mas os dados devem ser rolados novamente.",
+     "cost": "Livre"
+    }
+   ],
+   "initiative": 9,
+   "perception": 3,
+   "defense": 24,
+   "fort": 15,
+   "ref": 9,
+   "will": 7,
+   "hp": 45,
+   "speed": "6m (4q)",
+   "melee": [
+    "Espada bastarda +14 (1d12+12, 19)"
+   ],
+   "ranged": [
+    "Besta pesada +9 (1d12, 19)"
+   ],
+   "equipment": "Armadura completa, besta pesada, escudo pesado, espada bastarda aumentada certeira, virotes x10",
+   "treasure": "Padrão",
+   "group": "Fanáticos"
+  }
+ },
+ {
+  "id": "creature:capelao-de-guerra",
+  "kind": "creature",
+  "name": "Capelão de Guerra",
+  "summary": "ND 4 · Humano 11, Médio · Fanáticos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 281
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Humano 11, Médio. Iniciativa +9, Percepção +10, Defesa 21, Fort +9, Ref +5, Von +14, PV 66, PM 27. Corpo a corpo: Martelo de guerra +14 (1d8+11, x3).",
+   "nd": "4",
+   "creatureType": "Humano",
+   "level": 11,
+   "size": "Médio",
+   "abilities": {
+    "for": 20,
+    "des": 10,
+    "con": 18,
+    "int": 12,
+    "sab": 20,
+    "car": 8
+   },
+   "actions": [
+    {
+     "name": "Coragem Total",
+     "text": "O capelão é imune a efeitos de medo."
+    },
+    {
+     "name": "Sangue de Ferro",
+     "text": "O capelão recebe +2 em rolagens de dano e resistência a dano 5 até o fim da cena.",
+     "cost": "Livre, 2 PM"
+    },
+    {
+     "name": "Magias",
+     "text": "1º — Arma Mágica, Escudo da Fé; 2º — Dissipar Magia, Oração, Soco do Deus da Guerra. CD 20."
+    }
+   ],
+   "initiative": 9,
+   "perception": 10,
+   "defense": 21,
+   "fort": 9,
+   "ref": 5,
+   "will": 14,
+   "hp": 66,
+   "speed": "6m (4q)",
+   "mp": 27,
+   "melee": [
+    "Martelo de guerra +14 (1d8+11, x3)"
+   ],
+   "skills": "Misticismo +10, Religião +14",
+   "equipment": ". Armadura completa, escudo leve, martelo de guerra certeiro cruel, símbolo sagrado",
+   "treasure": "Padrão",
+   "group": "Fanáticos"
+  }
+ },
+ {
+  "id": "creature:capitao-baluarte",
+  "kind": "creature",
+  "name": "Capitão-Baluarte",
+  "summary": "ND 5 · Humano 15, Médio · Fanáticos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 281
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Humano 15, Médio. Iniciativa +13, Percepção +7, Defesa 35, Fort +16, Ref +7, Von +13, PV 75, PM 15. Corpo a corpo: Espada longa +18 (1d8+4, 19).",
+   "nd": "5",
+   "creatureType": "Humano",
+   "level": 15,
+   "size": "Médio",
+   "abilities": {
+    "for": 18,
+    "des": 10,
+    "con": 17,
+    "int": 13,
+    "sab": 10,
+    "car": 18
+   },
+   "actions": [
+    {
+     "name": "Estrategista",
+     "text": "O capitão pode gastar uma ação padrão e 1 PM por aliado em alcance curto que quiser direcionar. No próximo turno desse aliado, ele ganha uma ação de movimento adicional.",
+     "cost": "Padrão, 1 PM+"
+    },
+    {
+     "name": "Formação Invencível",
+     "text": "O capitão e todos os seus aliados em alcance curto recebem +2 em Defesa."
+    },
+    {
+     "name": "Gritar Ordens",
+     "text": "O capitão pode gastar até 4 PM. Até o início do próximo turno dele, todos os aliados em alcance curto recebem um bônus nos testes de perícia igual à quantidade de PM que ele gastou.",
+     "cost": "Livre, 1 PM+"
+    }
+   ],
+   "initiative": 13,
+   "perception": 7,
+   "defense": 35,
+   "fort": 16,
+   "ref": 7,
+   "will": 13,
+   "hp": 75,
+   "speed": "6m (4q)",
+   "mp": 15,
+   "melee": [
+    "Espada longa +18 (1d8+4, 19)"
+   ],
+   "skills": "Cavalgar +13, Intimidação +17, Guerra +14, Nobreza +14",
+   "equipment": "Armadura completa reforçada, escudo pesado reforçado, espada longa certeira",
+   "treasure": "Dobro",
+   "group": "Fanáticos"
+  }
+ },
+ {
+  "id": "creature:cavaleiro-sombrio",
+  "kind": "creature",
+  "name": "Cavaleiro Sombrio",
+  "summary": "ND 9 · Humano 18, Médio · Fanáticos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 281
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Humano 18, Médio. Iniciativa +16, Percepção +15, Defesa 31, Fort +23, Ref +12, Von +17, PV 162, PM 58. Corpo a corpo: Espada bastarda +25 (3d6+15, 19).",
+   "nd": "9",
+   "creatureType": "Humano",
+   "level": 18,
+   "size": "Médio",
+   "abilities": {
+    "for": 22,
+    "des": 12,
+    "con": 22,
+    "int": 18,
+    "sab": 11,
+    "car": 13
+   },
+   "actions": [
+    {
+     "name": "Cavaleiro Místico",
+     "text": "O cavaleiro pode lançar magias arcanas de armadura sem precisar de testes de Misticismo. Além disso, quando usa a ação atacar para fazer um ataque corpo a corpo, pode pagar 1 PM para lançar uma magia com execução padrão como uma ação livre. Ele ainda precisa pagar o custo em PM da magia."
+    },
+    {
+     "name": "Magia Acelerada",
+     "text": "Quando lança uma magia com execução de ação completa ou menor, o cavaleiro muda a execução dela para livre. Ele só pode usar este poder uma vez por rodada.",
+     "cost": "Livre, 4 PM"
+    },
+    {
+     "name": "Magias",
+     "text": "1º — Concentração de Combate, Toque Chocante; 2º — Dissipar Magia, Relâmpago, Velocidade; 3º — Pele de Pedra. CD 23."
+    }
+   ],
+   "initiative": 16,
+   "perception": 15,
+   "defense": 31,
+   "fort": 23,
+   "ref": 12,
+   "will": 17,
+   "hp": 162,
+   "speed": "9m (6q)",
+   "mp": 58,
+   "melee": [
+    "Espada bastarda +25 (3d6+15, 19)"
+   ],
+   "skills": "Furtividade +8, Intimidação +17, Misticismo +20",
+   "equipment": "Armadura completa reforçada, escudo leve reforçado, espada bastarda aumentada de adamante atroz pungente",
+   "treasure": "Padrão",
+   "group": "Fanáticos",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 281"
+   }
+  }
+ },
+ {
+  "id": "creature:colosso-supremo",
+  "kind": "creature",
+  "name": "Colosso Supremo",
+  "summary": "ND 14 · Construto 40, Colossal · Fanáticos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 282
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Construto 40, Colossal. Iniciativa +19, Percepção +20, Defesa 35, Fort +30, Ref +19, Von +20, PV 600. Corpo a corpo: Espada titânica +45 (4d12+30, 19).",
+   "nd": "14",
+   "creatureType": "Construto",
+   "level": 40,
+   "size": "Colossal",
+   "abilities": {
+    "for": 40,
+    "des": 8,
+    "con": 30,
+    "int": null,
+    "sab": 10,
+    "car": 1
+   },
+   "actions": [
+    {
+     "name": "Balistas",
+     "text": "Um colosso supremo possui duas balistas, uma em cada ombro. Cada balista é tripulada por soldados que a carregam e a disparam em rodadas alternadas (bônus de ataque +13, 6d8 pontos de dano de perfuração, crítico 19, alcance médio). É possível atacar as tripulações para impedir os disparos. Cada tripulação possui Defesa 26, 50 pontos de vida e usa os testes de resistência do colosso.",
+     "cost": "Livre"
+    },
+    {
+     "name": "Fumos Tóxicos",
+     "text": "Uma criatura que comece seu turno em alcance curto do colosso sofre 4d6 pontos de dano de veneno e fica enjoada (Fortitude CD 30 evita)."
+    },
+    {
+     "name": "Goblins Consertadores",
+     "text": "Goblins especialmente pequenos rastejam por dentro dos dutos do colosso fazendo reparos, o que fornece ao construto cura acelerada 20. Por estarem dentro do construto, os goblins são imunes a dano, mas ainda podem ser afetados por efeitos mentais. Eles possuem Vontade +2 (mas recebem a resistência a magia do colosso) e, se forem afetados por qualquer condição, a cura acelerada deixa de funcionar."
+    },
+    {
+     "name": "Jato de Chamas",
+     "text": "O colosso dispara um jato de chamas que atinge um cone com alcance médio. Criaturas na área sofrem 8d8+10 pontos de dano de fogo (Ref CD 35 reduz à metade).",
+     "cost": "Movimento"
+    },
+    {
+     "name": "Passar por Cima",
+     "text": "O colosso percorre até o dobro do seu deslocamento, passando por qualquer criatura Grande ou menor. Uma criatura atropelada sofre 6d8+15 pontos de dano de impacto (Reflexos CD 30 reduz à metade).",
+     "cost": "Completa"
+    },
+    {
+     "name": "Varrer",
+     "text": "Uma vez por rodada, quando o colosso supremo faz um ataque corpo a corpo e reduz os pontos de vida do alvo para 0 ou menos, pode realizar um ataque adicional contra outra criatura dentro do seu alcance. Esse ataque usa os mesmos bônus de ataque e dano, mas os dados devem ser rolados novamente.",
+     "cost": "Livre"
+    }
+   ],
+   "initiative": 19,
+   "perception": 20,
+   "senses": "visão no escuro",
+   "defense": 35,
+   "fort": 30,
+   "ref": 19,
+   "will": 20,
+   "defenses": "cura acelerada 20, resistência a dano 10, resistência a magia +5",
+   "hp": 600,
+   "speed": "12m (8q)",
+   "melee": [
+    "Espada titânica +45 (4d12+30, 19)"
+   ],
+   "treasure": "Nenhum",
+   "group": "Fanáticos"
+  }
+ },
+ {
+  "id": "creature:aparicao",
+  "kind": "creature",
+  "name": "Aparição",
+  "summary": "ND 5 · Morto-vivo 13, Médio · Reino dos Mortos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 283
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Morto-vivo 13, Médio. Iniciativa +16, Percepção +13, Defesa 23, Fort +8, Ref +16, Von +12, PV 78. Corpo a corpo: Toque drenante +18 (3d8+6 de trevas). Uma criatura viva atingida deve fazer um teste de Fortitude (CD 21). Se falhar, fica fraca e a aparição recebe 20 PV temporários.",
+   "nd": "5",
+   "creatureType": "Morto-vivo",
+   "level": 13,
+   "size": "Médio",
+   "abilities": {
+    "for": null,
+    "des": 23,
+    "con": 15,
+    "int": 11,
+    "sab": 14,
+    "car": 15
+   },
+   "actions": [
+    {
+     "name": "Vulnerabilidade à Luz do Dia",
+     "text": "Uma aparição exposta a luz solar natural fica debilitada."
+    }
+   ],
+   "initiative": 16,
+   "perception": 13,
+   "senses": "visão no escuro",
+   "defense": 23,
+   "fort": 8,
+   "ref": 16,
+   "will": 12,
+   "defenses": "incorpóreo",
+   "hp": 78,
+   "speed": "Voo 18m (12q)",
+   "melee": [
+    "Toque drenante +18 (3d8+6 de trevas). Uma criatura viva atingida deve fazer um teste de Fortitude (CD 21). Se falhar, fica fraca e a aparição recebe 20 PV temporários"
+   ],
+   "skills": "Furtividade +18",
+   "treasure": "Nenhum",
+   "group": "Reino dos Mortos"
+  }
+ },
+ {
+  "id": "creature:esqueleto",
+  "kind": "creature",
+  "name": "Esqueleto",
+  "summary": "ND 2 · Morto-vivo 8, Médio · Reino dos Mortos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 283
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Morto-vivo 8, Médio. Iniciativa +10, Percepção +4, Defesa 20, Fort +5, Ref +6, Von +8, PV 40. Corpo a corpo: Espada longa +13 (1d8+5, 19).",
+   "nd": "2",
+   "creatureType": "Morto-vivo",
+   "level": 8,
+   "size": "Médio",
+   "abilities": {
+    "for": 20,
+    "des": 14,
+    "con": 12,
+    "int": null,
+    "sab": 10,
+    "car": 1
+   },
+   "initiative": 10,
+   "perception": 4,
+   "senses": "visão no escuro",
+   "defense": 20,
+   "fort": 5,
+   "ref": 6,
+   "will": 8,
+   "defenses": "resistência a corte, frio e perfuração 5",
+   "hp": 40,
+   "speed": "6m (4q)",
+   "melee": [
+    "Espada longa +13 (1d8+5, 19)"
+   ],
+   "equipment": "Cota de malha, espada longa, escudo pesado",
+   "treasure": "Nenhum",
+   "group": "Reino dos Mortos"
+  }
+ },
+ {
+  "id": "creature:esqueleto-de-elite",
+  "kind": "creature",
+  "name": "Esqueleto de elite",
+  "summary": "ND 4 · Morto-vivo 17, Médio · Reino dos Mortos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 283
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Morto-vivo 17, Médio. Iniciativa +14, Percepção +8, Defesa 24, Fort +11, Ref +10, Von +14, PV 119. Corpo a corpo: Espada longa +18 (1d8+12, 19).",
+   "nd": "4",
+   "creatureType": "Morto-vivo",
+   "level": 17,
+   "size": "Médio",
+   "abilities": {
+    "for": 22,
+    "des": 14,
+    "con": 16,
+    "int": null,
+    "sab": 10,
+    "car": 1
+   },
+   "initiative": 14,
+   "perception": 8,
+   "senses": "visão no escuro",
+   "defense": 24,
+   "fort": 11,
+   "ref": 10,
+   "will": 14,
+   "defenses": "resistência a corte, frio e perfuração 5",
+   "hp": 119,
+   "speed": "6m (4q)",
+   "melee": [
+    "Espada longa +18 (1d8+12, 19)"
+   ],
+   "equipment": "Espada longa brutal, escudo pesado, meia armadura",
+   "treasure": "Nenhum",
+   "group": "Reino dos Mortos"
+  }
+ },
+ {
+  "id": "creature:falange",
+  "kind": "creature",
+  "name": "Falange",
+  "summary": "ND 8 · Morto-vivo (bando) 17, Grande · Reino dos Mortos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 283
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Morto-vivo (bando) 17, Grande. Iniciativa +14, Percepção +8, Defesa 24, Fort +11, Ref +10, Von +14, PV 595. Corpo a corpo: Espada longa +28 (2d8+24, 19).",
+   "nd": "8",
+   "creatureType": "Morto-vivo (bando)",
+   "level": 17,
+   "size": "Grande",
+   "abilities": {
+    "for": 22,
+    "des": 12,
+    "con": 16,
+    "int": null,
+    "sab": 10,
+    "car": 1
+   },
+   "actions": [
+    {
+     "name": "Ataque em Bando",
+     "text": "Se um ataque da falange exceder a Defesa do inimigo por 10 ou mais, ela causa o dobro do dano. Se um ataque da falange errar, ela ainda assim causa metade do dano."
+    },
+    {
+     "name": "Forma Coletiva",
+     "text": "A falange é imune a efeitos que afetam apenas uma criatura e não causam dano, como a magia Raio do Enfraquecimento, mas sofre 50% a mais de dano de efeitos de área, como Bola de Fogo. Um personagem com o poder Trespassar que acerte a falange pode usá-lo para fazer um ataque adicional contra ela (mas apenas uma vez por turno)."
+    }
+   ],
+   "initiative": 14,
+   "perception": 8,
+   "senses": "visão no escuro",
+   "defense": 24,
+   "fort": 11,
+   "ref": 10,
+   "will": 14,
+   "defenses": "resistência a corte, frio e perfuração 5",
+   "hp": 595,
+   "speed": "6m",
+   "melee": [
+    "Espada longa +28 (2d8+24, 19)"
+   ],
+   "equipment": ". Espada longa aumentada, escudo pesado, meia armadura",
+   "treasure": "Nenhum",
+   "group": "Reino dos Mortos"
+  }
+ },
+ {
+  "id": "creature:necromante",
+  "kind": "creature",
+  "name": "Necromante",
+  "summary": "ND 4 · Elfo 9, Médio · Reino dos Mortos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 284
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Elfo 9, Médio. Iniciativa +9, Percepção +6, Defesa 11, Fort +5, Ref +9, Von +8, PV 27, PM 18. Corpo a corpo: Adaga +10 (1d4, 19).",
+   "nd": "4",
+   "creatureType": "Elfo",
+   "level": 9,
+   "size": "Médio",
+   "abilities": {
+    "for": 10,
+    "des": 12,
+    "con": 12,
+    "int": 20,
+    "sab": 10,
+    "car": 9
+   },
+   "actions": [
+    {
+     "name": "Especialista em Necromancia",
+     "text": "A CD para resistir às magias de necromancia do necromante aumenta em +2."
+    },
+    {
+     "name": "Guardas Esqueletos",
+     "text": "O necromante está sempre acompanhado por dois esqueletos (veja na página 283)."
+    },
+    {
+     "name": "Magias",
+     "text": "1º — Amedrontar, Armadura Arcana, Raio do Enfraquecimento, Vitalidade Fantasma; 2º — Conjurar Mortos-vivos, Toque Vampírico. CD 19 (21 para necromancia)."
+    }
+   ],
+   "initiative": 9,
+   "perception": 6,
+   "senses": "visão na penumbra",
+   "defense": 11,
+   "fort": 5,
+   "ref": 9,
+   "will": 8,
+   "hp": 27,
+   "speed": "12m (8q)",
+   "mp": 18,
+   "melee": [
+    "Adaga +10 (1d4, 19)"
+   ],
+   "skills": "Conhecimento +14, Intimidação +7, Misticismo +16",
+   "equipment": "Adaga, essência de mana",
+   "treasure": "Padrão",
+   "group": "Reino dos Mortos"
+  }
+ },
+ {
+  "id": "creature:necromante-veterano",
+  "kind": "creature",
+  "name": "Necromante Veterano",
+  "summary": "ND 7 · Elfo 16, Médio · Reino dos Mortos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 284
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Elfo 16, Médio. Iniciativa +16, Percepção +10, Defesa 12, Fort +16, Ref +16, Von +14, PV 64, PM 70. Corpo a corpo: Adaga +17 (1d4, 19).",
+   "nd": "7",
+   "creatureType": "Elfo",
+   "level": 16,
+   "size": "Médio",
+   "abilities": {
+    "for": 10,
+    "des": 14,
+    "con": 14,
+    "int": 22,
+    "sab": 10,
+    "car": 9
+   },
+   "actions": [
+    {
+     "name": "Mestre em Necromancia",
+     "text": "A CD para resistir às magias de necromancia do necromante aumenta em +2 e o custo para lançá-las diminui em –1 PM (mínimo de 1 PM)."
+    },
+    {
+     "name": "Guardas Esqueletos",
+     "text": "O necromante está sempre acompanhado por dois esqueletos de elite (veja na página 283)."
+    },
+    {
+     "name": "Magia Acelerada",
+     "text": "Quando lança uma magia com execução de ação completa ou menor, o necromante veterano muda a execução dela para livre. Ele só pode usar este poder uma vez por rodada.",
+     "cost": "Livre, 4 PM"
+    },
+    {
+     "name": "Magias",
+     "text": "1º — Amedrontar, Armadura Arcana, Raio do Enfraquecimento, Vitalidade Fantasma; 2º — Conjurar Mortos-vivos, Toque Vampírico; 3º — Ferver Sangue, Servo Morto-Vivo; 4º — Assassino Fantasmagórico. CD 24 (26 para necromancia)."
+    }
+   ],
+   "initiative": 16,
+   "perception": 10,
+   "senses": "visão na penumbra",
+   "defense": 12,
+   "fort": 16,
+   "ref": 16,
+   "will": 14,
+   "hp": 64,
+   "speed": "12m (8q)",
+   "mp": 70,
+   "melee": [
+    "Adaga +17 (1d4, 19)"
+   ],
+   "skills": "Conhecimento +21, Intimidação +13, Misticismo +23",
+   "equipment": "Adaga, essência de mana x2",
+   "treasure": "Dobro",
+   "group": "Reino dos Mortos"
+  }
+ },
+ {
+  "id": "creature:vampiro",
+  "kind": "creature",
+  "name": "Vampiro",
+  "summary": "ND 12 · Morto-vivo 20, Médio · Reino dos Mortos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 284
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Morto-vivo 20, Médio. Iniciativa +21, Percepção +18, Defesa 32, Fort +22, Ref +21, Von +18, PV 200, PM 67. Corpo a corpo: Espada longa +25 (1d8+8, 17) ou 2 garras +20 (1d4+6).",
+   "nd": "12",
+   "creatureType": "Morto-vivo",
+   "level": 20,
+   "size": "Médio",
+   "abilities": {
+    "for": 23,
+    "des": 20,
+    "con": 23,
+    "int": 12,
+    "sab": 14,
+    "car": 24
+   },
+   "actions": [
+    {
+     "name": "Cria",
+     "text": "O vampiro faz uma criatura morta pela habilidade Drenar Sangue se erguer como um vampiro na noite seguinte. A cria deve vencer um teste de Vontade oposto contra o vampiro ou ficará sob o controle dele até que ele a liberte ou seja destruído.",
+     "cost": "Padrão"
+    },
+    {
+     "name": "Drenar Sangue",
+     "text": "O vampiro drena sangue de uma criatura viva que esteja agarrando. Isso exige um acerto num ataque desarmado (bônus de +20) e causa 4d6 pontos de dano. Para cada ponto de dano causado, o vampiro recupera 1 PV.",
+     "cost": "Padrão"
+    },
+    {
+     "name": "Forma de Morcego",
+     "text": "O vampiro se transforma em um morcego. Ele adquire tamanho Minúsculo (o que fornece +5 em Furtividade e –5 em testes de manobra) e recebe deslocamento de voo 12m. Seu equipamento é absorvido (retornando quando ele volta ao normal) e suas outras estatísticas não são alteradas. A transformação dura quanto tempo ele desejar, mas termina caso faça um ataque, lance uma magia ou sofra dano.",
+     "cost": "Padrão"
+    },
+    {
+     "name": "Presença Majestosa",
+     "text": "Quando uma criatura ataca o vampiro, deve passar em um teste de Vontade (CD 27) ou não conseguirá machucá-lo e perderá a ação.",
+     "cost": "Reação, 2 PM"
+    },
+    {
+     "name": "Sensibilidade ao Sol",
+     "text": "Quando exposto a luz solar direta, o vampiro fica ofuscado e sofre 6d6 pontos de dano por rodada (ignora a resistência a dano do vampiro)."
+    },
+    {
+     "name": "Magia Inerente",
+     "text": "1º — Enfeitiçar, Hipnotismo; 2º — Sussurros Insanos; 3º — Imobilizar, Toque Vampírico; 4º — Alterar Memória; 5º — Legião. CD 27."
+    }
+   ],
+   "initiative": 21,
+   "perception": 18,
+   "senses": "visão no escuro",
+   "hp": 200,
+   "defense": 32,
+   "fort": 22,
+   "ref": 21,
+   "will": 18,
+   "defenses": "cura acelerada 10, resistência a dano 10/luz",
+   "speed": "9m (6q), escalar 9m (6q)",
+   "mp": 67,
+   "melee": [
+    "Espada longa +25 (1d8+8, 17) ou 2 garras +20 (1d4+6)"
+   ],
+   "skills": "Diplomacia +23, Enganação +23, Furtividade +25, Nobreza +17",
+   "equipment": "Armadura completa delicada de mitral, espada longa certeira e precisa de mitral",
+   "treasure": "Dobro",
+   "group": "Reino dos Mortos"
+  }
+ },
+ {
+  "id": "creature:zumbi",
+  "kind": "creature",
+  "name": "Zumbi",
+  "summary": "ND 1/3 · Morto-vivo 2, Médio · Reino dos Mortos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 285
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Morto-vivo 2, Médio. Iniciativa +0, Percepção +0, Defesa 11, Fort +3, Ref +0, Von +0, PV 12. Corpo a corpo: Mordida +6 (1d6+3).",
+   "nd": "1/3",
+   "creatureType": "Morto-vivo",
+   "level": 2,
+   "size": "Médio",
+   "abilities": {
+    "for": 17,
+    "des": 8,
+    "con": 15,
+    "int": null,
+    "sab": 8,
+    "car": 1
+   },
+   "initiative": 0,
+   "perception": 0,
+   "senses": "visão no escuro",
+   "defense": 11,
+   "fort": 3,
+   "ref": 0,
+   "will": 0,
+   "hp": 12,
+   "speed": "6m (4q)",
+   "melee": [
+    "Mordida +6 (1d6+3)"
+   ],
+   "treasure": "Nenhum",
+   "group": "Reino dos Mortos"
+  }
+ },
+ {
+  "id": "creature:turba-de-zumbis",
+  "kind": "creature",
+  "name": "Turba de Zumbis",
+  "summary": "ND 2 · Morto-vivo (bando) 2, Grande · Reino dos Mortos",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 285
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Morto-vivo (bando) 2, Grande. Iniciativa +0, Percepção +0, Defesa 11, Fort +3, Ref +0, Von +0, PV 60. Corpo a corpo: Mordida +16 (2d6+6).",
+   "nd": "2",
+   "creatureType": "Morto-vivo (bando)",
+   "level": 2,
+   "size": "Grande",
+   "abilities": {
+    "for": 17,
+    "des": 12,
+    "con": 15,
+    "int": null,
+    "sab": 10,
+    "car": 1
+   },
+   "actions": [
+    {
+     "name": "Ataque em Bando",
+     "text": "Se um ataque da turba exceder a Defesa do inimigo por 10 ou mais, ela causa o dobro do dano. Se um ataque da turba errar, ela ainda assim causa metade do dano."
+    },
+    {
+     "name": "Forma Coletiva",
+     "text": "A turba de zumbis é imune a efeitos que afetam apenas uma criatura e não causam dano, como a magia Raio do Enfraquecimento, mas sofre 50% a mais de dano por efeitos de área, como uma Bola de Fogo. Um personagem com o poder Trespassar que acerte a turba pode usá-lo para fazer um ataque adicional contra ela (mas apenas uma vez por turno)."
+    }
+   ],
+   "initiative": 0,
+   "perception": 0,
+   "senses": "visão no escuro",
+   "defense": 11,
+   "fort": 3,
+   "ref": 0,
+   "will": 0,
+   "hp": 60,
+   "speed": "6m (4q)",
+   "melee": [
+    "Mordida +16 (2d6+6)"
+   ],
+   "treasure": "Nenhum",
+   "group": "Reino dos Mortos"
+  }
+ },
+ {
+  "id": "creature:arauto-do-deus-dos-goblinoides",
+  "kind": "creature",
+  "name": "Arauto do Deus dos Goblinoides",
+  "summary": "ND 4 · Humano 11, Médio · Goblinoides",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 286
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Humano 11, Médio. Iniciativa +6, Percepção +11, Defesa 21, Fort +10, Ref +8, Von +15, PV 77, PM 28. Corpo a corpo: Machado de guerra +12 (1d12+9, x3).",
+   "nd": "4",
+   "creatureType": "Humano",
+   "level": 11,
+   "size": "Médio",
+   "abilities": {
+    "for": 16,
+    "des": 13,
+    "con": 20,
+    "int": 8,
+    "sab": 22,
+    "car": 10
+   },
+   "actions": [
+    {
+     "name": "Abençoar Arma",
+     "text": "Até o fim da cena, o arauto do Deus dos Goblinoides usa o bônus de Sabedoria no lugar de Força para testes de ataque e rolagens de dano com o machado de guerra; o dano dessa arma aumenta em um passo e se torna mágico. Suas estatísticas se tornam ataque +15 (3d6+12, x3).",
+     "cost": "Movimento, 3 PM"
+    },
+    {
+     "name": "Fúria Divina",
+     "text": "O arauto do Deus dos Goblinoides entra em fúria até o fim da cena, ou até passar uma rodada inteira sem atacar ou ser alvo de um efeito (ataque, habilidade, magia...) hostil. Ele recebe +2 nos testes de ataque e rolagens de dano corpo a corpo, mas não pode fazer nenhuma ação que exija calma e concentração.",
+     "cost": "Livre, 2 PM"
+    },
+    {
+     "name": "Prece de Combate",
+     "text": "Quando lança uma magia divina com tempo de conjuração de uma ação padrão tendo como alvo ele mesmo, o arauto do Deus dos Goblinoides reduz o tempo para uma ação de movimento.",
+     "cost": "2 PM"
+    },
+    {
+     "name": "Tropas Goblinoides",
+     "text": "O arauto do Deus dos Goblinoides invoca 1d4+1 goblinoides em espaços desocupados em alcance curto. Ele pode usar uma ação de movimento para fazer os goblinoides andarem (deslocamento 9m) ou uma ação padrão para fazê-los causar dano a criaturas adjacentes (1d6+1 pontos de dano de corte cada). Os goblinoides têm For 14, Des 14, 6 PV e não têm valor de Defesa ou testes de resistência (qualquer efeito os acerta automaticamente). Eles não agem sem receber uma ordem e desaparecem quando morrem ou no fim da cena.",
+     "cost": "Completa, 2 PM"
+    },
+    {
+     "name": "Magias",
+     "text": "1º — Amedrontar, Comando, Curar Ferimentos; 2º — Físico Divino, Vestimenta da Fé; CD 21."
+    }
+   ],
+   "initiative": 6,
+   "perception": 11,
+   "defense": 21,
+   "fort": 10,
+   "ref": 8,
+   "will": 15,
+   "hp": 77,
+   "speed": "6m (4q)",
+   "mp": 28,
+   "melee": [
+    "Machado de guerra +12 (1d12+9, x3)"
+   ],
+   "skills": "Intimidação +9, Religião +15",
+   "equipment": "Machado de guerra cruel, meia armadura, símbolo do Deus dos Goblinoides",
+   "treasure": "Padrão",
+   "group": "Goblinoides",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 286"
+   }
+  }
+ },
+ {
+  "id": "creature:devorador-de-medos",
+  "kind": "creature",
+  "name": "Devorador de Medos",
+  "summary": "ND 8 · Bugbear 15, Médio · Goblinoides",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 286
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Bugbear 15, Médio. Iniciativa +10, Percepção +8, Defesa 19, Fort +16, Ref +12, Von +8, PV 75, PM 15. Corpo a corpo: Machado de guerra +19 (1d12+16, x3).",
+   "nd": "8",
+   "creatureType": "Bugbear",
+   "level": 15,
+   "size": "Médio",
+   "abilities": {
+    "for": 23,
+    "des": 17,
+    "con": 17,
+    "int": 10,
+    "sab": 12,
+    "car": 6
+   },
+   "actions": [
+    {
+     "name": "Apavorar",
+     "text": "O devorador de medos faz um teste de Intimidação oposto pela Vontade de todas as criaturas a escolha dele em alcance médio. Criaturas que falhem ficam abaladas pelo resto da cena; criaturas que falhem por 10 ou mais ficam apavoradas por 1d4 rodadas e abaladas pelo resto da cena.",
+     "cost": "Padrão, 2 PM"
+    },
+    {
+     "name": "Desprezo pelo Medo",
+     "text": "O devorador de medos sofre metade do dano de ataques e efeitos de criaturas abaladas ou apavoradas."
+    },
+    {
+     "name": "Foco em Perícia",
+     "text": "Quando faz um teste de Intimidação, o Devorador de Medos rola dois dados e usa o melhor resultado.",
+     "cost": "Livre, 1 PM"
+    },
+    {
+     "name": "Força Assustadora",
+     "text": "O devorador de medos usa seu modificador de Força no lugar de Carisma para Intimidação."
+    },
+    {
+     "name": "Medo Inebriante",
+     "text": "Enquanto estiver em alcance médio de uma criatura abalada ou apavorada, o devorador de medos recebe um bônus em testes de perícia e rolagens de dano corpo a corpo igual à penalidade causada pela condição. Quando acerta um ataque corpo a corpo em uma dessas criaturas, ele recebe uma quantidade de PV temporários igual a essa penalidade."
+    }
+   ],
+   "initiative": 10,
+   "perception": 8,
+   "senses": "faro, visão no escuro",
+   "defense": 19,
+   "fort": 16,
+   "ref": 12,
+   "will": 8,
+   "hp": 75,
+   "speed": "9m (6q)",
+   "mp": 15,
+   "melee": [
+    "Machado de guerra +19 (1d12+16, x3)"
+   ],
+   "skills": "Furtividade +18, Intimidação +21",
+   "equipment": "Gibão de peles, machado de guerra",
+   "treasure": "Metade",
+   "group": "Goblinoides"
+  }
+ },
+ {
+  "id": "creature:engenho-de-guerra-goblin",
+  "kind": "creature",
+  "name": "Engenho de Guerra Goblin",
+  "summary": "ND 6 · Construto 12, Enorme · Goblinoides",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 287
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Construto 12, Enorme. Iniciativa +6, Percepção +10, Defesa 23, Fort +13, Ref +6, Von +6, PV 144.",
+   "nd": "6",
+   "creatureType": "Construto",
+   "level": 12,
+   "size": "Enorme",
+   "abilities": {
+    "for": 30,
+    "des": 10,
+    "con": 24,
+    "int": null,
+    "sab": 10,
+    "car": 1
+   },
+   "actions": [
+    {
+     "name": "Deus da Guerra de Engenhocas",
+     "text": "O engenho de guerra possui várias engenhocas operadas por sua frenética tripulação. Sempre que esta habilidade é usada, role 1d6 quatro vezes. O resultado de cada dado indica qual engenhoca é ativada. Resultados repetidos são desperdiçados — isso significa que mais de um goblin tentou usar uma mesma engenhoca, perdendo sua ação.1) Canhão elétrico. O engenho dispara um raio em uma linha com alcance médio. Criaturas na área sofrem 8d8 pontos de dano de eletricidade (Reflexos CD 23 reduz à metade).2) Balestra ácida. O engenho dispara um virote de ácido em uma criatura em alcance médio. O alvo sofre 8d6 pontos de dano de ácido e fica coberto por muco corrosivo, sofrendo 8d6 pontos de dano de ácido no início de seu próximo turno (Reflexos CD 23 reduz à metade e evita o muco).3) Foles. O engenho dispara labaredas em um cone de alcance curto. Criaturas na área sofrem 6d6 pontos de dano de fogo e ficam em chamas (Reflexos CD 23 reduz à metade e evita as chamas).4) Lâmina giratória. O engenho faz um ataque corpo a corpo em cada criatura adjacente (ataque +20, dano 4d6+10, 19, corte).5) Poça de óleo. O engenho vaza óleo escorregadio e inflamável. Todas as criaturas em alcance curto ficam vulneráveis a fogo até se limparem (o que exige uma ação completa) e caem no chão. Um teste de Reflexos contra CD 23 evita ambos os efeitos.6) Reparos emergenciais. O engenho recupera 20 PV.",
+     "cost": "Padrão"
+    },
+    {
+     "name": "Tripulação",
+     "text": "Se o engenho de guerra for destruído, 1d6 goblins salteadores escapam de seus escombros e surgem no início da rodada seguinte."
+    }
+   ],
+   "initiative": 6,
+   "perception": 10,
+   "senses": "visão no escuro",
+   "defense": 23,
+   "fort": 13,
+   "ref": 6,
+   "will": 6,
+   "defenses": "resistência a dano 10",
+   "hp": 144,
+   "speed": "12m (8q)",
+   "treasure": "Padrão",
+   "group": "Goblinoides"
+  }
+ },
+ {
+  "id": "creature:goblin-engenhoqueiro",
+  "kind": "creature",
+  "name": "Goblin Engenhoqueiro",
+  "summary": "ND 3 · Goblin 7, Pequeno · Goblinoides",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 287
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Goblin 7, Pequeno. Iniciativa +5, Percepção +2, Defesa 17, Fort +7, Ref +11, Von +2, PV 28. Corpo a corpo: Adaga +5 (1d4, 19). À distância: Besta leve +9 (1d8, 19).",
+   "nd": "3",
+   "creatureType": "Goblin",
+   "level": 7,
+   "size": "Pequeno",
+   "abilities": {
+    "for": 10,
+    "des": 15,
+    "con": 14,
+    "int": 17,
+    "sab": 8,
+    "car": 7
+   },
+   "actions": [
+    {
+     "name": "Engenhocas",
+     "text": "O goblin engenhoqueiro faz um teste de Ofício (engenhoqueiro) para ativar uma de suas engenhocas. A CD depende da engenhoca e aumenta em +5 a cada nova ativação no mesmo dia. Se passar no teste, a engenhoca é ativada. Se falhar, ela enguiça e só poderá ser usada novamente após ser consertada.Asa de Bambu (CD 18) Fornece ao goblin deslocamento de voo 12m até o fim da cena.Cospe-chamas (CD 19) Produz um cone de chamas com 6m de alcance. Criaturas na área sofrem 5d6 pontos de dano de fogo e ficam em chamas (Reflexos CD 15 reduz o dano à metade e evita as chamas).Gritador (CD 18) Produz um ruído ensurdecedor. Todas as criaturas em alcance curto escolhidas pelo goblin engenhoqueiro sofrem −2 em testes de ataque e rolagens de dano até o fim da cena.",
+     "cost": "Padrão"
+    }
+   ],
+   "initiative": 5,
+   "perception": 2,
+   "senses": "visão no escuro",
+   "defense": 17,
+   "fort": 7,
+   "ref": 11,
+   "will": 2,
+   "hp": 28,
+   "speed": "9m (6q), escalada 9m (6q)",
+   "melee": [
+    "Adaga +5 (1d4, 19)"
+   ],
+   "ranged": [
+    "Besta leve +9 (1d8, 19)"
+   ],
+   "skills": "Furtividade +7, Ofício (engenhoqueiro) +12",
+   "equipment": "Adaga, besta leve, couro batido, kit de engenhoqueiro, virotes (10)",
+   "treasure": "Metade",
+   "group": "Goblinoides"
+  }
+ },
+ {
+  "id": "creature:goblin-salteador",
+  "kind": "creature",
+  "name": "Goblin Salteador",
+  "summary": "ND 1/3 · Goblin 3, Pequeno · Goblinoides",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 288
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Goblin 3, Pequeno. Iniciativa +4, Percepção +0, Defesa 15, Fort +2, Ref +6, Von +0, PV 9. Corpo a corpo: 2 adagas +4 (1d4, 19).",
+   "nd": "1/3",
+   "creatureType": "Goblin",
+   "level": 3,
+   "size": "Pequeno",
+   "abilities": {
+    "for": 11,
+    "des": 17,
+    "con": 12,
+    "int": 12,
+    "sab": 8,
+    "car": 7
+   },
+   "actions": [
+    {
+     "name": "Frenesi",
+     "text": "O goblin salteador recebe +2 em testes de ataque e rolagens de dano para cada outro goblin salteador adjacente ao seu alvo."
+    }
+   ],
+   "initiative": 4,
+   "perception": 0,
+   "senses": "visão no escuro",
+   "defense": 15,
+   "fort": 2,
+   "ref": 6,
+   "will": 0,
+   "hp": 9,
+   "speed": "9m (6q), escalada 9m (6q)",
+   "melee": [
+    "2 adagas +4 (1d4, 19)"
+   ],
+   "equipment": "Adagas x2, armadura de couro",
+   "treasure": "Metade",
+   "group": "Goblinoides"
+  }
+ },
+ {
+  "id": "creature:hobgoblin-mago-de-batalha",
+  "kind": "creature",
+  "name": "Hobgoblin Mago de Batalha",
+  "summary": "ND 4 · Hobgoblin 9, Médio · Goblinoides",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 289
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Hobgoblin 9, Médio. Iniciativa +9, Percepção +3, Defesa 11, Fort +11, Ref +9, Von +8, PV 45, PM 32. Corpo a corpo: Espada longa +12 (1d8+3, 19).",
+   "nd": "4",
+   "creatureType": "Hobgoblin",
+   "level": 9,
+   "size": "Médio",
+   "abilities": {
+    "for": 17,
+    "des": 12,
+    "con": 17,
+    "int": 21,
+    "sab": 10,
+    "car": 6
+   },
+   "actions": [
+    {
+     "name": "Arcano de Batalha",
+     "text": "O hobgoblin mago de batalha soma seu modificador de Inteligência nas rolagens de dano com magias."
+    },
+    {
+     "name": "Magias",
+     "text": "1º — Amedrontar, Armadura Arcana, Concentração de Combate; 2º — Bola de Fogo, Toque Vampírico. CD 19."
+    }
+   ],
+   "initiative": 9,
+   "perception": 3,
+   "senses": "visão no escuro",
+   "defense": 11,
+   "fort": 11,
+   "ref": 9,
+   "will": 8,
+   "hp": 45,
+   "speed": "9m (6q)",
+   "mp": 32,
+   "melee": [
+    "Espada longa +12 (1d8+3, 19)"
+   ],
+   "skills": "Guerra +12, Misticismo +12, Ofício (armeiro) +14",
+   "equipment": "Espada longa, essência de mana",
+   "treasure": "Metade",
+   "group": "Goblinoides"
+  }
+ },
+ {
+  "id": "creature:hobgoblin-soldado",
+  "kind": "creature",
+  "name": "Hobgoblin Soldado",
+  "summary": "ND 1 · Hobgoblin 6, Médio · Goblinoides",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 289
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Hobgoblin 6, Médio. Iniciativa +5, Percepção +2, Defesa 18, Fort +6, Ref +5, Von +2, PV 18. Corpo a corpo: Espada longa +12 (1d8+4, 19). À distância: Arco longo +8 (1d8+4, x3).",
+   "nd": "1",
+   "creatureType": "Hobgoblin",
+   "level": 6,
+   "size": "Médio",
+   "abilities": {
+    "for": 18,
+    "des": 14,
+    "con": 12,
+    "int": 9,
+    "sab": 8,
+    "car": 6
+   },
+   "initiative": 5,
+   "perception": 2,
+   "senses": "visão no escuro",
+   "defense": 18,
+   "hp": 18,
+   "speed": "6m (4q)",
+   "melee": [
+    "Espada longa +12 (1d8+4, 19)"
+   ],
+   "ranged": [
+    "Arco longo +8 (1d8+4, x3)"
+   ],
+   "skills": "Ofício (armeiro) +4",
+   "equipment": "Arco longo, cota de malha, escudo pesado, espada longa, flechas x20",
+   "treasure": "Metade",
+   "fort": 6,
+   "ref": 5,
+   "will": 2,
+   "group": "Goblinoides"
+  }
+ },
+ {
+  "id": "creature:sombra-do-deus-dos-goblinoides",
+  "kind": "creature",
+  "name": "Sombra do Deus dos Goblinoides",
+  "summary": "ND 9 · Hobgoblin 13, Médio · Goblinoides",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 289
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Hobgoblin 13, Médio. Iniciativa +17, Percepção +11, Defesa 22, Fort +10, Ref +19, Von +7, PV 91, PM 13. Corpo a corpo: 2 machadinhas +20 (1d6+7, x3). À distância: 2 machadinhas +18 (1d6+7, x3).",
+   "nd": "9",
+   "creatureType": "Hobgoblin",
+   "level": 13,
+   "size": "Médio",
+   "abilities": {
+    "for": 12,
+    "des": 24,
+    "con": 20,
+    "int": 13,
+    "sab": 12,
+    "car": 6
+   },
+   "actions": [
+    {
+     "name": "Assassinar",
+     "text": "O sombra do Deus dos Goblinoides analisa uma criatura em alcance curto. Em seu primeiro Ataque Furtivo que causar dano a ela até o fim do seu próximo turno, ele dobra os dados de dano do Ataque Furtivo.",
+     "cost": "Movimento, 3 PM"
+    },
+    {
+     "name": "Ataque Furtivo",
+     "text": "Uma vez por rodada, o sombra do Deus dos Goblinoides causa +7d6 pontos de dano com ataques corpo a corpo, ou à distância em alcance curto, contra alvos desprevenidos ou que ele esteja flanqueando."
+    },
+    {
+     "name": "Especialista",
+     "text": "Quando faz um teste de Furtividade, o sombra do Deus dos Goblinoides dobra seu bônus de treinamento.",
+     "cost": "Livre, 1 PM"
+    },
+    {
+     "name": "Evasão Aprimorada",
+     "text": "Quando sofre um ataque que permite um teste de Reflexos para reduzir o dano à metade, o sombra do Deus dos Goblinoides não sofre dano algum se passar e sofre apenas metade do dano se falhar."
+    },
+    {
+     "name": "Olhos nas Costas",
+     "text": "O sombra do Deus dos Goblinoides nunca fica surpreendido ou flanqueado."
+    },
+    {
+     "name": "Rolamento Defensivo",
+     "text": "Quando sofre dano, o sombra do Deus dos Goblinoides reduz esse dano à metade e fica caído.",
+     "cost": "Reação, 2 PM"
+    },
+    {
+     "name": "Sombra",
+     "text": "O sombra do Deus dos Goblinoides pode se mover com seu deslocamento normal enquanto usa Furtividade sem sofrer penalidades no teste de perícia."
+    }
+   ],
+   "initiative": 17,
+   "perception": 11,
+   "senses": "visão no escuro",
+   "defense": 22,
+   "fort": 10,
+   "ref": 19,
+   "will": 7,
+   "hp": 91,
+   "speed": "9m (6q)",
+   "mp": 13,
+   "melee": [
+    "2 machadinhas +20 (1d6+7, x3)"
+   ],
+   "ranged": [
+    "2 machadinhas +18 (1d6+7, x3)"
+   ],
+   "skills": "Acrobacia +17, Atletismo +11, Furtividade +19, Intimidação +8, Ladinagem +17, Ofício (armeiro) +13",
+   "equipment": "Couro batido ajustado, machadinhas x2, machadinhas pungentes x2",
+   "treasure": "Metade",
+   "group": "Goblinoides",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 289"
+   }
+  }
+ },
+ {
+  "id": "creature:cascavel",
+  "kind": "creature",
+  "name": "Cascavel",
+  "summary": "ND 1/4 · Animal 1, Minúsculo · Serpentes",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 290
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Animal 1, Minúsculo. Iniciativa +5, Percepção +1, Defesa 14, Fort +3, Ref +5, Von +1, PV 5. Corpo a corpo: Mordida +5 (1 mais veneno).",
+   "nd": "1/4",
+   "creatureType": "Animal",
+   "level": 1,
+   "size": "Minúsculo",
+   "abilities": {
+    "for": 6,
+    "des": 17,
+    "con": 13,
+    "int": 1,
+    "sab": 12,
+    "car": 2
+   },
+   "actions": [
+    {
+     "name": "Veneno",
+     "text": "1d12 pontos de dano (Fort CD 13 reduz à metade)."
+    }
+   ],
+   "initiative": 5,
+   "perception": 1,
+   "senses": "faro, visão na penumbra",
+   "defense": 14,
+   "fort": 3,
+   "ref": 5,
+   "will": 1,
+   "hp": 5,
+   "speed": "6m (4q), escalar 6m (4q), natação 9m (6q)",
+   "melee": [
+    "Mordida +5 (1 mais veneno)"
+   ],
+   "skills": "Furtividade +10",
+   "treasure": "1 dose de veneno de cascavel (CD 12 para extrair, 15 moedas cada dose)",
+   "group": "Serpentes"
+  }
+ },
+ {
+  "id": "creature:jiboia",
+  "kind": "creature",
+  "name": "Jiboia",
+  "summary": "ND 1/2 · Animal 3, Médio · Serpentes",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 290
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Animal 3, Médio. Iniciativa +4, Percepção +2, Defesa 16, Fort +4, Ref +6, Von +2, PV 15. Corpo a corpo: Mordida +6 (1d4+3).",
+   "nd": "1/2",
+   "creatureType": "Animal",
+   "level": 3,
+   "size": "Médio",
+   "abilities": {
+    "for": 17,
+    "des": 17,
+    "con": 13,
+    "int": 1,
+    "sab": 12,
+    "car": 2
+   },
+   "actions": [
+    {
+     "name": "Agarrar Aprimorado",
+     "text": "Se a jiboia acerta um ataque de mordida, pode fazer a manobra agarrar (bônus +6).",
+     "cost": "Livre"
+    },
+    {
+     "name": "Constrição",
+     "text": "No início de cada um de seus turnos, a jiboia causa 2d4+3 pontos de dano de impacto em qualquer criatura que esteja agarrando.",
+     "cost": "Livre"
+    }
+   ],
+   "initiative": 4,
+   "perception": 2,
+   "senses": "faro, visão na penumbra",
+   "defense": 16,
+   "fort": 4,
+   "ref": 6,
+   "will": 2,
+   "hp": 15,
+   "speed": "6m (4q), escalar 6m (4q), natação 9m (6q)",
+   "melee": [
+    "Mordida +6 (1d4+3)"
+   ],
+   "skills": "Furtividade +6",
+   "treasure": "Nenhum",
+   "group": "Serpentes"
+  }
+ },
+ {
+  "id": "creature:naja",
+  "kind": "creature",
+  "name": "Naja",
+  "summary": "ND 1 · Animal 4, Pequeno · Serpentes",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 290
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Animal 4, Pequeno. Iniciativa +8, Percepção +3, Defesa 17, Fort +5, Ref +8, Von +3, PV 20. Corpo a corpo: Mordida +10 (1d4 mais veneno).",
+   "nd": "1",
+   "creatureType": "Animal",
+   "level": 4,
+   "size": "Pequeno",
+   "abilities": {
+    "for": 10,
+    "des": 19,
+    "con": 13,
+    "int": 1,
+    "sab": 12,
+    "car": 2
+   },
+   "actions": [
+    {
+     "name": "Veneno",
+     "text": "1d12 pontos de dano por rodada durante 1d4 rodadas (Fort CD 14 reduz à metade)."
+    }
+   ],
+   "initiative": 8,
+   "perception": 3,
+   "senses": "faro, visão na penumbra",
+   "defense": 17,
+   "fort": 5,
+   "ref": 8,
+   "will": 3,
+   "hp": 20,
+   "speed": "6m (4q), escalar 6m (4q), natação 6m (4q)",
+   "melee": [
+    "Mordida +10 (1d4 mais veneno)"
+   ],
+   "skills": "Furtividade +10",
+   "treasure": "1 dose de veneno de naja (CD 15 para extrair, 35 moedas cada dose)",
+   "group": "Serpentes"
+  }
+ },
+ {
+  "id": "creature:sucuri",
+  "kind": "creature",
+  "name": "Sucuri",
+  "summary": "ND 3 · Animal 11, Grande · Serpentes",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 290
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Animal 11, Grande. Iniciativa +7, Percepção +6, Defesa 19, Fort +13, Ref +11, Von +6, PV 88. Corpo a corpo: Mordida +18 (1d6+9).",
+   "nd": "3",
+   "creatureType": "Animal",
+   "level": 11,
+   "size": "Grande",
+   "abilities": {
+    "for": 29,
+    "des": 15,
+    "con": 19,
+    "int": 1,
+    "sab": 12,
+    "car": 2
+   },
+   "actions": [
+    {
+     "name": "Agarrar Aprimorado",
+     "text": "Se a sucuri acerta um ataque de mordida, pode fazer a manobra agarrar (bônus +20).",
+     "cost": "Livre"
+    },
+    {
+     "name": "Constrição",
+     "text": "No início de cada um de seus turnos, a sucuri causa 2d6+9 pontos de dano de impacto em qualquer criatura que esteja agarrando.",
+     "cost": "Livre"
+    }
+   ],
+   "initiative": 7,
+   "perception": 6,
+   "senses": "faro, visão na penumbra",
+   "defense": 19,
+   "fort": 13,
+   "ref": 11,
+   "will": 6,
+   "hp": 88,
+   "speed": "6m (4q), escalar 9m (6q), natação 9m (6q)",
+   "melee": [
+    "Mordida +18 (1d6+9)"
+   ],
+   "skills": "Furtividade +9",
+   "treasure": "Nenhum",
+   "group": "Serpentes"
+  }
+ },
+ {
+  "id": "creature:cultista-do-deus-da-traicao",
+  "kind": "creature",
+  "name": "Cultista do Deus da Traição",
+  "summary": "ND 7 · Medusa 15, Médio · Serpentes",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 291
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Medusa 15, Médio. Iniciativa +17, Percepção +18, Defesa 19, Fort +14, Ref +17, Von +18, PV 160, PM 35. Corpo a corpo: Adaga +20 (1d4+4 mais veneno, 19).",
+   "nd": "7",
+   "creatureType": "Medusa",
+   "level": 15,
+   "size": "Médio",
+   "abilities": {
+    "for": 8,
+    "des": 18,
+    "con": 12,
+    "int": 18,
+    "sab": 20,
+    "car": 20
+   },
+   "actions": [
+    {
+     "name": "Ataque Furtivo",
+     "text": "Uma vez por rodada, a cultista do Deus da Traição causa +5d6 pontos de dano com ataques corpo a corpo, ou à distância em alcance curto, contra alvos desprevenidos ou que ela esteja flanqueando."
+    },
+    {
+     "name": "Magias",
+     "text": "1º — Arma Mágica, Comando, Curar Ferimentos, Escuridão; 2º — Enxame de Pestes, Miasma Mefítico; CD 22."
+    },
+    {
+     "name": "Olhar Atordoante",
+     "text": "A cultista força uma criatura em alcance curto a fazer um teste de Fortitude (CD 22). Se a criatura falhar, fica atordoada por 1 rodada. Se passar, fica imune a esta habilidade por um dia.",
+     "cost": "Movimento, 1 PM"
+    },
+    {
+     "name": "Veneno",
+     "text": "2d12 pontos de dano por rodada durante 2d4 rodadas (Fort CD 23 reduz à metade)."
+    }
+   ],
+   "initiative": 17,
+   "perception": 18,
+   "senses": "visão no escuro",
+   "defense": 19,
+   "fort": 14,
+   "ref": 17,
+   "will": 18,
+   "defenses": "resistência a veneno 5",
+   "hp": 160,
+   "speed": "9m (6q)",
+   "mp": 35,
+   "melee": [
+    "Adaga +20 (1d4+4 mais veneno, 19)"
+   ],
+   "skills": "Enganação +20, Intuição +20, Religião +17",
+   "equipment": "Adaga certeira, couraça, escudo leve, símbolo do Deus da Traição",
+   "treasure": "Padrão",
+   "group": "Serpentes",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 291"
+   }
+  }
+ },
+ {
+  "id": "creature:hidra",
+  "kind": "creature",
+  "name": "Hidra",
+  "summary": "ND 11 · Monstro 18, Enorme · Serpentes",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 291
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro 18, Enorme. Iniciativa +9, Percepção +15, Defesa 35, Fort +27, Ref +15, Von +9, PV 396. Corpo a corpo: 5 mordidas +25 (3d6+17).",
+   "nd": "11",
+   "creatureType": "Monstro",
+   "level": 18,
+   "size": "Enorme",
+   "abilities": {
+    "for": 34,
+    "des": 11,
+    "con": 35,
+    "int": 2,
+    "sab": 10,
+    "car": 9
+   },
+   "actions": [
+    {
+     "name": "Cortar Cabeças",
+     "text": "As cabeças da hidra são seu ponto fraco e é possível atacá-las diretamente. Atacar uma cabeça impõe uma penalidade de –2 no teste de ataque. Se o ataque acertar e causar pelo menos 25 pontos de dano de corte, a cabeça é decepada e a hidra perde um ataque de mordida. Entretanto, 1d4 rodadas após a cabeça ser decepada, duas novas nascem em seu lugar (a hidra pode ter até dez cabeças). Para impedir o nascimento de novas cabeças é necessário cauterizar o pescoço. Isso exige causar 25 pontos de dano de ácido ou fogo na hidra. Se todas as cabeças da hidra forem decepadas e todos seus pescoços forem cauterizados, ela morre."
+    }
+   ],
+   "initiative": 9,
+   "perception": 15,
+   "senses": "faro, visão no escuro",
+   "defense": 35,
+   "fort": 27,
+   "ref": 15,
+   "will": 9,
+   "defenses": "cura acelerada 100",
+   "hp": 396,
+   "speed": "9m (6q), natação 9m (6q)O mestre da guilda, a capitã da guarda, o amigo\nde infância — qualquer um pode ser um da Traição",
+   "melee": [
+    "5 mordidas +25 (3d6+17)"
+   ],
+   "skills": "Furtividade +3 (+13 em pântanos)",
+   "treasure": "Nenhum",
+   "group": "Serpentes"
+  }
+ },
+ {
+  "id": "creature:serpente-colossal",
+  "kind": "creature",
+  "name": "Serpente Colossal",
+  "summary": "ND 13 · Monstro 25, Enorme · Serpentes",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 292
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro 25, Enorme. Iniciativa +22, Percepção +19, Defesa 29, Fort +27, Ref +19, Von +13, PV 475, PM 25. Corpo a corpo: Mordida +34 (4d6+14 mais veneno).",
+   "nd": "13",
+   "creatureType": "Monstro",
+   "level": 25,
+   "size": "Enorme",
+   "abilities": {
+    "for": 39,
+    "des": 19,
+    "con": 29,
+    "int": 2,
+    "sab": 12,
+    "car": 6
+   },
+   "actions": [
+    {
+     "name": "Agarrar Aprimorado",
+     "text": "Se o serpente colossal acerta um ataque de mordida, pode fazer a manobra agarrar (bônus +39).",
+     "cost": "Livre"
+    },
+    {
+     "name": "Constrição",
+     "text": "No início de cada um de seus turnos, o serpente colossal causa 6d6+14 pontos de dano de impacto em qualquer criatura que esteja agarrando.",
+     "cost": "Livre"
+    },
+    {
+     "name": "Crias do Deus da Traição",
+     "text": "O serpente colossal cospe 2d6 serpentes em alcance curto. As serpentes agem a partir da próxima rodada do serpente colossal. Elas têm deslocamento 9m (normal, de escalada e de natação) e podem gastar uma ação padrão para causar 1d6 pontos de dano de veneno em uma criatura adjacente. As serpentes possuem For 8, Des 14 e todos os outros atributos nulos; elas têm 1 PV e não têm valor de Defesa ou testes de resistência (qualquer efeito as acerta automaticamente).",
+     "cost": "Movimento, 4 PM"
+    },
+    {
+     "name": "Cuspe Venenoso",
+     "text": "O serpente colossal cospe veneno em um cone de 9m. Criaturas na área sofrem 6d12 pontos de dano e ficam cegas por 1d4 rodadas (Fortitude CD 31 reduz o dano à metade e evita a cegueira).",
+     "cost": "Padrão, 4 PM"
+    },
+    {
+     "name": "Veneno",
+     "text": "4d12 pontos de dano por rodada durante 2d4 rodadas (Fort CD 31 reduz à metade)."
+    }
+   ],
+   "initiative": 22,
+   "perception": 19,
+   "senses": "faro, visão no escuro",
+   "defense": 29,
+   "fort": 27,
+   "ref": 19,
+   "will": 13,
+   "defenses": "imunidade a veneno",
+   "hp": 475,
+   "speed": "12m (8q), escalar 12m (8q), natação 12m (8q)",
+   "mp": 25,
+   "melee": [
+    "Mordida +34 (4d6+14 mais veneno)"
+   ],
+   "skills": "Furtividade +17",
+   "treasure": "Padrão",
+   "group": "Serpentes",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 292"
+   }
+  }
+ },
+ {
+  "id": "creature:naga-guardiao",
+  "kind": "creature",
+  "name": "Naga Guardião",
+  "summary": "ND 3 · Naga 9, Médio · Serpentes",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 292
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Naga 9, Médio. Iniciativa +9, Percepção +4, Defesa 21, Fort +11, Ref +5, Von +4, PV 45. Corpo a corpo: 2 cimitarras +12 (1d6+4, 19) e cauda +12 (1d6+4).",
+   "nd": "3",
+   "creatureType": "Naga",
+   "level": 9,
+   "size": "Médio",
+   "abilities": {
+    "for": 18,
+    "des": 12,
+    "con": 16,
+    "int": 8,
+    "sab": 10,
+    "car": 9
+   },
+   "actions": [
+    {
+     "name": "Fraquezas Ofídias",
+     "text": "O naga combatente sofre 1 ponto de dano adicional para cada dado de dano de frio."
+    }
+   ],
+   "initiative": 9,
+   "perception": 4,
+   "defense": 21,
+   "fort": 11,
+   "ref": 5,
+   "will": 4,
+   "defenses": "+5 contra venenos, −5 contra efeitos baseados em música",
+   "hp": 45,
+   "speed": "9m (6q)",
+   "melee": [
+    "2 cimitarras +12 (1d6+4, 19) e cauda +12 (1d6+4)"
+   ],
+   "skills": "Enganação +5, Furtividade +7",
+   "equipment": "Cimitarras x2, meia armadura",
+   "treasure": "Nenhum",
+   "group": "Serpentes",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 292"
+   }
+  }
+ },
+ {
+  "id": "creature:naga-mistica",
+  "kind": "creature",
+  "name": "Naga Mística",
+  "summary": "ND 6 · Naga 15, Médio · Serpentes",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 292
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Naga 15, Médio. Iniciativa +16, Percepção +9, Defesa 14, Fort +10, Ref +16, Von +15, PV 90, PM 50. Corpo a corpo: Espada curta +16 (1d6+3, 19) e cauda +16 (1d6+3).",
+   "nd": "6",
+   "creatureType": "Naga",
+   "level": 15,
+   "size": "Médio",
+   "abilities": {
+    "for": 10,
+    "des": 16,
+    "con": 18,
+    "int": 20,
+    "sab": 14,
+    "car": 10
+   },
+   "actions": [
+    {
+     "name": "Magia Acelerada",
+     "text": "Quando lança uma magia com execução de ação completa ou menor, a naga mística muda a execução dela para livre. Ela só pode usar este poder uma vez por rodada.",
+     "cost": "Livre, 4 PM"
+    },
+    {
+     "name": "Magias",
+     "text": "1º — Armadura Arcana, Imagem Espelhada, Seta Infalível; 2º — Relâmpago, Velocidade; 3º — Transformação de Guerra; CD 22."
+    },
+    {
+     "name": "Fraquezas Ofídias",
+     "text": "A naga mística sofre 1 ponto de dano adicional para cada dado de dano de frio."
+    }
+   ],
+   "initiative": 16,
+   "perception": 9,
+   "defense": 14,
+   "fort": 10,
+   "ref": 16,
+   "will": 15,
+   "defenses": "+5 contra venenos, −5 contra efeitos baseados em música",
+   "hp": 90,
+   "speed": "9m (6q)",
+   "mp": 50,
+   "melee": [
+    "Espada curta +16 (1d6+3, 19) e cauda +16 (1d6+3)"
+   ],
+   "skills": "Conhecimento +18, Enganação +15, Furtividade +18, Intuição +15, Misticismo +18",
+   "equipment": "Essência de mana",
+   "treasure": "Nenhum",
+   "group": "Serpentes",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 292"
+   }
+  }
+ },
+ {
+  "id": "creature:troll-nobre-cacador",
+  "kind": "creature",
+  "name": "Troll Nobre Caçador",
+  "summary": "ND 2 · Troll Nobre 7, Médio · Trolls",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 293
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Troll Nobre 7, Médio. Iniciativa +7, Percepção +9, Defesa 19, Fort +6, Ref +11, Von +5, PV 35, PM 7. Corpo a corpo: 2 espadas curtas +11 (1d6+4, 19). À distância: Besta pesada +11 (1d12, 19) ou rede +11 (agarrar).",
+   "nd": "2",
+   "creatureType": "Troll Nobre",
+   "level": 7,
+   "size": "Médio",
+   "abilities": {
+    "for": 13,
+    "des": 18,
+    "con": 17,
+    "int": 14,
+    "sab": 14,
+    "car": 8
+   },
+   "actions": [
+    {
+     "name": "Marca da Presa",
+     "text": "O troll nobre analisa uma criatura em alcance curto. Até o final da cena, recebe +1d8 em rolagens de dano contra essa criatura (ou +2d8, se a criatura for um anão, elfo ou humano).",
+     "cost": "Movimento, 2 PM"
+    },
+    {
+     "name": "Natureza Vegetal",
+     "text": "O troll nobre é afetado por habilidades e magias que afetam plantas."
+    },
+    {
+     "name": "Regeneração Vegetal",
+     "text": "O troll nobre recupera 5 pontos de vida. Esta habilidade não cura dano de ácido e fogo e não pode ser usada quando o troll nobre está exposto à luz do sol ou similar.",
+     "cost": "Movimento, 1 PM"
+    },
+    {
+     "name": "Sensibilidade a Luz",
+     "text": "Quando exposto à luz do sol ou similar, o troll nobre fica ofuscado."
+    }
+   ],
+   "initiative": 7,
+   "perception": 9,
+   "senses": "visão no escuro",
+   "defense": 19,
+   "fort": 6,
+   "ref": 11,
+   "will": 5,
+   "defenses": "imunidade a atordoamento e metamorfose, resistência a magia +2",
+   "hp": 35,
+   "speed": "9m (6q)",
+   "mp": 7,
+   "melee": [
+    "2 espadas curtas +11 (1d6+4, 19)"
+   ],
+   "ranged": [
+    "Besta pesada +11 (1d12, 19) ou rede +11 (agarrar)"
+   ],
+   "skills": "Intimidação +4, Sobrevivência +9",
+   "equipment": "Besta pesada, couraça, espada curta x2, rede, virotes x20",
+   "treasure": "Padrão",
+   "group": "Trolls",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 293"
+   }
+  }
+ },
+ {
+  "id": "creature:troll-nobre-feitor",
+  "kind": "creature",
+  "name": "Troll Nobre Feitor",
+  "summary": "ND 6 · Troll Nobre 13, Médio · Trolls",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 293
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Troll Nobre 13, Médio. Iniciativa +14, Percepção +6, Defesa 15, Fort +10, Ref +14, Von +10, PV 78, PM 44. Corpo a corpo: Chicote +14 (1d3+10, 19) e espada curta +14 (1d6+10, 19).",
+   "nd": "6",
+   "creatureType": "Troll Nobre",
+   "level": 13,
+   "size": "Médio",
+   "abilities": {
+    "for": 10,
+    "des": 18,
+    "con": 18,
+    "int": 21,
+    "sab": 10,
+    "car": 12
+   },
+   "actions": [
+    {
+     "name": "Açoitar Escravos",
+     "text": "O troll nobre usa de coerção e dor para motivar seus escravos. No próximo turno de cada aliado do troll nobre em alcance médio, esse aliado recebe uma ação de movimento extra e +2 em testes de ataque e rolagens de dano.",
+     "cost": "Padrão, 6 PM"
+    },
+    {
+     "name": "Especialista em Encantamento",
+     "text": "A CD para resistir às magias de encantamento do feitor aumenta em +2."
+    },
+    {
+     "name": "Magias",
+     "text": "1º — Adaga Mental, Armadura Arcana, Enfeitiçar; 2º — Desespero Esmagador, Marca da Obediência, Relâmpago. CD 21 (23 para encantamento)."
+    },
+    {
+     "name": "Natureza Vegetal",
+     "text": "O troll nobre é afetado por habilidades e magias que afetam plantas."
+    },
+    {
+     "name": "Regeneração Vegetal",
+     "text": "O troll nobre recupera 5 pontos de vida. Esta habilidade não cura dano de ácido e fogo e não pode ser usada quando o troll nobre está exposto à luz do sol ou similar.",
+     "cost": "Movimento, 1 PM"
+    },
+    {
+     "name": "Sensibilidade a Luz",
+     "text": "Quando exposto à luz do sol ou similar, o troll nobre fica ofuscado."
+    }
+   ],
+   "initiative": 14,
+   "perception": 6,
+   "senses": "visão no escuro",
+   "defense": 15,
+   "fort": 10,
+   "ref": 14,
+   "will": 10,
+   "defenses": "imunidade a atordoamento e metamorfose, resistência a magia +2",
+   "hp": 78,
+   "speed": "9m (6q)",
+   "mp": 44,
+   "melee": [
+    "Chicote +14 (1d3+10, 19) e espada curta +14 (1d6+10, 19)"
+   ],
+   "skills": "Intimidação +10, Misticismo +14",
+   "equipment": "Chicote cruel, espada curta cruel, essência de mana",
+   "treasure": "Dobro",
+   "group": "Trolls",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 293"
+   }
+  }
+ },
+ {
+  "id": "creature:ganchador",
+  "kind": "creature",
+  "name": "Ganchador",
+  "summary": "ND 5 · Monstro 10, Grande · Trolls",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 294
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro 10, Grande. Iniciativa +12, Percepção +10, Defesa 25, Fort +14, Ref +12, Von +6, PV 150. Corpo a corpo: Mordida +16 (2d6+7) e 2 garras +16 (1d8+7, 19/x3).",
+   "nd": "5",
+   "creatureType": "Monstro",
+   "level": 10,
+   "size": "Grande",
+   "abilities": {
+    "for": 24,
+    "des": 16,
+    "con": 20,
+    "int": 6,
+    "sab": 12,
+    "car": 8
+   },
+   "actions": [
+    {
+     "name": "Dilacerar",
+     "text": "Se o ganchador acerta os dois ataques de garra em uma mesma criatura na mesma rodada, causa mais 2d8+7 pontos de dano."
+    },
+    {
+     "name": "Quebrar",
+     "text": "O ganchador recebe +2 em testes de ataque para quebrar (bônus total +20) e causa +1d8 pontos de dano contra objetos."
+    },
+    {
+     "name": "Sensibilidade a Luz",
+     "text": "Quando exposto à luz do sol ou similar, o ganchador fica ofuscado."
+    }
+   ],
+   "initiative": 12,
+   "perception": 10,
+   "senses": "percepção às cegas, visão no escuro",
+   "defense": 25,
+   "fort": 14,
+   "ref": 12,
+   "will": 6,
+   "hp": 150,
+   "speed": "9m (6q), escalar 9m (6q)",
+   "melee": [
+    "Mordida +16 (2d6+7) e 2 garras +16 (1d8+7, 19/x3)"
+   ],
+   "treasure": "Metade",
+   "group": "Trolls"
+  }
+ },
+ {
+  "id": "creature:troll",
+  "kind": "creature",
+  "name": "Troll",
+  "summary": "ND 4 · Monstro 7, Grande · Trolls",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 294
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro 7, Grande. Iniciativa +5, Percepção +4, Defesa 19, Fort +13, Ref +9, Von +2, PV 112. Corpo a corpo: Mordida +14 (1d8+7) e 2 garras +14 (1d6+7).",
+   "nd": "4",
+   "creatureType": "Monstro",
+   "level": 7,
+   "size": "Grande",
+   "abilities": {
+    "for": 25,
+    "des": 14,
+    "con": 23,
+    "int": 6,
+    "sab": 9,
+    "car": 6
+   },
+   "actions": [
+    {
+     "name": "Dilacerar",
+     "text": "Se o troll acerta os dois ataques de garra em uma mesma criatura na mesma rodada, causa mais 2d6+7 pontos de dano."
+    }
+   ],
+   "initiative": 5,
+   "perception": 4,
+   "senses": "visão no escuro",
+   "defense": 19,
+   "fort": 13,
+   "ref": 9,
+   "will": 2,
+   "defenses": "cura acelerada 15/ácido ou fogo",
+   "hp": 112,
+   "speed": "9m (6q)",
+   "melee": [
+    "Mordida +14 (1d8+7) e 2 garras +14 (1d6+7)"
+   ],
+   "treasure": "Padrão",
+   "group": "Trolls"
+  }
+ },
+ {
+  "id": "creature:troll-das-cavernas",
+  "kind": "creature",
+  "name": "Troll das Cavernas",
+  "summary": "ND 9 · Monstro 15, Enorme · Trolls",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 295
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro 15, Enorme. Iniciativa +7, Percepção +14, Defesa 27, Fort +26, Ref +7, Von +6, PV 345. Corpo a corpo: Tacape +23 (3d6+27) e mordida +23 (2d6+17).",
+   "nd": "9",
+   "creatureType": "Monstro",
+   "level": 15,
+   "size": "Enorme",
+   "abilities": {
+    "for": 35,
+    "des": 10,
+    "con": 37,
+    "int": 6,
+    "sab": 9,
+    "car": 6
+   },
+   "actions": [
+    {
+     "name": "Golpe Avassalador",
+     "text": "Quando acerta um ataque de tacape, o troll das cavernas arremessa a vítima 1d6 x 1,5m em uma direção à escolha dele. A vítima fica caída e, se atingir algum obstáculo, sofre 1d6 pontos de dano de impacto para cada 1,5m que foi arremessada. Um teste de Fortitude (CD 29) evita o arremesso.",
+     "cost": "Livre"
+    },
+    {
+     "name": "Varrer",
+     "text": "Uma vez por rodada, quando o troll das cavernas faz um ataque corpo a corpo e reduz os pontos de vida do alvo para 0 ou menos, pode realizar um ataque adicional contra outra criatura dentro do seu alcance. Esse ataque usa os mesmos bônus de ataque e dano, mas os dados devem ser rolados novamente.",
+     "cost": "Livre"
+    }
+   ],
+   "initiative": 7,
+   "perception": 14,
+   "senses": "faro, visão no escuro",
+   "defense": 27,
+   "fort": 26,
+   "ref": 7,
+   "will": 6,
+   "defenses": "cura acelerada 20/ácido ou fogo",
+   "hp": 345,
+   "speed": "12m (8q), escalar 9m (6q)",
+   "melee": [
+    "Tacape +23 (3d6+27) e mordida +23 (2d6+17)"
+   ],
+   "equipment": "Tacape gigante",
+   "treasure": "Metade",
+   "group": "Trolls"
+  }
+ },
+ {
+  "id": "creature:dragao-filhote",
+  "kind": "creature",
+  "name": "Dragão Filhote",
+  "summary": "ND 3 · Monstro (dragão) 9, Médio · Dragões",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 296
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro (dragão) 9, Médio. Iniciativa +11, Percepção +8, Defesa 23, Fort +12, Ref +11, Von +8, PV 126, PM 9. Corpo a corpo: Mordida +13 (1d8+5) e 2 garras +13 (1d6+5).",
+   "nd": "3",
+   "creatureType": "Monstro (dragão)",
+   "level": 9,
+   "size": "Médio",
+   "abilities": {
+    "for": 21,
+    "des": 17,
+    "con": 18,
+    "int": 10,
+    "sab": 11,
+    "car": 10
+   },
+   "actions": [
+    {
+     "name": "Sopro",
+     "text": "Cone curto. Criaturas na área sofrem 2d12 pontos de dano de fogo e ficam em chamas (Ref CD 18 reduz o dano à metade e evita as chamas).",
+     "cost": "Padrão, 3 PM"
+    }
+   ],
+   "initiative": 11,
+   "perception": 8,
+   "senses": "percepção às cegas, visão no escuro",
+   "defense": 23,
+   "fort": 12,
+   "ref": 11,
+   "will": 8,
+   "defenses": "imunidade a fogo, resistência a magia +1, vulnerabilidade a frio",
+   "hp": 126,
+   "speed": "12m (8q), voo 18m (12q)",
+   "mp": 9,
+   "melee": [
+    "Mordida +13 (1d8+5) e 2 garras +13 (1d6+5)"
+   ],
+   "skills": "Intimidação +8, Misticismo +8",
+   "treasure": "Padrão",
+   "group": "Dragões"
+  }
+ },
+ {
+  "id": "creature:dragao-jovem",
+  "kind": "creature",
+  "name": "Dragão Jovem",
+  "summary": "ND 7 · Monstro (dragão) 13, Grande · Dragões",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 296
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro (dragão) 13, Grande. Iniciativa +12, Percepção +12, Defesa 32, Fort +17, Ref +12, Von +12, PV 221, PM 15. Corpo a corpo: Mordida +20 (2d6+8, 19) e 2 garras +18 (1d8+8, 19).",
+   "nd": "7",
+   "creatureType": "Monstro (dragão)",
+   "level": 13,
+   "size": "Grande",
+   "abilities": {
+    "for": 27,
+    "des": 15,
+    "con": 25,
+    "int": 14,
+    "sab": 15,
+    "car": 14
+   },
+   "actions": [
+    {
+     "name": "Sopro",
+     "text": "Cone curto. Criaturas na área sofrem 6d12 pontos de dano de fogo e ficam em chamas (Ref CD 23 reduz o dano à metade e evita as chamas).",
+     "cost": "Padrão, 3 PM"
+    },
+    {
+     "name": "Trespassar",
+     "text": "Quando o dragão faz um ataque corpo a corpo e reduz os pontos de vida do alvo para 0 ou menos, pode gastar 1 PM para fazer um ataque adicional contra outra criatura dentro do seu alcance.",
+     "cost": "Livre, 1 PM"
+    }
+   ],
+   "initiative": 12,
+   "perception": 12,
+   "senses": "percepção às cegas, visão no escuro",
+   "defense": 32,
+   "fort": 17,
+   "ref": 12,
+   "will": 12,
+   "defenses": "imunidade a fogo, resistência a dano 5, resistência a magia +2, vulnerabilidade a frio",
+   "hp": 221,
+   "speed": "12m (8q), voo 18m (12q)",
+   "mp": 15,
+   "melee": [
+    "Mordida +20 (2d6+8, 19) e 2 garras +18 (1d8+8, 19)"
+   ],
+   "skills": "Intimidação +12, Misticismo +12",
+   "treasure": "Dobro",
+   "group": "Dragões"
+  }
+ },
+ {
+  "id": "creature:dragao-adulto",
+  "kind": "creature",
+  "name": "Dragão Adulto",
+  "summary": "ND 11 · Monstro (dragão) 17, Enorme · Dragões",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 296
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro (dragão) 17, Enorme. Iniciativa +15, Percepção +18, Defesa 37, Fort +22, Ref +15, Von +18, PV 306, PM 21. Corpo a corpo: Mordida +29 (3d6+13, 18) e 2 garras +27 (2d6+13, 18).",
+   "nd": "11",
+   "creatureType": "Monstro (dragão)",
+   "level": 17,
+   "size": "Enorme",
+   "abilities": {
+    "for": 37,
+    "des": 13,
+    "con": 27,
+    "int": 19,
+    "sab": 19,
+    "car": 16
+   },
+   "actions": [
+    {
+     "name": "Aura Aterradora",
+     "text": "Vontade CD 21 evita."
+    },
+    {
+     "name": "Magia Inerente",
+     "text": "1º — Armadura Arcana, Curar Ferimentos, Enfeitiçar; 2º — Dissipar Magia, Velocidade; 3º — Globo de Invulnerabilidade. CD 21."
+    },
+    {
+     "name": "Sopro",
+     "text": "Cone médio. Criaturas na área sofrem 12d12 pontos de dano de fogo e ficam em chamas (Ref CD 26 reduz o dano à metade e evita as chamas).",
+     "cost": "Padrão, 3 PM"
+    },
+    {
+     "name": "Trespassar",
+     "text": "Quando o dragão faz um ataque corpo a corpo e reduz os pontos de vida do alvo para 0 ou menos, pode gastar 1 PM para fazer um ataque adicional contra outra criatura dentro do seu alcance.",
+     "cost": "Livre, 1 PM"
+    }
+   ],
+   "initiative": 15,
+   "perception": 18,
+   "senses": "percepção às cegas, visão no escuro",
+   "defense": 37,
+   "fort": 22,
+   "ref": 15,
+   "will": 18,
+   "defenses": "imunidade a fogo, resistência a dano 10, resistência a magia +3, vulnerabilidade a frio",
+   "hp": 306,
+   "speed": "12m (8q), voo 24m (16q)",
+   "mp": 21,
+   "melee": [
+    "Mordida +29 (3d6+13, 18) e 2 garras +27 (2d6+13, 18)"
+   ],
+   "skills": "Enganação +17, Intimidação +17, Misticismo +18",
+   "treasure": "Dobro",
+   "group": "Dragões"
+  }
+ },
+ {
+  "id": "creature:dragao-veneravel",
+  "kind": "creature",
+  "name": "Dragão Venerável",
+  "summary": "ND 15 · Monstro (dragão) 21, Enorme · Dragões",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 297
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro (dragão) 21, Enorme. Iniciativa +16, Percepção +23, Defesa 43, Fort +27, Ref +16, Von +23, PV 441, PM 49. Corpo a corpo: Mordida +33 (4d6+17, 17) e 2 garras +33 (3d6+17, 17).",
+   "nd": "15",
+   "creatureType": "Monstro (dragão)",
+   "level": 21,
+   "size": "Enorme",
+   "abilities": {
+    "for": 45,
+    "des": 11,
+    "con": 33,
+    "int": 24,
+    "sab": 25,
+    "car": 22
+   },
+   "actions": [
+    {
+     "name": "Aura Aterradora",
+     "text": "Vontade CD 26 evita."
+    },
+    {
+     "name": "Magia Acelerada",
+     "text": "Quando lança uma magia com execução de ação completa ou menor, o dragão muda a execução dela para livre. Ele só pode usar este poder uma vez por rodada.",
+     "cost": "livre, 4 PM"
+    },
+    {
+     "name": "Magia Inerente",
+     "text": "1º — Armadura Arcana, Curar Ferimentos, Enfeitiçar; 2º — Dissipar Magia, Velocidade; 3º — Globo de Invulnerabilidade; 4º — Libertação. CD 27."
+    },
+    {
+     "name": "Sopro",
+     "text": "Cone médio. Criaturas na área sofrem 16d12 pontos de dano de fogo e ficam em chamas (Ref CD 31 reduz o dano à metade e evita as chamas).",
+     "cost": "Padrão, 3 PM"
+    },
+    {
+     "name": "Trespassar",
+     "text": "Quando o dragão faz um ataque corpo a corpo e reduz os pontos de vida do alvo para 0 ou menos, pode gastar 1 PM para fazer um ataque adicional contra outra criatura dentro do seu alcance.",
+     "cost": "Livre, 1 PM"
+    }
+   ],
+   "initiative": 16,
+   "perception": 23,
+   "senses": "percepção às cegas, visão no escuro",
+   "defense": 43,
+   "fort": 27,
+   "ref": 16,
+   "will": 23,
+   "defenses": "imunidade a fogo, resistência a dano 15, resistência a magia +4, vulnerabilidade a frio",
+   "hp": 441,
+   "speed": "12m (8q), voo 24m (16q)",
+   "mp": 49,
+   "melee": [
+    "Mordida +33 (4d6+17, 17) e 2 garras +33 (3d6+17, 17)"
+   ],
+   "skills": "Enganação +22, Intimidação +22, Intuição +23, Misticismo +23",
+   "treasure": "Dobro",
+   "group": "Dragões"
+  }
+ },
+ {
+  "id": "creature:dragao-anciao",
+  "kind": "creature",
+  "name": "Dragão Ancião",
+  "summary": "ND 20 · Monstro (dragão) 30, Colossal · Dragões",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 297
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro (dragão) 30, Colossal. Iniciativa +21, Percepção +29, Defesa 51, Fort +34, Ref +21, Von +29, PV 690, PM 98. Corpo a corpo: Mordida +42 (6d6+19, 16) e 2 garras +40 (4d6+19, 16).",
+   "nd": "20",
+   "creatureType": "Monstro (dragão)",
+   "level": 30,
+   "size": "Colossal",
+   "abilities": {
+    "for": 49,
+    "des": 11,
+    "con": 37,
+    "int": 26,
+    "sab": 27,
+    "car": 24
+   },
+   "actions": [
+    {
+     "name": "Aura Aterradora",
+     "text": "Vontade CD 29 evita."
+    },
+    {
+     "name": "Durão",
+     "text": "Quando sofre dano, o dragão ancião reduz esse dano à metade.",
+     "cost": "Reação, 2 PM"
+    },
+    {
+     "name": "Magia Acelerada",
+     "text": "Quando lança uma magia com execução de ação completa ou menor, o dragão muda a execução dela para livre. Ele só pode usar este poder uma vez por rodada.",
+     "cost": "livre, 4 PM"
+    },
+    {
+     "name": "Magia Inerente",
+     "text": "1º — Armadura Arcana, Curar Ferimentos, Enfeitiçar; 2º — Dissipar Magia, Velocidade; 3º — Globo de Invulnerabilidade; 4º — Libertação; 5º — Chuva de Meteoros. CD 28."
+    },
+    {
+     "name": "Sopro",
+     "text": "Cone médio. Criaturas na área sofrem 20d12 pontos de dano de fogo e ficam em chamas (Ref CD 38 reduz o dano à metade e evita as chamas).",
+     "cost": "Padrão, 3 PM"
+    },
+    {
+     "name": "Trespassar",
+     "text": "Quando o dragão faz um ataque corpo a corpo e reduz os pontos de vida do alvo para 0 ou menos, pode gastar 1 PM para fazer um ataque adicional contra outra criatura dentro do seu alcance.",
+     "cost": "Livre, 1 PM"
+    }
+   ],
+   "initiative": 21,
+   "perception": 29,
+   "senses": "percepção às cegas, visão no escuro",
+   "defense": 51,
+   "fort": 34,
+   "ref": 21,
+   "will": 29,
+   "defenses": "imunidade a fogo, resistência a dano 20, resistência a magia +5, vulnerabilidade a frio",
+   "hp": 690,
+   "speed": "12m (8q), voo 36m (24q)",
+   "mp": 98,
+   "melee": [
+    "Mordida +42 (6d6+19, 16) e 2 garras +40 (4d6+19, 16)"
+   ],
+   "skills": "Enganação +23, Intimidação +23, Intuição +24, Misticismo +24",
+   "treasure": "Dobro",
+   "group": "Dragões"
+  }
+ },
+ {
+  "id": "creature:kobolds",
+  "kind": "creature",
+  "name": "Kobolds",
+  "summary": "ND 2 · Kobold 5, Médio · Dragões",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 297
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Kobold 5, Médio. Iniciativa +7, Percepção +21, Defesa 14, Fort +2, Ref +5, Von +2, PV 20.",
+   "nd": "2",
+   "creatureType": "Kobold",
+   "level": 5,
+   "size": "Médio",
+   "abilities": {
+    "for": 10,
+    "des": 17,
+    "con": 10,
+    "int": 8,
+    "sab": 11,
+    "car": 6
+   },
+   "actions": [
+    {
+     "name": "Caixa com Pregos",
+     "text": "Os kobolds arremessam uma caixa com pregos (ou outra coisa perigosa, como insetos peçonhentos) em uma criatura em alcance curto. A vítima sofre 2d6 pontos de dano de perfuração e fica atordoada por uma rodada (Ref CD 15 reduz o dano à metade e evita a condição atordoado).",
+     "cost": "Padrão"
+    },
+    {
+     "name": "Enxame",
+     "text": "Um enxame é uma aglomeração de criaturas que agem em conjunto. Em termos de regras, pode entrar no espaço ocupado por um personagem. No fim de seu turno, o enxame causa 2d6 pontos de dano de perfuração a qualquer personagem em seu espaço, automaticamente. Um enxame é imune a manobras de combate e efeitos que afetam apenas uma criatura e não causam dano, e sofre apenas metade do dano de ataques com armas. Porém, sofre 50% a mais de dano por efeitos de área."
+    },
+    {
+     "name": "Unidos Venceremos",
+     "text": "Periodicamente, novos kobolds se juntam ao enxame. No início de cada rodada, o enxame ganha +10 PV (até um limite máximo de 100 PV). O enxame recebe +1 em rolagens de dano para cada 10 PV que possui."
+    }
+   ],
+   "initiative": 7,
+   "perception": 21,
+   "senses": "visão no escuro",
+   "defense": 14,
+   "fort": 2,
+   "ref": 5,
+   "will": 2,
+   "hp": 20,
+   "speed": "9m (6q)",
+   "treasure": "Metade",
+   "group": "Dragões"
+  }
+ },
+ {
+  "id": "creature:tirano-draconico",
+  "kind": "creature",
+  "name": "Tirano Dracônico",
+  "summary": "ND 10 · Humano 20, Médio · Dragões",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 298
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Humano 20, Médio. Iniciativa +16, Percepção +11, Defesa 31, Fort +26, Ref +12, Von +19, PV 200, PM 44. Corpo a corpo: Machado de batalha +21 (1d10+9, x3) e garra +21 (1d6+7).",
+   "nd": "10",
+   "creatureType": "Humano",
+   "level": 20,
+   "size": "Médio",
+   "abilities": {
+    "for": 24,
+    "des": 10,
+    "con": 24,
+    "int": 14,
+    "sab": 12,
+    "car": 18
+   },
+   "actions": [
+    {
+     "name": "Ira Dracônica",
+     "text": "O tirano dracônico incorpora o assombroso poder dos dragões. Sua pele se recobre de escamas, seus músculos incham e seu sangue ferve com a magia dessas criaturas. O tirano recebe +4 em Defesa, rolagens de dano e CD de magias até o fim da cena.",
+     "cost": "Livre, 8 PM"
+    },
+    {
+     "name": "Magias",
+     "text": "1º — Concentração de Combate; 2º — Bola de Fogo, Velocidade; 3º — Lança Ígnea, Pele de Pedra. CD 24."
+    }
+   ],
+   "initiative": 16,
+   "perception": 11,
+   "senses": "visão no escuro",
+   "defense": 31,
+   "fort": 26,
+   "ref": 12,
+   "will": 19,
+   "defenses": "resistência a dano 5",
+   "hp": 200,
+   "speed": "6m (4q)",
+   "mp": 44,
+   "melee": [
+    "Machado de batalha +21 (1d10+9, x3) e garra +21 (1d6+7)"
+   ],
+   "skills": "Cavalgar +16, Intimidação +20, Misticismo +18",
+   "equipment": "Armadura completa reforçada de adamante, machado de batalha de adamante atroz",
+   "treasure": "Dobro",
+   "group": "Dragões",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 298"
+   }
+  }
+ },
+ {
+  "id": "creature:aberracao-rastejante",
+  "kind": "creature",
+  "name": "Aberração Rastejante",
+  "summary": "ND 3 · Monstro (criatura aberrante) 6, Médio · Aberrações",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 299
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro (criatura aberrante) 6, Médio. Iniciativa +9, Percepção +12, Defesa 22, Fort +7, Ref +11, Von +5, PV 72. Corpo a corpo: Pinça +12 (2d6+5, 19) e garra +12 (1d6+5).",
+   "nd": "3",
+   "creatureType": "Monstro (criatura aberrante)",
+   "level": 6,
+   "size": "Médio",
+   "abilities": {
+    "for": 21,
+    "des": 18,
+    "con": 15,
+    "int": 8,
+    "sab": 14,
+    "car": 2
+   },
+   "actions": [
+    {
+     "name": "Insanidade Aberrante",
+     "text": "CD 15."
+    }
+   ],
+   "initiative": 9,
+   "perception": 12,
+   "senses": "visão no escuro",
+   "defense": 22,
+   "fort": 7,
+   "ref": 11,
+   "will": 5,
+   "defenses": "resistência a dano 5",
+   "hp": 72,
+   "speed": "9m (6q)",
+   "melee": [
+    "Pinça +12 (2d6+5, 19) e garra +12 (1d6+5)"
+   ],
+   "treasure": "Nenhum",
+   "group": "Aberrações",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 299"
+   }
+  }
+ },
+ {
+  "id": "creature:aberracao-ceifadora",
+  "kind": "creature",
+  "name": "Aberração Ceifadora",
+  "summary": "ND 6 · Monstro (criatura aberrante) 9, Médio · Aberrações",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 299
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro (criatura aberrante) 9, Médio. Iniciativa +13, Percepção +16, Defesa 25, Fort +11, Ref +16, Von +7, PV 117. Corpo a corpo: 2 pinças +18 (3d6+7, 19) e garra +18 (1d8+7).",
+   "nd": "6",
+   "creatureType": "Monstro (criatura aberrante)",
+   "level": 9,
+   "size": "Médio",
+   "abilities": {
+    "for": 25,
+    "des": 20,
+    "con": 17,
+    "int": 12,
+    "sab": 17,
+    "car": 8
+   },
+   "actions": [
+    {
+     "name": "Insanidade Aberrante",
+     "text": "CD 17."
+    }
+   ],
+   "initiative": 13,
+   "perception": 16,
+   "senses": "visão no escuro",
+   "defense": 25,
+   "fort": 11,
+   "ref": 16,
+   "will": 7,
+   "defenses": "resistência a dano 10",
+   "hp": 117,
+   "speed": "9m (6q)",
+   "melee": [
+    "2 pinças +18 (3d6+7, 19) e garra +18 (1d8+7)"
+   ],
+   "treasure": "Nenhum",
+   "group": "Aberrações",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 299"
+   }
+  }
+ },
+ {
+  "id": "creature:aberracao-espia",
+  "kind": "creature",
+  "name": "Aberração Espiã",
+  "summary": "ND 8 · Monstro (criatura aberrante) 13, Médio · Aberrações",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 299
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro (criatura aberrante) 13, Médio. Iniciativa +17, Percepção +19, Defesa 32, Fort +15, Ref +21, Von +10, PV 195. Corpo a corpo: Adaga da tempestade aberrante +25 (1d4+11 mais 1d8 de trevas, 19), garra +21 (1d6+7) e mordida +21 (1d6+7 mais veneno).",
+   "nd": "8",
+   "creatureType": "Monstro (criatura aberrante)",
+   "level": 13,
+   "size": "Médio",
+   "abilities": {
+    "for": 18,
+    "des": 25,
+    "con": 20,
+    "int": 18,
+    "sab": 19,
+    "car": 12
+   },
+   "actions": [
+    {
+     "name": "Ataque em Movimento",
+     "text": "O aberração espiã pode se mover antes e depois de executar a ação atacar, desde que a distância total percorrida não seja maior que seu deslocamento."
+    },
+    {
+     "name": "Ataque Reflexo",
+     "text": "Uma vez por rodada, o aberração espiã pode fazer um ataque corpo a corpo contra um alvo adjacente que esteja desprevenido ou que se mova para fora de seu alcance.",
+     "cost": "Reação"
+    },
+    {
+     "name": "Insanidade Aberrante",
+     "text": "CD 20."
+    },
+    {
+     "name": "Sombra Aberrante",
+     "text": "Quando faz um teste de Iniciativa ou Furtividade, o aberração espiã rola dois dados e usa o melhor resultado."
+    },
+    {
+     "name": "Veneno",
+     "text": "Condição paralisado por 1d6 horas (Fort CD 21 evita)."
+    }
+   ],
+   "initiative": 17,
+   "perception": 19,
+   "senses": "visão no escuro",
+   "defense": 32,
+   "fort": 15,
+   "ref": 21,
+   "will": 10,
+   "defenses": "resistência a dano 10",
+   "hp": 195,
+   "speed": "9m (6q), escalar 9m (6q), voo 15m (10q)",
+   "melee": [
+    "Adaga da tempestade aberrante +25 (1d4+11 mais 1d8 de trevas, 19), garra +21 (1d6+7) e mordida +21 (1d6+7 mais veneno)"
+   ],
+   "treasure": "Padrão mais adaga aberrante. Esta é uma adaga magnífica tumular. Sua lâmina é longa e ondulada e seu cabo lembra uma carapaça. A adaga secreta continuamente um muco adesivo pelo cabo, que mantém a arma firme na mão, fornecendo +5 em testes contra a manobra desarmar. Soltar uma adaga aberrante é uma ação de movimento (em vez de uma ação livre)",
+   "group": "Aberrações",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 299"
+   }
+  }
+ },
+ {
+  "id": "creature:aberracao-colossal",
+  "kind": "creature",
+  "name": "Aberração Colossal",
+  "summary": "ND 16 · Monstro (criatura aberrante) 30, Colossal · Aberrações",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 300
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro (criatura aberrante) 30, Colossal. Iniciativa +13, Percepção +19, Defesa 38, Fort +31, Ref +19, Von +14, PV 600. Corpo a corpo: 4 pancadas +40 (4d6+17).",
+   "nd": "16",
+   "creatureType": "Monstro (criatura aberrante)",
+   "level": 30,
+   "size": "Colossal",
+   "abilities": {
+    "for": 45,
+    "des": 7,
+    "con": 30,
+    "int": 4,
+    "sab": 8,
+    "car": 2
+   },
+   "actions": [
+    {
+     "name": "Passar por Cima",
+     "text": "O aberração colossal percorre até o dobro do seu deslocamento, passando por qualquer criatura Enorme ou menor. Uma criatura atropelada sofre 10d8+25 pontos de dano (Ref CD 42 reduz à metade).",
+     "cost": "Completa"
+    },
+    {
+     "name": "Carapaça",
+     "text": "A carapaça do aberração colossal reduz todo dano de corte, impacto e perfuração que ele sofre pela metade e fornece resistência a magia +10. Se o aberração colossal passar num teste de resistência contra magia, ela é revertida contra o conjurador. Apesar de resistente, a caparaça de um aberração colossal possui pontos fracos, que podem ser encontrados com uma ação de movimento e um teste de Percepção (CD 25). Um personagem que encontre um ponto fraco pode atacar a criatura com –5 no teste de ataque, mas, se acertar, ignora as proteções da carapaça."
+    },
+    {
+     "name": "Insanidade Aberrante",
+     "text": "CD 21."
+    },
+    {
+     "name": "Jato de Ácido",
+     "text": "O aberração colossal dispara um jato corrosivo que atinge um cone com alcance médio. Criaturas na área sofrem 10d8+10 pontos de dano de ácido (Ref CD 35 reduz à metade).",
+     "cost": "Movimento"
+    }
+   ],
+   "initiative": 13,
+   "perception": 19,
+   "senses": "visão no escuro",
+   "defense": 38,
+   "fort": 31,
+   "ref": 19,
+   "will": 14,
+   "defenses": "resistência a dano 10",
+   "hp": 600,
+   "speed": "12m (8q)",
+   "melee": [
+    "4 pancadas +40 (4d6+17)"
+   ],
+   "treasure": "Nenhum",
+   "group": "Aberrações",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 300"
+   }
+  }
+ },
+ {
+  "id": "creature:maniaco-aberrante",
+  "kind": "creature",
+  "name": "Maníaco Aberrante",
+  "summary": "ND 2 · Cria aberrante 6, Médio · Aberrações",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 300
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "cria aberrante 6, Médio. Iniciativa +4, Percepção +2, Defesa 18, Fort +6, Ref +4, Von +2, PV 66. Corpo a corpo: Machado de guerra +10 (1d12+8, x3).",
+   "nd": "2",
+   "creatureType": "cria aberrante",
+   "level": 6,
+   "size": "Médio",
+   "abilities": {
+    "for": 20,
+    "des": 12,
+    "con": 12,
+    "int": 9,
+    "sab": 8,
+    "car": 6
+   },
+   "actions": [
+    {
+     "name": "Frenesi Insano",
+     "text": "Sempre que causa ou sofre dano, o maníaco aberrante recebe um bônus cumulativo de +2 em testes de ataque e rolagens de dano até o fim da cena."
+    }
+   ],
+   "initiative": 4,
+   "perception": 2,
+   "defense": 18,
+   "fort": 6,
+   "ref": 4,
+   "will": 2,
+   "hp": 66,
+   "speed": "9m (6q)",
+   "melee": [
+    "Machado de guerra +10 (1d12+8, x3)"
+   ],
+   "equipment": "Gibão de peles, machado de guerra",
+   "treasure": "Metade",
+   "group": "Aberrações",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 300"
+   }
+  }
+ },
+ {
+  "id": "creature:otyugh",
+  "kind": "creature",
+  "name": "Otyugh",
+  "summary": "ND 5 · Monstro 9, Grande · Aberrações",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 300
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Monstro 9, Grande. Iniciativa +3, Percepção +9, Defesa 24, Fort +11, Ref +8, Von +4, PV 126. Corpo a corpo: 2 tentáculos +14 (1d8+5, alcance 4,5m) e mordida +14 (1d6+5 mais doença).Habilidades criatura aberrante.",
+   "nd": "5",
+   "creatureType": "Monstro",
+   "level": 9,
+   "size": "Grande",
+   "abilities": {
+    "for": 21,
+    "des": 8,
+    "con": 19,
+    "int": 6,
+    "sab": 12,
+    "car": 7
+   },
+   "actions": [
+    {
+     "name": "Agarrar Aprimorado",
+     "text": "Se o otyugh acerta um ataque de tentáculo, pode fazer a manobra agarrar (bônus +16).",
+     "cost": "Livre"
+    },
+    {
+     "name": "Constrição",
+     "text": "No início de cada um de seus turnos, o otyugh causa 1d8+5 pontos de dano de impacto em qualquer criatura que esteja agarrando.",
+     "cost": "Livre"
+    },
+    {
+     "name": "Doença",
+     "text": "Uma criatura mordida por um otyugh contrai a doença infecção do esgoto (Fort CD 16 evita)."
+    }
+   ],
+   "initiative": 3,
+   "perception": 9,
+   "senses": "visão no escuro",
+   "defense": 24,
+   "fort": 11,
+   "ref": 8,
+   "will": 4,
+   "defenses": "resistência a dano 5",
+   "hp": 126,
+   "speed": "6m (4q)",
+   "melee": [
+    "2 tentáculos +14 (1d8+5, alcance 4,5m) e mordida +14 (1d6+5 mais doença).Habilidades criatura aberrante"
+   ],
+   "skills": "Furtividade +7 (+17 em seu refúgio)",
+   "treasure": "Padrão",
+   "group": "Aberrações"
+  }
+ },
+ {
+  "id": "creature:sacerdote-do-deus-aberrante",
+  "kind": "creature",
+  "name": "Sacerdote do Deus Aberrante",
+  "summary": "ND 10 · Humano 17, Médio · Aberrações",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Ameaças",
+   "page": 301
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Humano 17, Médio. Iniciativa +21, Percepção +25, Defesa 24, Fort +20, Ref +16, Von +25, PV 136, PM 41. Corpo a corpo: Corrente de espinhos macabra x2 +20 (4d6+4) e mordida +18 (1d4+4).",
+   "nd": "10",
+   "creatureType": "Humano",
+   "level": 17,
+   "size": "Médio",
+   "abilities": {
+    "for": 18,
+    "des": 14,
+    "con": 20,
+    "int": 14,
+    "sab": 23,
+    "car": 9
+   },
+   "actions": [
+    {
+     "name": "Armamento Aberrante Abençoado",
+     "text": "O sacerdote produz uma corrente de espinhos macabra que causa dano mágico e aumentado em quatro passos e dura até o fim da cena. Com ela, o sacerdote usa seu bônus de Sabedoria em testes de ataque e rolagens de dano.",
+     "cost": "Movimento, 4 PM"
+    },
+    {
+     "name": "Asas Insetoides",
+     "text": "O sacerdote recebe deslocamento de voo 21m (14q) até o fim da rodada.",
+     "cost": "Livre, 1 PM"
+    },
+    {
+     "name": "Magia Acelerada",
+     "text": "Quando lança uma magia com execução de ação completa ou menor, o sacerdote muda a execução dela para livre. Ele só pode usar este poder uma vez por rodada.",
+     "cost": "Livre, 4 PM"
+    },
+    {
+     "name": "Magias",
+     "text": "1º — Arma Espiritual, Curar Ferimentos, Perdição; 2º — Silêncio, Vestimenta da Fé; 3º — Potência Divina. CD 24."
+    },
+    {
+     "name": "Percepção Temporal",
+     "text": "O sacerdote soma seu bônus de Sabedoria em ataques, Defesa e Reflexos até o fim da cena.",
+     "cost": "Livre, 3 PM"
+    },
+    {
+     "name": "Sangue Ácido",
+     "text": "Quando o sacerdote sofre dano por um ataque corpo a corpo, o atacante sofre 9 pontos de dano de ácido."
+    },
+    {
+     "name": "Visco Aberrante",
+     "text": "O sacerdote cobre suas mãos e presas com um líquido corrosivo que fornece +5 nas rolagens de dano corpo a corpo até o fim da cena.",
+     "cost": "Livre, 1 PM"
+    }
+   ],
+   "initiative": 21,
+   "perception": 25,
+   "defense": 24,
+   "fort": 20,
+   "ref": 16,
+   "will": 25,
+   "defenses": "+5 contra magias divinas, resistência a ácido, eletricidade, fogo, frio, luz e trevas 10",
+   "hp": 136,
+   "speed": "9m (6q)",
+   "mp": 41,
+   "melee": [
+    "Corrente de espinhos macabra x2 +20 (4d6+4) e mordida +18 (1d4+4)"
+   ],
+   "skills": "Intimidação +9, Religião +16",
+   "equipment": "Meia armadura delicada, símbolo do Deus Aberrante",
+   "treasure": "Padrão",
+   "group": "Aberrações",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 301"
+   }
+  }
+ }
+]

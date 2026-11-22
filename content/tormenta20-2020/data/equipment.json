@@ -1,0 +1,3491 @@
+[
+ {
+  "id": "equipment:adaga",
+  "kind": "equipment",
+  "name": "Adaga",
+  "summary": "Esta faca afiada é usada por muitos habitantes adultos dos reinos, embora seja favorita de ladrões e assassinos, por ser facilmente escondida (fornece +2 em testes de Ladinagem para ocultá-la).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 142
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta faca afiada é usada por muitos habitantes adultos dos reinos, embora seja favorita de ladrões e assassinos, por ser facilmente escondida (fornece +2 em testes de Ladinagem para ocultá-la). Quando ataca com uma adaga, você pode usar seu modificador de Destreza em vez de Força nos testes de ataque. Uma adaga pode ser arremessada.",
+   "category": "arma",
+   "proficiency": "simples",
+   "grip": "leve",
+   "price": 2.0,
+   "damage": "1d4",
+   "critical": "19",
+   "range": "Curto",
+   "weight": 0.5,
+   "damageType": "Perfuração"
+  }
+ },
+ {
+  "id": "equipment:alabarda",
+  "kind": "equipment",
+  "name": "Alabarda",
+  "summary": "Uma haste de madeira com 2m de comprimento e uma lâmina de machado na ponta.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 142
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma haste de madeira com 2m de comprimento e uma lâmina de machado na ponta. A alabarda é uma arma alongada.",
+   "category": "arma",
+   "proficiency": "marciais",
+   "grip": "duas-maos",
+   "price": 10.0,
+   "damage": "1d10",
+   "critical": "x3",
+   "weight": 6.0,
+   "damageType": "Corte/perfuração"
+  }
+ },
+ {
+  "id": "equipment:alfange",
+  "kind": "equipment",
+  "name": "Alfange",
+  "summary": "",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 142
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "",
+   "category": "arma",
+   "proficiency": "marciais",
+   "grip": "duas-maos",
+   "price": 75.0,
+   "damage": "2d4",
+   "critical": "18",
+   "weight": 4.0,
+   "damageType": "Corte"
+  }
+ },
+ {
+  "id": "equipment:arco-curto",
+  "kind": "equipment",
+  "name": "Arco Curto",
+  "summary": "Uma arma antiga e comum, este arco é usado primariamente como ferramenta de caça, embora seja usado como arma de guerra por milícias, bandidos e exércitos menos equipados.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 142
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma arma antiga e comum, este arco é usado primariamente como ferramenta de caça, embora seja usado como arma de guerra por milícias, bandidos e exércitos menos equipados. Exige as duas mãos, mas pode ser usado montado.",
+   "category": "arma",
+   "proficiency": "simples",
+   "grip": "distancia",
+   "price": 30.0,
+   "damage": "1d6",
+   "critical": "x3",
+   "range": "Médio",
+   "weight": 1.0,
+   "damageType": "Perfuração"
+  }
+ },
+ {
+  "id": "equipment:arco-longo",
+  "kind": "equipment",
+  "name": "Arco Longo",
+  "summary": "Este arco reforçado tem a altura de uma pessoa.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 142
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este arco reforçado tem a altura de uma pessoa. Ao contrário da versão curta, é primariamente uma arma de guerra. Por ter uma puxada pesada, permite que você aplique seu modificador de Força às rolagens de dano. Exige as duas mãos e não pode ser usado se você estiver montado.",
+   "category": "arma",
+   "proficiency": "marciais",
+   "grip": "distancia",
+   "price": 100.0,
+   "damage": "1d8",
+   "critical": "x3",
+   "range": "Médio",
+   "weight": 1.5,
+   "damageType": "Perfuração"
+  }
+ },
+ {
+  "id": "equipment:ataque-desarmado",
+  "kind": "equipment",
+  "name": "Ataque Desarmado",
+  "summary": "Você pode atacar com um soco, chute ou qualquer outro golpe que use seu próprio corpo como se fosse uma arma corpo a corpo.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 142
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você pode atacar com um soco, chute ou qualquer outro golpe que use seu próprio corpo como se fosse uma arma corpo a corpo. Um ataque desarmado causa dano não letal.",
+   "category": "arma",
+   "proficiency": "simples",
+   "grip": "leve",
+   "damage": "1d3",
+   "critical": "x2",
+   "damageType": "Impacto"
+  }
+ },
+ {
+  "id": "equipment:azagaia",
+  "kind": "equipment",
+  "name": "Azagaia",
+  "summary": "Uma lança leve e flexível, própria para arremesso.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 142
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma lança leve e flexível, própria para arremesso. Pode ser usada como arma corpo a corpo, mas você sofre uma penalidade de –5 no teste de ataque.",
+   "category": "arma",
+   "proficiency": "simples",
+   "grip": "distancia",
+   "price": 1.0,
+   "damage": "1d6",
+   "critical": "x2",
+   "range": "Médio",
+   "weight": 1.0,
+   "damageType": "Perfuração"
+  }
+ },
+ {
+  "id": "equipment:balas",
+  "kind": "equipment",
+  "name": "Balas",
+  "summary": "Fundas atiram pequenas balas esféricas de metal, que são vendidas em sacos de couro contendo 20 balas por 1 moeda de cobre.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 142
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Fundas atiram pequenas balas esféricas de metal, que são vendidas em sacos de couro contendo 20 balas por 1 moeda de cobre. Recarregar uma funda com uma bala é uma ação de movimento.",
+   "category": "municao",
+   "proficiency": "simples",
+   "grip": "distancia",
+   "price": 0.5,
+   "weight": 2.0
+  }
+ },
+ {
+  "id": "equipment:besta-leve",
+  "kind": "equipment",
+  "name": "Besta Leve",
+  "summary": "Um arco montado sobre uma coronha de madeira com um gatilho, a besta leve é uma arma que dispara virotes com grande potência.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 142
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um arco montado sobre uma coronha de madeira com um gatilho, a besta leve é uma arma que dispara virotes com grande potência. Recarregar uma besta leve é uma ação de movimento. Exige as duas mãos.",
+   "category": "arma",
+   "proficiency": "simples",
+   "grip": "distancia",
+   "price": 35.0,
+   "damage": "1d8",
+   "critical": "19",
+   "range": "Médio",
+   "weight": 3.0,
+   "damageType": "Perfuração"
+  }
+ },
+ {
+  "id": "equipment:besta-pesada",
+  "kind": "equipment",
+  "name": "Besta Pesada",
+  "summary": "Versão maior e mais potente da besta leve.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 143
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Versão maior e mais potente da besta leve. Recarregar uma besta pesada é uma ação padrão. Exige as duas mãos.",
+   "category": "arma",
+   "proficiency": "marciais",
+   "grip": "distancia",
+   "price": 50.0,
+   "damage": "1d12",
+   "critical": "19",
+   "range": "Médio",
+   "weight": 4.0,
+   "damageType": "Perfuração"
+  }
+ },
+ {
+  "id": "equipment:bordao",
+  "kind": "equipment",
+  "name": "Bordão",
+  "summary": "Um cajado apreciado por viajantes e camponeses por sua praticidade e fácil acesso (seu preço é zero).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 143
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um cajado apreciado por viajantes e camponeses por sua praticidade e fácil acesso (seu preço é zero). O bordão é uma arma dupla.",
+   "category": "arma",
+   "proficiency": "simples",
+   "grip": "duas-maos",
+   "damage": "1d6/1d6",
+   "critical": "x2",
+   "weight": 2.0,
+   "damageType": "Impacto"
+  }
+ },
+ {
+  "id": "equipment:chicote",
+  "kind": "equipment",
+  "name": "Chicote",
+  "summary": "Esta arma pode ser usada para atacar inimigos a até 4,5m e pode se enroscar nas mãos, pernas ou armas de seus adversários.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 143
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta arma pode ser usada para atacar inimigos a até 4,5m e pode se enroscar nas mãos, pernas ou armas de seus adversários. O chicote é uma arma ágil e versátil, fornecendo +2 em testes para derrubar ou desarmar.",
+   "category": "arma",
+   "proficiency": "exoticas",
+   "grip": "uma-mao",
+   "price": 2.0,
+   "damage": "1d3",
+   "critical": "x2",
+   "weight": 1.0,
+   "damageType": "Corte"
+  }
+ },
+ {
+  "id": "equipment:cimitarra",
+  "kind": "equipment",
+  "name": "Cimitarra",
+  "summary": "Espada com a lâmina curva e muito afiada.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 143
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Espada com a lâmina curva e muito afiada. A cimitarra é uma arma ágil.",
+   "category": "arma",
+   "proficiency": "marciais",
+   "grip": "uma-mao",
+   "price": 15.0,
+   "damage": "1d6",
+   "critical": "18",
+   "weight": 2.0,
+   "damageType": "Corte"
+  }
+ },
+ {
+  "id": "equipment:clava",
+  "kind": "equipment",
+  "name": "Clava",
+  "summary": "Um pedaço de madeira empunhado como arma, geralmente usado por bárbaros ou criaturas brutais — ou como arma improvisada, como um galho de árvore ou pedaço de mobília.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 143
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um pedaço de madeira empunhado como arma, geralmente usado por bárbaros ou criaturas brutais — ou como arma improvisada, como um galho de árvore ou pedaço de mobília. Sendo fácil de conseguir, seu preço é zero.",
+   "category": "arma",
+   "proficiency": "simples",
+   "grip": "uma-mao",
+   "damage": "1d6",
+   "critical": "x2",
+   "weight": 1.5,
+   "damageType": "Impacto"
+  }
+ },
+ {
+  "id": "equipment:corrente-de-espinhos",
+  "kind": "equipment",
+  "name": "Corrente de Espinhos",
+  "summary": "Esta arma pode ser usada para atacar inimigos a até 4,5m e pode se enroscar nas mãos, pernas ou armas de seus adversários.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 143
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta arma pode ser usada para atacar inimigos a até 4,5m e pode se enroscar nas mãos, pernas ou armas de seus adversários. A corrente de espinhos é uma arma ágil, dupla e versátil, fornecendo +2 em testes para derrubar ou desarmar.",
+   "category": "arma",
+   "proficiency": "exoticas",
+   "grip": "duas-maos",
+   "price": 25.0,
+   "damage": "2d4/2d4",
+   "critical": "19",
+   "weight": 5.0,
+   "damageType": "Corte"
+  }
+ },
+ {
+  "id": "equipment:espada-bastarda",
+  "kind": "equipment",
+  "name": "Espada Bastarda",
+  "summary": "A espada bastarda é uma arma adaptável.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 144
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A espada bastarda é uma arma adaptável. É muito grande para ser usada com uma só mão sem treinamento especial; por isso é uma arma exótica. Ela pode ser usada como uma arma marcial de duas mãos.",
+   "category": "arma",
+   "proficiency": "exoticas",
+   "grip": "uma-mao",
+   "price": 35.0,
+   "damage": "1d10/1d12",
+   "critical": "19",
+   "weight": 3.0,
+   "damageType": "Corte"
+  }
+ },
+ {
+  "id": "equipment:espada-curta",
+  "kind": "equipment",
+  "name": "Espada Curta",
+  "summary": "O tipo mais comum de espada, usada por guardas ou como arma secundária de guerreiros mais capazes.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 144
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "O tipo mais comum de espada, usada por guardas ou como arma secundária de guerreiros mais capazes. Mede entre 40 e 50cm.",
+   "category": "arma",
+   "proficiency": "simples",
+   "grip": "leve",
+   "price": 10.0,
+   "damage": "1d6",
+   "critical": "19",
+   "weight": 1.0,
+   "damageType": "Perfuração"
+  }
+ },
+ {
+  "id": "equipment:espada-longa",
+  "kind": "equipment",
+  "name": "Espada Longa",
+  "summary": "Arma típica de soldados e guerreiros, esta espada de dois gumes tem lâmina reta medindo entre 80cm e 1m.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 144
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Arma típica de soldados e guerreiros, esta espada de dois gumes tem lâmina reta medindo entre 80cm e 1m.",
+   "category": "arma",
+   "proficiency": "marciais",
+   "grip": "uma-mao",
+   "price": 15.0,
+   "damage": "1d8",
+   "critical": "19",
+   "weight": 2.0,
+   "damageType": "Corte"
+  }
+ },
+ {
+  "id": "equipment:flechas",
+  "kind": "equipment",
+  "name": "Flechas",
+  "summary": "Hastes de madeira com ponta metálica e penas para estabilizar o voo, flechas são vendidas em aljavas com 20 unidades.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 144
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Hastes de madeira com ponta metálica e penas para estabilizar o voo, flechas são vendidas em aljavas com 20 unidades. Recarregar um arco com uma flecha é uma ação livre.",
+   "category": "municao",
+   "proficiency": "marciais",
+   "grip": "distancia",
+   "price": 1.0,
+   "weight": 1.5
+  }
+ },
+ {
+  "id": "equipment:florete",
+  "kind": "equipment",
+  "name": "Florete",
+  "summary": "A lâmina leve e fina desta espada torna a arma muito precisa.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 144
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A lâmina leve e fina desta espada torna a arma muito precisa. O florete é uma arma ágil.",
+   "category": "arma",
+   "proficiency": "marciais",
+   "grip": "uma-mao",
+   "price": 20.0,
+   "damage": "1d6",
+   "critical": "18",
+   "weight": 1.0,
+   "damageType": "Perfuração"
+  }
+ },
+ {
+  "id": "equipment:foice",
+  "kind": "equipment",
+  "name": "Foice",
+  "summary": "Originalmente um instrumento agrícola, consiste de uma lâmina curva presa a um cabo de madeira.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 144
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Originalmente um instrumento agrícola, consiste de uma lâmina curva presa a um cabo de madeira. Uma arma tradicional de druidas.",
+   "category": "arma",
+   "proficiency": "simples",
+   "grip": "leve",
+   "price": 4.0,
+   "damage": "1d6",
+   "critical": "x3",
+   "weight": 1.0,
+   "damageType": "Corte"
+  }
+ },
+ {
+  "id": "equipment:funda",
+  "kind": "equipment",
+  "name": "Funda",
+  "summary": "Uma simples tira de couro usada para arremessar balas de metal.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 144
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma simples tira de couro usada para arremessar balas de metal. Na falta de munição adequada, pode disparar pedras comuns, mas o dano é reduzido em um passo. Recarregar uma funda é uma ação de movimento. Ao contrário de outras armas de disparo, você aplica seu modificador de Força a rolagens de dano com uma funda.",
+   "category": "arma",
+   "proficiency": "simples",
+   "grip": "distancia",
+   "damage": "1d4",
+   "critical": "x2",
+   "range": "Médio",
+   "weight": 0.25,
+   "damageType": "Impacto"
+  }
+ },
+ {
+  "id": "equipment:gadanho",
+  "kind": "equipment",
+  "name": "Gadanho",
+  "summary": "Outra ferramenta agrícola, o gadanho é uma versão maior da foice, para uso com as duas mãos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 144
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Outra ferramenta agrícola, o gadanho é uma versão maior da foice, para uso com as duas mãos. Foi criada para ceifar cereais, mas também pode ceifar vidas.",
+   "category": "arma",
+   "proficiency": "marciais",
+   "grip": "duas-maos",
+   "price": 18.0,
+   "damage": "2d4",
+   "critical": "x4",
+   "weight": 5.0,
+   "damageType": "Corte"
+  }
+ },
+ {
+  "id": "equipment:katana",
+  "kind": "equipment",
+  "name": "Katana",
+  "summary": "A espada tradicional do samurai tem lâmina levemente curva e apenas um gume.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 144
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A espada tradicional do samurai tem lâmina levemente curva e apenas um gume. A katana é uma arma adaptável e ágil. É muito grande para ser empunhada com uma só mão sem treinamento especial; por isso, é uma arma exótica. Ela pode ser usada como uma arma marcial de duas mãos.",
+   "category": "arma",
+   "proficiency": "exoticas",
+   "grip": "uma-mao",
+   "price": 100.0,
+   "damage": "1d8/1d10",
+   "critical": "19",
+   "weight": 2.5,
+   "damageType": "Corte"
+  }
+ },
+ {
+  "id": "equipment:lanca",
+  "kind": "equipment",
+  "name": "Lança",
+  "summary": "Qualquer arma feita com uma haste de madeira e uma ponta afiada, natural ou metálica.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 145
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Qualquer arma feita com uma haste de madeira e uma ponta afiada, natural ou metálica. Por sua facilidade de fabricação, é muito comum entre orcs, kobolds, trogloditas e outras raças menos civilizadas. Uma lança pode ser arremessada.",
+   "category": "arma",
+   "proficiency": "simples",
+   "grip": "uma-mao",
+   "price": 2.0,
+   "damage": "1d6",
+   "critical": "x2",
+   "range": "Curto",
+   "weight": 1.5,
+   "damageType": "Perfuração"
+  }
+ },
+ {
+  "id": "equipment:lanca-montada",
+  "kind": "equipment",
+  "name": "Lança Montada",
+  "summary": "A lança montada é uma arma alongada.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 145
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A lança montada é uma arma alongada. Se você estiver montado, pode usá-la com apenas uma mão. Além disso, quando usada numa investida montada, causa +2d8 pontos de dano (não multiplicados em caso de acerto crítico).",
+   "category": "arma",
+   "proficiency": "marciais",
+   "grip": "duas-maos",
+   "price": 10.0,
+   "damage": "1d8",
+   "critical": "x3",
+   "weight": 5.0,
+   "damageType": "Perfuração"
+  }
+ },
+ {
+  "id": "equipment:maca",
+  "kind": "equipment",
+  "name": "Maça",
+  "summary": "Bastão com um peso cheio de protuberâncias na ponta, a maça é usada por clérigos que fazem votos de não derramar sangue.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 145
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Bastão com um peso cheio de protuberâncias na ponta, a maça é usada por clérigos que fazem votos de não derramar sangue. De fato, um golpe de maça nem sempre derrama sangue, mas esmaga ossos.",
+   "category": "arma",
+   "proficiency": "simples",
+   "grip": "uma-mao",
+   "price": 12.0,
+   "damage": "1d8",
+   "critical": "x2",
+   "weight": 6.0,
+   "damageType": "Impacto"
+  }
+ },
+ {
+  "id": "equipment:machadinha",
+  "kind": "equipment",
+  "name": "Machadinha",
+  "summary": "Ferramenta útil para cortar madeira e também inimigos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 145
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Ferramenta útil para cortar madeira e também inimigos. Uma machadinha pode ser arremessada.",
+   "category": "arma",
+   "proficiency": "marciais",
+   "grip": "leve",
+   "price": 6.0,
+   "damage": "1d6",
+   "critical": "x3",
+   "range": "Curto",
+   "weight": 2.0,
+   "damageType": "Corte"
+  }
+ },
+ {
+  "id": "equipment:machado-anao",
+  "kind": "equipment",
+  "name": "Machado Anão",
+  "summary": "A arma preferida por onze entre dez guerreiros anões.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 145
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma preferida por onze entre dez guerreiros anões. Um machado anão é muito grande para ser usado com uma só mão sem treinamento especial; por isso é uma arma exótica. Ele pode ser usado como uma arma marcial de duas mãos.",
+   "category": "arma",
+   "proficiency": "exoticas",
+   "grip": "uma-mao",
+   "price": 30.0,
+   "damage": "1d10",
+   "critical": "x3",
+   "weight": 4.0,
+   "damageType": "Corte"
+  }
+ },
+ {
+  "id": "equipment:machado-de-batalha",
+  "kind": "equipment",
+  "name": "Machado de Batalha",
+  "summary": "Adaptado do machado de lenhador, este não é um instrumento para corte de árvores, mas sim uma arma capaz de causar ferimentos terríveis.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 145
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Adaptado do machado de lenhador, este não é um instrumento para corte de árvores, mas sim uma arma capaz de causar ferimentos terríveis.",
+   "category": "arma",
+   "proficiency": "marciais",
+   "grip": "uma-mao",
+   "price": 10.0,
+   "damage": "1d8",
+   "critical": "x3",
+   "weight": 3.0,
+   "damageType": "Corte"
+  }
+ },
+ {
+  "id": "equipment:machado-de-guerra",
+  "kind": "equipment",
+  "name": "Machado de Guerra",
+  "summary": "Este imenso machado com lâmina dupla é uma das armas mais perigosas que existem.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 145
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este imenso machado com lâmina dupla é uma das armas mais perigosas que existem.",
+   "category": "arma",
+   "proficiency": "marciais",
+   "grip": "duas-maos",
+   "price": 20.0,
+   "damage": "1d12",
+   "critical": "x3",
+   "weight": 6.0,
+   "damageType": "Corte"
+  }
+ },
+ {
+  "id": "equipment:machado-de-minotauro",
+  "kind": "equipment",
+  "name": "Machado de Minotauro",
+  "summary": "Uma haste comprida com uma lâmina extremamente grossa na ponta, esta é uma arma ancestral dos minotauros.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 145
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma haste comprida com uma lâmina extremamente grossa na ponta, esta é uma arma ancestral dos minotauros. Um machado táurico é muito grande para ser usado sem treinamento especial; por isso, é uma arma exótica. Além disso, por ser pesado e desbalanceado, impõe –2 em testes de ataque.",
+   "category": "arma",
+   "proficiency": "exoticas",
+   "grip": "duas-maos",
+   "price": 50.0,
+   "damage": "2d8",
+   "critical": "x3",
+   "weight": 12.0,
+   "damageType": "Corte",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 145"
+   }
+  }
+ },
+ {
+  "id": "equipment:mangual",
+  "kind": "equipment",
+  "name": "Mangual",
+  "summary": "Uma haste metálica ligada a uma corrente com uma esfera de aço na ponta, que pode se enroscar na arma do adversário.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 146
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma haste metálica ligada a uma corrente com uma esfera de aço na ponta, que pode se enroscar na arma do adversário. O mangual é uma arma versátil, fornecendo +2 em testes para desarmar.",
+   "category": "arma",
+   "proficiency": "marciais",
+   "grip": "uma-mao",
+   "price": 8.0,
+   "damage": "1d8",
+   "critical": "x2",
+   "weight": 2.5,
+   "damageType": "Impacto"
+  }
+ },
+ {
+  "id": "equipment:manopla",
+  "kind": "equipment",
+  "name": "Manopla",
+  "summary": "Luva metálica que permite socos mais perigosos — o dano de seus ataques desarmados torna-se letal.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 146
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Luva metálica que permite socos mais perigosos — o dano de seus ataques desarmados torna-se letal. Manoplas superiores e mágicas aplicam os efeitos de suas modificações e encantos em ataques desarmados. Uma manopla não pode ser desarmada.",
+   "category": "arma",
+   "proficiency": "simples",
+   "grip": "leve",
+   "price": 5.0,
+   "weight": 1.0,
+   "damageType": "Impacto"
+  }
+ },
+ {
+  "id": "equipment:martelo-de-guerra",
+  "kind": "equipment",
+  "name": "Martelo de Guerra",
+  "summary": "Outra ferramenta adaptada para combate, esta é a arma favorita de quase todos os anões que não usam machados.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 146
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Outra ferramenta adaptada para combate, esta é a arma favorita de quase todos os anões que não usam machados.",
+   "category": "arma",
+   "proficiency": "marciais",
+   "grip": "uma-mao",
+   "price": 12.0,
+   "damage": "1d8",
+   "critical": "x3",
+   "weight": 2.5,
+   "damageType": "Impacto"
+  }
+ },
+ {
+  "id": "equipment:montante",
+  "kind": "equipment",
+  "name": "Montante",
+  "summary": "Enorme e pesada, esta espada de 1,5m de comprimento é uma arma poderosa.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 146
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Enorme e pesada, esta espada de 1,5m de comprimento é uma arma poderosa.",
+   "category": "arma",
+   "proficiency": "marciais",
+   "grip": "duas-maos",
+   "price": 50.0,
+   "damage": "2d6",
+   "critical": "19",
+   "weight": 4.0,
+   "damageType": "Corte"
+  }
+ },
+ {
+  "id": "equipment:mosquete",
+  "kind": "equipment",
+  "name": "Mosquete",
+  "summary": "Uma arma de fogo de uso difícil, mas com poder devastador.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 146
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma arma de fogo de uso difícil, mas com poder devastador. Recarregar um mosquete é uma ação padrão. Exige as duas mãos.",
+   "category": "arma",
+   "proficiency": "fogo",
+   "grip": "distancia",
+   "price": 500.0,
+   "damage": "2d8",
+   "critical": "19/x3",
+   "range": "Médio",
+   "weight": 4.0,
+   "damageType": "Perfuração"
+  }
+ },
+ {
+  "id": "equipment:municao",
+  "kind": "equipment",
+  "name": "Munição",
+  "summary": "Inclui uma bolsa com 20 balas (pequenas esferas de chumbo) e pólvora para 20 tiros de mosquete ou pistola.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 146
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Inclui uma bolsa com 20 balas (pequenas esferas de chumbo) e pólvora para 20 tiros de mosquete ou pistola.",
+   "category": "municao",
+   "proficiency": "fogo",
+   "grip": "distancia",
+   "price": 20.0,
+   "weight": 0.5
+  }
+ },
+ {
+  "id": "equipment:picareta",
+  "kind": "equipment",
+  "name": "Picareta",
+  "summary": "Usada por mineradores, esta ferramenta quebra pedras com facilidade.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 146
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Usada por mineradores, esta ferramenta quebra pedras com facilidade. Imagine o que pode fazer com carne e osso!",
+   "category": "arma",
+   "proficiency": "marciais",
+   "grip": "uma-mao",
+   "price": 8.0,
+   "damage": "1d6",
+   "critical": "x4",
+   "weight": 3.0,
+   "damageType": "Perfuração"
+  }
+ },
+ {
+  "id": "equipment:pique",
+  "kind": "equipment",
+  "name": "Pique",
+  "summary": "Essencialmente uma lança muito longa.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 146
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Essencialmente uma lança muito longa. O pique é uma arma alongada.",
+   "category": "arma",
+   "proficiency": "simples",
+   "grip": "duas-maos",
+   "price": 2.0,
+   "damage": "1d8",
+   "critical": "x2",
+   "weight": 5.0,
+   "damageType": "Perfuração"
+  }
+ },
+ {
+  "id": "equipment:pistola",
+  "kind": "equipment",
+  "name": "Pistola",
+  "summary": "A arma de fogo mais comum.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 146
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma de fogo mais comum. Uma pistola conta como uma arma leve para propósitos do poder Estilo de Duas Armas e similares. Recarregar uma pistola é uma ação padrão.",
+   "category": "arma",
+   "proficiency": "fogo",
+   "grip": "distancia",
+   "price": 250.0,
+   "damage": "2d6",
+   "critical": "19/x3",
+   "range": "Curto",
+   "weight": 1.0,
+   "damageType": "Perfuração"
+  }
+ },
+ {
+  "id": "equipment:rede",
+  "kind": "equipment",
+  "name": "Rede",
+  "summary": "A rede tem pequenos dentes em sua trama e uma corda para controlar os inimigos presos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 146
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A rede tem pequenos dentes em sua trama e uma corda para controlar os inimigos presos. Se você acertar um ataque com a rede, não causa dano. Em vez disso, a vítima fica enredada (deslocamento reduzido à metade, não pode correr nem fazer investidas e sofre –2 em Defesa e testes de ataque). Enquanto você estiver segurando a corda, sempre que a vítima se mover você pode fazer um teste de Força oposto contra ela como uma reação. Se você vencer, a vítima só pode se mover até o limite da corda (alcance curto). A vítima pode se soltar com uma ação completa e um teste de Acrobacia (CD 20). A rede tem 5 pontos de vida e, se rasgar, qualquer criatura enredada se solta automaticamente. A rede só pode ser usada contra criaturas no máximo uma categoria de tamanho maior que você.",
+   "category": "arma",
+   "proficiency": "exoticas",
+   "grip": "distancia",
+   "price": 20.0,
+   "range": "Curto",
+   "weight": 3.0
+  }
+ },
+ {
+  "id": "equipment:tacape",
+  "kind": "equipment",
+  "name": "Tacape",
+  "summary": "Versão maior e/ou com pregos de uma clava.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 147
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Versão maior e/ou com pregos de uma clava. Não é uma arma elegante, mas faz o serviço.",
+   "category": "arma",
+   "proficiency": "simples",
+   "grip": "duas-maos",
+   "damage": "1d10",
+   "critical": "x2",
+   "weight": 4.0,
+   "damageType": "Impacto"
+  }
+ },
+ {
+  "id": "equipment:tridente",
+  "kind": "equipment",
+  "name": "Tridente",
+  "summary": "Uma lança com três pontas, favorita de povos marinhos e gladiadores e própria para prender as pernas do oponente.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 147
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma lança com três pontas, favorita de povos marinhos e gladiadores e própria para prender as pernas do oponente. O tridente é uma arma versátil, fornecendo +2 em testes para derrubar.",
+   "category": "arma",
+   "proficiency": "marciais",
+   "grip": "uma-mao",
+   "price": 15.0,
+   "damage": "1d8",
+   "critical": "x2",
+   "weight": 2.0,
+   "damageType": "Perfuração"
+  }
+ },
+ {
+  "id": "equipment:virotes",
+  "kind": "equipment",
+  "name": "Virotes",
+  "summary": "Pequenas setas de madeira que servem como munição para bestas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 147
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Pequenas setas de madeira que servem como munição para bestas. Uma caixa com 20 virotes custa 2 moedas. Armaduras são classificadas em leves e pesadas, de acordo com a sua facilidade de uso e mobilidade.",
+   "category": "municao",
+   "proficiency": "marciais",
+   "grip": "distancia",
+   "price": 2.0,
+   "weight": 1.0
+  }
+ },
+ {
+  "id": "equipment:agua-benta",
+  "kind": "equipment",
+  "name": "Água Benta",
+  "summary": "Criada por clérigos e vendida em pequenos frascos, é um poderoso recurso na luta contra o mal.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 150
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Criada por clérigos e vendida em pequenos frascos, é um poderoso recurso na luta contra o mal. Para usar a água benta, você gasta uma ação padrão e escolhe um morto-vivo, demônio ou diabo em alcance curto (a água benta é inofensiva contra outras criaturas). O alvo sofre 2d10 pontos de dano de luz (Reflexos CD Des reduz à metade).",
+   "category": "item",
+   "price": 10.0,
+   "priceText": "10moedas",
+   "weight": 0.5
+  }
+ },
+ {
+  "id": "equipment:algemas",
+  "kind": "equipment",
+  "name": "Algemas",
+  "summary": "Um par de algemas para criaturas Médias.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 150
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um par de algemas para criaturas Médias. Escapar exige uma ação completa e um teste de Acrobacia (CD 30) ou Força (CD 26).",
+   "category": "item",
+   "price": 15.0,
+   "priceText": "15moedas",
+   "weight": 1.0
+  }
+ },
+ {
+  "id": "equipment:algibeira",
+  "kind": "equipment",
+  "name": "Algibeira",
+  "summary": "Bolsa de couro presa ao cinto.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 150
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Bolsa de couro presa ao cinto. Útil para guardar itens pequenos, especialmente moedas.",
+   "category": "item",
+   "price": 1.0,
+   "priceText": "1moedas",
+   "weight": 0.25
+  }
+ },
+ {
+  "id": "equipment:barraca",
+  "kind": "equipment",
+  "name": "Barraca",
+  "summary": "Uma barraca de lona, útil para aventureiros desbravando os ermos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 150
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma barraca de lona, útil para aventureiros desbravando os ermos. Uma barraca conta como um saco de dormir para duas pessoas e fornece +2 em testes de Sobrevivência para acampar.",
+   "category": "item",
+   "price": 10.0,
+   "priceText": "10moedas",
+   "weight": 10.0
+  }
+ },
+ {
+  "id": "equipment:armadura-acolchoada",
+  "kind": "equipment",
+  "name": "Armadura Acolchoada",
+  "summary": "Uma túnica almofadada feita em linho ou lã.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 150
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma túnica almofadada feita em linho ou lã. É a armadura mais leve, mas protege todo o corpo, fornecendo +2 em testes de Fortitude.",
+   "category": "armadura",
+   "armorType": "leve",
+   "price": 5.0,
+   "defense": 1,
+   "armorPenalty": 0,
+   "weight": 5.0
+  }
+ },
+ {
+  "id": "equipment:armadura-completa",
+  "kind": "equipment",
+  "name": "Armadura Completa",
+  "summary": "A mais forte e pesada das armaduras, formada por placas de metal forjadas e encaixadas de modo a cobrir o corpo inteiro.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 150
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A mais forte e pesada das armaduras, formada por placas de metal forjadas e encaixadas de modo a cobrir o corpo inteiro. Inclui manoplas e grevas (luvas e botas metálicas, respectivamente), um elmo com viseira e uma túnica acolchoada para ser usada sob as placas. Correias e fivelas distribuem o peso da armadura pelo corpo inteiro. Esta armadura precisa ser feita sob medida para cada usuário; um ferreiro cobra 200 moedas para adaptar uma armadura completa a um novo usuário.",
+   "category": "armadura",
+   "armorType": "pesada",
+   "price": 3000.0,
+   "defense": 10,
+   "armorPenalty": -5,
+   "weight": 25.0
+  }
+ },
+ {
+  "id": "equipment:armadura-de-couro",
+  "kind": "equipment",
+  "name": "Armadura de Couro",
+  "summary": "O peitoral desta armadura é feito de couro curtido em óleo fervente, para ficar mais rígido, enquanto as demais partes são feitas de couro flexível.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 150
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "O peitoral desta armadura é feito de couro curtido em óleo fervente, para ficar mais rígido, enquanto as demais partes são feitas de couro flexível.",
+   "category": "armadura",
+   "armorType": "leve",
+   "price": 20.0,
+   "defense": 2,
+   "armorPenalty": 0,
+   "weight": 7.0
+  }
+ },
+ {
+  "id": "equipment:brunea",
+  "kind": "equipment",
+  "name": "Brunea",
+  "summary": "Colete de couro coberto com plaquetas de metal sobrepostas, como escamas de um peixe.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 150
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Colete de couro coberto com plaquetas de metal sobrepostas, como escamas de um peixe. Por ser barata de produzir, é a armadura mais utilizada nos reinos por soldados de infantaria e guardas de castelo.",
+   "category": "armadura",
+   "armorType": "pesada",
+   "price": 50.0,
+   "defense": 5,
+   "armorPenalty": -2,
+   "weight": 15.0
+  }
+ },
+ {
+  "id": "equipment:cota-de-malha",
+  "kind": "equipment",
+  "name": "Cota de Malha",
+  "summary": "Longa veste de anéis metálicos interligados, formando uma malha flexível e resistente, que vai até os joelhos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 150
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Longa veste de anéis metálicos interligados, formando uma malha flexível e resistente, que vai até os joelhos.",
+   "category": "armadura",
+   "armorType": "pesada",
+   "price": 150.0,
+   "defense": 6,
+   "armorPenalty": -2,
+   "weight": 20.0
+  }
+ },
+ {
+  "id": "equipment:couraca",
+  "kind": "equipment",
+  "name": "Couraça",
+  "summary": "A mais robusta das armaduras leves, formada por uma placa metálica que protege o peito e as costas, presa sobre um casaco de couro.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 150
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A mais robusta das armaduras leves, formada por uma placa metálica que protege o peito e as costas, presa sobre um casaco de couro.",
+   "category": "armadura",
+   "armorType": "leve",
+   "price": 500.0,
+   "defense": 5,
+   "armorPenalty": -4,
+   "weight": 15.0
+  }
+ },
+ {
+  "id": "equipment:couro-batido",
+  "kind": "equipment",
+  "name": "Couro Batido",
+  "summary": "Versão mais pesada da armadura de couro, reforçada com rebites de metal.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 150
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Versão mais pesada da armadura de couro, reforçada com rebites de metal.",
+   "category": "armadura",
+   "armorType": "leve",
+   "price": 35.0,
+   "defense": 3,
+   "armorPenalty": -1,
+   "weight": 10.0
+  }
+ },
+ {
+  "id": "equipment:escudo-leve",
+  "kind": "equipment",
+  "name": "Escudo Leve",
+  "summary": "Tipicamente feito de madeira, este escudo é amarrado no antebraço, deixando a mão livre.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 150
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Tipicamente feito de madeira, este escudo é amarrado no antebraço, deixando a mão livre. O usuário pode carregar um objeto na mão do escudo, mas não manusear uma arma.",
+   "category": "escudo",
+   "armorType": "escudo",
+   "price": 5.0,
+   "defense": 1,
+   "armorPenalty": -1,
+   "weight": 3.0,
+   "damage": "1d4",
+   "critical": "x2",
+   "damageType": "Impacto"
+  }
+ },
+ {
+  "id": "equipment:escudo-pesado",
+  "kind": "equipment",
+  "name": "Escudo Pesado",
+  "summary": "Normalmente feito de aço, este escudo é preso ao antebraço e também deve ser empunhado com firmeza, impedindo o usuário de usar aquela mão.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 150
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Normalmente feito de aço, este escudo é preso ao antebraço e também deve ser empunhado com firmeza, impedindo o usuário de usar aquela mão.",
+   "category": "escudo",
+   "armorType": "escudo",
+   "price": 15.0,
+   "defense": 2,
+   "armorPenalty": -2,
+   "weight": 7.0,
+   "damage": "1d6",
+   "critical": "x2",
+   "damageType": "Impacto"
+  }
+ },
+ {
+  "id": "equipment:gibao-de-peles",
+  "kind": "equipment",
+  "name": "Gibão de Peles",
+  "summary": "Usada principalmente por bárbaros e selvagens, esta armadura é formada por várias camadas de peles e couro de animais.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 150
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Usada principalmente por bárbaros e selvagens, esta armadura é formada por várias camadas de peles e couro de animais.",
+   "category": "armadura",
+   "armorType": "leve",
+   "price": 25.0,
+   "defense": 4,
+   "armorPenalty": -3,
+   "weight": 12.0
+  }
+ },
+ {
+  "id": "equipment:loriga-segmentada",
+  "kind": "equipment",
+  "name": "Loriga Segmentada",
+  "summary": "Composta por tiras horizontais de metal, esta armadura pesada é muito utilizada por legionários de impérios militaristas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 150
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Composta por tiras horizontais de metal, esta armadura pesada é muito utilizada por legionários de impérios militaristas.",
+   "category": "armadura",
+   "armorType": "pesada",
+   "price": 250.0,
+   "defense": 7,
+   "armorPenalty": -3,
+   "weight": 17.0
+  }
+ },
+ {
+  "id": "equipment:meia-armadura",
+  "kind": "equipment",
+  "name": "Meia Armadura",
+  "summary": "Uma cota de malha reforçada com placas de metal.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 150
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma cota de malha reforçada com placas de metal.",
+   "category": "armadura",
+   "armorType": "pesada",
+   "price": 600.0,
+   "defense": 8,
+   "armorPenalty": -4,
+   "weight": 22.0
+  }
+ },
+ {
+  "id": "equipment:corda",
+  "kind": "equipment",
+  "name": "Corda",
+  "summary": "Um rolo com 10 metros de corda de cânhamo, o mesmo tipo usado em navios.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 151
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um rolo com 10 metros de corda de cânhamo, o mesmo tipo usado em navios. Dar um nó firme exige um teste de Destreza (CD 10). Dar um nó especial (capaz de deslizar, soltar-se lentamente, se desfazer com um puxão etc.) exige um teste de Destreza (CD 12). Arrebentar a corda exige um teste de Força (CD 23).",
+   "category": "item",
+   "price": 1.0,
+   "priceText": "1moedas",
+   "weight": 5.0
+  }
+ },
+ {
+  "id": "equipment:espelho-de-metal",
+  "kind": "equipment",
+  "name": "Espelho de Metal",
+  "summary": "Este espelho de metal polido possui diversas utilidades.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 151
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este espelho de metal polido possui diversas utilidades. Além de garantir que você esteja apresentável, pode ser usado para observar cantos, fazer sinais de luz, colocar disfarces...",
+   "category": "item",
+   "price": 10.0,
+   "priceText": "10moedas",
+   "weight": 0.25
+  }
+ },
+ {
+  "id": "equipment:instrumento-musical",
+  "kind": "equipment",
+  "name": "Instrumento Musical",
+  "summary": "Um instrumento típico, como um alaúde, flauta ou lira.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 151
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um instrumento típico, como um alaúde, flauta ou lira. Muito usado por bardos.",
+   "category": "item",
+   "price": 50.0,
+   "priceText": "50moedas",
+   "weight": 1.5
+  }
+ },
+ {
+  "id": "equipment:kit-de-oficio",
+  "kind": "equipment",
+  "name": "Kit de <Ofício>",
+  "summary": "Existe um kit para cada tipo de Ofício.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Existe um kit para cada tipo de Ofício. Por exemplo, martelo, pregos e serrote para Ofício (carpintaria) ou lente de aumento e balança para testes de Ofício (joalheria). Um personagem sem as ferramentas necessárias para seu Ofício sofre penalidade de –5 nos testes.",
+   "category": "item",
+   "price": 30.0,
+   "priceText": "30moedas",
+   "weight": 4.0
+  }
+ },
+ {
+  "id": "equipment:kit-de-disfarces",
+  "kind": "equipment",
+  "name": "Kit de Disfarces",
+  "summary": "Estojo contendo cosméticos, tinta para cabelo e alguns apêndices físicos simples (como narizes falsos).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Estojo contendo cosméticos, tinta para cabelo e alguns apêndices físicos simples (como narizes falsos). Um personagem sem este kit sofre penalidade de –5 em testes de Enganação para fazer um disfarce.",
+   "category": "item",
+   "price": 50.0,
+   "priceText": "50moedas",
+   "weight": 4.0
+  }
+ },
+ {
+  "id": "equipment:kit-de-ladrao",
+  "kind": "equipment",
+  "name": "Kit de Ladrão",
+  "summary": "Usado para abrir portas e desarmar armadilhas, este kit é composto de gazuas, arames e outras pequenas ferramentas guardadas em um estojo de couro.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Usado para abrir portas e desarmar armadilhas, este kit é composto de gazuas, arames e outras pequenas ferramentas guardadas em um estojo de couro. Um personagem sem este kit sofre penalidade de –5 em testes de Ladinagem para abrir fechaduras e sabotar.",
+   "category": "item",
+   "price": 30.0,
+   "priceText": "30moedas",
+   "weight": 0.5
+  }
+ },
+ {
+  "id": "equipment:kit-de-medicamentos",
+  "kind": "equipment",
+  "name": "Kit de Medicamentos",
+  "summary": "Pequena caixa com ervas, unguentos, bandagens e outros materiais úteis.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Pequena caixa com ervas, unguentos, bandagens e outros materiais úteis. Um personagem sem este kit sofre penalidade de –5 em testes de Cura.",
+   "category": "item",
+   "price": 50.0,
+   "priceText": "50moedas",
+   "weight": 2.0
+  }
+ },
+ {
+  "id": "equipment:lampiao",
+  "kind": "equipment",
+  "name": "Lampião",
+  "summary": "Um cilindro com uma alça e duas portinholas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um cilindro com uma alça e duas portinholas. Uma chama alimentada por óleo é acesa dentro do cilindro e uma das portinholas aberta deixa a luz sair. A luz do lampião atinge 9m. Uma carga de óleo dura 6 horas e custa 0,1 moedas.",
+   "category": "item",
+   "price": 7.0,
+   "priceText": "7moedas",
+   "weight": 1.0
+  }
+ },
+ {
+  "id": "equipment:mochila",
+  "kind": "equipment",
+  "name": "Mochila",
+  "summary": "Esta bolsa reforçada de couro tem bolsos e tiras para ser carregada nas costas e prender equipamentos diversos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta bolsa reforçada de couro tem bolsos e tiras para ser carregada nas costas e prender equipamentos diversos.",
+   "category": "item",
+   "price": 2.0,
+   "priceText": "2moedas",
+   "weight": 1.0
+  }
+ },
+ {
+  "id": "equipment:odre",
+  "kind": "equipment",
+  "name": "Odre",
+  "summary": "Bolsa de couro para guardar bebida (geralmente água ou vinho).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Bolsa de couro para guardar bebida (geralmente água ou vinho). Existe em vários tamanhos, mas o odre mais comum comporta 1 litro.",
+   "category": "item",
+   "price": 1.0,
+   "priceText": "1moedas",
+   "weight": 2.0
+  }
+ },
+ {
+  "id": "equipment:pe-de-cabra",
+  "kind": "equipment",
+  "name": "Pé de Cabra",
+  "summary": "Barra de ferro para forçar portas e baús fechados.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Barra de ferro para forçar portas e baús fechados. Abrir uma porta ou baú usando um pé de cabra oferece +5 no teste de Força. Um pé de cabra pode ser usado em combate, com as mesmas estatísticas de uma clava.",
+   "category": "item",
+   "price": 2.0,
+   "priceText": "2moedas",
+   "weight": 2.5
+  }
+ },
+ {
+  "id": "equipment:pederneira",
+  "kind": "equipment",
+  "name": "Pederneira",
+  "summary": "Uma pedra de faísca e uma placa rugosa de metal, para acender fogo.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma pedra de faísca e uma placa rugosa de metal, para acender fogo. Produz faíscas quando a pedra bate no metal. Acender uma tocha ou lanterna com uma pederneira é uma ação completa.",
+   "category": "item",
+   "price": 1.0,
+   "priceText": "1moedas"
+  }
+ },
+ {
+  "id": "equipment:pena",
+  "kind": "equipment",
+  "name": "Pena",
+  "summary": "Feita a partir da pena de aves, para escrever.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Feita a partir da pena de aves, para escrever.",
+   "category": "item",
+   "price": 0.1,
+   "priceText": "0,1moedas"
+  }
+ },
+ {
+  "id": "equipment:pergaminho",
+  "kind": "equipment",
+  "name": "Pergaminho",
+  "summary": "Um pedaço de pele de cabra ou ovelha, preparado para escrita.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um pedaço de pele de cabra ou ovelha, preparado para escrita.",
+   "category": "item",
+   "price": 0.1,
+   "priceText": "0,1moedas"
+  }
+ },
+ {
+  "id": "equipment:racao-de-viagem",
+  "kind": "equipment",
+  "name": "Ração de Viagem",
+  "summary": "Própria para viagens, uma porção desta ração alimenta uma pessoa por um dia.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Própria para viagens, uma porção desta ração alimenta uma pessoa por um dia. É feita de alimentos conservados, como carne defumada, frutas secas, pão, queijo e biscoitos. Se mantida seca dura bastante, mas quando molhada se estraga em 24 horas.",
+   "category": "item",
+   "price": 0.5,
+   "priceText": "0,5moedas",
+   "weight": 0.5
+  }
+ },
+ {
+  "id": "equipment:saco-de-dormir",
+  "kind": "equipment",
+  "name": "Saco de Dormir",
+  "summary": "Composto por um colchão e uma coberta fina o bastante para ser enrolada e amarrada, é especialmente útil para aventureiros, que nunca sabem onde vão passar a noite.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Composto por um colchão e uma coberta fina o bastante para ser enrolada e amarrada, é especialmente útil para aventureiros, que nunca sabem onde vão passar a noite. Dormir ao relento sem um saco de dormir diminui sua recuperação de PV e PM.",
+   "category": "item",
+   "price": 1.0,
+   "priceText": "1moedas",
+   "weight": 2.5
+  }
+ },
+ {
+  "id": "equipment:saco-de-lona",
+  "kind": "equipment",
+  "name": "Saco de Lona",
+  "summary": "Feito de tecido resistente, pode ser fechado por uma corda trespassada na abertura.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Feito de tecido resistente, pode ser fechado por uma corda trespassada na abertura. Comporta até 20 kg.",
+   "category": "item",
+   "price": 0.1,
+   "priceText": "0,1moedas",
+   "weight": 0.25
+  }
+ },
+ {
+  "id": "equipment:tinta",
+  "kind": "equipment",
+  "name": "Tinta",
+  "summary": "Um frasco de 30 ml de tinta preta.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um frasco de 30 ml de tinta preta. Outras cores custam o dobro do preço.",
+   "category": "item",
+   "price": 8.0,
+   "priceText": "8moedas"
+  }
+ },
+ {
+  "id": "equipment:tocha",
+  "kind": "equipment",
+  "name": "Tocha",
+  "summary": "Um bastão de madeira com algum combustível na ponta (geralmente trapos embebidos em parafina).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um bastão de madeira com algum combustível na ponta (geralmente trapos embebidos em parafina). Depois de acesa, queima por uma hora, iluminando até 6m. Pode ser usada como uma arma simples leve (dano 1d4 mais 1 por fogo, crítico x2).",
+   "category": "item",
+   "price": 0.1,
+   "priceText": "0,1moedas",
+   "weight": 0.5
+  }
+ },
+ {
+  "id": "equipment:vara-de-madeira",
+  "kind": "equipment",
+  "name": "Vara de Madeira",
+  "summary": "Uma haste com 3m de comprimento, geralmente usada para alcançar pontos distantes.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma haste com 3m de comprimento, geralmente usada para alcançar pontos distantes. Tem muitas utilidades, mas é frágil demais para servir como arma.",
+   "category": "item",
+   "price": 0.2,
+   "priceText": "0,2moedas",
+   "weight": 4.0
+  }
+ },
+ {
+  "id": "equipment:acido",
+  "kind": "equipment",
+  "name": "Ácido",
+  "summary": "Frasco de vidro contendo um ácido alquímico altamente corrosivo.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Frasco de vidro contendo um ácido alquímico altamente corrosivo. Para usar o ácido, você gasta uma ação padrão e escolhe uma criatura em alcance curto. Essa criatura sofre 2d4 pontos de dano de ácido (Reflexos CD Des reduz à metade). CD 15.",
+   "category": "alquimico",
+   "price": 10.0,
+   "priceText": "10moedas",
+   "weight": 0.5
+  }
+ },
+ {
+  "id": "equipment:balsamo-restaurador",
+  "kind": "equipment",
+  "name": "Bálsamo Restaurador",
+  "summary": "Uma pasta verde e fedorenta, feita de ervas medicinais.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma pasta verde e fedorenta, feita de ervas medicinais. Esfregar essa pasta em um ferimento é uma ação completa e recupera 2d4 pontos de vida. CD 15.",
+   "category": "alquimico",
+   "price": 10.0,
+   "priceText": "10moedas",
+   "weight": 0.5
+  }
+ },
+ {
+  "id": "equipment:bomba",
+  "kind": "equipment",
+  "name": "Bomba",
+  "summary": "Uma granada rudimentar, popular entre goblins e usuários de pólvora.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma granada rudimentar, popular entre goblins e usuários de pólvora. Para usar a bomba, você precisa empunhá-la, gastar uma ação de movimento para acender seu pavio e então uma ação padrão para arremessá-la em um ponto em alcance curto. Criaturas a até 3m desse ponto sofrem 6d6 pontos de dano de impacto. Um teste de Reflexos (CD Des) reduz o dano à metade. CD 20.",
+   "category": "alquimico",
+   "price": 50.0,
+   "priceText": "50moedas",
+   "weight": 0.5
+  }
+ },
+ {
+  "id": "equipment:essencia-de-mana",
+  "kind": "equipment",
+  "name": "Essência de Mana",
+  "summary": "Esta poção feita de ervas raras e compostos alquímicos recupera energia pessoal.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta poção feita de ervas raras e compostos alquímicos recupera energia pessoal. Beber a essência de mana é uma ação padrão e recupera 1d4 pontos de mana. CD 20.",
+   "category": "alquimico",
+   "price": 50.0,
+   "priceText": "50moedas",
+   "weight": 0.1
+  }
+ },
+ {
+  "id": "equipment:fogo-alquimico",
+  "kind": "equipment",
+  "name": "Fogo Alquímico",
+  "summary": "Frasco de cerâmica contendo uma substância grossa e pegajosa, que entra em combustão em contato com o ar.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 152
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Frasco de cerâmica contendo uma substância grossa e pegajosa, que entra em combustão em contato com o ar. Para usar o fogo alquímico, você gasta uma ação padrão e escolhe uma criatura em alcance curto. Essa criatura sofre 1d6 pontos de dano de fogo e fica em chamas. Um teste de Reflexos (CD Des) reduz o dano à metade e evita as chamas. CD 15.",
+   "category": "alquimico",
+   "price": 10.0,
+   "priceText": "10moedas",
+   "weight": 0.5
+  }
+ },
+ {
+  "id": "equipment:traje-camuflado",
+  "kind": "equipment",
+  "name": "Traje Camuflado",
+  "summary": "Um traje camuflado é feito para um tipo de terreno específico (veja a habilidade Explorador, do caçador, para os tipos de terrenos existentes).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 153
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um traje camuflado é feito para um tipo de terreno específico (veja a habilidade Explorador, do caçador, para os tipos de terrenos existentes). Por exemplo, um traje camuflado para floresta pode ser verde e marrom e coberto de folhas, enquanto um traje urbano pode ser cinza ou negro. Usar um traje camuflado no terreno correto fornece +2 em testes de Furtividade. CD 20.",
+   "category": "vestuario",
+   "price": 20.0,
+   "priceText": "20moedas",
+   "weight": 2.0
+  }
+ },
+ {
+  "id": "equipment:traje-da-corte",
+  "kind": "equipment",
+  "name": "Traje da Corte",
+  "summary": "Roupas de luxo, feitas sob medida e adequadas à nobreza e realeza.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 153
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Roupas de luxo, feitas sob medida e adequadas à nobreza e realeza. Em certos ambientes (um baile, um salão do palácio), um personagem que não esteja vestindo um traje da corte sofre –5 em testes de perícias baseadas em Carisma. CD 20.",
+   "category": "vestuario",
+   "price": 50.0,
+   "priceText": "50moedas",
+   "weight": 2.0
+  }
+ },
+ {
+  "id": "equipment:traje-de-plebeu",
+  "kind": "equipment",
+  "name": "Traje de Plebeu",
+  "summary": "Roupas típicas de aldeão, incluem uma camisa larga e calças soltas, ou saia e vestido.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 153
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Roupas típicas de aldeão, incluem uma camisa larga e calças soltas, ou saia e vestido. Não inclui calçados — os mais pobres andam descalços. CD 10.",
+   "category": "vestuario",
+   "price": 0.5,
+   "priceText": "0,5moedas",
+   "weight": 1.0
+  }
+ },
+ {
+  "id": "equipment:traje-de-viajante",
+  "kind": "equipment",
+  "name": "Traje de Viajante",
+  "summary": "Inclui botas resistentes, calças ou saias, cinto, camisa de linho e capa com capuz.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 153
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Inclui botas resistentes, calças ou saias, cinto, camisa de linho e capa com capuz. São as roupas padrão de aventureiros. CD 15.",
+   "category": "vestuario",
+   "price": 5.0,
+   "priceText": "5moedas",
+   "weight": 2.0
+  }
+ },
+ {
+  "id": "equipment:comum",
+  "kind": "equipment",
+  "name": "Comum",
+  "summary": "Um espaço no salão comunal.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 153
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um espaço no salão comunal. Se tiver sorte, o taverneiro deixará a lareira acesa para que você não passe frio. Pelo menos não ficará sozinho — pulgas e ratos lhe farão companhia. A refeição consiste de pão, sopa e água. Recupera 1 PV e 1 PM por nível.",
+   "category": "hospedagem",
+   "price": 0.5,
+   "priceText": "0,5moedas"
+  }
+ },
+ {
+  "id": "equipment:confortavel",
+  "kind": "equipment",
+  "name": "Confortável",
+  "summary": "Um quarto pequeno, mas privativo, com uma cama com colchão de palha e um baú para guardar seus pertences.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 153
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um quarto pequeno, mas privativo, com uma cama com colchão de palha e um baú para guardar seus pertences. A refeição inclui pão, queijo, cozido de galinha com legumes e cerveja ou vinho (aguado). Recupera 2 PV e 2 PM por nível.",
+   "category": "hospedagem",
+   "price": 4.0,
+   "priceText": "4moedas"
+  }
+ },
+ {
+  "id": "equipment:luxuosa",
+  "kind": "equipment",
+  "name": "Luxuosa",
+  "summary": "Um quarto grande, com colchão de algodão ou penas, cortinas nas janelas, uma bacia de água quente para banho e outros luxos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 153
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um quarto grande, com colchão de algodão ou penas, cortinas nas janelas, uma bacia de água quente para banho e outros luxos. A refeição inclui carne, frutas, doces e uma taça de vinho de boa safra. Acomodações desta categoria estão disponíveis apenas nas melhores estalagens, normalmente apenas em cidades e metrópoles. Recupera 3 PV e 3 PM por nível.",
+   "category": "hospedagem",
+   "price": 20.0,
+   "priceText": "20moedas"
+  }
+ },
+ {
+  "id": "equipment:bebida-comum",
+  "kind": "equipment",
+  "name": "Bebida Comum",
+  "summary": "Uma caneca cheia da bebida mais comum no local, geralmente cerveja.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 153
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma caneca cheia da bebida mais comum no local, geralmente cerveja.",
+   "category": "alimentacao",
+   "price": 0.1,
+   "priceText": "0,1moedas",
+   "weight": 0.5
+  }
+ },
+ {
+  "id": "equipment:refeicao-comum",
+  "kind": "equipment",
+  "name": "Refeição Comum",
+  "summary": "Uma refeição típica inclui pão, queijo, cozido de carne ou galinha com legumes e uma caneca de bebida.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 153
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma refeição típica inclui pão, queijo, cozido de carne ou galinha com legumes e uma caneca de bebida.",
+   "category": "alimentacao",
+   "price": 0.3,
+   "priceText": "0,3moedas",
+   "weight": 0.5
+  }
+ },
+ {
+  "id": "equipment:batata-da-capital",
+  "kind": "equipment",
+  "name": "Batata da Capital",
+  "summary": "Batatas cortadas em tiras e mergulhadas em óleo fervente.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 153
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Batatas cortadas em tiras e mergulhadas em óleo fervente. Gordurentas e pouco nutritivas, são o tipo de prato que só é servido numa metrópole como Deusa da Ambição. Apesar disso, o prato é quase unânime. Gostoso, deixa qualquer um empolgado para realizar façanhas. Você recebe +1d6 num único teste a sua escolha realizado nesse dia. Para não esquecer, deixe um d6 em cima da sua ficha. De preferência, amarelo. CD 15.",
+   "category": "alimentacao",
+   "price": 2.0,
+   "priceText": "2moedas",
+   "weight": 0.5,
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 153"
+   }
+  }
+ },
+ {
+  "id": "equipment:cacau-quente",
+  "kind": "equipment",
+  "name": "Cacau Quente",
+  "summary": "Cacau e leite, servidos quentes.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 153
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Cacau e leite, servidos quentes. Não tem erro. O cacau ativa o cérebro, fornecendo +2 PM temporários. CD 20.",
+   "category": "alimentacao",
+   "price": 18.0,
+   "priceText": "18moedas",
+   "weight": 0.5,
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 153"
+   }
+  }
+ },
+ {
+  "id": "equipment:macarrao-das-montanhas",
+  "kind": "equipment",
+  "name": "Macarrão das Montanhas",
+  "summary": "Seus habitantes criaram este prato reforçado (macarrão, bacon e creme de leite!) para encarar suas árduas jornadas de trabalho nas minas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 153
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Seus habitantes criaram este prato reforçado (macarrão, bacon e creme de leite!) para encarar suas árduas jornadas de trabalho nas minas. Delicioso, o prato se espalhou por outras cidades e reinos. Você recebe +5 PV temporários. CD 15.",
+   "category": "alimentacao",
+   "price": 6.0,
+   "priceText": "6moedas",
+   "weight": 0.5,
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 153"
+   }
+  }
+ },
+ {
+  "id": "equipment:prato-do-aventureiro",
+  "kind": "equipment",
+  "name": "Prato do Aventureiro",
+  "summary": "Um cozido de galinha com legumes, esta é uma refeição simples, mas nutritiva.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 153
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um cozido de galinha com legumes, esta é uma refeição simples, mas nutritiva. Em sua próxima noite de sono, você aumenta a sua recuperação de pontos de vida em +1 por nível. CD 10.",
+   "category": "alimentacao",
+   "price": 1.0,
+   "priceText": "1moedas",
+   "weight": 0.5
+  }
+ },
+ {
+  "id": "equipment:sopa-de-peixe",
+  "kind": "equipment",
+  "name": "Sopa de Peixe",
+  "summary": "Um cozido de peixe com verduras.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 154
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um cozido de peixe com verduras. É um prato humilde, mas garante um descanso relaxante. Em sua próxima noite de sono, você aumenta a sua recuperação de pontos de mana em +1 por nível. CD 10.",
+   "category": "alimentacao",
+   "price": 1.0,
+   "priceText": "1moedas",
+   "weight": 0.5
+  }
+ },
+ {
+  "id": "equipment:cao-de-guarda",
+  "kind": "equipment",
+  "name": "Cão de Guarda",
+  "summary": "Este cachorro valente e leal pode ser usado como montaria por uma criatura Pequena ou Minúscula (ou como um aliado de outro tipo por personagens com o poder Parceiro).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 154
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este cachorro valente e leal pode ser usado como montaria por uma criatura Pequena ou Minúscula (ou como um aliado de outro tipo por personagens com o poder Parceiro).",
+   "category": "animal",
+   "price": 50.0,
+   "priceText": "50moedas"
+  }
+ },
+ {
+  "id": "equipment:cavalo",
+  "kind": "equipment",
+  "name": "Cavalo",
+  "summary": "A montaria mais comum nos reinos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 154
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A montaria mais comum nos reinos. Cavalos sem treinamento se assustam facilmente, sendo necessário um teste de Cavalgar (CD 20) por rodada para permanecer montado durante um combate. Cavalos de guerra dispensam esse teste.",
+   "category": "animal",
+   "price": 75.0,
+   "priceText": "75moedas"
+  }
+ },
+ {
+  "id": "equipment:estabulo",
+  "kind": "equipment",
+  "name": "Estábulo",
+  "summary": "Inclui alimentação para o animal.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 154
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Inclui alimentação para o animal.",
+   "category": "animal",
+   "price": 0.1,
+   "priceText": "0,1moedas"
+  }
+ },
+ {
+  "id": "equipment:ponei",
+  "kind": "equipment",
+  "name": "Pônei",
+  "summary": "A montaria mais comum entre raças Pequenas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 154
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A montaria mais comum entre raças Pequenas. Pôneis sem treinamento se assustam facilmente, sendo necessário um teste de Cavalgar (CD 20) por rodada para permanecer montado durante um combate. Pôneis de guerra dispensam esse teste.",
+   "category": "animal",
+   "price": 5.0,
+   "priceText": "5moedas"
+  }
+ },
+ {
+  "id": "equipment:sela",
+  "kind": "equipment",
+  "name": "Sela",
+  "summary": "Uma peça de couro e pelego, posicionada sobre o lombo da montaria para o cavaleiro sentar.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 154
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma peça de couro e pelego, posicionada sobre o lombo da montaria para o cavaleiro sentar. Inclui arreios, freios e alforjes (sacos de couro para levar mantimentos de viagem).",
+   "category": "animal",
+   "price": 20.0,
+   "priceText": "20moedas"
+  }
+ },
+ {
+  "id": "equipment:ave-de-carga",
+  "kind": "equipment",
+  "name": "Ave de Carga",
+  "summary": "Estas enormes aves, também chamadas de pássaros-touros, são parecidas com avestruzes com chifres, couro e cascos de búfalo.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 154
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Estas enormes aves, também chamadas de pássaros-touros, são parecidas com avestruzes com chifres, couro e cascos de búfalo. Não têm asas. Possuem poucas penas, que servem apenas como ornamentação. Muito dóceis, aves de carga são usados em áreas rurais como animais de carga e tração.",
+   "category": "animal",
+   "price": 10.0,
+   "priceText": "10moedas",
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 154"
+   }
+  }
+ },
+ {
+  "id": "equipment:balao-goblin",
+  "kind": "equipment",
+  "name": "Balão Goblin",
+  "summary": "Feito de imensas bolsas de couro e outros tecidos remendados, com uma gôndola parecida com um grande cesto, o balão goblin é um engenho tecnológico sem igual no mundo.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 154
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Feito de imensas bolsas de couro e outros tecidos remendados, com uma gôndola parecida com um grande cesto, o balão goblin é um engenho tecnológico sem igual no mundo. Um balão goblin tem tamanho Enorme, deslocamento 12m, Defesa 8 (+ mod. Des do baloeiro) e 80 PV. Conduzi-lo exige um teste de Pilotagem por dia, com CD 15 (céu tranquilo), 20 (ventania ou chuva) ou 25 (tempestade). Uma falha significa que o balão não avança ou avança na direção errada; uma falha por 5 ou mais significa que o balão cai. Ao contrário do que possa parecer, quedas de balões raramente são fatais. Quando o balão perde mais da metade de seus PV, começa a perder ar e flutua lentamente na direção do solo. Cada ocupante sofre 2d6 pontos de dano de impacto (Ref CD 15 reduz à metade). Um balão só cai de forma perigosa caso perca todos os seus PV. Neste caso, os ocupantes sofrem dano normal pela queda, de acordo com a altura. Remendar um balão em pleno voo exige uma ação completa e um teste de Ofício (artesanato) contra CD 15. Se você passar no teste, recupera 1d8 PV do balão.",
+   "category": "veiculo",
+   "price": 200.0,
+   "priceText": "200moedas"
+  }
+ },
+ {
+  "id": "equipment:carroca",
+  "kind": "equipment",
+  "name": "Carroça",
+  "summary": "Veículo de duas ou quatro rodas, aberto, normalmente usado para transportar cargas pesadas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 154
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Veículo de duas ou quatro rodas, aberto, normalmente usado para transportar cargas pesadas. É puxada por dois cavalos ou um ave de carga. Inclui os arreios necessários para controlar os animais.",
+   "category": "veiculo",
+   "price": 30.0,
+   "priceText": "30moedas"
+  }
+ },
+ {
+  "id": "equipment:carruagem",
+  "kind": "equipment",
+  "name": "Carruagem",
+  "summary": "Veículo de quatro rodas, capaz de transportar até quatro pessoas em uma cabine fechada, mais dois condutores do lado de fora.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 154
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Veículo de quatro rodas, capaz de transportar até quatro pessoas em uma cabine fechada, mais dois condutores do lado de fora. É puxada por dois cavalos ou um ave de carga. Inclui os arreios necessários para controlar os animais.",
+   "category": "veiculo",
+   "price": 100.0,
+   "priceText": "100moedas"
+  }
+ },
+ {
+  "id": "equipment:canoa",
+  "kind": "equipment",
+  "name": "Canoa",
+  "summary": "Construída a partir de um único tronco de árvore, é a mais simples das embarcações.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 154
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Construída a partir de um único tronco de árvore, é a mais simples das embarcações.",
+   "category": "veiculo",
+   "price": 50.0,
+   "priceText": "50moedas"
+  }
+ },
+ {
+  "id": "equipment:veleiro",
+  "kind": "equipment",
+  "name": "Veleiro",
+  "summary": "Com três mastros, é o típico navio de viagem, muito popular entre mercadores.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 154
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Com três mastros, é o típico navio de viagem, muito popular entre mercadores.",
+   "category": "veiculo",
+   "price": 10000.0,
+   "priceText": "10.000moedas"
+  }
+ },
+ {
+  "id": "equipment:conducao",
+  "kind": "equipment",
+  "name": "Condução",
+  "summary": "Inclui viagens terrestres (em carroças), marítimas (em navios) ou aéreas (balões goblins).",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 154
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Inclui viagens terrestres (em carroças), marítimas (em navios) ou aéreas (balões goblins). Viajar em balões goblins é arriscado: a cada 100 km há 1 chance em 20 de queda (não fatal).",
+   "category": "servico",
+   "priceText": "1 moedas por km"
+  }
+ },
+ {
+  "id": "equipment:mensageiro",
+  "kind": "equipment",
+  "name": "Mensageiro",
+  "summary": "Inclui mensagens entregues a pé, por cavaleiros ou navios.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 154
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Inclui mensagens entregues a pé, por cavaleiros ou navios.",
+   "category": "servico",
+   "priceText": "2 moedas por km"
+  }
+ },
+ {
+  "id": "equipment:magias",
+  "kind": "equipment",
+  "name": "Magias",
+  "summary": "Este é o preço para lançar uma magia em uma situação comum.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Equipamento",
+   "page": 154
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este é o preço para lançar uma magia em uma situação comum. Ou seja, você vai até o conjurador e lançar a magia não oferece risco para ele. Se você pedir ao conjurador para acompanhá-lo numa aventura, por exemplo, a resposta padrão será “não, obrigado”. artífices podem construir armas, armaduras e demais itens superiores — com uma ou mais modificações. Cada modificação fornece um benefício para o item. Itens superiores são fabricados com as mesmas regras de itens normais. Porém, o custo e a CD do teste de Ofício aumentam, de acordo com o número de modificações (veja a tabela ao lado). Fabricar uma armadura completa, por exemplo, exige 1.000 moedas (um terço de 3.000 moedas) e um teste de Ofício contra CD 20. Já uma armadura completa com quatro modificações exige 7.000 moedas (um terço de 3.000 moedas pela armadura completa mais 6.000 moedas pelas modificações) e um teste de Ofício contra CD 30. É possível adicionar modificações a um item. Você paga a diferença de acordo com o novo número de modificações (por exemplo, para adicionar uma modificação a um item que já possui duas, você precisa pagar 2.000 moedas), mas deve fazer o teste de Ofício novamente e, se falhar por 5 ou mais, estraga o item. Bônus de modificações não se acumulam. Uma arma cruel e atroz fornece +2 nas rolagens de dano, não +3. Da mesma forma, se você possui dois itens macabros, recebe +2 em Intimidação, não +4.",
+   "category": "servico"
+  }
+ },
+ {
+  "id": "equipment:ajustada",
+  "kind": "equipment",
+  "name": "Ajustada",
+  "summary": "Feito com extremo cuidado e peças medidas com precisão, o item tem a sua penalidade de armadura diminuída em 1.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 155
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Feito com extremo cuidado e peças medidas com precisão, o item tem a sua penalidade de armadura diminuída em 1.",
+   "category": "modificacao",
+   "target": "armadura-escudo",
+   "effectSummary": "–1 na penalidade de armadura"
+  }
+ },
+ {
+  "id": "equipment:aprimorado",
+  "kind": "equipment",
+  "name": "Aprimorado",
+  "summary": "Um item com esta modificação é construído de forma cuidadosa e com os melhores materiais.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 155
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um item com esta modificação é construído de forma cuidadosa e com os melhores materiais. Fornece +2 em testes de uma perícia apropriada. Por exemplo, um kit de medicamentos aprimorado fornece +2 em testes de Cura, enquanto uma sela aprimorada fornece +2 em testes de Cavalgar. Esta modificação não pode ser aplicada a Luta e Pontaria (mas veja a modificação Certeira).",
+   "category": "modificacao",
+   "target": "outro",
+   "effectSummary": "+2 em testes de perícia"
+  }
+ },
+ {
+  "id": "equipment:atroz",
+  "kind": "equipment",
+  "name": "Atroz",
+  "summary": "A arma é um amontoado de pontas, ganchos e protuberâncias.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 155
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma é um amontoado de pontas, ganchos e protuberâncias. É difícil empunhá-la sem se machucar, mas ela fornece +2 nas rolagens de dano.",
+   "category": "modificacao",
+   "target": "arma",
+   "effectSummary": "+2 nas rolagens de dano",
+   "requiresModification": "Cruel"
+  }
+ },
+ {
+  "id": "equipment:banhado-a-ouro",
+  "kind": "equipment",
+  "name": "Banhado a Ouro",
+  "summary": "Uma modificação favorita de nobres pomposos ou aventureiros que acabaram de enriquecer.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 155
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma modificação favorita de nobres pomposos ou aventureiros que acabaram de enriquecer. Um item banhado a ouro concede um bônus de +2 em testes de Diplomacia. O mestre pode mudar o bônus para uma penalidade de –2, caso você esteja interagindo com pessoas que desprezam tal ostentação. Além disso, pode atrair a cobiça de ladrões.",
+   "category": "modificacao",
+   "target": "outro",
+   "effectSummary": "+2 em Diplomacia"
+  }
+ },
+ {
+  "id": "equipment:certeira",
+  "kind": "equipment",
+  "name": "Certeira",
+  "summary": "Forjada para ser mais precisa e balanceada, a arma fornece um bônus de +1 nos testes de ataque.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 155
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Forjada para ser mais precisa e balanceada, a arma fornece um bônus de +1 nos testes de ataque.",
+   "category": "modificacao",
+   "target": "arma",
+   "effectSummary": "+1 nos testes de ataque"
+  }
+ },
+ {
+  "id": "equipment:cravejado-de-gemas",
+  "kind": "equipment",
+  "name": "Cravejado de Gemas",
+  "summary": "É fácil ser persuadido por alguém opulento e orgulhoso o bastante para ostentar um item cravejado de gemas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 155
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "É fácil ser persuadido por alguém opulento e orgulhoso o bastante para ostentar um item cravejado de gemas. Concede um bônus de +2 em testes de Enganação. Assim como um item banhado a ouro, um item cravejado de gemas pode atrair a cobiça de ladrões.",
+   "category": "modificacao",
+   "target": "outro",
+   "effectSummary": "+2 em Enganação"
+  }
+ },
+ {
+  "id": "equipment:cruel",
+  "kind": "equipment",
+  "name": "Cruel",
+  "summary": "Rebarbas, espinhos e até mesmo lâminas adicionais podem compor uma arma cruel.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 155
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Rebarbas, espinhos e até mesmo lâminas adicionais podem compor uma arma cruel. Ela fornece um bônus de +1 nas rolagens de dano.",
+   "category": "modificacao",
+   "target": "arma",
+   "effectSummary": "+1 nas rolagens de dano"
+  }
+ },
+ {
+  "id": "equipment:delicada",
+  "kind": "equipment",
+  "name": "Delicada",
+  "summary": "Apenas os materiais mais leves foram usados nesta armadura.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 155
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Apenas os materiais mais leves foram usados nesta armadura. As placas têm a espessura mínima necessária para oferecer a proteção que devem. Esta modificação só pode ser aplicada a armaduras pesadas e permite que o personagem aplique 1 ponto de seu bônus de Destreza (caso tenha) na Defesa. Uma armadura não pode ser delicada e reforçada.",
+   "category": "modificacao",
+   "target": "armadura-escudo",
+   "effectSummary": "Aplica 1 ponto de Des na Defesa"
+  }
+ },
+ {
+  "id": "equipment:equilibrada",
+  "kind": "equipment",
+  "name": "Equilibrada",
+  "summary": "Uma arma equilibrada é forjada com o balanço perfeito, o que facilita movimentos complexos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 155
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma arma equilibrada é forjada com o balanço perfeito, o que facilita movimentos complexos. Ela fornece um bônus de +2 em testes de manobras (desarmar, quebrar etc.).",
+   "category": "modificacao",
+   "target": "arma",
+   "effectSummary": "+2 em testes de manobras"
+  }
+ },
+ {
+  "id": "equipment:espinhosa-armadura",
+  "kind": "equipment",
+  "name": "Espinhosa (Armadura)",
+  "summary": "Uma armadura coberta de espinhos é uma visão impressionante — principalmente se os espinhos estiverem banhados com o sangue dos inimigos!",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 155
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma armadura coberta de espinhos é uma visão impressionante — principalmente se os espinhos estiverem banhados com o sangue dos inimigos! Se o usuário agarrar ou for agarrado por uma criatura, causa dano de perfuração nesta criatura igual ao seu bônus de Força. O dano é causado quando a manobra é feita e no início de cada turno do personagem, enquanto ela for mantida.",
+   "category": "modificacao",
+   "target": "armadura-escudo",
+   "effectSummary": "Causa dano com agarrar"
+  }
+ },
+ {
+  "id": "equipment:espinhoso-escudo",
+  "kind": "equipment",
+  "name": "Espinhoso (Escudo)",
+  "summary": "Esta modificação aumenta o dano de um ataque com escudo em um passo.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 156
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Esta modificação aumenta o dano de um ataque com escudo em um passo.",
+   "category": "modificacao",
+   "target": "armadura-escudo",
+   "effectSummary": "Aumenta dano do escudo"
+  }
+ },
+ {
+  "id": "equipment:harmonizada",
+  "kind": "equipment",
+  "name": "Harmonizada",
+  "summary": "A arma foi banhada em óleos alquímicos que a deixaram sintonizada com a aura de seu usuário.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 156
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma foi banhada em óleos alquímicos que a deixaram sintonizada com a aura de seu usuário. Escolha uma habilidade ativada ao se fazer um ataque. Esta habilidade tem seu custo em PM reduzido em –1 se utilizada com esta arma.",
+   "category": "modificacao",
+   "target": "arma",
+   "effectSummary": "Custo de habilidades de ataque diminui em –1 PM"
+  }
+ },
+ {
+  "id": "equipment:injecao-alquimica",
+  "kind": "equipment",
+  "name": "Injeção Alquímica",
+  "summary": "Um minúsculo frasco de cerâmica ou vidro é inserido ao longo da arma, junto com um mecanismo injetor ativado por impacto.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 156
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um minúsculo frasco de cerâmica ou vidro é inserido ao longo da arma, junto com um mecanismo injetor ativado por impacto. Um ataque que acerte causa seu dano normal e libera uma carga de ácido, fogo alquímico ou água benta, que atinge o alvo automaticamente. A modificação tem espaço para 2 cargas. Recarregá-la exige uma ação completa e o gasto dos itens alquímicos que você quiser inserir. Carregar uma arma com 2 cargas de ácido, por exemplo, custa 20 moedas.",
+   "category": "modificacao",
+   "target": "arma",
+   "effectSummary": "Gera efeito de item alquímico"
+  }
+ },
+ {
+  "id": "equipment:macabro",
+  "kind": "equipment",
+  "name": "Macabro",
+  "summary": "Um item macabro é pintado com sangue seco, esculpido na forma de uma caveira ou decorado com pedaços de orelhas, dedos e olhos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 156
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um item macabro é pintado com sangue seco, esculpido na forma de uma caveira ou decorado com pedaços de orelhas, dedos e olhos. Essa aparência assustadora fornece um bônus de +2 em testes de Intimidação, mas impõe uma penalidade de –2 em testes de Diplomacia.",
+   "category": "modificacao",
+   "target": "outro",
+   "effectSummary": "+2 em Intimidação, –2 em Diplomacia"
+  }
+ },
+ {
+  "id": "equipment:macica",
+  "kind": "equipment",
+  "name": "Maciça",
+  "summary": "A arma é feita com material denso, fazendo com que seus golpes tenham impacto terrível.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 156
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma é feita com material denso, fazendo com que seus golpes tenham impacto terrível. O multiplicador de crítico da arma aumenta em 1 ponto. Uma arma não pode ser maciça e precisa.",
+   "category": "modificacao",
+   "target": "arma",
+   "effectSummary": "+1 no multiplicador de crítico"
+  }
+ },
+ {
+  "id": "equipment:material-especial",
+  "kind": "equipment",
+  "name": "Material Especial",
+  "summary": "A arma, armadura ou escudo é feito ou banhado (não ambos) com um material especial.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 156
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A arma, armadura ou escudo é feito ou banhado (não ambos) com um material especial. Veja a seção a seguir para a descrição dos materiais especiais. Cada um fornece um benefício específico, cumulativo com outros benefícios de modificações, mas possui um custo adicional que deve ser pago além do custo da modificação. Fabricar um item de material especial é uma modificação porque materiais especiais exigem um trabalho mais complexo do que materiais comuns.",
+   "category": "modificacao",
+   "target": "outro",
+   "effectSummary": "Varia"
+  }
+ },
+ {
+  "id": "equipment:mira-telescopica",
+  "kind": "equipment",
+  "name": "Mira Telescópica",
+  "summary": "Aumenta o alcance da arma em uma categoria (de curto para médio, de médio para longo) e o alcance da habilidade Ataque Furtivo para médio.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 156
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Aumenta o alcance da arma em uma categoria (de curto para médio, de médio para longo) e o alcance da habilidade Ataque Furtivo para médio. Esta modificação só pode ser aplicada em armas de disparo (exceto fundas).",
+   "category": "modificacao",
+   "target": "arma",
+   "effectSummary": "Aumenta alcance da arma"
+  }
+ },
+ {
+  "id": "equipment:polida",
+  "kind": "equipment",
+  "name": "Polida",
+  "summary": "Uma armadura ou escudo com esta modificação foi feito com metais reluzentes.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 156
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Uma armadura ou escudo com esta modificação foi feito com metais reluzentes. Além de ser bonita, a luz refletida ofusca inimigos. Em ambientes iluminados, o item tem seu bônus de Defesa aumentado em +2, mas apenas na primeira rodada de combate — após isso, os inimigos se acostumam ao reflexo.",
+   "category": "modificacao",
+   "target": "armadura-escudo",
+   "effectSummary": "+2 na Defesa na primeira rodada"
+  }
+ },
+ {
+  "id": "equipment:precisa",
+  "kind": "equipment",
+  "name": "Precisa",
+  "summary": "Cuidado especial foi tomado ao temperar o aço desta arma, para que seu fio se mantenha sempre como uma navalha.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 156
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Cuidado especial foi tomado ao temperar o aço desta arma, para que seu fio se mantenha sempre como uma navalha. A margem de ameaça aumenta em 1 ponto. Uma arma não pode ser precisa e maciça.",
+   "category": "modificacao",
+   "target": "arma",
+   "effectSummary": "+1 na margem de ameaça"
+  }
+ },
+ {
+  "id": "equipment:pungente",
+  "kind": "equipment",
+  "name": "Pungente",
+  "summary": "Temperada diversas vezes para adquirir o fio perfeito — ou o equilíbrio perfeito, no caso de uma arma sem fio —, a arma fornece um bônus de +2 nos testes de ataque.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 156
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Temperada diversas vezes para adquirir o fio perfeito — ou o equilíbrio perfeito, no caso de uma arma sem fio —, a arma fornece um bônus de +2 nos testes de ataque.",
+   "category": "modificacao",
+   "target": "arma",
+   "effectSummary": "+2 nos testes de ataque",
+   "requiresModification": "Certeira"
+  }
+ },
+ {
+  "id": "equipment:reforcada",
+  "kind": "equipment",
+  "name": "Reforçada",
+  "summary": "Placas adicionais, uma camada extra de cota de malha ou acolchoamento, proteção dobrada nas juntas e áreas vulneráveis...",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 157
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Placas adicionais, uma camada extra de cota de malha ou acolchoamento, proteção dobrada nas juntas e áreas vulneráveis... O bônus na Defesa e a penalidade de armadura de uma armadura ou escudo com esta modificação aumentam em +1. Uma armadura não pode ser reforçada e delicada.",
+   "category": "modificacao",
+   "target": "armadura-escudo",
+   "effectSummary": "+1 na Defesa, +1 na penalidade de armadura"
+  }
+ },
+ {
+  "id": "equipment:selada",
+  "kind": "equipment",
+  "name": "Selada",
+  "summary": "A armadura foi forjada de forma a proteger todo o corpo do usuário, sem deixar espaço para nem mesmo um alfinete!",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 157
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "A armadura foi forjada de forma a proteger todo o corpo do usuário, sem deixar espaço para nem mesmo um alfinete! Esta modificação fornece um bônus de +1 em testes de resistência, mas só pode ser aplicado em armaduras pesadas.",
+   "category": "modificacao",
+   "target": "armadura-escudo",
+   "effectSummary": "+1 nos testes de resistência"
+  }
+ },
+ {
+  "id": "equipment:sob-medida",
+  "kind": "equipment",
+  "name": "Sob Medida",
+  "summary": "Embora muitas armaduras sejam feitas especificamente para um usuário, esta passou por um período extenso de ajustes e refinamento, adequando-se com perfeição ao seu corpo.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 157
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Embora muitas armaduras sejam feitas especificamente para um usuário, esta passou por um período extenso de ajustes e refinamento, adequando-se com perfeição ao seu corpo. Reduz a penalidade por armadura em 2, mas apenas para o usuário específico (para outros, comporta-se como um item ajustado).",
+   "category": "modificacao",
+   "target": "armadura-escudo",
+   "effectSummary": "–2 na penalidade de armadura",
+   "requiresModification": "Ajustada"
+  }
+ },
+ {
+  "id": "equipment:aco-rubi",
+  "kind": "equipment",
+  "name": "Aço-Rubi",
+  "summary": "Este metal tem a aparência de vidro avermelhado, mas é duro como aço.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 157
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Este metal tem a aparência de vidro avermelhado, mas é duro como aço. Armas de aço-rubi ignoram resistência a dano. Armaduras e escudos fornecem uma chance cumulativa de ignorar o dano extra de acertos críticos e ataques furtivos, de acordo com seu tipo: armaduras leves e escudos, 25% (1 em 1d4); armaduras pesadas, 50% (qualquer valor par em qualquer dado).",
+   "category": "material",
+   "materialCost": {
+    "arma": 2000.0,
+    "armadura-leve": 1000.0,
+    "armadura-pesada": 2000.0,
+    "escudo": 1000.0
+   }
+  }
+ },
+ {
+  "id": "equipment:adamante",
+  "kind": "equipment",
+  "name": "Adamante",
+  "summary": "Encontrado apenas em meteoritos (e por isso também chamado de “ferro-meteórico”), o adamante é um metal escuro, fosco e mais denso que o aço.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 157
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Encontrado apenas em meteoritos (e por isso também chamado de “ferro-meteórico”), o adamante é um metal escuro, fosco e mais denso que o aço. Armas de adamante aumentam seu dano em um passo. Armaduras e escudos fornecem resistência a dano, de acordo com seu tipo: armaduras leves e escudos, RD 2; armaduras pesadas, RD 5.",
+   "category": "material",
+   "materialCost": {
+    "arma": 1500.0,
+    "armadura-leve": 1500.0,
+    "armadura-pesada": 7000.0,
+    "escudo": 1500.0
+   }
+  }
+ },
+ {
+  "id": "equipment:gelo-eterno",
+  "kind": "equipment",
+  "name": "Gelo Eterno",
+  "summary": "Expedições de aventureiros exploram essa região glacial perigosa à caça deste material fantástico.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 157
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Expedições de aventureiros exploram essa região glacial perigosa à caça deste material fantástico. Armas de gelo eterno causam +2 pontos de dano por frio, enquanto armaduras e escudos fornecem resistência a fogo: armaduras leves e escudos, resistência 5; armaduras pesadas, resistência 10.",
+   "category": "material",
+   "materialCost": {
+    "arma": 1000.0,
+    "armadura-leve": 500.0,
+    "armadura-pesada": 1000.0,
+    "escudo": 500.0
+   }
+  }
+ },
+ {
+  "id": "equipment:madeira-de-ferro",
+  "kind": "equipment",
+  "name": "Madeira-de-Ferro",
+  "summary": "Certas florestas produzem um tipo de madeira negra, dura como o ferro das melhores forjas e dotada de propriedades mágicas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 157
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Certas florestas produzem um tipo de madeira negra, dura como o ferro das melhores forjas e dotada de propriedades mágicas. Armas de madeira — arcos, bordões, clavas, lanças e tacapes — e escudos leves podem ser feitos com Madeira-de-Ferro. Armas de Madeira-de-Ferro contam como armas mágicas para vencer resistência a dano. Além disso, habilidades ativadas ao se fazer um ataque têm seu custo em PM reduzido em –1. Escudos de Madeira-de-Ferro fornecem +2 em testes de resistência contra magia.",
+   "category": "material",
+   "materialCost": {
+    "arma": 500.0,
+    "armadura-leve": null,
+    "armadura-pesada": null,
+    "escudo": 1000.0
+   },
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 157"
+   }
+  }
+ },
+ {
+  "id": "equipment:materia-aberrante",
+  "kind": "equipment",
+  "name": "Matéria Aberrante",
+  "summary": "Qualquer material de origem aberrante — desde suas garras e carapaças, até minérios e partes de estruturas encontradas em áreas aberrantes — apresenta propriedades parecidas, sendo conhecido como “Matéria Aberrante”.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 157
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Qualquer material de origem aberrante — desde suas garras e carapaças, até minérios e partes de estruturas encontradas em áreas aberrantes — apresenta propriedades parecidas, sendo conhecido como “Matéria Aberrante”. Uma arma de Matéria Aberrante é hostil ao toque de seres naturais. Por isso, causa +1d6 de dano contra quaisquer criaturas, exceto criatura aberrante. Infelizmente, sempre que o usuário acerta um ataque corpo a corpo, ele próprio sofre 1 ponto de dano pela arma (cria aberrante não sofrem este dano colateral). Por sua aparência “borrada”, armaduras de Matéria Aberrante distorcem a percepção do atacante, impondo chance de falha cumulativa para cada ataque: 10% para escudos e armaduras leves, 25% para armaduras pesadas. criatura aberrante ignoram este efeito. Estes itens assustadores impõem ao usuário penalidade de –2 em perícias baseadas em Carisma (exceto Intimidação).",
+   "category": "material",
+   "materialCost": {
+    "arma": 1000.0,
+    "armadura-leve": 1500.0,
+    "armadura-pesada": 7000.0,
+    "escudo": 1500.0
+   },
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 157"
+   }
+  }
+ },
+ {
+  "id": "equipment:mitral",
+  "kind": "equipment",
+  "name": "Mitral",
+  "summary": "Metal muito raro, o mitral é prateado e brilhante, tendo metade do peso do aço.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 3: Itens Superiores",
+   "page": 157
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Metal muito raro, o mitral é prateado e brilhante, tendo metade do peso do aço. Armas de mitral aumentam sua margem de ameaça em 1. Por exemplo, uma espada longa de mitral tem margem de ameaça 18-20. Armaduras e escudos de mitral têm sua penalidade de armadura diminuída em 2. Armaduras pesadas de mitral permitem que seu usuário aplique até dois pontos de seu bônus de Destreza na Defesa.",
+   "category": "material",
+   "materialCost": {
+    "arma": 1000.0,
+    "armadura-leve": 1000.0,
+    "armadura-pesada": 4000.0,
+    "escudo": 1000.0
+   }
+  }
+ }
+]

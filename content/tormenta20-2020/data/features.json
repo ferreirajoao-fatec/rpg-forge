@@ -1,0 +1,290 @@
+[
+ {
+  "id": "feature:arcanista-linhagem-draconica",
+  "kind": "feature",
+  "name": "Linhagem Dracônica",
+  "summary": "Um de seus antepassados foi um majestoso dragão.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 1: Arcanista",
+   "page": 39
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Um de seus antepassados foi um majestoso dragão. Escolha um tipo de dano entre ácido, eletricidade, fogo ou frio.",
+   "classId": "class:arcanista",
+   "tiers": [
+    {
+     "name": "Básica",
+     "text": "Você soma seu modificador de Carisma em seus pontos de vida iniciais e recebe resistência ao tipo de dano escolhido 5."
+    },
+    {
+     "name": "Aprimorada",
+     "text": "Suas magias do tipo escolhido custam –1 PM e causam +1 ponto de dano por dado."
+    },
+    {
+     "name": "Superior",
+     "text": "Você passa a somar o dobro do seu modificador de Carisma em seus pontos de vida iniciais e se torna imune a dano do tipo escolhido. Além disso, sempre que reduz um ou mais inimigos a 0 PV ou menos com uma magia do tipo escolhido, você recebe uma quantidade de PM temporários igual ao círculo da magia."
+    }
+   ]
+  },
+  "prerequisites": {
+   "type": "hasClass",
+   "classId": "class:arcanista"
+  }
+ },
+ {
+  "id": "feature:arcanista-linhagem-feerica",
+  "kind": "feature",
+  "name": "Linhagem Feérica",
+  "summary": "Seu sangue foi tocado pelas fadas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 1: Arcanista",
+   "page": 39
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Seu sangue foi tocado pelas fadas.",
+   "classId": "class:arcanista",
+   "tiers": [
+    {
+     "name": "Básica",
+     "text": "Você se torna treinado em Enganação e aprende uma magia de 1º círculo de encantamento ou ilusão, arcana ou divina, a sua escolha."
+    },
+    {
+     "name": "Aprimorada",
+     "text": "A CD para resistir a suas magias de encantamento e ilusão aumenta em +2 e suas magias dessas escolas custam –1 PM."
+    },
+    {
+     "name": "Superior",
+     "text": "Você recebe +4 em Carisma. Se uma criatura passar no teste de resistência contra uma magia de encantamento ou ilusão lançada por você, você fica alquebrado até o final da cena."
+    }
+   ]
+  },
+  "prerequisites": {
+   "type": "hasClass",
+   "classId": "class:arcanista"
+  }
+ },
+ {
+  "id": "feature:arcanista-linhagem-aberrante",
+  "kind": "feature",
+  "name": "Linhagem Aberrante",
+  "summary": "Seu sangue foi corrompido pela tempestade aberrante.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 1: Arcanista",
+   "page": 39
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Seu sangue foi corrompido pela tempestade aberrante.",
+   "classId": "class:arcanista",
+   "tiers": [
+    {
+     "name": "Básica",
+     "text": "Você recebe um poder aberrante. Quando adquire um poder aberrante, você pode aplicar a penalidade em Carisma a outro atributo. Sua relação com a invasão aberrante lhe permite sacrificar partes específicas de seu ser."
+    },
+    {
+     "name": "Aprimorada",
+     "text": "Escolha uma magia para cada poder aberrante que você possui. Essas magias custam –2 PM. Sempre que recebe um novo poder aberrante, você pode escolher uma nova magia. Esta herança conta como um poder aberrante."
+    },
+    {
+     "name": "Superior",
+     "text": "Você recebe +4 PM para cada poder aberrante que tiver. Esta herança conta como um poder aberrante."
+    }
+   ],
+   "renamed": {
+    "reason": "Identidade do Produto (OGL 1.0a, seção 7)",
+    "reference": "Livro básico (2020), p. 39"
+   }
+  },
+  "prerequisites": {
+   "type": "hasClass",
+   "classId": "class:arcanista"
+  }
+ },
+ {
+  "id": "feature:druida-forma-agil",
+  "kind": "feature",
+  "name": "Forma Ágil",
+  "summary": "Você recebe Destreza +6 e duas armas naturais que causam 1d6 pontos de dano e possuem margem de ameaça 19.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 1: Druida",
+   "page": 63
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe Destreza +6 e duas armas naturais que causam 1d6 pontos de dano e possuem margem de ameaça 19. Se atacar com ambas, sofre –2 em todos os testes de ataque até o seu próximo turno.",
+   "classId": "class:druida",
+   "tiers": [
+    {
+     "name": "Aprimorada",
+     "text": "Você recebe Destreza +10, deslocamento +3m e duas armas naturais (como acima, mas com dano de 1d8). Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra)."
+    },
+    {
+     "name": "Superior",
+     "text": "Você recebe Destreza +20, deslocamento +6m e duas armas naturais (como acima, mas com dano de 1d10). Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra)."
+    }
+   ]
+  },
+  "prerequisites": {
+   "type": "hasClass",
+   "classId": "class:druida"
+  }
+ },
+ {
+  "id": "feature:druida-forma-feroz",
+  "kind": "feature",
+  "name": "Forma Feroz",
+  "summary": "Você recebe Força +6, +2 na Defesa e uma arma natural que causa 1d8 pontos de dano.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 1: Druida",
+   "page": 63
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe Força +6, +2 na Defesa e uma arma natural que causa 1d8 pontos de dano.",
+   "classId": "class:druida",
+   "tiers": [
+    {
+     "name": "Aprimorada",
+     "text": "Você recebe Força +10, +5 na Defesa e uma arma natural que causa 2d6 pontos de dano. Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra)."
+    },
+    {
+     "name": "Superior",
+     "text": "Você recebe Força +20, +10 na Defesa e uma arma natural que causa 4d6 pontos de dano. Seu tamanho muda para Enorme (–5 em Furtividade, +5 em testes de manobra)."
+    }
+   ]
+  },
+  "prerequisites": {
+   "type": "hasClass",
+   "classId": "class:druida"
+  }
+ },
+ {
+  "id": "feature:druida-forma-resistente",
+  "kind": "feature",
+  "name": "Forma Resistente",
+  "summary": "Você recebe +5 na Defesa, resistência a dano 5 e uma arma natural que causa 1d6 pontos de dano.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 1: Druida",
+   "page": 63
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe +5 na Defesa, resistência a dano 5 e uma arma natural que causa 1d6 pontos de dano.",
+   "classId": "class:druida",
+   "tiers": [
+    {
+     "name": "Aprimorada",
+     "text": "Você recebe Força +6, +10 na Defesa, resistência a dano 10 e uma arma natural que causa 1d8 pontos de dano. Seu tamanho muda para Grande (–2 em Furtividade, +2 em testes de manobra)."
+    },
+    {
+     "name": "Superior",
+     "text": "Você recebe Força +10, +15 na Defesa, resistência a dano 15 e uma arma natural que causa 2d6 pontos de dano. Seu tamanho muda para Enorme (–5 em Furtividade, +5 em testes de manobra)."
+    }
+   ]
+  },
+  "prerequisites": {
+   "type": "hasClass",
+   "classId": "class:druida"
+  }
+ },
+ {
+  "id": "feature:druida-forma-sorrateira",
+  "kind": "feature",
+  "name": "Forma Sorrateira",
+  "summary": "Você recebe Destreza +6 e uma arma natural que causa 1d4 pontos de dano.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 1: Druida",
+   "page": 63
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe Destreza +6 e uma arma natural que causa 1d4 pontos de dano. Seu tamanho muda para Pequeno (+2 em Furtividade, –2 em testes de manobra).",
+   "classId": "class:druida",
+   "tiers": [
+    {
+     "name": "Aprimorada",
+     "text": "Você recebe Destreza +10. Seu tamanho muda para Minúsculo (+5 em Furtividade, –5 em testes de manobra)."
+    },
+    {
+     "name": "Superior",
+     "text": "Você recebe Destreza +20 e deslocamento de voo 18m. Seu tamanho muda para Minúsculo (+5 em Furtividade, –5 em testes de manobra)."
+    }
+   ]
+  },
+  "prerequisites": {
+   "type": "hasClass",
+   "classId": "class:druida"
+  }
+ },
+ {
+  "id": "feature:druida-forma-veloz",
+  "kind": "feature",
+  "name": "Forma Veloz",
+  "summary": "Você recebe Destreza +6, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento 15m, deslocamento de escalada 9m ou deslocamento de natação 9m.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 1: Druida",
+   "page": 63
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Você recebe Destreza +6, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento 15m, deslocamento de escalada 9m ou deslocamento de natação 9m.",
+   "classId": "class:druida",
+   "tiers": [
+    {
+     "name": "Aprimorada",
+     "text": "Você recebe Destreza +10, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento 18m, deslocamento de escalada 12m ou deslocamento de natação 12m."
+    },
+    {
+     "name": "Superior",
+     "text": "Você recebe Destreza +20, uma arma natural que causa 1d6 pontos de dano e um dos benefícios a seguir: deslocamento de natação 18m ou deslocamento de voo 24m."
+    }
+   ]
+  },
+  "prerequisites": {
+   "type": "hasClass",
+   "classId": "class:druida"
+  }
+ }
+]

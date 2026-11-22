@@ -1,0 +1,989 @@
+[
+ {
+  "id": "hazard:agulha-envenenada",
+  "kind": "hazard",
+  "name": "Agulha Envenenada",
+  "summary": "1 ponto de dano de perfuração mais 1d12 pontos de dano de veneno; Reflexos CD 20 evita; Investigação CD 25, Ladinagem CD 20; ND 1/4.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 302
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "1 ponto de dano de perfuração mais 1d12 pontos de dano de veneno; Reflexos CD 20 evita; Investigação CD 25, Ladinagem CD 20; ND 1/4.",
+   "hazardType": "armadilha",
+   "nd": "1/4"
+  }
+ },
+ {
+  "id": "hazard:arame-farpado",
+  "kind": "hazard",
+  "name": "Arame Farpado",
+  "summary": "Transforma o espaço que ocupa em terreno difícil e causa 1d6+2 pontos de dano de corte em quem atravessá-lo; Investigação CD 10, Ladinagem CD 20; ND 1/4.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 302
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Transforma o espaço que ocupa em terreno difícil e causa 1d6+2 pontos de dano de corte em quem atravessá-lo; Investigação CD 10, Ladinagem CD 20; ND 1/4.",
+   "hazardType": "armadilha",
+   "nd": "1/4"
+  }
+ },
+ {
+  "id": "hazard:fosso-camuflado",
+  "kind": "hazard",
+  "name": "Fosso Camuflado",
+  "summary": "Queda de 3m causa 2d6 pontos de dano de impacto (Atletismo CD 20 para escalar de volta); Reflexos CD 20 evita; Investigação/Ladinagem CD 20; ND 1/4.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 302
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Queda de 3m causa 2d6 pontos de dano de impacto (Atletismo CD 20 para escalar de volta); Reflexos CD 20 evita; Investigação/Ladinagem CD 20; ND 1/4.",
+   "hazardType": "armadilha",
+   "nd": "1/4"
+  }
+ },
+ {
+  "id": "hazard:rede",
+  "kind": "hazard",
+  "name": "Rede",
+  "summary": "Criatura fica agarrada (ação completa e Acrobacia CD 20 para escapar); Reflexos CD 20 evita; Investigação/Ladinagem CD 20; ND 1/4.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 302
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Criatura fica agarrada (ação completa e Acrobacia CD 20 para escapar); Reflexos CD 20 evita; Investigação/Ladinagem CD 20; ND 1/4.",
+   "hazardType": "armadilha",
+   "nd": "1/4"
+  }
+ },
+ {
+  "id": "hazard:virote",
+  "kind": "hazard",
+  "name": "Virote",
+  "summary": "1d10+2 pontos de dano de perfuração; Reflexos CD 20 evita; Investigação CD 25, Ladinagem CD 20; ND 1/4.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 302
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "1d10+2 pontos de dano de perfuração; Reflexos CD 20 evita; Investigação CD 25, Ladinagem CD 20; ND 1/4.",
+   "hazardType": "armadilha",
+   "nd": "1/4"
+  }
+ },
+ {
+  "id": "hazard:fosso-profundo",
+  "kind": "hazard",
+  "name": "Fosso Profundo",
+  "summary": "Queda de 6m causa 4d6 pontos de dano de impacto (Atletismo CD 20 para escalar de volta); Reflexos CD 20 evita; Investigação/Ladinagem CD 20; ND 1/2.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 302
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Queda de 6m causa 4d6 pontos de dano de impacto (Atletismo CD 20 para escalar de volta); Reflexos CD 20 evita; Investigação/Ladinagem CD 20; ND 1/2.",
+   "hazardType": "armadilha",
+   "nd": "1/2"
+  }
+ },
+ {
+  "id": "hazard:lamina-na-parede",
+  "kind": "hazard",
+  "name": "Lâmina na Parede",
+  "summary": "2d6+5 pontos de dano de corte; Reflexos CD 20 evita; Investigação CD 25, Ladinagem CD 20; ND 1/2.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 302
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "2d6+5 pontos de dano de corte; Reflexos CD 20 evita; Investigação CD 25, Ladinagem CD 20; ND 1/2.",
+   "hazardType": "armadilha",
+   "nd": "1/2"
+  }
+ },
+ {
+  "id": "hazard:bloco-de-pedra",
+  "kind": "hazard",
+  "name": "Bloco de Pedra",
+  "summary": "6d6 pontos de dano de impacto; Reflexos CD 20 evita; Investigação/Ladinagem CD 20; ND 1.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 302
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "6d6 pontos de dano de impacto; Reflexos CD 20 evita; Investigação/Ladinagem CD 20; ND 1.",
+   "hazardType": "armadilha",
+   "nd": "1"
+  }
+ },
+ {
+  "id": "hazard:pendulo-de-teto",
+  "kind": "hazard",
+  "name": "Pêndulo de Teto",
+  "summary": "1d12+10 pontos de dano de corte; Reflexos CD 25 evita; Investigação CD 25, Ladinagem CD 20; ND 1.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 302
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "1d12+10 pontos de dano de corte; Reflexos CD 25 evita; Investigação CD 25, Ladinagem CD 20; ND 1.",
+   "hazardType": "armadilha",
+   "nd": "1"
+  }
+ },
+ {
+  "id": "hazard:fosso-com-estacas",
+  "kind": "hazard",
+  "name": "Fosso com Estacas",
+  "summary": "Queda de 9m causa 6d6 pontos de dano de impacto mais estacas causam 2d4+5 de perfuração (Atletismo CD 20 para escalar de volta); Reflexos CD 20 evita; Investigação/Ladinagem CD 20; ND 2.Runa de Proteção 6d6 pontos de…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 302
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Queda de 9m causa 6d6 pontos de dano de impacto mais estacas causam 2d4+5 de perfuração (Atletismo CD 20 para escalar de volta); Reflexos CD 20 evita; Investigação/Ladinagem CD 20; ND 2.Runa de Proteção 6d6 pontos de dano de fogo (ou ácido, eletricidade, frio, luz ou trevas) em todas as criaturas a até 3m; Reflexos CD 20 reduz à metade (a criatura que ativou não tem direito); Investigação/Ladinagem CD 25; ND 2.Símbolo do Medo Criaturas em alcance curto ficam abaladas até o fim da cena; Vontade CD 20 evita; Investigação/Ladinagem CD 25; ND 2.",
+   "hazardType": "armadilha",
+   "nd": "2"
+  }
+ },
+ {
+  "id": "hazard:estatua-executora",
+  "kind": "hazard",
+  "name": "Estátua Executora",
+  "summary": "1d12+10 mais 1d12+10 pontos de dano de corte; dois testes de Reflexos CD 25 (cada teste evita um dos danos); Investigação/Ladinagem CD 20; ND 3.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 302
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "1d12+10 mais 1d12+10 pontos de dano de corte; dois testes de Reflexos CD 25 (cada teste evita um dos danos); Investigação/Ladinagem CD 20; ND 3.",
+   "hazardType": "armadilha",
+   "nd": "3"
+  }
+ },
+ {
+  "id": "hazard:gas-venenoso",
+  "kind": "hazard",
+  "name": "Gás Venenoso",
+  "summary": "1d12 pontos de dano de veneno por rodada durante 2d4 rodadas; Fortitude CD 20 reduz à metade; Investigação/Ladinagem CD 25; ND 3.Símbolo do Sono Criaturas em alcance curto com 8 níveis ou menos caem inconscientes (como…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 302
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "1d12 pontos de dano de veneno por rodada durante 2d4 rodadas; Fortitude CD 20 reduz à metade; Investigação/Ladinagem CD 25; ND 3.Símbolo do Sono Criaturas em alcance curto com 8 níveis ou menos caem inconscientes (como na magia Sono); Vontade CD 20 evita; Investigação/Ladinagem CD 25; ND 3.",
+   "hazardType": "armadilha",
+   "nd": "3"
+  }
+ },
+ {
+  "id": "hazard:parede-instavel",
+  "kind": "hazard",
+  "name": "Parede Instável",
+  "summary": "8d6 pontos de dano de impacto numa área de 3m de lado; Reflexos CD 25 reduz à metade; Investigação/Ladinagem CD 20; ND 4.Símbolo da Dor Criaturas em alcance curto sofrem dores terríveis, que impõem uma penalidade de –5…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 302
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "8d6 pontos de dano de impacto numa área de 3m de lado; Reflexos CD 25 reduz à metade; Investigação/Ladinagem CD 20; ND 4.Símbolo da Dor Criaturas em alcance curto sofrem dores terríveis, que impõem uma penalidade de –5 em todos os testes até o fim da cena; Fortitude CD 25 evita; Investigação/Ladinagem CD 30; ND 4.",
+   "hazardType": "armadilha",
+   "nd": "4"
+  }
+ },
+ {
+  "id": "hazard:bruma-da-insanidade",
+  "kind": "hazard",
+  "name": "Bruma da Insanidade",
+  "summary": "Criaturas em uma área de 6m de lado ficam confusas até o fim da cena; Fortitude CD 20 evita; Investigação/Ladinagem CD 25; ND 5.Símbolo do Atordoamento Criaturas em alcance curto ficam atordoadas por 1d6 rodadas;…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 302
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Criaturas em uma área de 6m de lado ficam confusas até o fim da cena; Fortitude CD 20 evita; Investigação/Ladinagem CD 25; ND 5.Símbolo do Atordoamento Criaturas em alcance curto ficam atordoadas por 1d6 rodadas; Fortitude CD 25 evita; Investigação/Ladinagem CD 30; ND 5.",
+   "hazardType": "armadilha",
+   "nd": "5"
+  }
+ },
+ {
+  "id": "hazard:desabamento-do-teto",
+  "kind": "hazard",
+  "name": "Desabamento do Teto",
+  "summary": "15d6 pontos de dano de impacto em todas as criaturas numa área de 6m de lado; Reflexos CD 30 reduz à metade; Investigação/Ladinagem CD 25; ND 6.Símbolo da Insanidade Criaturas em alcance curto ficam confusas…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 303
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "15d6 pontos de dano de impacto em todas as criaturas numa área de 6m de lado; Reflexos CD 30 reduz à metade; Investigação/Ladinagem CD 25; ND 6.Símbolo da Insanidade Criaturas em alcance curto ficam confusas permanentemente; Vontade CD 25 evita; Investigação/Ladinagem CD 30; ND 6.",
+   "hazardType": "armadilha",
+   "nd": "6"
+  }
+ },
+ {
+  "id": "hazard:abismo-da-morte",
+  "kind": "hazard",
+  "name": "Abismo da Morte",
+  "summary": "Chão se abre numa área de 6m de lado, derrubando as criaturas numa queda de 30m que causa 20d6 pontos de dano sobre estacas que causam 2d8+10 pontos de dano (Atletismo CD 25 para escalar de volta); Reflexos CD 30…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 303
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Chão se abre numa área de 6m de lado, derrubando as criaturas numa queda de 30m que causa 20d6 pontos de dano sobre estacas que causam 2d8+10 pontos de dano (Atletismo CD 25 para escalar de volta); Reflexos CD 30 evita; Investigação/Ladinagem CD 30; ND 8.Símbolo da Morte Criaturas em alcance curto são reduzidas a –1 PV; Fortitude CD 30 reduz para 10d6 pontos de dano de trevas; Investigação/Ladinagem CD 30; ND 8.",
+   "hazardType": "armadilha",
+   "nd": "8"
+  }
+ },
+ {
+  "id": "hazard:maldicao-pegajosa",
+  "kind": "hazard",
+  "name": "Maldição pegajosa",
+  "summary": "Contato, CD 20.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 303
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contato, CD 20. 1d12 de dano/2d12 de dano/4d12 de dano.",
+   "hazardType": "doenca",
+   "vector": "Contato",
+   "dc": 20,
+   "effect": "1d12 de dano/2d12 de dano/4d12 de dano"
+  }
+ },
+ {
+  "id": "hazard:tremores",
+  "kind": "hazard",
+  "name": "Tremores",
+  "summary": "Contato, CD 15.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 303
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contato, CD 15. Vulnerável.",
+   "hazardType": "doenca",
+   "vector": "Contato",
+   "dc": 15,
+   "effect": "Vulnerável"
+  }
+ },
+ {
+  "id": "hazard:calafrio-diabolico",
+  "kind": "hazard",
+  "name": "Calafrio diabólico",
+  "summary": "Ferimento, CD 20.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 303
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Ferimento, CD 20. Fraco/debilitado/inconsciente/morte.",
+   "hazardType": "doenca",
+   "vector": "Ferimento",
+   "dc": 20,
+   "effect": "Fraco/debilitado/inconsciente/morte"
+  }
+ },
+ {
+  "id": "hazard:infeccao-do-esgoto",
+  "kind": "hazard",
+  "name": "Infecção do esgoto",
+  "summary": "Ferimento, CD 15.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 303
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Ferimento, CD 15. Fraco/debilitado.",
+   "hazardType": "doenca",
+   "vector": "Ferimento",
+   "dc": 15,
+   "effect": "Fraco/debilitado"
+  }
+ },
+ {
+  "id": "hazard:molestia-demoniaca",
+  "kind": "hazard",
+  "name": "Moléstia demoníaca",
+  "summary": "Ferimento, CD 20.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 303
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Ferimento, CD 20. 1d12 de dano/2d12 de dano/–1 de Constituição/morte.",
+   "hazardType": "doenca",
+   "vector": "Ferimento",
+   "dc": 20,
+   "effect": "1d12 de dano/2d12 de dano/–1 de Constituição/morte"
+  }
+ },
+ {
+  "id": "hazard:febre-do-riso",
+  "kind": "hazard",
+  "name": "Febre do riso",
+  "summary": "Inalação, CD 20.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 303
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Inalação, CD 20. Frustrado/esmorecido/confuso.",
+   "hazardType": "doenca",
+   "vector": "Inalação",
+   "dc": 20,
+   "effect": "Frustrado/esmorecido/confuso"
+  }
+ },
+ {
+  "id": "hazard:febre-mental",
+  "kind": "hazard",
+  "name": "Febre mental",
+  "summary": "Inalação, CD 20.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 303
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Inalação, CD 20. Frustrado/esmorecido/alquebrado.",
+   "hazardType": "doenca",
+   "vector": "Inalação",
+   "dc": 20,
+   "effect": "Frustrado/esmorecido/alquebrado"
+  }
+ },
+ {
+  "id": "hazard:variola",
+  "kind": "hazard",
+  "name": "Varíola",
+  "summary": "Inalação, CD 20.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 303
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Inalação, CD 20. Enjoado/debilitado/–1 de Carisma/morte.",
+   "hazardType": "doenca",
+   "vector": "Inalação",
+   "dc": 20,
+   "effect": "Enjoado/debilitado/–1 de Carisma/morte"
+  }
+ },
+ {
+  "id": "hazard:bile-de-dragao",
+  "kind": "hazard",
+  "name": "Bile de dragão",
+  "summary": "Contato, CD 25.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 304
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contato, CD 25. Vítima fica debilitada (fraca).",
+   "hazardType": "veneno",
+   "vector": "Contato",
+   "dc": 25,
+   "effect": "Vítima fica debilitada (fraca)",
+   "price": 1000.0
+  }
+ },
+ {
+  "id": "hazard:extrato-de-lotus-negra",
+  "kind": "hazard",
+  "name": "Extrato de lótus negra",
+  "summary": "Contato, CD 25.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 304
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contato, CD 25. Vítima cai com –1 PV (10d6 de dano).",
+   "hazardType": "veneno",
+   "vector": "Contato",
+   "dc": 25,
+   "effect": "Vítima cai com –1 PV (10d6 de dano)",
+   "price": 3000.0
+  }
+ },
+ {
+  "id": "hazard:pomada-bege",
+  "kind": "hazard",
+  "name": "Pomada bege",
+  "summary": "Contato, CD 20.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 304
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Contato, CD 20. Vítima fica imóvel (lenta) por 1d6 rodadas.",
+   "hazardType": "veneno",
+   "vector": "Contato",
+   "dc": 20,
+   "effect": "Vítima fica imóvel (lenta) por 1d6 rodadas",
+   "price": 600.0
+  }
+ },
+ {
+  "id": "hazard:essencia-de-sombra",
+  "kind": "hazard",
+  "name": "Essência de sombra",
+  "summary": "Ferimento, CD 20.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 304
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Ferimento, CD 20. Vítima fica fraca.",
+   "hazardType": "veneno",
+   "vector": "Ferimento",
+   "dc": 20,
+   "effect": "Vítima fica fraca",
+   "price": 50.0
+  }
+ },
+ {
+  "id": "hazard:peconha-cegante",
+  "kind": "hazard",
+  "name": "Peçonha cegante",
+  "summary": "Ferimento, CD 20.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 304
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Ferimento, CD 20. Vítima fica cega (ofuscada).",
+   "hazardType": "veneno",
+   "vector": "Ferimento",
+   "dc": 20,
+   "effect": "Vítima fica cega (ofuscada)",
+   "price": 600.0
+  }
+ },
+ {
+  "id": "hazard:raiz-paralisante",
+  "kind": "hazard",
+  "name": "Raiz paralisante",
+  "summary": "Ferimento, CD 20.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 304
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Ferimento, CD 20. Vítima fica paralisada (lenta) por 1d6 rodadas.",
+   "hazardType": "veneno",
+   "vector": "Ferimento",
+   "dc": 20,
+   "effect": "Vítima fica paralisada (lenta) por 1d6 rodadas",
+   "price": 1000.0
+  }
+ },
+ {
+  "id": "hazard:veneno-de-cascavel",
+  "kind": "hazard",
+  "name": "Veneno de cascavel",
+  "summary": "Ferimento, CD 15.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 304
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Ferimento, CD 15. 1d12 de dano (metade do dano).",
+   "hazardType": "veneno",
+   "vector": "Ferimento",
+   "dc": 15,
+   "effect": "1d12 de dano (metade do dano)",
+   "price": 50.0
+  }
+ },
+ {
+  "id": "hazard:veneno-de-naja",
+  "kind": "hazard",
+  "name": "Veneno de naja",
+  "summary": "Ferimento, CD 20.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 304
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Ferimento, CD 20. 1d12 de dano por rodada durante 1d4 rodadas (metade do dano).",
+   "hazardType": "veneno",
+   "vector": "Ferimento",
+   "dc": 20,
+   "effect": "1d12 de dano por rodada durante 1d4 rodadas (metade do dano)",
+   "price": 100.0
+  }
+ },
+ {
+  "id": "hazard:gas-da-sonolencia",
+  "kind": "hazard",
+  "name": "Gás da sonolência",
+  "summary": "Inalação, CD 25.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 304
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Inalação, CD 25. Vítima fica inconsciente (enjoada por 1 rodada).",
+   "hazardType": "veneno",
+   "vector": "Inalação",
+   "dc": 25,
+   "effect": "Vítima fica inconsciente (enjoada por 1 rodada)",
+   "price": 1000.0
+  }
+ },
+ {
+  "id": "hazard:nevoa-da-insanidade",
+  "kind": "hazard",
+  "name": "Névoa da insanidade",
+  "summary": "Inalação, CD 20.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 304
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Inalação, CD 20. Vítima fica confusa.",
+   "hazardType": "veneno",
+   "vector": "Inalação",
+   "dc": 20,
+   "effect": "Vítima fica confusa",
+   "price": 600.0
+  }
+ },
+ {
+  "id": "hazard:arsenico",
+  "kind": "hazard",
+  "name": "Arsênico",
+  "summary": "Ingestão, CD 15.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 304
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Ingestão, CD 15. 1d12 de dano por rodada durante 1d4 rodadas.",
+   "hazardType": "veneno",
+   "vector": "Ingestão",
+   "dc": 15,
+   "effect": "1d12 de dano por rodada durante 1d4 rodadas",
+   "price": 100.0
+  }
+ },
+ {
+  "id": "hazard:po-de-lich",
+  "kind": "hazard",
+  "name": "Pó de lich",
+  "summary": "Ingestão, CD 25.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 304
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Ingestão, CD 25. 2d12 de dano por rodada durante 2d4 rodadas (metade do dano).",
+   "hazardType": "veneno",
+   "vector": "Ingestão",
+   "dc": 25,
+   "effect": "2d12 de dano por rodada durante 2d4 rodadas (metade do dano)",
+   "price": 1000.0
+  }
+ },
+ {
+  "id": "hazard:sonifero",
+  "kind": "hazard",
+  "name": "Sonífero",
+  "summary": "Ingestão, CD 20.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 304
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Ingestão, CD 20. Vítima fica inconsciente (enjoada por 1 rodada).",
+   "hazardType": "veneno",
+   "vector": "Ingestão",
+   "dc": 20,
+   "effect": "Vítima fica inconsciente (enjoada por 1 rodada)",
+   "price": 300.0
+  }
+ },
+ {
+  "id": "hazard:avalanche",
+  "kind": "hazard",
+  "name": "Avalanche",
+  "summary": "Escapar da avalanche.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 306
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Escapar da avalanche. O grupo tem cinco rodadas para se afastar dos escombros. No fim da quinta rodada, a posição de cada personagem é definida pelo número de sucessos acumulados nas ações correr ou carregar outro. Um personagem com dois sucessos ou menos fica na zona de soterramento (o caminho direto dos escombros): sofre 16d6 pontos de dano de impacto e fica soterrado. Um personagem com três ou quatro sucessos fica na zona de deslizamento (o caminho pelo qual os escombros se espalham): sofre 8d6 pontos de dano de impacto. Um personagem com cinco sucessos ou mais escapa ileso.Os personagens têm direito a um teste de Sobrevivência (CD 20) para perceber a avalanche iniciando. Quem passar pode realizar uma ação adicional em sua primeira rodada.Personagens soterrados ficam imóveis e sofrem 1d6 pontos de dano de impacto no início de cada um de seus turnos. Soltar-se (ou soltar um aliado soterrado) exige um teste de Força (CD 25). Vários personagens podem prestar ajuda nesse teste.",
+   "nd": "4",
+   "hazardType": "complexo",
+   "objective": "Escapar da avalanche.",
+   "effect": "O grupo tem cinco rodadas para se afastar dos escombros. No fim da quinta rodada, a posição de cada personagem é definida pelo número de sucessos acumulados nas ações correr ou carregar outro. Um personagem com dois sucessos ou menos fica na zona de soterramento (o caminho direto dos escombros): sofre 16d6 pontos de dano de impacto e fica soterrado. Um personagem com três ou quatro sucessos fica na zona de deslizamento (o caminho pelo qual os escombros se espalham): sofre 8d6 pontos de dano de impacto. Um personagem com cinco sucessos ou mais escapa ileso.Os personagens têm direito a um teste de Sobrevivência (CD 20) para perceber a avalanche iniciando. Quem passar pode realizar uma ação adicional em sua primeira rodada.Personagens soterrados ficam imóveis e sofrem 1d6 pontos de dano de impacto no início de cada um de seus turnos. Soltar-se (ou soltar um aliado soterrado) exige um teste de Força (CD 25). Vários personagens podem prestar ajuda nesse teste.",
+   "actions": [
+    {
+     "name": "Correr",
+     "test": "Atletismo CD 20",
+     "text": "O personagem corre para longe da avalanche. Se passar, afasta-se dos escombros (veja “Efeito”, acima). Um sucesso por 10 ou mais (ou um 20 natural no teste) conta como dois sucessos. Este teste recebe os mesmos modificadores da ação corrida (veja a página 115) e pode ser substituído por Cavalgar ou Pilotagem, caso o personagem esteja usando uma montaria ou veículo."
+    },
+    {
+     "name": "Carregar Outro",
+     "test": "Atletismo CD 25",
+     "text": "O personagem carrega um aliado próximo (com no máximo um sucesso de diferença). Isso funciona como a ação correr, acima, mas com CD maior. Se passar, o personagem acumula um sucesso para si e para o aliado."
+    },
+    {
+     "name": "Procurar Caminho",
+     "test": "Percepção CD 20",
+     "text": "O personagem analisa o terreno em busca de uma rota de fuga. Se passar, recebe +5 em todos os testes para correr e carregar outro realizados durante o perigo."
+    }
+   ]
+  }
+ },
+ {
+  "id": "hazard:jornada-pelos-ermos",
+  "kind": "hazard",
+  "name": "Jornada pelos ermos",
+  "summary": "Chegar ao destino.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 306
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Chegar ao destino. Esse dano representa cansaço e desgaste e só pode ser curado após o fim da jornada. Se o grupo acumular três falhas, os pontos de mana máximos dos personagens diminuem em 1 por nível na próxima aventura. Isso representa um abalo causado pelas dificuldades da travessia.",
+   "nd": "2",
+   "hazardType": "complexo",
+   "objective": "Chegar ao destino.",
+   "effect": "Esse dano representa cansaço e desgaste e só pode ser curado após o fim da jornada. Se o grupo acumular três falhas, os pontos de mana máximos dos personagens diminuem em 1 por nível na próxima aventura. Isso representa um abalo causado pelas dificuldades da travessia.",
+   "actions": [
+    {
+     "name": "Avançar",
+     "test": "Sobrevivência ou Outras, CD varia",
+     "text": "Os personagens se alternam fazendo testes até atingir a quantidade exigida pelo tamanho da jornada. Por exemplo, se um grupo de quatro aventureiros fizer uma jornada média, três deles deverão fazer um teste cada e o último deverá fazer dois (para acumular os cinco testes exigidos).Os testes podem ser de Sobrevivência ou de qualquer outra perícia que o jogador consiga justificar e que o mestre aprove. Por exemplo, um personagem que possua um veículo no qual possa levar o grupo pode fazer um teste de Pilotagem. Um personagem que queira pedir indicações e abrigo para pessoas no caminho pode usar Diplomacia — desde que haja pessoas para quem pedir ajuda! Cada perícia que não seja Sobrevivência só pode ser usada uma vez pela jornada inteira.A CD varia conforme o terreno: 15 para planícies e colinas, 20 para florestas e pântanos, 25 para desertos ou montanhas e 30 para regiões planares perigosas ou áreas aberrantes."
+    }
+   ]
+  }
+ },
+ {
+  "id": "hazard:sala-esmagadora",
+  "kind": "hazard",
+  "name": "Sala Esmagadora",
+  "summary": "Abrir a porta e sair da sala ou desabilitar o mecanismo que move as paredes.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 307
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Abrir a porta e sair da sala ou desabilitar o mecanismo que move as paredes. Quando o grupo entra na sala, a porta se fecha e as paredes começam a se mover para esmagá-los. Os personagens têm três rodadas para agir. Na quarta, começam a ser esmagados e sofrem 10d6 pontos de dano de impacto. Na quinta rodada, a sala se fecha completamente. Qualquer personagem que ainda estiver dentro dela é morto.A sala esmagadora é protegida por uma Âncora Dimensional que impede qualquer movimento planar.",
+   "nd": "9",
+   "hazardType": "complexo",
+   "objective": "Abrir a porta e sair da sala ou desabilitar o mecanismo que move as paredes.",
+   "effect": "Quando o grupo entra na sala, a porta se fecha e as paredes começam a se mover para esmagá-los. Os personagens têm três rodadas para agir. Na quarta, começam a ser esmagados e sofrem 10d6 pontos de dano de impacto. Na quinta rodada, a sala se fecha completamente. Qualquer personagem que ainda estiver dentro dela é morto.A sala esmagadora é protegida por uma Âncora Dimensional que impede qualquer movimento planar.",
+   "actions": [
+    {
+     "name": "Derrubar Porta",
+     "test": "Força CD 30",
+     "text": "O jeito mais simples de escapar da sala esmagadora é abrir a porta e sair. Infelizmente, a porta não tem fechadura por dentro — a única opção é derrubá-la. Mais infelizmente ainda, ela é feita de aço maciço! Derrubar a porta exige acumular três sucessos em Força. No máximo dois personagens podem fazer esta ação por rodada (cada personagem pode fazer seu próprio teste ou um pode prestar ajuda ao outro)."
+    },
+    {
+     "name": "Desabilitar Mecanismo",
+     "test": "Ladinagem CD 30",
+     "text": "Um jeito mais sagaz de sobreviver a esta armadilha é emperrar as paredes. Isso exige três sucessos em Ladinagem. Uma vez que as paredes estejam emperradas, o grupo pode derrubar a porta com calma (não exija testes)."
+    },
+    {
+     "name": "Segurar Paredes",
+     "test": "Força CD 25",
+     "text": "O personagem faz força contra as paredes para impedir que elas se fechem. Cada dois sucessos nesta ação aumenta em mais uma rodada o tempo para a sala se fechar. Por si só, isso não salvará o grupo, mas pode dar mais tempo para outros personagens derrubarem a porta ou emperrarem as paredes."
+    }
+   ]
+  }
+ },
+ {
+  "id": "hazard:tempestade-em-alto-mar",
+  "kind": "hazard",
+  "name": "Tempestade em Alto Mar",
+  "summary": "Sobreviver à fúria do mar.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "t20-2020",
+   "edition": "2020",
+   "version": "1ª edição (2020)",
+   "section": "Capítulo 7: Perigos",
+   "page": 307
+  },
+  "license": "OGL-1.0a",
+  "roles": [],
+  "data": {
+   "text": "Sobreviver à fúria do mar. A tempestade dura 1d6+6 rodadas. Após esse período, a chuva pode continuar, mas sem os perigos abaixo. No início de seu turno, cada personagem deve fazer um teste de Reflexos para evitar ondas gigantes. Se falhar, sofre 4d6 pontos de dano de impacto. Se falhar por 10 ou mais, sofre o mesmo dano e cai no mar. A CD é 20+1d6 (role uma vez no início de cada rodada e aplique a mesma CD para todos os personagens). Um personagem no mar falha automaticamente no teste para evitar as ondas.Os personagens têm direito a um teste de Sobrevivência (CD 20) para perceber a tempestade iniciando. Quem passar pode realizar uma ação adicional em sua primeira rodada.",
+   "nd": "6",
+   "hazardType": "complexo",
+   "objective": "Sobreviver à fúria do mar. A tempestade dura 1d6+6 rodadas. Após esse período, a chuva pode continuar, mas sem os perigos abaixo.",
+   "effect": "No início de seu turno, cada personagem deve fazer um teste de Reflexos para evitar ondas gigantes. Se falhar, sofre 4d6 pontos de dano de impacto. Se falhar por 10 ou mais, sofre o mesmo dano e cai no mar. A CD é 20+1d6 (role uma vez no início de cada rodada e aplique a mesma CD para todos os personagens). Um personagem no mar falha automaticamente no teste para evitar as ondas.Os personagens têm direito a um teste de Sobrevivência (CD 20) para perceber a tempestade iniciando. Quem passar pode realizar uma ação adicional em sua primeira rodada.",
+   "actions": [
+    {
+     "name": "Navegar",
+     "test": "Pilotagem CD 25",
+     "text": "O personagem conduz a embarcação para fora da tempestade. Cada sucesso reduz a duração da tempestade em uma rodada (na prática, é o navio que está se afastando). Apenas um personagem pode fazer esta ação por rodada."
+    },
+    {
+     "name": "Ajudar o Piloto",
+     "test": "varia",
+     "text": "O personagem faz um teste para prestar ajuda (veja a página 213) ao teste de Pilotagem. O jogador pode usar qualquer perícia que conseguir justificar — Atletismo para segurar o cordame no lugar, Percepção para ver qual a melhor direção para escapar da tempestade etc."
+    },
+    {
+     "name": "Esconder-se",
+     "test": "nenhum teste",
+     "text": "O personagem desce ao convés inferior (ou outro lugar) para se proteger das ondas. No convés inferior, a CD do teste de Reflexos é 20 (desconsidere o valor do d6) e não há chance de cair no mar. Porém, o personagem não pode navegar a embarcação ou ajudar o piloto."
+    },
+    {
+     "name": "Voltar para o Navio",
+     "test": "Atletismo CD 25",
+     "text": "Um personagem no mar pode nadar de volta ao navio. Isso exige dois sucessos em testes de Atletismo: um para alcançar o navio e outro para subir pelo costado. Em caso de falha, o personagem não avança. Em caso de falha por 5 ou mais, o personagem afunda. Veja a perícia Atletismo para detalhes. Personagens que não estejam escondidos podem prestar ajuda atirando cordas ou mesmo saltando para o mar."
+    }
+   ]
+  }
+ }
+]
