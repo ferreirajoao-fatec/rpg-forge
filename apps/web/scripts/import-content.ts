@@ -1,7 +1,7 @@
 /**
  * Importa um pacote de conteúdo (JSON) como nova versão do catálogo.
- *   pnpm content:import -- caminho/do/pacote.json ["changelog"]
- *   pnpm content:import -- content/tormenta20-2020/pack.ts ["changelog"]
+ *   pnpm content:import caminho/do/pacote.json ["changelog"]
+ *   pnpm content:import content/tormenta20-2020/pack.ts ["changelog"]
  * Pacotes em .ts devem exportar o pacote como `default`.
  * Use --dry-run para apenas validar.
  */

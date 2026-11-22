@@ -13,7 +13,11 @@ const hashToken = (token: string) => createHash("sha256").update(token).digest("
 export async function createSession(userId: string): Promise<void> {
   const token = randomBytes(32).toString("base64url");
   const expiresAt = new Date(Date.now() + SESSION_DAYS * 86_400_000);
-  await db.session.create({ data: { tokenHash: hashToken(token), userId, expiresAt } });
+  // Aproveita o login para apagar as sessões vencidas desta conta (a limpeza geral é `pnpm db:cleanup`).
+  await db.$transaction([
+    db.session.deleteMany({ where: { userId, expiresAt: { lt: new Date() } } }),
+    db.session.create({ data: { tokenHash: hashToken(token), userId, expiresAt } }),
+  ]);
   (await cookies()).set(SESSION_COOKIE, token, {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",

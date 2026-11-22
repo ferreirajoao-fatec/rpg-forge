@@ -27,6 +27,8 @@ pnpm dev                      # http://localhost:3000
 | `pnpm dev` / `pnpm build` / `pnpm start` | Servidor de desenvolvimento, build e produção do app web |
 | `pnpm dev:clean` | Encerra servidores Next antigos deste projeto (só deste) e sobe o de desenvolvimento |
 | `pnpm preview` | Build e servidor de produção: usa bem menos memória para só usar o app |
+| `pnpm test:e2e` | Testes de tela (Playwright) contra o build: rode `pnpm build` antes. Cria e apaga uma conta `e2e-…@rpgforge.test` |
+| `pnpm db:cleanup [--dry-run]` | Apaga sessões vencidas e tentativas de login/cadastro com mais de 1 dia |
 | `pnpm test` | Testes de todos os pacotes (Vitest: `apps/web`, `packages/rules-engine` e `packages/avatar-engine`) |
 | `pnpm typecheck` | Verificação de tipos em todos os pacotes |
 | `pnpm lint` | ESLint em todo o monorepo |
@@ -61,7 +63,8 @@ Nenhuma Identidade do Produto é distribuída: veja `docs/ARQUITETURA.md`.
 ## Integração contínua
 
 `.github/workflows/ci.yml` roda a cada push na `main` e em pull requests: instala, aplica as migrações num
-Postgres vazio, valida o pacote de conteúdo e roda `typecheck`, `lint`, `test` e `build`.
+Postgres vazio, importa o pacote de conteúdo e roda `typecheck`, `lint`, `test`, `build` e os testes de tela
+(login, personagem, ficha, avatar e mestre). Quando um teste de tela falha, o rastro fica nos artefatos da execução.
 
 ## Segurança do login
 

@@ -12,11 +12,13 @@
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",
+    "test:e2e": "pnpm --filter @rpg-forge/web test:e2e",
     "typecheck": "pnpm -r typecheck",
     "db:up": "docker compose up -d db",
     "db:migrate": "prisma migrate dev",
     "db:generate": "prisma generate",
     "content:import": "tsx apps/web/scripts/import-content.ts",
+    "db:cleanup": "tsx apps/web/scripts/db-cleanup.ts",
     "postinstall": "prisma generate",
     "assets:build": "pnpm --filter @rpg-forge/avatar-engine assets:build"
   },

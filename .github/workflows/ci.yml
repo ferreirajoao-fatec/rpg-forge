@@ -40,9 +40,20 @@ jobs:
         run: pnpm install --frozen-lockfile
       - name: Aplicar migrações num banco vazio
         run: pnpm exec prisma migrate deploy
-      - name: Validar o pacote de conteúdo
-        run: pnpm content:import content/tormenta20-2020/pack.ts --dry-run
+      - name: Importar o pacote de conteúdo (valida e prepara o banco para os testes de tela)
+        run: pnpm content:import content/tormenta20-2020/pack.ts
       - run: pnpm typecheck
       - run: pnpm lint
       - run: pnpm test
       - run: pnpm build
+      - name: Instalar o navegador dos testes de tela
+        run: pnpm --filter @rpg-forge/web exec playwright install --with-deps chromium
+      - name: Testes de tela (Playwright)
+        run: pnpm test:e2e
+      - name: Guardar rastros dos testes que falharam
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: playwright-rastros
+          path: apps/web/test-results/
+          retention-days: 7
