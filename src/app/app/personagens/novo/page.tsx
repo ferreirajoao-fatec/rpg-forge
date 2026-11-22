@@ -4,6 +4,9 @@ import { NewCharacterForm } from "./form";
 
 export const metadata: Metadata = { title: "Novo personagem" };
 
+/** Lê a sessão a cada requisição: rota bloqueante por decisão consciente (como o layout). */
+export const instant = false;
+
 export default function NewCharacterPage() {
   const systems = listEngines().map((e) => ({
     id: e.meta.id,

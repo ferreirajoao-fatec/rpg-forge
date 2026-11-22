@@ -6,6 +6,9 @@ import { CharacterEditor } from "./editor";
 
 export const metadata: Metadata = { title: "Personagem" };
 
+/** Lê a sessão a cada requisição: rota bloqueante por decisão consciente (como o layout). */
+export const instant = false;
+
 async function load(id: string, userId: string) {
   try {
     const character = await getCharacter(id, userId);

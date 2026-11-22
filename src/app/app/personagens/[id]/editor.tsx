@@ -1,7 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState, useTransition } from "react";
-import { Check, ChevronLeft, ChevronRight, CloudOff, Dices, Loader2, Lock } from "lucide-react";
+import Link from "next/link";
+import { Check, ChevronLeft, ChevronRight, CloudOff, Dices, FileText, Loader2, Lock } from "lucide-react";
 import {
   Catalog,
   cryptoRng,
@@ -11,12 +12,13 @@ import {
   type ValidationIssue,
 } from "@/rules";
 import { restoreVersionAction, saveCharacterAction, snapshotAction } from "@/app/actions/characters";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
-import { IssueList, ReportSummary, SeverityBadge } from "@/components/validation";
+import { IssueList, ReportSummary } from "@/components/validation";
 import { cn } from "@/lib/utils";
+import { ChoiceStep } from "./choice-step";
 import { InventoryStep } from "./inventory-step";
 
 type SaveStatus = { kind: "idle" | "saving" | "saved" | "error" | "conflict"; message?: string; at?: string };
@@ -133,7 +135,12 @@ export function CharacterEditor(props: {
           <h1 id="step-title" className="text-2xl font-semibold">
             {step.title}
           </h1>
-          <SaveIndicator status={status} canEdit={props.canEdit} />
+          <div className="flex items-center gap-3">
+            <SaveIndicator status={status} canEdit={props.canEdit} />
+            <Link href={`/app/personagens/${props.characterId}/ficha`} className={buttonVariants({ variant: "outline", size: "sm" })}>
+              <FileText /> Ver ficha
+            </Link>
+          </div>
         </div>
         <p className="mt-1 text-sm text-muted-foreground">{step.help}</p>
 
@@ -167,7 +174,15 @@ export function CharacterEditor(props: {
             />
           )}
           {step.requiresContent && step.contentKind && !step.ui && (
-            <ContentStep entries={catalog.ofKind(step.contentKind)} data={data} engine={engine} catalog={catalog} />
+            <ContentStep
+              kind={step.contentKind}
+              entries={catalog.ofKind(step.contentKind)}
+              data={data}
+              update={update}
+              engine={engine}
+              catalog={catalog}
+              canEdit={props.canEdit}
+            />
           )}
         </div>
 
@@ -308,7 +323,11 @@ function LevelStep({ data, update, engine, issues }: StepProps & { engine: Engin
           min={min}
           max={max}
           value={data.level}
-          onChange={(e) => update({ level: Math.max(1, Math.min(30, Number(e.target.value) || 1)) })}
+          onChange={(e) => {
+            const level = Math.max(1, Math.min(30, Number(e.target.value) || 1));
+            // Na criação há uma classe só: o nível dela acompanha o nível do personagem.
+            update({ level, classes: data.classes.map((cl, i) => (i === 0 ? { ...cl, levels: level } : cl)) });
+          }}
         />
         <p className="text-xs text-muted-foreground">Entre {min} e {max}. Iniciantes geralmente começam no nível 1.</p>
       </div>
@@ -440,7 +459,23 @@ function NarrativeStep({ data, update }: StepProps) {
   );
 }
 
-function ContentStep({ entries, data, engine, catalog }: { entries: ContentEntry[]; data: CharacterData; engine: Engine; catalog: Catalog }) {
+function ContentStep({
+  kind,
+  entries,
+  data,
+  update,
+  engine,
+  catalog,
+  canEdit,
+}: {
+  kind: string;
+  entries: ContentEntry[];
+  data: CharacterData;
+  update: (p: Partial<CharacterData>) => void;
+  engine: Engine;
+  catalog: Catalog;
+  canEdit: boolean;
+}) {
   if (!entries.length) {
     return (
       <div className="text-sm">
@@ -453,53 +488,11 @@ function ContentStep({ entries, data, engine, catalog }: { entries: ContentEntry
       </div>
     );
   }
-  return <ContentList entries={entries} data={data} engine={engine} catalog={catalog} />;
-}
-
-function ContentList({ entries, data, engine, catalog }: { entries: ContentEntry[]; data: CharacterData; engine: Engine; catalog: Catalog }) {
-  const [query, setQuery] = useState("");
-  const q = query.trim().toLocaleLowerCase("pt-BR");
-  const shown = q ? entries.filter((e) => `${e.name} ${e.summary}`.toLocaleLowerCase("pt-BR").includes(q)) : entries;
-  return (
-    <div className="space-y-3">
-      {entries.length > 12 && (
-        <Input
-          type="search"
-          value={query}
-          onChange={(ev) => setQuery(ev.target.value)}
-          placeholder={`Buscar entre ${entries.length} opções`}
-          aria-label="Buscar opções"
-        />
-      )}
-      {q && <p className="text-xs text-muted-foreground">{shown.length} resultado(s)</p>}
-      <ul className="space-y-2">
-        {shown.map((e) => {
-          const ev = engine.evaluateOption(data, e, catalog);
-          const fullText = typeof e.data.text === "string" && e.data.text !== e.summary ? e.data.text : "";
-          return (
-            <li key={e.id} className="rounded-md border p-3">
-              <div className="flex items-center justify-between gap-2">
-                <span className="font-medium">{e.name}</span>
-                <SeverityBadge status={ev.availability === "available_now" ? "valid" : ev.availability === "available_later" ? "warning" : "invalid"} />
-              </div>
-              {e.summary && <p className="mt-1 text-sm text-muted-foreground">{e.summary}</p>}
-              {fullText && (
-                <details className="mt-1 text-sm">
-                  <summary className="cursor-pointer text-xs text-muted-foreground">Texto completo</summary>
-                  <p className="mt-1 whitespace-pre-line">{fullText}</p>
-                </details>
-              )}
-              {e.source.page && <p className="mt-1 text-xs text-muted-foreground">Fonte: p. {e.source.page}</p>}
-              <IssueList issues={ev.issues} empty="" />
-            </li>
-          );
-        })}
-      </ul>
-    </div>
-  );
+  return <ChoiceStep kind={kind} entries={entries} data={data} update={update} engine={engine} catalog={catalog} canEdit={canEdit} />;
 }
 
 function ReviewStep({
+  characterId,
   report,
   versions,
   pending,
@@ -525,6 +518,10 @@ function ReviewStep({
             : "Nenhuma regra obrigatória violada. Resolva os avisos que julgar importantes."}
         </p>
         <ReportSummary report={report} />
+        <Link href={`/app/personagens/${characterId}/ficha`} className={buttonVariants({ className: "mt-4" })}>
+          <FileText /> Ver ficha pronta para jogar
+        </Link>
+        <p className="mt-1 text-xs text-muted-foreground">A ficha abre em formato de página para imprimir ou salvar em PDF.</p>
       </div>
 
       <div>

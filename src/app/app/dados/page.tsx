@@ -5,6 +5,9 @@ import { DiceRoller } from "./roller";
 
 export const metadata: Metadata = { title: "Dados" };
 
+/** Lê a sessão a cada requisição: rota bloqueante por decisão consciente (como o layout). */
+export const instant = false;
+
 export default async function DicePage() {
   const user = await requireUser();
   const history = await db.diceRoll.findMany({

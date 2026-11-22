@@ -155,3 +155,160 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ------------------------------------------------------------------ */
+/* Ficha impressa (/app/personagens/[id]/ficha)                        */
+/* O papel é sempre claro, inclusive no tema escuro, para imprimir.   */
+/* ------------------------------------------------------------------ */
+
+.ficha {
+  --sheet-paper: oklch(0.965 0.022 85);
+  --sheet-panel: oklch(0.985 0.012 85);
+  --sheet-ink: oklch(0.22 0.012 60);
+  --sheet-muted: oklch(0.45 0.02 60);
+  --sheet-line: oklch(0.55 0.03 60);
+  --sheet-accent: oklch(0.42 0.13 20);
+  --sheet-ribbon: oklch(0.9 0.035 80);
+  color: var(--sheet-ink);
+  max-width: 210mm;
+}
+
+.ficha-page {
+  background: var(--sheet-paper);
+  padding: 8mm 8mm 6mm;
+  min-height: 297mm;
+  box-shadow: 0 1px 3px oklch(0 0 0 / 0.15), 0 8px 24px oklch(0 0 0 / 0.08);
+  border: 1px solid var(--sheet-line);
+}
+
+.ficha-box {
+  position: relative;
+  background: var(--sheet-panel);
+  border: 1.5px solid var(--sheet-ink);
+  border-radius: 3px 10px 4px 12px;
+  padding: 0.85rem 0.7rem 0.6rem;
+  box-shadow: inset 0 0 0 3px var(--sheet-panel), inset 0 0 0 4px oklch(0.55 0.03 60 / 0.45);
+}
+
+/* Faixa com pontas recortadas, como um pergaminho dobrado. */
+.ficha-ribbon {
+  position: relative;
+  background: var(--sheet-ribbon);
+  border-block: 1.5px solid var(--sheet-ink);
+  padding: 0.15rem 1.4rem;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 50%, 100% 100%, 0 100%, 10px 50%);
+  color: var(--sheet-ink);
+  line-height: 1.15;
+  white-space: nowrap;
+}
+/* Cabeçalho: espaço embaixo para as faixas de classe, nome e raça. */
+.ficha-header {
+  padding-bottom: 2.9rem;
+}
+
+.ficha-ribbon-main {
+  padding-block: 0.3rem;
+  background: var(--sheet-panel);
+}
+.ficha-ribbon-side {
+  margin-bottom: 0.35rem;
+}
+
+.ficha-portrait {
+  width: 118px;
+  height: 118px;
+  border-radius: 9999px;
+  border: 2px solid var(--sheet-ink);
+  background: var(--sheet-paper);
+  box-shadow: inset 0 0 0 4px var(--sheet-panel), inset 0 0 0 5px var(--sheet-line);
+}
+
+/* Selo de atributo: modificador grande, valor do atributo no círculo menor. */
+.ficha-ability {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  background: var(--sheet-panel);
+  border: 1.5px solid var(--sheet-ink);
+  border-radius: 14px 14px 30px 30px;
+  padding: 5px 4px 14px;
+  margin-bottom: 8px;
+}
+.ficha-ability-score {
+  position: absolute;
+  bottom: -9px;
+  min-width: 26px;
+  padding: 0 4px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 9pt;
+  background: var(--sheet-ribbon);
+  border: 1.5px solid var(--sheet-ink);
+  border-radius: 9999px;
+}
+
+.ficha-stat {
+  border: 1px solid var(--sheet-line);
+  border-radius: 4px;
+  padding: 4px;
+  min-height: 58px;
+}
+
+/* Defesa num escudo. */
+.ficha-shield {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-height: 58px;
+  background: var(--sheet-ribbon);
+  border: 1.5px solid var(--sheet-ink);
+  clip-path: polygon(0 0, 100% 0, 100% 62%, 50% 100%, 0 62%);
+  padding-bottom: 10px;
+}
+
+.ficha-coin {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 9999px;
+  border: 1.5px solid var(--sheet-ink);
+  background: var(--sheet-ribbon);
+  font-family: var(--font-display), serif;
+  font-size: 7.5pt;
+  font-weight: 600;
+}
+
+/* Linhas em branco para escrever à mão. */
+.ficha-lines {
+  background-image: repeating-linear-gradient(to bottom, transparent 0 17px, var(--sheet-line) 17px 18px);
+  opacity: 0.5;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  html,
+  body {
+    background: white !important;
+  }
+  .ficha {
+    max-width: none;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .ficha-page {
+    box-shadow: none;
+    border: 0;
+    min-height: 297mm;
+  }
+  .ficha-box {
+    break-inside: avoid;
+  }
+}

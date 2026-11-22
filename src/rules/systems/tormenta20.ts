@@ -173,6 +173,8 @@ export interface T20SpeciesData {
   flexibleBonus?: { count: number; amount: number; exclude?: string[] };
   size?: string;
   speed?: number;
+  /** Deslocamento não é reduzido por armadura pesada nem por carga (Devagar e Sempre, do anão). */
+  speedIgnoresLoad?: boolean;
   creatureType?: string;
   hpBonus?: { first: number; perLevel: number };
   mpPerLevel?: number;
@@ -556,12 +558,17 @@ export class Tormenta20Engine extends BaseEngine {
       }
     }
     if (c.speciesId) {
-      const speed = Math.max(0, (sp.speed ?? 9) - inv.speedPenalty);
+      const penalty = sp.speedIgnoresLoad ? 0 : inv.speedPenalty;
+      const speed = Math.max(0, (sp.speed ?? 9) - penalty);
       stats.push({
         key: "speed",
         label: "Deslocamento",
         value: `${speed}m`,
-        detail: inv.speedPenalty ? `Reduzido em ${inv.speedPenalty}m por armadura pesada ou carga.` : undefined,
+        detail: penalty
+          ? `Reduzido em ${penalty}m por armadura pesada ou carga.`
+          : sp.speedIgnoresLoad && inv.speedPenalty
+            ? "Não é reduzido por armadura nem por carga (habilidade da raça)."
+            : undefined,
         source: RACES_SRC,
       });
       stats.push({ key: "size", label: "Tamanho", value: sp.size ?? "Médio", source: RACES_SRC });

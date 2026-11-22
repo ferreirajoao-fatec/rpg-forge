@@ -112,6 +112,7 @@ const races: ContentEntry[] = [
   species("anao", "Anão", 20, "Resistentes e determinados, mestres da forja e do subterrâneo.", {
     abilityBonuses: { con: 4, sab: 2, des: -2 },
     speed: 6,
+    speedIgnoresLoad: true,
     hpBonus: { first: 3, perLevel: 1 },
     traits: [
       { name: "Conhecimento das Rochas", summary: "Visão no escuro e +2 em Percepção e Sobrevivência no subterrâneo." },
@@ -712,7 +713,7 @@ export const tormenta20Pack: ContentPack = {
   format: "rpg-forge.content-pack",
   formatVersion: 1,
   rulesetId: "tormenta20-2020",
-  packVersion: "0.3.0",
+  packVersion: "0.3.1",
   sourcebooks: [
     {
       id: BOOK,

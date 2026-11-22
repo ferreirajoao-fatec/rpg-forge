@@ -4,6 +4,9 @@ import { db } from "@/server/db";
 
 export const metadata: Metadata = { title: "Regras e fontes" };
 
+/** Lê a sessão a cada requisição: rota bloqueante por decisão consciente (como o layout). */
+export const instant = false;
+
 export default async function RulesPage() {
   const engines = listEngines();
   const versions = await db.rulesetVersion.findMany({

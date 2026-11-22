@@ -9,6 +9,9 @@ import { getEngine, hasEngine, type ValidationReport } from "@/rules";
 
 export const metadata: Metadata = { title: "Personagens" };
 
+/** Lê a sessão a cada requisição: rota bloqueante por decisão consciente (como o layout). */
+export const instant = false;
+
 const STATUS_LABEL = { draft: "Rascunho", active: "Ativo", retired: "Aposentado" } as const;
 
 export default async function Dashboard() {

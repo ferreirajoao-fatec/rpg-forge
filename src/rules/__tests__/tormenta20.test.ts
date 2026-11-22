@@ -358,6 +358,8 @@ describe("Tormenta20 (2020) — inventário", () => {
     const c = fighter([item("equipment:brunea")], { des: 14 });
     expect(stat(c, "defense")).toBe(10 + 0 + 5);
     expect(stat(c, "speed")).toBe("6m");
+    // Devagar e Sempre: o deslocamento do anão não é reduzido por armadura nem por carga.
+    expect(stat({ ...c, speciesId: "species:anao" }, "speed")).toBe("6m");
     // Itens fora do corpo não contam.
     expect(stat(fighter([item("equipment:brunea", { equipped: false })], { des: 14 }), "defense")).toBe(12);
   });
