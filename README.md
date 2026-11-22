@@ -70,3 +70,15 @@ Postgres vazio, importa o pacote de conteúdo e roda `typecheck`, `lint`, `test`
 
 Login e cadastro têm limite de tentativas (5 falhas por e-mail e 20 por IP a cada 15 minutos; 5 cadastros por IP
 por hora). As tentativas ficam no `AuditLog` só como hash, nunca com o e-mail ou o IP em texto.
+
+## Hospedagem
+
+* **Site:** https://rpg-forge-omega.vercel.app (Vercel, plano Hobby, região São Paulo, pasta `apps/web`).
+* **Banco:** Postgres no Neon (plano grátis, São Paulo), criado pelo Marketplace da Vercel, que injeta o `DATABASE_URL`.
+* **Deploy:** automático a cada push na `main`; cada pull request ganha um link de pré-visualização.
+* **Mudanças no banco de produção** são manuais: `vercel env pull .env.local` e, com o `DATABASE_URL_UNPOOLED`
+  desse arquivo, `pnpm exec prisma migrate deploy` (novas migrações) e `pnpm content:import ...` (novo pacote).
+* **Testar o site publicado:** `PLAYWRIGHT_BASE_URL=https://rpg-forge-omega.vercel.app pnpm test:e2e`, com o
+  `DATABASE_URL` de produção no ambiente para a limpeza apagar a conta de teste.
+* A página `/licenca` traz o texto da OGL, obrigatório ao publicar o conteúdo do livro.
+
