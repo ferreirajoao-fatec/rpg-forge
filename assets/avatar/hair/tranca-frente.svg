@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <defs>
+    <filter id="form" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3.5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{hair-deep}" flood-opacity="0.65"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2"/></filter>
+    <filter id="tiny" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="0.5"/></filter>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#{hair}" stroke="#{hair-deep}" stroke-width="0.9" filter="url(#form)" d="M215 114 C211 94 216 74 232 65 C243 59 256 57 268 59 C284 62 296 73 299 90 C300 100 299 108 297 114 C293 104 288 96 282 92 C274 88 264 86 256 86 C248 86 238 88 230 92 C224 96 219 104 215 114 Z"/>
+    <path fill="#{hair-light}" opacity="0.45" filter="url(#soft)" d="M232 70 C244 63 266 62 282 70 C268 69 250 71 238 78 Z"/>
+    <path fill="none" stroke="#{hair-deep}" stroke-width="0.55" opacity="0.55" d="M256 58 C250 66 236 80 226 98 M256 58 C262 66 276 80 286 98 M248 60 C240 70 228 84 220 104 M264 60 C272 70 284 84 292 104 M252 62 C246 72 238 82 232 92 M260 62 C266 72 274 82 280 92"/>
+    
+    <path fill="#{hair}" stroke="#{hair-deep}" stroke-width="0.8" filter="url(#form)" d="M216 112 C214 124 213 138 213 150 L222 150 C221 138 221 124 222 114 Z"/>
+    <g filter="url(#form)">
+      <path fill="#{hair}" stroke="#{hair-deep}" stroke-width="0.8" d="M214 146 C208 168 205 196 206 226 C206 238 207 250 208 260 L216 260 C217 250 218 238 218 226 C218 198 220 170 224 148 Z"/>
+      <path fill="none" stroke="#{hair-deep}" stroke-width="0.7" opacity="0.75" d="M206.84 154 C211 159 215 159 218.92 152 M206.48 163 C211 168 215 168 218.74 161 M206.12 172 C211 177 215 177 218.56 170 M205.76 181 C211 186 215 186 218.38 179 M205.4 190 C211 195 215 195 218.2 188 M205.04 199 C211 204 215 204 218.02 197 M204.68 208 C211 213 215 213 217.84 206 M204.32 217 C211 222 215 222 217.66 215 M203.96 226 C211 231 215 231 217.48 224 M203.6 235 C211 240 215 240 217.3 233 M203.24 244 C211 249 215 249 217.12 242 M202.88 253 C211 258 215 258 216.94 251 "/>
+      <path fill="none" stroke="#{hair-light}" stroke-width="0.6" opacity="0.5" d="M211 160 L211 250"/>
+    </g>
+    <path fill="#{hair}" stroke="#{hair-deep}" stroke-width="0.7" filter="url(#form)" d="M207 264 C205 272 207 282 212 290 C216 282 218 272 217 264 Z"/>
+    <path fill="none" stroke="#{hair-deep}" stroke-width="0.5" opacity="0.6" d="M210 270 L211 286 M214 270 L213 286"/>
+    <rect fill="#{metal}" stroke="#{metal-deep}" stroke-width="0.7" x="205" y="258" width="12" height="6" rx="2"/>
+    <rect fill="#{metal-light}" opacity="0.7" x="207" y="259" width="5" height="1.6" rx="0.8"/>
+  </g>
+</svg>

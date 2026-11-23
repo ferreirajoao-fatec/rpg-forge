@@ -1,0 +1,164 @@
+{
+ "druid-archdruid": {
+  "d": [
+   "A vitalidade da natureza floresce constantemente em você, concedendo os benefícios a seguir.",
+   "Forma Selvagem Perene. Sempre que rolar Iniciativa sem ter usos de Forma Selvagem, você recupera um uso gasto.",
+   "Mágico da Natureza. Você pode converter usos de Forma Selvagem num espaço de magia (sem gastar ação). Escolha um número de usos não gastos de Forma Selvagem e converta-os num único espaço de magia, com cada uso valendo 2 níveis de magia. Por exemplo, se converter dois usos de Forma Selvagem, produz um espaço de magia de nível 4. Depois de usar este benefício, só pode fazê-lo de novo após terminar um Descanso Longo.",
+   "Longevidade. A magia primordial que você maneja faz você envelhecer mais devagar. A cada dez anos que passam, seu corpo envelhece apenas um."
+  ]
+ },
+ "land-circle-of-the-land-spells": {
+  "n": "Magias do Círculo da Terra",
+  "d": [
+   "Sempre que terminar um Descanso Longo, escolha um tipo de terra: árida, polar, temperada ou tropical. Consulte a tabela abaixo correspondente ao tipo escolhido; você tem preparadas as magias listadas para o seu nível de Druida e os inferiores.",
+   "Terra Árida",
+   "Nível de Druida / Magias de Círculo",
+   "3 / Nublar, Mãos Flamejantes, Raio de Fogo",
+   "5 / Bola de Fogo",
+   "7 / Praga",
+   "9 / Muralha de Pedra",
+   "Terra Polar",
+   "Nível de Druida / Magias de Círculo",
+   "3 / Névoa Obscurecente, Imobilizar Pessoa",
+   "5 / Tempestade de Granizo",
+   "7 / Tempestade de Gelo",
+   "9 / Cone de Frio",
+   "Terra Temperada",
+   "Nível de Druida / Magias de Círculo",
+   "3 / Passo Nebuloso",
+   "5 / Relâmpago",
+   "7 / Liberdade de Movimento",
+   "9 / Caminhar em Árvores",
+   "Terra Tropical",
+   "Nível de Druida / Magias de Círculo",
+   "3 / Respingo Ácido, Raio Nauseante, Teia",
+   "5 / Névoa Fétida",
+   "7 / Metamorfose",
+   "9 / Praga de Insetos"
+  ]
+ },
+ "land-lands-aid": {
+  "n": "Auxílio da Terra",
+  "d": [
+   "Com uma ação de Magia, você pode gastar um uso de Forma Selvagem e escolher um ponto a até 18 metros de você. Flores que dão vitalidade e espinhos que drenam a vida aparecem por um momento numa Esfera de 3 metros de raio centrada nesse ponto. Cada criatura à sua escolha na Esfera deve fazer um teste de resistência de Constituição contra a CD de resistência das suas magias, sofrendo 2d6 de dano Necrótico se falhar, ou metade se passar. Uma criatura à sua escolha na área recupera 2d6 Pontos de Vida.",
+   "O dano e a cura aumentam em 1d6 quando você chega aos níveis de Druida 10 (3d6) e 14 (4d6)."
+  ]
+ },
+ "land-natural-recovery": {
+  "d": [
+   "Você pode lançar uma das magias de nível 1 ou superior que tem preparadas pela característica Magias de Círculo sem gastar espaço de magia, e precisa terminar um Descanso Longo antes de fazer isso de novo.",
+   "Além disso, quando termina um Descanso Curto, pode escolher espaços de magia gastos para recuperar. Os espaços podem ter nível somado igual ou menor que a metade do seu nível de Druida (arredondado para cima), e nenhum deles pode ser de nível 6 ou superior. Por exemplo, um Druida de nível 6 pode recuperar até três níveis de espaços de magia: um espaço de nível 3, um de nível 2 e um de nível 1, ou três de nível 1. Depois de recuperar espaços de magia com esta característica, só pode fazê-lo de novo após terminar um Descanso Longo."
+  ]
+ },
+ "land-natures-ward": {
+  "d": [
+   "Você é imune à condição Envenenado e tem Resistência a um tipo de dano associado à terra escolhida no momento na característica Magias de Círculo, como mostra a tabela Proteção da Natureza.",
+   "Proteção da Natureza",
+   "Tipo de Terra / Resistência",
+   "Árida / Fogo",
+   "Polar / Frio",
+   "Temperada / Elétrico",
+   "Tropical / Veneno"
+  ]
+ },
+ "land-natures-sanctuary": {
+  "d": [
+   "Com uma ação de Magia, você pode gastar um uso de Forma Selvagem e fazer árvores e trepadeiras espectrais aparecerem num Cubo de 4,5 metros no chão a até 36 metros de você. Elas duram 1 minuto ou até você ficar com a condição Incapacitado ou morrer. Você e seus aliados têm Meia Cobertura nessa área, e seus aliados recebem a Resistência atual da sua Proteção da Natureza enquanto estiverem nela.",
+   "Com uma Ação Bônus, você pode mover o Cubo até 18 metros, para um chão a até 36 metros de você."
+  ]
+ },
+ "fighter-fighting-style": {
+  "d": [
+   "Você aperfeiçoou sua proeza marcial e ganha um talento de Estilo de Luta à sua escolha (veja \"Talentos\"). Defesa é o recomendado.",
+   "Sempre que ganhar um nível de Guerreiro, pode trocar o talento escolhido por outro talento de Estilo de Luta."
+  ]
+ },
+ "fighter-second-wind": {
+  "d": [
+   "Você tem uma reserva limitada de vigor físico e mental a que pode recorrer. Com uma Ação Bônus, pode usá-la para recuperar Pontos de Vida iguais a 1d10 + seu nível de Guerreiro.",
+   "Você pode usar esta característica duas vezes. Recupera um uso gasto quando termina um Descanso Curto e todos os usos gastos quando termina um Descanso Longo.",
+   "Ao chegar a certos níveis de Guerreiro, você ganha mais usos desta característica, como mostra a coluna Retomar o Fôlego da tabela de Características do Guerreiro."
+  ]
+ },
+ "fighter-weapon-mastery": {
+  "d": [
+   "Seu treinamento com armas permite usar as propriedades de maestria de três tipos de armas Simples ou Marciais à sua escolha. Sempre que terminar",
+   "um Descanso Longo, você pode praticar exercícios com armas e trocar uma dessas escolhas.",
+   "Ao chegar a certos níveis de Guerreiro, você ganha a capacidade de usar as propriedades de maestria de mais tipos de armas, como mostra a coluna Maestria com Armas da tabela de Características do Guerreiro."
+  ]
+ },
+ "fighter-action-surge": {
+  "n": "Surto de Ação",
+  "d": [
+   "Você pode ir além dos seus limites normais por um momento. No seu turno, pode realizar uma ação adicional, exceto a ação de Magia.",
+   "Depois de usar esta característica, você só pode usá-la de novo após terminar um Descanso Curto ou Longo. A partir do nível 17, pode usá-la duas vezes antes de um descanso, mas só uma vez por turno."
+  ]
+ },
+ "fighter-tactical-mind": {
+  "n": "Mente Tática",
+  "d": ["Você tem jeito para tática dentro e fora do campo de batalha. Quando falha num teste de atributo, pode gastar um uso de Retomar o Fôlego para se impulsionar ao sucesso. Em vez de recuperar Pontos de Vida, rola 1d10 e soma o resultado ao teste, possivelmente transformando-o em sucesso. Se o teste ainda falhar, esse uso de Retomar o Fôlego não é gasto."]
+ },
+ "fighter-subclass": {
+  "n": "Subclasse de Guerreiro",
+  "d": ["Você ganha uma subclasse de Guerreiro à sua escolha. Uma subclasse é uma especialização que concede características em certos níveis de Guerreiro. Pelo resto da sua carreira, você ganha cada característica da subclasse de nível igual ou menor que seu nível de Guerreiro."]
+ },
+ "fighter-ability-score-improvement": {
+  "d": ["Você ganha o talento Aumento no Valor de Habilidade (veja \"Talentos\") ou outro talento à sua escolha para o qual se qualifique. Ganha esta característica de novo nos níveis de Guerreiro 6, 8, 12, 14 e 16."]
+ },
+ "fighter-tactical-shift": {
+  "n": "Mudança Tática",
+  "d": ["Sempre que ativar Retomar o Fôlego com uma Ação Bônus, você pode se mover até metade do seu Deslocamento sem provocar Ataques de Oportunidade."]
+ },
+ "fighter-indomitable": {
+  "n": "Indomável",
+  "d": [
+   "Se falhar num teste de resistência, você pode rolá-lo de novo com um bônus igual ao seu nível de Guerreiro. Deve usar o novo resultado e só pode usar esta característica de novo depois de terminar um Descanso Longo.",
+   "A partir do nível 13, pode usar esta característica duas vezes antes de um Descanso Longo e, a partir do nível 17, três vezes."
+  ]
+ },
+ "fighter-tactical-master": {
+  "n": "Mestre Tático",
+  "d": ["Quando ataca com uma arma cuja propriedade de maestria pode usar, você pode substituir essa propriedade por Empurrão, Enfraquecer ou Lentidão nesse ataque."]
+ },
+ "fighter-two-extra-attacks": {
+  "n": "Dois Ataques Extras",
+  "d": ["Você pode atacar três vezes, em vez de uma, sempre que realiza a ação de Ataque no seu turno."]
+ },
+ "fighter-studied-attacks": {
+  "n": "Ataques Estudados",
+  "d": ["Você estuda seus oponentes e aprende com cada ataque. Se fizer uma jogada de ataque contra uma criatura e errar, tem Vantagem na próxima jogada de ataque contra ela antes do fim do seu próximo turno."]
+ },
+ "fighter-epic-boon": {
+  "d": ["Você ganha um talento de Dádiva Épica (veja \"Talentos\") ou outro talento à sua escolha para o qual se qualifique. Dádiva da Proeza em Combate é a recomendada."]
+ },
+ "fighter-three-extra-attacks": {
+  "n": "Três Ataques Extras",
+  "d": ["Você pode atacar quatro vezes, em vez de uma, sempre que realiza a ação de Ataque no seu turno."]
+ },
+ "champion-improved-critical": {
+  "d": ["Suas jogadas de ataque com armas e Ataques Desarmados conseguem Acerto Crítico com 19 ou 20 no d20."]
+ },
+ "champion-remarkable-athlete": {
+  "d": [
+   "Graças ao seu atletismo, você tem Vantagem nas jogadas de Iniciativa e nos testes de Força (Atletismo).",
+   "Além disso, logo depois de conseguir um Acerto Crítico, pode se mover até metade do seu Deslocamento sem provocar Ataques de Oportunidade."
+  ]
+ },
+ "champion-additional-fighting-style": {
+  "d": ["Você ganha mais um talento de Estilo de Luta à sua escolha."]
+ },
+ "champion-heroic-warrior": {
+  "n": "Guerreiro Heroico",
+  "d": ["A emoção da batalha o impulsiona à vitória. Durante o combate, você pode se dar Inspiração Heroica sempre que começar o turno sem ela."]
+ },
+ "champion-superior-critical": {
+  "d": ["Suas jogadas de ataque com armas e Ataques Desarmados agora conseguem Acerto Crítico com 18 a 20 no d20."]
+ },
+ "champion-survivor": {
+  "d": [
+   "Você alcança o auge da resiliência em batalha, o que lhe dá os benefícios a seguir.",
+   "Desafiar a Morte. Você tem Vantagem em Testes de Resistência contra a Morte. Além disso, quando tira 18 a 20 num Teste de Resistência contra a Morte, recebe o benefício de ter tirado 20.",
+   "Recuperação Heroica. No início de cada um dos seus turnos, você recupera Pontos de Vida iguais a 5 + seu modificador de Constituição se estiver Sangrando e tiver pelo menos 1 Ponto de Vida."
+  ]
+ }
+}

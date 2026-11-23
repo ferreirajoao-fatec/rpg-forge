@@ -1,0 +1,67 @@
+{
+ "hideous-laughter": {
+  "n": "Riso Histérico",
+  "d": [
+   "Uma criatura à sua escolha que você consiga ver dentro do alcance passa a achar tudo hilário e cai em acessos de riso, se esta magia a afetar. O alvo deve passar num teste de resistência de Sabedoria ou cair no chão, ficando incapacitado e sem conseguir se levantar pela duração. Uma criatura com valor de Inteligência 4 ou menor não é afetada.",
+   "No fim de cada turno dele, e cada vez que sofrer dano, o alvo pode fazer outro teste de resistência de Sabedoria. O alvo tem vantagem no teste se ele for provocado por dano. Se passar, a magia termina."
+  ],
+  "m": "Tortinhas minúsculas e uma pena agitada no ar."
+ },
+ "hold-monster": {
+  "n": "Imobilizar Monstro",
+  "d": ["Escolha uma criatura que consiga ver dentro do alcance. O alvo deve passar num teste de resistência de Sabedoria ou ficar paralisado pela duração. Esta magia não tem efeito em mortos-vivos. No fim de cada turno dele, o alvo pode fazer outro teste de resistência de Sabedoria. Se passar, a magia termina para ele."],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 6º nível ou superior, pode escolher uma criatura adicional como alvo para cada nível de espaço acima do 5º. As criaturas precisam estar a até 9 metros umas das outras quando você as escolhe."],
+  "m": "Um pequeno pedaço de ferro."
+ },
+ "hold-person": {
+  "n": "Imobilizar Pessoa",
+  "d": ["Escolha um humanoide que consiga ver dentro do alcance. O alvo deve passar num teste de resistência de Sabedoria ou ficar paralisado pela duração. No fim de cada turno dele, o alvo pode fazer outro teste de resistência de Sabedoria. Se passar, a magia termina para ele."],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 3º nível ou superior, pode escolher um humanoide adicional como alvo para cada nível de espaço acima do 2º. Os humanoides precisam estar a até 9 metros uns dos outros quando você os escolhe."],
+  "m": "Um pequeno pedaço reto de ferro."
+ },
+ "holy-aura": {
+  "n": "Aura Sagrada",
+  "d": ["Luz divina emana de você e se condensa numa radiância suave num raio de 9 metros ao seu redor. Criaturas à sua escolha nesse raio quando você lança a magia emitem penumbra num raio de 1,5 metro e têm vantagem em todos os testes de resistência, e outras criaturas têm desvantagem em jogadas de ataque contra elas até a magia terminar. Além disso, quando um ínfero ou um morto-vivo atinge uma criatura afetada com um ataque corpo a corpo, a aura brilha com uma luz intensa. O atacante deve passar num teste de resistência de Constituição ou ficar cego até a magia terminar."],
+  "m": "Um pequeno relicário no valor de pelo menos 1.000 po contendo uma relíquia sagrada, como um retalho do manto de um santo ou um pedaço de pergaminho de um texto religioso."
+ },
+ "hunters-mark": {
+  "n": "Marca do Caçador",
+  "d": ["Você escolhe uma criatura que consiga ver dentro do alcance e a marca misticamente como sua presa. Até a magia terminar, você causa 1d6 de dano extra ao alvo sempre que o atinge com um ataque com arma, e tem vantagem em qualquer teste de Sabedoria (Percepção) ou Sabedoria (Sobrevivência) que fizer para encontrá-lo. Se o alvo cair a 0 pontos de vida antes de a magia terminar, você pode usar uma ação bônus num turno seguinte para marcar uma nova criatura."],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 3º ou 4º nível, pode manter a concentração nela por até 8 horas. Com um espaço de 5º nível ou superior, pode mantê-la por até 24 horas."]
+ },
+ "hypnotic-pattern": {
+  "n": "Padrão Hipnótico",
+  "d": [
+   "Você cria um padrão sinuoso de cores que serpenteia pelo ar dentro de um cubo de 9 metros dentro do alcance. O padrão aparece por um momento e some. Cada criatura na área que vir o padrão deve fazer um teste de resistência de Sabedoria. Se falhar, fica enfeitiçada pela duração. Enquanto estiver enfeitiçada por esta magia, a criatura fica incapacitada e tem deslocamento 0.",
+   "A magia termina para uma criatura afetada se ela sofrer qualquer dano ou se alguém usar uma ação para sacudi-la e tirá-la do torpor."
+  ],
+  "m": "Um bastão de incenso aceso ou um frasco de cristal cheio de material fosforescente."
+ },
+ "ice-storm": {
+  "n": "Tempestade de Gelo",
+  "d": [
+   "Uma chuva de granizo duro como pedra golpeia o chão num cilindro de 6 metros de raio e 12 metros de altura, centrado num ponto dentro do alcance. Cada criatura no cilindro deve fazer um teste de resistência de Destreza. A criatura sofre 2d8 de dano de concussão e 4d6 de dano de frio se falhar, ou metade se passar.",
+   "As pedras de granizo tornam a área da tempestade terreno difícil até o fim do seu próximo turno."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 5º nível ou superior, o dano de concussão aumenta em 1d8 para cada nível de espaço acima do 4º."],
+  "m": "Uma pitada de poeira e algumas gotas de água."
+ },
+ "identify": {
+  "n": "Identificação",
+  "d": [
+   "Você escolhe um objeto que precisa tocar durante toda a conjuração. Se for um item mágico ou outro objeto imbuído de magia, você descobre suas propriedades e como usá-las, se ele exige sintonização e quantas cargas tem, se houver. Descobre se alguma magia está afetando o item e qual é. Se o item tiver sido criado por uma magia, descobre qual.",
+   "Se, em vez disso, tocar uma criatura durante toda a conjuração, descobre quais magias, se houver, a estão afetando no momento."
+  ],
+  "m": "Uma pérola no valor de pelo menos 100 po e uma pena de coruja."
+ },
+ "illusory-script": {
+  "n": "Escrita Ilusória",
+  "d": [
+   "Você escreve em pergaminho, papel ou outro material adequado e o imbui de uma ilusão poderosa que dura pela duração.",
+   "Para você e para as criaturas que designar ao lançar a magia, a escrita parece normal, com sua letra, e transmite o significado que você quis dar ao texto. Para todos os outros, parece escrita numa língua desconhecida ou mágica, ininteligível. Em vez disso, você pode fazer a escrita parecer uma mensagem completamente diferente, com outra letra e outro idioma, desde que seja um idioma que você conheça.",
+   "Se a magia for dissipada, tanto a escrita original quanto a ilusão desaparecem.",
+   "Uma criatura com visão verdadeira consegue ler a mensagem oculta."
+  ],
+  "m": "Uma tinta à base de chumbo no valor de pelo menos 10 po, que a magia consome."
+ }
+}

@@ -1,6 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g stroke="#{line}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-    <path fill="#7a2e2a" d="M238 222 C246 236 266 236 274 222 C264 226 248 226 238 222 Z"/>
-    <path fill="#ffffff" stroke="none" d="M243 225 C250 228 262 228 269 225 L267 228 C260 230 252 230 245 228 Z"/>
+  <defs>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="0.6"/></filter>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.6"/></filter>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path fill="none" stroke="#{skin-deep}" stroke-width="0.6" opacity="0.35" d="M254.4 141.5 L254 145.6 M257.6 141.5 L258 145.6"/>
+    <path fill="#{skin-dark}" opacity="0.5" filter="url(#blur)" d="M250 154.5 C253 156.5 259 156.5 262 154.5 L261 157 C258 158 254 158 251 157 Z"/>
+    <g filter="url(#soft)">
+      <path fill="#{skin-blush}" d="M245.5 146.8 C248.5 146 251.8 145.2 254.2 145.9 C255.2 146.3 256.8 146.3 257.8 145.9 C260.2 145.2 263.5 146 266.5 146.8 C262 149.2 250 149.2 245.5 146.8 Z"/>
+      <path fill="#{skin-deep}" opacity="0.35" d="M245.5 146.8 C248.5 146 251.8 145.2 254.2 145.9 C255.2 146.3 256.8 146.3 257.8 145.9 C260.2 145.2 263.5 146 266.5 146.8 C262 149.2 250 149.2 245.5 146.8 Z"/>
+      <path fill="#{skin-blush}" d="M247.4 148.4 C251 149.8 261 149.8 264.6 148.4 C262.4 152.4 259 153.6 256 153.6 C253 153.6 249.6 152.4 247.4 148.4 Z"/>
+      <path fill="#{skin-light}" opacity="0.55" d="M252.5 150.2 C254.5 151.2 257.5 151.2 259.5 150.2 C258.5 151.8 253.5 151.8 252.5 150.2 Z"/>
+    </g>
+    <path fill="#f4eee6" opacity="0.85" d="M249 148.4 C253 149.4 259 149.4 263 148.4 L262.5 149.2 C258.5 150 253.5 150 249.5 149.2 Z"/>
+    <path fill="none" stroke="#{skin-deep}" stroke-width="0.95" d="M245 146.4 C250 149.6 262 149.6 267 146.4"/>
+    <path fill="none" stroke="#{skin-deep}" stroke-width="0.7" opacity="0.6" d="M244.2 145.2 C244.6 146 245 146.4 245.6 146.6 M267.8 145.2 C267.4 146 267 146.4 266.4 146.6 M243 141 C242.4 144 242.8 147 244 149 M269 141 C269.6 144 269.2 147 268 149"/>
   </g>
 </svg>

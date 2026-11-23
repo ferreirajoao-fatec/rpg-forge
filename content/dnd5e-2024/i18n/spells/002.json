@@ -1,0 +1,77 @@
+{
+ "antilife-shell": {
+  "d": [
+   "Uma aura se estende de você numa Emanação de 3 metros pela duração. A aura impede que criaturas, exceto Constructos e Mortos-Vivos, a atravessem ou passem o braço por ela. Uma criatura afetada pode lançar magias ou fazer ataques com armas à Distância ou de Alcance através da barreira.",
+   "Se você se mover de modo que uma criatura afetada seja forçada a atravessar a barreira, a magia termina."
+  ]
+ },
+ "antimagic-field": {
+  "d": [
+   "Uma aura antimagia o envolve numa Emanação de 3 metros. Ninguém pode lançar magias, realizar ações de Magia nem criar outros efeitos mágicos dentro da aura, e essas coisas não podem escolher como alvo nem afetar de outro modo nada que esteja dentro dela. As propriedades mágicas dos itens mágicos não funcionam dentro da aura nem em nada que esteja dentro dela.",
+   "Áreas de efeito criadas por magias ou outros efeitos mágicos não podem se estender para dentro da aura, e ninguém pode se teletransportar para dentro ou para fora dela nem usar viagem planar ali. Portais se fecham temporariamente enquanto estiverem na aura.",
+   "Magias em andamento, exceto as lançadas por um Artefato ou por uma divindade, ficam suprimidas na área. Enquanto um efeito está suprimido, não funciona, mas o tempo que passa suprimido conta para a duração dele.",
+   "Dissipar Magia não tem efeito na aura, e as auras criadas por magias Campo Antimagia diferentes não se anulam."
+  ],
+  "m": "Limalha de ferro."
+ },
+ "antipathy-sympathy": {
+  "d": [
+   "Ao lançar a magia, escolha se ela cria antipatia ou simpatia e escolha como alvo uma criatura ou um objeto Enorme ou menor. Então especifique um tipo de criatura, como dragões vermelhos, goblins ou vampiros. Uma criatura do tipo escolhido faz um teste de resistência de Sabedoria quando chega a até 36 metros do alvo. Sua escolha entre antipatia e simpatia determina o que acontece com a criatura quando ela falha: Antipatia. A criatura fica com a condição Amedrontado. A criatura Amedrontada precisa usar o movimento nos turnos dela para se afastar o máximo possível do alvo, pelo caminho mais seguro. Simpatia. A criatura fica com a condição Enfeitiçado. A criatura Enfeitiçada precisa usar o movimento nos turnos dela para se aproximar o máximo possível do alvo, pelo caminho mais seguro. Se a criatura estiver a até 1,5 metro do alvo, não pode se afastar voluntariamente. Se o alvo causar dano à criatura Enfeitiçada, ela pode fazer um teste de resistência de Sabedoria para encerrar o efeito, como descrito abaixo.",
+   "Encerrar o Efeito. Se a criatura Amedrontada ou Enfeitiçada terminar o turno a mais de 36 metros do alvo, faz um teste de resistência de Sabedoria. Se passar, deixa de ser afetada pelo alvo. Uma criatura que passa no teste contra este efeito fica imune a ele por 1 minuto, depois do qual pode ser afetada de novo."
+  ],
+  "m": "Uma mistura de vinagre e mel."
+ },
+ "arcane-eye": {
+  "d": [
+   "Você cria dentro do alcance um olho Invisível e invulnerável que flutua pela duração. Você recebe mentalmente as informações visuais do olho, que consegue ver em todas as direções. Ele também tem Visão no Escuro com alcance de 9 metros.",
+   "Com uma Ação Bônus, você pode mover o olho até 9 metros em qualquer direção. Uma barreira sólida bloqueia o movimento do olho, mas ele consegue passar por uma abertura de apenas 2,5 centímetros de diâmetro."
+  ],
+  "m": "Um pouco de pelo de morcego."
+ },
+ "arcane-hand": {
+  "d": [
+   "Você cria uma mão Grande de energia mágica cintilante num espaço desocupado que consiga ver dentro do alcance. A mão dura pela duração e se move sob seu comando, imitando os movimentos da sua própria mão.",
+   "A mão é um objeto com CA 20 e Pontos de Vida iguais ao seu máximo de Pontos de Vida. Se cair a 0 Pontos de Vida, a magia termina. A mão não ocupa o espaço em que está.",
+   "Quando lança a magia e com uma Ação Bônus nos seus turnos posteriores, você pode mover a mão até 18 metros e então causar um dos efeitos a seguir: Punho Cerrado. A mão golpeia um alvo a até 1,5 metro dela. Faça um ataque mágico corpo a corpo. Se acertar, o alvo sofre 5d8 de dano de Energia. Mão Poderosa. A mão tenta empurrar uma criatura Enorme ou menor a até 1,5 metro dela. O alvo deve passar num teste de resistência de Força, ou a mão o empurra até 1,5 metro mais uma distância em metros igual a 1,5 vez seu modificador de habilidade de conjuração. A mão se move com o alvo, permanecendo a até 1,5 metro dele. Mão Agarradora. A mão tenta agarrar uma criatura Enorme ou menor a até 1,5 metro dela. O alvo deve passar num teste de resistência de Destreza, ou fica com a condição Agarrado, com CD de fuga igual à CD de resistência das suas magias. Enquanto a mão agarrar o alvo, você pode realizar uma Ação Bônus para fazê-la esmagá-lo, causando dano de Concussão igual a 4d6 mais seu modificador de habilidade de conjuração. Mão Interposta. A mão lhe concede Meia Cobertura contra ataques e outros efeitos que se originem no espaço dela ou passem por ele. Além disso, o espaço dela conta como Terreno Difícil para seus inimigos."
+  ],
+  "h": ["O dano do Punho Cerrado aumenta em 2d8 e o dano da Mão Agarradora aumenta em 2d6 para cada nível de espaço de magia acima de 5."],
+  "m": "Uma casca de ovo e uma luva."
+ },
+ "arcane-lock": {
+  "d": ["Você toca uma porta, janela, portão, recipiente ou alçapão fechado e o tranca magicamente pela duração. Essa tranca não pode ser aberta por nenhum meio não mágico. Você e quaisquer criaturas que designar ao lançar a magia podem abrir e fechar o objeto apesar da tranca. Você também pode definir uma senha que, dita a até 1,5 metro do objeto, o destranca por 1 minuto."],
+  "m": "Pó de ouro no valor de 25+ PO, que a magia consome."
+ },
+ "arcane-sword": {
+  "d": [
+   "Você cria uma espada espectral que flutua dentro do alcance. Ela dura pela duração.",
+   "Quando a espada aparece, você faz um ataque mágico corpo a corpo contra um alvo a até 1,5 metro dela. Se acertar, o alvo sofre dano de Energia igual a 4d12 mais seu modificador de habilidade de conjuração.",
+   "Nos seus turnos posteriores, você pode realizar uma Ação Bônus para mover a espada até 9 metros para um ponto que consiga ver e repetir o ataque contra o mesmo alvo ou outro."
+  ],
+  "m": "Uma espada em miniatura no valor de 250+ PO."
+ },
+ "arcanists-magic-aura": {
+  "d": [
+   "Com um toque, você coloca uma ilusão numa criatura voluntária ou num objeto que não esteja sendo vestido nem carregado. Uma criatura ganha o efeito Máscara abaixo, e um objeto ganha o efeito Aura Falsa abaixo. O efeito dura pela duração. Se lançar a magia no mesmo alvo todos os dias por 30 dias, a ilusão dura até ser dissipada.",
+   "Máscara (Criatura). Escolha um tipo de criatura diferente do tipo real do alvo. Magias e outros efeitos mágicos tratam o alvo como se ele fosse uma criatura do tipo escolhido.",
+   "Aura Falsa (Objeto). Você muda a forma como o alvo aparece para magias e efeitos mágicos que detectam auras mágicas, como Detectar Magia. Pode fazer um objeto não mágico parecer mágico, fazer um item mágico parecer não mágico ou mudar a aura do objeto para que pareça pertencer a uma escola de magia à sua escolha."
+  ],
+  "m": "Um pequeno quadrado de seda."
+ },
+ "astral-projection": {
+  "d": [
+   "Você e até oito criaturas voluntárias dentro do alcance projetam seus corpos astrais no Plano Astral (a magia termina instantaneamente se você já estiver nesse plano). O corpo de cada alvo fica para trás num estado de animação suspensa; tem a condição Inconsciente, não precisa de comida nem de ar e não envelhece.",
+   "A forma astral do alvo se parece com o corpo dele em quase tudo, reproduzindo suas estatísticas de jogo e seus pertences. A principal diferença é um cordão prateado que sai do meio das escápulas da forma astral. O cordão some de vista depois de 30 centímetros. Se o cordão for cortado (o que só acontece quando um efeito diz isso), o corpo e a forma astral do alvo morrem.",
+   "A forma astral do alvo pode viajar pelo Plano Astral. No momento em que uma forma astral sai desse plano, o corpo e os pertences do alvo viajam pelo cordão prateado, fazendo o alvo voltar ao corpo no novo plano.",
+   "Qualquer dano ou outro efeito aplicado a uma forma astral não tem efeito no corpo do alvo, e vice-versa. Se o corpo ou a forma astral de um alvo cair a 0 Pontos de Vida, a magia termina para ele. A magia termina para todos os alvos se você realizar uma ação de Magia para dispensá-la.",
+   "Quando a magia termina para um alvo que não esteja morto, ele reaparece no corpo e sai do estado de animação suspensa."
+  ],
+  "m": "Para cada alvo da magia, um jacinto no valor de 1.000+ PO e uma barra de prata no valor de 100+ PO, que a magia consome."
+ },
+ "augury": {
+  "d": [
+   "Você recebe um presságio de uma entidade de outro mundo sobre os resultados de um curso de ação que planeja realizar nos próximos 30 minutos. O Mestre escolhe o presságio na tabela de Presságios. Presságios: Desgraça, para resultados que serão ruins; Ventura, para resultados que serão bons; Ventura e desgraça, para resultados que serão bons e ruins; Indiferença, para resultados que não serão nem bons nem ruins. A magia não leva em conta circunstâncias, como outras magias, que possam mudar os resultados.",
+   "Se você lançar a magia mais de uma vez antes de terminar um Descanso Longo, há uma chance cumulativa de 25% para cada conjuração depois da primeira de não receber resposta."
+  ],
+  "m": "Varetas, ossos, cartas ou outros objetos divinatórios especialmente marcados no valor de 25+ PO."
+ }
+}

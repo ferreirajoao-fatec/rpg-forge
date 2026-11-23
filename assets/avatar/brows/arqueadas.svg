@@ -1,6 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g fill="#{hair-dark}" stroke="#{line}" stroke-width="1.5" stroke-linejoin="round">
-    <path d="M212 158 C218 144 234 140 247 146 L246 150 C234 146 222 150 215 160 Z"/>
-    <path d="M300 158 C294 144 278 140 265 146 L266 150 C278 146 290 150 297 160 Z"/>
+  <defs>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="0.35"/></filter>
+  </defs>
+  <g filter="url(#soft)" stroke-linecap="round">
+    <path fill="#{hair-dark}" opacity="0.92" d="M249.5 111 C246.5 106 239.5 104 231 107.8 C230.2 108.2 230.6 109.2 231.4 108.9 C238.8 106.6 244.6 108.2 249 112.4 Z"/>
+    <path fill="none" stroke="#{hair-deep}" stroke-width="0.5" opacity="0.7" d="M247.5 110 L244.5 107.2 M244 109 L240.5 106.4 M240 108.2 L236 106.8 M236.5 108.4 L233 108.4"/>
+  </g>
+  <g transform="matrix(-1 0 0 1 512 0)">
+  <g filter="url(#soft)" stroke-linecap="round">
+    <path fill="#{hair-dark}" opacity="0.92" d="M249.5 111 C246.5 106 239.5 104 231 107.8 C230.2 108.2 230.6 109.2 231.4 108.9 C238.8 106.6 244.6 108.2 249 112.4 Z"/>
+    <path fill="none" stroke="#{hair-deep}" stroke-width="0.5" opacity="0.7" d="M247.5 110 L244.5 107.2 M244 109 L240.5 106.4 M240 108.2 L236 106.8 M236.5 108.4 L233 108.4"/>
+  </g>
   </g>
 </svg>

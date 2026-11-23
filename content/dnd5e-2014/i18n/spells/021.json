@@ -1,0 +1,86 @@
+{
+ "magic-mouth": {
+  "n": "Boca Encantada",
+  "d": [
+   "Você implanta uma mensagem num objeto dentro do alcance, que é falada quando uma condição de gatilho é cumprida. Escolha um objeto que consiga ver e que não esteja sendo vestido nem carregado por outra criatura. Então diga a mensagem, que não pode ter mais de 25 palavras, embora sua entrega possa levar até 10 minutos. Por fim, defina a circunstância que fará a magia entregar a mensagem.",
+   "Quando essa circunstância ocorre, uma boca mágica aparece no objeto e recita a mensagem com sua voz e no mesmo tom usado ao implantá-la. Se o objeto escolhido tiver uma boca ou algo parecido, como a boca de uma estátua, a boca mágica aparece ali, dando a impressão de que as palavras saem da boca do objeto.",
+   "Ao lançar esta magia, você pode decidir que ela termina quando a mensagem for entregue, ou que persista e repita a mensagem sempre que a circunstância ocorrer.",
+   "A circunstância de gatilho pode ser tão geral ou detalhada quanto quiser, mas precisa se basear em condições visuais ou sonoras que ocorram a até 9 metros do objeto. Por exemplo, você pode instruir a boca a falar quando qualquer criatura chegar a até 9 metros do objeto ou quando um sino de prata tocar a até 9 metros dele."
+  ],
+  "m": "Um pedacinho de favo de mel e pó de jade no valor de pelo menos 10 po, que a magia consome."
+ },
+ "magic-weapon": {
+  "n": "Arma Mágica",
+  "d": [
+   "Você toca uma arma não mágica. Até a magia terminar, essa arma se torna uma arma mágica com +1 de bônus nas jogadas de ataque e de dano."
+  ],
+  "h": [
+   "Quando você lança esta magia usando um espaço de magia de 4º nível ou superior, o bônus aumenta para +2. Com um espaço de 6º nível ou superior, o bônus aumenta para +3."
+  ]
+ },
+ "magnificent-mansion": {
+  "n": "Mansão Magnífica",
+  "d": [
+   "Você conjura uma morada extradimensional dentro do alcance que dura pela duração. Você escolhe onde fica sua única entrada. A entrada cintila levemente e tem 1,5 metro de largura e 3 metros de altura. Você e qualquer criatura que designar ao lançar a magia podem entrar na morada extradimensional enquanto o portal estiver aberto. Você pode abrir ou fechar o portal se estiver a até 9 metros dele. Fechado, o portal fica invisível.",
+   "Além do portal há um saguão magnífico com vários cômodos depois dele. A atmosfera é limpa, fresca e agradável. Você pode criar a planta que quiser, mas o espaço não pode exceder 50 cubos de 3 metros de lado cada. O lugar é mobiliado e decorado como você escolher. Contém comida suficiente para servir um banquete de nove pratos para até 100 pessoas. Uma equipe de 100 servos quase transparentes atende a todos que entram. Você decide a aparência desses servos e suas roupas. Eles são totalmente obedientes às suas ordens. Cada servo pode realizar qualquer tarefa que um servo humano comum faria, mas não pode atacar nem realizar nenhuma ação que fira diretamente outra criatura. Assim, os servos podem buscar coisas, limpar, consertar, dobrar roupas, acender lareiras, servir comida, servir vinho e assim por diante. Os servos podem ir a qualquer lugar da mansão, mas não podem sair dela. Móveis e outros objetos criados por esta magia se dissipam em fumaça se forem tirados da mansão. Quando a magia termina, quaisquer criaturas dentro do espaço extradimensional são expelidas para os espaços abertos mais próximos da entrada."
+  ],
+  "m": "Um portal em miniatura esculpido em marfim, um pequeno pedaço de mármore polido e uma colherzinha de prata, cada item no valor de pelo menos 5 po."
+ },
+ "major-image": {
+  "n": "Imagem Maior",
+  "d": [
+   "Você cria a imagem de um objeto, de uma criatura ou de outro fenômeno visível que não seja maior que um cubo de 6 metros. A imagem aparece num ponto que você consiga ver dentro do alcance e dura pela duração. Parece completamente real, incluindo sons, cheiros e temperatura apropriados ao que é representado. Você não pode criar calor ou frio suficientes para causar dano, um som alto o bastante para causar dano trovejante ou ensurdecer uma criatura, nem um cheiro que possa nausear uma criatura (como o fedor de um troglodita).",
+   "Enquanto estiver dentro do alcance da ilusão, você pode usar sua ação para fazer a imagem se mover para qualquer outro ponto dentro do alcance. Enquanto a imagem muda de lugar, você pode alterar a aparência dela para que os movimentos pareçam naturais. Por exemplo, se criar a imagem de uma criatura e movê-la, pode alterá-la para que pareça estar andando. Da mesma forma, pode fazer a ilusão emitir sons diferentes em momentos diferentes, até mantendo uma conversa, por exemplo.",
+   "A interação física com a imagem revela que ela é uma ilusão, porque as coisas a atravessam. Uma criatura que use sua ação para examinar a imagem pode determinar que é uma ilusão passando num teste de Inteligência (Investigação) contra a CD de resistência das suas magias. Se uma criatura perceber a ilusão pelo que ela é, consegue ver através da imagem, e as outras qualidades sensoriais dela ficam tênues para essa criatura."
+  ],
+  "h": [
+   "Quando você lança esta magia usando um espaço de magia de 6º nível ou superior, a magia dura até ser dissipada, sem exigir sua concentração."
+  ],
+  "m": "Um pouco de lã de carneiro."
+ },
+ "mass-cure-wounds": {
+  "n": "Curar Ferimentos em Massa",
+  "d": [
+   "Uma onda de energia curativa se espalha a partir de um ponto à sua escolha dentro do alcance. Escolha até seis criaturas numa esfera de 9 metros de raio centrada nesse ponto. Cada alvo recupera pontos de vida iguais a 3d8 + seu modificador de habilidade de conjuração. Esta magia não tem efeito em mortos-vivos nem em constructos."
+  ],
+  "h": [
+   "Quando você lança esta magia usando um espaço de magia de 6º nível ou superior, a cura aumenta em 1d8 para cada nível de espaço acima do 5º."
+  ]
+ },
+ "mass-heal": {
+  "n": "Cura Completa em Massa",
+  "d": [
+   "Uma inundação de energia curativa flui de você para as criaturas feridas ao seu redor. Você restaura até 700 pontos de vida, divididos como quiser entre qualquer número de criaturas que consiga ver dentro do alcance. As criaturas curadas por esta magia também são curadas de todas as doenças e de qualquer efeito que as deixe cegas ou surdas. Esta magia não tem efeito em mortos-vivos nem em constructos."
+  ]
+ },
+ "mass-healing-word": {
+  "n": "Palavra Curativa em Massa",
+  "d": [
+   "Enquanto você proclama palavras de restauração, até seis criaturas à sua escolha que consiga ver dentro do alcance recuperam pontos de vida iguais a 1d4 + seu modificador de habilidade de conjuração. Esta magia não tem efeito em mortos-vivos nem em constructos."
+  ],
+  "h": [
+   "Quando você lança esta magia usando um espaço de magia de 4º nível ou superior, a cura aumenta em 1d4 para cada nível de espaço acima do 3º."
+  ]
+ },
+ "mass-suggestion": {
+  "n": "Sugestão em Massa",
+  "d": [
+   "Você sugere um curso de ação (limitado a uma ou duas frases) e influencia magicamente até doze criaturas à sua escolha que consiga ver dentro do alcance e que consigam ouvi-lo e entendê-lo. Criaturas que não podem ser enfeitiçadas são imunes a este efeito. A sugestão precisa ser formulada de modo que o curso de ação pareça razoável. Pedir à criatura que se apunhale, se atire numa lança, ateie fogo em si mesma ou faça outro ato obviamente nocivo anula automaticamente o efeito da magia.",
+   "Cada alvo deve fazer um teste de resistência de Sabedoria. Se falhar, segue o curso de ação descrito da melhor forma possível. O curso de ação sugerido pode continuar por toda a duração. Se a atividade sugerida puder ser concluída em menos tempo, a magia termina quando o alvo terminar o que foi pedido.",
+   "Você também pode especificar condições que desencadeiem uma atividade especial durante a duração. Por exemplo, pode sugerir que um grupo de soldados dê todo o seu dinheiro ao primeiro mendigo que encontrarem. Se a condição não for cumprida antes de a magia terminar, a atividade não é realizada.",
+   "Se você ou qualquer um dos seus companheiros causar dano a uma criatura afetada por esta magia, a magia termina para ela."
+  ],
+  "h": [
+   "Quando você lança esta magia usando um espaço de magia de 7º nível, a duração é de 10 dias. Com um espaço de 8º nível, a duração é de 30 dias. Com um espaço de 9º nível, a duração é de um ano e um dia."
+  ],
+  "m": "Uma língua de cobra e um pedacinho de favo de mel ou uma gota de óleo doce."
+ },
+ "maze": {
+  "n": "Labirinto",
+  "d": [
+   "Você bane uma criatura que consiga ver dentro do alcance para um semiplano labiríntico. O alvo permanece lá pela duração ou até escapar do labirinto.",
+   "O alvo pode usar sua ação para tentar escapar. Quando faz isso, faz um teste de Inteligência CD 20. Se passar, escapa, e a magia termina (um minotauro ou um demônio goristro passa automaticamente).",
+   "Quando a magia termina, o alvo reaparece no espaço que deixou ou, se esse espaço estiver ocupado, no espaço desocupado mais próximo."
+  ]
+ }
+}

@@ -1,5 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g fill="none" stroke="#{line}" stroke-width="3" stroke-linecap="round">
-    <path d="M240 228 C248 225 264 225 272 228"/>
+  <defs>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="0.6"/></filter>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.6"/></filter>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path fill="none" stroke="#{skin-deep}" stroke-width="0.6" opacity="0.35" d="M254.4 141.5 L254 145.6 M257.6 141.5 L258 145.6"/>
+    <path fill="#{skin-dark}" opacity="0.5" filter="url(#blur)" d="M250 154.5 C253 156.5 259 156.5 262 154.5 L261 157 C258 158 254 158 251 157 Z"/>
+    <g filter="url(#soft)">
+      <path fill="#{skin-blush}" d="M246.8 148.6 C249.5 147.4 252 146.6 254.2 147 C255.2 147.4 256.8 147.4 257.8 147 C260 146.6 262.5 147.4 265.2 148.6 C261 148.9 251 148.9 246.8 148.6 Z"/>
+      <path fill="#{skin-deep}" opacity="0.35" d="M246.8 148.6 C249.5 147.4 252 146.6 254.2 147 C255.2 147.4 256.8 147.4 257.8 147 C260 146.6 262.5 147.4 265.2 148.6 C261 148.9 251 148.9 246.8 148.6 Z"/>
+      <path fill="#{skin-blush}" d="M248 148.9 C251.5 149.2 260.5 149.2 264 148.9 C262 151.4 259 152.2 256 152.2 C253 152.2 250 151.4 248 148.9 Z"/>
+      <path fill="#{skin-light}" opacity="0.55" d="M253 150 C255 150.6 257 150.6 259 150 C258 151 254 151 253 150 Z"/>
+    </g>
+
+    <path fill="none" stroke="#{skin-deep}" stroke-width="0.95" d="M246 149.2 C250.5 148.6 261.5 148.6 266 149.2"/>
+    <path fill="none" stroke="#{skin-deep}" stroke-width="0.7" opacity="0.6" d="M245.4 149.6 L246.2 149.2 M266.6 149.6 L265.8 149.2"/>
   </g>
 </svg>

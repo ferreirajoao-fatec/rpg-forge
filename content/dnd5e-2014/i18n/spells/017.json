@@ -1,0 +1,87 @@
+{
+ "gust-of-wind": {
+  "n": "Lufada de Vento",
+  "d": [
+   "Uma linha de vento forte com 18 metros de comprimento e 3 metros de largura sopra a partir de você numa direção à sua escolha pela duração da magia. Cada criatura que comece o turno na linha deve passar num teste de resistência de Força ou ser empurrada 4,5 metros para longe de você, seguindo a linha.",
+   "Qualquer criatura na linha precisa gastar 2 metros de movimento para cada 1 metro que avança em sua direção.",
+   "A lufada dispersa gases e vapores e apaga velas, tochas e chamas desprotegidas semelhantes na área. Faz chamas protegidas, como as de lanternas, dançarem descontroladas, com 50% de chance de apagá-las.",
+   "Com uma ação bônus em cada um dos seus turnos antes de a magia terminar, você pode mudar a direção em que a linha sopra a partir de você."
+  ],
+  "m": "Uma semente de leguminosa."
+ },
+ "hallow": {
+  "n": "Consagrar",
+  "d": [
+   "Você toca um ponto e impregna uma área ao redor dele de poder sagrado (ou profano). A área pode ter raio de até 18 metros, e a magia falha se o raio incluir uma área que já esteja sob o efeito de uma magia consagrar. A área afetada fica sujeita aos efeitos a seguir.",
+   "Primeiro, celestiais, elementais, fadas, ínferos e mortos-vivos não podem entrar na área, nem podem enfeitiçar, amedrontar ou possuir criaturas dentro dela. Qualquer criatura enfeitiçada, amedrontada ou possuída por uma dessas criaturas deixa de estar ao entrar na área. Você pode excluir um ou mais desses tipos de criatura deste efeito.",
+   "Segundo, você pode vincular um efeito extra à área. Escolha o efeito da lista a seguir ou um efeito oferecido pelo Mestre. Alguns desses efeitos se aplicam a criaturas na área; você pode definir se o efeito se aplica a todas as criaturas, às que seguem uma divindade ou um líder específico, ou às de um tipo específico, como orcs ou trolls. Quando uma criatura que seria afetada entra na área da magia pela primeira vez num turno ou começa o turno ali, pode fazer um teste de resistência de Carisma. Se passar, ignora o efeito extra até sair da área.",
+   "*Coragem.* As criaturas afetadas não podem ficar amedrontadas enquanto estiverem na área.",
+   "*Escuridão.* A escuridão preenche a área. Luz normal, assim como luz mágica criada por magias de nível menor que o do espaço usado para lançar esta magia, não consegue iluminar a área.",
+   "*Luz do Dia.* Luz plena preenche a área. Escuridão mágica criada por magias de nível menor que o do espaço usado para lançar esta magia não consegue apagar a luz.",
+   "*Proteção contra Energia.* As criaturas afetadas na área têm resistência a um tipo de dano à sua escolha, exceto concussão, perfurante ou cortante.",
+   "*Vulnerabilidade a Energia.* As criaturas afetadas na área têm vulnerabilidade a um tipo de dano à sua escolha, exceto concussão, perfurante ou cortante.",
+   "*Descanso Eterno.* Cadáveres enterrados na área não podem ser transformados em mortos-vivos.",
+   "*Interferência Extradimensional.* As criaturas afetadas não podem se mover nem viajar usando teletransporte ou meios extradimensionais ou interplanares.",
+   "*Medo.* As criaturas afetadas ficam amedrontadas enquanto estiverem na área.",
+   "*Silêncio.* Nenhum som pode sair da área, e nenhum som pode entrar nela.",
+   "*Idiomas.* As criaturas afetadas podem se comunicar com qualquer outra criatura na área, mesmo que não compartilhem um idioma."
+  ],
+  "m": "Ervas, óleos e incenso no valor de pelo menos 1.000 po, que a magia consome."
+ },
+ "hallucinatory-terrain": {
+  "n": "Terreno Alucinatório",
+  "d": [
+   "Você faz o terreno natural num cubo de 45 metros dentro do alcance parecer, soar e cheirar como outro tipo de terreno natural. Assim, campos abertos ou uma estrada podem parecer um pântano, uma colina, uma fenda ou outro terreno difícil ou intransponível. Um lago pode parecer um prado gramado, um precipício pode parecer uma encosta suave, e uma ravina cheia de pedras pode parecer uma estrada larga e lisa. Estruturas construídas, equipamentos e criaturas na área não têm a aparência alterada.",
+   "As características táteis do terreno não mudam, então criaturas que entrem na área provavelmente percebem a ilusão. Se a diferença não for óbvia ao toque, uma criatura que examine a ilusão com cuidado pode fazer um teste de Inteligência (Investigação) contra a CD de resistência das suas magias para desacreditá-la. Uma criatura que perceba a ilusão pelo que ela é a vê como uma imagem vaga sobreposta ao terreno."
+  ],
+  "m": "Uma pedra, um graveto e um pedaço de planta verde."
+ },
+ "harm": {
+  "n": "Ferir",
+  "d": ["Você libera uma doença virulenta numa criatura que consiga ver dentro do alcance. O alvo deve fazer um teste de resistência de Constituição. Se falhar, sofre 14d6 de dano necrótico, ou metade se passar. O dano não pode reduzir os pontos de vida do alvo abaixo de 1. Se o alvo falhar no teste, seu máximo de pontos de vida é reduzido por 1 hora num valor igual ao dano necrótico sofrido. Qualquer efeito que remova uma doença permite que o máximo de pontos de vida da criatura volte ao normal antes desse tempo."]
+ },
+ "haste": {
+  "n": "Velocidade",
+  "d": [
+   "Escolha uma criatura voluntária que consiga ver dentro do alcance. Até a magia terminar, o deslocamento do alvo dobra, ele ganha +2 de bônus na CA, tem vantagem em testes de resistência de Destreza e ganha uma ação adicional em cada um dos seus turnos. Essa ação só pode ser usada para realizar as ações Atacar (apenas um ataque com arma), Disparada, Desengajar, Esconder ou Usar um Objeto.",
+   "Quando a magia termina, o alvo não pode se mover nem realizar ações até depois do próximo turno dele, enquanto uma onda de letargia o domina."
+  ],
+  "m": "Uma lasca de raiz de alcaçuz."
+ },
+ "heal": {
+  "n": "Cura Completa",
+  "d": ["Escolha uma criatura que consiga ver dentro do alcance. Uma onda de energia positiva percorre a criatura, fazendo-a recuperar 70 pontos de vida. Esta magia também encerra a cegueira, a surdez e quaisquer doenças que afetem o alvo. Não tem efeito em constructos nem em mortos-vivos."],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 7º nível ou superior, a cura aumenta em 10 para cada nível de espaço acima do 6º."]
+ },
+ "healing-word": {
+  "n": "Palavra Curativa",
+  "d": ["Uma criatura à sua escolha que você consiga ver dentro do alcance recupera pontos de vida iguais a 1d4 + seu modificador de habilidade de conjuração. Esta magia não tem efeito em mortos-vivos nem em constructos."],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 2º nível ou superior, a cura aumenta em 1d4 para cada nível de espaço acima do 1º."]
+ },
+ "heat-metal": {
+  "n": "Esquentar Metal",
+  "d": [
+   "Escolha um objeto de metal fabricado, como uma arma de metal ou uma armadura média ou pesada de metal, que consiga ver dentro do alcance. Você faz o objeto ficar em brasa. Qualquer criatura em contato físico com o objeto sofre 2d8 de dano de fogo quando você lança a magia. Até a magia terminar, você pode usar uma ação bônus em cada um dos seus turnos seguintes para causar esse dano de novo.",
+   "Se uma criatura estiver segurando ou vestindo o objeto e sofrer o dano dele, deve passar num teste de resistência de Constituição ou largar o objeto, se puder. Se não o largar, tem desvantagem em jogadas de ataque e testes de habilidade até o início do seu próximo turno."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 3º nível ou superior, o dano aumenta em 1d8 para cada nível de espaço acima do 2º."],
+  "m": "Um pedaço de ferro e uma chama."
+ },
+ "hellish-rebuke": {
+  "n": "Repreensão Infernal",
+  "d": ["Você aponta o dedo, e a criatura que o feriu é cercada por um momento por chamas infernais. A criatura deve fazer um teste de resistência de Destreza. Sofre 2d10 de dano de fogo se falhar, ou metade se passar."],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 2º nível ou superior, o dano aumenta em 1d10 para cada nível de espaço acima do 1º."]
+ },
+ "heroes-feast": {
+  "n": "Banquete dos Heróis",
+  "d": [
+   "Você faz surgir um grande banquete, com comida e bebida magníficas. O banquete leva 1 hora para ser consumido e desaparece ao fim desse tempo, e os efeitos benéficos só começam quando essa hora termina. Até doze outras criaturas podem participar do banquete.",
+   "Uma criatura que participa do banquete recebe vários benefícios. Ela é curada de todas as doenças e venenos, fica imune a veneno e a ser amedrontada e faz todos os testes de resistência de Sabedoria com vantagem. Seu máximo de pontos de vida também aumenta em 2d10, e ela ganha a mesma quantidade de pontos de vida. Esses benefícios duram 24 horas."
+  ],
+  "m": "Uma tigela incrustada de gemas no valor de pelo menos 1.000 po, que a magia consome."
+ },
+ "heroism": {
+  "n": "Heroísmo",
+  "d": ["Uma criatura voluntária que você toca é imbuída de bravura. Até a magia terminar, a criatura fica imune a ser amedrontada e ganha pontos de vida temporários iguais ao seu modificador de habilidade de conjuração no início de cada turno dela. Quando a magia termina, o alvo perde os pontos de vida temporários restantes desta magia."]
+ }
+}

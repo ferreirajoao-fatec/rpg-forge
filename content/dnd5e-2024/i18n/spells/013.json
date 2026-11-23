@@ -1,0 +1,75 @@
+{
+ "globe-of-invulnerability": {
+  "d": [
+   "Uma barreira imóvel e cintilante aparece numa Emanação de 3 metros ao seu redor e permanece pela duração.",
+   "Qualquer magia de nível 5 ou inferior lançada de fora da barreira não pode afetar nada dentro dela. Uma magia assim pode escolher como alvo criaturas e objetos dentro da barreira, mas não tem efeito sobre eles. Da mesma forma, a área dentro da barreira fica excluída das áreas de efeito criadas por essas magias."
+  ],
+  "h": ["A barreira bloqueia magias de 1 nível a mais para cada nível de espaço de magia acima de 6."],
+  "m": "Uma conta de vidro."
+ },
+ "glyph-of-warding": {
+  "d": [
+   "Você inscreve um glifo que depois libera um efeito mágico. Inscreve-o numa superfície (como uma mesa ou uma parte do chão) ou dentro de um objeto que possa ser fechado (como um livro ou um baú) para esconder o glifo. O glifo pode cobrir uma área de no máximo 3 metros de diâmetro. Se a superfície ou o objeto for movido mais de 3 metros de onde você lançou a magia, o glifo se rompe, e a magia termina sem ser ativada.",
+   "O glifo é quase imperceptível e exige um teste de Sabedoria (Percepção) bem-sucedido contra a CD de resistência das suas magias para ser notado.",
+   "Ao inscrever o glifo, você define o gatilho e escolhe se ele é uma runa explosiva ou um glifo de magia, como explicado abaixo.",
+   "Definir o Gatilho. Você decide o que ativa o glifo ao lançar a magia. Para glifos inscritos numa superfície, gatilhos comuns incluem tocar ou pisar no glifo, remover outro objeto que o cubra ou se aproximar a uma certa distância dele. Para glifos inscritos dentro de um objeto, gatilhos comuns incluem abrir o objeto ou ver o glifo. Quando um glifo é ativado, a magia termina.",
+   "Você pode refinar o gatilho para que só criaturas de certos tipos o ativem (por exemplo, o glifo pode afetar Aberrações). Também pode definir condições para criaturas que não ativam o glifo, como as que dizem uma certa senha.",
+   "Runa Explosiva. Quando ativado, o glifo irrompe em energia mágica numa Esfera de 6 metros de raio centrada nele. Cada criatura na área faz um teste de resistência de Destreza. A criatura sofre 5d8 de dano Ácido, de Frio, de Fogo, Elétrico ou Trovejante (à sua escolha ao criar o glifo) se falhar, ou metade se passar.",
+   "Glifo de Magia. Você pode armazenar no glifo uma magia preparada de nível 3 ou inferior, lançando-a como parte da criação do glifo. A magia precisa ter como alvo uma única criatura ou uma área. A magia armazenada não tem efeito imediato quando lançada assim.",
+   "Quando o glifo é ativado, a magia armazenada faz efeito. Se tiver um alvo, ela escolhe a criatura que ativou o glifo. Se afetar uma área, a área fica centrada nessa criatura. Se a magia invocar criaturas Hostis ou criar objetos ou armadilhas nocivos, eles aparecem o mais perto possível do intruso e o atacam. Se a magia exigir Concentração, dura até o fim da sua duração total."
+  ],
+  "h": ["O dano de uma runa explosiva aumenta em 1d8 para cada nível de espaço de magia acima de 3. Se criar um glifo de magia, pode armazenar qualquer magia de nível até o do espaço de magia usado para o Glifo de Proteção."],
+  "m": "Pó de diamante no valor de 200+ PO, que a magia consome."
+ },
+ "goodberry": {
+  "d": ["Dez frutinhas aparecem na sua mão e ficam imbuídas de magia pela duração. Uma criatura pode realizar uma Ação Bônus para comer uma frutinha. Comer uma frutinha restaura 1 Ponto de Vida, e ela fornece alimento suficiente para sustentar uma criatura por um dia. As frutinhas não comidas desaparecem quando a magia termina."],
+  "m": "Um raminho de visco."
+ },
+ "grease": {
+  "d": [
+   "Graxa não inflamável cobre o chão num quadrado de 3 metros centrado num ponto dentro do alcance e o transforma em Terreno Difícil pela duração.",
+   "Quando a graxa aparece, cada criatura de pé na área deve passar num teste de resistência de Destreza ou fica com a condição Caído. Uma criatura que entre na área ou termine o turno ali também precisa passar nesse teste ou cai."
+  ],
+  "m": "Um pedacinho de torresmo ou manteiga."
+ },
+ "greater-invisibility": {
+  "d": ["Uma criatura que você toca fica com a condição Invisível até a magia terminar."]
+ },
+ "greater-restoration": {
+  "d": ["Você toca uma criatura e remove magicamente dela um dos efeitos a seguir: • 1 nível de Exaustão • A condição Enfeitiçado ou Petrificado • Uma maldição, incluindo a Sintonização do alvo com um item mágico amaldiçoado • Qualquer redução num dos valores de atributo do alvo • Qualquer redução no máximo de Pontos de Vida do alvo"],
+  "m": "Pó de diamante no valor de 100+ PO, que a magia consome."
+ },
+ "guardian-of-faith": {
+  "d": [
+   "Um guardião espectral Grande aparece e flutua pela duração num espaço desocupado que você consiga ver dentro do alcance. O guardião ocupa esse espaço, é invulnerável e aparece numa forma apropriada à sua divindade ou ao seu panteão.",
+   "Qualquer inimigo que se mova para um espaço a até 3 metros do guardião pela primeira vez num turno ou comece o turno ali faz um teste de resistência de Destreza, sofrendo 20 de dano Radiante se falhar, ou metade se passar. O guardião desaparece quando tiver causado um total de 60 de dano."
+  ]
+ },
+ "guards-and-wards": {
+  "d": [
+   "Você cria uma proteção que cobre até 225 metros quadrados de piso. A área protegida pode ter até 6 metros de altura, e você a molda como um quadrado de 15 metros, cem quadrados de 1,5 metro contíguos ou vinte e cinco quadrados de 3 metros contíguos.",
+   "Ao lançar esta magia, você pode especificar indivíduos que não são afetados pelos efeitos dela. Também pode especificar uma senha que, dita em voz alta a até 1,5 metro da área protegida, torna quem a disse imune aos efeitos.",
+   "A magia cria os efeitos abaixo dentro da área protegida. Dissipar Magia não tem efeito sobre Guardas e Proteções em si, mas cada um dos efeitos a seguir pode ser dissipado. Se os quatro forem dissipados, Guardas e Proteções termina. Se você lançar a magia todos os dias por 365 dias na mesma área, ela passa a durar até todos os efeitos serem dissipados.",
+   "Corredores. Neblina preenche todos os corredores protegidos, deixando-os com Escuridão Densa. Além disso, em cada cruzamento ou bifurcação que ofereça uma escolha de direção, há 50% de chance de uma criatura que não seja você acreditar que está indo na direção oposta à que escolheu.",
+   "Portas. Todas as portas na área protegida ficam trancadas magicamente, como se seladas pela magia Tranca Arcana. Além disso, você pode cobrir até dez portas com uma ilusão para que pareçam trechos comuns de parede.",
+   "Escadas. Teias preenchem todas as escadas na área protegida de cima a baixo, como na magia Teia. Esses fios voltam a crescer em 10 minutos se forem destruídos enquanto Guardas e Proteções durar.",
+   "Outro Efeito Mágico. Coloque um dos efeitos mágicos a seguir na área protegida: • Globos de Luz em quatro corredores, com uma programação simples que as luzes repetem enquanto Guardas e Proteções durar • Boca Encantada em dois locais • Névoa Fétida em dois locais (os vapores voltam em 10 minutos se forem dispersados enquanto Guardas e Proteções durar) • Lufada de Vento num corredor ou cômodo (o vento sopra sem parar enquanto a magia durar) • Sugestão num quadrado de 1,5 metro; qualquer criatura que entre nesse quadrado recebe a sugestão mentalmente"
+  ],
+  "m": "Uma vara de prata no valor de 10+ PO."
+ },
+ "guidance": {
+  "d": ["Você toca uma criatura voluntária e escolhe uma perícia. Até a magia terminar, a criatura soma 1d4 a qualquer teste de atributo que use a perícia escolhida."]
+ },
+ "guiding-bolt": {
+  "d": ["Você arremessa um raio de luz em direção a uma criatura dentro do alcance. Faça um ataque mágico à distância contra o alvo. Se acertar, ele sofre 4d6 de dano Radiante, e a próxima jogada de ataque feita contra ele antes do fim do seu próximo turno tem Vantagem."]
+ },
+ "gust-of-wind": {
+  "d": [
+   "Uma Linha de vento forte com 18 metros de comprimento e 3 metros de largura sopra de você numa direção à sua escolha pela duração. Cada criatura na Linha deve passar num teste de resistência de Força ou é empurrada 4,5 metros para longe de você, na direção da Linha. Uma criatura que termine o turno na Linha precisa fazer o mesmo teste.",
+   "Qualquer criatura na Linha precisa gastar 2 metros de movimento para cada 1 metro que avançar em sua direção.",
+   "A rajada dispersa gás ou vapor e apaga velas e chamas desprotegidas semelhantes na área. Faz chamas protegidas, como as de lanternas, dançarem descontroladas, com 50% de chance de apagá-las.",
+   "Com uma Ação Bônus nos seus turnos posteriores, você pode mudar a direção em que a Linha sopra a partir de você."
+  ],
+  "m": "Uma semente de leguminosa."
+ }
+}

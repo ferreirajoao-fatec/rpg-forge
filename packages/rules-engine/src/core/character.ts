@@ -66,6 +66,8 @@ export const CharacterDataSchema = z.object({
   abilityMethod: z.string().optional(),
   /** Bônus de atributo distribuídos pelo jogador quando o sistema permite escolha. */
   assignedBonuses: z.record(z.string(), z.number().int()).default({}),
+  /** Aumentos de atributo ganhos ao subir de nível (ex.: Aumento no Valor de Habilidade do D&D). */
+  levelBonuses: z.record(z.string(), z.number().int().min(0)).default({}),
   classes: z.array(ClassLevelSchema).default([]),
   speciesId: z.string().optional(),
   backgroundId: z.string().optional(),

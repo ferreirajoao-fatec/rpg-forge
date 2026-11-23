@@ -3,6 +3,7 @@ import { totalLevel } from "./character";
 import type { ContentEntry, ContentKind, ContentPack } from "./content";
 import type { Rng } from "./dice";
 import { evaluatePrerequisite, type PrerequisiteFacts } from "./prerequisites";
+import { applyLevelUp, type LevelUpGain, type LevelUpPlan } from "./progression";
 import type {
   DataAvailability,
   OptionEvaluation,
@@ -97,6 +98,19 @@ export interface CurrencyDef {
   value: number;
 }
 
+/** Pacote de equipamento inicial (de uma classe ou antecedente), com alternativas. */
+export interface StartingPackage {
+  /** De onde vem (ex.: "Guerreiro", "Acólito"). */
+  source: string;
+  /** Itens que vêm sempre. */
+  fixed: { id: string; quantity: number }[];
+  /** Grupos de alternativas: escolha `choose` opção(ões) de cada grupo. */
+  groups: {
+    choose: number;
+    options: { label: string; items: { id: string; quantity: number }[]; gold: number; open: { category: string; count: number; label: string }[] }[];
+  }[];
+}
+
 /** Linha do inventário com dados resolvidos pelo motor. */
 export interface InventoryRow {
   entryId: string;
@@ -161,12 +175,23 @@ export interface RulesEngine {
   abilityModifier(score: number): number;
   /** Nível correspondente a uma quantidade de XP, se o sistema usar XP. */
   levelForXp?(xp: number): number;
+  /** XP mínimo de cada nível (índice 0 = 1º nível), se o sistema usar XP. */
+  readonly xpThresholds?: number[];
+  /** O que o personagem ganha ao subir para o próximo nível ("Meu próximo nível"). */
+  levelUpPlan(c: CharacterData, catalog: Catalog): LevelUpPlan;
   derive(c: CharacterData, catalog: Catalog): DerivedStats;
   validate(c: CharacterData, catalog: Catalog): ValidationReport;
   /** Moedas do sistema, da menor para a maior. A primeira com value 1 é a padrão. */
   readonly currencies?: CurrencyDef[];
   /** Dinheiro inicial para um nível: quantia fixa ou fórmula de dados (na moeda padrão). */
   startingWealth?(level: number): { amount?: number; formula?: string };
+  /** Pacotes de equipamento inicial da classe e do antecedente escolhidos, quando o sistema os tiver. */
+  startingPackages?(c: CharacterData, catalog: Catalog): StartingPackage[];
+  /**
+   * Aumentos de atributo por nível (CharacterData.levelBonuses): quantos pontos o personagem
+   * pode distribuir agora e o teto de cada atributo. Ausente = o sistema não usa.
+   */
+  levelBonusBudget?(c: CharacterData, catalog: Catalog): { points: number; max: number; detail: string };
   evaluateOption(c: CharacterData, entry: ContentEntry, catalog: Catalog): OptionEvaluation;
 }
 
@@ -241,6 +266,64 @@ export abstract class BaseEngine implements RulesEngine {
         content: (id) => catalog.get(id)?.name ?? id,
       },
     };
+  }
+
+  readonly xpThresholds?: number[];
+
+  levelUpPlan(c: CharacterData, catalog: Catalog): LevelUpPlan {
+    const from = totalLevel(c);
+    const to = from + 1;
+    const plan: LevelUpPlan = { from, to, canLevelUp: true, gains: [] };
+    if (to > this.meta.levelRange.max) {
+      return { ...plan, canLevelUp: false, blockedReason: `O nível máximo deste sistema é ${this.meta.levelRange.max}.` };
+    }
+    const needed = c.progressionMode === "xp" ? this.xpThresholds?.[to - 1] : undefined;
+    if (needed !== undefined) {
+      plan.xp = { current: c.experience, needed };
+      if (c.experience < needed) {
+        plan.canLevelUp = false;
+        plan.blockedReason = `Faltam ${(needed - c.experience).toLocaleString("pt-BR")} XP para o ${to}º nível.`;
+      }
+    }
+    const next = applyLevelUp(c);
+    plan.gains = [...this.statGains(this.derive(c, catalog), this.derive(next, catalog)), ...this.levelGains(c, next, catalog)];
+    return plan;
+  }
+
+  /** Diferenças entre a ficha derivada antes e depois de subir de nível. */
+  protected statGains(before: DerivedStats, after: DerivedStats): LevelUpGain[] {
+    const gains: LevelUpGain[] = [];
+    if (before.proficiencyBonus !== undefined && after.proficiencyBonus !== before.proficiencyBonus) {
+      // Também aparece nas estatísticas de alguns sistemas; o filtro abaixo evita repetir.
+      if (!after.stats?.some((s) => s.key === "proficiency")) {
+        gains.push({ kind: "stat", label: "Bônus de proficiência", detail: `+${before.proficiencyBonus} → +${after.proficiencyBonus}` });
+      }
+    }
+    const old = new Map((before.stats ?? []).map((s) => [s.key, s]));
+    for (const s of after.stats ?? []) {
+      const prev = old.get(s.key);
+      if (prev && String(prev.value) !== String(s.value)) {
+        gains.push({ kind: "stat", label: s.label, detail: `${prev.value} → ${s.value}`, source: s.source });
+      } else if (!prev) {
+        gains.push({ kind: "stat", label: s.label, detail: `novo: ${s.value}`, source: s.source });
+      }
+    }
+    const skillsBefore = new Map((before.skills ?? []).map((s) => [s.id, s.value]));
+    const deltas = (after.skills ?? []).map((s) => s.value - (skillsBefore.get(s.id) ?? s.value)).filter((d) => d !== 0);
+    if (deltas.length) {
+      const same = deltas.every((d) => d === deltas[0]);
+      gains.push({
+        kind: "stat",
+        label: "Perícias",
+        detail: same ? `${deltas[0] > 0 ? "+" : ""}${deltas[0]} em ${deltas.length} perícia(s)` : `${deltas.length} perícia(s) mudam de valor`,
+      });
+    }
+    return gains;
+  }
+
+  /** Ganhos específicos do sistema para o novo nível. Padrão: nenhum. */
+  protected levelGains(_before: CharacterData, _after: CharacterData, _catalog: Catalog): LevelUpGain[] {
+    return [];
   }
 
   evaluateOption(c: CharacterData, entry: ContentEntry, catalog: Catalog): OptionEvaluation {

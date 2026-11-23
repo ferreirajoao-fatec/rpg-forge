@@ -1,0 +1,40 @@
+{
+ "wind-wall": {
+  "n": "Muralha de Vento",
+  "d": [
+   "Uma muralha de vento forte se ergue do chão num ponto à sua escolha dentro do alcance. Você pode fazer a muralha com até 15 metros de comprimento, 4,5 metros de altura e 30 centímetros de espessura. Pode moldá-la como quiser, desde que forme um caminho contínuo ao longo do chão. A muralha dura pela duração.",
+   "Quando a muralha aparece, cada criatura na área dela deve fazer um teste de resistência de Força. A criatura sofre 3d8 de dano de concussão se falhar, ou metade se passar.",
+   "O vento forte mantém afastados neblina, fumaça e outros gases. Criaturas ou objetos voadores Pequenos ou menores não atravessam a muralha. Materiais soltos e leves levados para dentro da muralha voam para cima. Flechas, virotes e outros projéteis comuns disparados contra alvos atrás da muralha são desviados para cima e erram automaticamente. (Pedregulhos arremessados por gigantes ou máquinas de cerco, e projéteis semelhantes, não são afetados.) Criaturas em forma gasosa não conseguem atravessá-la."
+  ],
+  "m": "Um leque minúsculo e uma pena de origem exótica."
+ },
+ "wish": {
+  "n": "Desejo",
+  "d": [
+   "Desejo é a magia mais poderosa que uma criatura mortal pode lançar. Apenas falando em voz alta, você pode alterar as próprias bases da realidade de acordo com sua vontade.",
+   "O uso básico desta magia é reproduzir qualquer outra magia de 8º nível ou inferior. Você não precisa cumprir nenhum requisito dessa magia, incluindo componentes caros. A magia simplesmente faz efeito.",
+   "Em vez disso, você pode criar um dos efeitos a seguir à sua escolha:",
+   "- Você cria um objeto de até 25.000 po de valor que não seja um item mágico. O objeto não pode ter mais de 90 metros em nenhuma dimensão e aparece num espaço desocupado que você consiga ver no chão.",
+   "- Você permite que até vinte criaturas que consiga ver recuperem todos os pontos de vida e encerra nelas todos os efeitos descritos na magia restauração maior.",
+   "- Você concede a até dez criaturas que consiga ver resistência a um tipo de dano à sua escolha.",
+   "- Você concede a até dez criaturas que consiga ver imunidade a uma única magia ou outro efeito mágico por 8 horas. Por exemplo, pode tornar você e todos os seus companheiros imunes ao ataque de drenar vida de um lich.",
+   "- Você desfaz um único acontecimento recente, forçando que seja rolada de novo qualquer rolagem feita na última rodada (incluindo seu último turno). A realidade se remodela para acomodar o novo resultado. Por exemplo, uma magia desejo pode desfazer o teste bem-sucedido de um oponente, o acerto crítico de um inimigo ou o teste falho de um amigo. Você pode forçar a nova rolagem a ser feita com vantagem ou desvantagem e pode escolher se usa a nova rolagem ou a original.",
+   "Você pode conseguir algo além do escopo dos exemplos acima. Diga seu desejo ao Mestre da forma mais precisa possível. O Mestre tem grande liberdade para decidir o que acontece nesse caso; quanto maior o desejo, maior a chance de algo dar errado. A magia pode simplesmente falhar, o efeito desejado pode ser alcançado só em parte ou você pode sofrer alguma consequência imprevista por causa de como formulou o desejo. Por exemplo, desejar que um vilão estivesse morto pode lançá-lo para a frente no tempo, até uma época em que o vilão não está mais vivo, tirando-o efetivamente do jogo. Da mesma forma, desejar um item mágico lendário ou um artefato pode transportá-lo instantaneamente para a presença do dono atual do item.",
+   "O esforço de lançar esta magia para produzir qualquer efeito além de reproduzir outra magia o enfraquece. Depois desse esforço, cada vez que lançar uma magia até terminar um descanso longo, você sofre 1d10 de dano necrótico por nível dessa magia. Esse dano não pode ser reduzido nem evitado de forma alguma. Além disso, sua Força cai para 3, se ainda não for 3 ou menos, por 2d4 dias. Para cada um desses dias que passar descansando e fazendo apenas atividades leves, o tempo de recuperação restante diminui em 2 dias. Por fim, há 33% de chance de você nunca mais conseguir lançar desejo se sofrer esse esforço."
+  ]
+ },
+ "word-of-recall": {
+  "n": "Palavra de Retorno",
+  "d": [
+   "Você e até cinco criaturas voluntárias a até 1,5 metro de você se teletransportam instantaneamente para um santuário designado antes. Você e as criaturas que se teletransportam com você aparecem no espaço desocupado mais próximo do ponto que designou ao preparar o santuário (veja abaixo). Se lançar esta magia sem ter preparado um santuário, ela não tem efeito.",
+   "Você precisa designar um santuário lançando esta magia num local, como um templo, dedicado ou fortemente ligado à sua divindade. Se tentar lançar a magia dessa forma numa área que não seja dedicada à sua divindade, ela não tem efeito."
+  ]
+ },
+ "zone-of-truth": {
+  "n": "Zona da Verdade",
+  "d": [
+   "Você cria uma zona mágica que protege contra a mentira numa esfera de 4,5 metros de raio centrada num ponto à sua escolha dentro do alcance. Até a magia terminar, uma criatura que entre na área pela primeira vez num turno ou comece o turno ali deve fazer um teste de resistência de Carisma. Se falhar, não consegue dizer uma mentira deliberada enquanto estiver no raio. Você sabe se cada criatura passou ou falhou no teste.",
+   "Uma criatura afetada sabe da magia e pode, por isso, evitar responder perguntas a que normalmente responderia com uma mentira. Ela pode dar respostas evasivas, desde que permaneça dentro dos limites da verdade."
+  ]
+ }
+}

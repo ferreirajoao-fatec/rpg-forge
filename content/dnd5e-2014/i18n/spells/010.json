@@ -1,0 +1,77 @@
+{
+ "dimension-door": {
+  "n": "Porta Dimensional",
+  "d": [
+   "Você se teletransporta da sua localização atual para qualquer outro ponto dentro do alcance. Chega exatamente ao ponto desejado. Pode ser um lugar que você consiga ver, que consiga visualizar ou que consiga descrever indicando distância e direção, como \"60 metros diretamente para baixo\" ou \"para cima, a noroeste, num ângulo de 45 graus, 90 metros\".",
+   "Você pode levar objetos, desde que o peso deles não exceda o que você consegue carregar. Também pode levar uma criatura voluntária do seu tamanho ou menor que esteja carregando equipamento até a capacidade de carga dela. A criatura precisa estar a até 1,5 metro de você quando você lança esta magia.",
+   "Se fosse chegar a um lugar já ocupado por um objeto ou uma criatura, você e qualquer criatura viajando com você sofrem 4d6 de dano de energia cada, e a magia não o teletransporta."
+  ]
+ },
+ "disguise-self": {
+  "n": "Disfarçar-se",
+  "d": [
+   "Você faz a si mesmo (incluindo roupas, armadura, armas e outros pertences que estejam com você) parecer diferente até a magia terminar ou até usar sua ação para dispensá-la. Pode parecer 30 centímetros mais baixo ou mais alto e pode parecer magro, gordo ou algo entre os dois. Não pode mudar seu tipo de corpo, então precisa adotar uma forma com a mesma disposição básica de membros. Fora isso, a extensão da ilusão fica a seu critério.",
+   "As mudanças feitas por esta magia não resistem a uma inspeção física. Por exemplo, se você usar esta magia para acrescentar um chapéu à sua roupa, objetos atravessam o chapéu, e quem o tocar não sentirá nada ou sentirá sua cabeça e seu cabelo. Se usar esta magia para parecer mais magro do que é, a mão de quem estender o braço para tocá-lo vai esbarrar em você enquanto ainda parece estar no ar.",
+   "Para perceber que você está disfarçado, uma criatura pode usar sua ação para inspecionar sua aparência e deve passar num teste de Inteligência (Investigação) contra a CD de resistência das suas magias."
+  ]
+ },
+ "disintegrate": {
+  "n": "Desintegrar",
+  "d": [
+   "Um raio verde e fino sai do seu dedo apontado em direção a um alvo que você consiga ver dentro do alcance. O alvo pode ser uma criatura, um objeto ou uma criação de energia mágica, como a muralha criada por muralha de energia.",
+   "Uma criatura alvo desta magia deve fazer um teste de resistência de Destreza. Se falhar, sofre 10d6 + 40 de dano de energia. Se esse dano reduzir o alvo a 0 pontos de vida, ele é desintegrado.",
+   "Uma criatura desintegrada e tudo o que ela veste e carrega, exceto itens mágicos, viram um monte de pó cinza e fino. A criatura só pode voltar à vida por meio de uma magia ressurreição verdadeira ou desejo.",
+   "Esta magia desintegra automaticamente um objeto não mágico Grande ou menor ou uma criação de energia mágica. Se o alvo for um objeto ou uma criação de energia Enorme ou maior, esta magia desintegra uma porção de 3 metros cúbicos dele. Um item mágico não é afetado por esta magia."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 7º nível ou superior, o dano aumenta em 3d6 para cada nível de espaço acima do 6º."],
+  "m": "Um ímã natural e uma pitada de poeira."
+ },
+ "dispel-evil-and-good": {
+  "n": "Dissipar o Bem e o Mal",
+  "d": [
+   "Uma energia cintilante o envolve e o protege de fadas, mortos-vivos e criaturas vindas de além do Plano Material. Pela duração, celestiais, elementais, fadas, ínferos e mortos-vivos têm desvantagem em jogadas de ataque contra você.",
+   "Você pode encerrar a magia antes usando qualquer uma das funções especiais a seguir.",
+   "*Quebrar Encantamento.* Com sua ação, você toca uma criatura ao seu alcance que esteja enfeitiçada, amedrontada ou possuída por um celestial, um elemental, uma fada, um ínfero ou um morto-vivo. A criatura tocada deixa de estar enfeitiçada, amedrontada ou possuída por essas criaturas.",
+   "*Expulsão.* Com sua ação, faça um ataque mágico corpo a corpo contra um celestial, um elemental, uma fada, um ínfero ou um morto-vivo ao seu alcance. Se acertar, você tenta mandar a criatura de volta ao seu plano de origem. A criatura deve passar num teste de resistência de Carisma ou ser enviada de volta ao plano de origem (se já não estiver lá). Se não estiverem no plano de origem, mortos-vivos são enviados ao Pendor das Sombras, e fadas, à Agrestia das Fadas."
+  ],
+  "m": "Água benta ou prata e ferro em pó."
+ },
+ "dispel-magic": {
+  "n": "Dissipar Magia",
+  "d": ["Escolha uma criatura, um objeto ou um efeito mágico dentro do alcance. Qualquer magia de 3º nível ou menor no alvo termina. Para cada magia de 4º nível ou superior no alvo, faça um teste de habilidade usando sua habilidade de conjuração. A CD é 10 + o nível da magia. Se passar, a magia termina."],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 4º nível ou superior, encerra automaticamente os efeitos de uma magia no alvo se o nível dela for igual ou menor que o nível do espaço de magia usado."]
+ },
+ "divination": {
+  "n": "Adivinhação",
+  "d": [
+   "Sua magia e uma oferenda o põem em contato com um deus ou com os servos de um deus. Você faz uma única pergunta sobre um objetivo, evento ou atividade específico que vá ocorrer nos próximos 7 dias. O Mestre dá uma resposta verdadeira. A resposta pode ser uma frase curta, uma rima enigmática ou um presságio.",
+   "A magia não leva em conta nenhuma circunstância que possa mudar o resultado, como o lançamento de outras magias ou a perda ou o ganho de um companheiro.",
+   "Se você lançar a magia duas ou mais vezes antes de terminar seu próximo descanso longo, há uma chance cumulativa de 25% para cada conjuração depois da primeira de receber uma leitura aleatória. O Mestre faz essa rolagem em segredo."
+  ],
+  "m": "Incenso e uma oferenda de sacrifício apropriada à sua religião, valendo juntos pelo menos 25 po, consumidos pela magia."
+ },
+ "divine-favor": {
+  "n": "Favor Divino",
+  "d": ["Sua prece o fortalece com radiância divina. Até a magia terminar, seus ataques com arma causam 1d4 de dano radiante extra quando acertam."]
+ },
+ "divine-word": {
+  "n": "Palavra Divina",
+  "d": [
+   "Você pronuncia uma palavra divina, imbuída do poder que moldou o mundo na aurora da criação. Escolha qualquer número de criaturas que consiga ver dentro do alcance. Cada criatura que consiga ouvi-lo deve fazer um teste de resistência de Carisma. Se falhar, a criatura sofre um efeito conforme seus pontos de vida atuais:",
+   "- 50 pontos de vida ou menos: surda por 1 minuto",
+   "- 40 pontos de vida ou menos: surda e cega por 10 minutos",
+   "- 30 pontos de vida ou menos: cega, surda e atordoada por 1 hora",
+   "- 20 pontos de vida ou menos: morre instantaneamente",
+   "Independentemente dos pontos de vida atuais, um celestial, um elemental, uma fada ou um ínfero que falhe no teste é forçado a voltar ao seu plano de origem (se já não estiver lá) e não pode voltar ao seu plano atual por 24 horas por nenhum meio, exceto uma magia desejo."
+  ]
+ },
+ "dominate-beast": {
+  "n": "Dominar Fera",
+  "d": [
+   "Você tenta seduzir uma criatura que consiga ver dentro do alcance. Ela deve passar num teste de resistência de Sabedoria ou ficar enfeitiçada por você pela duração. Se você ou criaturas amigáveis a você estiverem lutando contra ela, ela tem vantagem no teste.",
+   "Enquanto a criatura estiver enfeitiçada, você tem uma ligação telepática com ela, desde que os dois estejam no mesmo plano de existência. Pode usar essa ligação para dar comandos à criatura enquanto estiver consciente (sem gastar ação), e ela faz o possível para obedecer. Você pode especificar um curso de ação simples e genérico, como \"Ataque aquela criatura\", \"Corra até ali\" ou \"Pegue aquele objeto\". Se a criatura cumprir a ordem e não receber mais instruções, ela se defende e se preserva da melhor forma possível.",
+   "Você pode usar sua ação para assumir controle total e preciso do alvo. Até o fim do seu próximo turno, a criatura só realiza as ações que você escolher e não faz nada que você não permita. Nesse período, você também pode fazer a criatura usar uma reação, mas isso exige que você use a sua própria reação também. Cada vez que o alvo sofre dano, faz um novo teste de resistência de Sabedoria contra a magia. Se passar, a magia termina."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 9º nível, a duração passa a ser concentração, até 8 horas."]
+ }
+}

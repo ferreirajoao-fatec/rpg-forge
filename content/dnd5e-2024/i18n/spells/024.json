@@ -1,0 +1,100 @@
+{
+ "slow": {
+  "d": [
+   "Você altera o tempo ao redor de até seis criaturas à sua escolha num Cubo de 12 metros dentro do alcance. Cada alvo deve passar num teste de resistência de Sabedoria ou é afetado por esta magia pela duração.",
+   "O Deslocamento de um alvo afetado cai pela metade, ele sofre -2 de penalidade na CA e em testes de resistência de Destreza e não pode realizar Reações. Nos turnos dele, pode realizar uma ação ou uma Ação Bônus, não ambas, e só pode fazer um ataque se realizar a ação Atacar. Se lançar uma magia com componente Somático, há 25% de chance de a magia falhar porque o alvo faz os gestos lentamente demais.",
+   "Um alvo afetado repete o teste no fim de cada turno dele, encerrando a magia em si mesmo se passar."
+  ],
+  "m": "Uma gota de melaço."
+ },
+ "sorcerous-burst": {
+  "n": "Explosão Feiticeira",
+  "d": [
+   "Você lança energia feiticeira numa criatura ou num objeto dentro do alcance. Faça um ataque mágico à distância contra o alvo. Se acertar, o alvo sofre 1d8 de dano de um tipo à sua escolha: Ácido, Frio, Fogo, Elétrico, Veneno, Psíquico ou Trovejante.",
+   "Se tirar 8 num d8 desta magia, você pode rolar outro d8 e somá-lo ao dano. Ao lançar esta magia, o número máximo desses d8 que pode somar ao dano é igual ao seu modificador de habilidade de conjuração.",
+   "Aprimoramento de Truque. O dano aumenta em 1d8 quando você alcança os níveis 5 (2d8), 11 (3d8) e 17 (4d8)."
+  ]
+ },
+ "spare-the-dying": {
+  "d": [
+   "Escolha uma criatura dentro do alcance que tenha 0 Pontos de Vida e não esteja morta. A criatura fica Estável.",
+   "Aprimoramento de Truque. O alcance dobra quando você alcança os níveis 5 (9 metros), 11 (18 metros) e 17 (36 metros)."
+  ]
+ },
+ "speak-with-animals": {
+  "d": [
+   "Pela duração, você consegue compreender Feras e se comunicar verbalmente com elas, e pode usar com elas qualquer opção de perícia da ação Influenciar.",
+   "A maioria das Feras tem pouco a dizer sobre assuntos que não tenham a ver com sobrevivência ou companheirismo, mas, no mínimo, uma Fera pode lhe dar informações sobre locais e monstros próximos, incluindo tudo o que percebeu no último dia."
+  ]
+ },
+ "speak-with-dead": {
+  "d": [
+   "Você concede uma aparência de vida a um cadáver à sua escolha dentro do alcance, permitindo que ele responda às perguntas que fizer. O cadáver precisa ter boca, e esta magia falha se a criatura falecida era um Morto-Vivo quando morreu. A magia também falha se o cadáver foi alvo dela nos últimos 10 dias.",
+   "Até a magia terminar, você pode fazer até cinco perguntas ao cadáver. Ele só sabe o que sabia em vida, incluindo os idiomas que conhecia. As respostas costumam ser breves, enigmáticas ou repetitivas, e o cadáver não é obrigado a responder com a verdade se você for hostil com ele ou se ele o reconhecer como inimigo. Esta magia não devolve a alma da criatura ao corpo, só o espírito que o anima. Assim, o cadáver não pode aprender novas informações, não compreende nada que tenha acontecido desde a morte e não pode especular sobre acontecimentos futuros."
+  ]
+ },
+ "speak-with-plants": {
+  "d": [
+   "Você imbui as plantas numa Emanação imóvel de 9 metros com consciência e animação limitadas, dando a elas a capacidade de se comunicar com você e seguir seus comandos simples. Pode perguntar às plantas sobre acontecimentos na área da magia no último dia, obtendo informações sobre criaturas que passaram, o clima e outras circunstâncias.",
+   "Você também pode transformar Terreno Difícil causado por vegetação (como moitas e mato rasteiro) em terreno comum que dura pela duração. Ou pode transformar terreno comum onde haja plantas em Terreno Difícil que dura pela duração.",
+   "A magia não permite que as plantas se desenraízem e se desloquem, mas elas podem mover galhos, gavinhas e caules para você.",
+   "Se houver uma criatura Planta na área, você pode se comunicar com ela como se compartilhassem um idioma."
+  ]
+ },
+ "spider-climb": {
+  "d": ["Até a magia terminar, uma criatura voluntária que você toca ganha a capacidade de subir, descer e atravessar superfícies verticais e se mover pelo teto, mantendo as mãos livres. O alvo também ganha Deslocamento de Escalada igual ao seu Deslocamento."],
+  "m": "Uma gota de betume e uma aranha."
+ },
+ "spike-growth": {
+  "d": [
+   "O chão numa Esfera de 6 metros de raio centrada num ponto dentro do alcance brota espinhos e cravos duros. A área se torna Terreno Difícil pela duração. Quando uma criatura entra na área ou se move dentro dela, sofre 2d4 de dano Perfurante para cada 1,5 metro que percorre.",
+   "A transformação do chão é camuflada para parecer natural. Qualquer criatura que não consiga ver a área quando a magia é lançada precisa realizar a ação Procurar e passar num teste de Sabedoria (Percepção ou Sobrevivência) contra a CD de resistência das suas magias para reconhecer o terreno como perigoso antes de entrar nele."
+  ],
+  "m": "Sete espinhos."
+ },
+ "spirit-guardians": {
+  "d": [
+   "Espíritos protetores esvoaçam ao seu redor numa Emanação de 4,5 metros pela duração. Se você for bom ou neutro, a forma espectral deles parece angelical ou feérica (à sua escolha). Se for mau, parecem infernais.",
+   "Ao lançar esta magia, você pode designar criaturas que não sejam afetadas por ela. O Deslocamento de qualquer outra criatura cai pela metade na Emanação e, sempre que a Emanação entrar no espaço de uma criatura e sempre que uma criatura entrar na Emanação ou terminar o turno ali, ela deve fazer um teste de resistência de Sabedoria. Se falhar, sofre 3d8 de dano Radiante (se você for bom ou neutro) ou 3d8 de dano Necrótico (se for mau). Se passar, sofre metade do dano. A criatura só faz esse teste uma vez por turno."
+  ],
+  "h": ["O dano aumenta em 1d8 para cada nível de espaço de magia acima de 3."]
+ },
+ "spiritual-weapon": {
+  "d": [
+   "Você cria uma força espectral flutuante que lembra uma arma à sua escolha e dura pela duração. A força aparece dentro do alcance num espaço à sua escolha, e você pode fazer imediatamente um ataque mágico corpo a corpo contra uma criatura a até 1,5 metro dela. Se acertar, o alvo sofre dano de Energia igual a 1d8 mais seu modificador de habilidade de conjuração.",
+   "Com uma Ação Bônus nos seus turnos posteriores, você pode mover a força até 6 metros e repetir o ataque contra uma criatura a até 1,5 metro dela."
+  ],
+  "h": ["O dano aumenta em 1d8 para cada nível de espaço de magia acima de 2."]
+ },
+ "starry-wisp": {
+  "n": "Centelha Estelar",
+  "d": [
+   "Você dispara uma partícula de luz numa criatura ou num objeto dentro do alcance. Faça um ataque mágico à distância contra o alvo. Se acertar, o alvo sofre 1d8 de dano Radiante e, até o fim do seu próximo turno, emite Penumbra num raio de 3 metros e não pode se beneficiar da condição Invisível.",
+   "Aprimoramento de Truque. O dano aumenta em 1d8 quando você alcança os níveis 5 (2d8), 11 (3d8) e 17 (4d8)."
+  ]
+ },
+ "stinking-cloud": {
+  "d": [
+   "Você cria uma Esfera de 6 metros de raio de gás amarelo e nauseante centrada num ponto dentro do alcance. A nuvem tem Escuridão Densa. Ela permanece no ar pela duração ou até um vento forte (como o criado por Lufada de Vento) dispersá-la.",
+   "Cada criatura que começa o turno na Esfera deve passar num teste de resistência de Constituição ou fica com a condição Envenenado até o fim do turno atual. Enquanto estiver Envenenada assim, a criatura não pode realizar uma ação nem uma Ação Bônus."
+  ],
+  "m": "Um ovo podre."
+ },
+ "stone-shape": {
+  "d": ["Você toca um objeto de pedra de tamanho Médio ou menor, ou uma seção de pedra de no máximo 1,5 metro em qualquer dimensão, e dá a ele a forma que quiser. Por exemplo, pode moldar uma pedra grande numa arma, numa estátua ou num cofre, ou fazer uma pequena passagem numa parede de 1,5 metro de espessura. Também pode moldar uma porta de pedra ou o batente dela para selá-la. O objeto criado pode ter até duas dobradiças e um trinco, mas detalhes mecânicos mais finos não são possíveis."],
+  "m": "Argila mole."
+ },
+ "stoneskin": {
+  "d": ["Até a magia terminar, uma criatura voluntária que você toca tem Resistência a dano de Concussão, Perfurante e Cortante."]
+ },
+ "storm-of-vengeance": {
+  "d": [
+   "Uma nuvem de tempestade revolta se forma pela duração, centrada num ponto dentro do alcance e se espalhando num raio de 90 metros. Cada criatura sob a nuvem quando ela aparece deve passar num teste de resistência de Constituição ou sofre 2d6 de dano Trovejante e fica com a condição Surdo pela duração.",
+   "No início de cada um dos seus turnos posteriores, a tempestade produz efeitos diferentes, como detalhado abaixo.",
+   "Turno 2. Cai uma chuva ácida. Cada criatura e objeto sob a nuvem sofre 4d6 de dano Ácido.",
+   "Turno 3. Você chama seis relâmpagos da nuvem para atingir seis criaturas ou objetos diferentes sob ela. Cada alvo faz um teste de resistência de Destreza, sofrendo 10d6 de dano Elétrico se falhar, ou metade se passar.",
+   "Turno 4. Chove granizo. Cada criatura sob a nuvem sofre 2d6 de dano de Concussão.",
+   "Turnos 5-10. Rajadas e chuva congelante castigam a área sob a nuvem. Cada criatura ali sofre 1d6 de dano de Frio. Até a magia terminar, a área é Terreno Difícil e tem Escuridão Densa, ataques à distância com armas são impossíveis ali, e um vento forte sopra pela área."
+  ]
+ }
+}

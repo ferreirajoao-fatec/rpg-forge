@@ -1,0 +1,79 @@
+{
+ "wall-of-ice": {
+  "n": "Muralha de Gelo",
+  "d": [
+   "Você cria uma muralha de gelo numa superfície sólida dentro do alcance. Pode dar a ela a forma de uma cúpula hemisférica ou de uma esfera com raio de até 3 metros, ou moldar uma superfície plana formada por dez painéis de 3 metros de lado. Cada painel precisa estar encostado em outro. Em qualquer forma, a muralha tem 30 centímetros de espessura e dura pela duração.",
+   "Se a muralha atravessar o espaço de uma criatura quando aparecer, a criatura na área é empurrada para um dos lados da muralha e deve fazer um teste de resistência de Destreza. Sofre 10d6 de dano de frio se falhar, ou metade se passar.",
+   "A muralha é um objeto que pode sofrer dano e ser rompido. Tem CA 12 e 30 pontos de vida por seção de 3 metros, e é vulnerável a dano de fogo. Reduzir uma seção de 3 metros a 0 pontos de vida a destrói e deixa uma camada de ar gélido no espaço que a muralha ocupava. Uma criatura que atravesse a camada de ar gélido pela primeira vez num turno deve fazer um teste de resistência de Constituição. Sofre 5d6 de dano de frio se falhar, ou metade se passar."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 7º nível ou superior, o dano que a muralha causa ao aparecer aumenta em 2d6, e o dano por atravessar a camada de ar gélido aumenta em 1d6, para cada nível de espaço acima do 6º."],
+  "m": "Um pedacinho de quartzo."
+ },
+ "wall-of-stone": {
+  "n": "Muralha de Pedra",
+  "d": [
+   "Uma muralha não mágica de pedra maciça surge num ponto à sua escolha dentro do alcance. A muralha tem 15 centímetros de espessura e é formada por dez painéis de 3 por 3 metros. Cada painel precisa estar encostado em pelo menos um outro. Em vez disso, você pode criar painéis de 3 por 6 metros com apenas 7,5 centímetros de espessura.",
+   "Se a muralha atravessar o espaço de uma criatura quando aparecer, a criatura é empurrada para um dos lados dela (à sua escolha). Se uma criatura fosse ficar cercada por todos os lados pela muralha (ou pela muralha e outra superfície sólida), ela pode fazer um teste de resistência de Destreza. Se passar, pode usar sua reação para se mover até seu deslocamento e não ficar mais fechada pela muralha.",
+   "A muralha pode ter o formato que você quiser, mas não pode ocupar o mesmo espaço que uma criatura ou um objeto. Ela não precisa ser vertical nem se apoiar numa fundação firme. Precisa, porém, se unir a pedra já existente e ser solidamente sustentada por ela. Assim, você pode usar esta magia para fazer uma ponte sobre um abismo ou criar uma rampa.",
+   "Se criar um vão com mais de 6 metros de comprimento, precisa reduzir pela metade o tamanho de cada painel para criar apoios. Pode moldar a muralha de forma grosseira para criar ameias, parapeitos e assim por diante.",
+   "A muralha é um objeto de pedra que pode sofrer dano e ser rompido. Cada painel tem CA 15 e 30 pontos de vida para cada 2,5 centímetros de espessura. Reduzir um painel a 0 pontos de vida o destrói e pode fazer os painéis ligados a ele desabarem, a critério do Mestre.",
+   "Se você mantiver a concentração nesta magia por toda a duração, a muralha se torna permanente e não pode ser dissipada. Caso contrário, desaparece quando a magia termina."
+  ],
+  "m": "Um pequeno bloco de granito."
+ },
+ "wall-of-thorns": {
+  "n": "Muralha de Espinhos",
+  "d": [
+   "Você cria uma muralha de mato resistente, flexível e emaranhado, eriçada de espinhos afiados como agulhas. A muralha aparece dentro do alcance numa superfície sólida e dura pela duração. Você escolhe fazê-la com até 18 metros de comprimento, 3 metros de altura e 1,5 metro de espessura, ou um círculo de 6 metros de diâmetro com até 6 metros de altura e 1,5 metro de espessura. A muralha bloqueia a linha de visão.",
+   "Quando a muralha aparece, cada criatura na área dela deve fazer um teste de resistência de Destreza. Sofre 7d8 de dano perfurante se falhar, ou metade se passar.",
+   "Uma criatura pode atravessar a muralha, ainda que de forma lenta e dolorosa. Para cada 1 metro que avançar pela muralha, precisa gastar 4 metros de movimento. Além disso, na primeira vez que uma criatura entra na muralha num turno ou termina o turno ali, deve fazer um teste de resistência de Destreza. Sofre 7d8 de dano cortante se falhar, ou metade se passar."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 7º nível ou superior, os dois tipos de dano aumentam em 1d8 para cada nível de espaço acima do 6º."],
+  "m": "Um punhado de espinhos."
+ },
+ "warding-bond": {
+  "n": "Vínculo Protetor",
+  "d": [
+   "Esta magia protege uma criatura voluntária que você toca e cria uma ligação mística entre você e o alvo até a magia terminar. Enquanto o alvo estiver a até 18 metros de você, ganha +1 de bônus na CA e em testes de resistência e tem resistência a todo dano. Além disso, cada vez que ele sofre dano, você sofre a mesma quantidade.",
+   "A magia termina se você cair a 0 pontos de vida ou se você e o alvo ficarem separados por mais de 18 metros.",
+   "Também termina se a magia for lançada de novo em qualquer uma das criaturas ligadas. Você também pode dispensar a magia com uma ação."
+  ],
+  "m": "Um par de anéis de platina no valor de pelo menos 50 po cada, que você e o alvo precisam usar pela duração."
+ },
+ "water-breathing": {
+  "n": "Respirar na Água",
+  "d": ["Esta magia concede a até dez criaturas voluntárias que você consiga ver dentro do alcance a capacidade de respirar debaixo d'água até a magia terminar. As criaturas afetadas também mantêm a respiração normal."],
+  "m": "Um pedacinho de junco ou de palha."
+ },
+ "water-walk": {
+  "n": "Andar na Água",
+  "d": [
+   "Esta magia concede a capacidade de se mover sobre qualquer superfície líquida (como água, ácido, lama, neve, areia movediça ou lava) como se fosse chão sólido e inofensivo (criaturas que atravessam lava derretida ainda podem sofrer dano pelo calor). Até dez criaturas voluntárias que você consiga ver dentro do alcance ganham essa capacidade pela duração.",
+   "Se o alvo for uma criatura submersa num líquido, a magia a leva até a superfície a uma velocidade de 18 metros por rodada."
+  ],
+  "m": "Um pedaço de cortiça."
+ },
+ "web": {
+  "n": "Teia",
+  "d": [
+   "Você conjura uma massa de teias grossas e pegajosas num ponto à sua escolha dentro do alcance. As teias preenchem um cubo de 6 metros a partir desse ponto pela duração. As teias são terreno difícil e deixam a área com escuridão leve.",
+   "Se as teias não estiverem ancoradas entre duas massas sólidas (como paredes ou árvores) ou estendidas sobre um piso, uma parede ou um teto, a teia conjurada desaba sobre si mesma, e a magia termina no início do seu próximo turno. Teias estendidas sobre uma superfície plana têm 1,5 metro de profundidade.",
+   "Cada criatura que comece o turno nas teias ou entre nelas durante o turno deve fazer um teste de resistência de Destreza. Se falhar, fica impedida enquanto permanecer nas teias ou até se libertar.",
+   "Uma criatura impedida pelas teias pode usar sua ação para fazer um teste de Força contra a CD de resistência das suas magias. Se passar, deixa de estar impedida.",
+   "As teias são inflamáveis. Qualquer cubo de 1,5 metro de teia exposto ao fogo queima em 1 rodada, causando 2d4 de dano de fogo a qualquer criatura que comece o turno no fogo."
+  ],
+  "m": "Um pedacinho de teia de aranha."
+ },
+ "weird": {
+  "n": "Estranheza",
+  "d": ["Usando os medos mais profundos de um grupo de criaturas, você cria criaturas ilusórias na mente delas, visíveis apenas para elas. Cada criatura numa esfera de 9 metros de raio centrada num ponto à sua escolha dentro do alcance deve fazer um teste de resistência de Sabedoria. Se falhar, fica amedrontada pela duração. A ilusão evoca os medos mais profundos da criatura, manifestando seus piores pesadelos como uma ameaça implacável. No início de cada turno da criatura amedrontada, ela deve passar num teste de resistência de Sabedoria ou sofrer 4d10 de dano psíquico. Se passar, a magia termina para ela."]
+ },
+ "wind-walk": {
+  "n": "Caminhar no Vento",
+  "d": [
+   "Você e até dez criaturas voluntárias que consiga ver dentro do alcance assumem uma forma gasosa pela duração, parecendo fiapos de nuvem. Nessa forma de nuvem, a criatura tem deslocamento de voo de 90 metros e resistência a dano de armas não mágicas. As únicas ações que uma criatura pode realizar nessa forma são a ação Disparada ou voltar à forma normal. Voltar leva 1 minuto, durante o qual a criatura fica incapacitada e não pode se mover. Até a magia terminar, a criatura pode voltar à forma de nuvem, o que também exige a transformação de 1 minuto.",
+   "Se uma criatura estiver na forma de nuvem e voando quando o efeito terminar, ela desce 18 metros por rodada durante 1 minuto até pousar, o que faz em segurança. Se não conseguir pousar depois de 1 minuto, cai a distância restante."
+  ],
+  "m": "Fogo e água benta."
+ }
+}

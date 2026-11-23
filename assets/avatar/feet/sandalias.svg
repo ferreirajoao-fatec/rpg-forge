@@ -1,8 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g stroke="#{line}" stroke-width="2.5" stroke-linejoin="round">
+  <defs>
+    <filter id="f-primary" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{primary-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="soft2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.5"/></filter>
+  </defs>
+  <g stroke-linejoin="round" stroke-linecap="round">
     <g data-anchor="legs">
-      <path fill="#{primary-dark}" d="M198 740 L254 740 L254 748 L198 748 Z M314 740 L258 740 L258 748 L314 748 Z"/>
-      <path fill="none" stroke="#{primary}" stroke-width="5" d="M206 730 L250 718 M206 718 L248 730 M212 700 L246 700 M306 730 L262 718 M306 718 L264 730 M300 700 L266 700"/>
+      <g id="sandalL">
+        <path fill="#{primary-dark}" stroke="#{primary-deep}" stroke-width="0.8" d="M199 744 C198 749 203 751 210 751 L242 751 C249 751 252 748 250 744 C240 746.6 210 746.6 199 744 Z"/>
+        <path fill="none" stroke="#{primary}" stroke-width="3" d="M204.6 733 C214 729 234 729 245.4 733 M216.4 715 C224 721 234 720 240.6 713 M215.6 702 C224 707 234 707 240.6 701"/>
+        <path fill="none" stroke="#{primary-deep}" stroke-width="0.6" opacity="0.7" d="M204.6 731.4 C214 727.4 234 727.4 245.4 731.4 M216.4 713.4 C224 719.4 234 718.4 240.6 711.4 M215.6 700.4 C224 705.4 234 705.4 240.6 699.4"/>
+        <path fill="none" stroke="#{primary}" stroke-width="2.2" d="M209 690 L241 672 M209 672 L241 654 M241 690 L209 672 M241 672 L209 654 M209 654 L241 640 M241 654 L209 640"/>
+        <path fill="none" stroke="#{primary-deep}" stroke-width="0.5" opacity="0.6" d="M209 689 L241 671 M209 671 L241 653 M209 653 L241 639"/>
+      </g>
+      <use href="#sandalL" transform="matrix(-1 0 0 1 512 0)"/>
     </g>
   </g>
 </svg>

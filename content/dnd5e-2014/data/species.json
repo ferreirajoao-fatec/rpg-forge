@@ -1,0 +1,535 @@
+[
+ {
+  "id": "species:dwarf",
+  "kind": "species",
+  "name": "Anão",
+  "summary": "Médio · deslocamento 7,5 m · +2 Constituição. Visão no Escuro, Resiliência Anã, Especialização em Pedra, Treinamento Anão em Combate, Proficiência com Ferramentas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Races"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "size": "Médio",
+   "speed": 7.5,
+   "abilityBonuses": {
+    "con": 2
+   },
+   "skills": [],
+   "proficiencies": [],
+   "languages": "Você pode falar, ler e escrever Comum e Anão. O idioma Anão é repleto de consoantes duras e sons guturais, e essa característica influencia, como um sotaque, qualquer outro idioma que o anão falar.",
+   "age": "Anões tornam-se maduros na mesma proporção que os humanos, mas são considerados jovens até atingirem a idade de 50 anos. Em média, eles vivem 350 anos.",
+   "alignment": "A maioria dos anões é leal, pois acreditam firmemente nos benefícios de uma sociedade bem organizada. Eles tendem para o bem, com um forte senso de honestidade e uma crença de que todos merecem compartilhar os benefícios de uma ordem social justa.",
+   "sizeText": "Anões estão entre 1,20 e 1,50 metro de altura e pesam cerca de 75 kg. Seu tamanho é Médio.",
+   "traits": [
+    {
+     "id": "darkvision",
+     "name": "Visão no Escuro",
+     "summary": "Você enxerga melhor no escuro e na penumbra. Até 18 metros de você, enxerga na penumbra como se fosse luz plena, e na escuridão como se fosse penumbra. Na escuridão você não distingue cores, só tons de cinza.",
+     "text": [
+      "Você enxerga melhor no escuro e na penumbra. Até 18 metros de você, enxerga na penumbra como se fosse luz plena, e na escuridão como se fosse penumbra. Na escuridão você não distingue cores, só tons de cinza."
+     ]
+    },
+    {
+     "id": "dwarven-resilience",
+     "name": "Resiliência Anã",
+     "summary": "Você tem vantagem em testes de resistência contra veneno e resistência a dano de veneno.",
+     "text": [
+      "Você tem vantagem em testes de resistência contra veneno e resistência a dano de veneno."
+     ]
+    },
+    {
+     "id": "stonecunning",
+     "name": "Especialização em Pedra",
+     "summary": "Sempre que fizer um teste de Inteligência (História) relacionado à origem de um trabalho em pedra, você é considerado proficiente em História e soma o dobro do seu bônus de proficiência ao teste, em vez do bônus normal.",
+     "text": [
+      "Sempre que fizer um teste de Inteligência (História) relacionado à origem de um trabalho em pedra, você é considerado proficiente em História e soma o dobro do seu bônus de proficiência ao teste, em vez do bônus normal."
+     ]
+    },
+    {
+     "id": "dwarven-combat-training",
+     "name": "Treinamento Anão em Combate",
+     "summary": "Você tem proficiência com machado de batalha, machadinha, martelo leve e martelo de guerra.",
+     "text": [
+      "Você tem proficiência com machado de batalha, machadinha, martelo leve e martelo de guerra."
+     ]
+    },
+    {
+     "id": "tool-proficiency",
+     "name": "Proficiência com Ferramentas",
+     "summary": "Você ganha proficiência com uma ferramenta de artesão à sua escolha: ferramentas de ferreiro, suprimentos de cervejeiro ou ferramentas de pedreiro.",
+     "text": [
+      "Você ganha proficiência com uma ferramenta de artesão à sua escolha: ferramentas de ferreiro, suprimentos de cervejeiro ou ferramentas de pedreiro."
+     ]
+    }
+   ],
+   "subspecies": [
+    "subspecies:hill-dwarf"
+   ],
+   "darkvision": true
+  }
+ },
+ {
+  "id": "species:elf",
+  "kind": "species",
+  "name": "Elfo",
+  "summary": "Médio · deslocamento 9 m · +2 Destreza. Visão no Escuro, Ancestralidade Feérica, Transe, Sentidos Aguçados.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Races"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "size": "Médio",
+   "speed": 9,
+   "abilityBonuses": {
+    "dex": 2
+   },
+   "skills": [
+    "skill:perception"
+   ],
+   "proficiencies": [],
+   "languages": "Você pode falar, ler e escrever Comum e Élfico. O Élfico é um idioma fluido, com entonações sutis e gramática complexa. A literatura élfica é rica e diversa, e suas canções e poemas são famosos entre outras raças. Muitos bardos aprendem essa língua para que possam adicionar canções élficas ao seu repertório.",
+   "age": "Embora os elfos atinjam a maturidade física com praticamente a mesma idade dos humanos, a compreensão élfica da idade adulta vai além da maturidade física, abrangendo sua experiência sobre o mundo. Um elfo tipicamente assume a idade adulta e um nome adulto com cerca de 100 anos de idade e pode viver 750 anos.",
+   "alignment": "Elfos amam a liberdade, a diversidade e a expressão pessoal, então eles inclinam-se forte e suavemente para aspectos do caos. Eles valorizam e protegem a liberdade dos outros como a sua própria, e são geralmente mais bondosos que o contrário.",
+   "sizeText": "Elfos medem entre 1,50 a 1,80 metro de altura e possuem constituição delgada. Seu tamanho é Médio.",
+   "traits": [
+    {
+     "id": "darkvision",
+     "name": "Visão no Escuro",
+     "summary": "Você enxerga melhor no escuro e na penumbra. Até 18 metros de você, enxerga na penumbra como se fosse luz plena, e na escuridão como se fosse penumbra. Na escuridão você não distingue cores, só tons de cinza.",
+     "text": [
+      "Você enxerga melhor no escuro e na penumbra. Até 18 metros de você, enxerga na penumbra como se fosse luz plena, e na escuridão como se fosse penumbra. Na escuridão você não distingue cores, só tons de cinza."
+     ]
+    },
+    {
+     "id": "fey-ancestry",
+     "name": "Ancestralidade Feérica",
+     "summary": "Você tem vantagem em testes de resistência contra ser enfeitiçado, e magia não pode fazer você dormir.",
+     "text": [
+      "Você tem vantagem em testes de resistência contra ser enfeitiçado, e magia não pode fazer você dormir."
+     ]
+    },
+    {
+     "id": "trance",
+     "name": "Transe",
+     "summary": "Elfos não precisam dormir. Em vez disso, meditam profundamente, semiconscientes, por 4 horas por dia. (Em Comum, essa meditação se chama \"transe\".) Enquanto medita, você pode sonhar de certa forma; esses sonhos são, na verdade, exercícios…",
+     "text": [
+      "Elfos não precisam dormir. Em vez disso, meditam profundamente, semiconscientes, por 4 horas por dia. (Em Comum, essa meditação se chama \"transe\".) Enquanto medita, você pode sonhar de certa forma; esses sonhos são, na verdade, exercícios mentais que se tornaram reflexos depois de anos de prática. Depois de descansar assim, você recebe o mesmo benefício que um humano recebe de 8 horas de sono."
+     ]
+    },
+    {
+     "id": "keen-senses",
+     "name": "Sentidos Aguçados",
+     "summary": "Você tem proficiência na perícia Percepção.",
+     "text": [
+      "Você tem proficiência na perícia Percepção."
+     ]
+    }
+   ],
+   "subspecies": [
+    "subspecies:high-elf"
+   ],
+   "darkvision": true
+  }
+ },
+ {
+  "id": "species:halfling",
+  "kind": "species",
+  "name": "Halfling",
+  "summary": "Pequeno · deslocamento 7,5 m · +2 Destreza. Corajoso, Agilidade Halfling, Sortudo.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Races"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "size": "Pequeno",
+   "speed": 7.5,
+   "abilityBonuses": {
+    "dex": 2
+   },
+   "skills": [],
+   "proficiencies": [],
+   "languages": "Você pode falar, ler e escrever Comum e Halfling. A linguagem Halfling não é secreta, mas os halflings são relutantes em compartilhá-la com os outros. Eles escrevem muito pouco, por isso eles não possuem uma literatura rica. No entanto, sua tradição oral é muito forte. Quase todos os halflings falam o idioma Comum para conversar com as pessoas das terras que habitam, ou através das quais eles estejam viajando.",
+   "age": "Um halfling atinge a idade adulta aos 20 anos e pode chegar a 150 anos.",
+   "alignment": "A maioria dos halflings é leal e boa. Via de regra, eles possuem um bom coração e são amáveis, odeiam ver o sofrimento dos outros e não toleram a opressão. Eles também são muito ordeiros e tradicionais, fortemente apegados à sua comunidade e ao conforto de suas antigas tradições.",
+   "sizeText": "Halflings medem cerca de 0,90 metro de altura e pesam aproximadamente 20 kg. Seu tamanho é Pequeno.",
+   "traits": [
+    {
+     "id": "brave",
+     "name": "Corajoso",
+     "summary": "Você tem vantagem em testes de resistência contra ficar amedrontado.",
+     "text": [
+      "Você tem vantagem em testes de resistência contra ficar amedrontado."
+     ]
+    },
+    {
+     "id": "halfling-nimbleness",
+     "name": "Agilidade Halfling",
+     "summary": "Você pode atravessar o espaço de qualquer criatura de tamanho maior que o seu.",
+     "text": [
+      "Você pode atravessar o espaço de qualquer criatura de tamanho maior que o seu."
+     ]
+    },
+    {
+     "id": "lucky",
+     "name": "Sortudo",
+     "summary": "Quando tirar 1 no d20 numa jogada de ataque, teste de habilidade ou teste de resistência, você pode rolar o dado de novo e deve usar o novo resultado.",
+     "text": [
+      "Quando tirar 1 no d20 numa jogada de ataque, teste de habilidade ou teste de resistência, você pode rolar o dado de novo e deve usar o novo resultado."
+     ]
+    }
+   ],
+   "subspecies": [
+    "subspecies:lightfoot-halfling"
+   ],
+   "darkvision": false
+  }
+ },
+ {
+  "id": "species:human",
+  "kind": "species",
+  "name": "Humano",
+  "summary": "Médio · deslocamento 9 m · +1 Força, +1 Destreza, +1 Constituição, +1 Inteligência, +1 Sabedoria, +1 Carisma. .",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Races"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "size": "Médio",
+   "speed": 9,
+   "abilityBonuses": {
+    "str": 1,
+    "dex": 1,
+    "con": 1,
+    "int": 1,
+    "wis": 1,
+    "cha": 1
+   },
+   "skills": [],
+   "proficiencies": [],
+   "languages": "Você pode falar, ler e escrever Comum e outro idioma adicional, à sua escolha. Os humanos normalmente aprendem os idiomas dos povos que convivem, incluindo dialetos obscuros. Eles gostam de rechear seu discurso com palavras emprestadas de outras línguas: xingamentos orcs, expressões musicais élficas, frases militares anãs e outros.",
+   "age": "Os humanos chegam à idade adulta no final da adolescência e vivem menos de um século.",
+   "alignment": "Os humanos não possuem inclinação a nenhuma tendência em especial. Os melhores e os piores são encontrados entre eles.",
+   "sizeText": "Os humanos variam muito em altura e peso, podem ter quase 1,50 metro ou mais de 1,80 metro. Independentemente da sua posição entre esses valores, o seu tamanho é Médio.",
+   "traits": [],
+   "subspecies": [],
+   "darkvision": false
+  }
+ },
+ {
+  "id": "species:dragonborn",
+  "kind": "species",
+  "name": "Draconato",
+  "summary": "Médio · deslocamento 9 m · +2 Força, +1 Carisma. Ancestralidade Dracônica, Arma de Sopro, Resistência a Dano.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Races"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "size": "Médio",
+   "speed": 9,
+   "abilityBonuses": {
+    "str": 2,
+    "cha": 1
+   },
+   "skills": [],
+   "proficiencies": [],
+   "languages": "Você pode falar, ler e escrever Comum e Dracônico. O idioma Dracônico é conhecido por ser uma das mais antigas línguas e ainda é usado no estudo de magia. A linguagem soa áspera para a maioria das criaturas, incluindo várias consoantes e silabas firmes.",
+   "age": "Draconatos jovens crescem rapidamente. Eles caminham horas após nascerem, adquirindo o tamanho e desenvolvimento semelhante a de uma criança humana de 10 anos com 3 anos de idade e alcançam a maturidade aos 15. Eles costumam viver até os 80.",
+   "alignment": "Os draconatos tendem aos extremos, realizando uma escolha consciente de um lado ou do outro da guerra cósmica entre o bem e o mal (representada por Bahamut e Tiamat, respectivamente). A maioria dos draconatos é boa, mas os que vão para o lado de Tiamat podem se tornar vilões terríveis.",
+   "sizeText": "Os draconatos são mais altos e mais pesados que os humanos, geralmente possuindo mais de 1,80 metro e normalmente pesando mais de 125 kg. Seu tamanho é Médio.",
+   "traits": [
+    {
+     "id": "draconic-ancestry",
+     "name": "Ancestralidade Dracônica",
+     "summary": "Você descende de dragões. Escolha um tipo de dragão na tabela de Ancestralidade Dracônica. Sua arma de sopro e sua resistência a dano são determinadas pelo tipo de dragão, como mostra a tabela.",
+     "text": [
+      "Você descende de dragões. Escolha um tipo de dragão na tabela de Ancestralidade Dracônica. Sua arma de sopro e sua resistência a dano são determinadas pelo tipo de dragão, como mostra a tabela."
+     ]
+    },
+    {
+     "id": "breath-weapon",
+     "name": "Arma de Sopro",
+     "summary": "Você pode usar sua ação para exalar energia destrutiva. Sua ancestralidade dracônica determina o tamanho, a forma e o tipo de dano da exalação.",
+     "text": [
+      "Você pode usar sua ação para exalar energia destrutiva. Sua ancestralidade dracônica determina o tamanho, a forma e o tipo de dano da exalação.",
+      "Quando você usa a arma de sopro, cada criatura na área da exalação deve fazer um teste de resistência, cujo tipo é determinado pela sua ancestralidade dracônica. A CD desse teste é 8 + seu modificador de Constituição + seu bônus de proficiência. A criatura sofre 2d6 de dano se falhar, ou metade disso se passar. O dano aumenta para 3d6 no 6º nível, 4d6 no 11º e 5d6 no 16º.",
+      "Depois de usar a arma de sopro, você só pode usá-la de novo após terminar um descanso curto ou longo."
+     ]
+    },
+    {
+     "id": "damage-resistance",
+     "name": "Resistência a Dano",
+     "summary": "Você tem resistência ao tipo de dano associado à sua ancestralidade dracônica.",
+     "text": [
+      "Você tem resistência ao tipo de dano associado à sua ancestralidade dracônica."
+     ]
+    }
+   ],
+   "subspecies": [],
+   "darkvision": false
+  }
+ },
+ {
+  "id": "species:gnome",
+  "kind": "species",
+  "name": "Gnomo",
+  "summary": "Pequeno · deslocamento 7,5 m · +2 Inteligência. Visão no Escuro, Esperteza Gnômica.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Races"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "size": "Pequeno",
+   "speed": 7.5,
+   "abilityBonuses": {
+    "int": 2
+   },
+   "skills": [],
+   "proficiencies": [],
+   "languages": "Você sabe falar, ler e escrever Comum e Gnômico. A linguagem Gnômica, que usa o alfabeto Anão, é conhecida por suas técnicas de dissertação e por seus catálogos de conhecimento sobre o mundo natural.",
+   "age": "Gnomos amadurecem a mesma proporção que os humanos e, a maioria, atinge a idade adulta por volta dos 40 anos. Eles podem viver entre 350 e 500 anos.",
+   "alignment": "Os gnomos geralmente são bons. Os que tendem para a ordem são sábios, engenheiros, pesquisadores, escolásticos, investigadores ou inventores. Os que tendem ao caos são menestréis, engenhoqueiros, andarilhos ou joalheiros caprichosos. Gnomos são bons de coração e, até mesmo os trapaceiros entre eles tendem a ser mais brincalhões que perversos.",
+   "sizeText": "Os gnomos tem entre 0,90 e 1,20 metro e seu peso médio é de 20 kg. Seu tamanho é Pequeno.",
+   "traits": [
+    {
+     "id": "darkvision",
+     "name": "Visão no Escuro",
+     "summary": "Você enxerga melhor no escuro e na penumbra. Até 18 metros de você, enxerga na penumbra como se fosse luz plena, e na escuridão como se fosse penumbra. Na escuridão você não distingue cores, só tons de cinza.",
+     "text": [
+      "Você enxerga melhor no escuro e na penumbra. Até 18 metros de você, enxerga na penumbra como se fosse luz plena, e na escuridão como se fosse penumbra. Na escuridão você não distingue cores, só tons de cinza."
+     ]
+    },
+    {
+     "id": "gnome-cunning",
+     "name": "Esperteza Gnômica",
+     "summary": "Você tem vantagem em todos os testes de resistência de Inteligência, Sabedoria e Carisma contra magia.",
+     "text": [
+      "Você tem vantagem em todos os testes de resistência de Inteligência, Sabedoria e Carisma contra magia."
+     ]
+    }
+   ],
+   "subspecies": [
+    "subspecies:rock-gnome"
+   ],
+   "darkvision": true
+  }
+ },
+ {
+  "id": "species:half-elf",
+  "kind": "species",
+  "name": "Meio-Elfo",
+  "summary": "Médio · deslocamento 9 m · +2 Carisma · +1 em 2 atributos à escolha. Visão no Escuro, Ancestralidade Feérica, Versatilidade em Perícia.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Races"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "size": "Médio",
+   "speed": 9,
+   "abilityBonuses": {
+    "cha": 2
+   },
+   "flexibleBonus": {
+    "count": 2,
+    "amount": 1,
+    "exclude": [
+     "cha"
+    ]
+   },
+   "skills": [],
+   "flexibleSkills": 2,
+   "proficiencies": [],
+   "languages": "Você sabe falar, ler e escrever Comum, Élfico e um idioma adicional, à sua escolha.",
+   "age": "Meio-elfos atingem a maturidade ao mesmo tempo que os humanos atingem a idade adulta, por volta dos 20 anos. Eles vivem muito mais que os humanos, no entanto, raramente ultrapassam os 180 anos.",
+   "alignment": "Meio-elfos compartilham a veia caótica da sua herança élfica. Eles valorizam tanto a sua liberdade quanto sua expressão criativa, não demonstrando qualquer apresso por líderes ou seguidores. Eles se irritam com regras, ressentindo com exigências de outros e, as vezes, se provam incertos, ou pelo menos, imprevisíveis.",
+   "sizeText": "Meio-elfos tem aproximadamente a mesma altura dos humanos, variando entre 1,50 metro e 1,80 metro. Seu tamanho é Médio.",
+   "traits": [
+    {
+     "id": "darkvision",
+     "name": "Visão no Escuro",
+     "summary": "Você enxerga melhor no escuro e na penumbra. Até 18 metros de você, enxerga na penumbra como se fosse luz plena, e na escuridão como se fosse penumbra. Na escuridão você não distingue cores, só tons de cinza.",
+     "text": [
+      "Você enxerga melhor no escuro e na penumbra. Até 18 metros de você, enxerga na penumbra como se fosse luz plena, e na escuridão como se fosse penumbra. Na escuridão você não distingue cores, só tons de cinza."
+     ]
+    },
+    {
+     "id": "fey-ancestry",
+     "name": "Ancestralidade Feérica",
+     "summary": "Você tem vantagem em testes de resistência contra ser enfeitiçado, e magia não pode fazer você dormir.",
+     "text": [
+      "Você tem vantagem em testes de resistência contra ser enfeitiçado, e magia não pode fazer você dormir."
+     ]
+    },
+    {
+     "id": "skill-versatility",
+     "name": "Versatilidade em Perícia",
+     "summary": "Você ganha proficiência em duas perícias à sua escolha.",
+     "text": [
+      "Você ganha proficiência em duas perícias à sua escolha."
+     ]
+    }
+   ],
+   "subspecies": [],
+   "darkvision": true
+  }
+ },
+ {
+  "id": "species:half-orc",
+  "kind": "species",
+  "name": "Meio-Orc",
+  "summary": "Médio · deslocamento 9 m · +2 Força, +1 Constituição. Visão no Escuro, Ataques Selvagens, Resistência Implacável, Ameaçador.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Races"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "size": "Médio",
+   "speed": 9,
+   "abilityBonuses": {
+    "str": 2,
+    "con": 1
+   },
+   "skills": [
+    "skill:intimidation"
+   ],
+   "proficiencies": [],
+   "languages": "Você sabe falar, ler e escrever Comum, Orc. O Orc é um idioma ríspido, possuindo uma linguagem de consoantes duras. Ele não possui alfabeto próprio, mas usa o alfabeto Anão.",
+   "age": "Os meio-orcs amadurecem um pouco antes dos humanos, atingindo a idade adulta aos 14 anos. Eles envelhecem notavelmente mais rápido e, raramente, vivem mais de 75 anos.",
+   "alignment": "Meio-orcs tem uma tendência inata ao caos devido aos seus parentes orcs e não são fortemente inclinados ao bem. Meio-orcs que cresceram entre orcs e desejam viver e estão dispostos a passar sua vida entre eles, tendem a ser malignos.",
+   "sizeText": "Meio-orcs são de certa forma maiores e mais largos que os humanos, medindo entre 1,80 metro e 2,10 metros. Seu tamanho é Médio.",
+   "traits": [
+    {
+     "id": "darkvision",
+     "name": "Visão no Escuro",
+     "summary": "Você enxerga melhor no escuro e na penumbra. Até 18 metros de você, enxerga na penumbra como se fosse luz plena, e na escuridão como se fosse penumbra. Na escuridão você não distingue cores, só tons de cinza.",
+     "text": [
+      "Você enxerga melhor no escuro e na penumbra. Até 18 metros de você, enxerga na penumbra como se fosse luz plena, e na escuridão como se fosse penumbra. Na escuridão você não distingue cores, só tons de cinza."
+     ]
+    },
+    {
+     "id": "savage-attacks",
+     "name": "Ataques Selvagens",
+     "summary": "Quando conseguir um acerto crítico com um ataque com arma corpo a corpo, você pode rolar mais uma vez um dos dados de dano da arma e somá-lo ao dano extra do crítico.",
+     "text": [
+      "Quando conseguir um acerto crítico com um ataque com arma corpo a corpo, você pode rolar mais uma vez um dos dados de dano da arma e somá-lo ao dano extra do crítico."
+     ]
+    },
+    {
+     "id": "relentless-endurance",
+     "name": "Resistência Implacável",
+     "summary": "Quando é reduzido a 0 pontos de vida mas não morre na hora, você pode ficar com 1 ponto de vida em vez disso. Você só pode usar esta característica de novo depois de terminar um descanso longo.",
+     "text": [
+      "Quando é reduzido a 0 pontos de vida mas não morre na hora, você pode ficar com 1 ponto de vida em vez disso. Você só pode usar esta característica de novo depois de terminar um descanso longo."
+     ]
+    },
+    {
+     "id": "menacing",
+     "name": "Ameaçador",
+     "summary": "Você ganha proficiência na perícia Intimidação.",
+     "text": [
+      "Você ganha proficiência na perícia Intimidação."
+     ]
+    }
+   ],
+   "subspecies": [],
+   "darkvision": true
+  }
+ },
+ {
+  "id": "species:tiefling",
+  "kind": "species",
+  "name": "Tiefling",
+  "summary": "Médio · deslocamento 9 m · +1 Inteligência, +2 Carisma. Visão no Escuro, Resistência Infernal, Legado Infernal.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Races"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "size": "Médio",
+   "speed": 9,
+   "abilityBonuses": {
+    "int": 1,
+    "cha": 2
+   },
+   "skills": [],
+   "proficiencies": [],
+   "languages": "Você sabe falar, ler e escrever Comum e Infernal.",
+   "age": "Os tieflings amadurecem ao mesmo tempo que os humanos, mas vivem alguns anos a mais.",
+   "alignment": "Tieflings não possuem uma tendência inata ao mal, mas muitos acabam por abraçá-lo. Maligno ou não, uma natureza independente inclina a maioria dos tieflings ao alinhamento caótico.",
+   "sizeText": "Os tieflings possuem o mesmo tamanho e compleição dos humanos. Seu tamanho é Médio.",
+   "traits": [
+    {
+     "id": "darkvision",
+     "name": "Visão no Escuro",
+     "summary": "Você enxerga melhor no escuro e na penumbra. Até 18 metros de você, enxerga na penumbra como se fosse luz plena, e na escuridão como se fosse penumbra. Na escuridão você não distingue cores, só tons de cinza.",
+     "text": [
+      "Você enxerga melhor no escuro e na penumbra. Até 18 metros de você, enxerga na penumbra como se fosse luz plena, e na escuridão como se fosse penumbra. Na escuridão você não distingue cores, só tons de cinza."
+     ]
+    },
+    {
+     "id": "hellish-resistance",
+     "name": "Resistência Infernal",
+     "summary": "Você tem resistência a dano de fogo.",
+     "text": [
+      "Você tem resistência a dano de fogo."
+     ]
+    },
+    {
+     "id": "infernal-legacy",
+     "name": "Legado Infernal",
+     "summary": "Você conhece o truque taumaturgia. Ao chegar ao 3º nível, pode lançar a magia repreensão infernal como magia de 2º nível uma vez com este traço, recuperando essa capacidade ao terminar um descanso longo. Ao chegar ao 5º nível, pode lançar…",
+     "text": [
+      "Você conhece o truque taumaturgia. Ao chegar ao 3º nível, pode lançar a magia repreensão infernal como magia de 2º nível uma vez com este traço, recuperando essa capacidade ao terminar um descanso longo. Ao chegar ao 5º nível, pode lançar a magia escuridão uma vez com este traço, recuperando essa capacidade ao terminar um descanso longo. Carisma é sua habilidade de conjuração para essas magias."
+     ]
+    }
+   ],
+   "subspecies": [],
+   "darkvision": true
+  }
+ }
+]

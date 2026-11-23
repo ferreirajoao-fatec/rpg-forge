@@ -1,7 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round" fill="#{skin}">
-    <path d="M200 160 C176 152 140 138 112 116 C124 150 146 182 172 198 C184 206 194 206 200 200 Z"/>
-    <path d="M312 160 C336 152 372 138 400 116 C388 150 366 182 340 198 C328 206 318 206 312 200 Z"/>
-    <path fill="#{skin-blush}" stroke="none" opacity="0.5" d="M190 166 C170 160 146 148 128 134 C140 156 158 176 178 188 Z M322 166 C342 160 366 148 384 134 C372 156 354 176 334 188 Z"/>
+  <defs>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.8"/></filter>
+    <clipPath id="clip"><path d="M222 108 C212 103 194 92 176 76 C180 92 190 112 200 124 C206 132 212 139 218 141 C220 141 221 140 222 139 Z"/></clipPath>
+  </defs>
+  <g id="earL" stroke="#{skin-deep}" stroke-width="1" stroke-linejoin="round" stroke-linecap="round">
+    <path fill="#{skin-dark}" d="M222 108 C212 103 194 92 176 76 C180 92 190 112 200 124 C206 132 212 139 218 141 C220 141 221 140 222 139 Z"/>
+    <g clip-path="url(#clip)" stroke="none">
+      <path fill="#{skin}" filter="url(#soft)" transform="translate(1.5 0.5) scale(0.985)" d="M222 108 C212 103 194 92 176 76 C180 92 190 112 200 124 C206 132 212 139 218 141 C220 141 221 140 222 139 Z"/>
+      <path fill="#{skin-blush}" opacity="0.25" filter="url(#soft)" d="M222 108 C212 103 194 92 176 76 C180 92 190 112 200 124 C206 132 212 139 218 141 C220 141 221 140 222 139 Z"/>
+    </g>
+    <path fill="none" d="M222 108 C212 103 194 92 176 76 C180 92 190 112 200 124 C206 132 212 139 218 141 C220 141 221 140 222 139 Z"/>
+    <path fill="none" stroke-width="0.8" opacity="0.6" d="M219 111 C210 106 196 96 184 85 C189 98 197 112 205 122 C209 127 212 131 215 133"/>
+    <path fill="none" stroke-width="0.7" opacity="0.5" d="M219 120 C216 121 215 125 217 128"/>
   </g>
+  <use href="#earL" transform="matrix(-1 0 0 1 512 0)"/>
 </svg>

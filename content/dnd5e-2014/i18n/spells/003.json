@@ -1,0 +1,67 @@
+{
+ "arcane-hand": {
+  "n": "Mão Arcana",
+  "d": [
+   "Você cria uma mão Grande de energia cintilante e translúcida num espaço desocupado que consiga ver dentro do alcance. A mão dura pela duração da magia e se move sob seu comando, imitando os movimentos da sua própria mão.",
+   "A mão é um objeto com CA 20 e pontos de vida iguais ao seu máximo de pontos de vida. Se cair a 0 pontos de vida, a magia termina. Tem Força 26 (+8) e Destreza 10 (+0). A mão não preenche o espaço que ocupa.",
+   "Quando lança a magia, e com uma ação bônus nos turnos seguintes, você pode mover a mão até 18 metros e então causar um dos efeitos a seguir com ela.",
+   "*Punho Cerrado.* A mão golpeia uma criatura ou um objeto a até 1,5 metro dela. Faça um ataque mágico corpo a corpo pela mão usando suas estatísticas de jogo. Se acertar, o alvo sofre 4d8 de dano de energia.",
+   "*Mão Vigorosa.* A mão tenta empurrar uma criatura a até 1,5 metro dela numa direção à sua escolha. Faça um teste com a Força da mão, resistido por um teste de Força (Atletismo) do alvo. Se o alvo for Médio ou menor, você tem vantagem no teste. Se vencer, a mão empurra o alvo até 1,5 metro mais um número de metros igual a 1,5 vez o seu modificador de habilidade de conjuração. A mão se move com o alvo para continuar a até 1,5 metro dele.",
+   "*Mão Agarradora.* A mão tenta agarrar uma criatura Enorme ou menor a até 1,5 metro dela. Você usa o valor de Força da mão para resolver a agarrada. Se o alvo for Médio ou menor, você tem vantagem no teste. Enquanto a mão estiver agarrando o alvo, você pode usar uma ação bônus para fazê-la esmagá-lo. Quando faz isso, o alvo sofre dano de concussão igual a 2d6 + seu modificador de habilidade de conjuração.",
+   "*Mão Interposta.* A mão se interpõe entre você e uma criatura à sua escolha até você dar outro comando a ela. A mão se move para ficar entre você e o alvo, dando-lhe meia cobertura contra ele. O alvo não pode atravessar o espaço da mão se seu valor de Força for igual ou menor que o da mão. Se for maior, o alvo pode avançar em sua direção pelo espaço da mão, mas esse espaço é terreno difícil para ele."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 6º nível ou superior, o dano da opção punho cerrado aumenta em 2d8 e o dano da mão agarradora aumenta em 2d6 para cada nível de espaço acima do 5º."],
+  "m": "Uma casca de ovo e uma luva de pele de cobra."
+ },
+ "arcane-lock": {
+  "n": "Tranca Arcana",
+  "d": [
+   "Você toca uma porta, janela, portão, baú ou outra entrada fechada, e ela fica trancada pela duração. Você e as criaturas que designar ao lançar a magia podem abrir o objeto normalmente. Também pode definir uma senha que, falada a até 1,5 metro do objeto, suprime esta magia por 1 minuto. Fora isso, ele fica intransponível até ser quebrado ou a magia ser dissipada ou suprimida. Lançar arrombar no objeto suprime tranca arcana por 10 minutos.",
+   "Enquanto estiver sob efeito desta magia, o objeto fica mais difícil de quebrar ou forçar; a CD para quebrá-lo ou abrir qualquer fechadura nele aumenta em 10."
+  ],
+  "m": "Pó de ouro no valor de pelo menos 25 po, que a magia consome."
+ },
+ "arcane-sword": {
+  "n": "Espada Arcana",
+  "d": [
+   "Você cria um plano de energia em forma de espada que paira dentro do alcance. Ele dura pela duração.",
+   "Quando a espada aparece, você faz um ataque mágico corpo a corpo contra um alvo à sua escolha a até 1,5 metro da espada. Se acertar, o alvo sofre 3d10 de dano de energia. Até a magia terminar, você pode usar uma ação bônus em cada um dos seus turnos para mover a espada até 6 metros para um ponto que consiga ver e repetir o ataque contra o mesmo alvo ou contra outro."
+  ],
+  "m": "Uma espada de platina em miniatura com punho e pomo de cobre e zinco, no valor de 250 po."
+ },
+ "arcanists-magic-aura": {
+  "n": "Aura Mágica do Arcanista",
+  "d": [
+   "Você coloca uma ilusão numa criatura ou num objeto que toca para que magias de adivinhação revelem informações falsas sobre ele. O alvo pode ser uma criatura voluntária ou um objeto que não esteja sendo carregado nem vestido por outra criatura.",
+   "Ao lançar a magia, escolha um ou ambos os efeitos a seguir. O efeito dura pela duração. Se você lançar esta magia na mesma criatura ou objeto todos os dias por 30 dias, colocando o mesmo efeito toda vez, a ilusão dura até ser dissipada.",
+   "*Aura Falsa.* Você muda a forma como o alvo aparece para magias e efeitos mágicos que detectam auras mágicas, como detectar magia. Pode fazer um objeto não mágico parecer mágico, um objeto mágico parecer não mágico, ou mudar a aura mágica do objeto para que pareça pertencer a uma escola de magia específica à sua escolha. Quando usa este efeito num objeto, pode tornar a falsa magia evidente para qualquer criatura que manuseie o item.",
+   "*Máscara.* Você muda a forma como o alvo aparece para magias e efeitos mágicos que detectam tipos de criatura, como o Sentido Divino de um paladino ou o gatilho de uma magia símbolo. Você escolhe um tipo de criatura, e outras magias e efeitos mágicos tratam o alvo como se fosse uma criatura desse tipo ou dessa tendência."
+  ],
+  "m": "Um pequeno quadrado de seda."
+ },
+ "astral-projection": {
+  "n": "Projeção Astral",
+  "d": [
+   "Você e até oito criaturas voluntárias dentro do alcance projetam seus corpos astrais no Plano Astral (a magia falha e a conjuração é desperdiçada se você já estiver nesse plano). O corpo material que você deixa para trás fica inconsciente e em estado de animação suspensa; não precisa de comida nem de ar e não envelhece.",
+   "Seu corpo astral se parece com sua forma mortal em quase tudo, reproduzindo suas estatísticas de jogo e seus pertences. A principal diferença é um cordão prateado que sai do meio das suas omoplatas e se arrasta atrás de você, ficando invisível depois de 30 centímetros. Esse cordão é sua ligação com o corpo material. Enquanto a ligação estiver intacta, você consegue encontrar o caminho de volta. Se o cordão for cortado (o que só acontece quando um efeito diz isso especificamente), sua alma e seu corpo se separam, e você morre instantaneamente.",
+   "Sua forma astral pode viajar livremente pelo Plano Astral e atravessar portais ali que levam a qualquer outro plano. Se você entrar num novo plano ou voltar ao plano em que estava ao lançar esta magia, seu corpo e seus pertences são transportados pelo cordão prateado, permitindo que você volte ao corpo ao entrar no novo plano. Sua forma astral é uma encarnação separada. Qualquer dano ou outro efeito aplicado a ela não afeta seu corpo físico nem persiste quando você volta a ele.",
+   "A magia termina para você e seus companheiros quando você usa sua ação para dispensá-la. Quando a magia termina, a criatura afetada volta ao corpo físico e desperta.",
+   "A magia também pode terminar antes para você ou um dos seus companheiros. Uma magia dissipar magia bem-sucedida usada contra um corpo astral ou físico encerra a magia para essa criatura. Se o corpo original de uma criatura ou sua forma astral cair a 0 pontos de vida, a magia termina para ela. Se a magia terminar e o cordão prateado estiver intacto, o cordão puxa a forma astral da criatura de volta ao corpo, encerrando a animação suspensa.",
+   "Se você voltar ao corpo antes da hora, seus companheiros continuam nas formas astrais e precisam encontrar sozinhos o caminho de volta aos corpos, geralmente caindo a 0 pontos de vida."
+  ],
+  "m": "Para cada criatura afetada por esta magia, você precisa fornecer um jacinto no valor de pelo menos 1.000 po e uma barra de prata ornamentada no valor de pelo menos 100 po, tudo consumido pela magia."
+ },
+ "augury": {
+  "n": "Augúrio",
+  "d": [
+   "Atirando varetas incrustadas de gemas, rolando ossos de dragão, dispondo cartas ornamentadas ou usando outra ferramenta de adivinhação, você recebe um presságio de uma entidade de outro mundo sobre os resultados de um curso de ação específico que pretende seguir nos próximos 30 minutos. O Mestre escolhe entre os presságios possíveis a seguir:",
+   "- Ventura, para resultados bons",
+   "- Desgraça, para resultados ruins",
+   "- Ventura e desgraça, para resultados bons e ruins",
+   "- Nada, para resultados que não são especialmente bons nem ruins",
+   "A magia não leva em conta nenhuma circunstância que possa mudar o resultado, como o lançamento de outras magias ou a perda ou o ganho de um companheiro.",
+   "Se você lançar a magia duas ou mais vezes antes de terminar seu próximo descanso longo, há uma chance cumulativa de 25% para cada conjuração depois da primeira de receber uma leitura aleatória. O Mestre faz essa rolagem em segredo."
+  ],
+  "m": "Varetas, ossos ou fichas semelhantes com marcas especiais, no valor de pelo menos 25 po."
+ }
+}

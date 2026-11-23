@@ -1,0 +1,108 @@
+{
+ "open-hand-quivering-palm": {
+  "d": [
+   "Você ganha a capacidade de criar vibrações letais no corpo de alguém. Quando atinge uma criatura com um Ataque Desarmado, pode gastar 4 Pontos de Foco para iniciar essas vibrações imperceptíveis, que duram um número de dias igual ao seu nível de Monge. As vibrações são inofensivas a não ser que você use uma ação para encerrá-las. Em vez disso, quando realiza a ação de Ataque no seu turno, pode abrir mão de um dos ataques para encerrar as vibrações. Para encerrá-las, você e o alvo precisam estar no mesmo plano de existência. Quando você as encerra, o alvo deve fazer um teste de resistência de Constituição, sofrendo 10d12 de dano de Energia se falhar, ou metade se passar.",
+   "Você só pode ter uma criatura sob o efeito desta característica por vez. Pode encerrar as vibrações sem causar dano (sem gastar ação)."
+  ]
+ },
+ "paladin-lay-on-hands": {
+  "n": "Cura pelas Mãos",
+  "d": [
+   "Seu toque abençoado pode curar ferimentos. Você tem uma reserva de poder curativo que se renova quando termina um Descanso Longo. Com ela, pode restaurar um total de Pontos de Vida igual a cinco vezes o seu nível de Paladino.",
+   "Com uma Ação Bônus, você pode tocar uma criatura (que pode ser você mesmo) e tirar poder da reserva para restaurar Pontos de Vida dela, até o máximo que ainda resta na reserva.",
+   "Você também pode gastar 5 Pontos de Vida da reserva para remover a condição Envenenado da criatura; esses pontos não restauram também Pontos de Vida dela."
+  ]
+ },
+ "paladin-spellcasting": {
+  "d": [
+   "Você aprendeu a lançar magias por meio de prece e meditação. Veja \"Magias\" para as regras de conjuração. As informações abaixo explicam como usar essas regras com as magias de Paladino, que aparecem na lista de magias de Paladino mais adiante na descrição da classe.",
+   "Espaços de Magia. A tabela de Características do Paladino mostra quantos espaços de magia você tem para lançar suas magias de nível 1 ou superior. Você recupera todos os espaços gastos quando termina um Descanso Longo.",
+   "Magias Preparadas de Nível 1+. Você prepara a lista de magias de nível 1 ou superior que pode lançar com esta característica. Para começar, escolha duas magias de Paladino de nível 1. Heroísmo e Destruição Ardente são as recomendadas.",
+   "O número de magias na sua lista aumenta conforme você ganha níveis de Paladino, como mostra a coluna Magias Preparadas da tabela de Características do Paladino. Sempre que esse número aumentar, escolha magias de Paladino adicionais até que o número de magias na sua lista seja igual ao da tabela. As magias escolhidas precisam ser de um nível para o qual você tenha espaços de magia. Por exemplo, se você for um Paladino de nível 5, sua lista de magias preparadas pode incluir seis magias de Paladino de nível 1 ou 2 em qualquer combinação.",
+   "Se outra característica de Paladino lhe der magias que você sempre tem preparadas, elas não contam no número de magias que você pode preparar com esta característica, mas fora isso contam como magias de Paladino para você.",
+   "Trocar suas Magias Preparadas. Sempre que terminar um Descanso Longo, você pode trocar uma magia da sua lista por outra magia de Paladino para a qual tenha espaços de magia.",
+   "Habilidade de Conjuração. Carisma é sua habilidade de conjuração para as magias de Paladino.",
+   "Foco de Conjuração. Você pode usar um Símbolo Sagrado como Foco de Conjuração para suas magias de Paladino."
+  ]
+ },
+ "paladin-weapon-mastery": {
+  "d": [
+   "Seu treinamento com armas permite usar as propriedades de maestria de dois tipos de armas à sua escolha com as quais tenha proficiência, como Espadas Longas e Azagaias.",
+   "Sempre que terminar um Descanso Longo, você pode mudar os tipos de armas escolhidos. Por exemplo, pode passar a usar as propriedades de maestria de Alabardas e Manguais."
+  ]
+ },
+ "paladin-fighting-style": {
+  "d": [
+   "Você ganha um talento de Estilo de Luta à sua escolha (veja \"Talentos\"). Em vez de escolher um desses talentos, pode escolher a opção abaixo.",
+   "Guerreiro Abençoado. Você aprende dois truques de Clérigo à sua escolha (veja a seção da classe Clérigo para a lista de magias de Clérigo). Orientação e Chama Sagrada são os recomendados. Os truques escolhidos contam como magias de Paladino para você, e Carisma é sua habilidade de conjuração para eles. Sempre que ganhar um nível de Paladino, pode trocar um desses truques por outro truque de Clérigo."
+  ]
+ },
+ "paladin-paladins-smite": {
+  "n": "Destruição do Paladino",
+  "d": ["Você sempre tem a magia Destruição Divina preparada. Além disso, pode lançá-la sem gastar espaço de magia, mas precisa terminar um Descanso Longo antes de lançá-la assim de novo."]
+ },
+ "paladin-channel-divinity": {
+  "d": [
+   "Você pode canalizar energia divina diretamente dos Planos Exteriores e usá-la para alimentar efeitos mágicos. Começa com um desses efeitos, Sentido Divino, descrito abaixo. Outras características de Paladino dão opções adicionais de efeito de Canalizar Divindade. Cada vez que usar Canalizar Divindade desta classe, você escolhe qual efeito desta classe criar.",
+   "Você pode usar Canalizar Divindade desta classe duas vezes. Recupera um uso gasto quando termina um Descanso Curto e todos os usos gastos quando termina um Descanso Longo. Ganha um uso adicional ao chegar ao nível de Paladino 11.",
+   "Se um efeito de Canalizar Divindade exigir teste de resistência, a CD é igual à CD de resistência de magia da característica Conjuração desta classe.",
+   "Sentido Divino. Com uma Ação Bônus, você pode abrir sua percepção para detectar Celestiais, Ínferos e Mortos-Vivos. Pelos próximos 10 minutos ou até ficar com a condição Incapacitado, sabe a localização de qualquer criatura desses tipos a até 18 metros de você e o tipo dela. No mesmo raio, também detecta a presença de qualquer lugar ou objeto consagrado ou profanado, como na magia Consagrar."
+  ]
+ },
+ "paladin-subclass": {
+  "n": "Subclasse de Paladino",
+  "d": ["Você ganha uma subclasse de Paladino à sua escolha. Uma subclasse é uma especialização que concede características em certos níveis de Paladino. Pelo resto da sua carreira, você ganha cada característica da subclasse de nível igual ou menor que seu nível de Paladino."]
+ },
+ "paladin-ability-score-improvement": {
+  "d": ["Você ganha o talento Aumento no Valor de Habilidade (veja \"Talentos\") ou outro talento à sua escolha para o qual se qualifique. Ganha esta característica de novo nos níveis de Paladino 8, 12 e 16."]
+ },
+ "paladin-faithful-steed": {
+  "n": "Montaria Fiel",
+  "d": [
+   "Você pode pedir a ajuda de uma montaria de outro mundo. Sempre tem a magia Encontrar Montaria preparada.",
+   "Também pode lançá-la uma vez sem gastar espaço de magia e recupera essa capacidade quando termina um Descanso Longo."
+  ]
+ },
+ "paladin-aura-of-protection": {
+  "d": [
+   "Você irradia uma aura protetora invisível numa Emanação de 3 metros a partir de você. A aura fica inativa enquanto você estiver com a condição Incapacitado.",
+   "Você e seus aliados na aura recebem um bônus nos testes de resistência igual ao seu modificador de Carisma (bônus mínimo de +1).",
+   "Se houver outro Paladino presente, uma criatura só pode se beneficiar de uma Aura de Proteção por vez; ela escolhe qual aura enquanto estiver nelas."
+  ]
+ },
+ "paladin-abjure-foes": {
+  "n": "Repelir Inimigos",
+  "d": ["Com uma ação de Magia, você pode gastar um uso de Canalizar Divindade desta classe para sobrepujar inimigos com reverência. Ao apresentar seu Símbolo Sagrado ou sua arma, pode escolher como alvo um número de criaturas igual ao seu modificador de Carisma (no mínimo uma) que consiga ver a até 18 metros de você. Cada alvo deve passar num teste de resistência de Sabedoria ou ficar com a condição Amedrontado por 1 minuto ou até sofrer qualquer dano. Enquanto estiver Amedrontado assim, o alvo só pode fazer uma das coisas a seguir nos turnos dele: se mover, realizar uma ação ou realizar uma Ação Bônus."]
+ },
+ "paladin-aura-of-courage": {
+  "d": ["Você e seus aliados têm Imunidade à condição Amedrontado enquanto estiverem na sua Aura de Proteção. Se um aliado Amedrontado entrar na aura, a condição não tem efeito nele enquanto estiver ali."]
+ },
+ "paladin-radiant-strikes": {
+  "n": "Golpes Radiantes",
+  "d": ["Seus golpes agora carregam poder sobrenatural. Quando atinge um alvo com uma jogada de ataque usando uma arma Corpo a Corpo ou um Ataque Desarmado, o alvo sofre 1d8 de dano Radiante extra."]
+ },
+ "paladin-restoring-touch": {
+  "n": "Toque Restaurador",
+  "d": ["Quando usa Cura pelas Mãos numa criatura, você também pode remover dela uma ou mais das condições a seguir: Cego, Enfeitiçado, Surdo, Amedrontado, Paralisado ou Atordoado. Precisa gastar 5 Pontos de Vida da reserva de Cura pelas Mãos para cada condição removida; esses pontos não restauram também Pontos de Vida da criatura."]
+ },
+ "paladin-aura-expansion": {
+  "n": "Expansão de Aura",
+  "d": ["Sua Aura de Proteção agora é uma Emanação de 9 metros."]
+ },
+ "paladin-epic-boon": {
+  "d": ["Você ganha um talento de Dádiva Épica (veja \"Talentos\") ou outro talento à sua escolha para o qual se qualifique. Dádiva da Visão Verdadeira é a recomendada."]
+ },
+ "devotion-oath-of-devotion-spells": {
+  "n": "Magias do Juramento de Devoção",
+  "d": [
+   "A magia do seu juramento garante que você sempre tenha certas magias prontas; ao chegar a um nível de Paladino indicado na tabela de Magias do Juramento de Devoção, você passa a ter sempre preparadas as magias listadas.",
+   "Magias do Juramento de Devoção",
+   "Nível de Paladino / Magias",
+   "3 / Proteção contra o Bem e o Mal, Escudo da Fé",
+   "5 / Auxílio, Zona da Verdade",
+   "9 / Sinal de Esperança, Dissipar Magia",
+   "13 / Liberdade de Movimento, Guardião da Fé",
+   "17 / Comunhão, Coluna de Chamas"
+  ]
+ }
+}

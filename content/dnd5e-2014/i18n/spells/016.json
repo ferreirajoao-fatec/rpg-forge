@@ -1,0 +1,82 @@
+{
+ "glyph-of-warding": {
+  "n": "Glifo de Proteção",
+  "d": [
+   "Ao lançar esta magia, você inscreve um glifo que fere outras criaturas, numa superfície (como uma mesa ou um trecho de piso ou parede) ou dentro de um objeto que possa ser fechado (como um livro, um pergaminho ou um baú de tesouro) para escondê-lo. Se escolher uma superfície, o glifo pode cobrir uma área dela de no máximo 3 metros de diâmetro. Se escolher um objeto, ele precisa permanecer no lugar; se for movido mais de 3 metros de onde você lançou a magia, o glifo se rompe, e a magia termina sem ser disparada.",
+   "O glifo é quase invisível, e é preciso passar num teste de Inteligência (Investigação) contra a CD de resistência das suas magias para encontrá-lo.",
+   "Você decide o que dispara o glifo ao lançar a magia. Para glifos inscritos numa superfície, os gatilhos mais comuns incluem tocar ou pisar no glifo, remover outro objeto que o cubra, chegar a uma certa distância dele ou manipular o objeto em que está inscrito. Para glifos inscritos dentro de um objeto, os gatilhos mais comuns incluem abrir o objeto, chegar a uma certa distância dele ou ver ou ler o glifo. Depois que o glifo é disparado, esta magia termina.",
+   "Você pode refinar o gatilho para que a magia só se ative em certas circunstâncias ou de acordo com características físicas (como altura ou peso), tipo de criatura (por exemplo, a proteção pode afetar aberrações ou drow) ou tendência. Também pode definir condições para criaturas que não disparam o glifo, como as que dizem uma certa senha.",
+   "Ao inscrever o glifo, escolha *runas explosivas* ou *glifo de magia*.",
+   "*Runas Explosivas.* Quando disparado, o glifo irrompe em energia mágica numa esfera de 6 metros de raio centrada nele. A esfera contorna esquinas. Cada criatura na área deve fazer um teste de resistência de Destreza. A criatura sofre 5d8 de dano de ácido, frio, fogo, elétrico ou trovejante (à sua escolha ao criar o glifo) se falhar, ou metade se passar.",
+   "*Glifo de Magia.* Você pode guardar no glifo uma magia preparada de 3º nível ou menor, lançando-a como parte da criação do glifo. A magia precisa ter como alvo uma única criatura ou uma área. A magia guardada não tem efeito imediato quando lançada dessa forma. Quando o glifo é disparado, a magia guardada é lançada. Se a magia tiver alvo, o alvo é a criatura que disparou o glifo. Se afetar uma área, a área é centrada nessa criatura. Se a magia invocar criaturas hostis ou criar objetos ou armadilhas nocivos, eles aparecem o mais perto possível do intruso e o atacam. Se a magia exigir concentração, dura até o fim da duração completa."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 4º nível ou superior, o dano de um glifo de runas explosivas aumenta em 1d8 para cada nível de espaço acima do 3º. Se criar um glifo de magia, pode guardar qualquer magia de nível até o do espaço usado para o glifo de proteção."],
+  "m": "Incenso e diamante em pó no valor de pelo menos 200 po, que a magia consome."
+ },
+ "goodberry": {
+  "n": "Bom Fruto",
+  "d": [
+   "Até dez bagas aparecem na sua mão, imbuídas de magia pela duração. Uma criatura pode usar sua ação para comer uma baga. Comer uma baga restaura 1 ponto de vida, e a baga fornece nutrição suficiente para sustentar uma criatura por um dia.",
+   "As bagas perdem a potência se não forem consumidas em até 24 horas depois do lançamento da magia."
+  ],
+  "m": "Um raminho de visco."
+ },
+ "grease": {
+  "n": "Área Escorregadia",
+  "d": [
+   "Uma graxa escorregadia cobre o chão num quadrado de 3 metros centrado num ponto dentro do alcance e o torna terreno difícil pela duração.",
+   "Quando a graxa aparece, cada criatura de pé na área deve passar num teste de resistência de Destreza ou cair no chão. Uma criatura que entre na área ou termine o turno ali também deve passar num teste de resistência de Destreza ou cair no chão."
+  ],
+  "m": "Um pouco de torresmo ou manteiga."
+ },
+ "greater-invisibility": {
+  "n": "Invisibilidade Maior",
+  "d": ["Você ou uma criatura que você toca fica invisível até a magia terminar. Tudo o que o alvo estiver vestindo ou carregando fica invisível enquanto estiver com ele."]
+ },
+ "greater-restoration": {
+  "n": "Restauração Maior",
+  "d": [
+   "Você imbui uma criatura que toca de energia positiva para desfazer um efeito debilitante. Pode reduzir o nível de exaustão do alvo em um ou encerrar um dos efeitos a seguir nele:",
+   "- Um efeito que deixou o alvo enfeitiçado ou petrificado",
+   "- Uma maldição, incluindo a sintonização do alvo com um item mágico amaldiçoado",
+   "- Qualquer redução num dos valores de habilidade do alvo",
+   "- Um efeito que reduz o máximo de pontos de vida do alvo"
+  ],
+  "m": "Pó de diamante no valor de pelo menos 100 po, que a magia consome."
+ },
+ "guardian-of-faith": {
+  "n": "Guardião da Fé",
+  "d": [
+   "Um guardião espectral Grande aparece e paira pela duração num espaço desocupado à sua escolha que consiga ver dentro do alcance. O guardião ocupa esse espaço e é indistinto, exceto por uma espada reluzente e um escudo com o símbolo da sua divindade.",
+   "Qualquer criatura hostil a você que se mova para um espaço a até 3 metros do guardião pela primeira vez num turno deve passar num teste de resistência de Destreza. A criatura sofre 20 de dano radiante se falhar, ou metade se passar. O guardião desaparece depois de causar um total de 60 de dano."
+  ]
+ },
+ "guards-and-wards": {
+  "n": "Guardas e Proteções",
+  "d": [
+   "Você cria uma proteção que cobre até 225 metros quadrados de piso (uma área de 15 metros de lado, ou cem quadrados de 1,5 metro, ou vinte e cinco quadrados de 3 metros). A área protegida pode ter até 6 metros de altura e a forma que você quiser. Você pode proteger vários andares de uma fortaleza dividindo a área entre eles, desde que consiga entrar caminhando em cada área contígua enquanto lança a magia.",
+   "Ao lançar esta magia, você pode especificar indivíduos que não são afetados por um ou todos os efeitos escolhidos. Também pode especificar uma senha que, dita em voz alta, torna quem a fala imune a esses efeitos.",
+   "Guardas e proteções cria os efeitos a seguir dentro da área protegida.",
+   "*Corredores.* Uma névoa preenche todos os corredores protegidos, deixando-os muito obscurecidos. Além disso, em cada cruzamento ou bifurcação que ofereça escolha de direção, há 50% de chance de uma criatura que não seja você acreditar que está indo na direção oposta à que escolheu.",
+   "*Portas.* Todas as portas na área protegida ficam magicamente trancadas, como se seladas por uma magia tranca arcana. Além disso, você pode cobrir até dez portas com uma ilusão (equivalente à função de objeto ilusório da magia ilusão menor) para fazê-las parecer trechos comuns de parede.",
+   "*Escadas.* Teias preenchem todas as escadas da área protegida de cima a baixo, como na magia teia. Esses fios voltam a crescer em 10 minutos se forem queimados ou arrancados enquanto guardas e proteções durar.",
+   "*Outro Efeito de Magia.* Você pode colocar um dos efeitos mágicos a seguir, à sua escolha, na área protegida da fortaleza.",
+   "- Colocar globos de luz em quatro corredores. Você pode definir um programa simples que as luzes repetem enquanto guardas e proteções durar.",
+   "- Colocar boca encantada em dois locais.",
+   "- Colocar névoa fétida em dois locais. Os vapores aparecem nos lugares designados; voltam em até 10 minutos se forem dispersados pelo vento enquanto guardas e proteções durar.",
+   "- Colocar uma lufada de vento constante num corredor ou cômodo.",
+   "- Colocar uma sugestão num local. Você escolhe uma área de até 1,5 metro de lado, e qualquer criatura que entre na área ou passe por ela recebe a sugestão mentalmente.",
+   "Toda a área protegida irradia magia. Um dissipar magia lançado sobre um efeito específico, se bem-sucedido, remove apenas esse efeito.",
+   "Você pode criar uma estrutura com guardas e proteções permanentes lançando esta magia nela todos os dias por um ano."
+  ],
+  "m": "Incenso queimando, uma pequena porção de enxofre e óleo, um barbante com nós, um pouco de sangue de brutamontes cavador e uma pequena vara de prata no valor de pelo menos 10 po."
+ },
+ "guidance": {
+  "n": "Orientação",
+  "d": ["Você toca uma criatura voluntária. Uma vez antes de a magia terminar, o alvo pode rolar um d4 e somar o resultado a um teste de habilidade à escolha dele. Pode rolar o dado antes ou depois de fazer o teste. Então a magia termina."]
+ },
+ "guiding-bolt": {
+  "n": "Raio Guiador",
+  "d": ["Um lampejo de luz dispara em direção a uma criatura à sua escolha dentro do alcance. Faça um ataque mágico à distância contra o alvo. Se acertar, o alvo sofre 4d6 de dano radiante, e a próxima jogada de ataque contra ele antes do fim do seu próximo turno tem vantagem, graças à penumbra mística que cintila no alvo até lá."]
+ }
+}

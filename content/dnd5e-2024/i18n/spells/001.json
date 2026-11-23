@@ -1,0 +1,66 @@
+{
+ "acid-arrow": {
+  "d": ["Uma flecha verde cintilante dispara em direção a um alvo dentro do alcance e explode num jorro de ácido. Faça um ataque mágico à distância contra o alvo. Se acertar, o alvo sofre 4d4 de dano Ácido e mais 2d4 de dano Ácido no fim do próximo turno dele. Se errar, a flecha respinga ácido no alvo, causando só metade do dano inicial."],
+  "h": ["O dano (inicial e posterior) aumenta em 1d4 para cada nível de espaço de magia acima de 2."],
+  "m": "Folha de ruibarbo em pó."
+ },
+ "acid-splash": {
+  "d": [
+   "Você cria uma bolha ácida num ponto dentro do alcance, onde ela explode numa Esfera de 1,5 metro de raio. Cada criatura nessa Esfera deve passar num teste de resistência de Destreza ou sofrer 1d6 de dano Ácido.",
+   "Aprimoramento de Truque. O dano aumenta em 1d6 quando você alcança os níveis 5 (2d6), 11 (3d6) e 17 (4d6)."
+  ]
+ },
+ "aid": {
+  "d": ["Escolha até três criaturas dentro do alcance. O máximo de Pontos de Vida e os Pontos de Vida atuais de cada alvo aumentam em 5 pela duração."],
+  "h": ["Os Pontos de Vida de cada alvo aumentam em 5 para cada nível de espaço de magia acima de 2."],
+  "m": "Uma tira de pano branco."
+ },
+ "alarm": {
+  "d": ["Você arma um alarme contra intrusos. Escolha uma porta, uma janela ou uma área dentro do alcance que não seja maior que um Cubo de 6 metros. Até a magia terminar, um alarme o alerta sempre que uma criatura tocar ou entrar na área protegida. Ao lançar a magia, você pode designar criaturas que não disparam o alarme. Também escolhe se o alarme é sonoro ou mental: Alarme Sonoro. O alarme produz o som de uma sineta por 10 segundos a até 18 metros da área protegida. Alarme Mental. Você é alertado por um sinal mental se estiver a até 1,5 km da área protegida. Esse sinal o acorda se estiver dormindo."],
+  "m": "Um sino e fio de prata."
+ },
+ "alter-self": {
+  "d": [
+   "Você altera sua forma física. Escolha uma das opções a seguir. Os efeitos dela duram pela duração, durante a qual você pode realizar uma ação de Magia para trocar a opção escolhida por outra.",
+   "Adaptação Aquática. Você desenvolve guelras e membranas entre os dedos. Pode respirar debaixo d'água e ganha Deslocamento de Natação igual ao seu Deslocamento.",
+   "Mudar Aparência. Você altera sua aparência. Decide como fica, incluindo altura, peso, traços do rosto, timbre da voz, comprimento do cabelo, coloração e outras características marcantes. Pode parecer membro de outra espécie, embora nenhuma das suas estatísticas mude. Não pode parecer uma criatura de outro tamanho, e sua forma básica continua a mesma; se for bípede, por exemplo, não pode usar esta magia para se tornar quadrúpede. Pela duração, pode realizar uma ação de Magia para mudar sua aparência dessa forma de novo.",
+   "Armas Naturais. Você desenvolve garras (Cortante), presas (Perfurante), chifres (Perfurante) ou cascos (Concussão). Quando usa seu Ataque Desarmado para causar dano com essa nova parte do corpo, ele causa 1d6 de dano do tipo entre parênteses em vez do dano normal do Ataque Desarmado, e você usa seu modificador de habilidade de conjuração nas jogadas de ataque e de dano em vez de Força."
+  ]
+ },
+ "animal-friendship": {
+  "d": ["Escolha como alvo uma Fera que você consiga ver dentro do alcance. O alvo deve passar num teste de resistência de Sabedoria ou fica com a condição Enfeitiçado pela duração. Se você ou um dos seus aliados causar dano ao alvo, a magia termina."],
+  "h": ["Você pode escolher como alvo uma Fera adicional para cada nível de espaço de magia acima de 1."],
+  "m": "Um bocado de comida."
+ },
+ "animal-messenger": {
+  "d": [
+   "Uma Fera Miúda à sua escolha que você consiga ver dentro do alcance deve passar num teste de resistência de Carisma, ou tenta entregar uma mensagem por você (se o Nível de Desafio do alvo não for 0, ele passa automaticamente). Você especifica um local que já visitou e um destinatário que corresponda a uma descrição geral, como \"uma pessoa com o uniforme da guarda da cidade\" ou \"uma anã ruiva com chapéu pontudo\". Também comunica uma mensagem de até vinte e cinco palavras. A Fera viaja pela duração em direção ao local indicado, percorrendo cerca de 40 km a cada 24 horas, ou 80 km se puder voar.",
+   "Quando a Fera chega, entrega sua mensagem à criatura descrita, imitando sua comunicação. Se a Fera não chegar ao destino antes de a magia terminar, a mensagem se perde, e a Fera volta para onde você lançou a magia."
+  ],
+  "h": ["A duração da magia aumenta em 48 horas para cada nível de espaço de magia acima de 2."]
+ },
+ "animal-shapes": {
+  "d": [
+   "Escolha qualquer número de criaturas voluntárias que você consiga ver dentro do alcance. Cada alvo muda de forma para uma Fera Grande ou menor à sua escolha com Nível de Desafio 4 ou menor. Você pode escolher uma forma diferente para cada alvo. Em turnos posteriores, pode realizar uma ação de Magia para transformar os alvos de novo.",
+   "As estatísticas de jogo do alvo são substituídas pelas da Fera escolhida, mas ele mantém seu tipo de criatura, Pontos de Vida, Dados de Pontos de Vida, tendência, capacidade de se comunicar e valores de Inteligência, Sabedoria e Carisma. As ações do alvo ficam limitadas pela anatomia da forma de Fera, e ele não pode lançar magias. O equipamento do alvo se funde à nova forma, e ele não pode usar nenhum desse equipamento enquanto estiver nela.",
+   "O alvo ganha Pontos de Vida Temporários iguais aos Pontos de Vida da primeira forma que assumir. Esses Pontos de Vida Temporários desaparecem, se restarem, quando a magia termina. A transformação dura pela duração ou até o alvo encerrá-la com uma Ação Bônus."
+  ]
+ },
+ "animate-dead": {
+  "d": [
+   "Escolha uma pilha de ossos ou o cadáver de um Humanoide Médio ou Pequeno dentro do alcance. O alvo se torna uma criatura Morta-Viva: um Esqueleto, se escolheu ossos, ou um Zumbi, se escolheu um cadáver (veja \"Monstros\" para as fichas).",
+   "Em cada um dos seus turnos, você pode realizar uma Ação Bônus para comandar mentalmente qualquer criatura criada com esta magia que esteja a até 18 metros de você (se controlar várias criaturas, pode comandar qualquer uma delas ao mesmo tempo, dando o mesmo comando a cada uma). Você decide que ação a criatura realizará e para onde se moverá no próximo turno dela, ou pode dar um comando geral, como vigiar uma câmara ou um corredor. Se não der comandos, a criatura realiza a ação Esquivar e só se move para evitar perigo. Depois de receber uma ordem, a criatura continua a segui-la até concluir a tarefa.",
+   "A criatura fica sob seu controle por 24 horas, depois das quais para de obedecer a qualquer comando que você tenha dado. Para manter o controle por mais 24 horas, você precisa lançar esta magia na criatura de novo antes de terminar o período atual de 24 horas. Esse uso da magia reafirma seu controle sobre até quatro criaturas animadas com esta magia em vez de animar uma nova."
+  ],
+  "h": ["Você anima ou reafirma o controle sobre duas criaturas Mortas-Vivas adicionais para cada nível de espaço de magia acima de 3. Cada criatura precisa vir de um cadáver ou de uma pilha de ossos diferente."],
+  "m": "Uma gota de sangue, um pedaço de carne e uma pitada de pó de osso."
+ },
+ "animate-objects": {
+  "d": [
+   "Objetos ganham vida sob seu comando. Escolha um número de objetos não mágicos dentro do alcance que não estejam sendo vestidos nem carregados, não estejam presos a uma superfície e não sejam Imensos. O número máximo de objetos é igual ao seu modificador de habilidade de conjuração; para essa contagem, um alvo Médio ou menor conta como um objeto, um Grande conta como dois e um Enorme conta como três.",
+   "Cada alvo ganha vida, cria pernas e se torna um Constructo que usa a ficha de Objeto Animado; essa criatura fica sob seu controle até a magia terminar ou até ser reduzida a 0 Pontos de Vida. Cada criatura criada com esta magia é aliada sua e dos seus aliados. Em combate, ela compartilha sua contagem de Iniciativa e age logo depois de você.",
+   "Até a magia terminar, você pode realizar uma Ação Bônus para comandar mentalmente qualquer criatura criada com esta magia que esteja a até 150 metros de você (se controlar várias criaturas, pode comandar qualquer uma delas ao mesmo tempo, dando o mesmo comando a cada uma). Se não der comandos, a criatura realiza a ação Esquivar e só se move para evitar perigo. Quando a criatura cai a 0 Pontos de Vida, volta à forma de objeto, e o dano restante passa para essa forma."
+  ],
+  "h": ["O dano de Pancada da criatura aumenta em 1d4 (Médio ou menor), 1d6 (Grande) ou 1d12 (Enorme) para cada nível de espaço de magia acima de 5. Objeto Animado: Constructo Enorme ou menor, Sem Tendência. CA 15. PV 10 (Médio ou menor), 20 (Grande), 40 (Enorme). Deslocamento 9 m. For 16 (+3, resistência +3), Des 10 (+0, +0), Con 10 (+0, +0), Int 3 (-4, -4), Sab 3 (-4, -4), Car 1 (-5, -5). Imunidades: Veneno, Psíquico; Enfeitiçado, Exaustão, Amedrontado, Paralisado, Envenenado. Sentidos: Percepção às Cegas 9 m; Percepção Passiva 6. Idiomas: entende os idiomas que você conhece. ND nenhum (XP 0; BP igual ao seu Bônus de Proficiência). Ações: Pancada. Jogada de Ataque Corpo a Corpo: bônus igual ao seu modificador de ataque mágico, alcance 1,5 m. Acerto: dano de Energia igual a 1d4 + 3 (Médio ou menor), 2d6 + 3 + seu modificador de habilidade de conjuração (Grande) ou 2d12 + 3 + seu modificador de habilidade de conjuração (Enorme)."]
+ }
+}

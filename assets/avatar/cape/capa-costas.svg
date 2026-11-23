@@ -1,8 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+  <defs>
+    <filter id="f-primary" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{primary-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="soft2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.5"/></filter>
+  </defs>
+  <g stroke-linejoin="round" stroke-linecap="round">
     <g data-anchor="torso">
-      <path fill="#{primary-dark}" d="M184 284 C150 360 136 520 128 700 C180 720 332 720 384 700 C376 520 362 360 328 284 Z"/>
-      <path fill="#{primary-deep}" stroke="none" opacity="0.5" d="M150 520 C146 580 142 640 140 696 L170 704 C168 640 170 580 172 520 Z M362 520 C366 580 370 640 372 696 L342 704 C344 640 342 580 340 520 Z"/>
+      <path fill="#{primary-dark}" stroke="#{primary-deep}" stroke-width="1" filter="url(#f-primary)" d="M204 186 C182 190 160 200 150 222 C140 300 132 420 128 540 C125 610 127 670 132 714 C180 726 332 726 380 714 C385 670 387 610 384 540 C380 420 372 300 362 222 C352 200 330 190 308 186 Z"/>
+      <path fill="#{primary-deep}" stroke="none" opacity="0.5" filter="url(#soft)" d="M150 240 C142 340 136 460 134 600 L144 600 C148 460 154 340 160 240 Z M362 240 C370 340 376 460 378 600 L368 600 C364 460 358 340 352 240 Z"/>
+      <path fill="none" stroke="#{primary-deep}" stroke-width="1" opacity="0.5" d="M140 400 C138 480 136 580 138 710 M372 400 C374 480 376 580 374 710 M156 600 C156 640 158 680 160 716 M356 600 C356 640 354 680 352 716"/>
     </g>
   </g>
 </svg>

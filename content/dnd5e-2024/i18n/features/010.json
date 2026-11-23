@@ -1,0 +1,115 @@
+{
+ "sorcerer-spellcasting": {
+  "d": [
+   "Recorrendo à sua magia inata, você pode lançar magias. Veja \"Magias\" para as regras de conjuração. As informações abaixo explicam como usar essas regras com as magias de Feiticeiro, que aparecem na lista de magias de Feiticeiro mais adiante na descrição da classe.",
+   "Truques. Você conhece quatro truques de Feiticeiro à sua escolha. Luz, Prestidigitação, Toque Chocante e Explosão Feiticeira são os recomendados. Sempre que ganhar um nível de Feiticeiro, pode trocar um dos truques desta característica por outro truque de Feiticeiro à sua escolha.",
+   "Ao chegar aos níveis de Feiticeiro 4 e 10, você aprende mais um truque de Feiticeiro à sua escolha, como mostra a coluna Truques da tabela de Características do Feiticeiro.",
+   "Espaços de Magia. A tabela de Características do Feiticeiro mostra quantos espaços de magia você tem para lançar suas magias de nível 1 ou superior. Você recupera todos os espaços gastos quando termina um Descanso Longo.",
+   "Magias Preparadas de Nível 1+. Você prepara a lista de magias de nível 1 ou superior que pode lançar com esta característica. Para começar, escolha duas magias de Feiticeiro de nível 1. Mãos Flamejantes e Detectar Magia são as recomendadas.",
+   "O número de magias na sua lista aumenta conforme você ganha níveis de Feiticeiro, como mostra a coluna Magias Preparadas da tabela de Características do Feiticeiro. Sempre que esse número aumentar, escolha magias de Feiticeiro adicionais até que o número de magias na sua lista seja igual ao da tabela. As magias escolhidas precisam ser de um nível para o qual você tenha espaços de magia. Por exemplo, se você for um Feiticeiro de nível 3, sua lista de magias preparadas pode incluir seis magias de Feiticeiro de nível 1 ou 2 em qualquer combinação.",
+   "Se outra característica de Feiticeiro lhe der magias que você sempre tem preparadas, elas não contam no número de magias que você pode preparar com esta característica, mas fora isso contam como magias de Feiticeiro para você.",
+   "Trocar suas Magias Preparadas. Sempre que ganhar um nível de Feiticeiro, você pode trocar uma magia da sua lista por outra magia de Feiticeiro para a qual tenha espaços de magia.",
+   "Habilidade de Conjuração. Carisma é sua habilidade de conjuração para as magias de Feiticeiro.",
+   "Foco de Conjuração. Você pode usar um Foco Arcano como Foco de Conjuração para suas magias de Feiticeiro."
+  ]
+ },
+ "sorcerer-innate-sorcery": {
+  "n": "Feitiçaria Inata",
+  "d": [
+   "Um acontecimento no seu passado deixou uma marca indelével em você e o impregnou de magia latente. Com uma Ação Bônus, você pode liberar essa magia por 1 minuto, durante o qual recebe os benefícios a seguir: - A CD de resistência das suas magias de Feiticeiro aumenta em 1.",
+   "- Você tem Vantagem nas jogadas de ataque das magias de Feiticeiro que lança.",
+   "Você pode usar esta característica duas vezes e recupera todos os usos gastos quando termina um Descanso Longo."
+  ]
+ },
+ "sorcerer-font-of-magic": {
+  "d": [
+   "Você pode acessar a fonte de magia dentro de si. Essa fonte é representada por Pontos de Feitiçaria, que permitem criar vários efeitos mágicos.",
+   "Você tem 2 Pontos de Feitiçaria e ganha mais ao chegar a níveis mais altos, como mostra a coluna Pontos de Feitiçaria da tabela de Características do Feiticeiro. Não pode ter mais Pontos de Feitiçaria do que a tabela mostra para o seu nível. Recupera todos os Pontos de Feitiçaria gastos quando termina um Descanso Longo.",
+   "Você pode usar seus Pontos de Feitiçaria para alimentar as opções abaixo, além de outras características que usam esses pontos, como Metamagia.",
+   "Converter Espaços de Magia em Pontos de Feitiçaria. Você pode gastar um espaço de magia para ganhar Pontos de Feitiçaria iguais ao nível do espaço (sem gastar ação).",
+   "Criar Espaços de Magia. Com uma Ação Bônus, você pode transformar Pontos de Feitiçaria não gastos num espaço de magia. A tabela Criar Espaços de Magia mostra o custo para criar um espaço de cada nível e o nível mínimo de Feiticeiro necessário. Você não pode criar um espaço de nível maior que 5.",
+   "Qualquer espaço de magia criado com esta característica some quando você termina um Descanso Longo.",
+   "Criar Espaços de Magia — Nível do Espaço | Custo em Pontos de Feitiçaria | Nível Mín. de Feiticeiro",
+   "1 | 2 | 2",
+   "2 | 3 | 3",
+   "3 | 5 | 5",
+   "4 | 6 | 7",
+   "5 | 7 | 9"
+  ]
+ },
+ "sorcerer-metamagic": {
+  "d": [
+   "Como sua magia flui de dentro, você pode alterar suas magias conforme sua necessidade; ganha duas opções de Metamagia à sua escolha de \"Opções de Metamagia\", mais adiante na descrição desta classe. Você usa as opções escolhidas para modificar temporariamente as magias que lança. Para usar uma opção, precisa gastar o número de Pontos de Feitiçaria que ela custa.",
+   "Você só pode usar uma opção de Metamagia numa magia ao lançá-la, salvo indicação em contrário numa dessas opções.",
+   "Sempre que ganhar um nível de Feiticeiro, pode trocar uma das suas opções de Metamagia por outra que não conheça. Ganha mais duas opções no nível de Feiticeiro 10 e mais duas no 17."
+  ]
+ },
+ "sorcerer-subclass": {
+  "n": "Subclasse de Feiticeiro",
+  "d": [
+   "Você ganha uma subclasse de Feiticeiro à sua escolha. A subclasse Feitiçaria Dracônica está detalhada depois da descrição desta classe. Uma subclasse é uma especialização que concede características em certos níveis de Feiticeiro.",
+   "Pelo resto da sua carreira, você ganha cada característica da subclasse de nível igual ou menor que seu nível de Feiticeiro."
+  ]
+ },
+ "sorcerer-ability-score-improvement": {
+  "d": ["Você ganha o talento Aumento no Valor de Habilidade (veja \"Talentos\") ou outro talento à sua escolha para o qual se qualifique. Ganha esta característica de novo nos níveis de Feiticeiro 8, 12 e 16."]
+ },
+ "sorcerer-sorcerous-restoration": {
+  "d": ["Quando termina um Descanso Curto, você pode recuperar Pontos de Feitiçaria gastos, até no máximo metade do seu nível de Feiticeiro (arredondado para baixo). Depois de usar esta característica, só pode usá-la de novo após terminar um Descanso Longo."]
+ },
+ "sorcerer-sorcery-incarnate": {
+  "n": "Feitiçaria Encarnada",
+  "d": [
+   "Se não tiver mais usos de Feitiçaria Inata, você pode usá-la gastando 2 Pontos de Feitiçaria ao usar a Ação Bônus para ativá-la.",
+   "Além disso, enquanto Feitiçaria Inata estiver ativa, você pode usar até duas opções de Metamagia em cada magia que lançar."
+  ]
+ },
+ "sorcerer-arcane-apotheosis": {
+  "n": "Apoteose Arcana",
+  "d": ["Enquanto Feitiçaria Inata estiver ativa, você pode usar uma opção de Metamagia em cada um dos seus turnos sem gastar Pontos de Feitiçaria nela."]
+ },
+ "draconic-sorcery-draconic-resilience": {
+  "d": [
+   "A magia no seu corpo manifesta traços físicos da sua dádiva dracônica. Seu máximo de Pontos de Vida aumenta em 3, e aumenta em 1 sempre que você ganha outro nível de Feiticeiro.",
+   "Partes do seu corpo também ficam cobertas de escamas parecidas com as de um dragão. Enquanto não estiver usando armadura, sua Classe de Armadura base é 10 + seus modificadores de Destreza e Carisma."
+  ]
+ },
+ "draconic-sorcery-draconic-spells": {
+  "n": "Magias Dracônicas",
+  "d": [
+   "Ao chegar a um nível de Feiticeiro indicado na tabela de Magias Dracônicas, você passa a ter sempre preparadas as magias listadas.",
+   "Magias Dracônicas — Nível de Feiticeiro | Magias",
+   "3 | Alterar-se, Orbe Cromático, Comando, Sopro do Dragão",
+   "5 | Medo, Voo; 7 | Olho Arcano, Enfeitiçar Monstro",
+   "9 | Lendas e Histórias, Invocar Dragão"
+  ]
+ },
+ "draconic-sorcery-elemental-affinity": {
+  "d": [
+   "Sua magia dracônica tem afinidade com um tipo de dano associado aos dragões. Escolha um destes tipos: Ácido, Frio, Fogo, Elétrico ou Veneno.",
+   "Você tem Resistência a esse tipo de dano e, quando lança uma magia que causa dano desse tipo, pode somar seu modificador de Carisma a uma jogada de dano dessa magia."
+  ]
+ },
+ "draconic-sorcery-dragon-wings": {
+  "d": [
+   "Com uma Ação Bônus, você pode fazer asas dracônicas aparecerem nas suas costas. As asas duram 1 hora ou até você dispensá-las (sem gastar ação). Nesse período, você tem Deslocamento de Voo de 18 metros.",
+   "Depois de usar esta característica, você só pode usá-la de novo após terminar um Descanso Longo, a não ser que gaste 3 Pontos de Feitiçaria (sem gastar ação) para recuperar o uso dela."
+  ]
+ },
+ "draconic-sorcery-dragon-companion": {
+  "n": "Companheiro Dracônico",
+  "d": [
+   "Você pode lançar Invocar Dragão sem componente Material. Também pode lançá-la uma vez sem espaço de magia e recupera essa capacidade quando termina um Descanso Longo.",
+   "Sempre que começar a lançar a magia, pode modificá-la para que não exija Concentração. Se fizer isso, a duração da magia passa a ser 1 minuto nessa conjuração."
+  ]
+ },
+ "warlock-eldritch-invocations": {
+  "d": [
+   "Você desenterrou Invocações Místicas, fragmentos de conhecimento proibido que lhe concedem uma capacidade mágica permanente ou outras lições. Ganha uma invocação à sua escolha, como Pacto do Tomo. As invocações estão descritas na seção \"Opções de Invocação Mística\", mais adiante na descrição desta classe.",
+   "Pré-requisitos. Se uma invocação tiver pré-requisito, você precisa atendê-lo para aprendê-la. Por exemplo, se uma invocação exigir que você seja um Bruxo de nível 5 ou superior, você pode escolhê-la quando chegar ao nível de Bruxo 5.",
+   "Trocar e Ganhar Invocações. Sempre que ganhar um nível de Bruxo, pode trocar uma das suas invocações por outra para a qual se qualifique. Não pode trocar uma invocação que seja pré-requisito de outra que você tenha.",
+   "Ao chegar a certos níveis de Bruxo, você ganha mais invocações à sua escolha, como mostra a coluna Invocações da tabela de Características do Bruxo.",
+   "Você não pode pegar a mesma invocação mais de uma vez, a não ser que a descrição dela diga o contrário."
+  ]
+ }
+}

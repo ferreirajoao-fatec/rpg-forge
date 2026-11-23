@@ -383,6 +383,7 @@ export class Tormenta20Engine extends BaseEngine {
 
   abilityModifier = t20Modifier;
   levelForXp = t20LevelForXp;
+  readonly xpThresholds = T20_XP_THRESHOLDS;
   readonly currencies = T20_CURRENCIES;
   startingWealth = t20StartingWealth;
 

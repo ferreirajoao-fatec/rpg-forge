@@ -1,0 +1,78 @@
+{
+ "magic-missile": {
+  "d": ["Você cria três dardos brilhantes de energia mágica. Cada dardo atinge uma criatura à sua escolha que você consiga ver dentro do alcance. Um dardo causa 1d4 + 1 de dano de Energia ao alvo. Todos os dardos atingem ao mesmo tempo, e você pode direcioná-los para uma criatura ou várias."],
+  "h": ["A magia cria mais um dardo para cada nível de espaço de magia acima de 1."]
+ },
+ "magic-mouth": {
+  "d": [
+   "Você implanta uma mensagem num objeto dentro do alcance, que é falada quando uma condição de gatilho é cumprida. Escolha um objeto que consiga ver e que não esteja sendo vestido nem carregado por outra criatura. Então diga a mensagem, que não pode ter mais de 25 palavras, embora sua entrega possa levar até 10 minutos. Por fim, defina a circunstância que fará a magia entregar a mensagem.",
+   "Quando esse gatilho ocorre, uma boca mágica aparece no objeto e recita a mensagem com sua voz e no mesmo volume usado ao implantá-la. Se o objeto escolhido tiver uma boca ou algo parecido (por exemplo, a boca de uma estátua), a boca mágica aparece ali, dando a impressão de que as palavras saem da boca do objeto. Ao lançar esta magia, você pode decidir que ela termina depois de entregar a mensagem, ou que persista e repita a mensagem sempre que o gatilho ocorrer.",
+   "O gatilho pode ser tão geral ou detalhado quanto quiser, mas precisa se basear em condições visuais ou sonoras que ocorram a até 9 metros do objeto. Por exemplo, você pode instruir a boca a falar quando qualquer criatura chegar a até 9 metros do objeto ou quando um sino de prata tocar a até 9 metros dele."
+  ],
+  "m": "Pó de jade no valor de 10+ PO, que a magia consome."
+ },
+ "magic-weapon": {
+  "d": ["Você toca uma arma não mágica. Até a magia terminar, essa arma se torna uma arma mágica com +1 de bônus nas jogadas de ataque e de dano. A magia termina antes se você lançá-la de novo."],
+  "h": ["O bônus aumenta para +2 com um espaço de magia de nível 3-5. O bônus aumenta para +3 com um espaço de nível 6+."]
+ },
+ "magnificent-mansion": {
+  "d": [
+   "Você conjura dentro do alcance uma porta cintilante que dura pela duração. A porta leva a uma morada extradimensional e tem 1,5 metro de largura e 3 metros de altura. Você e qualquer criatura que designar ao lançar a magia podem entrar na morada enquanto a porta estiver aberta. Você pode abri-la ou fechá-la (sem gastar ação) se estiver a até 9 metros dela. Fechada, a porta fica imperceptível.",
+   "Além da porta há um saguão magnífico com vários cômodos depois dele. A atmosfera da morada é limpa, fresca e aconchegante.",
+   "Você pode criar a planta que quiser para a morada, mas ela não pode exceder 50 Cubos de 3 metros contíguos. O lugar é mobiliado e decorado como você escolher. Contém comida suficiente para servir um banquete de nove pratos para até 100 pessoas. Móveis e outros objetos criados por esta magia se dissipam em fumaça se forem tirados dela.",
+   "Uma equipe de 100 servos quase transparentes atende a todos que entram. Você decide a aparência desses servos e suas roupas. Eles são invulneráveis e obedecem aos seus comandos. Cada servo pode realizar tarefas que um humano faria, mas não pode atacar nem realizar nenhuma ação que fira diretamente outra criatura. Assim, os servos podem buscar coisas, limpar, consertar, dobrar roupas, acender lareiras, servir comida, servir vinho e assim por diante. Os servos não podem sair da morada.",
+   "Quando a magia termina, quaisquer criaturas ou objetos deixados dentro do espaço extradimensional são expelidos para os espaços desocupados mais próximos da entrada."
+  ],
+  "m": "Uma porta em miniatura no valor de 15+ PO."
+ },
+ "major-image": {
+  "d": [
+   "Você cria a imagem de um objeto, de uma criatura ou de outro fenômeno visível que não seja maior que um Cubo de 6 metros. A imagem aparece num ponto que você consiga ver dentro do alcance e dura pela duração. Parece real, incluindo sons, cheiros e temperatura apropriados ao que é representado, mas não pode causar dano nem condições.",
+   "Se estiver dentro do alcance da ilusão, você pode realizar uma ação de Magia para fazer a imagem se mover para qualquer outro ponto dentro do alcance. Enquanto a imagem muda de lugar, pode alterar a aparência dela para que os movimentos pareçam naturais. Por exemplo, se criar a imagem de uma criatura e movê-la, pode alterá-la para que pareça estar andando. Da mesma forma, pode fazer a ilusão emitir sons diferentes em momentos diferentes, até mantendo uma conversa, por exemplo.",
+   "A interação física com a imagem revela que ela é uma ilusão, porque as coisas a atravessam. Uma criatura que realize a ação Estudar para examinar a imagem pode determinar que é uma ilusão passando num teste de Inteligência (Investigação) contra a CD de resistência das suas magias. Se uma criatura perceber a ilusão pelo que ela é, consegue ver através da imagem, e as outras qualidades sensoriais dela ficam tênues para essa criatura."
+  ],
+  "h": ["Se lançada com um espaço de magia de nível 4+, a magia dura até ser dissipada, sem exigir Concentração."],
+  "m": "Um pouco de lã de carneiro."
+ },
+ "mass-cure-wounds": {
+  "d": ["Uma onda de energia curativa se espalha a partir de um ponto que você consiga ver dentro do alcance. Escolha até seis criaturas numa Esfera de 9 metros de raio centrada nesse ponto. Cada alvo recupera Pontos de Vida iguais a 5d8 mais seu modificador de habilidade de conjuração."],
+  "h": ["A cura aumenta em 1d8 para cada nível de espaço de magia acima de 5."]
+ },
+ "mass-heal": {
+  "d": ["Uma inundação de energia curativa flui de você para as criaturas ao seu redor. Você restaura até 700 Pontos de Vida, divididos como quiser entre qualquer número de criaturas que consiga ver dentro do alcance. As criaturas curadas por esta magia também têm as condições Cego, Surdo e Envenenado removidas."]
+ },
+ "mass-healing-word": {
+  "d": ["Até seis criaturas à sua escolha que você consiga ver dentro do alcance recuperam Pontos de Vida iguais a 2d4 mais seu modificador de habilidade de conjuração."],
+  "h": ["A cura aumenta em 1d4 para cada nível de espaço de magia acima de 3."]
+ },
+ "mass-suggestion": {
+  "d": [
+   "Você sugere um curso de atividade (descrito em no máximo 25 palavras) a até doze criaturas que consiga ver dentro do alcance e que consigam ouvi-lo e entendê-lo. A sugestão precisa parecer realizável e não envolver nada que obviamente cause dano a algum dos alvos ou aos aliados deles. Por exemplo, você pode dizer: \"Sigam por aquela estrada até a aldeia e ajudem os aldeões a colher a safra até o pôr do sol.\" Ou: \"Agora não é hora de violência. Larguem as armas e dancem! Parem daqui a uma hora.\"",
+   "Cada alvo deve passar num teste de resistência de Sabedoria ou fica com a condição Enfeitiçado pela duração ou até você ou seus aliados causarem dano a ele. Cada alvo Enfeitiçado segue a sugestão da melhor forma possível. A atividade sugerida pode continuar por toda a duração, mas, se puder ser concluída em menos tempo, a magia termina para o alvo quando ele a concluir."
+  ],
+  "h": ["A duração é maior com um espaço de magia de nível 7 (10 dias), 8 (30 dias) ou 9 (366 dias)."],
+  "m": "Uma língua de cobra."
+ },
+ "maze": {
+  "d": [
+   "Você bane uma criatura que consiga ver dentro do alcance para um semiplano labiríntico. O alvo permanece lá pela duração ou até escapar do labirinto.",
+   "O alvo pode realizar a ação Estudar para tentar escapar. Quando faz isso, faz um teste de Inteligência (Investigação) CD 20. Se passar, escapa, e a magia termina.",
+   "Quando a magia termina, o alvo reaparece no espaço que deixou ou, se esse espaço estiver ocupado, no espaço desocupado mais próximo."
+  ]
+ },
+ "meld-into-stone": {
+  "n": "Fundir-se com a Pedra",
+  "d": [
+   "Você entra num objeto ou numa superfície de pedra grande o bastante para conter todo o seu corpo, fundindo a si mesmo e seu equipamento com a pedra pela duração. Precisa tocar a pedra para isso. Nada da sua presença continua visível ou detectável por sentidos não mágicos.",
+   "Enquanto estiver fundido com a pedra, você não consegue ver o que acontece fora dela, e qualquer teste de Sabedoria (Percepção) para ouvir sons lá fora é feito com Desvantagem. Continua percebendo a passagem do tempo e pode lançar magias em si mesmo enquanto estiver fundido. Pode usar 1,5 metro de movimento para sair da pedra por onde entrou, o que encerra a magia. Fora isso, não pode se mover.",
+   "Danos físicos pequenos à pedra não o ferem, mas a destruição parcial dela ou uma mudança na sua forma (a ponto de você não caber mais) o expele e lhe causa 6d6 de dano de Energia. A destruição completa da pedra (ou sua transmutação em outra substância) o expele e lhe causa 50 de dano de Energia. Se for expelido, você vai para o espaço desocupado mais próximo de onde entrou e fica com a condição Caído."
+  ]
+ },
+ "mending": {
+  "d": [
+   "Esta magia repara uma única quebra ou rasgo num objeto que você toca, como um elo de corrente partido, as duas metades de uma chave quebrada, um manto rasgado ou um odre furado. Desde que a quebra ou o rasgo não tenha mais de 30 centímetros em nenhuma dimensão, você o conserta, sem deixar vestígio do dano anterior.",
+   "Esta magia pode reparar fisicamente um item mágico, mas não pode restaurar a magia desse objeto."
+  ],
+  "m": "Dois ímãs naturais."
+ }
+}

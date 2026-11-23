@@ -1,0 +1,149 @@
+{
+ "adrenaline-rush": {
+  "n": "Descarga de Adrenalina",
+  "d": [
+   "Você pode realizar a ação de Disparada como Ação Bônus. Quando faz isso, ganha Pontos de Vida Temporários iguais ao seu Bônus de Proficiência.",
+   "Você pode usar este traço um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Curto ou Longo."
+  ]
+ },
+ "brave": {
+  "d": ["Você tem Vantagem em testes de resistência para evitar ou encerrar a condição Amedrontado."]
+ },
+ "draconic-breath-weapon-acid": {
+  "n": "Arma de Sopro: Ácido",
+  "d": [
+   "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na área deve fazer um teste de resistência de Destreza (CD 8 + seu modificador de Constituição + seu Bônus de Proficiência). Se falhar, sofre 1d10 de dano de ácido; se passar, sofre metade. Esse dano aumenta em 1d10 quando você chega aos níveis de personagem 5 (2d10), 11 (3d10) e 17 (4d10).",
+   "Você pode usar esta Arma de Sopro um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo."
+  ]
+ },
+ "draconic-breath-weapon-cold": {
+  "n": "Arma de Sopro: Frio",
+  "d": [
+   "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na área deve fazer um teste de resistência de Destreza (CD 8 + seu modificador de Constituição + seu Bônus de Proficiência). Se falhar, sofre 1d10 de dano de frio; se passar, sofre metade. Esse dano aumenta em 1d10 quando você chega aos níveis de personagem 5 (2d10), 11 (3d10) e 17 (4d10).",
+   "Você pode usar esta Arma de Sopro um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo."
+  ]
+ },
+ "draconic-breath-weapon-fire": {
+  "n": "Arma de Sopro: Fogo",
+  "d": [
+   "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na área deve fazer um teste de resistência de Destreza (CD 8 + seu modificador de Constituição + seu Bônus de Proficiência). Se falhar, sofre 1d10 de dano de fogo; se passar, sofre metade. Esse dano aumenta em 1d10 quando você chega aos níveis de personagem 5 (2d10), 11 (3d10) e 17 (4d10).",
+   "Você pode usar esta Arma de Sopro um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo."
+  ]
+ },
+ "draconic-breath-weapon-lightning": {
+  "n": "Arma de Sopro: Elétrico",
+  "d": [
+   "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na área deve fazer um teste de resistência de Destreza (CD 8 + seu modificador de Constituição + seu Bônus de Proficiência). Se falhar, sofre 1d10 de dano elétrico; se passar, sofre metade. Esse dano aumenta em 1d10 quando você chega aos níveis de personagem 5 (2d10), 11 (3d10) e 17 (4d10).",
+   "Você pode usar esta Arma de Sopro um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo."
+  ]
+ },
+ "draconic-breath-weapon-poison": {
+  "n": "Arma de Sopro: Veneno",
+  "d": [
+   "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na área deve fazer um teste de resistência de Destreza (CD 8 + seu modificador de Constituição + seu Bônus de Proficiência). Se falhar, sofre 1d10 de dano de veneno; se passar, sofre metade. Esse dano aumenta em 1d10 quando você chega aos níveis de personagem 5 (2d10), 11 (3d10) e 17 (4d10).",
+   "Você pode usar esta Arma de Sopro um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo."
+  ]
+ },
+ "draconic-damage-resistance-acid": {
+  "n": "Resistência a Dano: Ácido",
+  "d": ["Você tem Resistência a dano de ácido, conforme seu traço Ancestralidade Dracônica."]
+ },
+ "draconic-damage-resistance-cold": {
+  "n": "Resistência a Dano: Frio",
+  "d": ["Você tem Resistência a dano de frio, conforme seu traço Ancestralidade Dracônica."]
+ },
+ "draconic-damage-resistance-fire": {
+  "n": "Resistência a Dano: Fogo",
+  "d": ["Você tem Resistência a dano de fogo, conforme seu traço Ancestralidade Dracônica."]
+ },
+ "draconic-damage-resistance-lightning": {
+  "n": "Resistência a Dano: Elétrico",
+  "d": ["Você tem Resistência a dano elétrico, conforme seu traço Ancestralidade Dracônica."]
+ },
+ "draconic-damage-resistance-poison": {
+  "n": "Resistência a Dano: Veneno",
+  "d": ["Você tem Resistência a dano de veneno, conforme seu traço Ancestralidade Dracônica."]
+ },
+ "darkvision-60": {
+  "n": "Visão no Escuro (18 m)",
+  "d": ["Você tem Visão no Escuro com alcance de 18 metros."]
+ },
+ "darkvision-120": {
+  "n": "Visão no Escuro (36 m)",
+  "d": ["Você tem Visão no Escuro com alcance de 36 metros."]
+ },
+ "draconic-ancestry": {
+  "d": [
+   "Sua linhagem descende de um dragão progenitor. Escolha o tipo de dragão na tabela de Ancestrais Dracônicos. A escolha afeta seus traços Arma de Sopro e Resistência a Dano, além da sua aparência.",
+   "Ancestrais Dracônicos",
+   "Dragão / Tipo de Dano",
+   "Negro / Ácido",
+   "Azul / Elétrico",
+   "Latão / Fogo",
+   "Bronze / Elétrico",
+   "Cobre / Ácido",
+   "Verde / Veneno",
+   "Ouro / Fogo",
+   "Vermelho / Fogo",
+   "Prata / Frio",
+   "Branco / Frio"
+  ]
+ },
+ "draconic-flight": {
+  "n": "Voo Dracônico",
+  "d": ["Ao chegar ao nível de personagem 5, você pode canalizar magia dracônica para voar temporariamente. Com uma Ação Bônus, asas espectrais brotam nas suas costas e duram 10 minutos, ou até você recolhê-las (sem gastar ação) ou ficar com a condição Incapacitado. Nesse período, você tem Deslocamento de Voo igual ao seu Deslocamento. As asas parecem feitas da mesma energia da sua Arma de Sopro. Depois de usar este traço, você só pode usá-lo de novo após terminar um Descanso Longo."]
+ },
+ "dwarven-resilience": {
+  "d": ["Você tem Resistência a dano de Veneno. Também tem Vantagem em testes de resistência para evitar ou encerrar a condição Envenenado."]
+ },
+ "dwarven-toughness": {
+  "d": ["Seu máximo de Pontos de Vida aumenta em 1, e aumenta em 1 de novo sempre que você ganha um nível."]
+ },
+ "elven-lineage": {
+  "n": "Linhagem Élfica",
+  "d": [
+   "Você pertence a uma linhagem que lhe concede habilidades sobrenaturais. Escolha uma linhagem na tabela de Linhagens Élficas. Você recebe o benefício de nível 1 dessa linhagem.",
+   "Ao chegar aos níveis de personagem 3 e 5, você aprende uma magia de nível mais alto, como mostra a tabela.",
+   "Você sempre tem essa magia preparada. Pode lançá-la uma vez sem gastar espaço de magia e recupera essa capacidade quando termina um Descanso Longo. Também pode lançá-la usando qualquer espaço de magia de nível apropriado que tenha.",
+   "Linhagens Élficas",
+   "Drow",
+   "Nível 1. O alcance da sua Visão no Escuro aumenta para 36 metros. Você também conhece o truque Globos de Luz.",
+   "Nível 3. Fogo das Fadas",
+   "Nível 5. Escuridão",
+   "Alto Elfo",
+   "Nível 1. Você conhece o truque Prestidigitação. Sempre que terminar um Descanso Longo, pode trocar esse truque por outro da lista de magias de Mago.",
+   "Nível 3. Detectar Magia",
+   "Nível 5. Passo Nebuloso",
+   "Elfo da Floresta",
+   "Nível 1. Seu Deslocamento aumenta para 10,5 metros. Você também conhece o truque Arte Druídica.",
+   "Nível 3. Passos Longos",
+   "Nível 5. Passos sem Pegadas",
+   "Inteligência, Sabedoria ou Carisma é sua habilidade de conjuração para as magias lançadas com este traço (escolha ao selecionar a linhagem)."
+  ]
+ },
+ "fey-ancestry": {
+  "d": ["Você tem Vantagem em testes de resistência para evitar ou encerrar a condição Enfeitiçado."]
+ },
+ "fiendish-legacy": {
+  "n": "Legado Ínfero",
+  "d": [
+   "Você recebeu um legado que lhe concede habilidades sobrenaturais. Escolha um legado na tabela de Legados Ínferos. Você recebe o benefício de nível 1 do legado escolhido.",
+   "Ao chegar aos níveis de personagem 3 e 5, você aprende uma magia de nível mais alto, como mostra a tabela.",
+   "Você sempre tem essa magia preparada. Pode lançá-la uma vez sem gastar espaço de magia e recupera essa capacidade quando termina um Descanso Longo. Também pode lançá-la usando qualquer espaço de magia de nível apropriado que tenha.",
+   "Inteligência, Sabedoria ou Carisma é sua habilidade de conjuração para as magias lançadas com este traço (escolha ao selecionar o legado).",
+   "Legados Ínferos",
+   "Abissal.",
+   "Nível 1. Você tem Resistência a dano de Veneno. Também conhece o truque Rajada de Veneno.",
+   "Nível 3. Raio Nauseante",
+   "Nível 5. Imobilizar Pessoa",
+   "Ctônico.",
+   "Nível 1. Você tem Resistência a dano Necrótico. Também conhece o truque Toque Arrepiante.",
+   "Nível 3. Vitalidade Falsa",
+   "Nível 5. Raio do Enfraquecimento",
+   "Infernal.",
+   "Nível 1. Você tem Resistência a dano de Fogo. Também conhece o truque Raio de Fogo.",
+   "Nível 3. Repreensão Infernal",
+   "Nível 5. Escuridão"
+  ]
+ }
+}

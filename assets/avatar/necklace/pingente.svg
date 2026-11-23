@@ -1,9 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g stroke="#{line}" stroke-width="2" stroke-linejoin="round">
+  <defs>
+    <filter id="f-metal" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{metal-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="f-secondary" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{secondary-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="soft2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.5"/></filter>
+  </defs>
+  <g stroke-linejoin="round" stroke-linecap="round">
     <g data-anchor="torso">
-      <path fill="none" stroke="#{metal}" stroke-width="3" d="M236 282 C240 304 250 314 256 316 C262 314 272 304 276 282"/>
-      <path fill="#{secondary}" d="M256 312 L266 326 L256 342 L246 326 Z"/>
-      <path fill="#ffffff" stroke="none" opacity="0.6" d="M252 322 L256 316 L258 324 Z"/>
+      <path fill="none" stroke="#{metal-deep}" stroke-width="1.6" d="M240 180 C242 202 248 222 256 228 C264 222 270 202 272 180"/>
+      <path fill="none" stroke="#{metal}" stroke-width="1" stroke-dasharray="1.6 0.9" d="M240 180 C242 202 248 222 256 228 C264 222 270 202 272 180"/>
+      <path fill="#{metal}" stroke="#{metal-deep}" stroke-width="1" filter="url(#f-metal)" d="M256 227 C261 231 263 237 262 243 C261 248 258 251 256 253 C254 251 251 248 250 243 C249 237 251 231 256 227 Z"/>
+      <path fill="#{secondary}" stroke="#{secondary-deep}" stroke-width="0.6" d="M256 232 C259 235 260 239 259.4 243 C258.8 246 257.4 248 256 249 C254.6 248 253.2 246 252.6 243 C252 239 253 235 256 232 Z"/>
+      <path fill="#ffffff" opacity="0.7" d="M254.6 235.6 C255.4 234.8 256.4 235 256.4 236 C256 237.6 255 239 254.2 239.4 C253.8 238 254 236.6 254.6 235.6 Z"/>
     </g>
   </g>
 </svg>

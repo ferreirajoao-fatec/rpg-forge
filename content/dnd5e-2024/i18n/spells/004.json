@@ -1,0 +1,90 @@
+{
+ "calm-emotions": {
+  "d": ["Cada Humanoide numa Esfera de 6 metros de raio centrada num ponto à sua escolha dentro do alcance deve passar num teste de resistência de Carisma ou é afetado por um dos efeitos a seguir (escolha para cada criatura): • A criatura tem Imunidade às condições Enfeitiçado e Amedrontado até a magia terminar. Se ela já estava Enfeitiçada ou Amedrontada, essas condições ficam suprimidas pela duração. • A criatura fica Indiferente em relação a criaturas à sua escolha com as quais seja Hostil. Essa indiferença termina se o alvo sofrer dano ou testemunhar seus aliados sofrendo dano. Quando a magia termina, a atitude da criatura volta ao normal."]
+ },
+ "chain-lightning": {
+  "d": [
+   "Você dispara um relâmpago em direção a um alvo que consiga ver dentro do alcance. Então três raios saltam desse alvo para até três outros alvos à sua escolha, cada um a até 9 metros do primeiro. Um alvo pode ser uma criatura ou um objeto e só pode ser atingido por um dos raios.",
+   "Cada alvo faz um teste de resistência de Destreza, sofrendo 10d8 de dano Elétrico se falhar, ou metade se passar."
+  ],
+  "h": ["Um raio adicional salta do primeiro alvo para outro alvo para cada nível de espaço de magia acima de 6."],
+  "m": "Três alfinetes de prata."
+ },
+ "charm-monster": {
+  "n": "Enfeitiçar Monstro",
+  "d": ["Uma criatura que você consiga ver dentro do alcance faz um teste de resistência de Sabedoria. Faz o teste com Vantagem se você ou seus aliados estiverem lutando contra ela. Se falhar, o alvo fica com a condição Enfeitiçado até a magia terminar ou até você ou seus aliados causarem dano a ele. A criatura Enfeitiçada é Amistosa com você. Quando a magia termina, o alvo sabe que foi Enfeitiçado por você."]
+ },
+ "charm-person": {
+  "d": ["Um Humanoide que você consiga ver dentro do alcance faz um teste de resistência de Sabedoria. Faz o teste com Vantagem se você ou seus aliados estiverem lutando contra ele. Se falhar, o alvo fica com a condição Enfeitiçado até a magia terminar ou até você ou seus aliados causarem dano a ele. A criatura Enfeitiçada é Amistosa com você. Quando a magia termina, o alvo sabe que foi Enfeitiçado por você."]
+ },
+ "chill-touch": {
+  "d": [
+   "Canalizando o frio do túmulo, faça um ataque mágico corpo a corpo contra um alvo ao seu alcance. Se acertar, o alvo sofre 1d10 de dano Necrótico e não pode recuperar Pontos de Vida até o fim do seu próximo turno.",
+   "Aprimoramento de Truque. O dano aumenta em 1d10 quando você alcança os níveis 5 (2d10), 11 (3d10) e 17 (4d10)."
+  ]
+ },
+ "chromatic-orb": {
+  "n": "Orbe Cromático",
+  "d": [
+   "Você arremessa um orbe de energia num alvo dentro do alcance. Escolha Ácido, Frio, Fogo, Elétrico, Veneno ou Trovejante para o tipo de orbe criado e então faça um ataque mágico à distância contra o alvo. Se acertar, o alvo sofre 3d8 de dano do tipo escolhido.",
+   "Se você tirar o mesmo número em dois ou mais dos d8, o orbe salta para outro alvo à sua escolha a até 9 metros do alvo. Faça uma jogada de ataque contra o novo alvo e uma nova jogada de dano. O orbe não pode saltar de novo, a menos que você lance a magia com um espaço de magia de nível 2+."
+  ],
+  "h": ["O dano aumenta em 1d8 para cada nível de espaço de magia acima de 1. O orbe pode saltar um número máximo de vezes igual ao nível do espaço gasto, e uma criatura só pode ser alvo uma vez em cada conjuração desta magia."],
+  "m": "Um diamante no valor de 50+ PO."
+ },
+ "circle-of-death": {
+  "d": ["Energia negativa se propaga numa Esfera de 18 metros de raio a partir de um ponto à sua escolha dentro do alcance. Cada criatura nessa área faz um teste de resistência de Constituição, sofrendo 8d8 de dano Necrótico se falhar, ou metade se passar."],
+  "h": ["O dano aumenta em 2d8 para cada nível de espaço de magia acima de 6."],
+  "m": "O pó de uma pérola negra esmagada no valor de 500+ PO."
+ },
+ "clairvoyance": {
+  "d": [
+   "Você cria um sensor Invisível dentro do alcance, num local que lhe seja familiar (um lugar que já visitou ou viu) ou num local óbvio que não lhe seja familiar (como atrás de uma porta, depois de uma esquina ou num bosque). O sensor intangível e invulnerável permanece no lugar pela duração.",
+   "Ao lançar a magia, escolha visão ou audição. Você pode usar o sentido escolhido pelo sensor como se estivesse no espaço dele. Com uma Ação Bônus, pode alternar entre visão e audição.",
+   "Uma criatura que veja o sensor (como uma criatura que se beneficie de Ver o Invisível ou de Visão Verdadeira) vê um orbe luminoso do tamanho do seu punho."
+  ],
+  "m": "Um foco no valor de 100+ PO: uma corneta cravejada de joias para audição ou um olho de vidro para visão."
+ },
+ "clone": {
+  "d": [
+   "Você toca uma criatura ou pelo menos 16 centímetros cúbicos da carne dela. Uma duplicata inerte dessa criatura se forma dentro do recipiente usado na conjuração e termina de crescer depois de 120 dias; você escolhe se o clone pronto tem a mesma idade da criatura ou é mais jovem. O clone permanece inerte e dura indefinidamente enquanto o recipiente não for perturbado.",
+   "Se a criatura original morrer depois que o clone terminar de se formar, a alma dela é transferida para o clone, se estiver livre e disposta a voltar. O clone é fisicamente idêntico ao original e tem a mesma personalidade, memórias e habilidades, mas nenhum equipamento do original. Os restos originais da criatura, se houver, ficam inertes e não podem ser revividos, já que a alma dela está em outro lugar."
+  ],
+  "m": "Um diamante no valor de 1.000+ PO, que a magia consome, e um recipiente lacrável no valor de 2.000+ PO grande o bastante para conter a criatura clonada."
+ },
+ "cloudkill": {
+  "d": [
+   "Você cria uma Esfera de 6 metros de raio de névoa verde-amarelada centrada num ponto dentro do alcance. A névoa dura pela duração ou até um vento forte (como o criado por Lufada de Vento) dispersá-la, encerrando a magia. Sua área tem Escuridão Densa.",
+   "Cada criatura na Esfera faz um teste de resistência de Constituição, sofrendo 5d8 de dano de Veneno se falhar, ou metade se passar. Uma criatura também precisa fazer esse teste quando a Esfera entra no espaço dela e quando entra na Esfera ou termina o turno ali. A criatura só faz esse teste uma vez por turno.",
+   "A Esfera se afasta 3 metros de você no início de cada um dos seus turnos."
+  ],
+  "h": ["O dano aumenta em 1d8 para cada nível de espaço de magia acima de 5."]
+ },
+ "color-spray": {
+  "d": ["Você dispara um leque deslumbrante de luzes coloridas e piscantes. Cada criatura num Cone de 4,5 metros que se origina em você deve passar num teste de resistência de Constituição ou fica com a condição Cego até o fim do seu próximo turno."],
+  "m": "Uma pitada de areia colorida."
+ },
+ "command": {
+  "d": ["Você dá um comando de uma palavra a uma criatura que consiga ver dentro do alcance. O alvo deve passar num teste de resistência de Sabedoria ou segue o comando no próximo turno dele. Escolha o comando entre estas opções: Aproxime-se. O alvo se move em sua direção pelo caminho mais curto e direto, terminando o turno se chegar a até 1,5 metro de você. Largue. O alvo larga o que estiver segurando e então termina o turno. Fuja. O alvo gasta o turno se afastando de você pelo meio mais rápido disponível. Rasteje. O alvo fica com a condição Caído e então termina o turno. Pare. No turno dele, o alvo não se move e não realiza nenhuma ação nem Ação Bônus."],
+  "h": ["Você pode afetar uma criatura adicional para cada nível de espaço de magia acima de 1."]
+ },
+ "commune": {
+  "d": [
+   "Você contata uma divindade ou um representante divino e faz até três perguntas que possam ser respondidas com sim ou não. Precisa fazer as perguntas antes de a magia terminar. Recebe uma resposta correta para cada pergunta.",
+   "Seres divinos não são necessariamente oniscientes, então você pode receber \"incerto\" como resposta se a pergunta envolver informações além do conhecimento da divindade. Num caso em que uma resposta de uma palavra possa ser enganosa ou contrária aos interesses da divindade, o Mestre pode oferecer uma frase curta como resposta.",
+   "Se você lançar a magia mais de uma vez antes de terminar um Descanso Longo, há uma chance cumulativa de 25% para cada conjuração depois da primeira de não receber resposta."
+  ],
+  "m": "Incenso."
+ },
+ "commune-with-nature": {
+  "n": "Comunhão com a Natureza",
+  "d": [
+   "Você entra em comunhão com espíritos da natureza e obtém conhecimento da área ao redor. Ao ar livre, a magia lhe dá conhecimento da área a até 4,5 km de você. Em cavernas e outros ambientes subterrâneos naturais, o raio fica limitado a 90 metros. A magia não funciona onde a natureza foi substituída por construções, como em castelos e povoados.",
+   "Escolha três dos fatos a seguir; você os descobre em relação à área da magia: • Localização de povoados • Localização de portais para outros planos de existência • Localização de uma criatura de Nível de Desafio 10+ (à escolha do Mestre) que seja Celestial, Elemental, Fada, Ínfero ou Morto-Vivo • O tipo mais comum de planta, mineral ou Fera (você escolhe qual descobrir) • Localização de corpos d'água. Por exemplo, você pode determinar a localização de um monstro poderoso na área, dos corpos d'água e de quaisquer cidades."
+  ]
+ },
+ "comprehend-languages": {
+  "d": ["Pela duração, você entende o significado literal de qualquer idioma que ouvir ou vir sendo sinalizado. Também entende qualquer idioma escrito que vir, mas precisa estar tocando a superfície em que as palavras estão escritas. Leva cerca de 1 minuto para ler uma página de texto. Esta magia não decifra símbolos nem mensagens secretas."],
+  "m": "Uma pitada de fuligem e sal."
+ }
+}

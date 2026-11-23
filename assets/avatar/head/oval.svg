@@ -1,8 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
-    <path fill="#{skin}" d="M256 92 C302 92 320 128 318 170 C316 215 290 248 256 250 C222 248 196 215 194 170 C192 128 210 92 256 92 Z"/>
-    <path fill="#{skin-dark}" stroke="none" opacity="0.25" d="M300 120 C316 150 316 200 296 230 C284 244 270 249 256 250 C282 236 304 200 300 120 Z"/>
-    <ellipse fill="#{skin-blush}" stroke="none" opacity="0.35" cx="222" cy="200" rx="14" ry="8"/>
-    <ellipse fill="#{skin-blush}" stroke="none" opacity="0.35" cx="290" cy="200" rx="14" ry="8"/>
+  <defs>
+    <filter id="form" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{skin-deep}" flood-opacity="0.65"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.4"/></filter>
+  </defs>
+  <g stroke="#{skin-deep}" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round">
+    <path fill="#{skin}" filter="url(#form)" d="M256 68 C278 68 292 82 294 104 C295 116 295 126 292 136 C290 146 286 152 280 158 C272 165 264 169 256 169 C248 169 240 165 232 158 C226 152 222 146 220 136 C217 126 217 116 218 104 C220 82 234 68 256 68 Z"/>
+    <g stroke="none" filter="url(#soft)">
+      <ellipse fill="#{skin-dark}" opacity="0.45" cx="240" cy="115" rx="10" ry="5.5"/>
+      <ellipse fill="#{skin-dark}" opacity="0.45" cx="272" cy="115" rx="10" ry="5.5"/>
+      <ellipse fill="#{skin-light}" opacity="0.45" cx="256" cy="94" rx="16" ry="9"/>
+      <ellipse fill="#{skin-light}" opacity="0.35" cx="234" cy="128" rx="7" ry="4"/>
+      <ellipse fill="#{skin-light}" opacity="0.35" cx="278" cy="128" rx="7" ry="4"/>
+      <ellipse fill="#{skin-blush}" opacity="0.18" cx="236" cy="136" rx="7" ry="5"/>
+      <ellipse fill="#{skin-blush}" opacity="0.18" cx="276" cy="136" rx="7" ry="5"/>
+      <ellipse fill="#{skin-dark}" opacity="0.45" cx="256" cy="157" rx="7" ry="2.6"/>
+      <ellipse fill="#{skin-light}" opacity="0.4" cx="256" cy="162" rx="6" ry="3"/>
+    </g>
+    <path fill="none" stroke-width="0.8" opacity="0.3" d="M222 138 C226 148 232 155 238 159 M290 138 C286 148 280 155 274 159"/>
   </g>
 </svg>

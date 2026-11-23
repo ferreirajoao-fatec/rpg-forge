@@ -1,0 +1,99 @@
+{
+ "levitate": {
+  "n": "Levitação",
+  "d": [
+   "Uma criatura ou um objeto à sua escolha que você consiga ver dentro do alcance sobe verticalmente até 6 metros e fica suspenso ali pela duração. A magia pode levitar um alvo de até 250 kg. Uma criatura não voluntária que passe num teste de resistência de Constituição não é afetada.",
+   "O alvo só consegue se mover empurrando ou puxando um objeto ou uma superfície fixa ao seu alcance (como uma parede ou um teto), o que permite que se mova como se estivesse escalando. Você pode mudar a altitude do alvo em até 6 metros em qualquer direção no seu turno. Se você for o alvo, pode subir ou descer como parte do seu movimento. Caso contrário, pode usar sua ação para mover o alvo, que precisa permanecer dentro do alcance da magia.",
+   "Quando a magia termina, o alvo desce flutuando suavemente até o chão se ainda estiver no ar."
+  ],
+  "m": "Uma pequena alça de couro ou um pedaço de fio de ouro dobrado em forma de taça, com uma haste comprida numa ponta."
+ },
+ "light": {
+  "n": "Luz",
+  "d": [
+   "Você toca um objeto que não tenha mais de 3 metros em nenhuma dimensão. Até a magia terminar, o objeto emite luz plena num raio de 6 metros e penumbra por mais 6 metros. A luz pode ter a cor que você quiser. Cobrir completamente o objeto com algo opaco bloqueia a luz. A magia termina se você lançá-la de novo ou dispensá-la com uma ação.",
+   "Se o alvo for um objeto segurado ou vestido por uma criatura hostil, ela deve passar num teste de resistência de Destreza para evitar a magia."
+  ],
+  "m": "Um vaga-lume ou musgo fosforescente."
+ },
+ "lightning-bolt": {
+  "n": "Relâmpago",
+  "d": [
+   "Um raio formando uma linha de 30 metros de comprimento e 1,5 metro de largura dispara a partir de você numa direção à sua escolha. Cada criatura na linha deve fazer um teste de resistência de Destreza. A criatura sofre 8d6 de dano elétrico se falhar, ou metade se passar.",
+   "O raio incendeia objetos inflamáveis na área que não estejam sendo vestidos nem carregados."
+  ],
+  "m": "Um pouco de pelo e uma vareta de âmbar, cristal ou vidro."
+ },
+ "locate-animals-or-plants": {
+  "n": "Localizar Animais ou Plantas",
+  "d": ["Descreva ou nomeie um tipo específico de fera ou planta. Concentrando-se na voz da natureza ao seu redor, você descobre a direção e a distância até a criatura ou planta desse tipo mais próxima num raio de 7,5 km, se houver alguma."],
+  "m": "Um pouco de pelo de um cão de caça."
+ },
+ "locate-creature": {
+  "n": "Localizar Criatura",
+  "d": [
+   "Descreva ou nomeie uma criatura que você conheça. Você sente a direção em que ela está, desde que esteja a até 300 metros de você. Se a criatura estiver se movendo, você sabe a direção do movimento dela.",
+   "A magia pode localizar uma criatura específica que você conheça, ou a criatura mais próxima de um tipo específico (como um humano ou um unicórnio), desde que você tenha visto uma criatura assim de perto (a até 9 metros) pelo menos uma vez. Se a criatura descrita ou nomeada estiver em outra forma, como sob os efeitos de uma magia metamorfose, esta magia não a localiza.",
+   "Esta magia não consegue localizar uma criatura se água corrente de pelo menos 3 metros de largura bloquear um caminho direto entre você e ela."
+  ]
+ },
+ "locate-object": {
+  "n": "Localizar Objeto",
+  "d": [
+   "Descreva ou nomeie um objeto que você conheça. Você sente a direção em que ele está, desde que esteja a até 300 metros de você. Se o objeto estiver em movimento, você sabe a direção do movimento dele.",
+   "A magia pode localizar um objeto específico que você conheça, desde que o tenha visto de perto (a até 9 metros) pelo menos uma vez. Em vez disso, pode localizar o objeto mais próximo de um tipo específico, como um certo tipo de roupa, joia, móvel, ferramenta ou arma.",
+   "Esta magia não consegue localizar um objeto se qualquer espessura de chumbo, mesmo uma folha fina, bloquear um caminho direto entre você e ele."
+  ],
+  "m": "Um graveto bifurcado."
+ },
+ "longstrider": {
+  "n": "Passos Longos",
+  "d": ["Você toca uma criatura. O deslocamento do alvo aumenta em 3 metros até a magia terminar."],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 2º nível ou superior, pode escolher uma criatura adicional como alvo para cada nível de espaço acima do 1º."],
+  "m": "Uma pitada de terra."
+ },
+ "mage-armor": {
+  "n": "Armadura Arcana",
+  "d": ["Você toca uma criatura voluntária que não esteja usando armadura, e uma energia mágica protetora a envolve até a magia terminar. A CA base do alvo passa a ser 13 + seu modificador de Destreza. A magia termina se o alvo vestir uma armadura ou se você a dispensar com uma ação."],
+  "m": "Um pedaço de couro curtido."
+ },
+ "mage-hand": {
+  "n": "Mãos Mágicas",
+  "d": [
+   "Uma mão espectral flutuante aparece num ponto à sua escolha dentro do alcance. A mão dura pela duração ou até você dispensá-la com uma ação. Ela some se ficar a mais de 9 metros de você ou se você lançar esta magia de novo.",
+   "Você pode usar sua ação para controlar a mão. Pode usá-la para manipular um objeto, abrir uma porta ou um recipiente destrancado, guardar ou tirar um item de um recipiente aberto, ou despejar o conteúdo de um frasco. Pode mover a mão até 9 metros cada vez que a usa.",
+   "A mão não pode atacar, ativar itens mágicos nem carregar mais de 5 kg."
+  ]
+ },
+ "magic-circle": {
+  "n": "Círculo Mágico",
+  "d": [
+   "Você cria um cilindro de energia mágica com 3 metros de raio e 6 metros de altura, centrado num ponto do chão que consiga ver dentro do alcance. Runas brilhantes aparecem onde o cilindro cruza o piso ou outra superfície.",
+   "Escolha um ou mais dos tipos de criatura a seguir: celestiais, elementais, fadas, ínferos ou mortos-vivos. O círculo afeta uma criatura do tipo escolhido das seguintes formas:",
+   "- A criatura não pode entrar voluntariamente no cilindro por meios não mágicos. Se tentar usar teletransporte ou viagem interplanar para isso, deve primeiro passar num teste de resistência de Carisma.",
+   "- A criatura tem desvantagem em jogadas de ataque contra alvos dentro do cilindro.",
+   "- Alvos dentro do cilindro não podem ser enfeitiçados, amedrontados nem possuídos pela criatura.",
+   "Ao lançar esta magia, você pode fazer a magia funcionar no sentido inverso, impedindo uma criatura do tipo especificado de sair do cilindro e protegendo os alvos fora dele."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 4º nível ou superior, a duração aumenta em 1 hora para cada nível de espaço acima do 3º."],
+  "m": "Água benta ou prata e ferro em pó no valor de pelo menos 100 po, que a magia consome."
+ },
+ "magic-jar": {
+  "n": "Recipiente Arcano",
+  "d": [
+   "Seu corpo cai em estado catatônico enquanto sua alma o deixa e entra no recipiente usado como componente material da magia. Enquanto sua alma estiver no recipiente, você percebe o que acontece ao redor como se estivesse no espaço dele. Não pode se mover nem usar reações. A única ação que pode realizar é projetar sua alma até 30 metros para fora do recipiente, voltando ao seu corpo vivo (e encerrando a magia) ou tentando possuir o corpo de um humanoide.",
+   "Você pode tentar possuir qualquer humanoide que consiga ver a até 30 metros de você (criaturas protegidas por uma magia proteção contra o bem e o mal ou círculo mágico não podem ser possuídas). O alvo deve fazer um teste de resistência de Carisma. Se falhar, sua alma passa para o corpo do alvo, e a alma dele fica presa no recipiente. Se passar, o alvo resiste aos seus esforços, e você não pode tentar possuí-lo de novo por 24 horas.",
+   "Depois de possuir o corpo de uma criatura, você o controla. Suas estatísticas de jogo são substituídas pelas da criatura, mas você mantém sua tendência e seus valores de Inteligência, Sabedoria e Carisma. Mantém os benefícios das suas próprias características de classe. Se o alvo tiver níveis de classe, você não pode usar nenhuma das características de classe dele.",
+   "Enquanto isso, a alma da criatura possuída consegue perceber do recipiente usando os próprios sentidos, mas não pode se mover nem realizar nenhuma ação.",
+   "Enquanto estiver possuindo um corpo, você pode usar sua ação para voltar do corpo hospedeiro para o recipiente, se ele estiver a até 30 metros de você, devolvendo a alma da criatura hospedeira ao corpo dela. Se o corpo hospedeiro morrer enquanto você estiver nele, a criatura morre, e você deve fazer um teste de resistência de Carisma contra a sua própria CD de conjuração. Se passar, volta ao recipiente, se ele estiver a até 30 metros de você. Caso contrário, você morre.",
+   "Se o recipiente for destruído ou a magia terminar, sua alma volta imediatamente ao seu corpo. Se seu corpo estiver a mais de 30 metros de você ou estiver morto quando tentar voltar, você morre. Se a alma de outra criatura estiver no recipiente quando ele for destruído, ela volta ao próprio corpo, se ele estiver vivo e a até 30 metros. Caso contrário, essa criatura morre.",
+   "Quando a magia termina, o recipiente é destruído."
+  ],
+  "m": "Uma gema, um cristal, um relicário ou outro recipiente ornamental no valor de pelo menos 500 po."
+ },
+ "magic-missile": {
+  "n": "Mísseis Mágicos",
+  "d": ["Você cria três dardos brilhantes de energia mágica. Cada dardo atinge uma criatura à sua escolha que você consiga ver dentro do alcance. Um dardo causa 1d4 + 1 de dano de energia ao alvo. Os dardos atingem todos ao mesmo tempo, e você pode direcioná-los a uma criatura ou a várias."],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 2º nível ou superior, a magia cria um dardo a mais para cada nível de espaço acima do 1º."]
+ }
+}

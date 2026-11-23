@@ -1,0 +1,90 @@
+{
+ "wizard-spellcasting": {
+  "d": [
+   "Como estudante de magia arcana, você aprendeu a lançar magias. Veja \"Magias\" para as regras de conjuração.",
+   "As informações abaixo explicam como usar essas regras com as magias de Mago, que aparecem na lista de magias de Mago mais adiante na descrição da classe.",
+   "Truques. Você conhece três truques de Mago à sua escolha. Luz, Mãos Mágicas e Raio de Gelo são os recomendados.",
+   "Sempre que terminar um Descanso Longo, você pode trocar um dos truques desta característica por outro truque de Mago à sua escolha.",
+   "Ao chegar aos níveis de Mago 4 e 10, você aprende mais um truque de Mago à sua escolha, como mostra a coluna Truques da tabela de Características do Mago.",
+   "Grimório. Seu aprendizado de mago culminou na criação de um livro único: seu grimório. É um objeto Miúdo que pesa 1,5 kg, tem 100 páginas e só pode ser lido por você ou por alguém que lance Identificação. Você determina a aparência e os materiais do livro, como um tomo de bordas douradas ou um maço de pergaminhos amarrados com barbante.",
+   "O livro contém as magias de nível 1 ou superior que você conhece. Começa com seis magias de Mago de nível 1 à sua escolha.",
+   "Detectar Magia, Queda Suave, Armadura Arcana, Mísseis Mágicos, Sono e Onda Trovejante são as recomendadas.",
+   "Sempre que ganhar um nível de Mago depois do 1, acrescente ao grimório duas magias de Mago à sua escolha. Cada uma deve ser de um nível para o qual você tenha espaços de magia, como mostra a tabela de Características do Mago.",
+   "Essas magias são o resultado da pesquisa arcana que você faz regularmente.",
+   "Espaços de Magia. A tabela de Características do Mago mostra quantos espaços de magia você tem para lançar suas magias de nível 1 ou superior. Você recupera todos os espaços gastos quando termina um Descanso Longo.",
+   "Magias Preparadas de Nível 1+. Você prepara a lista de magias de nível 1 ou superior que pode lançar com esta característica. Para isso, escolha quatro magias do seu grimório. As magias escolhidas precisam ser de um nível para o qual você tenha espaços de magia.",
+   "O número de magias na sua lista aumenta conforme você ganha níveis de Mago, como mostra a coluna Magias Preparadas da tabela de Características do Mago. Sempre que esse número aumentar, escolha magias de Mago adicionais até que o número de magias na sua lista seja igual ao da tabela. As magias escolhidas precisam ser de um nível para o qual você tenha espaços de magia. Por exemplo, se você for um Mago de nível 3, sua lista de magias preparadas pode incluir seis magias de nível 1 e 2 em qualquer combinação, escolhidas do seu grimório.",
+   "Se outra característica de Mago lhe der magias que você sempre tem preparadas, elas não contam no número de magias que você pode preparar com esta característica, mas fora isso contam como magias de Mago para você.",
+   "Trocar suas Magias Preparadas. Sempre que terminar um Descanso Longo, você pode mudar sua lista de magias preparadas, trocando qualquer uma delas por magias do seu grimório.",
+   "Habilidade de Conjuração. Inteligência é sua habilidade de conjuração para as magias de Mago.",
+   "Foco de Conjuração. Você pode usar um Foco Arcano ou seu grimório como Foco de Conjuração para suas magias de Mago."
+  ]
+ },
+ "wizard-ritual-adept": {
+  "n": "Adepto de Rituais",
+  "d": ["Você pode lançar qualquer magia como Ritual se ela tiver o marcador Ritual e estiver no seu grimório. Não precisa tê-la preparada, mas precisa ler o livro para lançá-la dessa forma."]
+ },
+ "wizard-arcane-recovery": {
+  "d": [
+   "Você pode recuperar parte da sua energia mágica estudando seu grimório. Quando termina um Descanso Curto, pode escolher espaços de magia gastos para recuperar.",
+   "Os espaços podem ter nível somado igual ou menor que a metade do seu nível de Mago (arredondado para cima), e nenhum deles pode ser de nível 6 ou superior.",
+   "Por exemplo, se você for um Mago de nível 4, pode recuperar até dois níveis de espaços de magia: um espaço de nível 2 ou dois de nível 1.",
+   "Depois de usar esta característica, você só pode usá-la de novo após terminar um Descanso Longo."
+  ]
+ },
+ "wizard-scholar": {
+  "n": "Erudito",
+  "d": [
+   "Enquanto estudava magia, você também se especializou em outro campo de estudo. Escolha uma das perícias a seguir em que tenha proficiência: Arcanismo, História, Investigação, Medicina, Natureza ou Religião.",
+   "Você tem Especialização na perícia escolhida."
+  ]
+ },
+ "wizard-subclass": {
+  "n": "Subclasse de Mago",
+  "d": [
+   "Você ganha uma subclasse de Mago à sua escolha. A subclasse Evocador está detalhada depois da descrição desta classe.",
+   "Uma subclasse é uma especialização que concede características em certos níveis de Mago. Pelo resto da sua carreira, você ganha cada característica da subclasse de nível igual ou menor que seu nível de Mago."
+  ]
+ },
+ "wizard-ability-score-improvement": {
+  "d": ["Você ganha o talento Aumento no Valor de Habilidade (veja \"Talentos\") ou outro talento à sua escolha para o qual se qualifique. Ganha esta característica de novo nos níveis de Mago 8, 12 e 16."]
+ },
+ "wizard-memorize-spell": {
+  "n": "Memorizar Magia",
+  "d": ["Sempre que terminar um Descanso Curto, você pode estudar seu grimório e trocar uma das magias de Mago de nível 1 ou superior que tem preparadas pela característica Conjuração por outra magia de nível 1 ou superior do livro."]
+ },
+ "wizard-spell-mastery": {
+  "d": [
+   "Você alcançou tamanha maestria sobre certas magias que pode lançá-las à vontade. Escolha uma magia de nível 1 e uma de nível 2 do seu grimório cujo tempo de conjuração seja uma ação. Você sempre tem essas magias preparadas e pode lançá-las no nível mais baixo sem gastar espaço de magia. Para lançar qualquer uma delas num nível mais alto, precisa gastar um espaço de magia.",
+   "Sempre que terminar um Descanso Longo, você pode estudar seu grimório e trocar uma dessas magias por outra elegível do mesmo nível do livro."
+  ]
+ },
+ "wizard-signature-spells": {
+  "n": "Magias Assinatura",
+  "d": ["Escolha duas magias de nível 3 do seu grimório como suas magias assinatura. Você sempre tem essas magias preparadas e pode lançar cada uma delas uma vez no nível 3 sem gastar espaço de magia. Depois de fazer isso, só pode lançá-las assim de novo após terminar um Descanso Curto ou Longo. Para lançar qualquer uma delas num nível mais alto, precisa gastar um espaço de magia."]
+ },
+ "evoker-evocation-savant": {
+  "d": [
+   "Escolha duas magias de Mago da escola de Evocação, cada uma de nível 2 ou menor, e acrescente-as ao seu grimório de graça.",
+   "Além disso, sempre que ganhar acesso a um novo nível de espaços de magia nesta classe, você pode acrescentar ao grimório, de graça, uma magia de Mago da escola de Evocação. A magia escolhida precisa ser de um nível para o qual você tenha espaços de magia."
+  ]
+ },
+ "evoker-potent-cantrip": {
+  "d": ["Seus truques de dano afetam até criaturas que evitam o grosso do efeito. Quando lança um truque contra uma criatura e erra a jogada de ataque ou o alvo passa no teste de resistência contra o truque, o alvo sofre metade do dano do truque (se houver), mas não sofre nenhum efeito adicional dele."]
+ },
+ "evoker-sculpt-spells": {
+  "d": ["Você pode criar bolsões de relativa segurança dentro dos efeitos das suas evocações. Quando lança uma magia de Evocação que afeta outras criaturas que você consiga ver, pode escolher um número delas igual a 1 + o nível da magia. As criaturas escolhidas passam automaticamente nos testes de resistência contra a magia e não sofrem dano se normalmente sofreriam metade ao passar."]
+ },
+ "evoker-empowered-evocation": {
+  "d": ["Sempre que lançar uma magia de Mago da escola de Evocação, você pode somar seu modificador de Inteligência a uma jogada de dano dessa magia."]
+ },
+ "evoker-overchannel": {
+  "d": [
+   "Você pode aumentar o poder das suas magias. Quando lança uma magia de Mago que causa dano com um espaço de magia de nível 1 a 5, pode causar o dano máximo com ela no turno em que a lança.",
+   "Na primeira vez que fizer isso, você não sofre nenhum efeito adverso.",
+   "Se usar esta característica de novo antes de terminar um Descanso Longo, sofre 2d12 de dano Necrótico por nível do espaço de magia logo depois de lançar a magia.",
+   "Esse dano ignora Resistência e Imunidade.",
+   "Cada vez que usar esta característica de novo antes de terminar um Descanso Longo, o dano Necrótico por nível de magia aumenta em 1d12."
+  ]
+ }
+}

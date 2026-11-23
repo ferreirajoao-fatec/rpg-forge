@@ -1,6 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <rect width="512" height="768" fill="#{bg-deep}"/>
-  <path fill="#{bg}" stroke="#{line}" stroke-width="4" d="M56 768 L56 300 C56 150 146 60 256 60 C366 60 456 150 456 300 L456 768 Z"/>
-  <path fill="#{bg-light}" stroke="none" opacity="0.5" d="M96 768 L96 310 C96 180 168 100 256 100 C344 100 416 180 416 310 L416 768 Z"/>
-  <rect y="740" width="512" height="28" fill="#{bg-dark}"/>
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.09 0"/>
+    </filter>
+    <filter id="cloud" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" seed="3"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.35 -0.1"/>
+    </filter>
+    <radialGradient id="vig" cx="0.5" cy="0.42" r="0.75">
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.45"/>
+    </radialGradient>
+    <clipPath id="wall"><path fill-rule="evenodd" d="M0 0 H512 V768 H0 Z M120 690 V280 C120 160 180 92 256 92 C332 92 392 160 392 280 V690 Z"/></clipPath>
+    <linearGradient id="inside" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#{bg-deep}"/>
+      <stop offset="1" stop-color="#{bg-dark}"/>
+    </linearGradient>
+    <radialGradient id="glowin" cx="0.5" cy="0.45" r="0.55">
+      <stop offset="0" stop-color="#{bg-light}" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#{bg-light}" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="768" fill="url(#inside)"/>
+  <rect x="100" y="80" width="312" height="620" fill="url(#glowin)"/>
+  <g clip-path="url(#wall)">
+    <rect width="512" height="768" fill="#{bg}"/>
+    <path fill="#{bg-light}" opacity="0.18" stroke="#{bg-deep}" stroke-width="2" d="M-36 0 h70 v54 h-70 Z M36 0 h70 v54 h-70 Z M108 0 h70 v54 h-70 Z M180 0 h70 v54 h-70 Z M252 0 h70 v54 h-70 Z M324 0 h70 v54 h-70 Z M396 0 h70 v54 h-70 Z M468 0 h70 v54 h-70 Z M-72 56 h70 v54 h-70 Z M0 56 h70 v54 h-70 Z M72 56 h70 v54 h-70 Z M144 56 h70 v54 h-70 Z M216 56 h70 v54 h-70 Z M288 56 h70 v54 h-70 Z M360 56 h70 v54 h-70 Z M432 56 h70 v54 h-70 Z M504 56 h70 v54 h-70 Z M-36 112 h70 v54 h-70 Z M36 112 h70 v54 h-70 Z M108 112 h70 v54 h-70 Z M180 112 h70 v54 h-70 Z M252 112 h70 v54 h-70 Z M324 112 h70 v54 h-70 Z M396 112 h70 v54 h-70 Z M468 112 h70 v54 h-70 Z M-72 168 h70 v54 h-70 Z M0 168 h70 v54 h-70 Z M72 168 h70 v54 h-70 Z M144 168 h70 v54 h-70 Z M216 168 h70 v54 h-70 Z M288 168 h70 v54 h-70 Z M360 168 h70 v54 h-70 Z M432 168 h70 v54 h-70 Z M504 168 h70 v54 h-70 Z M-36 224 h70 v54 h-70 Z M36 224 h70 v54 h-70 Z M108 224 h70 v54 h-70 Z M180 224 h70 v54 h-70 Z M252 224 h70 v54 h-70 Z M324 224 h70 v54 h-70 Z M396 224 h70 v54 h-70 Z M468 224 h70 v54 h-70 Z M-72 280 h70 v54 h-70 Z M0 280 h70 v54 h-70 Z M72 280 h70 v54 h-70 Z M144 280 h70 v54 h-70 Z M216 280 h70 v54 h-70 Z M288 280 h70 v54 h-70 Z M360 280 h70 v54 h-70 Z M432 280 h70 v54 h-70 Z M504 280 h70 v54 h-70 Z M-36 336 h70 v54 h-70 Z M36 336 h70 v54 h-70 Z M108 336 h70 v54 h-70 Z M180 336 h70 v54 h-70 Z M252 336 h70 v54 h-70 Z M324 336 h70 v54 h-70 Z M396 336 h70 v54 h-70 Z M468 336 h70 v54 h-70 Z M-72 392 h70 v54 h-70 Z M0 392 h70 v54 h-70 Z M72 392 h70 v54 h-70 Z M144 392 h70 v54 h-70 Z M216 392 h70 v54 h-70 Z M288 392 h70 v54 h-70 Z M360 392 h70 v54 h-70 Z M432 392 h70 v54 h-70 Z M504 392 h70 v54 h-70 Z M-36 448 h70 v54 h-70 Z M36 448 h70 v54 h-70 Z M108 448 h70 v54 h-70 Z M180 448 h70 v54 h-70 Z M252 448 h70 v54 h-70 Z M324 448 h70 v54 h-70 Z M396 448 h70 v54 h-70 Z M468 448 h70 v54 h-70 Z M-72 504 h70 v54 h-70 Z M0 504 h70 v54 h-70 Z M72 504 h70 v54 h-70 Z M144 504 h70 v54 h-70 Z M216 504 h70 v54 h-70 Z M288 504 h70 v54 h-70 Z M360 504 h70 v54 h-70 Z M432 504 h70 v54 h-70 Z M504 504 h70 v54 h-70 Z M-36 560 h70 v54 h-70 Z M36 560 h70 v54 h-70 Z M108 560 h70 v54 h-70 Z M180 560 h70 v54 h-70 Z M252 560 h70 v54 h-70 Z M324 560 h70 v54 h-70 Z M396 560 h70 v54 h-70 Z M468 560 h70 v54 h-70 Z M-72 616 h70 v54 h-70 Z M0 616 h70 v54 h-70 Z M72 616 h70 v54 h-70 Z M144 616 h70 v54 h-70 Z M216 616 h70 v54 h-70 Z M288 616 h70 v54 h-70 Z M360 616 h70 v54 h-70 Z M432 616 h70 v54 h-70 Z M504 616 h70 v54 h-70 Z M-36 672 h70 v54 h-70 Z M36 672 h70 v54 h-70 Z M108 672 h70 v54 h-70 Z M180 672 h70 v54 h-70 Z M252 672 h70 v54 h-70 Z M324 672 h70 v54 h-70 Z M396 672 h70 v54 h-70 Z M468 672 h70 v54 h-70 Z M-72 728 h70 v54 h-70 Z M0 728 h70 v54 h-70 Z M72 728 h70 v54 h-70 Z M144 728 h70 v54 h-70 Z M216 728 h70 v54 h-70 Z M288 728 h70 v54 h-70 Z M360 728 h70 v54 h-70 Z M432 728 h70 v54 h-70 Z M504 728 h70 v54 h-70 Z "/>
+    <rect width="512" height="768" fill="#{bg-dark}" filter="url(#cloud)" opacity="0.5"/>
+  </g>
+  <path fill="none" stroke="#{bg-deep}" stroke-width="10" opacity="0.55" d="M120 690 V280 C120 160 180 92 256 92 C332 92 392 160 392 280 V690"/>
+  <path fill="none" stroke="#{bg-light}" stroke-width="2" opacity="0.4" d="M112 690 V280 C112 154 176 84 256 84 C336 84 400 154 400 280 V690"/>
+  <path fill="#{bg-dark}" d="M0 690 H512 V768 H0 Z"/>
+  <path fill="none" stroke="#{bg-deep}" stroke-width="2" d="M0 690 H512 M0 728 H512 M60 690 L40 768 M180 690 L170 768 M300 690 L310 768 M420 690 L440 768"/>
+  <ellipse cx="256" cy="748" rx="110" ry="12" fill="#000000" opacity="0.3"/>
+  <rect width="512" height="768" filter="url(#grain)"/>
+  <rect width="512" height="768" fill="url(#vig)"/>
 </svg>

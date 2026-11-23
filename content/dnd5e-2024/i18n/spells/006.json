@@ -1,0 +1,71 @@
+{
+ "control-water": {
+  "d": [
+   "Até a magia terminar, você controla qualquer água dentro de uma área à sua escolha que seja um Cubo de até 30 metros de lado, usando um dos efeitos a seguir. Com uma ação de Magia nos seus turnos posteriores, pode repetir o mesmo efeito ou escolher outro.",
+   "Inundação. Você faz o nível de toda a água parada na área subir até 6 metros. Se escolher uma área num grande corpo d'água, em vez disso cria uma onda de 6 metros de altura que viaja de um lado da área ao outro e então arrebenta. Quaisquer veículos Enormes ou menores no caminho da onda são carregados com ela até o outro lado. Quaisquer veículos Enormes ou menores atingidos pela onda têm 25% de chance de virar.",
+   "O nível da água permanece elevado até a magia terminar ou você escolher outro efeito. Se este efeito produziu uma onda, a onda se repete no início do seu próximo turno enquanto o efeito de inundação durar.",
+   "Abrir as Águas. Você divide a água na área e cria uma vala. A vala atravessa a área da magia, e a água separada forma uma parede de cada lado. A vala permanece até a magia terminar ou você escolher outro efeito. Então a água enche a vala lentamente ao longo da rodada seguinte, até o nível normal ser restaurado.",
+   "Redirecionar Fluxo. Você faz a água corrente na área se mover numa direção à sua escolha, mesmo que precise passar por cima de obstáculos, subir paredes ou seguir outras direções improváveis. A água na área se move como você a direciona, mas, ao sair da área da magia, volta a fluir conforme o terreno. A água continua se movendo na direção escolhida até a magia terminar ou você escolher outro efeito.",
+   "Redemoinho. Você faz um redemoinho se formar no centro da área, que precisa ter pelo menos 15 metros de lado e 7,5 metros de profundidade. O redemoinho dura até você escolher outro efeito ou a magia terminar. Ele tem 1,5 metro de largura na base, até 15 metros de largura no topo e 7,5 metros de altura. Qualquer criatura na água e a até 7,5 metros do redemoinho é puxada 3 metros em direção a ele. Quando uma criatura entra no redemoinho pela primeira vez num turno ou termina o turno ali, faz um teste de resistência de Força. Se falhar, sofre 2d8 de dano de Concussão. Se passar, sofre metade do dano. Uma criatura só consegue nadar para longe do redemoinho se primeiro realizar uma ação para se afastar e passar num teste de Força (Atletismo) contra a CD de resistência das suas magias."
+  ],
+  "m": "Uma mistura de água e poeira."
+ },
+ "control-weather": {
+  "d": [
+   "Você assume o controle do clima a até 7,5 km de você pela duração. Precisa estar ao ar livre para lançar esta magia, e ela termina antes se você entrar num lugar fechado.",
+   "Ao lançar a magia, você muda as condições climáticas atuais, que são determinadas pelo Mestre. Pode mudar precipitação, temperatura e vento. As novas condições levam 1d4 × 10 minutos para fazer efeito. Depois disso, você pode mudar as condições de novo. Quando a magia termina, o clima volta ao normal aos poucos. Ao mudar as condições, encontre a condição atual nas tabelas a seguir e mude seu estágio em um, para cima ou para baixo. Ao mudar o vento, pode mudar também a direção dele. Precipitação: 1, Céu limpo; 2, Nuvens esparsas; 3, Nublado ou neblina rasteira; 4, Chuva, granizo ou neve; 5, Chuva torrencial, granizo forte ou nevasca. Temperatura: 1, Onda de calor; 2, Quente; 3, Morno; 4, Fresco; 5, Frio; 6, Congelante. Vento: 1, Calmaria; 2, Vento moderado; 3, Vento forte; 4, Ventania; 5, Tempestade."
+  ],
+  "m": "Incenso aceso."
+ },
+ "counterspell": {
+  "d": ["Você tenta interromper uma criatura no meio da conjuração de uma magia. A criatura faz um teste de resistência de Constituição. Se falhar, a magia se dissipa sem efeito, e a ação, a Ação Bônus ou a Reação usada para lançá-la é desperdiçada. Se essa magia foi lançada com um espaço de magia, o espaço não é gasto."],
+  "ct": "Reação, que você realiza quando vê uma criatura a até 18 metros de você lançando uma magia com componentes Verbais, Somáticos ou Materiais"
+ },
+ "create-food-and-water": {
+  "d": ["Você cria 22,5 kg de comida e 120 litros de água potável no chão ou em recipientes dentro do alcance, ambos úteis para afastar os perigos da desnutrição e da desidratação. A comida é sem graça, mas nutritiva, e parece um alimento à sua escolha, e a água é limpa. A comida estraga depois de 24 horas se não for comida."]
+ },
+ "create-or-destroy-water": {
+  "d": ["Você faz uma das coisas a seguir: Criar Água. Você cria até 40 litros de água limpa dentro do alcance num recipiente aberto. Em vez disso, a água pode cair como chuva num Cubo de 9 metros dentro do alcance, apagando as chamas expostas ali. Destruir Água. Você destrói até 40 litros de água num recipiente aberto dentro do alcance. Em vez disso, pode destruir a neblina num Cubo de 9 metros dentro do alcance."],
+  "h": ["Você cria ou destrói 40 litros de água adicionais, ou o tamanho do Cubo aumenta em 1,5 metro, para cada nível de espaço de magia acima de 1."],
+  "m": "Uma mistura de água e areia."
+ },
+ "create-undead": {
+  "d": [
+   "Você só pode lançar esta magia à noite. Escolha até três cadáveres de Humanoides Médios ou Pequenos dentro do alcance. Cada um se torna um Carniçal sob seu controle (veja \"Monstros\" para a ficha).",
+   "Com uma Ação Bônus em cada um dos seus turnos, você pode comandar mentalmente qualquer criatura animada com esta magia que esteja a até 36 metros de você (se controlar várias criaturas, pode comandar qualquer uma delas ao mesmo tempo, dando o mesmo comando a elas). Você decide que ação a criatura realizará e para onde se moverá no próximo turno dela, ou pode dar um comando geral, como vigiar um lugar específico. Se não der comandos, a criatura realiza a ação Esquivar e só se move para evitar perigo. Depois de receber uma ordem, a criatura continua a segui-la até concluir a tarefa.",
+   "A criatura fica sob seu controle por 24 horas, depois das quais para de obedecer a qualquer comando que você tenha dado. Para manter o controle por mais 24 horas, você precisa lançar esta magia na criatura antes de terminar o período atual de 24 horas. Esse uso da magia reafirma seu controle sobre até três criaturas animadas com esta magia em vez de animar novas."
+  ],
+  "h": ["Se usar um espaço de magia de nível 7, você pode animar ou reafirmar o controle sobre quatro Carniçais. Se usar um espaço de nível 8, pode animar ou reafirmar o controle sobre cinco Carniçais ou dois Lívidos ou Aparições. Se usar um espaço de nível 9, pode animar ou reafirmar o controle sobre seis Carniçais, três Lívidos ou Aparições ou duas Múmias. Veja \"Monstros\" para essas fichas."],
+  "m": "Uma pedra de ônix negro de 150+ PO para cada cadáver."
+ },
+ "creation": {
+  "d": [
+   "Você puxa fiapos de matéria sombria do Pendor das Sombras para criar um objeto dentro do alcance. Ele é um objeto de matéria vegetal (tecidos, corda, madeira e afins) ou mineral (pedra, cristal, metal e afins). O objeto não pode ser maior que um Cubo de 1,5 metro e precisa ter uma forma e um material que você já tenha visto.",
+   "A duração da magia depende do material do objeto, como mostra a tabela de Materiais. Se o objeto for composto de vários materiais, use a menor duração. Usar qualquer objeto criado por esta magia como componente Material de outra magia faz essa outra magia falhar. Materiais: Matéria vegetal, 24 horas; Pedra ou cristal, 12 horas; Metais preciosos, 1 hora; Gemas, 10 minutos; Adamante ou mithral, 1 minuto."
+  ],
+  "h": ["O Cubo aumenta em 1,5 metro para cada nível de espaço de magia acima de 5."],
+  "m": "Um pincel."
+ },
+ "cure-wounds": {
+  "d": ["Uma criatura que você toca recupera Pontos de Vida iguais a 2d8 mais seu modificador de habilidade de conjuração. Usando um Espaço de Magia de Nível Superior. A cura aumenta em 2d8 para cada nível de espaço de magia acima de 1."]
+ },
+ "dancing-lights": {
+  "d": [
+   "Você cria até quatro luzes do tamanho de tochas dentro do alcance, fazendo-as parecer tochas, lanternas ou orbes brilhantes que flutuam pela duração. Em vez disso, pode combinar as quatro luzes numa forma brilhante Média, vagamente humanoide. Seja qual for a forma escolhida, cada luz emite Penumbra num raio de 3 metros.",
+   "Com uma Ação Bônus, você pode mover as luzes até 18 metros para um espaço dentro do alcance. Cada luz precisa estar a até 6 metros de outra luz criada por esta magia, e uma luz desaparece se ultrapassar o alcance da magia."
+  ],
+  "m": "Um pedacinho de fósforo."
+ },
+ "darkness": {
+  "d": [
+   "Pela duração, Escuridão mágica se espalha a partir de um ponto dentro do alcance e preenche uma Esfera de 4,5 metros de raio. Visão no Escuro não enxerga através dela, e luz não mágica não consegue iluminá-la.",
+   "Em vez disso, você pode lançar a magia num objeto que não esteja sendo vestido nem carregado, fazendo a Escuridão preencher uma Emanação de 4,5 metros que se origina nesse objeto. Cobrir esse objeto com algo opaco, como uma tigela ou um elmo, bloqueia a Escuridão.",
+   "Se qualquer parte da área desta magia se sobrepuser a uma área de Luz Plena ou Penumbra criada por uma magia de nível 2 ou inferior, essa outra magia é dissipada."
+  ],
+  "m": "Pelo de morcego e um pedaço de carvão."
+ },
+ "darkvision": {
+  "d": ["Pela duração, uma criatura voluntária que você toca tem Visão no Escuro com alcance de 45 metros."],
+  "m": "Uma cenoura seca."
+ }
+}

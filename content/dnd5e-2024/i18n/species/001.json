@@ -1,0 +1,11 @@
+{
+ "dragonborn": { "n": "Draconato" },
+ "dwarf": { "n": "Anão" },
+ "elf": { "n": "Elfo" },
+ "gnome": { "n": "Gnomo" },
+ "goliath": { "n": "Golias" },
+ "halfling": { "n": "Halfling" },
+ "human": { "n": "Humano" },
+ "orc": { "n": "Orc" },
+ "tiefling": { "n": "Tiefling" }
+}

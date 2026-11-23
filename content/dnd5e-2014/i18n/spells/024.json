@@ -1,0 +1,74 @@
+{
+ "planar-ally": {
+  "n": "Aliado Planar",
+  "d": [
+   "Você suplica ajuda a uma entidade de outro mundo. O ser precisa ser conhecido por você: um deus, um primordial, um príncipe demônio ou outro ser de poder cósmico. Essa entidade envia um celestial, um elemental ou um ínfero leal a ela para ajudá-lo, fazendo a criatura aparecer num espaço desocupado dentro do alcance. Se você souber o nome de uma criatura específica, pode dizê-lo ao lançar esta magia para pedir essa criatura, embora possa receber outra mesmo assim (à escolha do Mestre).",
+   "Quando a criatura aparece, não tem nenhuma obrigação de se comportar de forma específica. Você pode pedir que ela preste um serviço em troca de pagamento, mas ela não é obrigada a aceitar. A tarefa pedida pode ir do simples (nos leve voando pelo abismo, ou nos ajude numa batalha) ao complexo (espione nossos inimigos, ou nos proteja durante nossa incursão na masmorra). Você precisa conseguir se comunicar com a criatura para negociar os serviços dela.",
+   "O pagamento pode ter várias formas. Um celestial pode exigir uma doação considerável de ouro ou itens mágicos a um templo aliado, enquanto um ínfero pode exigir um sacrifício vivo ou um presente em tesouro. Algumas criaturas podem trocar o serviço por uma missão realizada por você.",
+   "Como regra geral, uma tarefa que pode ser medida em minutos exige um pagamento de 100 po por minuto. Uma tarefa medida em horas exige 1.000 po por hora. E uma tarefa medida em dias (até 10 dias) exige 10.000 po por dia. O Mestre pode ajustar esses pagamentos conforme as circunstâncias em que você lançou a magia. Se a tarefa estiver de acordo com os princípios da criatura, o pagamento pode cair pela metade ou até ser dispensado. Tarefas sem perigo normalmente exigem só metade do pagamento sugerido, enquanto tarefas especialmente perigosas podem exigir um presente maior. As criaturas raramente aceitam tarefas que pareçam suicidas.",
+   "Depois que a criatura conclui a tarefa, ou quando a duração combinada do serviço termina, ela volta ao seu plano de origem depois de prestar contas a você, se for apropriado à tarefa e possível. Se vocês não chegarem a um acordo sobre o preço do serviço, a criatura volta imediatamente ao plano de origem.",
+   "Uma criatura recrutada para entrar no seu grupo conta como membro dele, recebendo uma parte completa dos pontos de experiência concedidos."
+  ]
+ },
+ "planar-binding": {
+  "n": "Vínculo Planar",
+  "d": [
+   "Com esta magia, você tenta vincular um celestial, um elemental, uma fada ou um ínfero ao seu serviço. A criatura precisa estar dentro do alcance durante toda a conjuração. (Normalmente, a criatura é primeiro invocada para o centro de um círculo mágico invertido para mantê-la presa enquanto esta magia é lançada.) Ao fim da conjuração, o alvo deve fazer um teste de resistência de Carisma. Se falhar, fica obrigado a servi-lo pela duração. Se a criatura foi invocada ou criada por outra magia, a duração dessa magia é estendida para igualar a desta.",
+   "Uma criatura vinculada deve seguir suas instruções da melhor forma possível. Você pode mandá-la acompanhá-lo numa aventura, vigiar um local ou entregar uma mensagem. A criatura obedece à letra das suas instruções, mas, se for hostil a você, tenta distorcer suas palavras para alcançar os próprios objetivos. Se a criatura cumprir completamente suas instruções antes de a magia terminar, viaja até você para relatar isso, se estiverem no mesmo plano de existência. Se você estiver em outro plano de existência, ela volta ao lugar onde você a vinculou e permanece lá até a magia terminar."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de nível mais alto, a duração aumenta para 10 dias com um espaço de 6º nível, 30 dias com um de 7º nível, 180 dias com um de 8º nível e um ano e um dia com um de 9º nível."],
+  "m": "Uma joia no valor de pelo menos 1.000 po, que a magia consome."
+ },
+ "plane-shift": {
+  "n": "Viagem Planar",
+  "d": [
+   "Você e até oito criaturas voluntárias de mãos dadas em círculo são transportados para outro plano de existência. Você pode especificar o destino em termos gerais, como a Cidade de Bronze no Plano Elemental do Fogo ou o palácio de Dispater no segundo nível dos Nove Infernos, e aparece no destino ou perto dele. Se estiver tentando chegar à Cidade de Bronze, por exemplo, pode chegar à Rua do Aço, diante do Portão das Cinzas, ou observando a cidade do outro lado do Mar de Fogo, a critério do Mestre.",
+   "Em vez disso, se você conhecer a sequência de selos de um círculo de teletransporte em outro plano de existência, esta magia pode levá-lo a esse círculo. Se o círculo de teletransporte for pequeno demais para conter todas as criaturas transportadas, elas aparecem nos espaços desocupados mais próximos ao lado do círculo.",
+   "Você pode usar esta magia para banir uma criatura não voluntária para outro plano. Escolha uma criatura ao seu alcance e faça um ataque mágico corpo a corpo contra ela. Se acertar, a criatura deve fazer um teste de resistência de Carisma. Se falhar, é transportada para um local aleatório no plano de existência que você especificar. Uma criatura transportada assim precisa encontrar sozinha o caminho de volta ao seu plano de existência atual."
+  ],
+  "m": "Uma vara de metal bifurcada no valor de pelo menos 250 po, sintonizada com um plano de existência específico."
+ },
+ "plant-growth": {
+  "n": "Crescimento de Plantas",
+  "d": [
+   "Esta magia canaliza vitalidade para as plantas numa área específica. Há dois usos possíveis para a magia, que concedem benefícios imediatos ou de longo prazo.",
+   "Se lançar esta magia com 1 ação, escolha um ponto dentro do alcance. Todas as plantas comuns num raio de 30 metros centrado nesse ponto ficam densas e cheias de mato. Uma criatura que se mova pela área precisa gastar 4 metros de movimento para cada 1 metro que avança.",
+   "Você pode excluir dos efeitos uma ou mais áreas de qualquer tamanho dentro da área da magia.",
+   "Se lançar esta magia ao longo de 8 horas, você enriquece a terra. Todas as plantas num raio de 750 metros centrado num ponto dentro do alcance ficam enriquecidas por 1 ano. As plantas produzem o dobro da quantidade normal de alimento quando colhidas."
+  ]
+ },
+ "poison-spray": {
+  "n": "Rajada de Veneno",
+  "d": [
+   "Você estende a mão em direção a uma criatura que consiga ver dentro do alcance e projeta uma baforada de gás nocivo da palma. A criatura deve passar num teste de resistência de Constituição ou sofrer 1d12 de dano de veneno.",
+   "O dano desta magia aumenta em 1d12 quando você alcança o 5º nível (2d12), o 11º nível (3d12) e o 17º nível (4d12)."
+  ]
+ },
+ "polymorph": {
+  "n": "Metamorfose",
+  "d": [
+   "Esta magia transforma uma criatura que você consiga ver dentro do alcance numa nova forma. Uma criatura não voluntária deve fazer um teste de resistência de Sabedoria para evitar o efeito. Um metamorfo passa automaticamente nesse teste.",
+   "A transformação dura pela duração, ou até o alvo cair a 0 pontos de vida ou morrer. A nova forma pode ser qualquer fera cujo nível de desafio seja igual ou menor que o do alvo (ou que o nível do alvo, se ele não tiver nível de desafio). As estatísticas de jogo do alvo, incluindo os valores de habilidades mentais, são substituídas pelas da fera escolhida. Ele mantém sua tendência e personalidade.",
+   "O alvo assume os pontos de vida da nova forma. Quando volta à forma normal, retorna aos pontos de vida que tinha antes de se transformar. Se voltar por ter caído a 0 pontos de vida, o dano excedente passa para a forma normal. Desde que o dano excedente não reduza a forma normal a 0 pontos de vida, a criatura não fica inconsciente.",
+   "A criatura fica limitada nas ações que pode realizar pela natureza da nova forma e não pode falar, lançar magias nem realizar qualquer outra ação que exija mãos ou fala.",
+   "O equipamento do alvo se funde à nova forma. A criatura não pode ativar, usar, empunhar nem se beneficiar de nenhum modo do seu equipamento."
+  ],
+  "m": "Um casulo de lagarta."
+ },
+ "power-word-kill": {
+  "n": "Palavra de Poder: Matar",
+  "d": ["Você pronuncia uma palavra de poder que pode obrigar uma criatura que consiga ver dentro do alcance a morrer instantaneamente. Se a criatura escolhida tiver 100 pontos de vida ou menos, ela morre. Caso contrário, a magia não tem efeito."]
+ },
+ "power-word-stun": {
+  "n": "Palavra de Poder: Atordoar",
+  "d": [
+   "Você pronuncia uma palavra de poder que pode sobrecarregar a mente de uma criatura que consiga ver dentro do alcance, deixando-a estupefata. Se o alvo tiver 150 pontos de vida ou menos, fica atordoado. Caso contrário, a magia não tem efeito.",
+   "O alvo atordoado deve fazer um teste de resistência de Constituição no fim de cada turno dele. Se passar, o atordoamento termina."
+  ]
+ },
+ "prayer-of-healing": {
+  "n": "Oração de Cura",
+  "d": ["Até seis criaturas à sua escolha que você consiga ver dentro do alcance recuperam pontos de vida iguais a 2d8 + seu modificador de habilidade de conjuração. Esta magia não tem efeito em mortos-vivos nem em constructos."],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 3º nível ou superior, a cura aumenta em 1d8 para cada nível de espaço acima do 2º."]
+ }
+}

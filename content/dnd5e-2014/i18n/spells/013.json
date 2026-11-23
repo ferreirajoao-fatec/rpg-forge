@@ -1,0 +1,93 @@
+{
+ "fear": {
+  "n": "Medo",
+  "d": [
+   "Você projeta uma imagem fantasmagórica dos piores medos de uma criatura. Cada criatura num cone de 9 metros deve passar num teste de resistência de Sabedoria ou largar o que estiver segurando e ficar amedrontada pela duração.",
+   "Enquanto estiver amedrontada por esta magia, a criatura deve realizar a ação Disparada e se afastar de você pela rota mais segura disponível em cada turno dela, a não ser que não haja para onde ir. Se terminar o turno num local sem linha de visão até você, pode fazer um teste de resistência de Sabedoria. Se passar, a magia termina para ela."
+  ],
+  "m": "Uma pena branca ou o coração de uma galinha."
+ },
+ "feather-fall": {
+  "n": "Queda Suave",
+  "d": ["Escolha até cinco criaturas em queda dentro do alcance. A velocidade de descida de uma criatura em queda diminui para 18 metros por rodada até a magia terminar. Se a criatura pousar antes de a magia terminar, não sofre dano de queda e pode cair de pé, e a magia termina para ela."],
+  "m": "Uma pequena pena ou um pouco de penugem."
+ },
+ "feeblemind": {
+  "n": "Enfraquecer o Intelecto",
+  "d": [
+   "Você golpeia a mente de uma criatura que consiga ver dentro do alcance, tentando destruir seu intelecto e sua personalidade. O alvo sofre 4d6 de dano psíquico e deve fazer um teste de resistência de Inteligência.",
+   "Se falhar, os valores de Inteligência e Carisma da criatura passam a ser 1. A criatura não pode lançar magias, ativar itens mágicos, entender idiomas nem se comunicar de forma inteligível. Ela consegue, porém, identificar seus amigos, segui-los e até protegê-los.",
+   "Ao fim de cada 30 dias, a criatura pode repetir o teste de resistência contra esta magia. Se passar, a magia termina.",
+   "A magia também pode ser encerrada por restauração maior, cura completa ou desejo."
+  ],
+  "m": "Um punhado de esferas de argila, cristal, vidro ou mineral."
+ },
+ "find-familiar": {
+  "n": "Encontrar Familiar",
+  "d": [
+   "Você obtém os serviços de um familiar, um espírito que assume uma forma animal à sua escolha: morcego, gato, caranguejo, sapo, falcão, lagarto, polvo, coruja, cobra venenosa, peixe (piranha), rato, corvo, cavalo-marinho, aranha ou doninha. Aparecendo num espaço desocupado dentro do alcance, o familiar tem as estatísticas da forma escolhida, mas é um celestial, uma fada ou um ínfero (à sua escolha), em vez de uma fera.",
+   "Seu familiar age de forma independente, mas sempre obedece aos seus comandos. Em combate, rola a própria iniciativa e age no próprio turno. Um familiar não pode atacar, mas pode realizar outras ações normalmente.",
+   "Quando o familiar cai a 0 pontos de vida, desaparece, sem deixar forma física. Ele reaparece quando você lança esta magia de novo.",
+   "Enquanto seu familiar estiver a até 30 metros de você, vocês podem se comunicar telepaticamente. Além disso, com uma ação, você pode ver pelos olhos do familiar e ouvir o que ele ouve até o início do seu próximo turno, recebendo os benefícios de quaisquer sentidos especiais que ele tenha. Nesse período, você fica surdo e cego em relação aos seus próprios sentidos.",
+   "Com uma ação, você pode dispensar temporariamente seu familiar. Ele desaparece numa dimensão de bolso, onde aguarda seu chamado. Em vez disso, pode dispensá-lo para sempre. Com uma ação, enquanto ele estiver temporariamente dispensado, você pode fazê-lo reaparecer em qualquer espaço desocupado a até 9 metros de você.",
+   "Você não pode ter mais de um familiar por vez. Se lançar esta magia já tendo um familiar, em vez disso faz com que ele adote uma nova forma. Escolha uma das formas da lista acima. Seu familiar se transforma na criatura escolhida.",
+   "Por fim, quando você lança uma magia com alcance de toque, seu familiar pode transmiti-la como se ele a tivesse lançado. O familiar precisa estar a até 30 metros de você e deve usar a reação dele para transmitir a magia quando você a lança. Se a magia exigir uma jogada de ataque, você usa seu modificador de ataque na jogada."
+  ],
+  "m": "Carvão, incenso e ervas no valor de 10 po, que precisam ser consumidos pelo fogo num braseiro de latão."
+ },
+ "find-steed": {
+  "n": "Encontrar Montaria",
+  "d": [
+   "Você invoca um espírito que assume a forma de uma montaria incomumente inteligente, forte e leal, criando com ela um vínculo duradouro. Aparecendo num espaço desocupado dentro do alcance, a montaria assume uma forma à sua escolha, como um cavalo de guerra, um pônei, um camelo, um alce ou um mastim. (O Mestre pode permitir que outros animais sejam invocados como montaria.) A montaria tem as estatísticas da forma escolhida, mas é um celestial, uma fada ou um ínfero (à sua escolha), em vez do tipo normal. Além disso, se tiver Inteligência 5 ou menor, sua Inteligência passa a ser 6, e ela ganha a capacidade de entender um idioma à sua escolha que você fale.",
+   "A montaria lhe serve de montaria dentro e fora de combate, e vocês têm um vínculo instintivo que permite lutar como uma unidade perfeita. Enquanto estiver montado nela, você pode fazer qualquer magia que lançar com alvo apenas em você ter também a montaria como alvo.",
+   "Quando a montaria cai a 0 pontos de vida, desaparece, sem deixar forma física. Você também pode dispensá-la a qualquer momento com uma ação, fazendo-a desaparecer. Em ambos os casos, lançar esta magia de novo invoca a mesma montaria, com o máximo de pontos de vida restaurado.",
+   "Enquanto sua montaria estiver a até 1,5 km de você, vocês podem se comunicar telepaticamente.",
+   "Você não pode ter mais de uma montaria vinculada por esta magia ao mesmo tempo. Com uma ação, pode libertar a montaria do vínculo a qualquer momento, fazendo-a desaparecer."
+  ]
+ },
+ "find-traps": {
+  "n": "Encontrar Armadilhas",
+  "d": [
+   "Você sente a presença de qualquer armadilha dentro do alcance que esteja na sua linha de visão. Para esta magia, uma armadilha inclui qualquer coisa que cause um efeito súbito ou inesperado que você considere prejudicial ou indesejável e que tenha sido criada especificamente com esse propósito. Assim, a magia detectaria uma área afetada pela magia alarme, um glifo de proteção ou um fosso mecânico, mas não revelaria uma fragilidade natural no piso, um teto instável ou um buraco escondido.",
+   "Esta magia apenas revela que há uma armadilha. Você não descobre a localização de cada armadilha, mas descobre a natureza geral do perigo que cada armadilha detectada representa."
+  ]
+ },
+ "find-the-path": {
+  "n": "Encontrar o Caminho",
+  "d": [
+   "Esta magia permite que você encontre a rota física mais curta e direta até um local fixo específico que você conheça, no mesmo plano de existência. Se nomear um destino em outro plano de existência, um destino que se move (como uma fortaleza móvel) ou um destino que não seja específico (como \"o covil de um dragão verde\"), a magia falha.",
+   "Pela duração, enquanto estiver no mesmo plano de existência que o destino, você sabe a que distância ele está e em que direção fica. Durante a viagem, sempre que se deparar com uma escolha de caminhos, determina automaticamente qual é a rota mais curta e direta (mas não necessariamente a mais segura) até o destino."
+  ],
+  "m": "Um conjunto de ferramentas de adivinhação (como ossos, varetas de marfim, cartas, dentes ou runas entalhadas) no valor de 100 po e um objeto do local que você deseja encontrar."
+ },
+ "finger-of-death": {
+  "n": "Dedo da Morte",
+  "d": [
+   "Você faz energia negativa percorrer uma criatura que consiga ver dentro do alcance, causando-lhe uma dor lancinante. O alvo deve fazer um teste de resistência de Constituição. Sofre 7d8 + 30 de dano necrótico se falhar, ou metade se passar.",
+   "Um humanoide morto por esta magia se ergue no início do seu próximo turno como um zumbi permanentemente sob seu comando, seguindo suas ordens verbais da melhor forma possível."
+  ]
+ },
+ "fire-bolt": {
+  "n": "Raio de Fogo",
+  "d": [
+   "Você arremessa uma partícula de fogo numa criatura ou num objeto dentro do alcance. Faça um ataque mágico à distância contra o alvo. Se acertar, o alvo sofre 1d10 de dano de fogo. Um objeto inflamável atingido por esta magia pega fogo se não estiver sendo vestido nem carregado.",
+   "O dano desta magia aumenta em 1d10 quando você alcança o 5º nível (2d10), o 11º nível (3d10) e o 17º nível (4d10)."
+  ]
+ },
+ "fire-shield": {
+  "n": "Escudo de Fogo",
+  "d": [
+   "Chamas finas e vaporosas envolvem seu corpo pela duração da magia, emitindo luz plena num raio de 3 metros e penumbra por mais 3 metros. Você pode encerrar a magia antes usando uma ação para dispensá-la.",
+   "As chamas formam ao seu redor um escudo quente ou um escudo frio, à sua escolha. O escudo quente lhe dá resistência a dano de frio, e o escudo frio lhe dá resistência a dano de fogo.",
+   "Além disso, sempre que uma criatura a até 1,5 metro de você o atinge com um ataque corpo a corpo, chamas saltam do escudo. O atacante sofre 2d8 de dano de fogo (escudo quente) ou de frio (escudo frio)."
+  ],
+  "m": "Um pouco de fósforo ou um vaga-lume."
+ },
+ "fire-storm": {
+  "n": "Tempestade de Fogo",
+  "d": [
+   "Uma tempestade de camadas de chamas rugindo aparece num local à sua escolha dentro do alcance. A área da tempestade é composta de até dez cubos de 3 metros, que você pode dispor como quiser. Cada cubo precisa ter pelo menos uma face adjacente à face de outro cubo. Cada criatura na área deve fazer um teste de resistência de Destreza. Sofre 7d10 de dano de fogo se falhar, ou metade se passar.",
+   "O fogo causa dano aos objetos na área e incendeia objetos inflamáveis que não estejam sendo vestidos nem carregados. Se você quiser, a vegetação na área não é afetada por esta magia."
+  ]
+ }
+}

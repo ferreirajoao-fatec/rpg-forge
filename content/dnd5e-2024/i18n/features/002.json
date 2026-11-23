@@ -1,0 +1,88 @@
+{
+ "bard-bardic-inspiration": {
+  "n": "Inspiração de Bardo",
+  "d": [
+   "Você pode inspirar os outros de forma sobrenatural com palavras, música ou dança. Essa inspiração é representada pelo seu dado de Inspiração de Bardo, um d6.",
+   "Usar a Inspiração de Bardo. Com uma Ação Bônus, você pode inspirar outra criatura a até 18 metros de você que possa vê-lo ou ouvi-lo. A criatura ganha",
+   "um dos seus dados de Inspiração de Bardo. Uma criatura só pode ter um dado de Inspiração de Bardo por vez.",
+   "Uma vez na próxima hora, quando a criatura falhar num Teste de D20, ela pode rolar o dado de Inspiração de Bardo e somar o resultado ao d20, possivelmente transformando a falha em sucesso. O dado de Inspiração de Bardo é gasto quando é rolado.",
+   "Número de Usos. Você pode conceder um dado de Inspiração de Bardo um número de vezes igual ao seu modificador de Carisma (no mínimo uma vez) e recupera todos os usos gastos quando termina um Descanso Longo.",
+   "Em Níveis Mais Altos. Seu dado de Inspiração de Bardo muda ao chegar a certos níveis de Bardo, como mostra a coluna Dado de Bardo da tabela de Características do Bardo. O dado passa a ser d8 no nível 5, d10 no nível 10 e d12 no nível 15."
+  ]
+ },
+ "bard-spellcasting": {
+  "n": "Conjuração",
+  "d": [
+   "Você aprendeu a lançar magias por meio das suas artes de bardo. Veja \"Magias\" para as regras de conjuração. As informações abaixo explicam como usar essas regras com as magias de Bardo, que aparecem na lista de magias de Bardo mais adiante na descrição da classe.",
+   "Truques. Você conhece dois truques à sua escolha da lista de magias de Bardo. Globos de Luz e Zombaria Viciosa são os recomendados.",
+   "Sempre que ganhar um nível de Bardo, pode trocar um dos seus truques por outro à sua escolha da lista de magias de Bardo.",
+   "Ao chegar aos níveis de Bardo 4 e 10, você aprende mais um truque à sua escolha da lista de magias de Bardo, como mostra a coluna Truques da tabela de Características do Bardo.",
+   "Espaços de Magia. A tabela de Características do Bardo mostra quantos espaços de magia você tem para lançar suas magias de nível 1 ou superior. Você recupera todos os espaços gastos quando termina um Descanso Longo.",
+   "Magias Preparadas de Nível 1+. Você prepara a lista de magias de nível 1 ou superior que pode lançar com esta característica. Para começar, escolha quatro magias de nível 1 da lista de magias de Bardo. Enfeitiçar Pessoa, Leque Cromático, Sussurros Dissonantes e Palavra Curativa são as recomendadas.",
+   "O número de magias na sua lista aumenta conforme você ganha níveis de Bardo, como mostra a coluna Magias Preparadas da tabela de Características do Bardo. Sempre que esse número aumentar, escolha magias adicionais da lista de magias de Bardo até que o número de magias na sua lista seja igual ao da tabela. As magias escolhidas precisam ser de um nível para o qual você tenha espaços de magia.",
+   "Por exemplo, se você for um Bardo de nível 3, sua lista de",
+   "magias preparadas pode incluir seis magias de nível 1 e 2 em qualquer combinação.",
+   "Se outra característica de Bardo lhe der magias que você sempre tem preparadas, elas não contam no número de magias que você pode preparar com esta característica, mas fora isso contam como magias de Bardo para você.",
+   "Trocar suas Magias Preparadas. Sempre que ganhar um nível de Bardo, você pode trocar uma magia da sua lista por outra magia de Bardo para a qual tenha espaços de magia.",
+   "Habilidade de Conjuração. Carisma é sua habilidade de conjuração para as magias de Bardo.",
+   "Foco de Conjuração. Você pode usar um Instrumento Musical como Foco de Conjuração para suas magias de Bardo."
+  ]
+ },
+ "bard-expertise": {
+  "d": [
+   "Você ganha Especialização (veja o \"Glossário de Regras\") em duas das suas proficiências em perícia à sua escolha. Atuação e Persuasão são as recomendadas, se você tiver proficiência nelas.",
+   "No nível de Bardo 9, você ganha Especialização em mais duas das suas proficiências em perícia à sua escolha."
+  ]
+ },
+ "bard-jack-of-all-trades": {
+  "d": [
+   "Você pode somar metade do seu Bônus de Proficiência (arredondado para baixo) a qualquer teste de atributo que use uma perícia em que não tenha proficiência e que não use seu Bônus de Proficiência de outra forma.",
+   "Por exemplo, se fizer um teste de Força (Atletismo) sem ter proficiência em Atletismo, pode somar metade do seu Bônus de Proficiência ao teste."
+  ]
+ },
+ "bard-subclass": {
+  "n": "Subclasse de Bardo",
+  "d": ["Você ganha uma subclasse de Bardo à sua escolha. Uma subclasse é uma especialização que concede características em certos níveis de Bardo. Pelo resto da sua carreira, você ganha cada característica da subclasse de nível igual ou menor que seu nível de Bardo."]
+ },
+ "bard-ability-score-improvement": {
+  "d": ["Você ganha o talento Aumento no Valor de Habilidade (veja \"Talentos\") ou outro talento à sua escolha para o qual se qualifique. Ganha esta característica de novo nos níveis de Bardo 8, 12 e 16."]
+ },
+ "bard-font-of-inspiration": {
+  "d": [
+   "Agora você recupera todos os usos gastos de Inspiração de Bardo quando termina um Descanso Curto ou Longo.",
+   "Além disso, pode gastar um espaço de magia (sem gastar ação) para recuperar um uso gasto de Inspiração de Bardo."
+  ]
+ },
+ "bard-countercharm": {
+  "d": ["Você pode usar notas musicais ou palavras de poder para perturbar efeitos que influenciam a mente. Se você ou uma criatura a até 9 metros de você falhar num teste de resistência contra um efeito que aplica a condição Enfeitiçado ou Amedrontado, pode usar uma Reação para fazer o teste ser rolado de novo, e a nova jogada tem Vantagem."]
+ },
+ "bard-magical-secrets": {
+  "d": ["Você aprendeu segredos de várias tradições mágicas. Sempre que chegar a um nível de Bardo (incluindo este) e o número de Magias Preparadas da tabela de Características do Bardo aumentar, pode escolher qualquer das novas magias preparadas das listas de magias de Bardo, Clérigo, Druida e Mago, e as magias escolhidas contam como magias de Bardo para você (veja a seção de cada classe para a lista de magias dela). Além disso, sempre que trocar uma magia preparada desta classe, pode trocá-la por uma magia dessas listas."]
+ },
+ "bard-superior-inspiration": {
+  "d": ["Quando rola Iniciativa, se tiver menos de dois usos de Inspiração de Bardo, você recupera usos gastos até ficar com dois."]
+ },
+ "bard-epic-boon": {
+  "d": ["Você ganha um talento de Dádiva Épica (veja \"Talentos\") ou outro talento à sua escolha para o qual se qualifique. Dádiva da Recordação de Magia é a recomendada."]
+ },
+ "bard-words-of-creation": {
+  "n": "Palavras da Criação",
+  "d": ["Você dominou duas das Palavras da Criação: as palavras da vida e da morte. Por isso, sempre tem preparadas as magias Palavra de Poder: Curar e Palavra de Poder: Matar. Quando lança qualquer uma delas, pode escolher uma segunda criatura como alvo, se ela estiver a até 3 metros do primeiro alvo."]
+ },
+ "lore-bonus-proficiencies": {
+  "d": ["Você ganha proficiência em três perícias à sua escolha."]
+ },
+ "lore-cutting-words": {
+  "d": ["Você aprende a usar sua sagacidade para distrair, confundir e minar de forma sobrenatural a confiança e a competência dos outros. Quando uma criatura que você consiga ver a até 18 metros faz uma jogada de dano ou tem sucesso num teste de atributo ou jogada de ataque, você pode usar uma Reação para gastar um uso de Inspiração de Bardo; role o dado de Inspiração de Bardo e subtraia o resultado da jogada da criatura, reduzindo o dano ou possivelmente transformando o sucesso em falha."]
+ },
+ "lore-magical-discoveries": {
+  "n": "Descobertas Mágicas",
+  "d": [
+   "Você aprende duas magias à sua escolha. Elas podem vir da lista de magias de Clérigo, Druida ou Mago, em qualquer combinação (veja a seção de cada classe para a lista de magias dela). Cada magia escolhida precisa ser um truque ou uma magia para a qual você tenha espaços de magia, como mostra a tabela de Características do Bardo.",
+   "Você sempre tem as magias escolhidas preparadas e, sempre que ganhar um nível de Bardo, pode trocar uma delas por outra que atenda a esses requisitos."
+  ]
+ },
+ "lore-peerless-skill": {
+  "d": ["Quando faz um teste de atributo ou jogada de ataque e falha, você pode gastar um uso de Inspiração de Bardo; role o dado de Inspiração de Bardo e some o resultado ao d20, possivelmente transformando a falha em sucesso. Se mesmo assim falhar, a Inspiração de Bardo não é gasta."]
+ }
+}

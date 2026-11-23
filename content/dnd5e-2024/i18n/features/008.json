@@ -1,0 +1,136 @@
+{
+ "devotion-sacred-weapon": {
+  "n": "Arma Sagrada",
+  "d": [
+   "Quando realiza a ação de Ataque, você pode gastar um uso de Canalizar Divindade para imbuir de energia positiva uma arma Corpo a Corpo que esteja segurando. Por 10 minutos ou até usar esta característica de novo, você soma seu modificador de Carisma às jogadas de ataque com essa arma (bônus mínimo de +1), e cada vez que acerta com ela, pode fazê-la causar seu tipo de dano normal ou dano Radiante.",
+   "A arma também emite Luz Plena num raio de 6 metros e Penumbra por mais 6 metros.",
+   "Você pode encerrar o efeito antes (sem gastar ação). O efeito também termina se você não estiver carregando a arma."
+  ]
+ },
+ "devotion-aura-of-devotion": {
+  "d": ["Você e seus aliados têm Imunidade à condição Enfeitiçado enquanto estiverem na sua Aura de Proteção. Se um aliado Enfeitiçado entrar na aura, a condição não tem efeito nele enquanto estiver ali."]
+ },
+ "devotion-smite-of-protection": {
+  "n": "Destruição Protetora",
+  "d": [
+   "Sua destruição mágica agora irradia energia protetora. Sempre que lança Destruição Divina, você e seus aliados têm Meia Cobertura enquanto estiverem na sua Aura de Proteção.",
+   "A aura mantém esse benefício até o início do seu próximo turno."
+  ]
+ },
+ "devotion-holy-nimbus": {
+  "d": [
+   "Com uma Ação Bônus, você pode imbuir sua Aura de Proteção de poder sagrado, concedendo os benefícios abaixo por 10 minutos ou até encerrá-los (sem gastar ação). Depois de usar esta característica, só pode usá-la de novo após terminar um Descanso Longo. Também pode recuperar o uso gastando um espaço de magia de nível 5 (sem gastar ação).",
+   "Proteção Sagrada. Você tem Vantagem em qualquer teste de resistência que um Ínfero ou Morto-Vivo o force a fazer.",
+   "Dano Radiante. Sempre que um inimigo começa o turno na aura, sofre dano Radiante igual ao seu modificador de Carisma + seu Bônus de Proficiência.",
+   "Luz Solar. A aura fica cheia de Luz Plena que é luz solar."
+  ]
+ },
+ "ranger-spellcasting": {
+  "d": [
+   "Você aprendeu a canalizar a essência mágica da natureza para lançar magias. Veja \"Magias\" para as regras de conjuração. As informações abaixo explicam como usar essas regras com as magias de Patrulheiro, que aparecem na lista de magias de Patrulheiro mais adiante na descrição da classe.",
+   "Espaços de Magia. A tabela de Características do Patrulheiro mostra quantos espaços de magia você tem para lançar suas magias de nível 1 ou superior. Você recupera todos os espaços gastos quando termina um Descanso Longo.",
+   "Magias Preparadas de Nível 1+. Você prepara a lista de magias de nível 1 ou superior que pode lançar com esta característica. Para começar, escolha duas magias de nível 1",
+   "de Patrulheiro. Curar Ferimentos e Golpe Enredante são as recomendadas.",
+   "O número de magias na sua lista aumenta conforme você ganha níveis de Patrulheiro, como mostra a coluna Magias Preparadas da tabela de Características do Patrulheiro. Sempre que esse número aumentar, escolha magias de Patrulheiro adicionais até que o número de magias na sua lista seja igual ao da tabela. As magias escolhidas precisam ser de um nível para o qual você tenha espaços de magia. Por exemplo, se você for um Patrulheiro de nível 5, sua lista de magias preparadas pode incluir seis magias de Patrulheiro de nível 1 ou 2 em qualquer combinação.",
+   "Se outra característica de Patrulheiro lhe der magias que você sempre tem preparadas, elas não contam no número de magias que você pode preparar com esta característica, mas fora isso contam como magias de Patrulheiro para você.",
+   "Trocar suas Magias Preparadas. Sempre que terminar um Descanso Longo, você pode trocar uma magia da sua lista por outra magia de Patrulheiro para a qual tenha espaços de magia.",
+   "Habilidade de Conjuração. Sabedoria é sua habilidade de conjuração para as magias de Patrulheiro.",
+   "Foco de Conjuração. Você pode usar um Foco Druídico como Foco de Conjuração para suas magias de Patrulheiro."
+  ]
+ },
+ "ranger-favored-enemy": {
+  "n": "Inimigo Favorito",
+  "d": [
+   "Você sempre tem a magia Marca do Caçador preparada. Pode lançá-la duas vezes sem gastar espaço de magia e recupera todos os usos gastos dessa capacidade quando termina um Descanso Longo.",
+   "O número de vezes que você pode lançar a magia sem espaço de magia aumenta ao chegar a certos níveis de Patrulheiro, como mostra a coluna Inimigo Favorito da tabela de Características do Patrulheiro."
+  ]
+ },
+ "ranger-weapon-mastery": {
+  "d": [
+   "Seu treinamento com armas permite usar as propriedades de maestria de dois tipos de armas à sua escolha com as quais tenha proficiência, como Arcos Longos e Espadas Curtas.",
+   "Sempre que terminar um Descanso Longo, você pode mudar os tipos de armas escolhidos. Por exemplo, pode passar a usar as propriedades de maestria de Cimitarras e Espadas Longas."
+  ]
+ },
+ "ranger-deft-explorer": {
+  "n": "Explorador Hábil",
+  "d": [
+   "Graças às suas viagens, você recebe os benefícios a seguir.",
+   "Especialização. Escolha uma das suas proficiências em perícia na qual não tenha Especialização. Você ganha Especialização nessa perícia.",
+   "Idiomas. Você conhece dois idiomas à sua escolha das tabelas de idiomas de \"Criação de Personagem\"."
+  ]
+ },
+ "ranger-fighting-style": {
+  "d": [
+   "Você ganha um talento de Estilo de Luta à sua escolha (veja \"Talentos\"). Em vez de escolher um desses talentos, pode escolher a opção abaixo.",
+   "Guerreiro Druídico. Você aprende dois truques de Druida à sua escolha (veja a seção da classe Druida para a lista de magias de Druida). Orientação e Lampejo Estelar são os recomendados. Os truques escolhidos contam como magias de Patrulheiro para você, e Sabedoria é sua habilidade de conjuração para eles. Sempre que ganhar um nível de Patrulheiro, pode trocar um desses truques por outro truque de Druida."
+  ]
+ },
+ "ranger-subclass": {
+  "n": "Subclasse de Patrulheiro",
+  "d": ["Você ganha uma subclasse de Patrulheiro à sua escolha. Uma subclasse é uma especialização que concede características em certos níveis de Patrulheiro. Pelo resto da sua carreira, você ganha cada característica da subclasse de nível igual ou menor que seu nível de Patrulheiro."]
+ },
+ "ranger-ability-score-improvement": {
+  "d": ["Você ganha o talento Aumento no Valor de Habilidade (veja \"Talentos\") ou outro talento à sua escolha para o qual se qualifique. Ganha esta característica de novo nos níveis de Patrulheiro 8, 12 e 16."]
+ },
+ "ranger-roving": {
+  "n": "Andarilho",
+  "d": ["Seu Deslocamento aumenta em 3 metros enquanto você não estiver usando armadura Pesada. Você também tem Deslocamento de Escalada e de Natação iguais ao seu Deslocamento."]
+ },
+ "ranger-expertise": {
+  "d": ["Escolha duas das suas proficiências em perícia nas quais não tenha Especialização. Você ganha Especialização nessas perícias."]
+ },
+ "ranger-tireless": {
+  "n": "Incansável",
+  "d": [
+   "Forças primitivas agora ajudam a alimentá-lo nas suas jornadas, concedendo os benefícios a seguir.",
+   "Pontos de Vida Temporários. Com uma ação de Magia, você pode se dar Pontos de Vida Temporários iguais a 1d8 + seu modificador de Sabedoria (mínimo de 1). Pode usar esta ação um número de vezes igual ao seu modificador de Sabedoria (no mínimo uma vez) e recupera todos os usos gastos quando termina um Descanso Longo.",
+   "Reduzir Exaustão. Sempre que terminar um Descanso Curto, seu nível de Exaustão, se houver, diminui em 1."
+  ]
+ },
+ "ranger-relentless-hunter": {
+  "n": "Caçador Implacável",
+  "d": ["Sofrer dano não interrompe sua Concentração na Marca do Caçador."]
+ },
+ "ranger-natures-veil": {
+  "n": "Véu da Natureza",
+  "d": [
+   "Você invoca espíritos da natureza para se esconder magicamente. Com uma Ação Bônus, pode se dar a condição Invisível até o fim do seu próximo turno.",
+   "Você pode usar esta característica um número de vezes igual ao seu modificador de Sabedoria (no mínimo uma vez) e recupera todos os usos gastos quando termina um Descanso Longo."
+  ]
+ },
+ "ranger-precise-hunter": {
+  "n": "Caçador Preciso",
+  "d": ["Você tem Vantagem em jogadas de ataque contra a criatura marcada no momento pela sua Marca do Caçador."]
+ },
+ "ranger-feral-senses": {
+  "d": ["Sua ligação com as forças da natureza lhe concede Percepção às Cegas com alcance de 9 metros."]
+ },
+ "ranger-foe-slayer": {
+  "d": ["O dado de dano da sua Marca do Caçador passa a ser d10 em vez de d6."]
+ },
+ "hunter-hunters-lore": {
+  "n": "Saber do Caçador",
+  "d": ["Você pode pedir às forças da natureza que revelem certas forças e fraquezas da sua presa. Enquanto uma criatura estiver marcada pela sua Marca do Caçador, você sabe se ela tem alguma Imunidade, Resistência ou Vulnerabilidade e, se tiver, quais são."]
+ },
+ "hunter-hunters-prey": {
+  "d": [
+   "Você ganha uma das opções de característica a seguir, à sua escolha. Sempre que terminar um Descanso Curto ou Longo, pode trocar a opção escolhida pela outra.",
+   "Matador de Colossos. Sua tenacidade pode desgastar até os inimigos mais resistentes. Quando atinge uma criatura com uma arma, a arma causa 1d8 de dano extra ao alvo se ele não estiver com todos os Pontos de Vida. Você só pode causar esse dano extra uma vez por turno.",
+   "Destruidor de Hordas. Uma vez em cada um dos seus turnos, quando faz um ataque com uma arma, você pode fazer outro ataque com a mesma arma contra uma criatura diferente que esteja a até 1,5 metro do alvo original, dentro do alcance da arma, e que você não tenha atacado neste turno."
+  ]
+ },
+ "hunter-defensive-tactics": {
+  "d": [
+   "Você ganha uma das opções de característica a seguir, à sua escolha. Sempre que terminar um Descanso Curto ou Longo, pode trocar a opção escolhida pela outra.",
+   "Escapar da Horda. Ataques de Oportunidade têm Desvantagem contra você.",
+   "Defesa contra Ataques Múltiplos. Quando uma criatura o atinge com uma jogada de ataque, ela tem Desvantagem em todas as outras jogadas de ataque contra você neste turno."
+  ]
+ },
+ "hunter-superior-hunters-prey": {
+  "n": "Presa Superior do Caçador",
+  "d": ["Uma vez por turno, quando causa dano a uma criatura marcada pela sua Marca do Caçador, você também pode causar o dano extra dessa magia a outra criatura que consiga ver a até 9 metros da primeira."]
+ },
+ "hunter-superior-hunters-defense": {
+  "d": ["Quando sofre dano, você pode usar uma Reação para ganhar Resistência a esse dano e a qualquer outro dano do mesmo tipo até o fim do turno atual."]
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "color-spray": {
+  "n": "Leque Cromático",
+  "d": [
+   "Um leque ofuscante de luzes coloridas e piscantes salta da sua mão. Role 6d10; o total é quantos pontos de vida de criaturas esta magia pode afetar. As criaturas num cone de 4,5 metros originado em você são afetadas em ordem crescente de pontos de vida atuais (ignorando criaturas inconscientes e criaturas que não conseguem ver).",
+   "Começando pela criatura com menos pontos de vida atuais, cada criatura afetada por esta magia fica cega até a magia terminar. Subtraia os pontos de vida de cada criatura do total antes de passar para a criatura com a próxima menor quantidade de pontos de vida. Os pontos de vida de uma criatura precisam ser iguais ou menores que o total restante para que ela seja afetada."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 2º nível ou superior, role 2d10 adicionais para cada nível de espaço acima do 1º."],
+  "m": "Uma pitada de pó ou areia nas cores vermelha, amarela e azul."
+ },
+ "command": {
+  "n": "Comando",
+  "d": [
+   "Você fala um comando de uma palavra a uma criatura que consiga ver dentro do alcance. O alvo deve passar num teste de resistência de Sabedoria ou seguir o comando no próximo turno dele. A magia não tem efeito se o alvo for morto-vivo, se não entender seu idioma ou se o comando for diretamente prejudicial a ele.",
+   "Seguem alguns comandos típicos e seus efeitos. Você pode dar um comando diferente dos descritos aqui. Se fizer isso, o Mestre determina como o alvo se comporta. Se o alvo não puder seguir o comando, a magia termina.",
+   "*Aproxime-se.* O alvo se move em sua direção pelo caminho mais curto e direto, terminando o turno se chegar a até 1,5 metro de você.",
+   "*Largue.* O alvo larga o que estiver segurando e termina o turno.",
+   "*Fuja.* O alvo passa o turno se afastando de você pelo meio mais rápido disponível.",
+   "*Prostre-se.* O alvo cai no chão e termina o turno.",
+   "*Pare.* O alvo não se move nem realiza ações. Uma criatura voadora continua no ar, se for capaz. Se precisar se mover para continuar no ar, voa a distância mínima necessária para não cair."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 2º nível ou superior, pode afetar uma criatura adicional para cada nível de espaço acima do 1º. As criaturas precisam estar a até 9 metros umas das outras quando você as escolhe."]
+ },
+ "commune": {
+  "n": "Comunhão",
+  "d": [
+   "Você contata sua divindade ou um representante divino e faz até três perguntas que possam ser respondidas com sim ou não. Precisa fazer as perguntas antes de a magia terminar. Recebe uma resposta correta para cada pergunta.",
+   "Seres divinos não são necessariamente oniscientes, então você pode receber \"incerto\" como resposta se a pergunta tratar de algo além do conhecimento da divindade. Quando uma resposta de uma palavra puder ser enganosa ou contrária aos interesses da divindade, o Mestre pode oferecer uma frase curta como resposta.",
+   "Se você lançar a magia duas ou mais vezes antes de terminar seu próximo descanso longo, há uma chance cumulativa de 25% para cada conjuração depois da primeira de não receber resposta. O Mestre faz essa rolagem em segredo."
+  ],
+  "m": "Incenso e um frasco de água benta ou profana."
+ },
+ "commune-with-nature": {
+  "n": "Comunhão com a Natureza",
+  "d": [
+   "Por um breve momento, você se torna um com a natureza e obtém conhecimento do território ao redor. Ao ar livre, a magia lhe dá conhecimento da terra a até 4,5 km de você. Em cavernas e outros ambientes subterrâneos naturais, o raio fica limitado a 90 metros. A magia não funciona onde a natureza foi substituída por construções, como masmorras e cidades.",
+   "Você obtém instantaneamente conhecimento de até três fatos à sua escolha sobre qualquer um dos assuntos a seguir relacionados à área:",
+   "- terreno e corpos d'água",
+   "- plantas, minerais, animais ou povos predominantes",
+   "- celestiais, fadas, ínferos, elementais ou mortos-vivos poderosos",
+   "- influência de outros planos de existência",
+   "- construções",
+   "Por exemplo, você poderia descobrir a localização de mortos-vivos poderosos na área, das principais fontes de água potável segura e de cidades próximas."
+  ]
+ },
+ "comprehend-languages": {
+  "n": "Compreender Idiomas",
+  "d": [
+   "Pela duração, você entende o significado literal de qualquer idioma falado que ouvir. Também entende qualquer idioma escrito que vir, mas precisa estar tocando a superfície onde as palavras estão escritas. Leva cerca de 1 minuto para ler uma página de texto.",
+   "Esta magia não decifra mensagens secretas num texto nem um glifo, como um selo arcano, que não faça parte de um idioma escrito."
+  ],
+  "m": "Uma pitada de fuligem e sal."
+ },
+ "compulsion": {
+  "n": "Compulsão",
+  "d": [
+   "Criaturas à sua escolha que você consiga ver dentro do alcance e que consigam ouvi-lo devem fazer um teste de resistência de Sabedoria. Um alvo passa automaticamente se não puder ser enfeitiçado. Se falhar, o alvo é afetado por esta magia. Até a magia terminar, você pode usar uma ação bônus em cada um dos seus turnos para designar uma direção horizontal em relação a você. Cada alvo afetado deve usar o máximo possível do seu movimento para ir nessa direção no próximo turno dele. Ele pode realizar qualquer ação antes de se mover. Depois de se mover assim, pode fazer outro teste de resistência de Sabedoria para tentar encerrar o efeito.",
+   "O alvo não é compelido a entrar num perigo obviamente mortal, como fogo ou um fosso, mas provocará ataques de oportunidade para se mover na direção designada."
+  ]
+ },
+ "cone-of-cold": {
+  "n": "Cone de Frio",
+  "d": [
+   "Uma rajada de ar gelado irrompe das suas mãos. Cada criatura num cone de 18 metros deve fazer um teste de resistência de Constituição. A criatura sofre 8d8 de dano de frio se falhar, ou metade se passar.",
+   "Uma criatura morta por esta magia se torna uma estátua congelada até derreter."
+  ],
+  "m": "Um pequeno cone de cristal ou vidro."
+ },
+ "confusion": {
+  "n": "Confusão",
+  "d": [
+   "Esta magia ataca e distorce a mente das criaturas, gerando delírios e provocando ações descontroladas. Cada criatura numa esfera de 3 metros de raio centrada num ponto à sua escolha dentro do alcance deve passar num teste de resistência de Sabedoria quando você lança a magia ou é afetada por ela.",
+   "Um alvo afetado não pode usar reações e deve rolar um d10 no início de cada turno dele para determinar seu comportamento naquele turno.",
+   "| d10 | Comportamento |",
+   "|---|---|",
+   "| 1 | A criatura usa todo o seu movimento para se mover numa direção aleatória. Para determinar a direção, role um d8 e atribua uma direção a cada face do dado. A criatura não realiza ação neste turno. |",
+   "| 2-6 | A criatura não se move nem realiza ações neste turno. |",
+   "| 7-8 | A criatura usa sua ação para fazer um ataque corpo a corpo contra uma criatura determinada aleatoriamente ao seu alcance. Se não houver criatura ao alcance, ela não faz nada neste turno. |",
+   "| 9-10 | A criatura pode agir e se mover normalmente. |",
+   "No fim de cada turno dele, um alvo afetado pode fazer um teste de resistência de Sabedoria. Se passar, o efeito termina para ele."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 5º nível ou superior, o raio da esfera aumenta em 1,5 metro para cada nível de espaço acima do 4º."],
+  "m": "Três cascas de noz."
+ },
+ "conjure-animals": {
+  "n": "Conjurar Animais",
+  "d": [
+   "Você invoca espíritos feéricos que assumem a forma de feras e aparecem em espaços desocupados que consiga ver dentro do alcance. Escolha uma das opções a seguir para o que aparece:",
+   "- Uma fera de nível de desafio 2 ou menor",
+   "- Duas feras de nível de desafio 1 ou menor",
+   "- Quatro feras de nível de desafio 1/2 ou menor",
+   "- Oito feras de nível de desafio 1/4 ou menor",
+   "- Cada fera também é considerada uma fada e desaparece quando cai a 0 pontos de vida ou quando a magia termina.",
+   "As criaturas invocadas são amigáveis com você e seus companheiros. Role iniciativa para elas como um grupo, que tem seus próprios turnos. Elas obedecem a qualquer comando verbal que você der (sem exigir ação sua). Se você não der comandos, elas se defendem de criaturas hostis, mas fora isso não realizam ações.",
+   "O Mestre tem as estatísticas das criaturas."
+  ],
+  "h": ["Quando você lança esta magia usando certos espaços de magia de nível mais alto, escolhe uma das opções de invocação acima, e aparecem mais criaturas: o dobro com um espaço de 5º nível e o triplo com um de 7º nível."]
+ },
+ "conjure-celestial": {
+  "n": "Conjurar Celestial",
+  "d": [
+   "Você invoca um celestial de nível de desafio 4 ou menor, que aparece num espaço desocupado que consiga ver dentro do alcance. O celestial desaparece quando cai a 0 pontos de vida ou quando a magia termina.",
+   "O celestial é amigável com você e seus companheiros pela duração. Role iniciativa para ele, que tem seus próprios turnos. Ele obedece a qualquer comando verbal que você der (sem exigir ação sua), desde que não viole sua tendência. Se você não der comandos, ele se defende de criaturas hostis, mas fora isso não realiza ações.",
+   "O Mestre tem as estatísticas do celestial."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 9º nível, invoca um celestial de nível de desafio 5 ou menor."]
+ }
+}

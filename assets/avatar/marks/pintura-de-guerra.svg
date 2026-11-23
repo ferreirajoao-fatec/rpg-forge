@@ -1,7 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <g data-scaled="1" transform="matrix(0.61 0 0 0.61 99.84 13.88)">
   <g fill="#{ink}" opacity="0.85">
     <path d="M206 186 L240 180 L240 188 L208 196 Z"/>
     <path d="M306 186 L272 180 L272 188 L304 196 Z"/>
     <path d="M250 214 L262 214 L260 250 L252 250 Z"/>
+  </g>
   </g>
 </svg>

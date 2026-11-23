@@ -14,6 +14,7 @@ import {
   type DerivedStats,
   type InventoryItem,
   type RulesEngine,
+  type StartingPackage,
   type ValidationIssue,
 } from "@rpg-forge/rules-engine";
 import { Badge } from "@rpg-forge/ui/components/badge";
@@ -26,8 +27,10 @@ import { Pager, paginate } from "@/components/pager";
 import { FitChip, ScopeToggle } from "./choice-step";
 import { FIT_ORDER, FIT_TITLE, fitContext, fitOf, isForYou } from "./relevance";
 
-/** Rótulos das categorias do catálogo de equipamento (Tormenta20). */
+/** Rótulos das categorias do catálogo de equipamento (Tormenta20 e D&D 5e). */
 const CATEGORY_LABEL: Record<string, string> = {
+  ferramenta: "Ferramentas e instrumentos",
+  kit: "Pacotes de equipamento",
   arma: "Armas",
   municao: "Munição",
   armadura: "Armaduras",
@@ -56,6 +59,12 @@ const newId = () =>
 
 const fmtNum = (n: number) => n.toLocaleString("pt-BR", { maximumFractionDigits: 2 });
 
+/** Como escrever valores na moeda padrão: "moedas" (Tormenta20) ou a abreviação ("po" no D&D). */
+function unitOf(engine: RulesEngine): string {
+  const std = engine.currencies?.find((c) => c.value === 1);
+  return !std || std.label.toLocaleLowerCase("pt-BR") === "moedas" ? "moedas" : std.abbr;
+}
+
 export function InventoryStep({
   data,
   update,
@@ -77,6 +86,7 @@ export function InventoryStep({
   const summary = derived.inventory;
   const money = moneyTotal(data.currency, currencies);
   const std = currencies.find((c) => c.value === 1);
+  const unit = unitOf(engine);
   const [message, setMessage] = useState<string>("");
 
   const entries = useMemo(
@@ -95,7 +105,7 @@ export function InventoryStep({
     if (buy && cost !== undefined) {
       const paid = payWith(data.currency, currencies, cost);
       if (!paid) {
-        setMessage(`Dinheiro insuficiente para ${e.name} (${fmtNum(cost)} moedas).`);
+        setMessage(`Dinheiro insuficiente para ${e.name} (${fmtNum(cost)} ${unit}).`);
         return;
       }
       currency = paid;
@@ -106,7 +116,7 @@ export function InventoryStep({
       ? data.inventory.map((i) => (i === same ? { ...i, quantity: i.quantity + 1 } : i))
       : [...data.inventory, { entryId: newId(), contentId: e.id, quantity: 1, equipped: false, modifications: [], enchantments: [] }];
     update({ inventory, currency });
-    setMessage(buy && cost !== undefined ? `${e.name} comprado por ${fmtNum(cost)} moedas.` : `${e.name} adicionado.`);
+    setMessage(buy && cost !== undefined ? `${e.name} comprado por ${fmtNum(cost)} ${unit}.` : `${e.name} adicionado.`);
   };
 
   const sell = (entryId: string) => {
@@ -116,7 +126,7 @@ export function InventoryStep({
     const value = Math.round(((row.value ?? 0) / 2) * 100) / 100;
     const rest = item.quantity > 1 ? data.inventory.map((i) => (i.entryId === entryId ? { ...i, quantity: i.quantity - 1 } : i)) : data.inventory.filter((i) => i.entryId !== entryId);
     update({ inventory: rest, currency: receive(data.currency, currencies, value) });
-    setMessage(`${row.name} vendido por ${fmtNum(value)} moedas (metade do preço).`);
+    setMessage(`${row.name} vendido por ${fmtNum(value)} ${unit} (metade do preço).`);
   };
 
   const wealth = engine.startingWealth?.(derived.level);
@@ -124,7 +134,7 @@ export function InventoryStep({
     if (!wealth) return;
     const amount = wealth.amount ?? (wealth.formula ? roll(wealth.formula, cryptoRng).total : 0);
     update({ currency: receive(data.currency, currencies, amount) });
-    setMessage(wealth.formula ? `Rolagem de ${wealth.formula}: ${amount} moedas.` : `${fmtNum(amount)} moedas adicionadas.`);
+    setMessage(wealth.formula ? `Rolagem de ${wealth.formula}: ${amount} ${unit}.` : `${fmtNum(amount)} ${unit} adicionadas.`);
   };
 
   const kit = ["equipment:mochila", "equipment:saco-de-dormir", "equipment:traje-de-viajante"].filter((id) => catalog.get(id));
@@ -137,6 +147,20 @@ export function InventoryStep({
     setMessage(missing.length ? "Mochila, saco de dormir e traje de viajante adicionados." : "O kit básico já está no inventário.");
   };
 
+  const packages = engine.startingPackages?.(data, catalog) ?? [];
+  const takePackage = (items: { id: string; quantity: number }[], gold: number, label: string) => {
+    let inventory = [...data.inventory];
+    for (const it of items) {
+      if (!catalog.get(it.id)) continue;
+      const same = inventory.find((i) => i.contentId === it.id && !i.modifications.length && !i.enchantments.length && !i.materialId);
+      inventory = same
+        ? inventory.map((i) => (i === same ? { ...i, quantity: i.quantity + it.quantity } : i))
+        : [...inventory, { entryId: newId(), contentId: it.id, quantity: it.quantity, equipped: false, modifications: [], enchantments: [] }];
+    }
+    update({ inventory, currency: gold ? receive(data.currency, currencies, gold) : data.currency });
+    setMessage(`Adicionado: ${label}.`);
+  };
+
   return (
     <div className="space-y-6">
       {/* Dinheiro */}
@@ -146,7 +170,7 @@ export function InventoryStep({
             <Coins className="size-4" aria-hidden /> Dinheiro
           </h2>
           <span className="text-sm text-muted-foreground">
-            Total: <strong className="text-foreground tabular-nums">{fmtNum(money)}</strong> moedas
+            Total: <strong className="text-foreground tabular-nums">{fmtNum(money)}</strong> {unit}
           </span>
         </div>
         <div className="grid gap-3 sm:grid-cols-3">
@@ -170,7 +194,7 @@ export function InventoryStep({
         <div className="flex flex-wrap gap-2">
           {wealth && std && (
             <Button variant="outline" size="sm" onClick={grantWealth} disabled={!canEdit}>
-              <Dices /> Dinheiro inicial ({wealth.formula ?? `${fmtNum(wealth.amount ?? 0)} moedas`}, nível {derived.level})
+              <Dices /> Dinheiro inicial ({wealth.formula ?? `${fmtNum(wealth.amount ?? 0)} ${unit}`}, nível {derived.level})
             </Button>
           )}
           {kit.length > 0 && (
@@ -179,11 +203,12 @@ export function InventoryStep({
             </Button>
           )}
         </div>
-        <p className="text-xs text-muted-foreground">
+        {kit.length > 0 && <p className="text-xs text-muted-foreground">
           Equipamento inicial (p. 138): mochila, saco de dormir e traje de viajante; uma arma simples (e uma marcial, se tiver proficiência);
           armadura de couro, couro batido ou gibão de peles (brunea, se tiver proficiência com armaduras pesadas); escudo leve, se tiver
           proficiência com escudos. Arcanistas começam sem armadura. Some os itens da origem.
-        </p>
+        </p>}
+        {packages.length > 0 && <StartingPackages packages={packages} catalog={catalog} unit={unit} canEdit={canEdit} onTake={takePackage} />}
       </section>
 
       {/* Itens */}
@@ -195,7 +220,9 @@ export function InventoryStep({
           {summary && <LoadMeter summary={summary} />}
         </div>
         {!data.inventory.length ? (
-          <p className="text-sm text-muted-foreground">Nenhum item ainda. Use o kit básico ou adicione itens do catálogo abaixo.</p>
+          <p className="text-sm text-muted-foreground">
+            Nenhum item ainda. {kit.length ? "Use o kit básico" : packages.length ? "Pegue um pacote inicial" : "Comece"} ou adicione itens do catálogo abaixo.
+          </p>
         ) : (
           <ul className="space-y-2">
             {data.inventory.map((item) => {
@@ -208,6 +235,7 @@ export function InventoryStep({
                   row={row}
                   entry={entry}
                   catalog={catalog}
+                  unit={unit}
                   canEdit={canEdit}
                   onPatch={(p) => patchItem(item.entryId, p)}
                   onRemove={() => setInventory(data.inventory.filter((i) => i.entryId !== item.entryId))}
@@ -219,7 +247,7 @@ export function InventoryStep({
         )}
         {summary && (
           <p className="text-xs text-muted-foreground">
-            Peso total {fmtNum(summary.totalWeight)}kg · Valor estimado {fmtNum(summary.totalValue)} moedas
+            Peso total {fmtNum(summary.totalWeight)}kg · Valor estimado {fmtNum(summary.totalValue)} {unit}
           </p>
         )}
         <IssueList issues={issues} empty="" />
@@ -231,7 +259,7 @@ export function InventoryStep({
         </p>
       )}
 
-      {canEdit && <CatalogPicker entries={entries} money={money} onAdd={add} data={data} catalog={catalog} />}
+      {canEdit && <CatalogPicker entries={entries} money={money} onAdd={add} data={data} catalog={catalog} unit={unit} />}
       {canEdit && <CustomItem onAdd={(name) => setInventory([...data.inventory, { entryId: newId(), customName: name, quantity: 1, equipped: false, modifications: [], enchantments: [] }])} />}
     </div>
   );
@@ -264,6 +292,7 @@ function InventoryLine({
   row,
   entry,
   catalog,
+  unit,
   canEdit,
   onPatch,
   onRemove,
@@ -273,6 +302,7 @@ function InventoryLine({
   row?: NonNullable<DerivedStats["inventory"]>["rows"][number];
   entry?: ContentEntry;
   catalog: Catalog;
+  unit: string;
   canEdit: boolean;
   onPatch: (p: Partial<InventoryItem>) => void;
   onRemove: () => void;
@@ -320,7 +350,7 @@ function InventoryLine({
           entry?.summary,
           row?.detail,
           row?.weight !== undefined ? `${fmtNum(row.weight)}kg` : "",
-          row?.value !== undefined ? `${fmtNum(row.value)} moedas cada` : "",
+          row?.value !== undefined ? `${fmtNum(row.value)} ${unit} cada` : "",
           entry?.source.page ? `p. ${entry.source.page}` : "",
         ]
           .filter(Boolean)
@@ -356,6 +386,7 @@ function Improvements({ item, category, catalog, onPatch }: { item: InventoryIte
     return cost && Object.values(cost).some((v) => v !== null);
   });
   const name = (id: string) => catalog.get(id)?.name.split(" (")[0] ?? id;
+  if (!mods.length && !enchants.length && !materials.length && !item.modifications.length && !item.enchantments.length) return null;
   const chips = [
     ...item.modifications.map((id) => ({ id, kind: "modifications" as const })),
     ...item.enchantments.map((id) => ({ id, kind: "enchantments" as const })),
@@ -434,12 +465,14 @@ function CatalogPicker({
   onAdd,
   data,
   catalog,
+  unit,
 }: {
   entries: ContentEntry[];
   money: number;
   onAdd: (e: ContentEntry, buy: boolean) => void;
   data: CharacterData;
   catalog: Catalog;
+  unit: string;
 }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("");
@@ -499,7 +532,7 @@ function CatalogPicker({
       <ul className="space-y-1">
         {slice.map(({ entry: e, fit }, i) => {
           const price = priceOf(e);
-          const priceText = price !== undefined ? `${fmtNum(price)} moedas` : typeof e.data.priceText === "string" ? e.data.priceText : "";
+          const priceText = typeof e.data.priceText === "string" ? e.data.priceText : price !== undefined ? `${fmtNum(price)} ${unit}` : "";
           const newGroup = i === 0 || slice[i - 1].fit.fit !== fit.fit;
           return (
             <li key={e.id}>
@@ -551,5 +584,65 @@ function CustomItem({ onAdd }: { onAdd: (name: string) => void }) {
         <Plus /> Adicionar
       </Button>
     </form>
+  );
+}
+
+/** Equipamento inicial da classe e do antecedente (D&D): escolha uma alternativa de cada grupo. */
+function StartingPackages({
+  packages,
+  catalog,
+  unit,
+  canEdit,
+  onTake,
+}: {
+  packages: StartingPackage[];
+  catalog: Catalog;
+  unit: string;
+  canEdit: boolean;
+  onTake: (items: { id: string; quantity: number }[], gold: number, label: string) => void;
+}) {
+  const name = (id: string) => catalog.get(id)?.name ?? id.slice(id.indexOf(":") + 1);
+  return (
+    <div className="space-y-3 rounded-md border p-3">
+      <h3 className="text-sm font-medium">Equipamento inicial</h3>
+      <p className="text-xs text-muted-foreground">
+        Escolha uma alternativa de cada grupo. Itens “à escolha” não são adicionados sozinhos: pegue-os no catálogo abaixo (sem comprar).
+      </p>
+      {packages.map((pk) => (
+        <div key={pk.source} className="space-y-2">
+          <p className="text-sm font-medium">{pk.source}</p>
+          {pk.fixed.length > 0 && (
+            <div className="flex flex-wrap items-center gap-2 text-sm">
+              <span>{pk.fixed.map((i) => `${i.quantity > 1 ? `${i.quantity} × ` : ""}${name(i.id)}`).join(", ")}</span>
+              <Button type="button" size="sm" variant="outline" disabled={!canEdit} onClick={() => onTake(pk.fixed, 0, `itens de ${pk.source}`)}>
+                <PackagePlus /> Pegar
+              </Button>
+            </div>
+          )}
+          {pk.groups.map((g, gi) => (
+            <div key={gi} className="grid gap-2 sm:grid-cols-2">
+              {g.options.map((o) => (
+                <button
+                  key={o.label}
+                  type="button"
+                  disabled={!canEdit}
+                  onClick={() => onTake(o.items, o.gold, o.label)}
+                  className="rounded-md border p-2 text-left text-sm hover:bg-muted disabled:opacity-50"
+                >
+                  <span className="block">
+                    {[
+                      ...o.items.map((i) => `${i.quantity > 1 ? `${i.quantity} × ` : ""}${name(i.id)}`),
+                      ...o.open.map((x) => x.label),
+                      ...(o.gold ? [`${fmtNum(o.gold)} ${unit}`] : []),
+                    ].join(", ")}
+                  </span>
+                  <span className="mt-0.5 block text-xs text-muted-foreground">Opção {o.label.split(":")[0]}</span>
+                </button>
+              ))}
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
   );
 }

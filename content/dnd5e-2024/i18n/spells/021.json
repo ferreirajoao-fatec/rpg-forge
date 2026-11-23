@@ -1,0 +1,89 @@
+{
+ "private-sanctum": {
+  "d": [
+   "Você torna magicamente segura uma área dentro do alcance. A área é um Cubo que pode ter de 1,5 metro a 30 metros de lado. A magia dura pela duração.",
+   "Ao lançar a magia, você decide que tipo de segurança ela fornece, escolhendo qualquer uma das propriedades a seguir: • O som não atravessa a barreira na borda da área protegida. • A barreira da área protegida parece escura e enevoada, impedindo a visão (incluindo Visão no Escuro) através dela. • Sensores criados por magias de Adivinhação não podem aparecer dentro da área protegida nem atravessar a barreira no perímetro dela. • Criaturas na área não podem ser alvo de magias de Adivinhação. • Nada pode se teletransportar para dentro ou para fora da área protegida. • A viagem planar fica bloqueada dentro da área protegida.",
+   "Lançar esta magia no mesmo local todos os dias por 365 dias faz com que ela dure até ser dissipada."
+  ],
+  "h": ["Você pode aumentar o tamanho do Cubo em 30 metros para cada nível de espaço de magia acima de 4."],
+  "m": "Uma folha fina de chumbo."
+ },
+ "produce-flame": {
+  "d": [
+   "Uma chama tremeluzente aparece na sua mão e permanece ali pela duração. Enquanto estiver ali, a chama não emite calor nem incendeia nada, e emite Luz Plena num raio de 6 metros e Penumbra por mais 6 metros. A magia termina se você lançá-la de novo.",
+   "Até a magia terminar, você pode realizar uma ação de Magia para arremessar fogo numa criatura ou num objeto a até 18 metros de você. Faça um ataque mágico à distância. Se acertar, o alvo sofre 1d8 de dano de Fogo.",
+   "Aprimoramento de Truque. O dano aumenta em 1d8 quando você alcança os níveis 5 (2d8), 11 (3d8) e 17 (4d8)."
+  ]
+ },
+ "programmed-illusion": {
+  "d": [
+   "Você cria dentro do alcance a ilusão de um objeto, de uma criatura ou de outro fenômeno visível, que é ativada quando um gatilho específico ocorre. Até lá, a ilusão é imperceptível. Ela não pode ser maior que um Cubo de 9 metros, e você decide ao lançar a magia como a ilusão se comporta e que sons emite. Essa apresentação roteirizada pode durar até 5 minutos.",
+   "Quando o gatilho especificado ocorre, a ilusão surge e se apresenta da forma descrita. Depois que termina a apresentação, desaparece e fica inativa por 10 minutos, depois dos quais pode ser ativada de novo.",
+   "O gatilho pode ser tão geral ou detalhado quanto quiser, mas precisa se basear em fenômenos visuais ou sonoros que ocorram a até 9 metros da área. Por exemplo, você pode criar uma ilusão de si mesmo que apareça e alerte quem tentar abrir uma porta com armadilha.",
+   "A interação física com a imagem revela que ela é ilusória, porque as coisas a atravessam. Uma criatura que realize a ação Estudar para examinar a imagem pode determinar que é uma ilusão passando num teste de Inteligência (Investigação) contra a CD de resistência das suas magias. Se uma criatura perceber a ilusão pelo que ela é, consegue ver através da imagem, e qualquer ruído que ela faça soa oco para essa criatura."
+  ],
+  "m": "Pó de jade no valor de 25+ PO."
+ },
+ "project-image": {
+  "d": [
+   "Você cria uma cópia ilusória de si mesmo que dura pela duração. A cópia pode aparecer em qualquer lugar dentro do alcance que você já tenha visto, sejam quais forem os obstáculos no caminho. A ilusão tem sua aparência e sua voz, mas é intangível. Se sofrer qualquer dano, desaparece, e a magia termina.",
+   "Você consegue ver pelos olhos da ilusão e ouvir pelos ouvidos dela como se estivesse no espaço dela. Com uma ação de Magia, pode movê-la até 18 metros e fazê-la gesticular, falar e se comportar como quiser. Ela imita seus trejeitos com perfeição.",
+   "A interação física com a imagem revela que ela é ilusória, porque as coisas a atravessam. Uma criatura que realize a ação Estudar para examinar a imagem pode determinar que é uma ilusão passando num teste de Inteligência (Investigação) contra a CD de resistência das suas magias. Se uma criatura perceber a ilusão pelo que ela é, consegue ver através da imagem, e qualquer ruído que ela faça soa oco para essa criatura."
+  ],
+  "m": "Uma estatueta de você mesmo no valor de 5+ PO."
+ },
+ "protection-from-energy": {
+  "n": "Proteção contra Energia",
+  "d": ["Pela duração, a criatura voluntária que você toca tem Resistência a um tipo de dano à sua escolha: Ácido, Frio, Fogo, Elétrico ou Trovejante."]
+ },
+ "protection-from-evil-and-good": {
+  "d": ["Até a magia terminar, uma criatura voluntária que você toca fica protegida contra criaturas que sejam Aberrações, Celestiais, Elementais, Fadas, Ínferos ou Mortos-Vivos. A proteção concede vários benefícios. Criaturas desses tipos têm Desvantagem em jogadas de ataque contra o alvo. O alvo também não pode ser possuído por elas nem ficar com a condição Enfeitiçado ou Amedrontado causada por elas. Se o alvo já estiver possuído, Enfeitiçado ou Amedrontado por uma criatura assim, tem Vantagem em qualquer novo teste de resistência contra o efeito correspondente."],
+  "m": "Um frasco de Água Benta no valor de 25+ PO, que a magia consome."
+ },
+ "protection-from-poison": {
+  "d": ["Você toca uma criatura e encerra nela a condição Envenenado. Pela duração, o alvo tem Vantagem em testes de resistência para evitar ou encerrar a condição Envenenado e tem Resistência a dano de Veneno."]
+ },
+ "purify-food-and-drink": {
+  "d": ["Você remove veneno e podridão de comida e bebida não mágicas numa Esfera de 1,5 metro de raio centrada num ponto dentro do alcance."]
+ },
+ "raise-dead": {
+  "d": [
+   "Com um toque, você revive uma criatura morta se ela estiver morta há no máximo 10 dias e não era um Morto-Vivo quando morreu.",
+   "A criatura volta à vida com 1 Ponto de Vida. Esta magia também neutraliza quaisquer venenos que afetavam a criatura no momento da morte.",
+   "Esta magia fecha todos os ferimentos mortais, mas não restaura partes do corpo perdidas. Se faltarem à criatura partes do corpo ou órgãos essenciais à sobrevivência (a cabeça, por exemplo), a magia falha automaticamente.",
+   "Voltar dos mortos é um suplício. O alvo sofre -4 de penalidade em Testes de D20. Cada vez que o alvo termina um Descanso Longo, a penalidade diminui em 1 até chegar a 0."
+  ],
+  "m": "Um diamante no valor de 500+ PO, que a magia consome."
+ },
+ "ray-of-enfeeblement": {
+  "d": [
+   "Um feixe de energia debilitante dispara de você em direção a uma criatura dentro do alcance. O alvo deve fazer um teste de resistência de Constituição. Se passar, tem Desvantagem na próxima jogada de ataque que fizer até o início do seu próximo turno.",
+   "Se falhar, o alvo tem Desvantagem em Testes de D20 baseados em Força pela duração. Durante esse tempo, também subtrai 1d8 de todas as suas jogadas de dano. O alvo repete o teste no fim de cada turno dele, encerrando a magia se passar."
+  ]
+ },
+ "ray-of-frost": {
+  "d": [
+   "Um feixe gélido de luz branco-azulada avança em direção a uma criatura dentro do alcance. Faça um ataque mágico à distância contra o alvo. Se acertar, ele sofre 1d8 de dano de Frio, e seu Deslocamento é reduzido em 3 metros até o início do seu próximo turno.",
+   "Aprimoramento de Truque. O dano aumenta em 1d8 quando você alcança os níveis 5 (2d8), 11 (3d8) e 17 (4d8)."
+  ]
+ },
+ "regenerate": {
+  "d": ["Uma criatura que você toca recupera 4d8 + 15 Pontos de Vida. Pela duração, o alvo recupera 1 Ponto de Vida no início de cada turno dele, e quaisquer partes do corpo decepadas voltam a crescer depois de 2 minutos."],
+  "m": "Uma roda de oração."
+ },
+ "ray-of-sickness": {
+  "n": "Raio Nauseante",
+  "d": ["Você dispara um raio esverdeado numa criatura dentro do alcance. Faça um ataque mágico à distância contra o alvo. Se acertar, o alvo sofre 2d8 de dano de Veneno e fica com a condição Envenenado até o fim do seu próximo turno. Usando um Espaço de Magia de Nível Superior. O dano aumenta em 1d8 para cada nível de espaço de magia acima de 1."]
+ },
+ "reincarnate": {
+  "d": [
+   "Você toca um Humanoide morto ou um pedaço dele. Se a criatura estiver morta há no máximo 10 dias, a magia forma um novo corpo para ela e chama a alma para entrar nele. Role 1d10 e consulte a tabela abaixo para determinar a espécie do corpo, ou o Mestre escolhe outra espécie jogável.",
+   "Espécie (1d10): 1, role de novo. 2, Draconato. 3, Anão. 4, Elfo. 5, Gnomo. 6, Golias. 7, Halfling. 8, Humano. 9, Orc. 10, Tiefling.",
+   "A criatura reencarnada faz quaisquer escolhas que a descrição da espécie ofereça e se lembra da vida anterior. Mantém as capacidades que tinha na forma original, mas perde os traços da espécie anterior e ganha os da nova."
+  ],
+  "m": "Óleos raros no valor de 1.000+ PO, que a magia consome."
+ },
+ "remove-curse": {
+  "d": ["Com seu toque, todas as maldições que afetam uma criatura ou um objeto terminam. Se o objeto for um item mágico amaldiçoado, a maldição permanece, mas a magia rompe a Sintonização do dono com o objeto para que ele possa ser removido ou descartado."]
+ }
+}

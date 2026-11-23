@@ -18,6 +18,8 @@
     "db:migrate": "prisma migrate dev",
     "db:generate": "prisma generate",
     "content:import": "tsx apps/web/scripts/import-content.ts",
+    "srd:fetch": "tsx scripts/srd/fetch.ts",
+    "srd:build": "tsx scripts/srd/build.ts",
     "db:cleanup": "tsx apps/web/scripts/db-cleanup.ts",
     "postinstall": "prisma generate",
     "assets:build": "pnpm --filter @rpg-forge/avatar-engine assets:build"

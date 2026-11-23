@@ -14,15 +14,21 @@ export function AuthForm({
   fields,
   submitLabel,
   footer,
+  hidden,
 }: {
   action: (s: AuthState, f: FormData) => Promise<AuthState>;
   fields: Field[];
   submitLabel: string;
   footer: { text: string; href: string; link: string };
+  /** Campos ocultos enviados junto (ex.: o código do convite que trouxe a pessoa). */
+  hidden?: Record<string, string>;
 }) {
   const [state, formAction, pending] = useActionState(action, undefined);
   return (
     <form action={formAction} className="space-y-4" noValidate>
+      {Object.entries(hidden ?? {}).map(([k, v]) => (
+        <input key={k} type="hidden" name={k} value={v} />
+      ))}
       {fields.map((f) => {
         const errors = state?.errors?.[f.name];
         const describedBy = errors ? `${f.name}-error` : f.hint ? `${f.name}-hint` : undefined;

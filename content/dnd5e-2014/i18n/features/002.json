@@ -1,0 +1,138 @@
+{
+ "bard-expertise-1": {
+  "n": "Especialização",
+  "d": ["No 3º nível, escolha duas das suas proficiências em perícia. Seu bônus de proficiência é dobrado em qualquer teste de habilidade que use uma das proficiências escolhidas. No 10º nível, você pode escolher mais duas proficiências em perícia para receber este benefício."]
+ },
+ "bardic-inspiration-d8": { "n": "Inspiração de Bardo (d8)" },
+ "font-of-inspiration": {
+  "n": "Fonte de Inspiração",
+  "d": ["A partir do 5º nível, você recupera todos os usos gastos de Inspiração de Bardo quando termina um descanso curto ou longo."]
+ },
+ "countercharm": {
+  "n": "Contraencanto",
+  "d": ["No 6º nível, você ganha a capacidade de usar notas musicais ou palavras de poder para perturbar efeitos que influenciam a mente. Com uma ação, pode começar uma apresentação que dura até o fim do seu próximo turno. Nesse período, você e qualquer criatura amigável a até 9 metros têm vantagem em testes de resistência contra ficar amedrontado ou enfeitiçado. A criatura precisa conseguir ouvi-lo para receber este benefício. A apresentação termina antes se você ficar incapacitado ou silenciado, ou se encerrá-la voluntariamente (sem gastar ação)."]
+ },
+ "bard-college-improvement-1": { "n": "Característica do Colégio de Bardo" },
+ "additional-magical-secrets": {
+  "n": "Segredos Mágicos Adicionais",
+  "d": ["No 6º nível, você aprende duas magias à sua escolha de qualquer classe. Cada magia escolhida precisa ser de um nível que você consiga lançar, como mostra a tabela do Bardo, ou um truque. As magias escolhidas contam como magias de bardo para você, mas não contam no número de magias de bardo que você conhece."]
+ },
+ "song-of-rest-d8": { "n": "Canção de Descanso (d8)" },
+ "bardic-inspiration-d10": { "n": "Inspiração de Bardo (d10)" },
+ "magical-secrets-1": {
+  "n": "Segredos Mágicos",
+  "d": [
+   "No 10º nível, você já saqueou conhecimento mágico de um amplo espectro de disciplinas. Escolha duas magias de qualquer classe, incluindo esta. Cada magia escolhida precisa ser de um nível que você consiga lançar, como mostra a tabela do Bardo, ou um truque.",
+   "As magias escolhidas contam como magias de bardo para você e entram no número da coluna Magias Conhecidas da tabela do Bardo.",
+   "Você aprende mais duas magias de qualquer classe no 14º nível e de novo no 18º."
+  ]
+ },
+ "song-of-rest-d10": { "n": "Canção de Descanso (d10)" },
+ "peerless-skill": {
+  "n": "Perícia Inigualável",
+  "d": ["A partir do 14º nível, quando faz um teste de habilidade, você pode gastar um uso de Inspiração de Bardo. Role um dado de Inspiração de Bardo e some o resultado ao teste. Pode fazer isso depois de rolar o dado do teste, mas antes de o Mestre dizer se você teve sucesso ou falhou."]
+ },
+ "bardic-inspiration-d12": { "n": "Inspiração de Bardo (d12)" },
+ "song-of-rest-d12": { "n": "Canção de Descanso (d12)" },
+ "superior-inspiration": {
+  "n": "Inspiração Superior",
+  "d": ["No 20º nível, quando rola iniciativa e não tem mais usos de Inspiração de Bardo, você recupera um uso."]
+ },
+ "spellcasting-cleric": {
+  "n": "Conjuração: Clérigo",
+  "d": ["Como canal do poder divino, você pode lançar magias de clérigo."]
+ },
+ "divine-domain": {
+  "n": "Domínio Divino",
+  "d": [
+   "Escolha um domínio ligado à sua divindade, como Conhecimento, Vida, Luz, Natureza, Tempestade, Trapaça ou Guerra. Só o domínio da Vida é detalhado no SRD sob a Open Game License. Outros domínios estão nos livros oficiais ou em produtos de outras editoras.",
+   "Seu domínio concede magias de domínio e outras características quando você o escolhe, no 1º nível. Também concede formas adicionais de usar Canalizar Divindade quando você ganha essa característica, no 2º nível, e benefícios adicionais no 6º, 8º e 17º."
+  ]
+ },
+ "domain-spells-1": {
+  "n": "Magias de Domínio",
+  "d": [
+   "Cada domínio tem uma lista de magias, suas magias de domínio, que você ganha nos níveis de clérigo indicados na descrição do domínio. Depois de ganhar uma magia de domínio, você sempre a tem preparada, e ela não conta no número de magias que você pode preparar por dia.",
+   "Se tiver uma magia de domínio que não aparece na lista de magias de clérigo, ela mesmo assim é uma magia de clérigo para você."
+  ]
+ },
+ "bonus-proficiency": {
+  "n": "Proficiência Adicional",
+  "d": ["Quando escolhe este domínio, no 1º nível, você ganha proficiência com armaduras pesadas."]
+ },
+ "disciple-of-life": {
+  "n": "Discípulo da Vida",
+  "d": ["Também a partir do 1º nível, suas magias de cura são mais eficazes. Sempre que usar uma magia de 1º nível ou superior para restaurar pontos de vida de uma criatura, ela recupera pontos de vida adicionais iguais a 2 + o nível da magia."]
+ },
+ "channel-divinity-1-rest": {
+  "n": "Canalizar Divindade (1/descanso)",
+  "d": [
+   "No 2º nível, você ganha a capacidade de canalizar energia divina diretamente da sua divindade e usá-la para alimentar efeitos mágicos. Você começa com dois efeitos: Expulsar Mortos-Vivos e um efeito definido pelo seu domínio. Alguns domínios concedem efeitos adicionais conforme você sobe de nível, como indicado na descrição do domínio.",
+   "Ao usar Canalizar Divindade, você escolhe qual efeito criar. Depois, precisa terminar um descanso curto ou longo para usar Canalizar Divindade de novo.",
+   "Alguns efeitos de Canalizar Divindade exigem testes de resistência. Quando você usa um efeito assim desta classe, a CD é igual à CD de resistência das suas magias de clérigo.",
+   "A partir do 6º nível, você pode usar Canalizar Divindade duas vezes entre descansos e, a partir do 18º, três vezes. Quando termina um descanso curto ou longo, recupera os usos gastos."
+  ]
+ },
+ "channel-divinity-turn-undead": {
+  "n": "Canalizar Divindade: Expulsar Mortos-Vivos",
+  "d": [
+   "Com uma ação, você apresenta seu símbolo sagrado e profere uma prece que repreende os mortos-vivos. Cada morto-vivo a até 9 metros que possa ver ou ouvir você deve fazer um teste de resistência de Sabedoria. Se falhar, é expulso por 1 minuto ou até sofrer qualquer dano.",
+   "Uma criatura expulsa deve passar seus turnos tentando se afastar o máximo possível de você e não pode se mover voluntariamente para um espaço a até 9 metros de você. Também não pode usar reações. Como ação, só pode usar a ação Disparada ou tentar escapar de um efeito que a impeça de se mover. Se não houver para onde ir, pode usar a ação Esquivar."
+  ]
+ },
+ "divine-domain-improvement-1": { "n": "Característica do Domínio Divino" },
+ "channel-divinity-preserve-life": {
+  "n": "Canalizar Divindade: Preservar a Vida",
+  "d": [
+   "A partir do 2º nível, você pode usar Canalizar Divindade para curar os gravemente feridos.",
+   "Com uma ação, você apresenta seu símbolo sagrado e evoca energia curativa capaz de restaurar um número de pontos de vida igual a cinco vezes o seu nível de clérigo.",
+   "Escolha quaisquer criaturas a até 9 metros de você e divida esses pontos de vida entre elas. Esta característica não pode restaurar uma criatura acima da metade do seu máximo de pontos de vida. Você não pode usá-la em mortos-vivos nem em constructos."
+  ]
+ },
+ "destroy-undead-cr-1-2-or-below": {
+  "n": "Destruir Mortos-Vivos (ND 1/2 ou menor)",
+  "d": ["A partir do 5º nível, quando um morto-vivo falha no teste de resistência contra sua característica Expulsar Mortos-Vivos, ele é destruído na hora se o seu nível de desafio for igual ou menor que um certo limite."]
+ },
+ "channel-divinity-2-rest": {
+  "n": "Canalizar Divindade (2/descanso)",
+  "d": ["A partir do 6º nível, você pode usar Canalizar Divindade duas vezes entre descansos e, a partir do 18º, três vezes. Quando termina um descanso curto ou longo, recupera os usos gastos."]
+ },
+ "blessed-healer": {
+  "n": "Curandeiro Abençoado",
+  "d": ["A partir do 6º nível, as magias de cura que você lança em outros também curam você. Quando lança uma magia de 1º nível ou superior que restaura pontos de vida de uma criatura que não seja você, você recupera pontos de vida iguais a 2 + o nível da magia."]
+ },
+ "destroy-undead-cr-1-or-below": { "n": "Destruir Mortos-Vivos (ND 1 ou menor)" },
+ "divine-strike": {
+  "n": "Golpe Divino",
+  "d": ["No 8º nível, você ganha a capacidade de imbuir seus golpes com energia divina. Uma vez em cada um dos seus turnos, quando atinge uma criatura com um ataque com arma, pode fazer o ataque causar 1d8 de dano radiante extra ao alvo. Ao chegar ao 14º nível, o dano extra aumenta para 2d8."]
+ },
+ "divine-intervention": {
+  "n": "Intervenção Divina",
+  "d": [
+   "A partir do 10º nível, você pode pedir à sua divindade que intervenha a seu favor quando a necessidade for grande.",
+   "Implorar a ajuda da divindade exige sua ação. Descreva a ajuda que procura e role dados percentuais. Se tirar um número igual ou menor que seu nível de clérigo, a divindade intervém. O Mestre escolhe a natureza da intervenção; o efeito de qualquer magia de clérigo ou magia de domínio de clérigo seria apropriado.",
+   "Se a divindade intervier, você não pode usar esta característica de novo por 7 dias. Caso contrário, pode usá-la de novo depois de terminar um descanso longo.",
+   "No 20º nível, seu pedido de intervenção é atendido automaticamente, sem rolagem."
+  ]
+ },
+ "destroy-undead-cr-2-or-below": { "n": "Destruir Mortos-Vivos (ND 2 ou menor)" },
+ "destroy-undead-cr-3-or-below": { "n": "Destruir Mortos-Vivos (ND 3 ou menor)" },
+ "destroy-undead-cr-4-or-below": { "n": "Destruir Mortos-Vivos (ND 4 ou menor)" },
+ "supreme-healing": {
+  "n": "Cura Suprema",
+  "d": ["A partir do 17º nível, quando normalmente rolaria um ou mais dados para restaurar pontos de vida com uma magia, você usa o maior resultado possível de cada dado. Por exemplo, em vez de restaurar 2d6 pontos de vida de uma criatura, você restaura 12."]
+ },
+ "channel-divinity-3-rest": { "n": "Canalizar Divindade (3/descanso)" },
+ "divine-intervention-improvement": {
+  "n": "Intervenção Divina Aprimorada",
+  "d": ["No 20º nível, seu pedido de intervenção é atendido automaticamente, sem rolagem."]
+ },
+ "spellcasting-druid": {
+  "n": "Conjuração: Druida",
+  "d": ["Recorrendo à essência divina da própria natureza, você pode lançar magias para moldar essa essência à sua vontade."]
+ },
+ "druidic": {
+  "n": "Druídico",
+  "d": ["Você conhece o Druídico, o idioma secreto dos druidas. Pode falá-lo e usá-lo para deixar mensagens ocultas. Você e outros que conhecem o idioma notam essas mensagens automaticamente. Outros notam a presença da mensagem com um teste de Sabedoria (Percepção) CD 15 bem-sucedido, mas não conseguem decifrá-la sem magia."]
+ }
+}

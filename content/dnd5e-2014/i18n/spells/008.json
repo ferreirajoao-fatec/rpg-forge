@@ -1,0 +1,97 @@
+{
+ "control-water": {
+  "n": "Controlar a Água",
+  "d": [
+   "Até a magia terminar, você controla qualquer água parada ou corrente dentro de uma área à sua escolha que seja um cubo de até 30 metros de lado. Ao lançar a magia, pode escolher qualquer um dos efeitos a seguir. Com uma ação no seu turno, pode repetir o mesmo efeito ou escolher outro.",
+   "*Inundação.* Você faz o nível de toda a água parada na área subir até 6 metros. Se a área incluir uma margem, a água transborda para a terra seca.",
+   "Se escolher uma área num grande corpo d'água, você cria uma onda de 6 metros de altura que vai de um lado ao outro da área e então arrebenta. Qualquer veículo Enorme ou menor no caminho da onda é carregado com ela até o outro lado. Qualquer veículo Enorme ou menor atingido pela onda tem 25% de chance de virar.",
+   "O nível da água continua elevado até a magia terminar ou você escolher outro efeito. Se este efeito produziu uma onda, ela se repete no início do seu próximo turno enquanto o efeito de inundação durar.",
+   "*Partir a Água.* Você faz a água na área se separar e criar uma vala. A vala atravessa a área da magia, e a água separada forma uma parede de cada lado. A vala permanece até a magia terminar ou você escolher outro efeito. Então a água enche a vala lentamente ao longo da rodada seguinte, até o nível normal ser restaurado.",
+   "*Redirecionar Fluxo.* Você faz a água corrente na área se mover numa direção à sua escolha, mesmo que precise passar por obstáculos, subir paredes ou seguir em outras direções improváveis. A água na área se move como você mandar, mas, ao sair da área da magia, retoma seu fluxo de acordo com o terreno. A água continua se movendo na direção escolhida até a magia terminar ou você escolher outro efeito.",
+   "*Redemoinho.* Este efeito exige um corpo d'água de pelo menos 15 metros de lado e 7,5 metros de profundidade. Você faz um redemoinho se formar no centro da área. Ele forma um vórtice de 1,5 metro de largura na base, até 15 metros de largura no topo e 7,5 metros de altura. Qualquer criatura ou objeto na água a até 7,5 metros do vórtice é puxado 3 metros em direção a ele. Uma criatura pode nadar para longe do vórtice fazendo um teste de Força (Atletismo) contra a CD de resistência das suas magias.",
+   "Quando uma criatura entra no vórtice pela primeira vez num turno ou começa o turno ali, deve fazer um teste de resistência de Força. Se falhar, sofre 2d8 de dano de concussão e fica presa no vórtice até a magia terminar. Se passar, sofre metade do dano e não fica presa. Uma criatura presa no vórtice pode usar sua ação para tentar nadar para longe como descrito acima, mas tem desvantagem no teste de Força (Atletismo).",
+   "Na primeira vez em cada turno que um objeto entra no vórtice, ele sofre 2d8 de dano de concussão; esse dano ocorre a cada rodada em que permanecer no vórtice."
+  ],
+  "m": "Uma gota de água e uma pitada de poeira."
+ },
+ "control-weather": {
+  "n": "Controlar o Clima",
+  "d": [
+   "Você assume o controle do clima a até 7,5 km de você pela duração. Precisa estar ao ar livre para lançar esta magia. Ir para um lugar sem caminho livre até o céu encerra a magia antes da hora.",
+   "Ao lançar a magia, você muda as condições climáticas atuais, que são determinadas pelo Mestre com base no clima e na estação. Pode mudar a precipitação, a temperatura e o vento. As novas condições levam 1d4 × 10 minutos para entrar em efeito. Depois disso, você pode mudá-las de novo. Quando a magia termina, o clima volta ao normal aos poucos.",
+   "Quando mudar as condições climáticas, encontre a condição atual nas tabelas a seguir e mude seu estágio em um, para cima ou para baixo. Ao mudar o vento, pode mudar a direção dele.",
+   "##### Precipitação",
+   "| Estágio | Condição |",
+   "|---|---|",
+   "| 1 | Céu limpo |",
+   "| 2 | Nuvens esparsas |",
+   "| 3 | Céu encoberto ou neblina rasteira |",
+   "| 4 | Chuva, granizo ou neve |",
+   "| 5 | Chuva torrencial, granizo forte ou nevasca |",
+   "##### Temperatura",
+   "| Estágio | Condição |",
+   "|---|---|",
+   "| 1 | Calor insuportável |",
+   "| 2 | Quente |",
+   "| 3 | Morno |",
+   "| 4 | Fresco |",
+   "| 5 | Frio |",
+   "| 6 | Frio ártico |",
+   "##### Vento",
+   "| Estágio | Condição |",
+   "|---|---|",
+   "| 1 | Calmo |",
+   "| 2 | Vento moderado |",
+   "| 3 | Vento forte |",
+   "| 4 | Ventania |",
+   "| 5 | Tempestade |"
+  ],
+  "m": "Incenso queimando e pedacinhos de terra e madeira misturados em água."
+ },
+ "counterspell": {
+  "n": "Contramágica",
+  "d": ["Você tenta interromper uma criatura no processo de lançar uma magia. Se a criatura estiver lançando uma magia de 3º nível ou menor, a magia dela falha e não tem efeito. Se estiver lançando uma magia de 4º nível ou superior, faça um teste de habilidade usando sua habilidade de conjuração. A CD é 10 + o nível da magia. Se passar, a magia da criatura falha e não tem efeito."],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 4º nível ou superior, a magia interrompida não tem efeito se o nível dela for igual ou menor que o nível do espaço de magia usado."]
+ },
+ "create-food-and-water": {
+  "n": "Criar Comida e Água",
+  "d": ["Você cria 22,5 kg de comida e 120 litros de água no chão ou em recipientes dentro do alcance, o suficiente para sustentar até quinze humanoides ou cinco montarias por 24 horas. A comida é sem graça, mas nutritiva, e estraga se não for consumida em 24 horas. A água é limpa e não estraga."]
+ },
+ "create-undead": {
+  "n": "Criar Mortos-Vivos",
+  "d": [
+   "Você só pode lançar esta magia à noite. Escolha até três cadáveres de humanoides Médios ou Pequenos dentro do alcance. Cada cadáver se torna um carniçal sob seu controle. (O Mestre tem as estatísticas de jogo dessas criaturas.)",
+   "Com uma ação bônus em cada um dos seus turnos, você pode comandar mentalmente qualquer criatura que animou com esta magia, se ela estiver a até 36 metros de você (se controlar várias criaturas, pode comandar qualquer uma ou todas ao mesmo tempo, dando o mesmo comando a cada uma). Você decide qual ação a criatura realizará e para onde se moverá no próximo turno dela, ou pode dar um comando geral, como vigiar uma câmara ou um corredor específico. Se não der comandos, a criatura apenas se defende de criaturas hostis. Depois de receber uma ordem, a criatura continua a cumpri-la até a tarefa estar concluída.",
+   "A criatura fica sob seu controle por 24 horas; depois disso, para de obedecer a qualquer comando que você tenha dado. Para manter o controle por mais 24 horas, você precisa lançar esta magia na criatura antes de o período atual de 24 horas terminar. Esse uso da magia reafirma seu controle sobre até três criaturas que você animou com esta magia, em vez de animar novas."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 7º nível, pode animar ou reafirmar o controle sobre quatro carniçais. Com um espaço de 8º nível, pode animar ou reafirmar o controle sobre cinco carniçais ou dois lívidos ou aparições. Com um espaço de 9º nível, pode animar ou reafirmar o controle sobre seis carniçais, três lívidos ou aparições, ou duas múmias."],
+  "m": "Um pote de barro cheio de terra de sepultura, um pote de barro cheio de água salobra e uma pedra de ônix negro de 150 po para cada cadáver."
+ },
+ "create-or-destroy-water": {
+  "n": "Criar ou Destruir Água",
+  "d": [
+   "Você cria ou destrói água.",
+   "*Criar Água.* Você cria até 40 litros de água limpa dentro do alcance num recipiente aberto. Em vez disso, a água pode cair como chuva num cubo de 9 metros dentro do alcance.",
+   "*Destruir Água.* Você destrói até 40 litros de água num recipiente aberto dentro do alcance. Em vez disso, pode destruir a neblina num cubo de 9 metros dentro do alcance."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 2º nível ou superior, cria ou destrói mais 40 litros de água, ou o tamanho do cubo aumenta em 1,5 metro, para cada nível de espaço acima do 1º."],
+  "m": "Uma gota de água para criar água, ou alguns grãos de areia para destruí-la."
+ },
+ "creation": {
+  "n": "Criação",
+  "d": [
+   "Você puxa fiapos de matéria sombria do Pendor das Sombras para criar dentro do alcance um objeto inanimado de matéria vegetal: tecidos, corda, madeira ou algo parecido. Também pode usar esta magia para criar objetos minerais, como pedra, cristal ou metal. O objeto criado não pode ser maior que um cubo de 1,5 metro e precisa ter uma forma e um material que você já tenha visto.",
+   "A duração depende do material do objeto. Se ele for composto de vários materiais, use a duração mais curta.",
+   "| Material | Duração |",
+   "|---|---|",
+   "| Matéria vegetal | 1 dia |",
+   "| Pedra ou cristal | 12 horas |",
+   "| Metais preciosos | 1 hora |",
+   "| Gemas | 10 minutos |",
+   "| Adamante ou mitral | 1 minuto |",
+   "Usar qualquer material criado por esta magia como componente material de outra magia faz essa outra magia falhar."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 6º nível ou superior, o cubo aumenta em 1,5 metro para cada nível de espaço acima do 5º."],
+  "m": "Um pedacinho de matéria do mesmo tipo do item que você pretende criar."
+ }
+}

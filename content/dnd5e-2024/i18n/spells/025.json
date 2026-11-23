@@ -1,0 +1,72 @@
+{
+ "suggestion": {
+  "d": [
+   "Você sugere um curso de atividade (descrito em no máximo 25 palavras) a uma criatura que consiga ver dentro do alcance e que consiga ouvi-lo e entendê-lo. A sugestão precisa parecer realizável e não envolver nada que obviamente cause dano ao alvo ou aos aliados dele. Por exemplo, você pode dizer: \"Pegue a chave do cofre do tesouro do culto e entregue-a para mim.\" Ou: \"Pare de lutar, saia desta biblioteca em paz e não volte.\"",
+   "O alvo deve passar num teste de resistência de Sabedoria ou fica com a condição Enfeitiçado pela duração ou até você ou seus aliados causarem dano a ele. O alvo Enfeitiçado segue a sugestão da melhor forma possível. A atividade sugerida pode continuar por toda a duração, mas, se puder ser concluída em menos tempo, a magia termina para o alvo quando ele a concluir."
+  ],
+  "m": "Uma gota de mel."
+ },
+ "summon-dragon": {
+  "n": "Invocar Dragão",
+  "d": [
+   "Você invoca um espírito de Dragão. Ele se manifesta num espaço desocupado que você consiga ver dentro do alcance e usa a ficha de Espírito Dracônico. A criatura desaparece quando cai a 0 Pontos de Vida ou quando a magia termina.",
+   "A criatura é aliada sua e dos seus aliados. Em combate, ela compartilha sua Iniciativa, mas age logo depois de você. Obedece aos seus comandos verbais (sem gastar ação sua). Se você não der nenhum, ela realiza a ação Esquivar e usa o movimento para evitar o perigo."
+  ],
+  "h": [
+   "Use o nível do espaço de magia como o nível da magia na ficha.",
+   "Espírito Dracônico. Dragão Grande, Neutro. CA 14 + o nível da magia. PV 50 + 10 para cada nível da magia acima de 5. Deslocamento 9 m, Voo 18 m, Natação 9 m. For 19 (+4, resistência +4), Des 14 (+2, +2), Con 17 (+3, +3), Int 10 (+0, +0), Sab 14 (+2, +2), Car 14 (+2, +2). Resistências: Ácido, Frio, Fogo, Elétrico, Veneno. Imunidades: Enfeitiçado, Amedrontado, Envenenado. Sentidos: Percepção às Cegas 9 m, Visão no Escuro 18 m; Percepção Passiva 12. Idiomas: Dracônico, entende os idiomas que você conhece. ND nenhum (XP 0; BP igual ao seu Bônus de Proficiência).",
+   "Traços. Resistências Compartilhadas. Quando você invoca o espírito, escolha uma das Resistências dele. Você tem Resistência ao tipo de dano escolhido até a magia terminar.",
+   "Ações. Ataques Múltiplos. O espírito faz um número de ataques de Dilacerar igual à metade do nível da magia (arredondado para baixo) e usa Sopro. Dilacerar. Jogada de Ataque Corpo a Corpo: bônus igual ao seu modificador de ataque mágico, alcance 3 m. Acerto: 1d6 + 4 + o nível da magia de dano Perfurante. Sopro. Teste de Resistência de Destreza: CD igual à CD de resistência das suas magias, cada criatura num Cone de 9 m. Falha: 2d6 de dano de um tipo a que este espírito tenha Resistência (à sua escolha ao lançar a magia). Sucesso: metade do dano."
+  ],
+  "m": "Um objeto com a imagem de um dragão gravada, no valor de 500+ PO."
+ },
+ "sunbeam": {
+  "d": [
+   "Você dispara um raio de sol numa Linha de 1,5 metro de largura e 18 metros de comprimento. Cada criatura na Linha faz um teste de resistência de Constituição. Se falhar, sofre 6d8 de dano Radiante e fica com a condição Cego até o início do seu próximo turno. Se passar, sofre apenas metade do dano.",
+   "Até a magia terminar, você pode realizar uma ação de Magia para criar uma nova Linha de radiância.",
+   "Pela duração, uma partícula de radiância brilhante reluz acima de você. Ela emite Luz Plena num raio de 9 metros e Penumbra por mais 9 metros. Essa luz é luz do sol."
+  ],
+  "m": "Uma lupa."
+ },
+ "sunburst": {
+  "d": [
+   "Uma luz do sol brilhante lampeja numa Esfera de 18 metros de raio centrada num ponto à sua escolha dentro do alcance. Cada criatura na Esfera faz um teste de resistência de Constituição. Se falhar, sofre 12d6 de dano Radiante e fica com a condição Cego por 1 minuto. Se passar, sofre apenas metade do dano.",
+   "Uma criatura Cega por esta magia faz outro teste de resistência de Constituição no fim de cada turno dela, encerrando o efeito em si mesma se passar.",
+   "Esta magia dissipa a Escuridão na área criada por qualquer magia."
+  ],
+  "m": "Um pedaço de pedra do sol."
+ },
+ "symbol": {
+  "d": [
+   "Você inscreve um glifo nocivo numa superfície (como uma parte do piso ou da parede) ou dentro de um objeto que possa ser fechado (como um livro ou um baú). O glifo pode cobrir uma área de no máximo 3 metros de diâmetro. Se escolher um objeto, ele precisa permanecer no lugar; se for movido mais de 3 metros de onde você lançou a magia, o glifo se rompe, e a magia termina sem ser ativada.",
+   "O glifo é quase imperceptível, e notá-lo exige passar num teste de Sabedoria (Percepção) contra a CD de resistência das suas magias.",
+   "Ao inscrever o glifo, você define o gatilho e escolhe qual efeito o símbolo carrega: Morte, Discórdia, Medo, Dor, Sono ou Atordoamento. Cada um é explicado abaixo.",
+   "Definir o Gatilho. Você decide o que ativa o glifo ao lançar a magia. Para glifos inscritos numa superfície, os gatilhos comuns incluem tocar ou pisar no glifo, remover outro objeto que o cubra ou chegar a certa distância dele. Para glifos inscritos dentro de um objeto, os gatilhos comuns incluem abrir esse objeto ou ver o glifo.",
+   "Você pode refinar o gatilho para que só criaturas de certos tipos o ativem (por exemplo, o glifo pode ser definido para afetar Aberrações). Também pode definir condições para criaturas que não ativam o glifo, como as que disserem uma senha.",
+   "Depois de ativado, o glifo brilha, preenchendo uma Esfera de 18 metros de raio com Penumbra por 10 minutos, depois dos quais a magia termina. Cada criatura na Esfera quando o glifo é ativado é alvo do efeito, assim como uma criatura que entre na Esfera pela primeira vez num turno ou termine o turno ali. Uma criatura só é alvo uma vez por turno.",
+   "Morte. Cada alvo faz um teste de resistência de Constituição, sofrendo 10d10 de dano Necrótico se falhar, ou metade se passar.",
+   "Discórdia. Cada alvo faz um teste de resistência de Sabedoria. Se falhar, o alvo discute com outras criaturas por 1 minuto. Durante esse tempo, é incapaz de se comunicar de forma significativa e tem Desvantagem em jogadas de ataque e testes de atributo.",
+   "Medo. Cada alvo deve passar num teste de resistência de Sabedoria ou fica com a condição Amedrontado por 1 minuto. Enquanto estiver Amedrontado, o alvo precisa se afastar pelo menos 9 metros do glifo em cada turno dele, se puder.",
+   "Dor. Cada alvo deve passar num teste de resistência de Constituição ou fica com a condição Incapacitado por 1 minuto.",
+   "Sono. Cada alvo deve passar num teste de resistência de Sabedoria ou fica com a condição Inconsciente por 10 minutos. Uma criatura acorda se sofrer dano ou se alguém usar uma ação para sacudi-la.",
+   "Atordoamento. Cada alvo deve passar num teste de resistência de Sabedoria ou fica com a condição Atordoado por 1 minuto."
+  ],
+  "m": "Pó de diamante no valor de 1.000+ PO, que a magia consome."
+ },
+ "telekinesis": {
+  "d": [
+   "Você ganha a capacidade de mover ou manipular criaturas ou objetos com o pensamento. Ao lançar a magia e com uma ação de Magia nos seus turnos posteriores antes de ela terminar, você pode exercer sua vontade sobre uma criatura ou um objeto que consiga ver dentro do alcance, causando o efeito apropriado abaixo. Pode afetar o mesmo alvo rodada após rodada ou escolher um novo a qualquer momento. Se trocar de alvo, o anterior deixa de ser afetado pela magia.",
+   "Criatura. Você pode tentar mover uma criatura Enorme ou menor. O alvo deve passar num teste de resistência de Força, ou você o move até 9 metros em qualquer direção dentro do alcance da magia. Até o fim do seu próximo turno, a criatura fica com a condição Impedido e, se você a erguer no ar, fica suspensa ali. Ela cai no fim do seu próximo turno, a menos que você use esta opção nela de novo e ela falhe no teste.",
+   "Objeto. Você pode tentar mover um objeto Enorme ou menor. Se o objeto não estiver sendo vestido nem carregado, você o move automaticamente até 9 metros em qualquer direção dentro do alcance da magia.",
+   "Se o objeto estiver sendo vestido ou carregado por uma criatura, ela deve passar num teste de resistência de Força, ou você puxa o objeto e o move até 9 metros em qualquer direção dentro do alcance da magia.",
+   "Você pode exercer um controle fino sobre objetos com seu domínio telecinético, como manipular uma ferramenta simples, abrir uma porta ou um recipiente, guardar ou pegar um item de um recipiente aberto ou despejar o conteúdo de um frasco."
+  ]
+ },
+ "telepathic-bond": {
+  "d": [
+   "Você forja um elo telepático entre até oito criaturas voluntárias à sua escolha dentro do alcance, ligando psiquicamente cada uma a todas as outras pela duração. Criaturas que não conseguem se comunicar em nenhum idioma não são afetadas por esta magia.",
+   "Até a magia terminar, os alvos podem se comunicar telepaticamente pelo elo, compartilhando ou não um idioma. A comunicação é possível a qualquer distância, mas não se estende a outros planos de existência."
+  ],
+  "m": "Dois ovos."
+ }
+}

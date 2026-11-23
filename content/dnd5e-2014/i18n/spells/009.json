@@ -1,0 +1,96 @@
+{
+ "cure-wounds": {
+  "n": "Curar Ferimentos",
+  "d": ["Uma criatura que você toca recupera pontos de vida iguais a 1d8 + seu modificador de habilidade de conjuração. Esta magia não tem efeito em mortos-vivos nem em constructos."],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 2º nível ou superior, a cura aumenta em 1d8 para cada nível de espaço acima do 1º."]
+ },
+ "dancing-lights": {
+  "n": "Globos de Luz",
+  "d": [
+   "Você cria até quatro luzes do tamanho de tochas dentro do alcance, fazendo-as parecer tochas, lanternas ou orbes brilhantes que pairam no ar pela duração. Também pode combinar as quatro luzes numa única forma brilhante, vagamente humanoide, de tamanho Médio. Seja qual for a forma escolhida, cada luz emite penumbra num raio de 3 metros.",
+   "Com uma ação bônus no seu turno, você pode mover as luzes até 18 metros para um novo ponto dentro do alcance. Cada luz precisa estar a até 6 metros de outra luz criada por esta magia, e uma luz se apaga se ultrapassar o alcance da magia."
+  ],
+  "m": "Um pouco de fósforo ou de madeira de bruxa, ou um vaga-lume."
+ },
+ "darkness": {
+  "n": "Escuridão",
+  "d": [
+   "Uma escuridão mágica se espalha a partir de um ponto à sua escolha dentro do alcance, preenchendo uma esfera de 4,5 metros de raio pela duração. A escuridão contorna esquinas. Uma criatura com visão no escuro não consegue enxergar através dela, e luz não mágica não consegue iluminá-la.",
+   "Se o ponto escolhido estiver num objeto que você esteja segurando ou que não esteja sendo vestido nem carregado, a escuridão emana do objeto e se move com ele. Cobrir completamente a fonte da escuridão com um objeto opaco, como uma tigela ou um elmo, bloqueia a escuridão.",
+   "Se qualquer parte da área desta magia se sobrepuser a uma área de luz criada por uma magia de 2º nível ou menor, a magia que criou a luz é dissipada."
+  ],
+  "m": "Pelo de morcego e uma gota de piche ou um pedaço de carvão."
+ },
+ "darkvision": {
+  "n": "Visão no Escuro",
+  "d": ["Você toca uma criatura voluntária para conceder a ela a capacidade de ver no escuro. Pela duração, essa criatura tem visão no escuro com alcance de 18 metros."],
+  "m": "Uma pitada de cenoura seca ou uma ágata."
+ },
+ "daylight": {
+  "n": "Luz do Dia",
+  "d": [
+   "Uma esfera de luz com 18 metros de raio se espalha a partir de um ponto à sua escolha dentro do alcance. A esfera é de luz plena e emite penumbra por mais 18 metros.",
+   "Se escolher um ponto num objeto que esteja segurando ou que não esteja sendo vestido nem carregado, a luz brilha a partir do objeto e se move com ele. Cobrir completamente o objeto afetado com um objeto opaco, como uma tigela ou um elmo, bloqueia a luz.",
+   "Se qualquer parte da área desta magia se sobrepuser a uma área de escuridão criada por uma magia de 3º nível ou menor, a magia que criou a escuridão é dissipada."
+  ]
+ },
+ "death-ward": {
+  "n": "Proteção contra a Morte",
+  "d": [
+   "Você toca uma criatura e lhe concede certa proteção contra a morte.",
+   "Na primeira vez que o alvo cairia a 0 pontos de vida por sofrer dano, em vez disso ele fica com 1 ponto de vida, e a magia termina.",
+   "Se a magia ainda estiver ativa quando o alvo for submetido a um efeito que o mataria instantaneamente sem causar dano, esse efeito é anulado contra o alvo, e a magia termina."
+  ]
+ },
+ "delayed-blast-fireball": {
+  "n": "Bola de Fogo Controlável",
+  "d": [
+   "Um raio de luz amarela sai do seu dedo apontado e se condensa num ponto escolhido dentro do alcance, onde fica como uma conta brilhante pela duração. Quando a magia termina, seja porque sua concentração foi interrompida ou porque você decidiu encerrá-la, a conta desabrocha com um rugido grave numa explosão de chamas que contorna esquinas. Cada criatura numa esfera de 6 metros de raio centrada nesse ponto deve fazer um teste de resistência de Destreza. A criatura sofre dano de fogo igual ao total acumulado se falhar, ou metade se passar.",
+   "O dano base da magia é 12d6. Se, no fim do seu turno, a conta ainda não tiver detonado, o dano aumenta em 1d6.",
+   "Se a conta brilhante for tocada antes de o intervalo terminar, a criatura que a tocou deve fazer um teste de resistência de Destreza. Se falhar, a magia termina imediatamente, e a conta irrompe em chamas. Se passar, a criatura pode arremessar a conta até 12 metros. Quando ela atinge uma criatura ou um objeto sólido, a magia termina e a conta explode.",
+   "O fogo causa dano aos objetos na área e incendeia objetos inflamáveis que não estejam sendo vestidos nem carregados."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 8º nível ou superior, o dano base aumenta em 1d6 para cada nível de espaço acima do 7º."],
+  "m": "Uma bolinha de guano de morcego e enxofre."
+ },
+ "demiplane": {
+  "n": "Semiplano",
+  "d": [
+   "Você cria uma porta sombria numa superfície sólida e plana que consiga ver dentro do alcance. A porta é grande o bastante para criaturas Médias passarem sem dificuldade. Quando aberta, leva a um semiplano que parece um cômodo vazio de 9 metros em cada dimensão, feito de madeira ou pedra. Quando a magia termina, a porta desaparece, e quaisquer criaturas ou objetos dentro do semiplano ficam presos lá, já que a porta também some do outro lado.",
+   "Cada vez que lança esta magia, você pode criar um novo semiplano ou conectar a porta sombria a um semiplano que criou numa conjuração anterior desta magia. Além disso, se conhecer a natureza e o conteúdo de um semiplano criado por outra criatura com esta magia, pode conectar a porta sombria ao semiplano dela."
+  ]
+ },
+ "detect-evil-and-good": {
+  "n": "Detectar o Bem e o Mal",
+  "d": [
+   "Pela duração, você sabe se há uma aberração, um celestial, um elemental, uma fada, um ínfero ou um morto-vivo a até 9 metros de você, e onde a criatura está. Da mesma forma, sabe se há um lugar ou objeto a até 9 metros de você que tenha sido magicamente consagrado ou profanado.",
+   "A magia atravessa a maioria das barreiras, mas é bloqueada por 30 centímetros de pedra, 2,5 centímetros de metal comum, uma folha fina de chumbo ou 90 centímetros de madeira ou terra."
+  ]
+ },
+ "detect-magic": {
+  "n": "Detectar Magia",
+  "d": [
+   "Pela duração, você sente a presença de magia a até 9 metros de você. Se sentir magia dessa forma, pode usar sua ação para ver uma aura tênue em torno de qualquer criatura ou objeto visível na área que carregue magia, e descobre a escola de magia dela, se houver.",
+   "A magia atravessa a maioria das barreiras, mas é bloqueada por 30 centímetros de pedra, 2,5 centímetros de metal comum, uma folha fina de chumbo ou 90 centímetros de madeira ou terra."
+  ]
+ },
+ "detect-poison-and-disease": {
+  "n": "Detectar Veneno e Doença",
+  "d": [
+   "Pela duração, você sente a presença e a localização de venenos, criaturas venenosas e doenças a até 9 metros de você. Também identifica o tipo de veneno, de criatura venenosa ou de doença em cada caso.",
+   "A magia atravessa a maioria das barreiras, mas é bloqueada por 30 centímetros de pedra, 2,5 centímetros de metal comum, uma folha fina de chumbo ou 90 centímetros de madeira ou terra."
+  ],
+  "m": "Uma folha de teixo."
+ },
+ "detect-thoughts": {
+  "n": "Detectar Pensamentos",
+  "d": [
+   "Pela duração, você pode ler os pensamentos de certas criaturas. Quando lança a magia, e com sua ação em cada turno até ela terminar, pode concentrar sua mente em qualquer criatura que consiga ver a até 9 metros de você. Se a criatura escolhida tiver Inteligência 3 ou menor ou não falar nenhum idioma, não é afetada.",
+   "De início, você descobre os pensamentos superficiais da criatura: o que mais ocupa a mente dela naquele momento. Com uma ação, pode desviar sua atenção para os pensamentos de outra criatura ou tentar sondar mais fundo a mente da mesma criatura. Se sondar mais fundo, o alvo deve fazer um teste de resistência de Sabedoria. Se falhar, você obtém uma noção do raciocínio dele (se houver), do seu estado emocional e de algo que pesa muito na mente dele (como algo que o preocupa, que ele ama ou odeia). Se passar, a magia termina. De qualquer forma, o alvo sabe que você está sondando sua mente e, a menos que você desvie a atenção para os pensamentos de outra criatura, pode usar sua ação no turno dele para fazer um teste de Inteligência resistido pelo seu teste de Inteligência; se vencer, a magia termina.",
+   "Perguntas dirigidas verbalmente à criatura-alvo moldam naturalmente o curso dos pensamentos dela, então esta magia é especialmente eficaz como parte de um interrogatório.",
+   "Você também pode usar esta magia para detectar a presença de criaturas pensantes que não consegue ver. Quando lança a magia, ou com sua ação durante a duração, pode procurar pensamentos a até 9 metros de você. A magia atravessa barreiras, mas é bloqueada por 60 centímetros de rocha, 5 centímetros de qualquer metal que não seja chumbo ou uma folha fina de chumbo. Você não consegue detectar uma criatura com Inteligência 3 ou menor ou que não fale nenhum idioma.",
+   "Depois de detectar a presença de uma criatura dessa forma, você pode ler os pensamentos dela pelo resto da duração como descrito acima, mesmo que não consiga vê-la, mas ela ainda precisa estar dentro do alcance."
+  ],
+  "m": "Uma moeda de cobre."
+ }
+}

@@ -1,0 +1,135 @@
+{
+ "monk-evasion": {
+  "n": "Evasão",
+  "d": ["No 7º nível, sua agilidade instintiva permite se esquivar de certos efeitos de área, como o sopro elétrico de um dragão azul ou a magia bola de fogo. Quando for alvo de um efeito que permite um teste de resistência de Destreza para sofrer só metade do dano, você não sofre dano se passar e sofre só metade se falhar."]
+ },
+ "stillness-of-mind": {
+  "n": "Mente Tranquila",
+  "d": ["A partir do 7º nível, você pode usar sua ação para encerrar um efeito em você que o deixe enfeitiçado ou amedrontado."]
+ },
+ "purity-of-body": {
+  "n": "Pureza Corporal",
+  "d": ["No 10º nível, seu domínio do ki que flui em você o torna imune a doença e veneno."]
+ },
+ "tranquility": {
+  "n": "Tranquilidade",
+  "d": ["A partir do 11º nível, você pode entrar numa meditação especial que o envolve numa aura de paz. No fim de um descanso longo, você recebe o efeito da magia santuário, que dura até o início do seu próximo descanso longo (a magia pode terminar antes, como de costume). A CD do teste de resistência da magia é 8 + seu modificador de Sabedoria + seu bônus de proficiência."]
+ },
+ "tongue-of-the-sun-and-moon": {
+  "n": "Língua do Sol e da Lua",
+  "d": ["A partir do 13º nível, você aprende a tocar o ki de outras mentes e passa a entender todos os idiomas falados. Além disso, qualquer criatura que entenda algum idioma entende o que você diz."]
+ },
+ "diamond-soul": {
+  "n": "Alma de Diamante",
+  "d": [
+   "A partir do 14º nível, seu domínio do ki lhe dá proficiência em todos os testes de resistência.",
+   "Além disso, sempre que falhar num teste de resistência, você pode gastar 1 ponto de ki para rolá-lo de novo e ficar com o segundo resultado."
+  ]
+ },
+ "monk-timeless-body": {
+  "d": ["No 15º nível, seu ki o sustenta de forma que você não sofre nenhuma das fragilidades da velhice e não pode ser envelhecido por magia. Ainda pode morrer de velhice, porém. Além disso, não precisa mais de comida nem de água."]
+ },
+ "quivering-palm": {
+  "n": "Palma Vibrante",
+  "d": [
+   "No 17º nível, você ganha a capacidade de criar vibrações letais no corpo de alguém. Quando atinge uma criatura com um ataque desarmado, pode gastar 3 pontos de ki para iniciar essas vibrações imperceptíveis, que duram um número de dias igual ao seu nível de monge. As vibrações são inofensivas a não ser que você use sua ação para encerrá-las. Para isso, você e o alvo precisam estar no mesmo plano de existência. Quando você usa essa ação, a criatura deve fazer um teste de resistência de Constituição. Se falhar, é reduzida a 0 pontos de vida. Se passar, sofre 10d10 de dano necrótico.",
+   "Você só pode ter uma criatura sob o efeito desta característica por vez. Pode encerrar as vibrações sem causar dano, sem gastar ação."
+  ]
+ },
+ "empty-body": {
+  "n": "Corpo Vazio",
+  "d": [
+   "A partir do 18º nível, você pode usar sua ação e gastar 4 pontos de ki para ficar invisível por 1 minuto. Nesse período, também tem resistência a todo dano, exceto de energia.",
+   "Além disso, pode gastar 8 pontos de ki para lançar a magia projeção astral sem precisar de componentes materiais. Quando faz isso, não pode levar nenhuma outra criatura com você."
+  ]
+ },
+ "perfect-self": {
+  "n": "Eu Perfeito",
+  "d": ["No 20º nível, quando rola iniciativa e não tem mais pontos de ki, você recupera 4 pontos de ki."]
+ },
+ "divine-sense": {
+  "n": "Sentido Divino",
+  "d": [
+   "A presença de um mal poderoso chega aos seus sentidos como um odor nocivo, e um bem poderoso soa como música celestial nos seus ouvidos. Com uma ação, você pode abrir sua percepção para detectar essas forças. Até o fim do seu próximo turno, você sabe a localização de qualquer celestial, ínfero ou morto-vivo a até 18 metros que não esteja atrás de cobertura total. Sabe o tipo (celestial, ínfero ou morto-vivo) de cada ser cuja presença sente, mas não sua identidade. No mesmo raio, também detecta a presença de qualquer lugar ou objeto consagrado ou profanado, como na magia consagrar.",
+   "Você pode usar esta característica um número de vezes igual a 1 + seu modificador de Carisma. Quando termina um descanso longo, recupera todos os usos gastos."
+  ]
+ },
+ "lay-on-hands": {
+  "n": "Cura pelas Mãos",
+  "d": [
+   "Seu toque abençoado pode curar ferimentos. Você tem uma reserva de poder curativo que se renova quando faz um descanso longo. Com ela, pode restaurar um total de pontos de vida igual ao seu nível de paladino × 5.",
+   "Com uma ação, você pode tocar uma criatura e tirar poder da reserva para restaurar pontos de vida dela, até o máximo que ainda resta na reserva.",
+   "Em vez disso, pode gastar 5 pontos de vida da reserva para curar o alvo de uma doença ou neutralizar um veneno que o afete. Pode curar várias doenças e neutralizar vários venenos com um único uso de Cura pelas Mãos, gastando pontos de vida separadamente para cada um.",
+   "Esta característica não tem efeito em mortos-vivos nem constructos."
+  ]
+ },
+ "paladin-fighting-style": {
+  "d": ["No 2º nível, você adota um estilo de luta como especialidade. Escolha uma das opções a seguir. Você não pode pegar a mesma opção de Estilo de Luta mais de uma vez, mesmo que possa escolher de novo depois."]
+ },
+ "fighting-style-great-weapon-fighting": {
+  "d": ["Quando tirar 1 ou 2 num dado de dano de um ataque com uma arma corpo a corpo empunhada com as duas mãos, você pode rolar o dado de novo e deve usar o novo resultado. A arma precisa ter a propriedade duas mãos ou versátil para você receber este benefício."]
+ },
+ "spellcasting-paladin": {
+  "n": "Conjuração: Paladino",
+  "d": ["No 2º nível, você já aprendeu a recorrer à magia divina por meio de meditação e prece para lançar magias como um clérigo."]
+ },
+ "divine-smite": {
+  "n": "Destruição Divina",
+  "d": ["A partir do 2º nível, quando atinge uma criatura com um ataque com arma corpo a corpo, você pode gastar um espaço de magia para causar dano radiante ao alvo, além do dano da arma. O dano extra é 2d8 com um espaço de 1º nível, mais 1d8 para cada nível acima do 1º, até o máximo de 5d8. O dano aumenta em 1d8 se o alvo for um morto-vivo ou ínfero."]
+ },
+ "divine-health": {
+  "n": "Saúde Divina",
+  "d": ["No 3º nível, a magia divina que flui em você o torna imune a doenças."]
+ },
+ "sacred-oath": {
+  "n": "Juramento Sagrado",
+  "d": [
+   "Ao chegar ao 3º nível, você faz o juramento que o prende como paladino para sempre. Até agora, você estava num estágio preparatório, dedicado ao caminho mas ainda sem jurar. Agora escolhe um juramento, como o Juramento de Devoção.",
+   "A escolha concede características no 3º nível e de novo no 7º, 15º e 20º. Essas características incluem magias de juramento e a característica Canalizar Divindade."
+  ]
+ },
+ "oath-spells": {
+  "n": "Magias de Juramento",
+  "d": [
+   "Cada juramento tem uma lista de magias associadas. Você ganha acesso a elas nos níveis indicados na descrição do juramento. Depois de ganhar acesso a uma magia de juramento, você sempre a tem preparada. Magias de juramento não contam no número de magias que você pode preparar por dia.",
+   "Se ganhar uma magia de juramento que não aparece na lista de magias de paladino, ela mesmo assim é uma magia de paladino para você."
+  ]
+ },
+ "channel-divinity": {
+  "n": "Canalizar Divindade",
+  "d": [
+   "Seu juramento permite canalizar energia divina para alimentar efeitos mágicos. Cada opção de Canalizar Divindade do seu juramento explica como usá-la.",
+   "Ao usar Canalizar Divindade, você escolhe qual opção usar. Depois, precisa terminar um descanso curto ou longo para usar Canalizar Divindade de novo.",
+   "Alguns efeitos de Canalizar Divindade exigem testes de resistência. Quando você usa um efeito assim desta classe, a CD é igual à CD de resistência das suas magias de paladino."
+  ]
+ },
+ "channel-divinity-sacred-weapon": {
+  "n": "Canalizar Divindade: Arma Sagrada",
+  "d": [
+   "Com uma ação, você pode imbuir uma arma que esteja segurando com energia positiva, usando Canalizar Divindade. Por 1 minuto, soma seu modificador de Carisma às jogadas de ataque feitas com essa arma (bônus mínimo de +1). A arma também emite luz plena num raio de 6 metros e penumbra por mais 6 metros. Se a arma ainda não for mágica, torna-se mágica enquanto o efeito durar.",
+   "Você pode encerrar o efeito no seu turno como parte de qualquer outra ação. Se deixar de segurar ou carregar a arma, ou se ficar inconsciente, o efeito termina."
+  ]
+ },
+ "channel-divinity-turn-the-unholy": {
+  "n": "Canalizar Divindade: Expulsar o Profano",
+  "d": [
+   "Com uma ação, você apresenta seu símbolo sagrado e profere uma prece que repreende ínferos e mortos-vivos, usando Canalizar Divindade. Cada ínfero ou morto-vivo a até 9 metros que possa ver ou ouvir você deve fazer um teste de resistência de Sabedoria. Se falhar, é expulso por 1 minuto ou até sofrer dano.",
+   "Uma criatura expulsa deve passar seus turnos tentando se afastar o máximo possível de você e não pode se mover voluntariamente para um espaço a até 9 metros de você. Também não pode usar reações. Como ação, só pode usar a ação Disparada ou tentar escapar de um efeito que a impeça de se mover. Se não houver para onde ir, pode usar a ação Esquivar."
+  ]
+ },
+ "aura-of-protection": {
+  "n": "Aura de Proteção",
+  "d": [
+   "A partir do 6º nível, sempre que você ou uma criatura amigável a até 3 metros de você tiver de fazer um teste de resistência, a criatura recebe um bônus no teste igual ao seu modificador de Carisma (bônus mínimo de +1). Você precisa estar consciente para conceder esse bônus.",
+   "No 18º nível, o alcance desta aura aumenta para 9 metros."
+  ]
+ },
+ "sacred-oath-improvement-1": { "n": "Característica do Juramento Sagrado" },
+ "aura-of-devotion": {
+  "n": "Aura de Devoção",
+  "d": [
+   "A partir do 7º nível, você e as criaturas amigáveis a até 3 metros de você não podem ser enfeitiçados enquanto você estiver consciente.",
+   "No 18º nível, o alcance desta aura aumenta para 9 metros."
+  ]
+ }
+}

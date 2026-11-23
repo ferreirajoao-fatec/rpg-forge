@@ -9,11 +9,15 @@ import {
   createCharacter,
   deleteCharacter,
   ForbiddenError,
+  levelUpCharacter,
+  loadWithAccess,
+  LevelUpError,
   restoreCharacterVersion,
   saveCharacterData,
   snapshotCharacter,
 } from "@/server/characters";
 import { hasEngine, type ValidationReport } from "@rpg-forge/rules-engine";
+import { deletePortraitFiles } from "@/server/portraits";
 
 export type CreateState = { errors?: Record<string, string[] | undefined>; message?: string } | undefined;
 
@@ -59,8 +63,25 @@ export async function restoreVersionAction(id: string, versionNumber: number) {
   revalidatePath(`/app/personagens/${id}`);
 }
 
+export type LevelUpResult = { ok: true; to: number } | { ok: false; error: string };
+
+export async function levelUpAction(id: string, revision: number, experience?: number): Promise<LevelUpResult> {
+  const user = await requireUser();
+  try {
+    const r = await levelUpCharacter(id, user.id, revision, experience);
+    revalidatePath(`/app/personagens/${id}`);
+    return { ok: true, to: r.plan.to };
+  } catch (e) {
+    if (e instanceof LevelUpError || e instanceof ConflictError || e instanceof ForbiddenError) return { ok: false, error: e.message };
+    throw e;
+  }
+}
+
 export async function deleteCharacterAction(id: string) {
   const user = await requireUser();
+  // Os arquivos dos retratos ficam no Blob: apaga antes, enquanto ainda dá para achá-los.
+  await loadWithAccess(id, user.id, "write");
+  await deletePortraitFiles(id);
   await deleteCharacter(id, user.id);
   redirect("/app");
 }

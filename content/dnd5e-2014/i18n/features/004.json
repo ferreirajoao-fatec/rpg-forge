@@ -1,0 +1,133 @@
+{
+ "second-wind": {
+  "n": "Retomar o Fôlego",
+  "d": ["Você tem uma reserva limitada de vigor para se proteger do mal. No seu turno, pode usar uma ação bônus para recuperar pontos de vida iguais a 1d10 + seu nível de guerreiro. Depois de usar esta característica, você precisa terminar um descanso curto ou longo para usá-la de novo."]
+ },
+ "action-surge-1-use": {
+  "n": "Surto de Ação (1 uso)",
+  "d": [
+   "A partir do 2º nível, você pode ir além dos seus limites normais por um momento. No seu turno, pode realizar uma ação adicional além da sua ação normal e de uma possível ação bônus.",
+   "Depois de usar esta característica, você precisa terminar um descanso curto ou longo para usá-la de novo. A partir do 17º nível, pode usá-la duas vezes antes de um descanso, mas só uma vez no mesmo turno."
+  ]
+ },
+ "martial-archetype": {
+  "n": "Arquétipo Marcial",
+  "d": ["No 3º nível, você escolhe um arquétipo que procura imitar em seus estilos e técnicas de combate, como o Campeão. O arquétipo escolhido concede características no 3º nível e de novo no 7º, 10º, 15º e 18º."]
+ },
+ "improved-critical": {
+  "n": "Crítico Aprimorado",
+  "d": ["A partir do momento em que escolhe este arquétipo, no 3º nível, seus ataques com arma conseguem acerto crítico com 19 ou 20 no dado."]
+ },
+ "fighter-ability-score-improvement-1": {
+  "d": ["Ao chegar ao 4º nível, e de novo no 6º, 8º, 12º, 14º, 16º e 19º, você pode aumentar um valor de habilidade à sua escolha em 2, ou dois valores de habilidade à sua escolha em 1. Como de costume, não pode aumentar um valor de habilidade acima de 20 com esta característica."]
+ },
+ "extra-attack-1": {
+  "d": ["A partir do 5º nível, você pode atacar duas vezes, em vez de uma, sempre que realiza a ação de Ataque no seu turno. O número de ataques aumenta para três quando você chega ao 11º nível nesta classe e para quatro no 20º."]
+ },
+ "remarkable-athlete": {
+  "n": "Atleta Notável",
+  "d": ["A partir do 7º nível, você pode somar metade do seu bônus de proficiência (arredondado para cima) a qualquer teste de Força, Destreza ou Constituição que ainda não use seu bônus de proficiência. Além disso, num salto em distância com corrida, a distância que você alcança aumenta em 30 centímetros por ponto do seu modificador de Força."]
+ },
+ "martial-archetype-improvement-1": { "n": "Característica do Arquétipo Marcial" },
+ "indomitable-1-use": {
+  "n": "Indomável (1 uso)",
+  "d": ["A partir do 9º nível, você pode rolar de novo um teste de resistência em que falhar. Se fizer isso, deve usar o novo resultado e só pode usar esta característica de novo depois de terminar um descanso longo. A partir do 13º nível, pode usá-la duas vezes entre descansos longos e, a partir do 17º, três vezes."]
+ },
+ "additional-fighting-style": {
+  "n": "Estilo de Luta Adicional",
+  "d": ["No 10º nível, você pode escolher uma segunda opção da característica de classe Estilo de Luta."]
+ },
+ "extra-attack-2": { "n": "Ataque Extra (2)" },
+ "indomitable-2-uses": { "n": "Indomável (2 usos)" },
+ "superior-critical": {
+  "n": "Crítico Superior",
+  "d": ["A partir do 15º nível, seus ataques com arma conseguem acerto crítico com 18 a 20 no dado."]
+ },
+ "action-surge-2-uses": { "n": "Surto de Ação (2 usos)" },
+ "indomitable-3-uses": { "n": "Indomável (3 usos)" },
+ "survivor": {
+  "n": "Sobrevivente",
+  "d": ["No 18º nível, você alcança o auge da resiliência em batalha. No início de cada um dos seus turnos, recupera pontos de vida iguais a 5 + seu modificador de Constituição, se não tiver mais da metade dos seus pontos de vida. Você não recebe este benefício se estiver com 0 pontos de vida."]
+ },
+ "extra-attack-3": { "n": "Ataque Extra (3)" },
+ "monk-unarmored-defense": {
+  "d": ["A partir do 1º nível, enquanto não estiver usando armadura nem empunhando escudo, sua CA é 10 + seu modificador de Destreza + seu modificador de Sabedoria."]
+ },
+ "martial-arts": {
+  "n": "Artes Marciais",
+  "d": [
+   "No 1º nível, sua prática de artes marciais lhe dá domínio de estilos de combate que usam ataques desarmados e armas de monge, que são espadas curtas e qualquer arma simples corpo a corpo sem a propriedade duas mãos ou pesada.",
+   "Você recebe os benefícios a seguir enquanto estiver desarmado ou empunhando apenas armas de monge, sem usar armadura nem empunhar escudo:",
+   "- Você pode usar Destreza em vez de Força nas jogadas de ataque e de dano dos seus ataques desarmados e armas de monge.",
+   "- Você pode rolar um d4 no lugar do dano normal do seu ataque desarmado ou arma de monge. Esse dado muda conforme você ganha níveis de monge, como mostra a coluna Artes Marciais da tabela do Monge.",
+   "- Quando usa a ação de Ataque com um ataque desarmado ou arma de monge no seu turno, pode fazer um ataque desarmado como ação bônus. Por exemplo, se realizar a ação de Ataque e atacar com um bordão, também pode fazer um ataque desarmado como ação bônus, desde que ainda não tenha usado uma ação bônus neste turno.",
+   "Certos mosteiros usam formas especializadas das armas de monge. Por exemplo, você pode usar uma clava formada por dois pedaços de madeira ligados por uma corrente curta (chamada nunchaku) ou uma foice curta com lâmina mais curta e reta (chamada kama). Qualquer que seja o nome que você dê a uma arma de monge, use as estatísticas de jogo da arma correspondente."
+  ]
+ },
+ "ki": {
+  "n": "Ki",
+  "d": [
+   "A partir do 2º nível, seu treinamento permite controlar a energia mística do ki. Seu acesso a essa energia é representado por pontos de ki. Seu nível de monge determina quantos pontos você tem, como mostra a coluna Pontos de Ki da tabela do Monge.",
+   "Você pode gastar esses pontos para alimentar várias características de ki. Começa conhecendo três delas: Rajada de Golpes, Defesa Paciente e Passo do Vento. Aprende outras conforme ganha níveis nesta classe.",
+   "Quando você gasta um ponto de ki, ele fica indisponível até você terminar um descanso curto ou longo, ao fim do qual recupera todo o ki gasto. Você precisa passar pelo menos 30 minutos do descanso meditando para recuperar seus pontos de ki.",
+   "Algumas características de ki exigem que o alvo faça um teste de resistência para resistir aos efeitos. A CD do teste é calculada assim:",
+   "CD de resistência de ki = 8 + seu bônus de proficiência + seu modificador de Sabedoria"
+  ]
+ },
+ "flurry-of-blows": {
+  "n": "Rajada de Golpes",
+  "d": ["Logo depois de realizar a ação de Ataque no seu turno, você pode gastar 1 ponto de ki para fazer dois ataques desarmados como ação bônus."]
+ },
+ "patient-defense": {
+  "n": "Defesa Paciente",
+  "d": ["Você pode gastar 1 ponto de ki para realizar a ação Esquivar como ação bônus no seu turno."]
+ },
+ "step-of-the-wind": {
+  "n": "Passo do Vento",
+  "d": ["Você pode gastar 1 ponto de ki para realizar a ação Desengajar ou Disparada como ação bônus no seu turno, e a distância dos seus saltos dobra neste turno."]
+ },
+ "unarmored-movement-1": {
+  "n": "Movimento sem Armadura",
+  "d": [
+   "A partir do 2º nível, seu deslocamento aumenta em 3 metros enquanto você não estiver usando armadura nem empunhando escudo. Esse bônus aumenta quando você chega a certos níveis de monge, como mostra a tabela do Monge.",
+   "No 9º nível, você ganha a capacidade de se mover por superfícies verticais e sobre líquidos no seu turno sem cair durante o movimento."
+  ]
+ },
+ "monastic-tradition": {
+  "n": "Tradição Monástica",
+  "d": ["Ao chegar ao 3º nível, você se dedica a uma tradição monástica, como o Caminho da Mão Aberta. Sua tradição concede características no 3º nível e de novo no 6º, 11º e 17º."]
+ },
+ "deflect-missiles": {
+  "n": "Desviar Projéteis",
+  "d": [
+   "A partir do 3º nível, quando for atingido por um ataque com arma à distância, você pode usar sua reação para desviar ou apanhar o projétil. Quando faz isso, o dano do ataque é reduzido em 1d10 + seu modificador de Destreza + seu nível de monge.",
+   "Se reduzir o dano a 0, você pode apanhar o projétil, se ele for pequeno o bastante para segurar numa mão e você tiver pelo menos uma mão livre. Se apanhar um projétil assim, pode gastar 1 ponto de ki para fazer um ataque à distância com a arma ou munição que acabou de apanhar, como parte da mesma reação. Você faz esse ataque com proficiência, independentemente das suas proficiências com armas, e o projétil conta como arma de monge para o ataque, com distância normal de 6 metros e distância longa de 18 metros."
+  ]
+ },
+ "open-hand-technique": {
+  "n": "Técnica da Mão Aberta",
+  "d": [
+   "A partir do momento em que escolhe esta tradição, no 3º nível, você pode manipular o ki do inimigo quando controla o seu. Sempre que atingir uma criatura com um dos ataques concedidos por Rajada de Golpes, pode impor um dos efeitos a seguir ao alvo:",
+   "- Ele deve passar num teste de resistência de Destreza ou cair.",
+   "- Ele deve fazer um teste de resistência de Força. Se falhar, você pode empurrá-lo até 4,5 metros para longe de você.",
+   "- Ele não pode usar reações até o fim do seu próximo turno."
+  ]
+ },
+ "slow-fall": {
+  "n": "Queda Lenta",
+  "d": ["A partir do 4º nível, quando cair, você pode usar sua reação para reduzir o dano de queda em um valor igual a cinco vezes o seu nível de monge."]
+ },
+ "stunning-strike": {
+  "n": "Ataque Atordoante",
+  "d": ["A partir do 5º nível, você pode interferir no fluxo de ki do corpo de um oponente. Quando atinge outra criatura com um ataque com arma corpo a corpo, pode gastar 1 ponto de ki para tentar um ataque atordoante. O alvo deve passar num teste de resistência de Constituição ou ficar atordoado até o fim do seu próximo turno."]
+ },
+ "ki-empowered-strikes": {
+  "n": "Golpes Fortalecidos pelo Ki",
+  "d": ["A partir do 6º nível, seus ataques desarmados contam como mágicos para superar resistência e imunidade a ataques e dano não mágicos."]
+ },
+ "monastic-tradition-improvement-1": { "n": "Característica da Tradição Monástica" },
+ "wholeness-of-body": {
+  "n": "Integridade Corporal",
+  "d": ["No 6º nível, você ganha a capacidade de se curar. Com uma ação, pode recuperar pontos de vida iguais a três vezes o seu nível de monge. Você precisa terminar um descanso longo para usar esta característica de novo."]
+ }
+}

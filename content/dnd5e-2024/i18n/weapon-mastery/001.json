@@ -1,0 +1,34 @@
+{
+ "cleave": {
+  "n": "Trespassar",
+  "d": ["Se você atingir uma criatura com uma jogada de ataque corpo a corpo usando esta arma, pode fazer uma jogada de ataque corpo a corpo com ela contra uma segunda criatura a até 1,5 metro da primeira que também esteja ao seu alcance. Se acertar, a segunda criatura sofre o dano da arma, mas você não soma seu modificador de atributo a esse dano, a não ser que ele seja negativo. Você só pode fazer esse ataque extra uma vez por turno."]
+ },
+ "graze": {
+  "n": "Raspão",
+  "d": ["Se sua jogada de ataque com esta arma errar uma criatura, você pode causar a ela dano igual ao modificador de atributo que usou na jogada de ataque. Esse dano é do mesmo tipo do dano da arma e só pode ser aumentado aumentando o modificador de atributo."]
+ },
+ "nick": {
+  "n": "Corte Rápido",
+  "d": ["Quando você faz o ataque extra da propriedade Leve, pode fazê-lo como parte da ação de Ataque em vez de como Ação Bônus. Você só pode fazer esse ataque extra uma vez por turno."]
+ },
+ "push": {
+  "n": "Empurrão",
+  "d": ["Se você atingir uma criatura com esta arma, pode empurrá-la até 3 metros em linha reta para longe de você, se ela for Grande ou menor."]
+ },
+ "sap": {
+  "n": "Enfraquecer",
+  "d": ["Se você atingir uma criatura com esta arma, ela tem Desvantagem na próxima jogada de ataque que fizer antes do início do seu próximo turno."]
+ },
+ "slow": {
+  "n": "Lentidão",
+  "d": ["Se você atingir uma criatura com esta arma e causar dano a ela, pode reduzir o Deslocamento dela em 3 metros até o início do seu próximo turno. Se a criatura for atingida mais de uma vez por armas com esta propriedade, a redução de Deslocamento não passa de 3 metros."]
+ },
+ "topple": {
+  "n": "Derrubar",
+  "d": ["Se você atingir uma criatura com esta arma, pode forçá-la a fazer um teste de resistência de Constituição (CD 8 + o modificador de atributo usado na jogada de ataque + seu Bônus de Proficiência). Se falhar, a criatura fica com a condição Caído."]
+ },
+ "vex": {
+  "n": "Importunar",
+  "d": ["Se você atingir uma criatura com esta arma e causar dano a ela, tem Vantagem na próxima jogada de ataque contra essa criatura antes do fim do seu próximo turno."]
+ }
+}

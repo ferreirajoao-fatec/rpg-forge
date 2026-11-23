@@ -1,0 +1,70 @@
+{
+ "plane-shift": {
+  "d": [
+   "Você e até oito criaturas voluntárias de mãos dadas em círculo são transportados para outro plano de existência. Você pode especificar o destino em termos gerais, como uma cidade específica no Plano Elemental do Fogo ou um palácio no segundo nível dos Nove Infernos, e aparece no destino ou perto dele, como o Mestre determinar.",
+   "Em vez disso, se você conhecer a sequência de selos de um círculo de teletransporte em outro plano de existência, esta magia pode levá-lo a esse círculo. Se o círculo de teletransporte for pequeno demais para conter todas as criaturas transportadas, elas aparecem nos espaços desocupados mais próximos ao lado do círculo."
+  ],
+  "m": "Uma vara de metal bifurcada no valor de 250+ PO, sintonizada com um plano de existência."
+ },
+ "plant-growth": {
+  "d": [
+   "Esta magia canaliza vitalidade para as plantas. O tempo de conjuração usado determina se a magia tem o efeito Crescimento Excessivo ou Enriquecimento abaixo.",
+   "Crescimento Excessivo. Escolha um ponto dentro do alcance. Todas as plantas comuns numa Esfera de 30 metros de raio centrada nesse ponto ficam densas e cheias de mato. Uma criatura que se mova pela área precisa gastar 4 metros de movimento para cada 1 metro que avança. Você pode excluir dos efeitos uma ou mais áreas de qualquer tamanho dentro da área da magia.",
+   "Enriquecimento. Todas as plantas num raio de 750 metros centrado num ponto dentro do alcance ficam enriquecidas por 365 dias. As plantas produzem o dobro da quantidade normal de alimento quando colhidas. Elas só podem se beneficiar de um Crescimento de Plantas por ano."
+  ],
+  "ct": "Ação (Crescimento Excessivo) ou 8 horas (Enriquecimento)"
+ },
+ "poison-spray": {
+  "d": [
+   "Você borrifa uma névoa tóxica numa criatura dentro do alcance. Faça um ataque mágico à distância contra o alvo. Se acertar, o alvo sofre 1d12 de dano de Veneno.",
+   "Aprimoramento de Truque. O dano aumenta em 1d12 quando você alcança os níveis 5 (2d12), 11 (3d12) e 17 (4d12)."
+  ]
+ },
+ "polymorph": {
+  "d": [
+   "Você tenta transformar numa Fera uma criatura que consiga ver dentro do alcance. O alvo deve passar num teste de resistência de Sabedoria ou muda de forma para uma Fera pela duração. Essa forma pode ser qualquer Fera à sua escolha com Nível de Desafio igual ou menor que o do alvo (ou que o nível dele, se não tiver Nível de Desafio). As estatísticas de jogo do alvo são substituídas pela ficha da Fera escolhida, mas ele mantém sua tendência, personalidade, tipo de criatura, Pontos de Vida e Dados de Pontos de Vida. Veja a seção \"Animais\" de \"Monstros\" para exemplos de fichas de Feras.",
+   "O alvo ganha Pontos de Vida Temporários iguais aos Pontos de Vida da forma de Fera. Esses Pontos de Vida Temporários desaparecem, se restarem, quando a magia termina. A magia termina antes para o alvo se ele ficar sem Pontos de Vida Temporários.",
+   "O alvo fica limitado nas ações que pode realizar pela anatomia da nova forma e não pode falar nem lançar magias.",
+   "O equipamento do alvo se funde à nova forma. A criatura não pode usar nem se beneficiar de nenhum modo desse equipamento."
+  ],
+  "m": "Um casulo de lagarta."
+ },
+ "power-word-heal": {
+  "n": "Palavra de Poder: Curar",
+  "d": ["Uma onda de energia curativa envolve uma criatura que você consiga ver dentro do alcance. O alvo recupera todos os Pontos de Vida. Se a criatura tiver a condição Enfeitiçado, Amedrontado, Paralisado, Envenenado ou Atordoado, a condição termina. Se tiver a condição Caído, pode usar a Reação para se levantar."]
+ },
+ "power-word-kill": {
+  "d": ["Você obriga uma criatura que consiga ver dentro do alcance a morrer. Se o alvo tiver 100 Pontos de Vida ou menos, ele morre. Caso contrário, sofre 12d12 de dano Psíquico."]
+ },
+ "power-word-stun": {
+  "d": [
+   "Você sobrecarrega a mente de uma criatura que consiga ver dentro do alcance. Se o alvo tiver 150 Pontos de Vida ou menos, fica com a condição Atordoado. Caso contrário, seu Deslocamento é 0 até o início do seu próximo turno.",
+   "O alvo Atordoado faz um teste de resistência de Constituição no fim de cada turno dele, encerrando a condição em si mesmo se passar."
+  ]
+ },
+ "prayer-of-healing": {
+  "d": ["Até cinco criaturas à sua escolha que permaneçam dentro do alcance durante toda a conjuração ganham os benefícios de um Descanso Curto e também recuperam 2d8 Pontos de Vida. Uma criatura não pode ser afetada por esta magia de novo até terminar um Descanso Longo. Usando um Espaço de Magia de Nível Superior. A cura aumenta em 1d8 para cada nível de espaço de magia acima de 2."]
+ },
+ "prestidigitation": {
+  "d": [
+   "Você cria um efeito mágico dentro do alcance. Escolha o efeito entre as opções abaixo. Se lançar esta magia várias vezes, pode ter até três dos efeitos não instantâneos dela ativos ao mesmo tempo.",
+   "Efeito Sensorial. Você cria um efeito sensorial instantâneo e inofensivo, como uma chuva de faíscas, uma lufada de vento, notas musicais suaves ou um cheiro estranho.",
+   "Brincar com Fogo. Você acende ou apaga instantaneamente uma vela, uma tocha ou uma pequena fogueira.",
+   "Limpar ou Sujar. Você limpa ou suja instantaneamente um objeto de no máximo 28 litros de volume.",
+   "Sensação Menor. Você esfria, esquenta ou dá sabor a até 28 litros de material sem vida por 1 hora.",
+   "Marca Mágica. Você faz uma cor, uma pequena marca ou um símbolo aparecer num objeto ou numa superfície por 1 hora.",
+   "Criação Menor. Você cria uma bugiganga não mágica ou uma imagem ilusória que caiba na sua mão. Ela dura até o fim do seu próximo turno. Uma bugiganga não causa dano e não tem valor monetário."
+  ]
+ },
+ "prismatic-spray": {
+  "d": ["Oito raios de luz lampejam de você num Cone de 18 metros. Cada criatura no Cone faz um teste de resistência de Destreza. Para cada alvo, role 1d8 para determinar qual raio o afeta, consultando a tabela de Raios Prismáticos. Raios Prismáticos (1d8): 1, Vermelho. Falha: 12d6 de dano de Fogo. Sucesso: metade do dano. 2, Laranja. Falha: 12d6 de dano Ácido. Sucesso: metade do dano. 3, Amarelo. Falha: 12d6 de dano Elétrico. Sucesso: metade do dano. 4, Verde. Falha: 12d6 de dano de Veneno. Sucesso: metade do dano. 5, Azul. Falha: 12d6 de dano de Frio. Sucesso: metade do dano. 6, Anil. Falha: o alvo fica com a condição Impedido e faz um teste de resistência de Constituição no fim de cada turno dele. Se passar três vezes, a condição termina. Se falhar três vezes, fica com a condição Petrificado até ser libertado por um efeito como a magia Restauração Maior. Os sucessos e as falhas não precisam ser consecutivos; anote ambos até o alvo juntar três de um tipo. 7, Violeta. Falha: o alvo fica com a condição Cego e faz um teste de resistência de Sabedoria no início do seu próximo turno. Se passar, a condição termina. Se falhar, a condição termina e a criatura é teletransportada para outro plano de existência à escolha do Mestre. 8, Especial. O alvo é atingido por dois raios. Role duas vezes, rolando de novo qualquer 8."]
+ },
+ "prismatic-wall": {
+  "d": [
+   "Um plano de luz cintilante e multicolorido forma uma muralha vertical opaca (com até 27 metros de comprimento, 9 metros de altura e 2,5 centímetros de espessura) centrada num ponto dentro do alcance. Em vez disso, você pode dar à muralha a forma de um globo de até 9 metros de diâmetro centrado num ponto dentro do alcance. A muralha dura pela duração. Se você posicioná-la num espaço ocupado por uma criatura, a magia termina instantaneamente sem efeito.",
+   "A muralha emite Luz Plena a até 30 metros e Penumbra por mais 30 metros. Você e as criaturas que designar ao lançar a magia podem atravessá-la e ficar perto dela sem se ferir. Se outra criatura que consiga ver a muralha chegar a até 6 metros dela ou começar o turno ali, deve passar num teste de resistência de Constituição ou fica com a condição Cego por 1 minuto.",
+   "A muralha é formada por sete camadas, cada uma de uma cor diferente. Quando uma criatura passa o braço pela muralha ou a atravessa, faz isso uma camada de cada vez, por todas as camadas. Cada camada força a criatura a fazer um teste de resistência de Destreza ou ser afetada pelas propriedades dela, como descrito na tabela de Camadas Prismáticas.",
+   "A muralha, que tem CA 10, pode ser destruída uma camada de cada vez, na ordem do vermelho ao violeta, por meios específicos de cada camada. Uma camada destruída some pela duração. Campo Antimagia não tem efeito sobre a muralha, e Dissipar Magia só afeta a camada violeta. Camadas Prismáticas: 1, Vermelho. Falha: 12d6 de dano de Fogo. Sucesso: metade do dano. Efeitos adicionais: ataques à distância não mágicos não atravessam esta camada, que é destruída se sofrer pelo menos 25 de dano de Frio. 2, Laranja. Falha: 12d6 de dano Ácido. Sucesso: metade do dano. Efeitos adicionais: ataques à distância mágicos não atravessam esta camada, que é destruída por um vento forte (como o criado por Lufada de Vento). 3, Amarelo. Falha: 12d6 de dano Elétrico. Sucesso: metade do dano. Efeitos adicionais: a camada é destruída se sofrer pelo menos 60 de dano de Energia. 4, Verde. Falha: 12d6 de dano de Veneno. Sucesso: metade do dano. Efeitos adicionais: uma magia Criar Passagem, ou outra magia de nível igual ou maior que possa abrir um portal numa superfície sólida, destrói esta camada. 5, Azul. Falha: 12d6 de dano de Frio. Sucesso: metade do dano. Efeitos adicionais: a camada é destruída se sofrer pelo menos 25 de dano de Fogo. 6, Anil. Falha: o alvo fica com a condição Impedido e faz um teste de resistência de Constituição no fim de cada turno dele. Se passar três vezes, a condição termina. Se falhar três vezes, fica com a condição Petrificado até ser libertado por um efeito como a magia Restauração Maior. Os sucessos e as falhas não precisam ser consecutivos; anote ambos até o alvo juntar três de um tipo. Efeitos adicionais: magias não podem ser lançadas através desta camada, que é destruída pela Luz Plena emitida pela magia Luz do Dia. 7, Violeta. Falha: o alvo fica com a condição Cego e faz um teste de resistência de Sabedoria no início do seu próximo turno. Se passar, a condição termina. Se falhar, a condição termina e a criatura é teletransportada para outro plano de existência à escolha do Mestre. Efeitos adicionais: esta camada é destruída por Dissipar Magia."
+  ]
+ }
+}

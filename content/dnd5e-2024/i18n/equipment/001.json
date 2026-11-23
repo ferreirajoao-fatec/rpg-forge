@@ -1,0 +1,175 @@
+{
+ "acid": {
+  "n": "Ácido",
+  "d": ["Quando realiza a ação de Ataque, você pode substituir um dos ataques por arremessar um frasco de Ácido. Escolha como alvo uma criatura ou objeto que consiga ver a até 6 metros de você. O alvo deve passar num teste de resistência de Destreza (CD 8 + seu modificador de Destreza + seu Bônus de Proficiência) ou sofrer 2d6 de dano de Ácido."]
+ },
+ "alchemists-fire": {
+  "n": "Fogo Alquímico",
+  "d": ["Quando realiza a ação de Ataque, você pode substituir um dos ataques por arremessar um frasco de Fogo Alquímico. Escolha como alvo uma criatura ou objeto que consiga ver a até 6 metros de você. O alvo deve passar num teste de resistência de Destreza (CD 8 + seu modificador de Destreza + seu Bônus de Proficiência) ou sofrer 1d4 de dano de Fogo e começar a queimar (veja o \"Glossário de Regras\")."]
+ },
+ "amulet": {
+  "d": [
+   "Um Símbolo Sagrado tem uma das formas da tabela de Símbolos Sagrados e é cravejado de joias ou pintado para canalizar magia divina. Um Clérigo ou Paladino pode usar um Símbolo Sagrado como Foco de Conjuração.",
+   "A tabela indica se o Símbolo Sagrado precisa ser segurado, usado no corpo ou levado num tecido (como um tabardo ou estandarte) ou num Escudo."
+  ]
+ },
+ "antitoxin": {
+  "n": "Antitoxina",
+  "d": ["Com uma Ação Bônus, você pode beber um frasco de Antitoxina para ganhar Vantagem em testes de resistência para evitar ou encerrar a condição Envenenado por 1 hora."]
+ },
+ "arrows": { "n": "Flechas" },
+ "backpack": {
+  "d": ["Uma Mochila comporta até 15 kg em cerca de 28 litros de volume. Também pode servir como alforje."]
+ },
+ "ball-bearings": {
+  "n": "Esferas de metal",
+  "d": ["Com a ação Utilizar, você pode despejar as Esferas de Metal da bolsa. Elas se espalham e cobrem uma área quadrada e plana de 3 metros a até 3 metros de você. Uma criatura que entra nessa área pela primeira vez num turno deve passar num teste de resistência de Destreza CD 10 ou ficar com a condição Caído. Recolher as Esferas de Metal leva 10 minutos."]
+ },
+ "barrel": {
+  "d": ["Um Barril comporta até 160 litros de líquido ou cerca de 110 litros de mercadorias secas."]
+ },
+ "basket": {
+  "d": ["Um Cesto comporta até 20 kg em cerca de 56 litros de volume."]
+ },
+ "bedroll": {
+  "d": ["Um Saco de Dormir acomoda uma criatura Pequena ou Média. Enquanto estiver num Saco de Dormir, você passa automaticamente em testes de resistência contra frio extremo (veja a \"Caixa de Ferramentas de Jogo\")."]
+ },
+ "bell": {
+  "d": ["Tocado com a ação Utilizar, um Sino produz um som que pode ser ouvido a até 18 metros."]
+ },
+ "blanket": {
+  "d": ["Enrolado num cobertor, você tem Vantagem em testes de resistência contra frio extremo (veja a \"Caixa de Ferramentas de Jogo\")."]
+ },
+ "block-and-tackle": {
+  "d": ["Uma Talha permite içar até quatro vezes o peso que você normalmente consegue levantar."]
+ },
+ "book": {
+  "d": ["Um Livro contém ficção ou não ficção. Se consultar um Livro de não ficção preciso sobre o assunto, você recebe +5 de bônus em testes de Inteligência (Arcanismo, História, Natureza ou Religião) sobre esse assunto."]
+ },
+ "bolts": { "n": "Virotes" },
+ "bottle-glass": {
+  "n": "Garrafa de Vidro",
+  "d": ["Uma Garrafa de Vidro comporta até 0,75 litro."]
+ },
+ "bucket": {
+  "d": ["Um Balde comporta cerca de 14 litros."]
+ },
+ "bullets-firearm": { "n": "Balas de Arma de Fogo" },
+ "bullets-sling": { "n": "Balas de Funda" },
+ "burglars-pack": {
+  "d": ["Um Pacote de Assaltante contém os seguintes itens: Mochila, Esferas de Metal, Sino, 10 Velas, Pé de Cabra, Lanterna com Anteparo, 7 frascos de Óleo, 5 dias de Rações, Corda, Caixa de Fogo e Odre."]
+ },
+ "caltrops": {
+  "d": ["Com a ação Utilizar, você pode espalhar os Estrepes do saco para cobrir uma área quadrada de 1,5 metro a até 1,5 metro de você. Uma criatura que entra nessa área pela primeira vez num turno deve passar num teste de resistência de Destreza CD 15 ou sofrer 1 de dano Perfurante e ter o Deslocamento reduzido a 0 até o início do próximo turno dela. Recolher os Estrepes leva 10 minutos."]
+ },
+ "candle": {
+  "d": ["Por 1 hora, uma Vela acesa emite Luz Plena num raio de 1,5 metro e Penumbra por mais 1,5 metro."]
+ },
+ "case-crossbow-bolt": {
+  "n": "Estojo de Virotes",
+  "d": ["Um Estojo de Virotes comporta até 20 Virotes."]
+ },
+ "case-map-or-scroll": {
+  "n": "Estojo para Mapas ou Pergaminhos",
+  "d": ["Um Estojo para Mapas ou Pergaminhos comporta até 10 folhas de papel ou 5 folhas de pergaminho."]
+ },
+ "chain": {
+  "n": "Corrente",
+  "d": ["Com a ação Utilizar, você pode enrolar uma Corrente numa criatura relutante a até 1,5 metro de você que esteja com a condição Agarrado, Incapacitado ou Impedido, se passar num teste de Força (Atletismo) CD 13. Se as pernas da criatura forem amarradas, ela fica com a condição Impedido até escapar. Para escapar da Corrente, a criatura precisa passar num teste de Destreza (Acrobacia) CD 18 usando uma ação. Romper a Corrente exige passar num teste de Força (Atletismo) CD 20 usando uma ação."]
+ },
+ "chest": {
+  "d": ["Um Baú comporta cerca de 340 litros de conteúdo."]
+ },
+ "climbers-kit": {
+  "d": ["Um Kit de Escalada inclui biqueiras, luvas, pitons e um arnês. Com a ação Utilizar, você pode usar o Kit de Escalada para se ancorar; quando faz isso, não pode cair mais de 7,5 metros a partir do ponto de ancoragem nem se afastar mais de 7,5 metros dele sem desfazer a ancoragem com uma Ação Bônus."]
+ },
+ "clothes-fine": {
+  "n": "Roupas Finas",
+  "d": ["Roupas Finas são feitas de tecidos caros e enfeitadas com detalhes de acabamento primoroso. Alguns eventos e lugares só admitem pessoas vestidas assim."]
+ },
+ "clothes-travelers": {
+  "n": "Roupas de Viajante",
+  "d": ["Roupas de Viajante são peças resistentes feitas para viajar por ambientes variados."]
+ },
+ "component-pouch": {
+  "n": "Bolsa de Componentes",
+  "d": ["Uma Bolsa de Componentes é à prova d'água e cheia de compartimentos que guardam todos os componentes Materiais gratuitos das suas magias."]
+ },
+ "cooks-utensils": { "n": "Utensílios de Cozinheiro" },
+ "costume": {
+  "n": "Fantasia",
+  "d": ["Enquanto usa uma Fantasia, você tem Vantagem em qualquer teste de atributo para se passar pela pessoa ou pelo tipo de pessoa que ela representa."]
+ },
+ "crowbar": {
+  "d": ["Usar um Pé de Cabra concede Vantagem em testes de Força em que a alavanca possa ser aplicada."]
+ },
+ "dice": { "n": "Dados" },
+ "diplomat-pack": {
+  "d": ["Um Pacote de Diplomata contém os seguintes itens: Baú, Roupas Finas, Tinta, 5 Penas de Escrever, Lamparina, 2 Estojos para Mapas ou Pergaminhos, 4 frascos de Óleo, 5 folhas de Papel, 5 folhas de Pergaminho, Perfume e Caixa de Fogo."]
+ },
+ "dragonchess": { "n": "Xadrez dos Dragões" },
+ "dungeoneer-pack": {
+  "d": ["Um Pacote de Explorador de Masmorras contém os seguintes itens: Mochila, Estrepes, Pé de Cabra, 2 frascos de Óleo, 10 dias de Rações, Corda, Caixa de Fogo, 10 Tochas e Odre."]
+ },
+ "explorers-pack": {
+  "d": ["Um Pacote de Aventureiro contém os seguintes itens: Mochila, Saco de Dormir, 2 frascos de Óleo, 10 dias de Rações, Corda, Caixa de Fogo, 10 Tochas e Odre."]
+ },
+ "flask": {
+  "n": "Cantil",
+  "d": ["Um Cantil comporta até meio litro."]
+ },
+ "grappling-hook": {
+  "n": "Gancho de Escalada",
+  "d": ["Com a ação Utilizar, você pode arremessar o Gancho de Escalada num parapeito, numa saliência ou em outro ponto de apoio a até 15 metros de você; o gancho se prende se você passar num teste de Destreza (Acrobacia) CD 13. Se tiver amarrado uma Corda ao gancho, pode então escalá-la."]
+ },
+ "half-plate-armor": { "n": "Meia Armadura" },
+ "hand-crossbow": { "n": "Besta de Mão" },
+ "healers-kit": {
+  "d": ["Um Kit de Curandeiro tem dez usos. Com a ação Utilizar, você pode gastar um dos usos para estabilizar uma criatura Inconsciente com 0 Pontos de Vida sem precisar fazer um teste de Sabedoria (Medicina)."]
+ },
+ "heavy-crossbow": { "n": "Besta Pesada" },
+ "holy-water": {
+  "n": "Água Benta",
+  "d": ["Quando realiza a ação de Ataque, você pode substituir um dos ataques por arremessar um frasco de Água Benta. Escolha como alvo uma criatura que consiga ver a até 6 metros de você. O alvo deve passar num teste de resistência de Destreza (CD 8 + seu modificador de Destreza + seu Bônus de Proficiência) ou sofrer 2d8 de dano Radiante, se for um Ínfero ou Morto-Vivo."]
+ },
+ "hunting-trap": {
+  "n": "Armadilha de Caça",
+  "d": ["Com a ação Utilizar, você pode armar uma Armadilha de Caça, um anel de aço dentado que se fecha quando uma criatura pisa na placa de pressão no centro. A armadilha fica presa por uma corrente pesada a um objeto imóvel, como uma árvore ou uma estaca cravada no chão. Uma criatura que pisa na placa deve passar num teste de resistência de Destreza CD 13 ou sofrer 1d4 de dano Perfurante e ter o Deslocamento reduzido a 0 até o início do próximo turno dela. Depois disso, até se soltar, o movimento dela fica limitado ao comprimento da corrente (normalmente 90 centímetros). Uma criatura pode usar sua ação para fazer um teste de Força (Atletismo) CD 13; se passar, liberta a si mesma ou outra criatura ao seu alcance. Cada teste fracassado causa 1 de dano Perfurante à criatura presa."]
+ },
+ "ink": {
+  "n": "Tinta",
+  "d": ["A Tinta vem num frasco de 30 ml, que dá para escrever cerca de 500 páginas."]
+ },
+ "ink-pen": {
+  "n": "Pena de Escrever",
+  "d": ["Com Tinta, a Pena de Escrever serve para escrever ou desenhar."]
+ },
+ "jug": {
+  "n": "Jarro",
+  "d": ["Um Jarro comporta até 4 litros."]
+ },
+ "ladder": {
+  "n": "Escada",
+  "d": ["Uma Escada tem 3 metros de altura. Você precisa escalar para subir ou descer por ela."]
+ },
+ "lamp": {
+  "d": ["Uma Lamparina queima Óleo como combustível e emite Luz Plena num raio de 4,5 metros e Penumbra por mais 9 metros."]
+ },
+ "lantern-bullseye": {
+  "n": "Lanterna Focada",
+  "d": ["Uma Lanterna Focada queima Óleo como combustível e emite Luz Plena num Cone de 18 metros e Penumbra por mais 18 metros."]
+ },
+ "lantern-hooded": {
+  "n": "Lanterna com Anteparo",
+  "d": ["Uma Lanterna com Anteparo queima Óleo como combustível e emite Luz Plena num raio de 9 metros e Penumbra por mais 9 metros. Com uma Ação Bônus, você pode baixar o anteparo, reduzindo a luz a Penumbra num raio de 1,5 metro, ou levantá-lo de novo."]
+ },
+ "light-crossbow": { "n": "Besta Leve" },
+ "light-hammer": { "n": "Martelo Leve" },
+ "lock": {
+  "d": ["Uma Fechadura vem com uma chave. Sem a chave, uma criatura pode usar Ferramentas de Ladrão para abri-la com um teste de Destreza (Prestidigitação) CD 15 bem-sucedido."]
+ },
+ "magnifying-glass": {
+  "n": "Lupa",
+  "d": ["Uma Lupa concede Vantagem em qualquer teste de atributo para avaliar ou examinar um item muito detalhado. Acender fogo com uma Lupa exige luz tão forte quanto a do sol para focar, material inflamável e cerca de 5 minutos para pegar fogo."]
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "compulsion": {
+  "d": [
+   "Cada criatura à sua escolha que você consiga ver dentro do alcance deve passar num teste de resistência de Sabedoria ou fica com a condição Enfeitiçado até a magia terminar.",
+   "Pela duração, você pode realizar uma Ação Bônus para designar uma direção horizontal em relação a você. Cada alvo Enfeitiçado precisa usar o máximo possível do movimento para se deslocar nessa direção no próximo turno dele, pelo caminho mais seguro. Depois de se mover assim, o alvo repete o teste, encerrando a magia em si mesmo se passar."
+  ]
+ },
+ "cone-of-cold": {
+  "d": ["Você libera uma rajada de ar gelado. Cada criatura num Cone de 18 metros que se origina em você faz um teste de resistência de Constituição, sofrendo 8d8 de dano de Frio se falhar, ou metade se passar. Uma criatura morta por esta magia vira uma estátua congelada até descongelar."],
+  "m": "Um pequeno cone de cristal ou vidro."
+ },
+ "confusion": {
+  "d": [
+   "Cada criatura numa Esfera de 3 metros de raio centrada num ponto à sua escolha dentro do alcance deve passar num teste de resistência de Sabedoria, ou não pode realizar Ações Bônus nem Reações e precisa rolar 1d10 no início de cada turno dela para determinar o comportamento naquele turno, consultando a tabela a seguir. 1d10 — Comportamento no Turno: 1: O alvo não realiza ação e usa todo o movimento para se deslocar; role 1d4 para a direção (1, norte; 2, leste; 3, sul; 4, oeste). 2-6: O alvo não se move nem realiza ações. 7-8: O alvo usa a ação para fazer um ataque corpo a corpo contra uma criatura determinada aleatoriamente ao alcance dele; se não houver nenhuma, não faz nada. 9-10: O alvo escolhe o próprio comportamento.",
+   "No fim de cada turno dele, um alvo afetado repete o teste, encerrando a magia em si mesmo se passar."
+  ],
+  "h": ["O raio da Esfera aumenta em 1,5 metro para cada nível de espaço de magia acima de 4."],
+  "m": "Três cascas de noz."
+ },
+ "conjure-animals": {
+  "d": [
+   "Você conjura espíritos da natureza que aparecem como uma matilha Grande de animais espectrais e intangíveis num espaço desocupado que consiga ver dentro do alcance. A matilha dura pela duração, e você escolhe a forma animal dos espíritos, como lobos, serpentes ou aves.",
+   "Você tem Vantagem em testes de resistência de Força enquanto estiver a até 1,5 metro da matilha e, quando se move no seu turno, também pode mover a matilha até 9 metros para um espaço desocupado que consiga ver.",
+   "Sempre que a matilha se mover para até 3 metros de uma criatura que você consiga ver, e sempre que uma criatura que consiga ver entrar num espaço a até 3 metros da matilha ou terminar o turno ali, você pode forçar essa criatura a fazer um teste de resistência de Destreza. Se falhar, a criatura sofre 3d10 de dano Cortante. A criatura só faz esse teste uma vez por turno."
+  ]
+ },
+ "conjure-celestial": {
+  "d": [
+   "Você conjura um espírito dos Planos Superiores, que se manifesta como uma coluna de luz num Cilindro de 3 metros de raio e 12 metros de altura centrado num ponto dentro do alcance. Para cada criatura que consiga ver no Cilindro, escolha qual destas luzes brilha sobre ela: Luz Curativa. O alvo recupera Pontos de Vida iguais a 4d12 mais seu modificador de habilidade de conjuração. Luz Abrasadora. O alvo faz um teste de resistência de Destreza, sofrendo 6d12 de dano Radiante se falhar, ou metade se passar. Até a magia terminar, Luz Plena preenche o Cilindro e, quando você se move no seu turno, também pode mover o Cilindro até 9 metros.",
+   "Sempre que o Cilindro entrar no espaço de uma criatura que você consiga ver, e sempre que uma criatura que consiga ver entrar no Cilindro ou terminar o turno ali, você pode banhá-la numa das luzes. Uma criatura só pode ser afetada por esta magia uma vez por turno."
+  ],
+  "h": ["A cura e o dano aumentam em 1d12 para cada nível de espaço de magia acima de 7."]
+ },
+ "conjure-elemental": {
+  "d": [
+   "Você conjura um espírito Grande e intangível dos Planos Elementais, que aparece num espaço desocupado dentro do alcance. Escolha o elemento do espírito, que determina o tipo de dano dele: ar (Elétrico), terra (Trovejante), fogo (Fogo) ou água (Frio). O espírito dura pela duração.",
+   "Sempre que uma criatura que você consiga ver entrar no espaço do espírito ou começar o turno a até 1,5 metro dele, você pode forçá-la a fazer um teste de resistência de Destreza, se o espírito não estiver mantendo nenhuma criatura Impedida. Se falhar, o alvo sofre 8d8 de dano do tipo do espírito e fica com a condição Impedido até a magia terminar. No início de cada turno dele, o alvo Impedido repete o teste. Se falhar, sofre 4d8 de dano do tipo do espírito. Se passar, deixa de estar Impedido pelo espírito."
+  ]
+ },
+ "conjure-fey": {
+  "d": [
+   "Você conjura um espírito Médio da Agrestia das Fadas num espaço desocupado que consiga ver dentro do alcance. O espírito dura pela duração e parece uma criatura Fada à sua escolha. Quando o espírito aparece, você pode fazer um ataque mágico corpo a corpo contra uma criatura a até 1,5 metro dele. Se acertar, o alvo sofre dano Psíquico igual a 3d12 mais seu modificador de habilidade de conjuração e fica com a condição Amedrontado até o início do seu próximo turno, tendo você e o espírito como fonte do medo.",
+   "Com uma Ação Bônus nos seus turnos posteriores, você pode teletransportar o espírito para um espaço desocupado que consiga ver a até 9 metros do espaço que ele deixou e fazer o ataque contra uma criatura a até 1,5 metro dele."
+  ],
+  "h": ["O dano aumenta em 1d12 para cada nível de espaço de magia acima de 6."]
+ },
+ "conjure-minor-elementals": {
+  "d": [
+   "Você conjura espíritos dos Planos Elementais que esvoaçam ao seu redor numa Emanação de 4,5 metros pela duração. Até a magia terminar, qualquer ataque que você fizer causa 2d8 de dano extra quando acertar uma criatura na Emanação. Esse dano é Ácido, de Frio, de Fogo ou Elétrico (à sua escolha ao fazer o ataque).",
+   "Além disso, o chão na Emanação é Terreno Difícil para seus inimigos."
+  ]
+ },
+ "conjure-woodland-beings": {
+  "d": [
+   "Você conjura espíritos da natureza que esvoaçam ao seu redor numa Emanação de 3 metros pela duração. Sempre que a Emanação entrar no espaço de uma criatura que você consiga ver, e sempre que uma criatura que consiga ver entrar na Emanação ou terminar o turno ali, você pode forçá-la a fazer um teste de resistência de Sabedoria. A criatura sofre 5d8 de dano de Energia se falhar, ou metade se passar. A criatura só faz esse teste uma vez por turno.",
+   "Além disso, você pode realizar a ação Desengajar como Ação Bônus pela duração da magia."
+  ]
+ },
+ "contact-other-plane": {
+  "d": [
+   "Você contata mentalmente um semideus, o espírito de um sábio morto há muito tempo ou outra entidade sábia de outro plano. Contatar essa inteligência de outro mundo pode quebrar sua mente. Ao lançar esta magia, faça um teste de resistência de Inteligência CD 15. Se passar, pode fazer até cinco perguntas à entidade. Precisa fazer as perguntas antes de a magia terminar. O Mestre responde cada pergunta com uma palavra, como \"sim\", \"não\", \"talvez\", \"nunca\", \"irrelevante\" ou \"incerto\" (se a entidade não souber a resposta). Se uma resposta de uma palavra for enganosa, o Mestre pode oferecer uma frase curta como resposta.",
+   "Se falhar, você sofre 6d6 de dano Psíquico e fica com a condição Incapacitado até terminar um Descanso Longo. Uma magia Restauração Maior lançada em você encerra esse efeito."
+  ]
+ },
+ "contagion": {
+  "d": [
+   "Seu toque inflige um contágio mágico. O alvo deve passar num teste de resistência de Constituição ou sofre 11d8 de dano Necrótico e fica com a condição Envenenado. Além disso, escolha um atributo ao lançar a magia. Enquanto estiver Envenenado, o alvo tem Desvantagem em testes de resistência feitos com o atributo escolhido.",
+   "O alvo precisa repetir o teste de resistência no fim de cada turno dele até obter três sucessos ou três falhas. Se passar em três desses testes, a magia termina para ele. Se falhar em três, a magia dura 7 dias nele.",
+   "Sempre que o alvo Envenenado receber um efeito que encerraria a condição Envenenado, ele precisa passar num teste de resistência de Constituição, ou a condição Envenenado não termina."
+  ]
+ },
+ "contingency": {
+  "d": [
+   "Escolha uma magia de nível 5 ou inferior que você consiga lançar, que tenha tempo de conjuração de uma ação e que possa ter você como alvo. Você lança essa magia (chamada magia contingente) como parte da conjuração de Contingência, gastando espaços de magia para as duas, mas a magia contingente não faz efeito. Em vez disso, ela faz efeito quando um certo gatilho ocorre. Você descreve esse gatilho ao lançar as duas magias. Por exemplo, uma Contingência lançada com Respirar na Água pode estipular que Respirar na Água faz efeito quando você for engolfado por água ou um líquido semelhante.",
+   "A magia contingente faz efeito imediatamente depois que o gatilho ocorre pela primeira vez, queira você ou não, e então Contingência termina.",
+   "A magia contingente só faz efeito em você, mesmo que normalmente possa ter outros como alvo. Você só pode usar uma magia Contingência por vez. Se lançar esta magia de novo, o efeito de outra magia Contingência em você termina. Além disso, Contingência termina se o componente material dela deixar de estar com você."
+  ],
+  "m": "Uma estatueta sua incrustada de gemas no valor de 1.500+ PO."
+ },
+ "continual-flame": {
+  "d": ["Uma chama surge de um objeto que você toca. O efeito emite Luz Plena num raio de 6 metros e Penumbra por mais 6 metros. Parece uma chama comum, mas não gera calor nem consome combustível. A chama pode ser coberta ou escondida, mas não abafada nem apagada."],
+  "m": "Pó de rubi no valor de 50+ PO, que a magia consome."
+ }
+}

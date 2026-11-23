@@ -1,0 +1,116 @@
+{
+ "manacles": {
+  "d": [
+   "Com a ação Utilizar, você pode usar Algemas para prender uma criatura relutante Pequena ou Média a até 1,5 metro de você que esteja com a condição Agarrado, Incapacitado ou Impedido, se passar num teste de Destreza (Prestidigitação) CD 13. Enquanto estiver presa, a criatura tem Desvantagem em jogadas de ataque e fica Impedida se as Algemas estiverem presas a uma corrente ou gancho fixo. Escapar das Algemas exige passar num teste de Destreza (Prestidigitação) CD 20 usando uma ação. Rompê-las exige passar num teste de Força (Atletismo) CD 25 usando uma ação.",
+   "Cada par de Algemas vem com uma chave. Sem a chave, uma criatura pode usar Ferramentas de Ladrão para abrir a fechadura com um teste de Destreza (Prestidigitação) CD 15 bem-sucedido."
+  ]
+ },
+ "map": {
+  "n": "Mapa",
+  "d": ["Se consultar um Mapa preciso, você recebe +5 de bônus em testes de Sabedoria (Sobrevivência) para se orientar no lugar representado nele."]
+ },
+ "mirror": {
+  "n": "Espelho",
+  "d": ["Um Espelho de aço de mão serve para cuidados pessoais, mas também para espiar além de esquinas e refletir luz como sinal."]
+ },
+ "musket": { "n": "Mosquete" },
+ "needles": { "n": "Agulhas" },
+ "net": {
+  "d": [
+   "Quando realiza a ação de Ataque, você pode substituir um dos ataques por arremessar uma Rede. Escolha como alvo uma criatura que consiga ver a até 4,5 metros de você. O alvo deve passar num teste de resistência de Destreza (CD 8 + seu modificador de Destreza + seu Bônus de Proficiência) ou ficar com a condição Impedido até escapar. O alvo passa automaticamente se for Enorme ou maior.",
+   "Para escapar, o alvo ou uma criatura a até 1,5 metro dele precisa usar uma ação para fazer um teste de Força (Atletismo) CD 10; se passar, a criatura Impedida fica livre. Destruir a Rede (CA 10; 5 PV; Imunidade a dano de Concussão, Veneno e Psíquico) também liberta o alvo, encerrando o efeito."
+  ]
+ },
+ "oil": {
+  "n": "Óleo",
+  "d": [
+   "Você pode encharcar uma criatura, objeto ou espaço com Óleo ou usá-lo como combustível, como descrito a seguir.",
+   "Encharcar uma Criatura ou um Objeto. Quando realiza a ação de Ataque, você pode substituir um dos ataques por arremessar um frasco de Óleo. Escolha como alvo uma criatura ou objeto a até 6 metros de você. O alvo deve passar num teste de resistência de Destreza (CD 8 + seu modificador de Destreza + seu Bônus de Proficiência) ou ficar coberto de óleo. Se sofrer dano de Fogo antes de o óleo secar (depois de 1 minuto), o alvo sofre 5 de dano de Fogo adicional do óleo em chamas.",
+   "Encharcar um Espaço. Você pode usar a ação Utilizar para derramar um frasco de Óleo em chão plano e cobrir uma área quadrada de 1,5 metro a até 1,5 metro de você. Se for aceso, o óleo queima até o fim do turno 2 rodadas depois de ser aceso (ou 12 segundos) e causa 5 de dano de Fogo a qualquer criatura que entre na área ou termine o turno nela. Uma criatura só pode sofrer esse dano uma vez por turno.",
+   "Combustível. O Óleo serve de combustível para Lamparinas e Lanternas. Aceso, um frasco de Óleo queima por 6 horas numa Lamparina ou Lanterna. Essa duração não precisa ser contínua; você pode apagar o Óleo (com a ação Utilizar) e reacendê-lo até que tenha queimado 6 horas no total."
+  ]
+ },
+ "paper": { "n": "Papel", "d": ["Uma folha de Papel comporta cerca de 250 palavras manuscritas."] },
+ "parchment": { "n": "Pergaminho", "d": ["Uma folha de Pergaminho comporta cerca de 250 palavras manuscritas."] },
+ "perfume": {
+  "n": "Perfume",
+  "d": ["O Perfume vem num frasco de 120 ml. Por 1 hora depois de se perfumar, você tem Vantagem em testes de Carisma (Persuasão) para influenciar um Humanoide Indiferente a até 1,5 metro de você."]
+ },
+ "pistol": { "n": "Pistola" },
+ "playing-cards": { "n": "Baralho" },
+ "poison-basic": {
+  "n": "Veneno Básico",
+  "d": ["Com uma Ação Bônus, você pode usar um frasco de Veneno Básico para cobrir uma arma ou até três munições. Uma criatura que sofre dano Perfurante ou Cortante da arma ou munição envenenada sofre 1d4 de dano de Veneno adicional. Depois de aplicado, o veneno mantém o efeito por 1 minuto ou até seu dano ser causado, o que vier primeiro."]
+ },
+ "pole": {
+  "n": "Vara",
+  "d": ["Uma Vara tem 3 metros de comprimento. Você pode usá-la para tocar algo a até 3 metros. Se precisar fazer um teste de Força (Atletismo) como parte de um Salto em Altura ou em Distância, pode usar a Vara como apoio, ganhando Vantagem no teste."]
+ },
+ "pot-iron": { "n": "Panela de Ferro", "d": ["Uma Panela de Ferro comporta até 4 litros."] },
+ "potion-of-healing": {
+  "n": "Poção de Cura",
+  "d": ["Esta poção é um item mágico. Com uma Ação Bônus, você pode bebê-la ou dá-la a outra criatura a até 1,5 metro de você. A criatura que bebe o fluido vermelho mágico deste frasco recupera 2d4 + 2 Pontos de Vida."]
+ },
+ "pouch": { "d": ["Uma Bolsa comporta até 3 kg em cerca de 5,5 litros de volume."] },
+ "priests-pack": {
+  "d": ["Um Pacote de Sacerdote contém os seguintes itens: Mochila, Cobertor, Água Benta, Lamparina, 7 dias de Rações, Túnica e Caixa de Fogo."]
+ },
+ "quiver": { "d": ["Uma Aljava comporta até 20 Flechas."] },
+ "ram-portable": {
+  "n": "Aríete Portátil",
+  "d": ["Você pode usar um Aríete Portátil para derrubar portas. Ao fazer isso, recebe +4 de bônus no teste de Força. Outro personagem pode ajudar a usar o aríete, dando Vantagem nesse teste."]
+ },
+ "rations": {
+  "n": "Rações",
+  "d": ["Rações são alimentos prontos para viagem, como carne-seca, frutas secas, biscoito duro e nozes. Veja \"Desnutrição\" no \"Glossário de Regras\" para os riscos de não comer."]
+ },
+ "robe": {
+  "n": "Túnica",
+  "d": ["Uma Túnica tem significado vocacional ou cerimonial. Alguns eventos e lugares só admitem pessoas vestindo uma Túnica com certas cores ou símbolos."]
+ },
+ "rope": {
+  "n": "Corda",
+  "d": [
+   "Com a ação Utilizar, você pode dar um nó na Corda se passar num teste de Destreza (Prestidigitação) CD 10. A Corda pode ser rompida com um teste de Força (Atletismo) CD 20 bem-sucedido.",
+   "Você só pode amarrar uma criatura relutante com a Corda se ela estiver com a condição Agarrado, Incapacitado ou Impedido. Se as pernas da criatura forem amarradas, ela fica com a condição Impedido até escapar. Para escapar da Corda, a criatura precisa passar num teste de Destreza (Acrobacia) CD 15 usando uma ação."
+  ]
+ },
+ "sack": { "d": ["Um Saco comporta até 15 kg em cerca de 28 litros de volume."] },
+ "scholars-pack": {
+  "d": ["Um Pacote de Estudioso contém os seguintes itens: Mochila, Cobertor, Livro, Tinta, Pena de Escrever, Lamparina, 10 frascos de Óleo, 10 folhas de Pergaminho e Caixa de Fogo."]
+ },
+ "shovel": { "d": ["Trabalhando por 1 hora, você pode usar uma Pá para cavar um buraco de 1,5 metro de lado em terra ou material semelhante."] },
+ "signal-whistle": {
+  "n": "Apito de Sinalização",
+  "d": ["Soprado com a ação Utilizar, um Apito de Sinalização produz um som que pode ser ouvido a até 180 metros."]
+ },
+ "spell-scroll-cantrip": {
+  "n": "Pergaminho de Magia, Truque",
+  "d": [
+   "Um *Pergaminho de Magia* (Truque) ou *Pergaminho de Magia* (Nível 1) é um item mágico com as palavras de um truque ou de uma magia de nível 1, respectivamente, definidos por quem criou o pergaminho. Se a magia estiver na lista de magias da sua classe, você pode ler o pergaminho e lançá-la usando o tempo de conjuração normal e sem fornecer nenhum componente Material.",
+   "Se a magia exigir teste de resistência ou jogada de ataque, a CD de resistência é 13 e o bônus de ataque é +5. O pergaminho se desintegra quando a conjuração termina."
+  ]
+ },
+ "spell-scroll-level-1": { "n": "Pergaminho de Magia, Nível 1" },
+ "spikes-iron": {
+  "n": "Cravos de Ferro",
+  "d": ["Cravos de Ferro vêm em feixes de dez. Com a ação Utilizar, você pode usar um objeto rombudo, como um Martelo Leve, para cravar um cravo em madeira, terra ou material semelhante. Pode fazer isso para travar uma porta ou para amarrar uma Corda ou Corrente ao cravo."]
+ },
+ "sprig-of-mistletoe": { "n": "Ramo de Visco" },
+ "spyglass": { "d": ["Objetos vistos por uma Luneta aparecem ampliados duas vezes."] },
+ "string": { "n": "Barbante", "d": ["O Barbante tem 3 metros de comprimento. Você pode dar um nó nele com a ação Utilizar."] },
+ "tent": { "n": "Barraca", "d": ["Uma Barraca abriga até duas criaturas Pequenas ou Médias."] },
+ "three-dragon-ante": { "n": "Truco dos Três Dragões" },
+ "tinderbox": {
+  "d": ["Uma Caixa de Fogo é um pequeno recipiente com pederneira, fuzil e isca (normalmente pano seco embebido em óleo leve) para acender fogo. Usá-la para acender uma Vela, Lamparina, Lanterna ou Tocha, ou qualquer outra coisa com combustível exposto, leva uma Ação Bônus. Acender qualquer outro fogo leva 1 minuto."]
+ },
+ "torch": {
+  "d": ["Uma Tocha queima por 1 hora, emitindo Luz Plena num raio de 6 metros e Penumbra por mais 6 metros. Quando realiza a ação de Ataque, você pode atacar com a Tocha, usando-a como arma Simples Corpo a Corpo. Se acertar, o alvo sofre 1 de dano de Fogo."]
+ },
+ "vial": { "d": ["Um Frasco comporta até 120 ml."] },
+ "war-pick": { "n": "Picareta de Guerra" },
+ "waterskin": {
+  "d": ["Um Odre comporta até 2 litros. Se não beber água suficiente, você corre o risco de desidratação (veja o \"Glossário de Regras\")."]
+ },
+ "yew-wand": { "n": "Varinha de Teixo" }
+}

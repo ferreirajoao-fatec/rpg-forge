@@ -1,0 +1,84 @@
+{
+ "teleport": {
+  "n": "Teletransporte",
+  "d": [
+   "Esta magia transporta instantaneamente você e até oito criaturas voluntárias à sua escolha que consiga ver dentro do alcance, ou um único objeto que consiga ver dentro do alcance, para um destino que você escolher. Se o alvo for um objeto, ele precisa caber inteiro num cubo de 3 metros e não pode estar sendo segurado nem carregado por uma criatura não voluntária.",
+   "O destino escolhido precisa ser conhecido por você e estar no mesmo plano de existência que você. Sua familiaridade com o destino determina se você chega lá com sucesso. O Mestre rola um d100 e consulta a tabela.",
+   "| Familiaridade | Acidente | Área Semelhante | Fora do Alvo | No Alvo |",
+   "|---|---|---|---|---|",
+   "| Círculo permanente | -- | -- | -- | 01-100 |",
+   "| Objeto associado | -- | -- | -- | 01-100 |",
+   "| Muito familiar | 01-05 | 06-13 | 14-24 | 25-100 |",
+   "| Visto casualmente | 01-33 | 34-43 | 44-53 | 54-100 |",
+   "| Visto uma vez | 01-43 | 44-53 | 54-73 | 74-100 |",
+   "| Descrição | 01-43 | 44-53 | 54-73 | 74-100 |",
+   "| Destino falso | 01-50 | 51-100 | -- | -- |",
+   "*Familiaridade.* \"Círculo permanente\" significa um círculo de teletransporte permanente cuja sequência de selos você conhece.",
+   "\"Objeto associado\" significa que você possui um objeto tirado do destino desejado nos últimos seis meses, como um livro da biblioteca de um mago, um lençol de uma suíte real ou um pedaço de mármore da tumba secreta de um lich.",
+   "\"Muito familiar\" é um lugar onde você esteve muitas vezes, que estudou com cuidado ou que consegue ver ao lançar a magia.",
+   "\"Visto casualmente\" é um lugar que você viu mais de uma vez, mas com o qual não tem muita familiaridade.",
+   "\"Visto uma vez\" é um lugar que você viu uma vez, possivelmente por meio de magia.",
+   "\"Descrição\" é um lugar cuja localização e aparência você conhece pela descrição de outra pessoa, talvez por um mapa.",
+   "\"Destino falso\" é um lugar que não existe. Talvez você tenha tentado espiar o santuário de um inimigo, mas viu uma ilusão, ou está tentando se teletransportar para um local familiar que não existe mais.",
+   "*No Alvo.* Você e seu grupo (ou o objeto) aparecem onde queriam.",
+   "*Fora do Alvo.* Você e seu grupo (ou o objeto) aparecem a uma distância aleatória do destino, numa direção aleatória. A distância do erro é 1d10 × 1d10 por cento da distância que seria percorrida. Por exemplo, se você tentou viajar 180 km, caiu fora do alvo e tirou 5 e 3 nos dois d10, errou por 15%, ou 27 km. O Mestre determina a direção do erro aleatoriamente rolando um d8 e designando 1 como norte, 2 como nordeste, 3 como leste e assim por diante pelos pontos da bússola. Se você estava se teletransportando para uma cidade costeira e foi parar a 27 km mar adentro, pode estar em apuros.",
+   "*Área Semelhante.* Você e seu grupo (ou o objeto) vão parar numa área diferente, visual ou tematicamente semelhante à área desejada. Se estiver indo para o seu laboratório, por exemplo, pode acabar no laboratório de outro mago ou numa loja de suprimentos alquímicos com muitas das mesmas ferramentas e instrumentos. Em geral, você aparece no lugar semelhante mais próximo, mas, como a magia não tem limite de alcance, pode acabar em qualquer lugar do plano.",
+   "*Acidente.* A magia imprevisível resulta numa viagem difícil. Cada criatura teletransportada (ou o objeto) sofre 3d10 de dano de energia, e o Mestre rola de novo na tabela para ver onde vocês vão parar (vários acidentes podem ocorrer, causando dano a cada vez)."
+  ]
+ },
+ "teleportation-circle": {
+  "n": "Círculo de Teletransporte",
+  "d": [
+   "Ao lançar a magia, você desenha no chão um círculo de 3 metros de diâmetro inscrito com selos que ligam sua localização a um círculo de teletransporte permanente à sua escolha cuja sequência de selos você conheça e que esteja no mesmo plano de existência que você. Um portal cintilante se abre dentro do círculo desenhado e permanece aberto até o fim do seu próximo turno. Qualquer criatura que entre no portal aparece instantaneamente a até 1,5 metro do círculo de destino, ou no espaço desocupado mais próximo se esse espaço estiver ocupado.",
+   "Muitos templos importantes, guildas e outros locais relevantes têm círculos de teletransporte permanentes inscritos em algum lugar dentro dos seus limites. Cada círculo inclui uma sequência de selos única: uma série de runas mágicas dispostas num padrão específico. Quando ganha a capacidade de lançar esta magia, você aprende as sequências de selos de dois destinos no Plano Material, determinados pelo Mestre. Pode aprender sequências adicionais durante suas aventuras. Pode memorizar uma nova sequência de selos depois de estudá-la por 1 minuto.",
+   "Você pode criar um círculo de teletransporte permanente lançando esta magia no mesmo local todos os dias por um ano. Não precisa usar o círculo para se teletransportar ao lançar a magia dessa forma."
+  ],
+  "m": "Gizes e tintas raros infundidos com gemas preciosas no valor de 50 po, que a magia consome."
+ },
+ "thaumaturgy": {
+  "n": "Taumaturgia",
+  "d": [
+   "Você manifesta uma pequena maravilha, um sinal de poder sobrenatural, dentro do alcance. Você cria um dos efeitos mágicos a seguir dentro do alcance.",
+   "- Sua voz ressoa até três vezes mais alto que o normal por 1 minuto.",
+   "- Você faz chamas tremeluzirem, ficarem mais fortes, mais fracas ou mudarem de cor por 1 minuto.",
+   "- Você causa tremores inofensivos no chão por 1 minuto.",
+   "- Você cria um som instantâneo que vem de um ponto à sua escolha dentro do alcance, como o ribombar de um trovão, o grito de um corvo ou sussurros sinistros.",
+   "- Você faz instantaneamente uma porta ou janela destrancada se abrir ou se fechar com força.",
+   "- Você altera a aparência dos seus olhos por 1 minuto.",
+   "Se lançar esta magia várias vezes, pode ter até três dos efeitos de 1 minuto ativos ao mesmo tempo, e pode dispensar um desses efeitos com uma ação."
+  ]
+ },
+ "thunderwave": {
+  "n": "Onda Trovejante",
+  "d": [
+   "Uma onda de força trovejante se espalha a partir de você. Cada criatura num cubo de 4,5 metros que se origina em você deve fazer um teste de resistência de Constituição. Se falhar, sofre 2d8 de dano trovejante e é empurrada 3 metros para longe de você. Se passar, sofre metade do dano e não é empurrada.",
+   "Além disso, objetos soltos que estejam completamente dentro da área são empurrados automaticamente 3 metros para longe de você pelo efeito da magia, e ela emite um estrondo audível a até 90 metros."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 2º nível ou superior, o dano aumenta em 1d8 para cada nível de espaço acima do 1º."]
+ },
+ "time-stop": {
+  "n": "Parar o Tempo",
+  "d": [
+   "Você para brevemente o fluxo do tempo para todos, exceto você. Não passa tempo para as outras criaturas, enquanto você realiza 1d4 + 1 turnos seguidos, durante os quais pode usar ações e se mover normalmente.",
+   "Esta magia termina se uma das ações que você usar nesse período, ou qualquer efeito que criar nesse período, afetar outra criatura além de você ou um objeto vestido ou carregado por outra pessoa. Além disso, a magia termina se você se mover para um lugar a mais de 300 metros de onde a lançou."
+  ]
+ },
+ "tiny-hut": {
+  "n": "Cabana Minúscula",
+  "d": [
+   "Uma cúpula imóvel de energia com 3 metros de raio surge ao seu redor e acima de você e permanece parada pela duração. A magia termina se você sair da área dela.",
+   "Nove criaturas Médias ou menores cabem na cúpula com você. A magia falha se a área incluir uma criatura maior ou mais de nove criaturas. Criaturas e objetos dentro da cúpula quando você lança a magia podem atravessá-la livremente. Todas as outras criaturas e objetos são impedidos de atravessá-la. Magias e outros efeitos mágicos não podem se estender através da cúpula nem ser lançados através dela. O ambiente lá dentro é confortável e seco, seja qual for o clima lá fora.",
+   "Até a magia terminar, você pode comandar que o interior fique na penumbra ou no escuro. A cúpula é opaca vista de fora, da cor que você escolher, mas transparente vista de dentro."
+  ],
+  "m": "Uma pequena conta de cristal."
+ },
+ "tongues": {
+  "n": "Idiomas",
+  "d": ["Esta magia concede à criatura que você toca a capacidade de entender qualquer idioma falado que ouvir. Além disso, quando o alvo fala, qualquer criatura que conheça pelo menos um idioma e consiga ouvir o alvo entende o que ele diz."],
+  "m": "Um pequeno modelo de argila de um zigurate."
+ },
+ "transport-via-plants": {
+  "n": "Transporte via Plantas",
+  "d": ["Esta magia cria um vínculo mágico entre uma planta inanimada Grande ou maior dentro do alcance e outra planta, a qualquer distância, no mesmo plano de existência. Você precisa já ter visto ou tocado a planta de destino pelo menos uma vez. Pela duração, qualquer criatura pode entrar na planta-alvo e sair pela planta de destino gastando 1,5 metro de movimento."]
+ }
+}

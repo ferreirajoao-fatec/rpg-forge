@@ -1,10 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+  <defs>
+    <filter id="f-primary" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{primary-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="soft2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.5"/></filter>
+  </defs>
+  <g stroke-linejoin="round" stroke-linecap="round">
     <g data-anchor="legs">
-      <path fill="#{primary}" d="M202 636 L254 636 L252 712 L256 732 C256 744 248 750 232 750 L200 750 C190 750 188 738 198 730 L204 712 Z"/>
-      <path fill="#{primary}" d="M310 636 L258 636 L260 712 L256 732 C256 744 264 750 280 750 L312 750 C322 750 324 738 314 730 L308 712 Z"/>
-      <path fill="#{primary-light}" d="M200 630 L256 630 L256 652 L200 652 Z M312 630 L256 630 L256 652 L312 652 Z"/>
-      <path fill="#{primary-deep}" stroke="none" d="M190 742 L256 742 L256 750 L196 750 Z M322 742 L256 742 L256 750 L316 750 Z"/>
+      <g id="bootL">
+        <path fill="#{primary}" stroke="#{primary-deep}" stroke-width="1" filter="url(#f-primary)" d="M201 606 C200 630 202 660 207 684 C209 694 211 702 212 708 C208 718 201 726 197 734 C194 742 198 750 208 750 L244 750 C251 750 253 744 251 736 C249 726 246 716 245 706 C245 690 246 670 246 650 C246 636 246 620 245 606 Z"/>
+        <path fill="#{primary}" stroke="#{primary-deep}" stroke-width="1" filter="url(#f-primary)" d="M198 598 C214 603 232 603 248 598 L247 618 C232 622 214 622 199 618 Z"/>
+        <path fill="#{primary-deep}" stroke="#{primary-deep}" stroke-width="0.8" d="M196.6 741 C197.4 747 201 750.4 208 750.4 L244 750.4 C250 750.4 252.6 747 252.4 741.4 C240 744.4 210 744.4 196.6 741 Z"/>
+        <path fill="none" stroke="#{primary-deep}" stroke-width="0.8" opacity="0.45" d="M209 690 C218 694 234 694 245 690 M210 700 C220 703 234 703 245 700 M206 640 C210 660 211 676 211 690"/>
+        <path fill="#{primary-light}" stroke="none" opacity="0.35" filter="url(#soft)" d="M214 624 C212 650 214 676 220 700 L226 700 C224 676 224 650 226 624 Z M206 728 C214 722 226 720 236 722 C228 726 216 730 210 734 Z"/>
+        <path fill="none" stroke="#{primary-deep}" stroke-width="0.5" opacity="0.55" stroke-dasharray="1.6 1.2" d="M201 622 C202 650 205 676 209 700 M244 622 C244 650 244 676 245 700"/>
+      </g>
+      <use href="#bootL" transform="matrix(-1 0 0 1 512 0)"/>
     </g>
   </g>
 </svg>

@@ -1,12 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g stroke="#{line}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
-    <path fill="#ffffff" d="M215 174 C224 167 238 167 245 172 C238 178 224 179 215 174 Z"/>
-    <circle fill="#{eyeL}" stroke="none" cx="230" cy="173" r="5"/>
-    <circle fill="#1a1210" stroke="none" cx="230" cy="173" r="2.4"/>
-    <path fill="none" stroke-width="3.5" d="M214 173 C224 165 238 165 246 170"/>
-    <path fill="#ffffff" d="M267 174 C276 167 290 167 297 172 C290 178 276 179 267 174 Z"/>
-    <circle fill="#{eyeR}" stroke="none" cx="282" cy="173" r="5"/>
-    <circle fill="#1a1210" stroke="none" cx="282" cy="173" r="2.4"/>
-    <path fill="none" stroke-width="3.5" d="M266 173 C276 165 290 165 298 170"/>
+  <defs>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="0.9"/></filter>
+  </defs>
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <clipPath id="cl"><path d="M231.5 117.8 C235 115 245 114.4 249.4 116.9 C245.5 119.4 236 119.8 231.5 117.8 Z"/></clipPath>
+    
+    <path fill="#f1ebe4" d="M231.5 117.8 C235 115 245 114.4 249.4 116.9 C245.5 119.4 236 119.8 231.5 117.8 Z"/>
+    <g clip-path="url(#cl)">
+      <circle fill="#{eyeL}" cx="240.6" cy="117" r="4.2"/>
+      <circle fill="none" stroke="#{eyeL-deep}" stroke-width="0.8" cx="240.6" cy="117" r="3.9000000000000004"/>
+      <circle fill="#{eyeL-light}" opacity="0.55" cx="241.2" cy="118.4" r="2.1" filter="url(#soft)"/>
+      <circle fill="#120c0a" cx="240.6" cy="117" r="1.76"/>
+      <path fill="#{skin-deep}" opacity="0.55" filter="url(#soft)" d="M226 108 L254 108 L254 116.6 C246 114.6 236 114.6 226 118 Z"/>
+      <circle fill="#ffffff" opacity="0.9" cx="239.2" cy="115.6" r="0.95"/>
+    </g>
+    <path fill="none" stroke="#{line}" stroke-width="1.6" d="M231.5 117.8 C235 115 245 114.4 249.4 116.9"/>
+    <path fill="none" stroke="#{skin-deep}" stroke-width="0.7" opacity="0.6" d="M249.4 116.9 C245.5 119.4 236 119.8 231.5 117.8"/>
+    <path fill="none" stroke="#{skin-deep}" stroke-width="0.7" opacity="0.4" d="M232 115.6 C236 113 245 112.6 249.4 114.8"/>
+  </g>
+  <g transform="matrix(-1 0 0 1 512 0)">
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <clipPath id="cr"><path d="M231.5 117.8 C235 115 245 114.4 249.4 116.9 C245.5 119.4 236 119.8 231.5 117.8 Z"/></clipPath>
+    
+    <path fill="#f1ebe4" d="M231.5 117.8 C235 115 245 114.4 249.4 116.9 C245.5 119.4 236 119.8 231.5 117.8 Z"/>
+    <g clip-path="url(#cr)">
+      <circle fill="#{eyeR}" cx="240.6" cy="117" r="4.2"/>
+      <circle fill="none" stroke="#{eyeR-deep}" stroke-width="0.8" cx="240.6" cy="117" r="3.9000000000000004"/>
+      <circle fill="#{eyeR-light}" opacity="0.55" cx="241.2" cy="118.4" r="2.1" filter="url(#soft)"/>
+      <circle fill="#120c0a" cx="240.6" cy="117" r="1.76"/>
+      <path fill="#{skin-deep}" opacity="0.55" filter="url(#soft)" d="M226 108 L254 108 L254 116.6 C246 114.6 236 114.6 226 118 Z"/>
+      <circle fill="#ffffff" opacity="0.9" cx="239.2" cy="115.6" r="0.95"/>
+    </g>
+    <path fill="none" stroke="#{line}" stroke-width="1.6" d="M231.5 117.8 C235 115 245 114.4 249.4 116.9"/>
+    <path fill="none" stroke="#{skin-deep}" stroke-width="0.7" opacity="0.6" d="M249.4 116.9 C245.5 119.4 236 119.8 231.5 117.8"/>
+    <path fill="none" stroke="#{skin-deep}" stroke-width="0.7" opacity="0.4" d="M232 115.6 C236 113 245 112.6 249.4 114.8"/>
+  </g>
   </g>
 </svg>

@@ -1,0 +1,79 @@
+{
+ "dissonant-whispers": {
+  "n": "Sussurros Dissonantes",
+  "d": ["Uma criatura à sua escolha que você consiga ver dentro do alcance ouve uma melodia dissonante na mente. O alvo faz um teste de resistência de Sabedoria. Se falhar, sofre 3d6 de dano Psíquico e precisa usar imediatamente a Reação, se disponível, para se afastar o máximo possível de você, pelo caminho mais seguro. Se passar, o alvo sofre apenas metade do dano."]
+ },
+ "divination": {
+  "d": [
+   "Esta magia o coloca em contato com um deus ou com os servos de um deus. Você faz uma pergunta sobre um objetivo, acontecimento ou atividade específica que ocorrerá nos próximos 7 dias. O Mestre dá uma resposta verdadeira, que pode ser uma frase curta ou uma rima enigmática. A magia não leva em conta circunstâncias que possam mudar a resposta, como a conjuração de outras magias.",
+   "Se você lançar a magia mais de uma vez antes de terminar um Descanso Longo, há uma chance cumulativa de 25% para cada conjuração depois da primeira de não receber resposta."
+  ],
+  "m": "Incenso no valor de 25+ PO, que a magia consome."
+ },
+ "divine-favor": {
+  "d": ["Até a magia terminar, seus ataques com armas causam 1d4 de dano Radiante extra ao acertar."]
+ },
+ "divine-smite": {
+  "n": "Destruição Divina",
+  "d": ["O alvo sofre 2d8 de dano Radiante extra do ataque. O dano aumenta em 1d8 se o alvo for um Ínfero ou um Morto-Vivo."],
+  "h": ["O dano aumenta em 1d8 para cada nível de espaço de magia acima de 1."],
+  "ct": "Ação Bônus, que você realiza imediatamente depois de acertar um alvo com uma arma Corpo a Corpo ou um Ataque Desarmado"
+ },
+ "divine-word": {
+  "d": [
+   "Você pronuncia uma palavra imbuída do poder dos Planos Superiores. Cada criatura à sua escolha dentro do alcance faz um teste de resistência de Carisma. Se falhar, um alvo que tenha 50 Pontos de Vida ou menos sofre um efeito conforme os Pontos de Vida atuais, como mostra a tabela de Efeitos da Palavra Divina. Sejam quais forem os Pontos de Vida, um alvo Celestial, Elemental, Fada ou Ínfero que falhe no teste é forçado a voltar ao plano de origem (se ainda não estiver nele) e não pode voltar ao plano atual por 24 horas por nenhum meio, exceto uma magia Desejo.",
+   "Efeitos da Palavra Divina | Pontos de Vida: Efeito",
+   "0-20 | O alvo morre.",
+   "21-30 | O alvo fica com as condições Cego, Surdo e Atordoado por 1 hora.",
+   "31-40 | O alvo fica com as condições Cego e Surdo por 10 minutos.",
+   "41-50 | O alvo fica com a condição Surdo por 1 minuto."
+  ]
+ },
+ "dominate-beast": {
+  "d": [
+   "Uma Fera que você consiga ver dentro do alcance deve passar num teste de resistência de Sabedoria ou fica com a condição Enfeitiçado pela duração. O alvo tem Vantagem no teste se você ou seus aliados estiverem lutando contra ele. Sempre que o alvo sofrer dano, repete o teste, encerrando a magia em si mesmo se passar.",
+   "Você tem um vínculo telepático com o alvo Enfeitiçado enquanto os dois estiverem no mesmo plano de existência. No seu turno, pode usar esse vínculo para dar comandos ao alvo (sem gastar ação), como \"Ataque aquela criatura\", \"Vá para lá\" ou \"Pegue aquele objeto\". O alvo faz o possível para obedecer no turno dele. Se cumprir uma ordem e não receber outras instruções suas, age e se move como quiser, concentrando-se em se proteger.",
+   "Você pode comandar o alvo a realizar uma Reação, mas precisa usar sua própria Reação para isso."
+  ],
+  "h": ["Sua Concentração pode durar mais com um espaço de magia de nível 5 (até 10 minutos), 6 (até 1 hora) ou 7+ (até 8 horas)."]
+ },
+ "dominate-monster": {
+  "d": [
+   "Uma criatura que você consiga ver dentro do alcance deve passar num teste de resistência de Sabedoria ou fica com a condição Enfeitiçado pela duração. O alvo tem Vantagem no teste se você ou seus aliados estiverem lutando contra ele. Sempre que o alvo sofrer dano, repete o teste, encerrando a magia em si mesmo se passar.",
+   "Você tem um vínculo telepático com o alvo Enfeitiçado enquanto os dois estiverem no mesmo plano de existência. No seu turno, pode usar esse vínculo para dar comandos ao alvo (sem gastar ação), como \"Ataque aquela criatura\", \"Vá para lá\" ou \"Pegue aquele objeto\". O alvo faz o possível para obedecer no turno dele. Se cumprir uma ordem e não receber outras instruções suas, age e se move como quiser, concentrando-se em se proteger.",
+   "Você pode comandar o alvo a realizar uma Reação, mas precisa usar sua própria Reação para isso."
+  ],
+  "h": ["Sua Concentração pode durar mais com um espaço de magia de nível 9 (até 8 horas)."]
+ },
+ "dominate-person": {
+  "d": [
+   "Um Humanoide que você consiga ver dentro do alcance deve passar num teste de resistência de Sabedoria ou fica com a condição Enfeitiçado pela duração. O alvo tem Vantagem no teste se você ou seus aliados estiverem lutando contra ele. Sempre que o alvo sofrer dano, repete o teste, encerrando a magia em si mesmo se passar.",
+   "Você tem um vínculo telepático com o alvo Enfeitiçado enquanto os dois estiverem no mesmo plano de existência. No seu turno, pode usar esse vínculo para dar comandos ao alvo (sem gastar ação), como \"Ataque aquela criatura\", \"Vá para lá\" ou \"Pegue aquele objeto\". O alvo faz o possível para obedecer no turno dele. Se cumprir uma ordem e não receber outras instruções suas, age e se move como quiser, concentrando-se em se proteger.",
+   "Você pode comandar o alvo a realizar uma Reação, mas precisa usar sua própria Reação para isso."
+  ],
+  "h": ["Sua Concentração pode durar mais com um espaço de magia de nível 6 (até 10 minutos), 7 (até 1 hora) ou 8+ (até 8 horas)."]
+ },
+ "dragons-breath": {
+  "n": "Sopro do Dragão",
+  "d": ["Você toca uma criatura voluntária e escolhe Ácido, Frio, Fogo, Elétrico ou Veneno. Até a magia terminar, o alvo pode realizar uma ação de Magia para exalar um Cone de 4,5 metros. Cada criatura nessa área faz um teste de resistência de Destreza, sofrendo 3d6 de dano do tipo escolhido se falhar, ou metade se passar. Usando um Espaço de Magia de Nível Superior. O dano aumenta em 1d6 para cada nível de espaço de magia acima de 2."],
+  "m": "Uma pimenta ardida."
+ },
+ "dream": {
+  "d": [
+   "Você escolhe como alvo uma criatura que conheça no mesmo plano de existência. Você ou uma criatura voluntária que toque entra em transe para agir como mensageiro onírico. Enquanto estiver em transe, o mensageiro fica Incapacitado e tem Deslocamento 0.",
+   "Se o alvo estiver dormindo, o mensageiro aparece nos sonhos dele e pode conversar com ele enquanto ele continuar dormindo, pela duração da magia. O mensageiro também pode moldar o ambiente do sonho, criando paisagens, objetos e outras imagens. O mensageiro pode sair do transe a qualquer momento, encerrando a magia. O alvo se lembra perfeitamente do sonho ao acordar.",
+   "Se o alvo estiver acordado quando você lançar a magia, o mensageiro sabe disso e pode encerrar o transe (e a magia) ou esperar o alvo dormir, quando então entra nos sonhos dele.",
+   "Você pode tornar o mensageiro aterrorizante para o alvo. Se fizer isso, o mensageiro pode entregar uma mensagem de no máximo dez palavras, e então o alvo faz um teste de resistência de Sabedoria. Se falhar, o alvo não ganha nenhum benefício do descanso e sofre 3d6 de dano Psíquico ao acordar."
+  ],
+  "m": "Um punhado de areia."
+ },
+ "druidcraft": {
+  "d": [
+   "Sussurrando aos espíritos da natureza, você cria um dos efeitos a seguir dentro do alcance.",
+   "Sensor Climático. Você cria um efeito sensorial Miúdo e inofensivo que prevê como será o clima no seu local nas próximas 24 horas. O efeito pode se manifestar como um orbe dourado para céu limpo, uma nuvem para chuva, flocos de neve caindo para neve e assim por diante. Ele persiste por 1 rodada.",
+   "Florescer. Você faz instantaneamente uma flor desabrochar, uma vagem se abrir ou um broto de folha brotar.",
+   "Efeito Sensorial. Você cria um efeito sensorial inofensivo, como folhas caindo, fadas espectrais dançando, uma brisa suave, o som de um animal ou o leve odor de um gambá. O efeito precisa caber num Cubo de 1,5 metro.",
+   "Brincar com Fogo. Você acende ou apaga uma vela, uma tocha ou uma fogueira."
+  ]
+ }
+}

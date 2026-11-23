@@ -1,0 +1,32 @@
+[
+ {
+  "id": "feat:grappler",
+  "kind": "feat",
+  "name": "Imobilizador",
+  "summary": "Você desenvolveu a perícia necessária para se prender a alguém em um combate engajado. Você recebe os seguintes benefícios:",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Feats"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "minAbility",
+   "ability": "str",
+   "value": 13
+  },
+  "roles": [],
+  "data": {
+   "type": "general",
+   "typeLabel": "Talento geral",
+   "repeatable": false,
+   "text": [
+    "Você desenvolveu a perícia necessária para se prender a alguém em um combate engajado. Você recebe os seguintes benefícios:",
+    "- Você tem vantagem nas jogadas de ataque contra uma criatura agarrada.",
+    "- Você pode usar sua ação para tentar imobilizar uma criatura agarrada por você. Para tanto, realize outro teste de agarrar. Se você for bem sucedido, você e a criatura estarão ambos impedidos até o agarre terminar."
+   ]
+  }
+ }
+]

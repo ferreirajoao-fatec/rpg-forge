@@ -1,6 +1,6 @@
 {
   "$comment": "Catálogo de peças do avatar. Cada peça aponta para SVGs desta pasta (512×768, mesmas âncoras). Cores: marcadores #{região} e #{região-light|dark|deep|blush}. Rode `pnpm assets:build` depois de alterar.",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "parts": [
     { "id": "body:humanoide", "slot": "body", "name": "Humanoide", "tags": ["humanoide"], "layers": [{ "layer": "body", "file": "body/humanoide.svg" }] },
 
@@ -39,7 +39,7 @@
 
     { "id": "hair:curto", "slot": "hair", "name": "Curto", "layers": [{ "layer": "hairFront", "file": "hair/curto-frente.svg" }] },
     { "id": "hair:longo", "slot": "hair", "name": "Longo", "layers": [{ "layer": "hairBack", "file": "hair/longo-costas.svg" }, { "layer": "hairFront", "file": "hair/longo-frente.svg" }] },
-    { "id": "hair:tranca", "slot": "hair", "name": "Trança", "defaults": { "metal": "#b08d57" }, "layers": [{ "layer": "hairBack", "file": "hair/tranca-costas.svg" }, { "layer": "hairFront", "file": "hair/curto-frente.svg" }] },
+    { "id": "hair:tranca", "slot": "hair", "name": "Trança", "defaults": { "metal": "#b08d57" }, "layers": [{ "layer": "hairBack", "file": "hair/tranca-costas.svg" }, { "layer": "hairFront", "file": "hair/tranca-frente.svg" }] },
     { "id": "hair:coque", "slot": "hair", "name": "Coque", "layers": [{ "layer": "hairFront", "file": "hair/coque-frente.svg" }], "variants": [{ "whenSlot": "hood", "note": "Sob o capuz, o penteado alto vira franja.", "layers": [{ "layer": "hairFront", "file": "hair/curto-frente.svg" }] }] },
     { "id": "hair:moicano", "slot": "hair", "name": "Moicano", "layers": [{ "layer": "hairFront", "file": "hair/moicano-frente.svg" }], "variants": [{ "whenSlot": "hood", "note": "Sob o capuz, o penteado alto vira franja.", "layers": [{ "layer": "hairFront", "file": "hair/curto-frente.svg" }] }] },
 
@@ -87,12 +87,12 @@
     { "id": "shield:redondo", "slot": "shield", "name": "Escudo redondo", "defaults": { "primary": "#7a5232", "metal": "#9aa0a6" }, "layers": [{ "layer": "shield", "file": "shield/redondo.svg" }] },
     { "id": "shield:heraldico", "slot": "shield", "name": "Escudo heráldico", "defaults": { "primary": "#3c3a6b", "secondary": "#c9a66b", "metal": "#a9b0b8" }, "layers": [{ "layer": "shield", "file": "shield/heraldico.svg" }] },
 
-    { "id": "marks:cicatriz-olho", "slot": "marks", "name": "Cicatriz no olho", "pivot": [231, 172], "layers": [{ "layer": "marks", "file": "marks/cicatriz-olho.svg" }] },
-    { "id": "marks:cicatriz-bochecha", "slot": "marks", "name": "Cicatriz na bochecha", "pivot": [284, 205], "layers": [{ "layer": "marks", "file": "marks/cicatriz-bochecha.svg" }] },
-    { "id": "marks:sardas", "slot": "marks", "name": "Sardas", "pivot": [256, 195], "layers": [{ "layer": "marks", "file": "marks/sardas.svg" }] },
-    { "id": "marks:tatuagem-tribal", "slot": "marks", "name": "Tatuagem tribal", "pivot": [290, 190], "defaults": { "ink": "#1f3a6b" }, "layers": [{ "layer": "marks", "file": "marks/tatuagem-tribal.svg" }] },
-    { "id": "marks:runa-testa", "slot": "marks", "name": "Runa na testa", "pivot": [256, 140], "defaults": { "ink": "#3f8f7a" }, "layers": [{ "layer": "marks", "file": "marks/runa-testa.svg" }] },
-    { "id": "marks:pintura-de-guerra", "slot": "marks", "name": "Pintura de guerra", "pivot": [256, 210], "defaults": { "ink": "#8a2f2f" }, "layers": [{ "layer": "marks", "file": "marks/pintura-de-guerra.svg" }] },
+    { "id": "marks:cicatriz-olho", "slot": "marks", "name": "Cicatriz no olho", "pivot": [241, 119], "layers": [{ "layer": "marks", "file": "marks/cicatriz-olho.svg" }] },
+    { "id": "marks:cicatriz-bochecha", "slot": "marks", "name": "Cicatriz na bochecha", "pivot": [273, 139], "layers": [{ "layer": "marks", "file": "marks/cicatriz-bochecha.svg" }] },
+    { "id": "marks:sardas", "slot": "marks", "name": "Sardas", "pivot": [256, 133], "layers": [{ "layer": "marks", "file": "marks/sardas.svg" }] },
+    { "id": "marks:tatuagem-tribal", "slot": "marks", "name": "Tatuagem tribal", "pivot": [277, 130], "defaults": { "ink": "#1f3a6b" }, "layers": [{ "layer": "marks", "file": "marks/tatuagem-tribal.svg" }] },
+    { "id": "marks:runa-testa", "slot": "marks", "name": "Runa na testa", "pivot": [256, 99], "defaults": { "ink": "#3f8f7a" }, "layers": [{ "layer": "marks", "file": "marks/runa-testa.svg" }] },
+    { "id": "marks:pintura-de-guerra", "slot": "marks", "name": "Pintura de guerra", "pivot": [256, 142], "defaults": { "ink": "#8a2f2f" }, "layers": [{ "layer": "marks", "file": "marks/pintura-de-guerra.svg" }] },
 
     { "id": "background:pergaminho", "slot": "background", "name": "Pergaminho", "defaults": { "bg": "#d9c9a3" }, "layers": [{ "layer": "background", "file": "background/pergaminho.svg" }] },
     { "id": "background:arco", "slot": "background", "name": "Arco de pedra", "defaults": { "bg": "#7d7468" }, "layers": [{ "layer": "background", "file": "background/arco.svg" }] },

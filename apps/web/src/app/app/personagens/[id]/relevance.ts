@@ -31,6 +31,13 @@ export interface FitContext {
   originPowerNames: Set<string>;
   classSkills: Set<string>;
   proficiencies: Set<string>;
+  /**
+   * D&D 5e: armaduras que a classe sabe usar ("leve", "media", "pesada", "escudo"). No D&D ninguém
+   * tem proficiência por padrão; no Tormenta20 todos sabem usar armas simples e armaduras leves.
+   */
+  dndArmor?: Set<string>;
+  /** Perícias que a raça concede (D&D). */
+  speciesSkills: Set<string>;
 }
 
 const norm = (s: string) =>
@@ -47,6 +54,8 @@ export function fitContext(data: CharacterData, catalog: Catalog): FitContext {
   const origin = data.backgroundId ? catalog.get(data.backgroundId) : undefined;
   const skills = (cls?.data.skills ?? {}) as { fixed?: string[]; from?: string[]; oneOf?: string[][] };
   const traits = (sp?.data.traits as { name: string; summary: string }[] | undefined) ?? [];
+  const dndArmor = Array.isArray(cls?.data.armor) ? new Set(cls.data.armor as string[]) : undefined;
+  const baseProfs = dndArmor ? [] : ["armas simples", "armaduras leves"];
   return {
     classId: cls?.id,
     className: cls?.name,
@@ -56,10 +65,13 @@ export function fitContext(data: CharacterData, catalog: Catalog): FitContext {
     deityId,
     deityName: deityId ? catalog.get(deityId)?.name : undefined,
     originName: origin?.name,
-    originSkills: new Set((origin?.data.skillOptions as string[] | undefined) ?? []),
+    // Tormenta20: perícias que a origem oferece; D&D: perícias que o antecedente dá.
+    originSkills: new Set([...((origin?.data.skillOptions as string[] | undefined) ?? []), ...(Array.isArray(origin?.data.skills) ? (origin.data.skills as string[]) : [])]),
     originPowerNames: new Set(((origin?.data.powerOptions as string[] | undefined) ?? []).map(norm)),
     classSkills: new Set([...(skills.fixed ?? []), ...(skills.from ?? []), ...(skills.oneOf ?? []).flat()]),
-    proficiencies: new Set(["armas simples", "armaduras leves", ...((cls?.data.proficiencies as string[] | undefined) ?? [])]),
+    proficiencies: new Set([...baseProfs, ...((cls?.data.proficiencies as string[] | undefined) ?? [])]),
+    dndArmor,
+    speciesSkills: new Set(Array.isArray(sp?.data.skills) ? (sp.data.skills as string[]) : []),
   };
 }
 
@@ -117,11 +129,20 @@ export function fitOf(kind: string, entry: ContentEntry, ctx: FitContext, catalo
   }
 
   if (kind === "skill") {
+    if (ctx.dndArmor) {
+      // D&D: antecedente e raça dão perícias prontas; a classe escolhe da própria lista.
+      if (ctx.originSkills.has(entry.id)) return { fit: "origin", label: `Já vem do antecedente: ${ctx.originName}` };
+      if (ctx.speciesSkills.has(entry.id)) return { fit: "species", label: `Já vem da raça: ${ctx.speciesName}` };
+      if (ctx.classSkills.has(entry.id)) return fromClass;
+      return { fit: "other", label: "Fora da lista da classe" };
+    }
     if (ctx.classSkills.has(entry.id)) return fromClass;
     if (ctx.originSkills.has(entry.id)) return { fit: "origin", label: `Da sua origem: ${ctx.originName}` };
     if (citedBySpecies(entry, ctx)) return species;
     return { fit: "other", label: "Fora da lista da classe (só pelo bônus de Inteligência)" };
   }
+
+  if (kind === "equipment" && ctx.dndArmor) return dndEquipmentFit(entry, ctx);
 
   if (kind === "equipment") {
     const cat = String(entry.data.category);
@@ -146,6 +167,29 @@ export function fitOf(kind: string, entry: ContentEntry, ctx: FitContext, catalo
   }
 
   return general;
+}
+
+/** Equipamento no D&D 5e: proficiências da classe com armas (simples/marciais) e armaduras. */
+function dndEquipmentFit(entry: ContentEntry, ctx: FitContext): FitInfo {
+  const cat = String(entry.data.category);
+  const armor = ctx.dndArmor ?? new Set<string>();
+  if (cat === "arma") {
+    const need = entry.data.proficiency === "marciais" ? "armas marciais" : "armas simples";
+    const name = entry.name.toLocaleLowerCase("pt-BR");
+    if (ctx.proficiencies.has(need) || ctx.proficiencies.has(name)) return { fit: "class", label: `Sua classe sabe usar (${ctx.proficiencies.has(need) ? need : name})` };
+    return { fit: "other", label: `Sem proficiência (${need}): não soma o bônus de proficiência no ataque` };
+  }
+  if (cat === "armadura") {
+    const type = String(entry.data.armorType);
+    const label = { leve: "armaduras leves", media: "armaduras médias", pesada: "armaduras pesadas" }[type] ?? "armaduras";
+    if (armor.has(type)) return { fit: "class", label: `Sua classe sabe usar (${label})` };
+    return { fit: "other", label: `Sem proficiência com ${label}: desvantagem e sem magias` };
+  }
+  if (cat === "escudo") {
+    if (armor.has("escudo")) return { fit: "class", label: "Sua classe sabe usar (escudos)" };
+    return { fit: "other", label: "Sem proficiência com escudos" };
+  }
+  return { fit: "general", label: "Geral" };
 }
 
 /** Opções que aparecem no modo "Para você": tudo menos o que é de outra classe, divindade etc. */

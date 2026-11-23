@@ -1,0 +1,79 @@
+{
+ "warlock-pact-magic": {
+  "d": [
+   "Por meio de uma cerimônia oculta, você firmou um pacto com uma entidade misteriosa para obter poderes mágicos.",
+   "A entidade é uma voz nas sombras, de identidade incerta, mas a dádiva que ela lhe concede é concreta: a capacidade de lançar magias. Veja \"Magias\" para as regras de conjuração.",
+   "As informações abaixo explicam como usar essas regras com as magias de Bruxo, que aparecem na lista de magias de Bruxo mais adiante na descrição da classe.",
+   "Truques. Você conhece dois truques de Bruxo à sua escolha. Rajada Mística e Prestidigitação são os recomendados.",
+   "Sempre que ganhar um nível de Bruxo, pode trocar um dos truques desta característica por outro truque de Bruxo à sua escolha.",
+   "Ao chegar aos níveis de Bruxo 4 e 10, você aprende mais um truque de Bruxo à sua escolha, como mostra a coluna Truques da tabela de Características do Bruxo.",
+   "Espaços de Magia. A tabela de Características do Bruxo mostra quantos espaços de magia você tem para lançar suas magias de Bruxo de nível 1 a 5. A tabela também mostra o nível desses espaços, que são todos do mesmo nível. Você recupera todos os espaços de magia de Magia de Pacto gastos quando termina um Descanso Curto ou Longo.",
+   "Por exemplo, um Bruxo de nível 5 tem dois espaços de magia de nível 3. Para lançar a magia de nível 1 Enfeitiçar Pessoa, ele precisa gastar um desses espaços e a lança como magia de nível 3.",
+   "Magias Preparadas de Nível 1+. Você prepara a lista de magias de nível 1 ou superior que pode lançar com esta característica. Para começar, escolha duas magias de Bruxo de nível 1. Enfeitiçar Pessoa e Bruxaria são as recomendadas.",
+   "O número de magias na sua lista aumenta conforme você ganha níveis de Bruxo, como mostra a coluna Magias Preparadas da tabela de Características do Bruxo. Sempre que esse número aumentar, escolha magias de Bruxo adicionais até que o número de magias na sua lista seja igual ao da tabela. As magias escolhidas não podem ter nível maior que o mostrado na coluna Nível do Espaço da tabela para o seu nível. Ao chegar ao nível 6, por exemplo, você aprende uma nova magia de Bruxo, que pode ser de nível 1 a 3.",
+   "Se outra característica de Bruxo lhe der magias que você sempre tem preparadas, elas não contam no número de magias que você pode preparar com esta característica, mas fora isso contam como magias de Bruxo para você.",
+   "Trocar suas Magias Preparadas. Sempre que ganhar um nível de Bruxo, você pode trocar uma magia da sua lista por outra magia de Bruxo de um nível permitido.",
+   "Habilidade de Conjuração. Carisma é a habilidade de conjuração das suas magias de Bruxo.",
+   "Foco de Conjuração. Você pode usar um Foco Arcano como Foco de Conjuração para suas magias de Bruxo."
+  ]
+ },
+ "warlock-magical-cunning": {
+  "n": "Astúcia Mágica",
+  "d": ["Você pode realizar um rito esotérico por 1 minuto. Ao fim dele, recupera espaços de magia de Magia de Pacto gastos, até no máximo metade do seu máximo (arredondado para cima). Depois de usar esta característica, só pode usá-la de novo após terminar um Descanso Longo."]
+ },
+ "warlock-subclass": {
+  "n": "Subclasse de Bruxo",
+  "d": ["Você ganha uma subclasse de Bruxo à sua escolha. A subclasse Patrono Ínfero está detalhada depois da descrição desta classe. Uma subclasse é uma especialização que concede características em certos níveis de Bruxo. Pelo resto da sua carreira, você ganha cada característica da subclasse de nível igual ou menor que seu nível de Bruxo."]
+ },
+ "warlock-ability-score-improvement": {
+  "d": ["Você ganha o talento Aumento no Valor de Habilidade (veja \"Talentos\") ou outro talento à sua escolha para o qual se qualifique. Ganha esta característica de novo nos níveis de Bruxo 8, 12 e 16."]
+ },
+ "warlock-contact-patron": {
+  "n": "Contatar Patrono",
+  "d": [
+   "No passado, você costumava contatar seu patrono por meio de intermediários. Agora pode se comunicar diretamente; sempre tem a magia Contatar Outro Plano preparada. Com esta característica, pode lançar a magia sem gastar espaço de magia para contatar seu patrono, e passa automaticamente no teste de resistência da magia.",
+   "Depois de lançar a magia com esta característica, você só pode fazê-lo assim de novo após terminar um Descanso Longo."
+  ]
+ },
+ "warlock-mystic-arcanum": {
+  "n": "Arcana Mística",
+  "d": [
+   "Seu patrono lhe concede um segredo mágico chamado arcana. Escolha uma magia de Bruxo de nível 6 como essa arcana.",
+   "Você pode lançar a magia da sua arcana uma vez sem gastar espaço de magia e precisa terminar um Descanso Longo antes de lançá-la assim de novo.",
+   "Como mostra a tabela de Características do Bruxo, você ganha mais uma magia de Bruxo à sua escolha que pode ser lançada dessa forma ao chegar aos níveis de Bruxo 13 (magia de nível 7), 15 (magia de nível 8) e 17 (magia de nível 9). Você recupera todos os usos da sua Arcana Mística quando termina um Descanso Longo.",
+   "Sempre que ganhar um nível de Bruxo, pode trocar uma das magias da sua arcana por outra magia de Bruxo do mesmo nível."
+  ]
+ },
+ "warlock-eldritch-master": {
+  "d": ["Quando usa sua característica Astúcia Mágica, você recupera todos os espaços de magia de Magia de Pacto gastos."]
+ },
+ "fiend-patron-dark-ones-blessing": {
+  "d": ["Quando reduz um inimigo a 0 Pontos de Vida, você ganha Pontos de Vida Temporários iguais ao seu modificador de Carisma + seu nível de Bruxo (mínimo de 1 Ponto de Vida Temporário). Também recebe esse benefício se outra pessoa reduzir a 0 Pontos de Vida um inimigo a até 3 metros de você."]
+ },
+ "fiend-patron-fiend-spells": {
+  "n": "Magias Ínferas",
+  "d": [
+   "A magia do seu patrono garante que você sempre tenha certas magias prontas; ao chegar a um nível de Bruxo indicado na tabela de Magias Ínferas, você passa a ter sempre preparadas as magias listadas.",
+   "Magias Ínferas — Nível de Bruxo | Magias",
+   "3 | Mãos Flamejantes, Comando, Raio Ardente, Sugestão",
+   "5 | Bola de Fogo, Névoa Fétida",
+   "7 | Escudo de Fogo, Muralha de Fogo",
+   "9 | Missão, Praga de Insetos"
+  ]
+ },
+ "fiend-patron-dark-ones-own-luck": {
+  "d": [
+   "Você pode pedir ao seu patrono ínfero que altere o destino a seu favor. Quando faz um teste de atributo ou de resistência, pode usar esta característica para somar 1d10 ao resultado. Pode fazer isso depois de ver a rolagem, mas antes de qualquer efeito dela acontecer.",
+   "Você pode usar esta característica um número de vezes igual ao seu modificador de Carisma (no mínimo uma vez), mas não mais de uma vez por rolagem. Recupera todos os usos gastos quando termina um Descanso Longo."
+  ]
+ },
+ "fiend-patron-fiendish-resilience": {
+  "d": ["Sempre que terminar um Descanso Curto ou Longo, escolha um tipo de dano que não seja Energia. Você tem Resistência a esse tipo de dano até escolher outro com esta característica."]
+ },
+ "fiend-patron-hurl-through-hell": {
+  "d": [
+   "Uma vez por turno, quando atinge uma criatura com uma jogada de ataque, você pode tentar transportar o alvo instantaneamente pelos Planos Inferiores. O alvo deve passar num teste de resistência de Carisma contra a CD de resistência das suas magias ou desaparece e é arremessado por uma paisagem de pesadelo. O alvo sofre 8d10 de dano Psíquico se não for um Ínfero e fica com a condição Incapacitado até o fim do seu próximo turno, quando volta ao espaço que ocupava ou ao espaço desocupado mais próximo.",
+   "Depois de usar esta característica, você só pode usá-la de novo após terminar um Descanso Longo, a não ser que gaste um espaço de magia de Magia de Pacto (sem gastar ação) para recuperar o uso dela."
+  ]
+ }
+}

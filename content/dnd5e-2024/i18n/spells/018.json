@@ -1,0 +1,72 @@
+{
+ "message": {
+  "d": [
+   "Você aponta para uma criatura dentro do alcance e sussurra uma mensagem. O alvo (e somente ele) ouve a mensagem e pode responder num sussurro que só você ouve.",
+   "Você pode lançar esta magia através de objetos sólidos se conhecer o alvo e souber que ele está além da barreira. Silêncio mágico, 30 centímetros de pedra, metal ou madeira, ou uma folha fina de chumbo bloqueiam a magia."
+  ],
+  "m": "Um fio de cobre."
+ },
+ "meteor-swarm": {
+  "d": [
+   "Orbes de fogo flamejantes despencam no chão em quatro pontos diferentes que você consiga ver dentro do alcance. Cada criatura numa Esfera de 12 metros de raio centrada em cada um desses pontos faz um teste de resistência de Destreza. A criatura sofre 20d6 de dano de Fogo e 20d6 de dano de Concussão se falhar, ou metade se passar. Uma criatura na área de mais de uma Esfera de fogo é afetada só uma vez.",
+   "Um objeto não mágico que não esteja sendo vestido nem carregado também sofre o dano se estiver na área da magia e começa a queimar se for inflamável."
+  ]
+ },
+ "mind-blank": {
+  "d": ["Até a magia terminar, uma criatura voluntária que você toca tem Imunidade a dano Psíquico e à condição Enfeitiçado. O alvo também não é afetado por nada que sinta suas emoções ou sua tendência, leia seus pensamentos ou detecte magicamente sua localização, e nenhuma magia (nem mesmo Desejo) pode reunir informações sobre o alvo, observá-lo à distância nem controlar sua mente."]
+ },
+ "mind-spike": {
+  "n": "Estilhaço Mental",
+  "d": ["Você crava um estilhaço de energia psiônica na mente de uma criatura que consiga ver dentro do alcance. O alvo faz um teste de resistência de Sabedoria, sofrendo 3d8 de dano Psíquico se falhar, ou metade se passar. Se falhar, você também sempre sabe a localização do alvo até a magia terminar, mas apenas enquanto os dois estiverem no mesmo plano de existência. Enquanto tiver esse conhecimento, o alvo não pode ficar escondido de você e, se tiver a condição Invisível, não ganha nenhum benefício dela contra você."]
+ },
+ "minor-illusion": {
+  "d": [
+   "Você cria um som ou a imagem de um objeto dentro do alcance que dura pela duração. Veja as descrições abaixo para os efeitos de cada um. A ilusão termina se você lançar esta magia de novo.",
+   "Se uma criatura realizar a ação Estudar para examinar o som ou a imagem, pode determinar que é uma ilusão passando num teste de Inteligência (Investigação) contra a CD de resistência das suas magias. Se uma criatura perceber a ilusão pelo que ela é, a ilusão fica tênue para ela.",
+   "Som. Se criar um som, o volume pode ir de um sussurro a um grito. Pode ser sua voz, a voz de outra pessoa, o rugido de um leão, batidas de tambor ou qualquer outro som que escolher. O som continua sem interrupção por toda a duração, ou você pode fazer sons separados em momentos diferentes antes de a magia terminar.",
+   "Imagem. Se criar a imagem de um objeto (como uma cadeira, pegadas de lama ou um pequeno baú), ela não pode ser maior que um Cubo de 1,5 metro. A imagem não pode criar som, luz, cheiro nem qualquer outro efeito sensorial. A interação física com a imagem revela que ela é uma ilusão, porque as coisas a atravessam."
+  ]
+ },
+ "mirage-arcane": {
+  "d": [
+   "Você faz o terreno numa área de até 1,5 km de lado parecer, soar, cheirar e até ter a sensação ao toque de outro tipo de terreno. Campos abertos ou uma estrada podem parecer um pântano, uma colina, uma fenda ou outro terreno acidentado ou intransponível. Um lago pode parecer um prado gramado, um precipício pode parecer uma encosta suave, e uma ravina cheia de pedras pode parecer uma estrada larga e lisa.",
+   "Da mesma forma, você pode alterar a aparência de estruturas ou acrescentá-las onde não existem. A magia não disfarça, esconde nem acrescenta criaturas.",
+   "A ilusão inclui elementos sonoros, visuais, táteis e olfativos, então pode transformar chão livre em Terreno Difícil (ou vice-versa) ou atrapalhar de outra forma o movimento pela área. Qualquer pedaço do terreno ilusório (como uma pedra ou um graveto) retirado da área da magia desaparece imediatamente.",
+   "Criaturas com Visão Verdadeira conseguem ver através da ilusão a forma real do terreno; no entanto, todos os outros elementos da ilusão permanecem, então, embora a criatura saiba da presença da ilusão, ainda pode interagir fisicamente com ela."
+  ]
+ },
+ "mirror-image": {
+  "d": [
+   "Três duplicatas ilusórias suas aparecem no seu espaço. Até a magia terminar, as duplicatas se movem com você e imitam suas ações, trocando de posição de modo que é impossível saber qual imagem é a real.",
+   "Cada vez que uma criatura o acertar com uma jogada de ataque durante a magia, role um d6 para cada duplicata restante. Se algum dos d6 tirar 3 ou mais, uma das duplicatas é atingida em vez de você e é destruída. Fora isso, as duplicatas ignoram todos os outros danos e efeitos. A magia termina quando as três duplicatas são destruídas. Uma criatura não é afetada por esta magia se tiver a condição Cego, Percepção às Cegas ou Visão Verdadeira."
+  ]
+ },
+ "mislead": {
+  "d": [
+   "Você fica com a condição Invisível ao mesmo tempo que um duplo ilusório seu aparece onde você está. O duplo dura pela duração, mas a invisibilidade termina imediatamente depois que você faz uma jogada de ataque, causa dano ou lança uma magia.",
+   "Com uma ação de Magia, você pode mover o duplo ilusório até o dobro do seu Deslocamento e fazê-lo gesticular, falar e se comportar como quiser. Ele é intangível e invulnerável.",
+   "Você consegue ver pelos olhos dele e ouvir pelos ouvidos dele como se estivesse onde ele está."
+  ]
+ },
+ "misty-step": {
+  "d": ["Envolto por um instante numa névoa prateada, você se teletransporta até 9 metros para um espaço desocupado que consiga ver."]
+ },
+ "modify-memory": {
+  "d": [
+   "Você tenta remodelar as memórias de outra criatura. Uma criatura que você consiga ver dentro do alcance faz um teste de resistência de Sabedoria. Se você estiver lutando contra ela, ela tem Vantagem no teste. Se falhar, o alvo fica com a condição Enfeitiçado pela duração. Enquanto estiver Enfeitiçado assim, também fica com a condição Incapacitado e alheio ao que está ao redor, embora consiga ouvi-lo. Se sofrer qualquer dano ou for alvo de outra magia, esta magia termina, e nenhuma memória é modificada.",
+   "Enquanto o feitiço durar, você pode afetar a memória do alvo sobre um acontecimento que ele viveu nas últimas 24 horas e que não durou mais de 10 minutos. Pode eliminar permanentemente toda a memória do acontecimento, permitir que o alvo o relembre com clareza perfeita, mudar a memória dele sobre os detalhes ou criar a memória de outro acontecimento.",
+   "Você precisa falar com o alvo para descrever como as memórias dele são afetadas, e ele precisa entender seu idioma para que as memórias modificadas se fixem. A mente dele preenche quaisquer lacunas nos detalhes da sua descrição. Se a magia terminar antes de você terminar de descrever as memórias modificadas, a memória da criatura não é alterada. Caso contrário, as memórias modificadas se fixam quando a magia termina.",
+   "Uma memória modificada não afeta necessariamente o comportamento da criatura, sobretudo se contradisser as inclinações naturais, a tendência ou as crenças dela. Uma memória modificada ilógica, como uma falsa lembrança de quanto a criatura gostou de nadar em ácido, é descartada como um sonho ruim. O Mestre pode considerar uma memória modificada absurda demais para afetar a criatura.",
+   "Uma magia Remover Maldição ou Restauração Maior lançada no alvo restaura a memória verdadeira da criatura."
+  ],
+  "h": ["Você pode alterar as memórias do alvo sobre um acontecimento ocorrido há até 7 dias (espaço de magia de nível 6), 30 dias (nível 7), 365 dias (nível 8) ou em qualquer momento do passado da criatura (nível 9)."]
+ },
+ "moonbeam": {
+  "d": [
+   "Um feixe prateado de luz pálida desce num Cilindro de 1,5 metro de raio e 12 metros de altura, centrado num ponto dentro do alcance. Até a magia terminar, Penumbra preenche o Cilindro, e você pode realizar uma ação de Magia em turnos posteriores para mover o Cilindro até 18 metros.",
+   "Quando o Cilindro aparece, cada criatura nele faz um teste de resistência de Constituição. Se falhar, sofre 2d10 de dano Radiante e, se estiver com a forma mudada (pela magia Metamorfose, por exemplo), volta à forma verdadeira e não pode mudar de forma até sair do Cilindro. Se passar, sofre apenas metade do dano. Uma criatura também faz esse teste quando a área da magia entra no espaço dela e quando entra na área ou termina o turno ali. A criatura só faz esse teste uma vez por turno."
+  ],
+  "h": ["O dano aumenta em 1d10 para cada nível de espaço de magia acima de 2."],
+  "m": "Uma folha de planta lunária."
+ }
+}

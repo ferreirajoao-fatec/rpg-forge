@@ -1,0 +1,153 @@
+{
+ "superior-hunters-defense-uncanny-dodge": {
+  "n": "Defesa Superior do Caçador: Esquiva Sobrenatural",
+  "d": ["Quando um atacante que você consiga ver o atinge com um ataque, você pode usar sua reação para reduzir à metade o dano do ataque contra você."]
+ },
+ "feral-senses": {
+  "n": "Sentidos Selvagens",
+  "d": [
+   "No 18º nível, você ganha sentidos sobrenaturais que ajudam a lutar contra criaturas que não consegue ver. Quando ataca uma criatura que não consegue ver, isso não impõe desvantagem nas suas jogadas de ataque contra ela.",
+   "Você também sabe a localização de qualquer criatura invisível a até 9 metros de você, desde que ela não esteja escondida de você e você não esteja cego nem surdo."
+  ]
+ },
+ "foe-slayer": {
+  "n": "Matador de Inimigos",
+  "d": ["No 20º nível, você se torna um caçador sem igual dos seus inimigos. Uma vez em cada um dos seus turnos, pode somar seu modificador de Sabedoria à jogada de ataque ou de dano de um ataque contra um dos seus inimigos favoritos. Pode decidir usar esta característica antes ou depois da jogada, mas antes de qualquer efeito dela ser aplicado."]
+ },
+ "rogue-expertise-1": {
+  "d": [
+   "No 1º nível, escolha duas das suas proficiências em perícia, ou uma proficiência em perícia e sua proficiência com ferramentas de ladrão. Seu bônus de proficiência é dobrado em qualquer teste de habilidade que use uma das proficiências escolhidas.",
+   "No 6º nível, você pode escolher mais duas proficiências (em perícias ou com ferramentas de ladrão) para receber este benefício."
+  ]
+ },
+ "sneak-attack": {
+  "n": "Ataque Furtivo",
+  "d": [
+   "A partir do 1º nível, você sabe golpear com sutileza e aproveitar a distração do inimigo. Uma vez por turno, pode causar 1d6 de dano extra a uma criatura que atingir com um ataque se tiver vantagem na jogada de ataque. O ataque precisa usar uma arma de acuidade ou à distância.",
+   "Você não precisa de vantagem na jogada de ataque se outro inimigo do alvo estiver a até 1,5 metro dele, esse inimigo não estiver incapacitado e você não tiver desvantagem na jogada.",
+   "O dano extra aumenta conforme você ganha níveis nesta classe, como mostra a coluna Ataque Furtivo da tabela do Ladino."
+  ]
+ },
+ "thieves-cant": {
+  "n": "Gíria de Ladrão",
+  "d": [
+   "Durante seu treinamento de ladino, você aprendeu a gíria de ladrão, uma mistura secreta de dialeto, jargão e código que permite esconder mensagens numa conversa aparentemente normal. Só outra criatura que conheça a gíria de ladrão entende essas mensagens. Transmitir uma mensagem assim leva quatro vezes mais tempo do que dizer a mesma ideia diretamente.",
+   "Além disso, você entende um conjunto de sinais e símbolos secretos usados para passar mensagens curtas e simples, como se uma área é perigosa ou território de uma guilda de ladrões, se há saque por perto ou se as pessoas de uma área são alvos fáceis ou oferecem esconderijo a ladrões em fuga."
+  ]
+ },
+ "cunning-action": {
+  "n": "Ação Ardilosa",
+  "d": ["A partir do 2º nível, seu raciocínio rápido e sua agilidade permitem se mover e agir depressa. Você pode usar uma ação bônus em cada um dos seus turnos de combate. Essa ação só pode ser usada para realizar a ação Disparada, Desengajar ou Esconder."]
+ },
+ "roguish-archetype": {
+  "n": "Arquétipo de Ladino",
+  "d": ["No 3º nível, você escolhe um arquétipo que imita ao exercer suas habilidades de ladino, como o Ladrão. Outros arquétipos estão no material original. O arquétipo escolhido concede características no 3º nível e depois no 9º, 13º e 17º."]
+ },
+ "fast-hands": {
+  "n": "Mãos Rápidas",
+  "d": ["A partir do 3º nível, você pode usar a ação bônus concedida por Ação Ardilosa para fazer um teste de Destreza (Prestidigitação), usar suas ferramentas de ladrão para desarmar uma armadilha ou abrir uma fechadura, ou realizar a ação Usar um Objeto."]
+ },
+ "second-story-work": {
+  "n": "Trabalho no Segundo Andar",
+  "d": [
+   "Quando escolhe este arquétipo, no 3º nível, você ganha a capacidade de escalar mais rápido que o normal; escalar não lhe custa mais movimento extra.",
+   "Além disso, num salto com corrida, a distância que você alcança aumenta em 30 centímetros por ponto do seu modificador de Destreza."
+  ]
+ },
+ "rogue-ability-score-improvement-1": {
+  "d": ["Ao chegar ao 4º nível, e de novo no 8º, 10º, 12º, 16º e 19º, você pode aumentar um valor de habilidade à sua escolha em 2, ou dois valores de habilidade à sua escolha em 1. Como de costume, não pode aumentar um valor de habilidade acima de 20 com esta característica."]
+ },
+ "uncanny-dodge": {
+  "n": "Esquiva Sobrenatural",
+  "d": ["A partir do 5º nível, quando um atacante que você consiga ver o atinge com um ataque, você pode usar sua reação para reduzir à metade o dano do ataque contra você."]
+ },
+ "rogue-evasion": {
+  "d": ["A partir do 7º nível, você consegue se esquivar com agilidade de certos efeitos de área, como o sopro de fogo de um dragão vermelho ou a magia tempestade de gelo. Quando for alvo de um efeito que permite um teste de resistência de Destreza para sofrer só metade do dano, você não sofre dano se passar e sofre só metade se falhar."]
+ },
+ "roguish-archetype-improvement-1": { "n": "Característica do Arquétipo de Ladino" },
+ "supreme-sneak": {
+  "n": "Furtividade Suprema",
+  "d": ["A partir do 9º nível, você tem vantagem num teste de Destreza (Furtividade) se não se mover mais que metade do seu deslocamento no mesmo turno."]
+ },
+ "reliable-talent": {
+  "n": "Talento Confiável",
+  "d": ["No 11º nível, você já refinou as perícias escolhidas até quase a perfeição. Sempre que fizer um teste de habilidade que permita somar seu bônus de proficiência, pode tratar um resultado de 9 ou menos no d20 como 10."]
+ },
+ "use-magic-device": {
+  "n": "Usar Instrumento Mágico",
+  "d": ["No 13º nível, você já aprendeu o bastante sobre o funcionamento da magia para improvisar o uso de itens mesmo quando não foram feitos para você. Você ignora todos os requisitos de classe, raça e nível para usar itens mágicos."]
+ },
+ "blindsense": {
+  "n": "Sentido Cego",
+  "d": ["A partir do 14º nível, se puder ouvir, você sabe a localização de qualquer criatura escondida ou invisível a até 3 metros de você."]
+ },
+ "slippery-mind": {
+  "n": "Mente Escorregadia",
+  "d": ["No 15º nível, você adquiriu maior força mental. Ganha proficiência em testes de resistência de Sabedoria."]
+ },
+ "thiefs-reflexes": {
+  "n": "Reflexos de Ladrão",
+  "d": ["Ao chegar ao 17º nível, você se tornou hábil em armar emboscadas e escapar depressa do perigo. Pode ter dois turnos na primeira rodada de qualquer combate. O primeiro turno é na sua iniciativa normal e o segundo na sua iniciativa menos 10. Você não pode usar esta característica quando é surpreendido."]
+ },
+ "elusive": {
+  "n": "Evasivo",
+  "d": ["A partir do 18º nível, você é tão evasivo que os atacantes raramente levam a melhor contra você. Nenhuma jogada de ataque tem vantagem contra você enquanto não estiver incapacitado."]
+ },
+ "stroke-of-luck": {
+  "n": "Golpe de Sorte",
+  "d": [
+   "No 20º nível, você tem um talento sobrenatural para ter sucesso quando precisa. Se seu ataque errar um alvo dentro do alcance, você pode transformar o erro em acerto. Em vez disso, se falhar num teste de habilidade, pode tratar o resultado do d20 como 20.",
+   "Depois de usar esta característica, você precisa terminar um descanso curto ou longo para usá-la de novo."
+  ]
+ },
+ "spellcasting-sorcerer": {
+  "n": "Conjuração: Feiticeiro",
+  "d": ["Um acontecimento no seu passado, ou na vida de um dos seus pais ou ancestrais, deixou uma marca indelével em você e o impregnou de magia arcana. Essa fonte de magia, qualquer que seja sua origem, alimenta suas magias."]
+ },
+ "sorcerous-origin": {
+  "n": "Origem de Feitiçaria",
+  "d": [
+   "Escolha uma origem de feitiçaria, que descreve a fonte do seu poder mágico inato, como a Linhagem Dracônica.",
+   "A escolha concede características quando você a faz, no 1º nível, e de novo no 6º, 14º e 18º."
+  ]
+ },
+ "dragon-ancestor": {
+  "n": "Ancestral Dracônico",
+  "d": [
+   "No 1º nível, você escolhe um tipo de dragão como seu ancestral. O tipo de dano associado a cada dragão é usado por características que você ganha depois.",
+   "Você sabe falar, ler e escrever Dracônico. Além disso, sempre que fizer um teste de Carisma ao interagir com dragões, seu bônus de proficiência é dobrado se se aplicar ao teste."
+  ]
+ },
+ "dragon-ancestor-black---acid-damage": { "n": "Ancestral Dracônico: Negro - Dano de Ácido" },
+ "dragon-ancestor-blue---lightning-damage": { "n": "Ancestral Dracônico: Azul - Dano Elétrico" },
+ "dragon-ancestor-brass---fire-damage": { "n": "Ancestral Dracônico: Latão - Dano de Fogo" },
+ "dragon-ancestor-bronze---lightning-damage": { "n": "Ancestral Dracônico: Bronze - Dano Elétrico" },
+ "dragon-ancestor-copper---acid-damage": { "n": "Ancestral Dracônico: Cobre - Dano de Ácido" },
+ "dragon-ancestor-gold---fire-damage": { "n": "Ancestral Dracônico: Ouro - Dano de Fogo" },
+ "dragon-ancestor-green---poison-damage": { "n": "Ancestral Dracônico: Verde - Dano de Veneno" },
+ "dragon-ancestor-red---fire-damage": { "n": "Ancestral Dracônico: Vermelho - Dano de Fogo" },
+ "dragon-ancestor-silver---cold-damage": { "n": "Ancestral Dracônico: Prata - Dano de Frio" },
+ "dragon-ancestor-white---cold-damage": { "n": "Ancestral Dracônico: Branco - Dano de Frio" },
+ "draconic-resilience": {
+  "n": "Resiliência Dracônica",
+  "d": [
+   "Conforme a magia flui pelo seu corpo, traços físicos dos seus ancestrais dracônicos emergem. No 1º nível, seu máximo de pontos de vida aumenta em 1, e aumenta em 1 de novo sempre que você ganha um nível nesta classe.",
+   "Além disso, partes da sua pele ficam cobertas por uma fina camada brilhante de escamas parecidas com as de um dragão. Quando não estiver usando armadura, sua CA é 13 + seu modificador de Destreza."
+  ]
+ },
+ "font-of-magic": {
+  "n": "Fonte de Magia",
+  "d": [
+   "No 2º nível, você acessa uma fonte profunda de magia dentro de si. Essa fonte é representada por pontos de feitiçaria, que permitem criar vários efeitos mágicos.",
+   "Pontos de Feitiçaria",
+   "Você tem 2 pontos de feitiçaria e ganha mais ao chegar a níveis mais altos, como mostra a coluna Pontos de Feitiçaria da tabela do Feiticeiro. Nunca pode ter mais pontos de feitiçaria do que a tabela mostra para o seu nível. Recupera todos os pontos de feitiçaria gastos quando termina um descanso longo."
+  ]
+ },
+ "flexible-casting-creating-spell-slots": {
+  "n": "Conjuração Flexível: Criar Espaços de Magia",
+  "d": [
+   "Você pode transformar pontos de feitiçaria não gastos num espaço de magia com uma ação bônus no seu turno. A tabela Criar Espaços de Magia mostra o custo para criar um espaço de cada nível. Você não pode criar espaços de nível maior que o 5º.",
+   "Qualquer espaço de magia criado com esta característica some quando você termina um descanso longo."
+  ]
+ }
+}

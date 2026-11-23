@@ -1,0 +1,1084 @@
+[
+ {
+  "id": "subclass:path-of-the-berserker",
+  "kind": "subclass",
+  "name": "Caminho do Furioso",
+  "summary": "Bárbaros que trilham o Caminho do Furioso direcionam sua Fúria principalmente à violência. O caminho deles é de fúria desenfreada, e eles se deliciam com o caos da batalha…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subclasses"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "allOf",
+   "of": [
+    {
+     "type": "hasClass",
+     "classId": "class:barbarian"
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:barbarian",
+     "level": 3
+    }
+   ]
+  },
+  "roles": [],
+  "data": {
+   "classId": "class:barbarian",
+   "features": [
+    {
+     "id": "berserker-frenzy",
+     "level": 3,
+     "name": "Frenesi",
+     "summary": "Se usar Ataque Descuidado com a Fúria ativa, você causa dano extra ao primeiro alvo que atingir no seu turno com um ataque baseado em Força. Para determinar o dano extra, role um número de d6 igual ao seu bônus de Dano de Fúria e some os…",
+     "text": [
+      "Se usar Ataque Descuidado com a Fúria ativa, você causa dano extra ao primeiro alvo que atingir no seu turno com um ataque baseado em Força. Para determinar o dano extra, role um número de d6 igual ao seu bônus de Dano de Fúria e some os resultados. O dano é do mesmo tipo da arma ou do Ataque Desarmado usado no ataque."
+     ]
+    },
+    {
+     "id": "berserker-mindless-rage",
+     "level": 6,
+     "name": "Fúria Irracional",
+     "summary": "Você tem Imunidade às condições Enfeitiçado e Amedrontado enquanto sua Fúria estiver ativa. Se estiver Enfeitiçado ou Amedrontado quando entrar em Fúria, a condição termina.",
+     "text": [
+      "Você tem Imunidade às condições Enfeitiçado e Amedrontado enquanto sua Fúria estiver ativa. Se estiver Enfeitiçado ou Amedrontado quando entrar em Fúria, a condição termina."
+     ]
+    },
+    {
+     "id": "berserker-retaliation",
+     "level": 10,
+     "name": "Retaliação",
+     "summary": "Quando sofrer dano de uma criatura a até 1,5 metro de você, pode usar uma Reação para fazer um ataque corpo a corpo contra ela, usando uma arma ou um Ataque Desarmado.",
+     "text": [
+      "Quando sofrer dano de uma criatura a até 1,5 metro de você, pode usar uma Reação para fazer um ataque corpo a corpo contra ela, usando uma arma ou um Ataque Desarmado."
+     ]
+    },
+    {
+     "id": "berserker-intimidating-presence",
+     "level": 14,
+     "name": "Presença Intimidante",
+     "summary": "Com uma Ação Bônus, você pode aterrorizar os outros com sua presença ameaçadora e seu poder primitivo.",
+     "text": [
+      "Com uma Ação Bônus, você pode aterrorizar os outros com sua presença ameaçadora e seu poder primitivo.",
+      "Quando faz isso, cada criatura à sua escolha numa Emanação de 9 metros a partir de você deve fazer um teste de resistência de Sabedoria (CD 8 + seu modificador de Força + seu Bônus de Proficiência). Se falhar,",
+      "a criatura fica com a condição Amedrontado por 1 minuto. No fim de cada turno da criatura Amedrontada, ela repete o teste, encerrando o efeito em si mesma se passar.",
+      "Depois de usar esta característica, você só pode usá-la de novo após terminar um Descanso Longo, a não ser que gaste um uso de Fúria (sem gastar ação) para recuperar o uso dela."
+     ]
+    }
+   ],
+   "spells": [],
+   "text": [
+    "Bárbaros que trilham o Caminho do Furioso direcionam sua Fúria principalmente à violência. O caminho deles é de fúria desenfreada, e eles se deliciam com o caos da batalha enquanto deixam a Fúria dominá-los e fortalecê-los."
+   ]
+  }
+ },
+ {
+  "id": "subclass:college-of-lore",
+  "kind": "subclass",
+  "name": "Colégio do Conhecimento",
+  "summary": "Os bardos do Colégio do Conhecimento reúnem magias e segredos de fontes diversas, como tomos eruditos, ritos místicos e histórias de camponeses. Os membros do colégio se encontram…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subclasses"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "allOf",
+   "of": [
+    {
+     "type": "hasClass",
+     "classId": "class:bard"
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:bard",
+     "level": 3
+    }
+   ]
+  },
+  "roles": [],
+  "data": {
+   "classId": "class:bard",
+   "features": [
+    {
+     "id": "lore-cutting-words",
+     "level": 3,
+     "name": "Palavras Cortantes",
+     "summary": "Você aprende a usar sua sagacidade para distrair, confundir e minar de forma sobrenatural a confiança e a competência dos outros. Quando uma criatura que você consiga ver a até 18 metros faz uma jogada de dano ou tem sucesso num teste de…",
+     "text": [
+      "Você aprende a usar sua sagacidade para distrair, confundir e minar de forma sobrenatural a confiança e a competência dos outros. Quando uma criatura que você consiga ver a até 18 metros faz uma jogada de dano ou tem sucesso num teste de atributo ou jogada de ataque, você pode usar uma Reação para gastar um uso de Inspiração de Bardo; role o dado de Inspiração de Bardo e subtraia o resultado da jogada da criatura, reduzindo o dano ou possivelmente transformando o sucesso em falha."
+     ]
+    },
+    {
+     "id": "lore-bonus-proficiencies",
+     "level": 3,
+     "name": "Proficiências Adicionais",
+     "summary": "Você ganha proficiência em três perícias à sua escolha.",
+     "text": [
+      "Você ganha proficiência em três perícias à sua escolha."
+     ]
+    },
+    {
+     "id": "lore-magical-discoveries",
+     "level": 6,
+     "name": "Descobertas Mágicas",
+     "summary": "Você aprende duas magias à sua escolha. Elas podem vir da lista de magias de Clérigo, Druida ou Mago, em qualquer combinação (veja a seção de cada classe para a lista de magias dela). Cada magia escolhida precisa ser um truque ou uma magia…",
+     "text": [
+      "Você aprende duas magias à sua escolha. Elas podem vir da lista de magias de Clérigo, Druida ou Mago, em qualquer combinação (veja a seção de cada classe para a lista de magias dela). Cada magia escolhida precisa ser um truque ou uma magia para a qual você tenha espaços de magia, como mostra a tabela de Características do Bardo.",
+      "Você sempre tem as magias escolhidas preparadas e, sempre que ganhar um nível de Bardo, pode trocar uma delas por outra que atenda a esses requisitos."
+     ]
+    },
+    {
+     "id": "lore-peerless-skill",
+     "level": 14,
+     "name": "Perícia Inigualável",
+     "summary": "Quando faz um teste de atributo ou jogada de ataque e falha, você pode gastar um uso de Inspiração de Bardo; role o dado de Inspiração de Bardo e some o resultado ao d20, possivelmente transformando a falha em sucesso. Se mesmo assim…",
+     "text": [
+      "Quando faz um teste de atributo ou jogada de ataque e falha, você pode gastar um uso de Inspiração de Bardo; role o dado de Inspiração de Bardo e some o resultado ao d20, possivelmente transformando a falha em sucesso. Se mesmo assim falhar, a Inspiração de Bardo não é gasta."
+     ]
+    }
+   ],
+   "spells": [],
+   "text": [
+    "Os bardos do Colégio do Conhecimento reúnem magias e segredos de fontes diversas, como tomos eruditos, ritos místicos e histórias de camponeses. Os membros do colégio se encontram em bibliotecas e universidades para trocar conhecimentos. Também se reúnem em festivais ou eventos de Estado, onde podem expor a corrupção, desvendar mentiras e zombar de figuras de autoridade cheias de si."
+   ]
+  }
+ },
+ {
+  "id": "subclass:life-domain",
+  "kind": "subclass",
+  "name": "Domínio da Vida",
+  "summary": "O Domínio da Vida se concentra na energia positiva que ajuda a sustentar toda a vida no multiverso. Clérigos que recorrem a este domínio são mestres da cura e usam essa força…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subclasses"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "allOf",
+   "of": [
+    {
+     "type": "hasClass",
+     "classId": "class:cleric"
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:cleric",
+     "level": 3
+    }
+   ]
+  },
+  "roles": [],
+  "data": {
+   "classId": "class:cleric",
+   "features": [
+    {
+     "id": "life-disciple-of-life",
+     "level": 3,
+     "name": "Discípulo da Vida",
+     "summary": "Quando uma magia que você lança com um espaço de magia restaura Pontos de Vida de uma criatura, ela recupera Pontos de Vida adicionais no turno em que você lança a magia. Os Pontos de Vida adicionais são iguais a 2 + o nível do espaço de…",
+     "text": [
+      "Quando uma magia que você lança com um espaço de magia restaura Pontos de Vida de uma criatura, ela recupera Pontos de Vida adicionais no turno em que você lança a magia. Os Pontos de Vida adicionais são iguais a 2 + o nível do espaço de magia."
+     ]
+    },
+    {
+     "id": "life-domain-spells",
+     "level": 3,
+     "name": "Magias do Domínio da Vida",
+     "summary": "Sua ligação com este domínio divino garante que você sempre tenha certas magias prontas. Ao chegar a um nível de Clérigo indicado na tabela de Magias do Domínio da Vida, você passa a ter sempre preparadas as magias listadas.",
+     "text": [
+      "Sua ligação com este domínio divino garante que você sempre tenha certas magias prontas. Ao chegar a um nível de Clérigo indicado na tabela de Magias do Domínio da Vida, você passa a ter sempre preparadas as magias listadas.",
+      "Magias do Domínio da Vida",
+      "Nível de Clérigo | Magias Preparadas",
+      "3 | Auxílio, Bênção, Curar Ferimentos, Restauração Menor",
+      "5 | Palavra Curativa em Massa, Revivificar",
+      "7 | Aura de Vida, Proteção contra a Morte",
+      "9 | Restauração Maior, Curar Ferimentos em Massa"
+     ]
+    },
+    {
+     "id": "life-preserve-life",
+     "level": 3,
+     "name": "Preservar a Vida",
+     "summary": "Com uma ação de Magia, você apresenta seu Símbolo Sagrado e gasta um uso de Canalizar Divindade para evocar energia curativa capaz de restaurar um número de Pontos de Vida igual a cinco vezes o seu nível de Clérigo. Escolha criaturas…",
+     "text": [
+      "Com uma ação de Magia, você apresenta seu Símbolo Sagrado e gasta um uso de Canalizar Divindade para evocar energia curativa capaz de restaurar um número de Pontos de Vida igual a cinco vezes o seu nível de Clérigo. Escolha criaturas Sangrando a até 9 metros de você (você pode estar entre elas) e divida esses Pontos de Vida entre elas. Esta característica não pode restaurar uma criatura acima da metade do seu máximo de Pontos de Vida."
+     ]
+    },
+    {
+     "id": "life-blessed-healer",
+     "level": 6,
+     "name": "Curandeiro Abençoado",
+     "summary": "As magias de cura que você lança em outros também curam você. Logo depois de lançar, com um espaço de magia, uma magia que restaura Pontos de Vida de uma ou mais criaturas além de você, você recupera Pontos de Vida iguais a 2 + o nível do…",
+     "text": [
+      "As magias de cura que você lança em outros também curam você. Logo depois de lançar, com um espaço de magia, uma magia que restaura Pontos de Vida de uma ou mais criaturas além de você, você recupera Pontos de Vida iguais a 2 + o nível do espaço de magia."
+     ]
+    },
+    {
+     "id": "life-supreme-healing",
+     "level": 17,
+     "name": "Cura Suprema",
+     "summary": "Quando normalmente rolaria um ou mais dados para restaurar Pontos de Vida de uma criatura com uma magia ou com Canalizar Divindade, não role esses dados; use o maior resultado possível de cada um. Por exemplo, em vez de restaurar 2d6…",
+     "text": [
+      "Quando normalmente rolaria um ou mais dados para restaurar Pontos de Vida de uma criatura com uma magia ou com Canalizar Divindade, não role esses dados; use o maior resultado possível de cada um. Por exemplo, em vez de restaurar 2d6 Pontos de Vida de uma criatura com uma magia, você restaura 12."
+     ]
+    }
+   ],
+   "spells": [],
+   "text": [
+    "O Domínio da Vida se concentra na energia positiva que ajuda a sustentar toda a vida no multiverso. Clérigos que recorrem a este domínio são mestres da cura e usam essa força vital para curar muitos males.",
+    "A própria existência depende da energia positiva associada a este domínio, por isso um Clérigo de quase qualquer tradição religiosa pode escolhê-lo. O domínio é associado sobretudo a divindades da agricultura, deuses da cura ou da resistência e deuses do lar e da comunidade. Ordens religiosas dedicadas à cura também buscam a magia deste domínio."
+   ]
+  }
+ },
+ {
+  "id": "subclass:circle-of-the-land",
+  "kind": "subclass",
+  "name": "Círculo da Terra",
+  "summary": "O Círculo da Terra reúne místicos e sábios que guardam conhecimentos e ritos antigos. Esses Druidas se encontram em círculos sagrados de árvores ou de pedras erguidas para…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subclasses"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "allOf",
+   "of": [
+    {
+     "type": "hasClass",
+     "classId": "class:druid"
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:druid",
+     "level": 3
+    }
+   ]
+  },
+  "roles": [],
+  "data": {
+   "classId": "class:druid",
+   "features": [
+    {
+     "id": "land-lands-aid",
+     "level": 3,
+     "name": "Auxílio da Terra",
+     "summary": "Com uma ação de Magia, você pode gastar um uso de Forma Selvagem e escolher um ponto a até 18 metros de você. Flores que dão vitalidade e espinhos que drenam a vida aparecem por um momento numa Esfera de 3 metros de raio centrada nesse…",
+     "text": [
+      "Com uma ação de Magia, você pode gastar um uso de Forma Selvagem e escolher um ponto a até 18 metros de você. Flores que dão vitalidade e espinhos que drenam a vida aparecem por um momento numa Esfera de 3 metros de raio centrada nesse ponto. Cada criatura à sua escolha na Esfera deve fazer um teste de resistência de Constituição contra a CD de resistência das suas magias, sofrendo 2d6 de dano Necrótico se falhar, ou metade se passar. Uma criatura à sua escolha na área recupera 2d6 Pontos de Vida.",
+      "O dano e a cura aumentam em 1d6 quando você chega aos níveis de Druida 10 (3d6) e 14 (4d6)."
+     ]
+    },
+    {
+     "id": "land-circle-of-the-land-spells",
+     "level": 3,
+     "name": "Magias do Círculo da Terra",
+     "summary": "Sempre que terminar um Descanso Longo, escolha um tipo de terra: árida, polar, temperada ou tropical. Consulte a tabela abaixo correspondente ao tipo escolhido; você tem preparadas as magias listadas para o seu nível de Druida e os…",
+     "text": [
+      "Sempre que terminar um Descanso Longo, escolha um tipo de terra: árida, polar, temperada ou tropical. Consulte a tabela abaixo correspondente ao tipo escolhido; você tem preparadas as magias listadas para o seu nível de Druida e os inferiores.",
+      "Terra Árida",
+      "Nível de Druida / Magias de Círculo",
+      "3 / Nublar, Mãos Flamejantes, Raio de Fogo",
+      "5 / Bola de Fogo",
+      "7 / Praga",
+      "9 / Muralha de Pedra",
+      "Terra Polar",
+      "Nível de Druida / Magias de Círculo",
+      "3 / Névoa Obscurecente, Imobilizar Pessoa",
+      "5 / Tempestade de Granizo",
+      "7 / Tempestade de Gelo",
+      "9 / Cone de Frio",
+      "Terra Temperada",
+      "Nível de Druida / Magias de Círculo",
+      "3 / Passo Nebuloso",
+      "5 / Relâmpago",
+      "7 / Liberdade de Movimento",
+      "9 / Caminhar em Árvores",
+      "Terra Tropical",
+      "Nível de Druida / Magias de Círculo",
+      "3 / Respingo Ácido, Raio Nauseante, Teia",
+      "5 / Névoa Fétida",
+      "7 / Metamorfose",
+      "9 / Praga de Insetos"
+     ]
+    },
+    {
+     "id": "land-natural-recovery",
+     "level": 6,
+     "name": "Recuperação Natural",
+     "summary": "Você pode lançar uma das magias de nível 1 ou superior que tem preparadas pela característica Magias de Círculo sem gastar espaço de magia, e precisa terminar um Descanso Longo antes de fazer isso de novo.",
+     "text": [
+      "Você pode lançar uma das magias de nível 1 ou superior que tem preparadas pela característica Magias de Círculo sem gastar espaço de magia, e precisa terminar um Descanso Longo antes de fazer isso de novo.",
+      "Além disso, quando termina um Descanso Curto, pode escolher espaços de magia gastos para recuperar. Os espaços podem ter nível somado igual ou menor que a metade do seu nível de Druida (arredondado para cima), e nenhum deles pode ser de nível 6 ou superior. Por exemplo, um Druida de nível 6 pode recuperar até três níveis de espaços de magia: um espaço de nível 3, um de nível 2 e um de nível 1, ou três de nível 1. Depois de recuperar espaços de magia com esta característica, só pode fazê-lo de novo após terminar um Descanso Longo."
+     ]
+    },
+    {
+     "id": "land-natures-ward",
+     "level": 10,
+     "name": "Proteção da Natureza",
+     "summary": "Você é imune à condição Envenenado e tem Resistência a um tipo de dano associado à terra escolhida no momento na característica Magias de Círculo, como mostra a tabela Proteção da Natureza.",
+     "text": [
+      "Você é imune à condição Envenenado e tem Resistência a um tipo de dano associado à terra escolhida no momento na característica Magias de Círculo, como mostra a tabela Proteção da Natureza.",
+      "Proteção da Natureza",
+      "Tipo de Terra / Resistência",
+      "Árida / Fogo",
+      "Polar / Frio",
+      "Temperada / Elétrico",
+      "Tropical / Veneno"
+     ]
+    },
+    {
+     "id": "land-natures-sanctuary",
+     "level": 14,
+     "name": "Santuário da Natureza",
+     "summary": "Com uma ação de Magia, você pode gastar um uso de Forma Selvagem e fazer árvores e trepadeiras espectrais aparecerem num Cubo de 4,5 metros no chão a até 36 metros de você. Elas duram 1 minuto ou até você ficar com a condição Incapacitado…",
+     "text": [
+      "Com uma ação de Magia, você pode gastar um uso de Forma Selvagem e fazer árvores e trepadeiras espectrais aparecerem num Cubo de 4,5 metros no chão a até 36 metros de você. Elas duram 1 minuto ou até você ficar com a condição Incapacitado ou morrer. Você e seus aliados têm Meia Cobertura nessa área, e seus aliados recebem a Resistência atual da sua Proteção da Natureza enquanto estiverem nela.",
+      "Com uma Ação Bônus, você pode mover o Cubo até 18 metros, para um chão a até 36 metros de você."
+     ]
+    }
+   ],
+   "spells": [],
+   "text": [
+    "O Círculo da Terra reúne místicos e sábios que guardam conhecimentos e ritos antigos. Esses Druidas se encontram em círculos sagrados de árvores ou de pedras erguidas para sussurrar segredos primordiais em Druídico. Os membros mais sábios do círculo atuam como sacerdotes principais de suas comunidades."
+   ]
+  }
+ },
+ {
+  "id": "subclass:champion",
+  "kind": "subclass",
+  "name": "Campeão",
+  "summary": "O Campeão se dedica a desenvolver a proeza marcial numa busca incansável pela vitória. Campeões combinam treinamento rigoroso e excelência física para desferir golpes…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subclasses"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "allOf",
+   "of": [
+    {
+     "type": "hasClass",
+     "classId": "class:fighter"
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:fighter",
+     "level": 3
+    }
+   ]
+  },
+  "roles": [],
+  "data": {
+   "classId": "class:fighter",
+   "features": [
+    {
+     "id": "champion-remarkable-athlete",
+     "level": 3,
+     "name": "Atleta Notável",
+     "summary": "Graças ao seu atletismo, você tem Vantagem nas jogadas de Iniciativa e nos testes de Força (Atletismo).",
+     "text": [
+      "Graças ao seu atletismo, você tem Vantagem nas jogadas de Iniciativa e nos testes de Força (Atletismo).",
+      "Além disso, logo depois de conseguir um Acerto Crítico, pode se mover até metade do seu Deslocamento sem provocar Ataques de Oportunidade."
+     ]
+    },
+    {
+     "id": "champion-improved-critical",
+     "level": 3,
+     "name": "Crítico Aprimorado",
+     "summary": "Suas jogadas de ataque com armas e Ataques Desarmados conseguem Acerto Crítico com 19 ou 20 no d20.",
+     "text": [
+      "Suas jogadas de ataque com armas e Ataques Desarmados conseguem Acerto Crítico com 19 ou 20 no d20."
+     ]
+    },
+    {
+     "id": "champion-additional-fighting-style",
+     "level": 7,
+     "name": "Estilo de Luta Adicional",
+     "summary": "Você ganha mais um talento de Estilo de Luta à sua escolha.",
+     "text": [
+      "Você ganha mais um talento de Estilo de Luta à sua escolha."
+     ]
+    },
+    {
+     "id": "champion-heroic-warrior",
+     "level": 10,
+     "name": "Guerreiro Heroico",
+     "summary": "A emoção da batalha o impulsiona à vitória. Durante o combate, você pode se dar Inspiração Heroica sempre que começar o turno sem ela.",
+     "text": [
+      "A emoção da batalha o impulsiona à vitória. Durante o combate, você pode se dar Inspiração Heroica sempre que começar o turno sem ela."
+     ]
+    },
+    {
+     "id": "champion-superior-critical",
+     "level": 15,
+     "name": "Crítico Superior",
+     "summary": "Suas jogadas de ataque com armas e Ataques Desarmados agora conseguem Acerto Crítico com 18 a 20 no d20.",
+     "text": [
+      "Suas jogadas de ataque com armas e Ataques Desarmados agora conseguem Acerto Crítico com 18 a 20 no d20."
+     ]
+    },
+    {
+     "id": "champion-survivor",
+     "level": 18,
+     "name": "Sobrevivente",
+     "summary": "Você alcança o auge da resiliência em batalha, o que lhe dá os benefícios a seguir.",
+     "text": [
+      "Você alcança o auge da resiliência em batalha, o que lhe dá os benefícios a seguir.",
+      "Desafiar a Morte. Você tem Vantagem em Testes de Resistência contra a Morte. Além disso, quando tira 18 a 20 num Teste de Resistência contra a Morte, recebe o benefício de ter tirado 20.",
+      "Recuperação Heroica. No início de cada um dos seus turnos, você recupera Pontos de Vida iguais a 5 + seu modificador de Constituição se estiver Sangrando e tiver pelo menos 1 Ponto de Vida."
+     ]
+    }
+   ],
+   "spells": [],
+   "text": [
+    "O Campeão se dedica a desenvolver a proeza marcial numa busca incansável pela vitória. Campeões combinam treinamento rigoroso e excelência física para desferir golpes devastadores, resistir ao perigo e conquistar glória. Seja em competições atléticas ou em batalhas sangrentas, os Campeões lutam pela coroa do vencedor."
+   ]
+  }
+ },
+ {
+  "id": "subclass:warrior-of-the-open-hand",
+  "kind": "subclass",
+  "name": "Guerreiro da Mão Aberta",
+  "summary": "Os Guerreiros da Mão Aberta são mestres do combate desarmado. Aprendem técnicas para empurrar e derrubar os oponentes e manipulam a própria energia para se proteger do mal.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subclasses"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "allOf",
+   "of": [
+    {
+     "type": "hasClass",
+     "classId": "class:monk"
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:monk",
+     "level": 3
+    }
+   ]
+  },
+  "roles": [],
+  "data": {
+   "classId": "class:monk",
+   "features": [
+    {
+     "id": "open-hand-technique",
+     "level": 3,
+     "name": "Técnica da Mão Aberta",
+     "summary": "Sempre que atingir uma criatura com um ataque concedido por Rajada de Golpes, você pode impor um dos efeitos a seguir ao alvo.",
+     "text": [
+      "Sempre que atingir uma criatura com um ataque concedido por Rajada de Golpes, você pode impor um dos efeitos a seguir ao alvo.",
+      "Desnortear. O alvo não pode fazer Ataques de Oportunidade até o início do próximo turno dele.",
+      "Empurrar. O alvo deve passar num teste de resistência de Força ou ser empurrado até 4,5 metros para longe de você.",
+      "Derrubar. O alvo deve passar num teste de resistência de Destreza ou ficar com a condição Caído."
+     ]
+    },
+    {
+     "id": "open-hand-wholeness-of-body",
+     "level": 6,
+     "name": "Integridade Corporal",
+     "summary": "Você ganha a capacidade de se curar. Com uma Ação Bônus, pode rolar seu dado de Artes Marciais e recuperar Pontos de Vida iguais ao resultado + seu modificador de Sabedoria (mínimo de 1 Ponto de Vida recuperado).",
+     "text": [
+      "Você ganha a capacidade de se curar. Com uma Ação Bônus, pode rolar seu dado de Artes Marciais e recuperar Pontos de Vida iguais ao resultado + seu modificador de Sabedoria (mínimo de 1 Ponto de Vida recuperado).",
+      "Você pode usar esta característica um número de vezes igual ao seu modificador de Sabedoria (no mínimo uma vez) e recupera todos os usos gastos quando termina um Descanso Longo."
+     ]
+    },
+    {
+     "id": "open-hand-fleet-step",
+     "level": 11,
+     "name": "Passo Veloz",
+     "summary": "Quando usa uma Ação Bônus que não seja Passo do Vento, você também pode usar Passo do Vento logo depois dessa Ação Bônus.",
+     "text": [
+      "Quando usa uma Ação Bônus que não seja Passo do Vento, você também pode usar Passo do Vento logo depois dessa Ação Bônus."
+     ]
+    },
+    {
+     "id": "open-hand-quivering-palm",
+     "level": 17,
+     "name": "Palma Vibrante",
+     "summary": "Você ganha a capacidade de criar vibrações letais no corpo de alguém. Quando atinge uma criatura com um Ataque Desarmado, pode gastar 4 Pontos de Foco para iniciar essas vibrações imperceptíveis, que duram um número de dias igual ao seu…",
+     "text": [
+      "Você ganha a capacidade de criar vibrações letais no corpo de alguém. Quando atinge uma criatura com um Ataque Desarmado, pode gastar 4 Pontos de Foco para iniciar essas vibrações imperceptíveis, que duram um número de dias igual ao seu nível de Monge. As vibrações são inofensivas a não ser que você use uma ação para encerrá-las. Em vez disso, quando realiza a ação de Ataque no seu turno, pode abrir mão de um dos ataques para encerrar as vibrações. Para encerrá-las, você e o alvo precisam estar no mesmo plano de existência. Quando você as encerra, o alvo deve fazer um teste de resistência de Constituição, sofrendo 10d12 de dano de Energia se falhar, ou metade se passar.",
+      "Você só pode ter uma criatura sob o efeito desta característica por vez. Pode encerrar as vibrações sem causar dano (sem gastar ação)."
+     ]
+    }
+   ],
+   "spells": [],
+   "text": [
+    "Os Guerreiros da Mão Aberta são mestres do combate desarmado. Aprendem técnicas para empurrar e derrubar os oponentes e manipulam a própria energia para se proteger do mal."
+   ]
+  }
+ },
+ {
+  "id": "subclass:oath-of-devotion",
+  "kind": "subclass",
+  "name": "Juramento de Devoção",
+  "summary": "O Juramento de Devoção prende os Paladinos aos ideais de justiça e ordem. Esses Paladinos encarnam o arquétipo do cavaleiro de armadura reluzente. Seguem os mais altos padrões de…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subclasses"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "allOf",
+   "of": [
+    {
+     "type": "hasClass",
+     "classId": "class:paladin"
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:paladin",
+     "level": 3
+    }
+   ]
+  },
+  "roles": [],
+  "data": {
+   "classId": "class:paladin",
+   "features": [
+    {
+     "id": "devotion-sacred-weapon",
+     "level": 3,
+     "name": "Arma Sagrada",
+     "summary": "Quando realiza a ação de Ataque, você pode gastar um uso de Canalizar Divindade para imbuir de energia positiva uma arma Corpo a Corpo que esteja segurando. Por 10 minutos ou até usar esta característica de novo, você soma seu modificador…",
+     "text": [
+      "Quando realiza a ação de Ataque, você pode gastar um uso de Canalizar Divindade para imbuir de energia positiva uma arma Corpo a Corpo que esteja segurando. Por 10 minutos ou até usar esta característica de novo, você soma seu modificador de Carisma às jogadas de ataque com essa arma (bônus mínimo de +1), e cada vez que acerta com ela, pode fazê-la causar seu tipo de dano normal ou dano Radiante.",
+      "A arma também emite Luz Plena num raio de 6 metros e Penumbra por mais 6 metros.",
+      "Você pode encerrar o efeito antes (sem gastar ação). O efeito também termina se você não estiver carregando a arma."
+     ]
+    },
+    {
+     "id": "devotion-oath-of-devotion-spells",
+     "level": 3,
+     "name": "Magias do Juramento de Devoção",
+     "summary": "A magia do seu juramento garante que você sempre tenha certas magias prontas; ao chegar a um nível de Paladino indicado na tabela de Magias do Juramento de Devoção, você passa a ter sempre preparadas as magias listadas.",
+     "text": [
+      "A magia do seu juramento garante que você sempre tenha certas magias prontas; ao chegar a um nível de Paladino indicado na tabela de Magias do Juramento de Devoção, você passa a ter sempre preparadas as magias listadas.",
+      "Magias do Juramento de Devoção",
+      "Nível de Paladino / Magias",
+      "3 / Proteção contra o Bem e o Mal, Escudo da Fé",
+      "5 / Auxílio, Zona da Verdade",
+      "9 / Sinal de Esperança, Dissipar Magia",
+      "13 / Liberdade de Movimento, Guardião da Fé",
+      "17 / Comunhão, Coluna de Chamas"
+     ]
+    },
+    {
+     "id": "devotion-aura-of-devotion",
+     "level": 7,
+     "name": "Aura de Devoção",
+     "summary": "Você e seus aliados têm Imunidade à condição Enfeitiçado enquanto estiverem na sua Aura de Proteção. Se um aliado Enfeitiçado entrar na aura, a condição não tem efeito nele enquanto estiver ali.",
+     "text": [
+      "Você e seus aliados têm Imunidade à condição Enfeitiçado enquanto estiverem na sua Aura de Proteção. Se um aliado Enfeitiçado entrar na aura, a condição não tem efeito nele enquanto estiver ali."
+     ]
+    },
+    {
+     "id": "devotion-smite-of-protection",
+     "level": 15,
+     "name": "Destruição Protetora",
+     "summary": "Sua destruição mágica agora irradia energia protetora. Sempre que lança Destruição Divina, você e seus aliados têm Meia Cobertura enquanto estiverem na sua Aura de Proteção.",
+     "text": [
+      "Sua destruição mágica agora irradia energia protetora. Sempre que lança Destruição Divina, você e seus aliados têm Meia Cobertura enquanto estiverem na sua Aura de Proteção.",
+      "A aura mantém esse benefício até o início do seu próximo turno."
+     ]
+    },
+    {
+     "id": "devotion-holy-nimbus",
+     "level": 20,
+     "name": "Halo Sagrado",
+     "summary": "Com uma Ação Bônus, você pode imbuir sua Aura de Proteção de poder sagrado, concedendo os benefícios abaixo por 10 minutos ou até encerrá-los (sem gastar ação). Depois de usar esta característica, só pode usá-la de novo após terminar um…",
+     "text": [
+      "Com uma Ação Bônus, você pode imbuir sua Aura de Proteção de poder sagrado, concedendo os benefícios abaixo por 10 minutos ou até encerrá-los (sem gastar ação). Depois de usar esta característica, só pode usá-la de novo após terminar um Descanso Longo. Também pode recuperar o uso gastando um espaço de magia de nível 5 (sem gastar ação).",
+      "Proteção Sagrada. Você tem Vantagem em qualquer teste de resistência que um Ínfero ou Morto-Vivo o force a fazer.",
+      "Dano Radiante. Sempre que um inimigo começa o turno na aura, sofre dano Radiante igual ao seu modificador de Carisma + seu Bônus de Proficiência.",
+      "Luz Solar. A aura fica cheia de Luz Plena que é luz solar."
+     ]
+    }
+   ],
+   "spells": [],
+   "text": [
+    "O Juramento de Devoção prende os Paladinos aos ideais de justiça e ordem. Esses Paladinos encarnam o arquétipo do cavaleiro de armadura reluzente. Seguem os mais altos padrões de conduta, e alguns, para o bem ou para o mal, cobram o mesmo do resto do mundo.",
+    "Muitos dos que fazem este juramento são devotos de deuses da lei e do bem e usam os preceitos deles como",
+    "medida da devoção pessoal. Outros têm os anjos como ideal e incorporam imagens de asas angelicais nos elmos ou brasões.",
+    "Esses paladinos compartilham os seguintes preceitos:",
+    "- Que sua palavra seja sua promessa.",
+    "- Proteja os fracos e nunca tema agir.",
+    "- Que seus atos honrados sirvam de exemplo."
+   ]
+  }
+ },
+ {
+  "id": "subclass:hunter",
+  "kind": "subclass",
+  "name": "Caçador",
+  "summary": "Você persegue presas nas terras selvagens e em outros lugares, usando suas habilidades de Caçador para proteger a natureza e as pessoas de toda parte das forças que as destruiriam.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subclasses"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "allOf",
+   "of": [
+    {
+     "type": "hasClass",
+     "classId": "class:ranger"
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:ranger",
+     "level": 3
+    }
+   ]
+  },
+  "roles": [],
+  "data": {
+   "classId": "class:ranger",
+   "features": [
+    {
+     "id": "hunter-hunters-prey",
+     "level": 3,
+     "name": "Presa do Caçador",
+     "summary": "Você ganha uma das opções de característica a seguir, à sua escolha. Sempre que terminar um Descanso Curto ou Longo, pode trocar a opção escolhida pela outra.",
+     "text": [
+      "Você ganha uma das opções de característica a seguir, à sua escolha. Sempre que terminar um Descanso Curto ou Longo, pode trocar a opção escolhida pela outra.",
+      "Matador de Colossos. Sua tenacidade pode desgastar até os inimigos mais resistentes. Quando atinge uma criatura com uma arma, a arma causa 1d8 de dano extra ao alvo se ele não estiver com todos os Pontos de Vida. Você só pode causar esse dano extra uma vez por turno.",
+      "Destruidor de Hordas. Uma vez em cada um dos seus turnos, quando faz um ataque com uma arma, você pode fazer outro ataque com a mesma arma contra uma criatura diferente que esteja a até 1,5 metro do alvo original, dentro do alcance da arma, e que você não tenha atacado neste turno."
+     ]
+    },
+    {
+     "id": "hunter-hunters-lore",
+     "level": 3,
+     "name": "Saber do Caçador",
+     "summary": "Você pode pedir às forças da natureza que revelem certas forças e fraquezas da sua presa. Enquanto uma criatura estiver marcada pela sua Marca do Caçador, você sabe se ela tem alguma Imunidade, Resistência ou Vulnerabilidade e, se tiver,…",
+     "text": [
+      "Você pode pedir às forças da natureza que revelem certas forças e fraquezas da sua presa. Enquanto uma criatura estiver marcada pela sua Marca do Caçador, você sabe se ela tem alguma Imunidade, Resistência ou Vulnerabilidade e, se tiver, quais são."
+     ]
+    },
+    {
+     "id": "hunter-defensive-tactics",
+     "level": 7,
+     "name": "Táticas Defensivas",
+     "summary": "Você ganha uma das opções de característica a seguir, à sua escolha. Sempre que terminar um Descanso Curto ou Longo, pode trocar a opção escolhida pela outra.",
+     "text": [
+      "Você ganha uma das opções de característica a seguir, à sua escolha. Sempre que terminar um Descanso Curto ou Longo, pode trocar a opção escolhida pela outra.",
+      "Escapar da Horda. Ataques de Oportunidade têm Desvantagem contra você.",
+      "Defesa contra Ataques Múltiplos. Quando uma criatura o atinge com uma jogada de ataque, ela tem Desvantagem em todas as outras jogadas de ataque contra você neste turno."
+     ]
+    },
+    {
+     "id": "hunter-superior-hunters-prey",
+     "level": 11,
+     "name": "Presa Superior do Caçador",
+     "summary": "Uma vez por turno, quando causa dano a uma criatura marcada pela sua Marca do Caçador, você também pode causar o dano extra dessa magia a outra criatura que consiga ver a até 9 metros da primeira.",
+     "text": [
+      "Uma vez por turno, quando causa dano a uma criatura marcada pela sua Marca do Caçador, você também pode causar o dano extra dessa magia a outra criatura que consiga ver a até 9 metros da primeira."
+     ]
+    },
+    {
+     "id": "hunter-superior-hunters-defense",
+     "level": 15,
+     "name": "Defesa Superior do Caçador",
+     "summary": "Quando sofre dano, você pode usar uma Reação para ganhar Resistência a esse dano e a qualquer outro dano do mesmo tipo até o fim do turno atual.",
+     "text": [
+      "Quando sofre dano, você pode usar uma Reação para ganhar Resistência a esse dano e a qualquer outro dano do mesmo tipo até o fim do turno atual."
+     ]
+    }
+   ],
+   "spells": [],
+   "text": [
+    "Você persegue presas nas terras selvagens e em outros lugares, usando suas habilidades de Caçador para proteger a natureza e as pessoas de toda parte das forças que as destruiriam."
+   ]
+  }
+ },
+ {
+  "id": "subclass:thief",
+  "kind": "subclass",
+  "name": "Ladrão",
+  "summary": "Misto de arrombador, caçador de tesouros e explorador, você é a própria essência do aventureiro. Além de melhorar sua agilidade e furtividade, ganha habilidades úteis para…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subclasses"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "allOf",
+   "of": [
+    {
+     "type": "hasClass",
+     "classId": "class:rogue"
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:rogue",
+     "level": 3
+    }
+   ]
+  },
+  "roles": [],
+  "data": {
+   "classId": "class:rogue",
+   "features": [
+    {
+     "id": "thief-fast-hands",
+     "level": 3,
+     "name": "Mãos Rápidas",
+     "summary": "Com uma Ação Bônus, você pode fazer uma das coisas a seguir.",
+     "text": [
+      "Com uma Ação Bônus, você pode fazer uma das coisas a seguir.",
+      "Prestidigitação. Fazer um teste de Destreza (Prestidigitação) para abrir uma fechadura ou desarmar uma armadilha com Ferramentas de Ladrão, ou para bater uma carteira.",
+      "Usar um Objeto. Realizar a ação Utilizar, ou a ação de Magia para usar um item mágico que exija essa ação."
+     ]
+    },
+    {
+     "id": "thief-second-story-work",
+     "level": 3,
+     "name": "Trabalho no Segundo Andar",
+     "summary": "Você treinou para entrar em lugares especialmente difíceis de alcançar, o que lhe dá os benefícios a seguir.",
+     "text": [
+      "Você treinou para entrar em lugares especialmente difíceis de alcançar, o que lhe dá os benefícios a seguir.",
+      "Escalador. Você ganha Deslocamento de Escalada igual ao seu Deslocamento.",
+      "Saltador. Você pode determinar a distância dos seus saltos usando Destreza em vez de Força."
+     ]
+    },
+    {
+     "id": "thief-supreme-sneak",
+     "level": 9,
+     "name": "Furtividade Suprema",
+     "summary": "Você ganha a opção de Golpe Ardiloso a seguir.",
+     "text": [
+      "Você ganha a opção de Golpe Ardiloso a seguir.",
+      "Ataque Furtivo Oculto (Custo: 1d6). Se estiver com a condição Invisível da ação Esconder, este ataque não encerra a condição se você terminar o turno atrás de Cobertura de Três Quartos ou Cobertura Total."
+     ]
+    },
+    {
+     "id": "thief-use-magic-device",
+     "level": 13,
+     "name": "Usar Instrumento Mágico",
+     "summary": "Você aprendeu a aproveitar ao máximo os itens mágicos, o que lhe dá os benefícios a seguir.",
+     "text": [
+      "Você aprendeu a aproveitar ao máximo os itens mágicos, o que lhe dá os benefícios a seguir.",
+      "Sintonização. Você pode se sintonizar com até quatro itens mágicos ao mesmo tempo.",
+      "Cargas. Sempre que usar uma propriedade de item mágico que gaste cargas, role 1d6. Com 6, você usa a propriedade sem gastar as cargas.",
+      "Pergaminhos. Você pode usar qualquer Pergaminho de Magia, com Inteligência como habilidade de conjuração para a magia. Se a magia for um truque ou de nível 1, você consegue lançá-la sem falhar.",
+      "Se o pergaminho tiver uma magia de nível mais alto, você precisa primeiro passar num teste de Inteligência (Arcanismo) (CD 10 + o nível da magia). Se passar, lança a magia do pergaminho. Se falhar, o pergaminho se desintegra."
+     ]
+    },
+    {
+     "id": "thief-thiefs-reflexes",
+     "level": 17,
+     "name": "Reflexos de Ladrão",
+     "summary": "Você é hábil em armar emboscadas e escapar depressa do perigo. Pode ter dois turnos na primeira rodada de qualquer combate. O primeiro turno é na sua Iniciativa normal e o segundo na sua Iniciativa menos 10.",
+     "text": [
+      "Você é hábil em armar emboscadas e escapar depressa do perigo. Pode ter dois turnos na primeira rodada de qualquer combate. O primeiro turno é na sua Iniciativa normal e o segundo na sua Iniciativa menos 10."
+     ]
+    }
+   ],
+   "spells": [],
+   "text": [
+    "Misto de arrombador, caçador de tesouros e explorador, você é a própria essência do aventureiro. Além de melhorar sua agilidade e furtividade, ganha habilidades úteis para explorar ruínas e aproveitar ao máximo os itens mágicos que encontra nelas."
+   ]
+  }
+ },
+ {
+  "id": "subclass:draconic-sorcery",
+  "kind": "subclass",
+  "name": "Feitiçaria Dracônica",
+  "summary": "Sua magia inata vem da dádiva de um dragão. Talvez um dragão ancião, diante da morte, tenha legado parte do seu poder mágico a você ou a um ancestral seu. Você pode ter absorvido…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subclasses"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "allOf",
+   "of": [
+    {
+     "type": "hasClass",
+     "classId": "class:sorcerer"
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:sorcerer",
+     "level": 3
+    }
+   ]
+  },
+  "roles": [],
+  "data": {
+   "classId": "class:sorcerer",
+   "features": [
+    {
+     "id": "draconic-sorcery-draconic-spells",
+     "level": 3,
+     "name": "Magias Dracônicas",
+     "summary": "Ao chegar a um nível de Feiticeiro indicado na tabela de Magias Dracônicas, você passa a ter sempre preparadas as magias listadas.",
+     "text": [
+      "Ao chegar a um nível de Feiticeiro indicado na tabela de Magias Dracônicas, você passa a ter sempre preparadas as magias listadas.",
+      "Magias Dracônicas — Nível de Feiticeiro | Magias",
+      "3 | Alterar-se, Orbe Cromático, Comando, Sopro do Dragão",
+      "5 | Medo, Voo; 7 | Olho Arcano, Enfeitiçar Monstro",
+      "9 | Lendas e Histórias, Invocar Dragão"
+     ]
+    },
+    {
+     "id": "draconic-sorcery-draconic-resilience",
+     "level": 3,
+     "name": "Resiliência Dracônica",
+     "summary": "A magia no seu corpo manifesta traços físicos da sua dádiva dracônica. Seu máximo de Pontos de Vida aumenta em 3, e aumenta em 1 sempre que você ganha outro nível de Feiticeiro.",
+     "text": [
+      "A magia no seu corpo manifesta traços físicos da sua dádiva dracônica. Seu máximo de Pontos de Vida aumenta em 3, e aumenta em 1 sempre que você ganha outro nível de Feiticeiro.",
+      "Partes do seu corpo também ficam cobertas de escamas parecidas com as de um dragão. Enquanto não estiver usando armadura, sua Classe de Armadura base é 10 + seus modificadores de Destreza e Carisma."
+     ]
+    },
+    {
+     "id": "draconic-sorcery-elemental-affinity",
+     "level": 6,
+     "name": "Afinidade Elemental",
+     "summary": "Sua magia dracônica tem afinidade com um tipo de dano associado aos dragões. Escolha um destes tipos: Ácido, Frio, Fogo, Elétrico ou Veneno.",
+     "text": [
+      "Sua magia dracônica tem afinidade com um tipo de dano associado aos dragões. Escolha um destes tipos: Ácido, Frio, Fogo, Elétrico ou Veneno.",
+      "Você tem Resistência a esse tipo de dano e, quando lança uma magia que causa dano desse tipo, pode somar seu modificador de Carisma a uma jogada de dano dessa magia."
+     ]
+    },
+    {
+     "id": "draconic-sorcery-dragon-wings",
+     "level": 14,
+     "name": "Asas de Dragão",
+     "summary": "Com uma Ação Bônus, você pode fazer asas dracônicas aparecerem nas suas costas. As asas duram 1 hora ou até você dispensá-las (sem gastar ação). Nesse período, você tem Deslocamento de Voo de 18 metros.",
+     "text": [
+      "Com uma Ação Bônus, você pode fazer asas dracônicas aparecerem nas suas costas. As asas duram 1 hora ou até você dispensá-las (sem gastar ação). Nesse período, você tem Deslocamento de Voo de 18 metros.",
+      "Depois de usar esta característica, você só pode usá-la de novo após terminar um Descanso Longo, a não ser que gaste 3 Pontos de Feitiçaria (sem gastar ação) para recuperar o uso dela."
+     ]
+    },
+    {
+     "id": "draconic-sorcery-dragon-companion",
+     "level": 18,
+     "name": "Companheiro Dracônico",
+     "summary": "Você pode lançar Invocar Dragão sem componente Material. Também pode lançá-la uma vez sem espaço de magia e recupera essa capacidade quando termina um Descanso Longo.",
+     "text": [
+      "Você pode lançar Invocar Dragão sem componente Material. Também pode lançá-la uma vez sem espaço de magia e recupera essa capacidade quando termina um Descanso Longo.",
+      "Sempre que começar a lançar a magia, pode modificá-la para que não exija Concentração. Se fizer isso, a duração da magia passa a ser 1 minuto nessa conjuração."
+     ]
+    }
+   ],
+   "spells": [],
+   "text": [
+    "Sua magia inata vem da dádiva de um dragão. Talvez um dragão ancião, diante da morte, tenha legado parte do seu poder mágico a você ou a um ancestral seu. Você pode ter absorvido magia de um lugar impregnado do poder dos dragões. Ou talvez tenha manuseado um tesouro tirado do covil de um dragão e encharcado de poder dracônico. Ou ainda pode ter um dragão entre seus ancestrais."
+   ]
+  }
+ },
+ {
+  "id": "subclass:fiend-patron",
+  "kind": "subclass",
+  "name": "Patrono Ínfero",
+  "summary": "Seu pacto se apoia nos Planos Inferiores, os reinos da perdição. Você pode ter feito um acordo com um lorde demônio, um arquidiabo ou outro ínfero especialmente poderoso. Os…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subclasses"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "allOf",
+   "of": [
+    {
+     "type": "hasClass",
+     "classId": "class:warlock"
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:warlock",
+     "level": 3
+    }
+   ]
+  },
+  "roles": [],
+  "data": {
+   "classId": "class:warlock",
+   "features": [
+    {
+     "id": "fiend-patron-dark-ones-blessing",
+     "level": 3,
+     "name": "Bênção do Obscuro",
+     "summary": "Quando reduz um inimigo a 0 Pontos de Vida, você ganha Pontos de Vida Temporários iguais ao seu modificador de Carisma + seu nível de Bruxo (mínimo de 1 Ponto de Vida Temporário). Também recebe esse benefício se outra pessoa reduzir a 0…",
+     "text": [
+      "Quando reduz um inimigo a 0 Pontos de Vida, você ganha Pontos de Vida Temporários iguais ao seu modificador de Carisma + seu nível de Bruxo (mínimo de 1 Ponto de Vida Temporário). Também recebe esse benefício se outra pessoa reduzir a 0 Pontos de Vida um inimigo a até 3 metros de você."
+     ]
+    },
+    {
+     "id": "fiend-patron-fiend-spells",
+     "level": 3,
+     "name": "Magias Ínferas",
+     "summary": "A magia do seu patrono garante que você sempre tenha certas magias prontas; ao chegar a um nível de Bruxo indicado na tabela de Magias Ínferas, você passa a ter sempre preparadas as magias listadas.",
+     "text": [
+      "A magia do seu patrono garante que você sempre tenha certas magias prontas; ao chegar a um nível de Bruxo indicado na tabela de Magias Ínferas, você passa a ter sempre preparadas as magias listadas.",
+      "Magias Ínferas — Nível de Bruxo | Magias",
+      "3 | Mãos Flamejantes, Comando, Raio Ardente, Sugestão",
+      "5 | Bola de Fogo, Névoa Fétida",
+      "7 | Escudo de Fogo, Muralha de Fogo",
+      "9 | Missão, Praga de Insetos"
+     ]
+    },
+    {
+     "id": "fiend-patron-dark-ones-own-luck",
+     "level": 6,
+     "name": "A Sorte do Obscuro",
+     "summary": "Você pode pedir ao seu patrono ínfero que altere o destino a seu favor. Quando faz um teste de atributo ou de resistência, pode usar esta característica para somar 1d10 ao resultado. Pode fazer isso depois de ver a rolagem, mas antes de…",
+     "text": [
+      "Você pode pedir ao seu patrono ínfero que altere o destino a seu favor. Quando faz um teste de atributo ou de resistência, pode usar esta característica para somar 1d10 ao resultado. Pode fazer isso depois de ver a rolagem, mas antes de qualquer efeito dela acontecer.",
+      "Você pode usar esta característica um número de vezes igual ao seu modificador de Carisma (no mínimo uma vez), mas não mais de uma vez por rolagem. Recupera todos os usos gastos quando termina um Descanso Longo."
+     ]
+    },
+    {
+     "id": "fiend-patron-fiendish-resilience",
+     "level": 10,
+     "name": "Resiliência Ínfera",
+     "summary": "Sempre que terminar um Descanso Curto ou Longo, escolha um tipo de dano que não seja Energia. Você tem Resistência a esse tipo de dano até escolher outro com esta característica.",
+     "text": [
+      "Sempre que terminar um Descanso Curto ou Longo, escolha um tipo de dano que não seja Energia. Você tem Resistência a esse tipo de dano até escolher outro com esta característica."
+     ]
+    },
+    {
+     "id": "fiend-patron-hurl-through-hell",
+     "level": 14,
+     "name": "Arremessar ao Inferno",
+     "summary": "Uma vez por turno, quando atinge uma criatura com uma jogada de ataque, você pode tentar transportar o alvo instantaneamente pelos Planos Inferiores. O alvo deve passar num teste de resistência de Carisma contra a CD de resistência das…",
+     "text": [
+      "Uma vez por turno, quando atinge uma criatura com uma jogada de ataque, você pode tentar transportar o alvo instantaneamente pelos Planos Inferiores. O alvo deve passar num teste de resistência de Carisma contra a CD de resistência das suas magias ou desaparece e é arremessado por uma paisagem de pesadelo. O alvo sofre 8d10 de dano Psíquico se não for um Ínfero e fica com a condição Incapacitado até o fim do seu próximo turno, quando volta ao espaço que ocupava ou ao espaço desocupado mais próximo.",
+      "Depois de usar esta característica, você só pode usá-la de novo após terminar um Descanso Longo, a não ser que gaste um espaço de magia de Magia de Pacto (sem gastar ação) para recuperar o uso dela."
+     ]
+    }
+   ],
+   "spells": [],
+   "text": [
+    "Seu pacto se apoia nos Planos Inferiores, os reinos da perdição. Você pode ter feito um acordo com um lorde demônio, um arquidiabo ou outro ínfero especialmente poderoso. Os objetivos desse patrono são malignos (a corrupção ou destruição de todas as coisas, incluindo você, no fim), e seu caminho é definido pelo quanto você luta contra esses objetivos."
+   ]
+  }
+ },
+ {
+  "id": "subclass:evoker",
+  "kind": "subclass",
+  "name": "Evocador",
+  "summary": "Seus estudos se concentram na magia que cria poderosos efeitos elementais, como frio cortante, chamas abrasadoras, trovões retumbantes, relâmpagos crepitantes e ácido corrosivo.…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subclasses"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "allOf",
+   "of": [
+    {
+     "type": "hasClass",
+     "classId": "class:wizard"
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:wizard",
+     "level": 3
+    }
+   ]
+  },
+  "roles": [],
+  "data": {
+   "classId": "class:wizard",
+   "features": [
+    {
+     "id": "evoker-evocation-savant",
+     "level": 3,
+     "name": "Especialista em Evocação",
+     "summary": "Escolha duas magias de Mago da escola de Evocação, cada uma de nível 2 ou menor, e acrescente-as ao seu grimório de graça.",
+     "text": [
+      "Escolha duas magias de Mago da escola de Evocação, cada uma de nível 2 ou menor, e acrescente-as ao seu grimório de graça.",
+      "Além disso, sempre que ganhar acesso a um novo nível de espaços de magia nesta classe, você pode acrescentar ao grimório, de graça, uma magia de Mago da escola de Evocação. A magia escolhida precisa ser de um nível para o qual você tenha espaços de magia."
+     ]
+    },
+    {
+     "id": "evoker-potent-cantrip",
+     "level": 3,
+     "name": "Truque Poderoso",
+     "summary": "Seus truques de dano afetam até criaturas que evitam o grosso do efeito. Quando lança um truque contra uma criatura e erra a jogada de ataque ou o alvo passa no teste de resistência contra o truque, o alvo sofre metade do dano do truque…",
+     "text": [
+      "Seus truques de dano afetam até criaturas que evitam o grosso do efeito. Quando lança um truque contra uma criatura e erra a jogada de ataque ou o alvo passa no teste de resistência contra o truque, o alvo sofre metade do dano do truque (se houver), mas não sofre nenhum efeito adicional dele."
+     ]
+    },
+    {
+     "id": "evoker-sculpt-spells",
+     "level": 6,
+     "name": "Esculpir Magias",
+     "summary": "Você pode criar bolsões de relativa segurança dentro dos efeitos das suas evocações. Quando lança uma magia de Evocação que afeta outras criaturas que você consiga ver, pode escolher um número delas igual a 1 + o nível da magia. As…",
+     "text": [
+      "Você pode criar bolsões de relativa segurança dentro dos efeitos das suas evocações. Quando lança uma magia de Evocação que afeta outras criaturas que você consiga ver, pode escolher um número delas igual a 1 + o nível da magia. As criaturas escolhidas passam automaticamente nos testes de resistência contra a magia e não sofrem dano se normalmente sofreriam metade ao passar."
+     ]
+    },
+    {
+     "id": "evoker-empowered-evocation",
+     "level": 10,
+     "name": "Evocação Potencializada",
+     "summary": "Sempre que lançar uma magia de Mago da escola de Evocação, você pode somar seu modificador de Inteligência a uma jogada de dano dessa magia.",
+     "text": [
+      "Sempre que lançar uma magia de Mago da escola de Evocação, você pode somar seu modificador de Inteligência a uma jogada de dano dessa magia."
+     ]
+    },
+    {
+     "id": "evoker-overchannel",
+     "level": 14,
+     "name": "Sobrecanalizar",
+     "summary": "Você pode aumentar o poder das suas magias. Quando lança uma magia de Mago que causa dano com um espaço de magia de nível 1 a 5, pode causar o dano máximo com ela no turno em que a lança.",
+     "text": [
+      "Você pode aumentar o poder das suas magias. Quando lança uma magia de Mago que causa dano com um espaço de magia de nível 1 a 5, pode causar o dano máximo com ela no turno em que a lança.",
+      "Na primeira vez que fizer isso, você não sofre nenhum efeito adverso.",
+      "Se usar esta característica de novo antes de terminar um Descanso Longo, sofre 2d12 de dano Necrótico por nível do espaço de magia logo depois de lançar a magia.",
+      "Esse dano ignora Resistência e Imunidade.",
+      "Cada vez que usar esta característica de novo antes de terminar um Descanso Longo, o dano Necrótico por nível de magia aumenta em 1d12."
+     ]
+    }
+   ],
+   "spells": [],
+   "text": [
+    "Seus estudos se concentram na magia que cria poderosos efeitos elementais, como frio cortante, chamas abrasadoras, trovões retumbantes, relâmpagos crepitantes e ácido corrosivo. Alguns Evocadores trabalham para forças militares, servindo como artilharia para destruir exércitos à distância. Outros usam seu poder para proteger os outros, e alguns buscam o próprio ganho."
+   ]
+  }
+ }
+]

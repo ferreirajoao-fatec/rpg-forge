@@ -1,0 +1,68 @@
+{
+ "spiritual-weapon": {
+  "n": "Arma Espiritual",
+  "d": [
+   "Você cria uma arma espectral flutuante dentro do alcance que dura pela duração ou até você lançar esta magia de novo. Ao lançar a magia, pode fazer um ataque mágico corpo a corpo contra uma criatura a até 1,5 metro da arma. Se acertar, o alvo sofre dano de energia igual a 1d8 + seu modificador de habilidade de conjuração.",
+   "Com uma ação bônus no seu turno, você pode mover a arma até 6 metros e repetir o ataque contra uma criatura a até 1,5 metro dela.",
+   "A arma pode ter a forma que você quiser. Clérigos de divindades associadas a uma arma específica (como São Cuthbert é conhecido pela maça e Thor pelo martelo) fazem o efeito desta magia lembrar essa arma."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 3º nível ou superior, o dano aumenta em 1d8 para cada dois níveis de espaço acima do 2º."]
+ },
+ "stinking-cloud": {
+  "n": "Névoa Fétida",
+  "d": [
+   "Você cria uma esfera de 6 metros de raio de gás amarelo e nauseante, centrada num ponto dentro do alcance. A nuvem contorna esquinas, e sua área fica com escuridão densa. A nuvem permanece no ar pela duração.",
+   "Cada criatura que esteja completamente dentro da nuvem no início do turno deve fazer um teste de resistência de Constituição contra veneno. Se falhar, gasta a ação daquele turno com ânsias e cambaleando. Criaturas que não precisam respirar ou que são imunes a veneno passam automaticamente nesse teste.",
+   "Um vento moderado (pelo menos 15 km/h) dispersa a nuvem depois de 4 rodadas. Um vento forte (pelo menos 30 km/h) a dispersa depois de 1 rodada."
+  ],
+  "m": "Um ovo podre ou várias folhas de repolho-gambá."
+ },
+ "stone-shape": {
+  "n": "Moldar Rochas",
+  "d": ["Você toca um objeto de pedra Médio ou menor, ou uma seção de pedra de no máximo 1,5 metro em qualquer dimensão, e lhe dá a forma que servir ao seu propósito. Assim, por exemplo, pode moldar uma rocha grande numa arma, num ídolo ou num cofre, ou abrir uma pequena passagem numa parede, desde que ela tenha menos de 1,5 metro de espessura. Também pode moldar uma porta de pedra ou o batente dela para lacrar a porta. O objeto criado pode ter até duas dobradiças e um trinco, mas detalhes mecânicos mais finos não são possíveis."],
+  "m": "Argila mole, a ser trabalhada de forma grosseira no formato desejado para o objeto de pedra."
+ },
+ "stoneskin": {
+  "n": "Pele de Pedra",
+  "d": ["Esta magia deixa a carne de uma criatura voluntária que você toca dura como pedra. Até a magia terminar, o alvo tem resistência a dano de concussão, perfurante e cortante não mágico."],
+  "m": "Pó de diamante no valor de 100 po, que a magia consome."
+ },
+ "storm-of-vengeance": {
+  "n": "Tempestade da Vingança",
+  "d": [
+   "Uma nuvem de tempestade turbulenta se forma, centrada num ponto que você consiga ver e se espalhando num raio de 108 metros. Relâmpagos lampejam na área, trovões ribombam e ventos fortes rugem. Cada criatura sob a nuvem (a no máximo 1.500 metros abaixo dela) quando ela aparece deve fazer um teste de resistência de Constituição. Se falhar, sofre 2d6 de dano trovejante e fica surda por 5 minutos.",
+   "A cada rodada em que você mantiver a concentração nesta magia, a tempestade produz efeitos adicionais no seu turno.",
+   "*Rodada 2.* Chuva ácida cai da nuvem. Cada criatura e objeto sob a nuvem sofre 1d6 de dano de ácido.",
+   "*Rodada 3.* Você chama seis relâmpagos da nuvem para atingir seis criaturas ou objetos à sua escolha sob ela. Uma mesma criatura ou objeto não pode ser atingido por mais de um relâmpago. A criatura atingida deve fazer um teste de resistência de Destreza. Sofre 10d6 de dano elétrico se falhar, ou metade se passar.",
+   "*Rodada 4.* Granizo cai da nuvem. Cada criatura sob a nuvem sofre 2d6 de dano de concussão.",
+   "*Rodadas 5 a 10.* Rajadas de vento e chuva congelante castigam a área sob a nuvem. A área se torna terreno difícil e fica com escuridão densa. Cada criatura ali sofre 1d6 de dano de frio. Ataques à distância com arma são impossíveis na área. O vento e a chuva contam como uma distração severa para fins de manter a concentração em magias. Por fim, rajadas de vento forte (de 30 a 75 km/h) dispersam automaticamente neblina, névoa e fenômenos semelhantes na área, sejam comuns ou mágicos."
+  ]
+ },
+ "suggestion": {
+  "n": "Sugestão",
+  "d": [
+   "Você sugere um curso de ação (limitado a uma ou duas frases) e influencia magicamente uma criatura que consiga ver dentro do alcance e que consiga ouvi-lo e entendê-lo. Criaturas que não podem ser enfeitiçadas são imunes a este efeito. A sugestão precisa ser formulada de modo que o curso de ação pareça razoável. Pedir à criatura que se apunhale, se atire numa lança, ateie fogo em si mesma ou faça outro ato obviamente nocivo encerra a magia.",
+   "O alvo deve fazer um teste de resistência de Sabedoria. Se falhar, segue o curso de ação descrito da melhor forma possível. O curso de ação sugerido pode continuar por toda a duração. Se a atividade sugerida puder ser concluída em menos tempo, a magia termina quando o alvo terminar o que foi pedido.",
+   "Você também pode especificar condições que desencadeiem uma atividade especial durante a duração. Por exemplo, pode sugerir que uma cavaleira dê seu cavalo de guerra ao primeiro mendigo que encontrar. Se a condição não for cumprida antes de a magia terminar, a atividade não é realizada.",
+   "Se você ou qualquer um dos seus companheiros causar dano ao alvo, a magia termina."
+  ]
+ },
+ "sunbeam": {
+  "n": "Raio de Sol",
+  "d": [
+   "Um feixe de luz brilhante dispara da sua mão numa linha de 1,5 metro de largura e 18 metros de comprimento. Cada criatura na linha deve fazer um teste de resistência de Constituição. Se falhar, sofre 6d8 de dano radiante e fica cega até o seu próximo turno. Se passar, sofre metade do dano e não fica cega por esta magia. Mortos-vivos e limos têm desvantagem nesse teste.",
+   "Você pode criar uma nova linha de radiância com sua ação em qualquer turno até a magia terminar.",
+   "Pela duração, um ponto de radiância brilhante reluz na sua mão. Ele emite luz plena num raio de 9 metros e penumbra por mais 9 metros. Essa luz é luz solar."
+  ],
+  "m": "Uma lupa."
+ },
+ "sunburst": {
+  "n": "Explosão Solar",
+  "d": [
+   "Luz solar brilhante lampeja num raio de 18 metros centrado num ponto à sua escolha dentro do alcance. Cada criatura nessa luz deve fazer um teste de resistência de Constituição. Se falhar, sofre 12d6 de dano radiante e fica cega por 1 minuto. Se passar, sofre metade do dano e não fica cega por esta magia. Mortos-vivos e limos têm desvantagem nesse teste.",
+   "Uma criatura cegada por esta magia faz outro teste de resistência de Constituição no fim de cada turno dela. Se passar, deixa de estar cega.",
+   "Esta magia dissipa qualquer escuridão na sua área que tenha sido criada por uma magia."
+  ],
+  "m": "Fogo e um pedaço de pedra do sol."
+ }
+}

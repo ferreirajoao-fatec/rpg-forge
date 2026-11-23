@@ -1,0 +1,18 @@
+{
+ "hill-dwarf": {
+  "n": "Anão da Colina",
+  "d": ["Como anão da colina, você tem sentidos aguçados, intuição profunda e uma resistência notável."]
+ },
+ "high-elf": {
+  "n": "Alto Elfo",
+  "d": ["Como alto elfo, você tem uma mente afiada e domina pelo menos o básico da magia. Em muitos mundos de fantasia há dois tipos de altos elfos. Um é altivo e recluso, e se acha superior aos não elfos e até a outros elfos. O outro é mais comum e mais amigável, e costuma ser encontrado entre humanos e outras raças."]
+ },
+ "lightfoot-halfling": {
+  "n": "Halfling Pés-Leves",
+  "d": ["Como halfling pés-leves, você se esconde com facilidade, usando até outras pessoas como cobertura. Você tende a ser afável e a se dar bem com os outros. Os pés-leves têm mais vontade de viajar que os outros halflings e muitas vezes vivem entre outras raças ou levam uma vida nômade."]
+ },
+ "rock-gnome": {
+  "n": "Gnomo das Rochas",
+  "d": ["Como gnomo das rochas, você tem uma inventividade natural e uma robustez maiores que as dos outros gnomos."]
+ }
+}

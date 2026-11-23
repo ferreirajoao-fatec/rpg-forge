@@ -1,8 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g data-anchor="torso" stroke="#{line}" stroke-width="3" stroke-linejoin="round">
-    <path fill="#{primary}" d="M96 400 L216 400 L216 470 C216 520 188 556 156 576 C124 556 96 520 96 470 Z"/>
-    <path fill="#{secondary}" stroke="none" d="M156 400 L216 400 L216 470 C216 520 188 556 156 576 Z"/>
-    <path fill="none" stroke="#{metal}" stroke-width="6" d="M100 404 L212 404 L212 470 C212 518 186 552 156 570 C126 552 100 518 100 470 Z"/>
-    <path fill="#{metal}" d="M156 440 L168 470 L156 500 L144 470 Z"/>
+  <defs>
+    <filter id="f-primary" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{primary-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="f-secondary" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{secondary-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="f-metal" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{metal-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="soft2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.5"/></filter>
+    <filter id="soft3" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <path fill="#000000" opacity="0.25" filter="url(#soft3)" transform="translate(6 6)" d="M108 334 L208 334 C209 350 209 366 208 380 C206 418 186 446 158 464 C130 446 110 418 108 380 C107 366 107 350 108 334 Z"/>
+    <clipPath id="field"><path d="M108 334 L208 334 C209 350 209 366 208 380 C206 418 186 446 158 464 C130 446 110 418 108 380 C107 366 107 350 108 334 Z"/></clipPath>
+    <path fill="#{primary}" stroke="#{primary-deep}" stroke-width="1" filter="url(#f-primary)" d="M108 334 L208 334 C209 350 209 366 208 380 C206 418 186 446 158 464 C130 446 110 418 108 380 C107 366 107 350 108 334 Z"/>
+    <g clip-path="url(#field)">
+      <path fill="#{secondary}" stroke="#{secondary-deep}" stroke-width="0.8" d="M100 420 L158 368 L216 420 L216 444 L158 392 L100 444 Z"/>
+      <path fill="#{secondary}" stroke="#{secondary-deep}" stroke-width="0.8" d="M158 348 L166 360 L158 372 L150 360 Z"/>
+      <path fill="#{primary-light}" stroke="none" opacity="0.35" filter="url(#soft)" d="M114 340 C130 338 146 338 158 340 C140 346 124 356 116 372 Z"/>
+      <path fill="#{primary-deep}" stroke="none" opacity="0.45" filter="url(#soft)" d="M196 340 C204 380 200 420 170 456 L180 456 C206 420 210 380 204 340 Z"/>
+    </g>
+    <path fill="none" stroke="#{metal}" stroke-width="4.5" d="M108 334 L208 334 C209 350 209 366 208 380 C206 418 186 446 158 464 C130 446 110 418 108 380 C107 366 107 350 108 334 Z"/>
+    <path fill="none" stroke="#{metal-deep}" stroke-width="0.7" d="M105.8 331.8 L210.2 331.8 C211.3 350 211.3 366 210.2 380.4 C208 420 187 449 158 466.6 C129 449 108 420 105.8 380.4 C104.7 366 104.7 350 105.8 331.8 Z"/>
+    <path fill="none" stroke="#{metal-light}" stroke-width="0.9" opacity="0.8" d="M111 337 L150 337"/>
   </g>
 </svg>
