@@ -60,7 +60,13 @@ export function LevelUp(props: {
         <p className="text-xs uppercase tracking-wide text-muted-foreground">{engine.meta.name}</p>
         <h1 className="text-2xl font-semibold">{engine.formatLevel ? "Próximo avanço" : "Meu próximo nível"}</h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          {atMax ? `${name} já está no limite máximo (${fmtLvl(plan.from)}).` : `O que ${name} ganha ao passar de ${fmtLvl(plan.from)} para ${fmtLvl(plan.to)}.`}
+          {engine.formatLevel
+            ? atMax
+              ? `${name} já está no limite máximo (${fmtLvl(plan.from)}).`
+              : `O que ${name} ganha ao passar de ${fmtLvl(plan.from)} para ${fmtLvl(plan.to)}.`
+            : atMax
+              ? `${name} já está no nível máximo.`
+              : `O que ${name} ganha ao passar do ${plan.from}º para o ${plan.to}º nível.`}
         </p>
       </header>
 
@@ -124,7 +130,7 @@ export function LevelUp(props: {
         <div className="space-y-2">
           <div className="flex flex-wrap items-center gap-3">
             <Button onClick={confirm} disabled={!plan.canLevelUp || pending}>
-              <ArrowUpCircle /> {pending ? "Subindo…" : `Avançar para ${fmtLvl(plan.to)}`}
+              <ArrowUpCircle /> {pending ? "Subindo…" : engine.formatLevel ? `Avançar para ${fmtLvl(plan.to)}` : `Subir para o ${plan.to}º nível`}
             </Button>
             {plan.blockedReason && <p className="text-sm text-muted-foreground">{plan.blockedReason}</p>}
             {error && (
