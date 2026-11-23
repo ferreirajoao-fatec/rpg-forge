@@ -7,6 +7,7 @@ import { requireUser } from "@/server/auth/dal";
 
 const NAV = [
   { href: "/app", label: "Personagens" },
+  { href: "/app/campanhas", label: "Campanhas" },
   { href: "/app/dados", label: "Dados" },
   { href: "/app/mestre", label: "Mestre" },
   { href: "/app/regras", label: "Regras e fontes" },

@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { createCharacter, e2eAccount } from "./helpers";
+import { createCharacter, E2E_PASSWORD, e2eAccount, e2eEmail } from "./helpers";
 
 test.describe("login", () => {
   test.use({ storageState: { cookies: [], origins: [] } });
@@ -81,4 +81,55 @@ test("subir de nível: ver o próximo nível, subir e achar a versão no histór
   await page.goto(`/app/personagens/${id}?etapa=review`);
   await expect(page.getByText(/Subida de nível · nível 2/)).toBeVisible();
   await expect(page.getByText("Nível 2").first()).toBeVisible();
+});
+
+test("campanha: mestre cria e convida, jogador entra pelo link sem estar logado e vincula a ficha", async ({ page, browser }) => {
+  await page.goto("/app/campanhas");
+  await page.getByLabel("Nome").fill("Mesa de Teste E2E");
+  await page.getByLabel("Sistema de regras").selectOption({ label: "Fantasia d20 (2020)" });
+  await page.getByRole("button", { name: "Criar campanha" }).click();
+  await expect(page.getByRole("heading", { name: "Mesa de Teste E2E" })).toBeVisible();
+  const campaignUrl = page.url();
+  const inviteUrl = await page.getByRole("textbox", { name: "Link de convite" }).inputValue();
+  expect(inviteUrl).toMatch(/\/convite\/[A-Za-z0-9_-]{12}$/);
+
+  // Jogador: navegador sem sessão, cria a conta a partir do convite e volta para ele.
+  const player = await browser.newContext({ storageState: { cookies: [], origins: [] }, locale: "pt-BR" });
+  const p = await player.newPage();
+  await p.goto(inviteUrl);
+  await expect(p.getByRole("heading", { name: "Mesa de Teste E2E" })).toBeVisible();
+  await p.getByRole("link", { name: "Criar conta" }).click();
+  await p.getByLabel("Como devemos chamar você?").fill("Jogadora E2E");
+  await p.getByLabel("E-mail").fill(e2eEmail());
+  await p.getByLabel("Senha").fill(E2E_PASSWORD);
+  await p.getByRole("button", { name: "Criar conta" }).click();
+  await expect(p).toHaveURL(/\/convite\//);
+  await p.getByRole("button", { name: "Entrar na campanha" }).click();
+  await expect(p).toHaveURL(/\/app\/campanhas\/[a-z0-9]+$/);
+  await expect(p.getByRole("heading", { name: "Mesa de Teste E2E" })).toBeVisible();
+
+  // Sem ficha do sistema ainda: cria uma e vincula, sem aprovação.
+  const playerCampaign = p.url();
+  await createCharacter(p, "Barda E2E");
+  await p.goto(playerCampaign);
+  await p.getByRole("button", { name: "Vincular" }).click();
+  await expect(p.getByText("Barda E2E")).toBeVisible();
+  // Abrir o link de novo não duplica a entrada.
+  await p.goto(inviteUrl);
+  await expect(p.getByText("Você já está nesta campanha.")).toBeVisible();
+  await player.close();
+
+  // O mestre vê a jogadora e a ficha, e consegue abrir a ficha.
+  await page.goto(campaignUrl);
+  await expect(page.getByRole("region", { name: "Na mesa" }).getByText("Jogadora E2E")).toBeVisible();
+  await expect(page.getByText("Barda E2E")).toBeVisible();
+  await page.getByRole("link", { name: "Ver ficha" }).click();
+  await expect(page.getByText("Barda E2E").first()).toBeVisible();
+
+  // Link novo invalida o antigo.
+  await page.goto(campaignUrl);
+  await page.getByRole("button", { name: "Gerar link novo" }).click();
+  await expect(page.getByRole("textbox", { name: "Link de convite" })).not.toHaveValue(inviteUrl);
+  await page.goto(inviteUrl);
+  await expect(page.getByRole("heading", { name: "Convite inválido" })).toBeVisible();
 });

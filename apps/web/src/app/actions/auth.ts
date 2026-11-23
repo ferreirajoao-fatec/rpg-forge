@@ -6,6 +6,13 @@ import { db } from "@/server/db";
 import { hashPassword, verifyPassword } from "@/server/auth/password";
 import { clientIp, recordAttempt, TOO_MANY, underLimit } from "@/server/auth/rate-limit";
 import { createSession, destroySession } from "@/server/auth/session";
+import { INVITE_CODE } from "@/server/campaigns";
+
+/** Depois de entrar ou criar a conta: volta ao convite que trouxe a pessoa, se houver. */
+function afterAuth(formData: FormData): string {
+  const code = formData.get("convite");
+  return typeof code === "string" && INVITE_CODE.test(code) ? `/convite/${code}` : "/app";
+}
 
 export type AuthState = { errors?: Record<string, string[] | undefined>; message?: string } | undefined;
 
@@ -43,7 +50,7 @@ export async function signup(_state: AuthState, formData: FormData): Promise<Aut
   const user = await db.user.create({ data: { displayName, email, passwordHash: await hashPassword(password) } });
   await db.auditLog.create({ data: { userId: user.id, action: "user.signup", entityType: "User", entityId: user.id } });
   await createSession(user.id);
-  redirect("/app");
+  redirect(afterAuth(formData));
 }
 
 export async function login(_state: AuthState, formData: FormData): Promise<AuthState> {
@@ -65,7 +72,7 @@ export async function login(_state: AuthState, formData: FormData): Promise<Auth
   }
 
   await createSession(user.id);
-  redirect("/app");
+  redirect(afterAuth(formData));
 }
 
 export async function logout(): Promise<void> {

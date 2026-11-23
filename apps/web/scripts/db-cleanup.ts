@@ -26,7 +26,13 @@ async function main() {
   const attempts = { where: { action: { in: RATE_LIMIT_ACTIONS }, createdAt: { lt: new Date(now.getTime() - RATE_LIMIT_KEEP_MS) } } };
   try {
     if (process.argv.includes("--e2e")) {
-      const users = await db.user.deleteMany({ where: { email: { startsWith: "e2e-", endsWith: "@rpgforge.test" } } });
+      const e2eUsers = { email: { startsWith: "e2e-", endsWith: "@rpgforge.test" } };
+      // Campanhas do mestre de teste antes das contas (a relação com o dono não apaga em cascata);
+      // o homebrew delas primeiro, para não ficar órfão e virar conteúdo global.
+      const owned = { owner: e2eUsers };
+      await db.contentEntry.deleteMany({ where: { campaign: owned } });
+      await db.campaign.deleteMany({ where: owned });
+      const users = await db.user.deleteMany({ where: e2eUsers });
       await db.auditLog.deleteMany({ where: { action: { in: RATE_LIMIT_ACTIONS }, createdAt: { gte: new Date(now.getTime() - 30 * 60_000) } } });
       console.log(`Limpeza dos testes: ${users.count} conta(s) de teste apagada(s).`);
       return;

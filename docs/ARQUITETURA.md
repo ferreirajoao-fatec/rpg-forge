@@ -241,7 +241,7 @@ Fases da especificação (seção 28), com a situação real do repositório:
 | 5. Ficha + avatar | Vínculo, retrato na ficha, aparência do equipamento, exportação conjunta. | **Concluída** (armas ainda sem desenho). |
 | 6. Editor visual avançado | Caudas, asas, texturas, cicatrizes, tatuagens, anatomias especiais, efeitos. | Parcial: asas, caudas, escudos e marcas do rosto. Faltam texturas, efeitos e poses. |
 | 7. Progressão | Subida de nível, "Meu próximo nível", evolução visual. | Parcial: subida de nível em `/app/personagens/[id]/nivel` ("Meu próximo nível": valores que mudam, habilidades novas e decisões pendentes, com XP e versão no histórico), calculada por `levelUpPlan` no motor. Faltam multiclasse na subida, a tabela de progressão das classes do Tormenta20 e a evolução visual do avatar. |
-| 8. Campanhas e mestre | Convites, permissões, regras opcionais, aprovações, eventos e recompensas. | Parcial: ferramentas do mestre em `/app/mestre` (seção 8.1). Faltam convites, campanhas e aprovações na interface. |
+| 8. Campanhas e mestre | Convites, permissões, regras opcionais, aprovações, eventos e recompensas. | Parcial: ferramentas do mestre em `/app/mestre` (seção 8.1) e campanhas em `/app/campanhas`: convite por link (`/convite/[código]`, funciona também para quem ainda não tem conta), entrada e vínculo de fichas sem aprovação (decisão do usuário em 23/11/2026), mestre vê as fichas, tira jogadores, gera link novo e exclui. Faltam regras opcionais por campanha, aprovações de homebrew e eventos/recompensas na interface. |
 | 9. Assistente inteligente | Recomendações, análise, interpretação de descrições de avatar. | |
 | 10. Expansão | Sistemas adicionais, poses, tokens, desempenho, acessibilidade. | |
 
