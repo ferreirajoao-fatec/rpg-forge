@@ -9,6 +9,8 @@ import {
   createCharacter,
   deleteCharacter,
   ForbiddenError,
+  levelUpCharacter,
+  LevelUpError,
   restoreCharacterVersion,
   saveCharacterData,
   snapshotCharacter,
@@ -57,6 +59,20 @@ export async function restoreVersionAction(id: string, versionNumber: number) {
   const user = await requireUser();
   await restoreCharacterVersion(id, user.id, versionNumber);
   revalidatePath(`/app/personagens/${id}`);
+}
+
+export type LevelUpResult = { ok: true; to: number } | { ok: false; error: string };
+
+export async function levelUpAction(id: string, revision: number, experience?: number): Promise<LevelUpResult> {
+  const user = await requireUser();
+  try {
+    const r = await levelUpCharacter(id, user.id, revision, experience);
+    revalidatePath(`/app/personagens/${id}`);
+    return { ok: true, to: r.plan.to };
+  } catch (e) {
+    if (e instanceof LevelUpError || e instanceof ConflictError || e instanceof ForbiddenError) return { ok: false, error: e.message };
+    throw e;
+  }
 }
 
 export async function deleteCharacterAction(id: string) {

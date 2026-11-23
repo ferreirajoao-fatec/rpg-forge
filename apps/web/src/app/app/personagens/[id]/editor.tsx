@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState, useTransition } from "react";
 import Link from "next/link";
-import { Check, ChevronLeft, ChevronRight, CloudOff, Dices, FileText, Loader2, Lock, UserRound } from "lucide-react";
+import { ArrowUpCircle, Check, ChevronLeft, ChevronRight, CloudOff, Dices, FileText, Loader2, Lock, UserRound } from "lucide-react";
 import {
   Catalog,
   cryptoRng,
@@ -139,6 +139,11 @@ export function CharacterEditor(props: {
           </h1>
           <div className="flex items-center gap-3">
             <SaveIndicator status={status} canEdit={props.canEdit} />
+            {props.canEdit && (
+              <Link href={`/app/personagens/${props.characterId}/nivel`} className={buttonVariants({ variant: "outline", size: "sm" })}>
+                <ArrowUpCircle /> Subir de nível
+              </Link>
+            )}
             <Link href={`/app/personagens/${props.characterId}/avatar`} className={buttonVariants({ variant: "outline", size: "sm" })}>
               <UserRound /> Avatar
             </Link>

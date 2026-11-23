@@ -1,6 +1,6 @@
 import "server-only";
 import { db } from "@/server/db";
-import { CharacterDataSchema, getEngine, hasEngine, emptyCharacter, type CharacterData } from "@rpg-forge/rules-engine";
+import { applyLevelUp, CharacterDataSchema, getEngine, hasEngine, emptyCharacter, type CharacterData } from "@rpg-forge/rules-engine";
 import { currentRulesetVersion, loadCatalog, syncRulesets } from "@/server/rulesets";
 import type { Prisma } from "@/generated/prisma/client";
 
@@ -112,6 +112,29 @@ export async function restoreCharacterVersion(characterId: string, userId: strin
   await snapshotCharacter(characterId, userId, "restore", `Restaurado a partir da versão ${versionNumber}`);
   await db.auditLog.create({ data: { userId, action: "character.restore", entityType: "Character", entityId: characterId, diff: { from: versionNumber } } });
   return result;
+}
+
+export class LevelUpError extends Error {}
+
+/**
+ * Sobe um nível. O servidor refaz o plano (nível máximo, XP) e aplica a subida —
+ * o cliente só pede. Em progressão por XP, `experience` atualiza o XP antes de conferir.
+ * Guarda a ficha de antes no histórico, para dar para desfazer restaurando a versão.
+ */
+export async function levelUpCharacter(characterId: string, userId: string, expectedRevision: number, experience?: number) {
+  const ch = await loadWithAccess(characterId, userId, "write");
+  let data = CharacterDataSchema.parse(ch.data);
+  if (experience !== undefined && data.progressionMode === "xp") data = { ...data, experience: Math.max(0, Math.trunc(experience)) };
+  const engine = getEngine(ch.rulesetId);
+  const catalog = await loadCatalog(ch.rulesetId, ch.rulesetVersionId);
+  const plan = engine.levelUpPlan(data, catalog);
+  if (!plan.canLevelUp) throw new LevelUpError(plan.blockedReason ?? "Não é possível subir de nível agora.");
+
+  await snapshotCharacter(characterId, userId, "edit", `Antes de subir para o ${plan.to}º nível`);
+  const result = await saveCharacterData(characterId, userId, applyLevelUp(data), expectedRevision);
+  await snapshotCharacter(characterId, userId, "level_up", `Subiu do ${plan.from}º para o ${plan.to}º nível`);
+  await db.auditLog.create({ data: { userId, action: "character.level_up", entityType: "Character", entityId: characterId, diff: { from: plan.from, to: plan.to } } });
+  return { ...result, plan };
 }
 
 export async function listVersions(characterId: string, userId: string) {

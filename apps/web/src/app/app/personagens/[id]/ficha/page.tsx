@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ChevronLeft, FileDown, UserRound } from "lucide-react";
+import { ArrowUpCircle, ChevronLeft, FileDown, UserRound } from "lucide-react";
 import { requireUser } from "@/server/auth/dal";
 import { ForbiddenError, getCharacter } from "@/server/characters";
 import { portraitsFor } from "@/server/avatars";
@@ -25,7 +25,7 @@ export default async function SheetPage({ params }: PageProps<"/app/personagens/
     if (e instanceof ForbiddenError) notFound();
     throw e;
   }
-  const { record, data, catalog } = loaded;
+  const { record, data, catalog, canEdit } = loaded;
   const sheet = buildSheet(data, record.rulesetId, catalog, user.displayName);
   const portrait = (await portraitsFor([record.id], "bust"))[record.id];
   return (
@@ -35,6 +35,11 @@ export default async function SheetPage({ params }: PageProps<"/app/personagens/
           <ChevronLeft /> Voltar à edição
         </Link>
         <div className="flex flex-wrap items-center gap-2">
+          {canEdit && (
+            <Link href={`/app/personagens/${record.id}/nivel`} className={buttonVariants({ variant: "outline" })}>
+              <ArrowUpCircle /> Subir de nível
+            </Link>
+          )}
           <Link href={`/app/personagens/${record.id}/avatar`} className={buttonVariants({ variant: "outline" })}>
             <UserRound /> {portrait ? "Editar avatar" : "Criar avatar"}
           </Link>

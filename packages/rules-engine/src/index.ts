@@ -38,6 +38,7 @@ export * from "./core/types";
 export * from "./core/character";
 export * from "./core/content";
 export * from "./core/engine";
+export * from "./core/progression";
 export * from "./core/dice";
 export * from "./core/money";
 export { T20_XP_THRESHOLDS } from "./systems/tormenta20";

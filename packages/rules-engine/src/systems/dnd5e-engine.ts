@@ -17,8 +17,9 @@ import {
   type StartingPackage,
 } from "../core/engine";
 import { moneyTotal } from "../core/money";
+import type { LevelUpGain } from "../core/progression";
 import type { OptionEvaluation, SourceRef, ValidationIssue } from "../core/types";
-import { DND_ABILITIES, dndLevelForXp, dndModifier, dndProficiencyBonus } from "./dnd5e-common";
+import { DND_ABILITIES, DND_XP_THRESHOLDS, dndLevelForXp, dndModifier, dndProficiencyBonus } from "./dnd5e-common";
 
 /* ------------------------------------------------------------------ dados do catálogo */
 
@@ -135,6 +136,7 @@ export abstract class Dnd5eEngine extends BaseEngine {
   readonly currencies = DND_CURRENCIES;
   abilityModifier = dndModifier;
   levelForXp = dndLevelForXp;
+  readonly xpThresholds = DND_XP_THRESHOLDS;
   protected proficiencyBonus(level: number) {
     return dndProficiencyBonus(level);
   }
@@ -244,6 +246,49 @@ export abstract class Dnd5eEngine extends BaseEngine {
       ? `${asi} Aumento(s) no Valor de Habilidade até o nível atual${feats ? `, ${feats} trocado(s) por talento` : ""}: +2 em um atributo ou +1 em dois, sem passar de ${ABILITY_SCORE_MAX}.`
       : "Os aumentos de atributo chegam no 4º nível (e em outros, conforme a classe).";
     return { points, max: ABILITY_SCORE_MAX, detail };
+  }
+
+  /* ---------------- progressão ---------------- */
+
+  /** Habilidades de classe e subclasse do novo nível, aumento de atributo, subclasse e novas magias. */
+  protected levelGains(before: CharacterData, after: CharacterData, catalog: Catalog): LevelUpGain[] {
+    const k = this.classOf(after, catalog);
+    if (!k) return [];
+    const prev = this.classOf(before, catalog);
+    const gains: LevelUpGain[] = [];
+    const src = k.entry.source;
+    const asiFeature = (name: string) => /aumento no valor de habilidade|ability score improvement/i.test(name);
+
+    for (const f of k.data.features ?? []) {
+      if (f.level !== k.level || asiFeature(f.name)) continue;
+      gains.push({ kind: "feature", label: f.name, detail: f.summary, source: src });
+    }
+    if (k.sub) {
+      const subFeatures = ((k.sub.data as { features?: (DndTrait & { level: number })[] }).features ?? []).filter((f) => f.level === k.level);
+      for (const f of subFeatures) gains.push({ kind: "feature", label: `${f.name} (${k.sub.name})`, detail: f.summary, source: k.sub.source });
+    }
+    if (k.level === k.data.subclassLevel && !k.cl.subclassId) {
+      gains.push({ kind: "choice", label: "Escolha a subclasse", detail: `${k.entry.name} escolhe a subclasse no ${k.level}º nível.`, stepId: "class", source: src });
+    }
+    if (k.row?.asi) {
+      gains.push({
+        kind: "choice",
+        label: "Aumento no Valor de Habilidade",
+        detail: "+2 em um atributo ou +1 em dois (máximo 20). Com a regra de talentos, pode trocar por um talento.",
+        stepId: "abilities",
+        source: this.rulesSource,
+      });
+    }
+    const cantrips = (k.row?.cantrips ?? 0) - (prev?.row?.cantrips ?? 0);
+    if (cantrips > 0) gains.push({ kind: "choice", label: `Aprenda ${cantrips} truque(s)`, stepId: "spells", source: src });
+    const known = (k.row?.known ?? 0) - (prev?.row?.known ?? 0);
+    const prepared = (k.row?.prepared ?? 0) - (prev?.row?.prepared ?? 0);
+    if (known > 0) gains.push({ kind: "choice", label: `Aprenda ${known} magia(s)`, stepId: "spells", source: src });
+    else if (prepared > 0) gains.push({ kind: "choice", label: `Prepare mais ${prepared} magia(s)`, stepId: "spells", source: src });
+    else if (k.entry.id === "class:wizard" && k.data.spellcasting && k.level > 1) {
+      gains.push({ kind: "choice", label: "Anote 2 magias no grimório", stepId: "spells", source: src });
+    }
+    return gains;
   }
 
   /* ---------------- equipamento ---------------- */

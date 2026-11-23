@@ -240,7 +240,7 @@ Fases da especificação (seção 28), com a situação real do repositório:
 | 4. Criador inteligente de fichas | Etapas guiadas, validação, cálculos e salvamento. | **Em grande parte pronta** para Tormenta20 (2020): todas as etapas com seleção, filtro pelas escolhas anteriores, paginação, abas por disponibilidade e ficha imprimível. D&D 5e (2014 e 2024): catálogos do SRD importados e traduzidos (`content/dnd5e-*`, `pnpm srd:fetch`/`srd:build`). Faltam modos assistido e aleatório. |
 | 5. Ficha + avatar | Vínculo, retrato na ficha, aparência do equipamento, exportação conjunta. | **Concluída** (armas ainda sem desenho). |
 | 6. Editor visual avançado | Caudas, asas, texturas, cicatrizes, tatuagens, anatomias especiais, efeitos. | Parcial: asas, caudas, escudos e marcas do rosto. Faltam texturas, efeitos e poses. |
-| 7. Progressão | Subida de nível, "Meu próximo nível", evolução visual. | Parcial (histórico de versões e restauração prontos). |
+| 7. Progressão | Subida de nível, "Meu próximo nível", evolução visual. | Parcial: subida de nível em `/app/personagens/[id]/nivel` ("Meu próximo nível": valores que mudam, habilidades novas e decisões pendentes, com XP e versão no histórico), calculada por `levelUpPlan` no motor. Faltam multiclasse na subida, a tabela de progressão das classes do Tormenta20 e a evolução visual do avatar. |
 | 8. Campanhas e mestre | Convites, permissões, regras opcionais, aprovações, eventos e recompensas. | Parcial: ferramentas do mestre em `/app/mestre` (seção 8.1). Faltam convites, campanhas e aprovações na interface. |
 | 9. Assistente inteligente | Recomendações, análise, interpretação de descrições de avatar. | |
 | 10. Expansão | Sistemas adicionais, poses, tokens, desempenho, acessibilidade. | |

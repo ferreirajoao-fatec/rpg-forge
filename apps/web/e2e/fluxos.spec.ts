@@ -68,3 +68,17 @@ test("mestre: montar encontro, ver ND e XP e rolar tesouro", async ({ page }) =>
   await page.getByRole("button", { name: /Rolar tesouro/ }).click();
   await expect(page.getByText(/Linha ND 1\/2/)).toBeVisible();
 });
+
+test("subir de nível: ver o próximo nível, subir e achar a versão no histórico", async ({ page }) => {
+  const id = await createCharacter(page, "Veterana E2E");
+  await page.getByRole("link", { name: "Subir de nível" }).click();
+  await expect(page.getByRole("heading", { name: "Meu próximo nível" })).toBeVisible();
+  await expect(page.getByText(/do 1º para o 2º nível/)).toBeVisible();
+
+  await page.getByRole("button", { name: "Subir para o 2º nível" }).click();
+  await expect(page).toHaveURL(new RegExp(`/app/personagens/${id}/ficha$`));
+
+  await page.goto(`/app/personagens/${id}?etapa=review`);
+  await expect(page.getByText(/Subida de nível · nível 2/)).toBeVisible();
+  await expect(page.getByText("Nível 2").first()).toBeVisible();
+});
