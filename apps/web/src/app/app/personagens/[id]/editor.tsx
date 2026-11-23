@@ -2,16 +2,27 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState, useTransition } from "react";
 import Link from "next/link";
-import { ArrowUpCircle, Check, ChevronLeft, ChevronRight, CloudOff, Dices, FileText, Loader2, Lock, UserRound } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { ArrowUpCircle, Check, ChevronLeft, ChevronRight, CloudOff, Dices, FileText, Loader2, Lock, RefreshCw, Sparkles, UserRound } from "lucide-react";
 import {
   Catalog,
   cryptoRng,
+  generateCompleteCharacter,
   getEngine,
+  OP_OPTIONAL_RULES,
   type CharacterData,
   type ContentEntry,
   type ValidationIssue,
 } from "@rpg-forge/rules-engine";
-import { restoreVersionAction, saveCharacterAction, snapshotAction } from "@/app/actions/characters";
+import {
+  migrateCharacterCatalogAction,
+  requestApprovalAction,
+  restoreVersionAction,
+  saveCharacterAction,
+  snapshotAction,
+} from "@/app/actions/characters";
+import type { ApprovalRow } from "@/server/approvals";
+import { ShareSheetButton } from "./ficha/share-sheet-button";
 import { Button, buttonVariants } from "@rpg-forge/ui/components/button";
 import { Input } from "@rpg-forge/ui/components/input";
 import { Label } from "@rpg-forge/ui/components/label";
@@ -20,6 +31,7 @@ import { IssueList, ReportSummary } from "@/components/validation";
 import { cn } from "@rpg-forge/ui/lib/utils";
 import { ChoiceStep } from "./choice-step";
 import { InventoryStep } from "./inventory-step";
+import { DuplicateButton } from "../../duplicate-button";
 
 type SaveStatus = { kind: "idle" | "saving" | "saved" | "error" | "conflict"; message?: string; at?: string };
 
@@ -42,6 +54,7 @@ const REASON_LABEL: Record<string, string> = {
 export function CharacterEditor(props: {
   characterId: string;
   rulesetId: string;
+  campaignId?: string | null;
   initialData: CharacterData;
   /** Id da etapa para abrir direto (ex.: ?etapa=power). */
   initialStep?: string;
@@ -49,7 +62,10 @@ export function CharacterEditor(props: {
   entries: ContentEntry[];
   canEdit: boolean;
   versions: VersionRow[];
+  catalogUpdate?: { latestVersion: string } | null;
+  approvals?: ApprovalRow[];
 }) {
+  const router = useRouter();
   const engine = getEngine(props.rulesetId);
   const catalog = useMemo(() => new Catalog(props.rulesetId, props.entries), [props.rulesetId, props.entries]);
   const steps = useMemo(() => engine.creationSteps(catalog), [engine, catalog]);
@@ -96,6 +112,27 @@ export function CharacterEditor(props: {
     return () => clearTimeout(t);
   }, [data, props.characterId, status.kind]);
 
+  const generateAll = useCallback(() => {
+    if (!props.canEdit) return;
+    const generated = generateCompleteCharacter(engine, catalog, cryptoRng, {
+      name: data.name.trim() || undefined,
+      level: data.level,
+    });
+    dirty.current = true;
+    setData((prev) => ({
+      ...generated,
+      publicShareToken: prev.publicShareToken,
+      optionalRules: prev.optionalRules,
+    }));
+  }, [props.canEdit, engine, catalog, data.name, data.level]);
+
+  const migrateCatalog = () => {
+    startTransition(async () => {
+      const r = await migrateCharacterCatalogAction(props.characterId);
+      if (r.ok) router.refresh();
+    });
+  };
+
   const step = steps[stepIdx];
   const progress = Math.round(((stepIdx + 1) / steps.length) * 100);
   const issuesFor = (prefix: string): ValidationIssue[] =>
@@ -133,15 +170,30 @@ export function CharacterEditor(props: {
 
       {/* Etapa atual */}
       <section aria-labelledby="step-title" className="min-w-0">
+        {props.catalogUpdate && props.canEdit && (
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-2 rounded-lg border border-gold/40 bg-gold/10 px-4 py-2.5 text-sm">
+            <span>
+              Nova versão do catálogo disponível (<strong>v{props.catalogUpdate.latestVersion}</strong>). A atualização guarda um ponto de restauração antes de migrar.
+            </span>
+            <Button type="button" size="sm" variant="outline" disabled={pending} onClick={migrateCatalog}>
+              <RefreshCw /> Atualizar para v{props.catalogUpdate.latestVersion}
+            </Button>
+          </div>
+        )}
         <div className="flex items-center justify-between gap-3">
           <h1 id="step-title" className="text-2xl font-semibold">
             {step.title}
           </h1>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-2">
             <SaveIndicator status={status} canEdit={props.canEdit} />
             {props.canEdit && (
+              <Button type="button" variant="outline" size="sm" onClick={generateAll} title="Preenche atributos, classe, origem, perícias e equipamento aleatoriamente">
+                <Sparkles /> Gerar aleatório
+              </Button>
+            )}
+            {props.canEdit && (
               <Link href={`/app/personagens/${props.characterId}/nivel`} className={buttonVariants({ variant: "outline", size: "sm" })}>
-                <ArrowUpCircle /> Subir de nível
+                <ArrowUpCircle /> {engine.formatLevel ? "Avançar" : "Subir de nível"}
               </Link>
             )}
             <Link href={`/app/personagens/${props.characterId}/avatar`} className={buttonVariants({ variant: "outline", size: "sm" })}>
@@ -150,19 +202,27 @@ export function CharacterEditor(props: {
             <Link href={`/app/personagens/${props.characterId}/ficha`} className={buttonVariants({ variant: "outline", size: "sm" })}>
               <FileText /> Ver ficha
             </Link>
+            <Link href={`/app/personagens/${props.characterId}/ficha?modo=mesa`} className={buttonVariants({ variant: "outline", size: "sm" })}>
+              <Dices /> Modo Mesa
+            </Link>
           </div>
         </div>
         <p className="mt-1 text-sm text-muted-foreground">{step.help}</p>
 
         <div className="mt-6 rounded-lg border bg-card p-5">
-          {step.id === "concept" && <ConceptStep data={data} update={update} issues={issuesFor("name")} />}
-          {step.id === "level" && <LevelStep data={data} update={update} engine={engine} issues={issuesFor("level")} />}
+          {step.id === "concept" && <ConceptStep data={data} update={update} issues={issuesFor("name")} canEdit={props.canEdit} onGenerateAll={generateAll} />}
+          {step.id === "level" && <LevelStep data={data} update={update} engine={engine} catalog={catalog} issues={issuesFor("level")} />}
           {step.id === "abilities" && <AbilitiesStep data={data} update={update} engine={engine} catalog={catalog} derived={derived} issues={issuesFor("abilities").concat(issuesFor("abilityMethod"), issuesFor("levelBonuses"))} />}
           {step.id === "narrative" && <NarrativeStep data={data} update={update} />}
           {step.id === "review" && (
             <ReviewStep
               characterId={props.characterId}
+              campaignId={props.campaignId}
+              canEdit={props.canEdit}
+              engine={engine}
+              data={data}
               versions={props.versions}
+              approvals={props.approvals ?? []}
               pending={pending}
               onSnapshot={(s) => startTransition(() => snapshotAction(props.characterId, s))}
               onRestore={(n) => startTransition(async () => {
@@ -211,7 +271,7 @@ export function CharacterEditor(props: {
         <div className="rounded-lg border bg-card p-4">
           <h2 className="text-sm font-semibold">{data.name || "Sem nome"}</h2>
           <p className="text-xs text-muted-foreground">
-            Nível {derived.level}
+            {engine.formatLevel ? engine.formatLevel(derived.level, data) : `Nível ${derived.level}`}
             {derived.proficiencyBonus !== undefined && ` · Proficiência +${derived.proficiencyBonus}`}
           </p>
           <dl className="mt-3 grid grid-cols-3 gap-2 text-center">
@@ -222,8 +282,12 @@ export function CharacterEditor(props: {
                 <div key={a.key} className="rounded-md border p-1.5">
                   <dt className="text-[10px] font-semibold tracking-wide text-muted-foreground">{a.abbr}</dt>
                   <dd className="font-heading text-lg">{has ? v.score : "—"}</dd>
-                  {has && engine.meta.dataAvailability === "licensed" && (
-                    <dd className="text-xs text-muted-foreground">{fmtMod(v.modifier)}</dd>
+                  {has && engine.abilityRollLabel ? (
+                    <dd className="text-xs text-muted-foreground">{engine.abilityRollLabel(v.score)}</dd>
+                  ) : (
+                    has && engine.meta.dataAvailability === "licensed" && (
+                      <dd className="text-xs text-muted-foreground">{fmtMod(v.modifier)}</dd>
+                    )
                   )}
                 </div>
               );
@@ -272,9 +336,26 @@ function SaveIndicator({ status, canEdit }: { status: SaveStatus; canEdit: boole
   );
 }
 
-function ConceptStep({ data, update, issues }: StepProps & { issues: ValidationIssue[] }) {
+function ConceptStep({
+  data,
+  update,
+  issues,
+  canEdit,
+  onGenerateAll,
+}: StepProps & { issues: ValidationIssue[]; canEdit: boolean; onGenerateAll: () => void }) {
   return (
     <div className="space-y-4">
+      {canEdit && (
+        <div className="flex flex-wrap items-center justify-between gap-2 rounded-md border bg-muted/40 p-3 text-sm">
+          <div>
+            <p className="font-medium">Preenchimento rápido (one-shot / NPC)</p>
+            <p className="text-xs text-muted-foreground">Sorteia atributos, raça, classe, origem, perícias e equipamento válidos.</p>
+          </div>
+          <Button type="button" size="sm" variant="outline" onClick={onGenerateAll}>
+            <Sparkles /> Gerar ficha completa aleatória
+          </Button>
+        </div>
+      )}
       <div className="space-y-1.5">
         <Label htmlFor="name">Nome</Label>
         <Input id="name" value={data.name} maxLength={80} onChange={(e) => update({ name: e.target.value })} />
@@ -321,46 +402,146 @@ function ConceptStep({ data, update, issues }: StepProps & { issues: ValidationI
   );
 }
 
-function LevelStep({ data, update, engine, issues }: StepProps & { engine: Engine; issues: ValidationIssue[] }) {
+function LevelStep({
+  data,
+  update,
+  engine,
+  catalog,
+  issues,
+}: StepProps & { engine: Engine; catalog: Catalog; issues: ValidationIssue[] }) {
   const { min, max } = engine.meta.levelRange;
+  const clsEntry = data.classes[0] ? catalog.get(data.classes[0].classId) : undefined;
+  const maxLevel = typeof clsEntry?.data.maxLevel === "number" ? clsEntry.data.maxLevel : max;
+  const setLevel = (level: number) => {
+    const clamped = Math.max(min, Math.min(maxLevel, level));
+    // Na criação há uma classe só: o nível dela acompanha o nível do personagem.
+    update({ level: clamped, classes: data.classes.map((cl, i) => (i === 0 ? { ...cl, levels: clamped } : cl)) });
+  };
+
   return (
     <div className="space-y-4">
-      <div className="max-w-40 space-y-1.5">
-        <Label htmlFor="level">Nível inicial</Label>
-        <Input
-          id="level"
-          type="number"
-          min={min}
-          max={max}
-          value={data.level}
-          onChange={(e) => {
-            const level = Math.max(1, Math.min(30, Number(e.target.value) || 1));
-            // Na criação há uma classe só: o nível dela acompanha o nível do personagem.
-            update({ level, classes: data.classes.map((cl, i) => (i === 0 ? { ...cl, levels: level } : cl)) });
-          }}
-        />
-        <p className="text-xs text-muted-foreground">Entre {min} e {max}. Iniciantes geralmente começam no nível 1.</p>
-      </div>
-      <fieldset>
-        <legend className="text-sm font-medium">Como o personagem evolui na campanha?</legend>
-        <div className="mt-2 flex flex-wrap gap-2">
-          {(
-            [
-              ["milestone", "Marcos narrativos"],
-              ["xp", "Pontos de experiência"],
-            ] as const
-          ).map(([id, label]) => (
-            <Button key={id} type="button" variant={data.progressionMode === id ? "default" : "outline"} onClick={() => update({ progressionMode: id })} aria-pressed={data.progressionMode === id}>
-              {label}
-            </Button>
-          ))}
+      {engine.formatLevel ? (
+        <div className="max-w-xs space-y-1.5">
+          <Label htmlFor="level">Nível de Exposição (NEX / Estágio)</Label>
+          <select
+            id="level"
+            value={Math.min(data.level, maxLevel)}
+            onChange={(e) => setLevel(Number(e.target.value) || min)}
+            className="h-9 w-full rounded-lg border border-input bg-transparent px-2.5 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 dark:bg-input/30"
+          >
+            {Array.from({ length: maxLevel - min + 1 }, (_, i) => min + i).map((n) => (
+              <option key={n} value={n}>
+                {engine.formatLevel!(n, data)}
+              </option>
+            ))}
+          </select>
+          <p className="text-xs text-muted-foreground">
+            {clsEntry?.id === "class:sobrevivente"
+              ? "Sobreviventes (NEX 0%) progridem de Estágio 1 até Estágio 5."
+              : "Agentes iniciantes começam em NEX 5% e avançam de 5% em 5% até NEX 99%."}
+          </p>
         </div>
-      </fieldset>
+      ) : (
+        <div className="max-w-40 space-y-1.5">
+          <Label htmlFor="level">Nível inicial</Label>
+          <Input
+            id="level"
+            type="number"
+            min={min}
+            max={max}
+            value={data.level}
+            onChange={(e) => {
+              const level = Math.max(1, Math.min(30, Number(e.target.value) || 1));
+              update({ level, classes: data.classes.map((cl, i) => (i === 0 ? { ...cl, levels: level } : cl)) });
+            }}
+          />
+          <p className="text-xs text-muted-foreground">Entre {min} e {max}. Iniciantes geralmente começam no nível 1.</p>
+        </div>
+      )}
+      {engine.levelForXp && (
+        <fieldset>
+          <legend className="text-sm font-medium">Como o personagem evolui na campanha?</legend>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {(
+              [
+                ["milestone", "Marcos narrativos"],
+                ["xp", "Pontos de experiência"],
+              ] as const
+            ).map(([id, label]) => (
+              <Button key={id} type="button" variant={data.progressionMode === id ? "default" : "outline"} onClick={() => update({ progressionMode: id })} aria-pressed={data.progressionMode === id}>
+                {label}
+              </Button>
+            ))}
+          </div>
+        </fieldset>
+      )}
       {data.progressionMode === "xp" && engine.levelForXp && (
         <div className="max-w-40 space-y-1.5">
           <Label htmlFor="xp">Experiência (XP)</Label>
           <Input id="xp" type="number" min={0} value={data.experience} onChange={(e) => update({ experience: Math.max(0, Number(e.target.value) || 0) })} />
         </div>
+      )}
+      {engine.meta.id === "ordem-paranormal-1e" && (
+        <fieldset className="space-y-2 rounded-md border p-3">
+          <legend className="px-1 text-sm font-medium">Regras opcionais (Sobrevivendo ao Horror)</legend>
+          {(
+            [
+              {
+                id: OP_OPTIONAL_RULES.DETERMINATION_POINTS,
+                label: "Jogando sem Sanidade (Pontos de Determinação — PD)",
+                desc: "Substitui PE e Sanidade por PD (SaH p. 104). Falhar no Custo do Paranormal drena PD em dobro.",
+              },
+              {
+                id: OP_OPTIONAL_RULES.SEPARATE_LEVEL_NEX,
+                label: "Separando Nível e NEX",
+                desc: "Controla Nível de Experiência (1–20) e porcentagem de NEX (0%–99%) separadamente (SaH p. 99).",
+              },
+              {
+                id: OP_OPTIONAL_RULES.DEBILITATING_INJURIES,
+                label: "Ferimentos Debilitantes",
+                desc: "Falhar ao sofrer dano massivo causa ferimento debilitante em um atributo em vez de cair a 0 PV (SaH p. 105).",
+              },
+            ] as const
+          ).map((rule) => {
+            const active = data.optionalRules?.includes(rule.id) ?? false;
+            return (
+              <label key={rule.id} className="flex cursor-pointer items-start gap-2.5 text-sm">
+                <input
+                  type="checkbox"
+                  className="mt-1 size-4 accent-primary"
+                  checked={active}
+                  onChange={(e) => {
+                    const prev = data.optionalRules ?? [];
+                    const next = e.target.checked ? [...new Set([...prev, rule.id])] : prev.filter((r) => r !== rule.id);
+                    update({
+                      optionalRules: next,
+                      ...(rule.id === OP_OPTIONAL_RULES.SEPARATE_LEVEL_NEX && e.target.checked && data.opSeparateNex === undefined
+                        ? { opSeparateNex: 0 }
+                        : {}),
+                    });
+                  }}
+                />
+                <span>
+                  <span className="font-medium">{rule.label}</span>
+                  <span className="block text-xs text-muted-foreground">{rule.desc}</span>
+                </span>
+              </label>
+            );
+          })}
+          {data.optionalRules?.includes(OP_OPTIONAL_RULES.SEPARATE_LEVEL_NEX) && (
+            <div className="max-w-44 space-y-1 pt-1">
+              <Label htmlFor="op-sep-nex">NEX separado (0% a 99%)</Label>
+              <Input
+                id="op-sep-nex"
+                type="number"
+                min={0}
+                max={99}
+                value={data.opSeparateNex ?? 0}
+                onChange={(e) => update({ opSeparateNex: Math.max(0, Math.min(99, Math.trunc(Number(e.target.value) || 0))) })}
+              />
+            </div>
+          )}
+        </fieldset>
       )}
       <IssueList issues={issues} empty="" />
     </div>
@@ -437,10 +618,16 @@ function AbilitiesStep({
                   update({ baseAbilities: next });
                 }}
               />
-              {engine.meta.dataAvailability === "licensed" && (
-                <span className="w-8 text-right font-mono text-sm" aria-label="Modificador">
-                  {v !== undefined ? fmtMod(derived.abilities[a.key].modifier) : ""}
+              {engine.abilityRollLabel ? (
+                <span className="w-14 text-right font-mono text-sm" aria-label="Dados de rolagem">
+                  {v !== undefined ? engine.abilityRollLabel(derived.abilities[a.key].score) : ""}
                 </span>
+              ) : (
+                engine.meta.dataAvailability === "licensed" && (
+                  <span className="w-8 text-right font-mono text-sm" aria-label="Modificador">
+                    {v !== undefined ? fmtMod(derived.abilities[a.key].modifier) : ""}
+                  </span>
+                )
               )}
             </div>
           );
@@ -550,21 +737,56 @@ function ContentStep({
 
 function ReviewStep({
   characterId,
+  campaignId,
+  canEdit,
+  engine,
+  data,
   report,
   versions,
+  approvals,
   pending,
   onSnapshot,
   onRestore,
 }: {
   characterId: string;
+  campaignId?: string | null;
+  canEdit: boolean;
+  engine: Engine;
+  data: CharacterData;
   report: ReturnType<Engine["validate"]>;
   versions: VersionRow[];
+  approvals: ApprovalRow[];
   pending: boolean;
   onSnapshot: (summary: string) => void;
   onRestore: (n: number) => void;
 }) {
+  const router = useRouter();
   const [summary, setSummary] = useState("");
+  const [reqSlot, setReqSlot] = useState("excecao");
+  const [reqReason, setReqReason] = useState("");
+  const [reqMsg, setReqMsg] = useState<string | null>(null);
+  const [, startReq] = useTransition();
   const blocking = report.issues.filter((i) => i.severity === "invalid").length;
+
+  const submitApproval = (e: React.FormEvent) => {
+    e.preventDefault();
+    setReqMsg(null);
+    startReq(async () => {
+      const r = await requestApprovalAction(characterId, {
+        slot: "manual",
+        contentId: reqSlot.trim() || "excecao",
+        reason: reqReason,
+      });
+      if (!r.ok) {
+        setReqMsg(r.error);
+        return;
+      }
+      setReqReason("");
+      setReqMsg("Pedido enviado ao mestre da campanha.");
+      router.refresh();
+    });
+  };
+
   return (
     <div className="space-y-6">
       <div>
@@ -579,10 +801,61 @@ function ReviewStep({
           <FileText /> Ver ficha pronta para jogar
         </Link>
         <p className="mt-1 text-xs text-muted-foreground">A ficha abre em formato de página para imprimir ou salvar em PDF.</p>
-        <Link href={`/app/personagens/${characterId}/avatar`} className={buttonVariants({ variant: "outline", className: "mt-3" })}>
-          <UserRound /> Montar a aparência (Avatar Studio)
-        </Link>
+        <div className="mt-3 flex flex-wrap gap-2">
+          <Link href={`/app/personagens/${characterId}/avatar`} className={buttonVariants({ variant: "outline" })}>
+            <UserRound /> Montar a aparência (Avatar Studio)
+          </Link>
+          <DuplicateButton characterId={characterId} size="default" variant="outline" />
+          <ShareSheetButton characterId={characterId} initialToken={data.publicShareToken} canEdit={canEdit} />
+        </div>
       </div>
+
+      {campaignId && (
+        <div className="space-y-3 rounded-md border p-4">
+          <h2 className="text-base font-semibold">Aprovações do mestre</h2>
+          {canEdit && (
+            <form onSubmit={submitApproval} className="space-y-2">
+              <div className="grid gap-2 sm:grid-cols-[200px_1fr]">
+                <Input
+                  value={reqSlot}
+                  onChange={(e) => setReqSlot(e.target.value)}
+                  maxLength={80}
+                  placeholder="Assunto (ex.: item ou regra)"
+                  aria-label="Assunto do pedido"
+                />
+                <Input
+                  value={reqReason}
+                  onChange={(e) => setReqReason(e.target.value)}
+                  maxLength={350}
+                  placeholder="Explique ao mestre o pedido de exceção"
+                  aria-label="Justificativa"
+                  required
+                />
+              </div>
+              <div className="flex items-center justify-between gap-2">
+                {reqMsg ? <span className="text-xs text-muted-foreground">{reqMsg}</span> : <span />}
+                <Button type="submit" size="sm" variant="outline">
+                  Pedir aprovação ao mestre
+                </Button>
+              </div>
+            </form>
+          )}
+          {approvals.length > 0 && (
+            <ul className="divide-y text-xs">
+              {approvals.map((a) => (
+                <li key={a.id} className="flex items-center justify-between gap-2 py-1.5">
+                  <span className="truncate">
+                    <strong>{a.contentId}:</strong> {a.reason}
+                  </span>
+                  <span className="shrink-0 font-medium">
+                    {a.status === "pending" ? "Pendente" : a.status === "approved" ? "Aprovado" : "Recusado"}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
 
       <div>
         <h2 className="text-base font-semibold">Histórico de versões</h2>
@@ -603,7 +876,8 @@ function ReviewStep({
           {versions.map((v) => (
             <li key={v.number} className="flex items-center justify-between gap-2 p-2.5 text-sm">
               <div>
-                <span className="font-medium">v{v.number}</span> · {REASON_LABEL[v.reason] ?? v.reason} · nível {v.level}
+                <span className="font-medium">v{v.number}</span> · {REASON_LABEL[v.reason] ?? v.reason} ·{" "}
+                {engine.formatLevel ? engine.formatLevel(v.level, data) : `nível ${v.level}`}
                 <p className="text-xs text-muted-foreground">
                   {v.summary} — {new Date(v.createdAt).toLocaleString("pt-BR")}
                 </p>

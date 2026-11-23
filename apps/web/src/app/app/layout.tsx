@@ -36,7 +36,13 @@ export default async function AppLayout({ children }: { children: React.ReactNod
             ))}
           </nav>
           <div className="flex items-center gap-1">
-            <span className="hidden text-sm text-muted-foreground sm:inline">{user.displayName}</span>
+            <Link
+              href="/app/conta"
+              className="hidden rounded-md px-2 py-1 text-sm text-muted-foreground hover:bg-muted hover:text-foreground sm:inline"
+              title="Configurações da conta"
+            >
+              {user.displayName}
+            </Link>
             <ThemeToggle />
             <form action={logout}>
               <Button variant="ghost" size="icon" type="submit" aria-label="Sair">

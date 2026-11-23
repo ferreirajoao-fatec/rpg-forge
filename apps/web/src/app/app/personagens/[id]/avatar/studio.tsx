@@ -178,6 +178,57 @@ async function svgToPng(svg: string, width: number, height: number): Promise<Blo
 
 const isTyping = (el: EventTarget | null) => el instanceof HTMLElement && (el.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName)) && (el as HTMLInputElement).type !== "range";
 
+const VTT_FRAMES = [
+  { id: "gold", label: "Ouro Fantasia", outer: "#f5c451", inner: "#7c5a10" },
+  { id: "ordem", label: "Carmesim Ordo Realitas", outer: "#dc2626", inner: "#450a0a" },
+  { id: "tactical", label: "Aço Tático", outer: "#64748b", inner: "#0f172a" },
+  { id: "silver", label: "Prata Élfica", outer: "#e2e8f0", inner: "#475569" },
+  { id: "emerald", label: "Esmeralda Arcana", outer: "#10b981", inner: "#064e3b" },
+] as const;
+type VttFrameId = (typeof VTT_FRAMES)[number]["id"];
+
+async function svgToFramedVttToken(svg: string, frameId: VttFrameId): Promise<Blob> {
+  const size = 512;
+  const img = new Image();
+  img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg.replace("<svg ", `<svg width="${size}" height="${size}" `));
+  await img.decode();
+
+  const canvas = document.createElement("canvas");
+  canvas.width = size;
+  canvas.height = size;
+  const ctx = canvas.getContext("2d")!;
+  const half = size / 2;
+  const radius = half - 18;
+
+  ctx.save();
+  ctx.beginPath();
+  ctx.arc(half, half, radius, 0, Math.PI * 2);
+  ctx.closePath();
+  ctx.clip();
+  ctx.drawImage(img, 0, 0, size, size);
+  ctx.restore();
+
+  const frame = VTT_FRAMES.find((f) => f.id === frameId) ?? VTT_FRAMES[0];
+  const grad = ctx.createLinearGradient(0, 0, size, size);
+  grad.addColorStop(0, frame.outer);
+  grad.addColorStop(0.5, frame.inner);
+  grad.addColorStop(1, frame.outer);
+
+  ctx.beginPath();
+  ctx.arc(half, half, radius, 0, Math.PI * 2);
+  ctx.lineWidth = 24;
+  ctx.strokeStyle = grad;
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(half, half, radius - 12, 0, Math.PI * 2);
+  ctx.lineWidth = 3;
+  ctx.strokeStyle = "rgba(255,255,255,0.45)";
+  ctx.stroke();
+
+  return new Promise((resolve, reject) => canvas.toBlob((b) => (b ? resolve(b) : reject(new Error("Falha ao gerar token."))), "image/png"));
+}
+
 export function AvatarStudio(props: StudioProps) {
   const { canEdit } = props;
   const [history, setHistory] = useState<History<AvatarConfig>>(() => startHistory(props.initialConfig));
@@ -195,6 +246,7 @@ export function AvatarStudio(props: StudioProps) {
   const [message, setMessage] = useState<string | null>(props.saved ? null : props.suggestionNotes.length ? `Sugestão pela ficha: ${props.suggestionNotes.join(" ")}` : null);
   const [versionLabel, setVersionLabel] = useState("");
   const [presetName, setPresetName] = useState("");
+  const [vttFrame, setVttFrame] = useState<VttFrameId>("gold");
   const [rendererState, setRendererState] = useState<"loading" | "ready" | "fallback">("loading");
   const [, startTransition] = useTransition();
 
@@ -426,6 +478,15 @@ export function AvatarStudio(props: StudioProps) {
       download(blob, name);
     } catch {
       setMessage("Não foi possível gerar a imagem neste navegador.");
+    }
+  };
+  const exportVttToken = async () => {
+    try {
+      const svg = composeSvg(config, { frame: "portrait", background: true });
+      const blob = await svgToFramedVttToken(svg, vttFrame);
+      download(blob, `${slug(props.characterName)}-token-vtt-${vttFrame}.png`);
+    } catch {
+      setMessage("Não foi possível gerar o token VTT neste navegador.");
     }
   };
   const exportJson = () => download(new Blob([JSON.stringify(config, null, 2)], { type: "application/json" }), `${slug(props.characterName)}-avatar.json`);
@@ -809,6 +870,28 @@ export function AvatarStudio(props: StudioProps) {
               <Button variant="outline" className="justify-start" onClick={() => exportPng("token")}>
                 <Download /> Token circular (PNG 512×512)
               </Button>
+              <div className="space-y-2 rounded-md border p-2.5">
+                <p className="text-xs font-medium">Token VTT com moldura (Roll20 / Foundry / Owlbear)</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {VTT_FRAMES.map((f) => (
+                    <button
+                      key={f.id}
+                      type="button"
+                      onClick={() => setVttFrame(f.id)}
+                      className={cn(
+                        "inline-flex items-center gap-1.5 rounded border px-2 py-1 text-[11px]",
+                        vttFrame === f.id ? "border-gold bg-gold/10 font-medium" : "hover:bg-muted",
+                      )}
+                    >
+                      <span className="size-2.5 rounded-full" style={{ backgroundColor: f.outer }} />
+                      {f.label}
+                    </button>
+                  ))}
+                </div>
+                <Button variant="outline" className="w-full justify-start" onClick={exportVttToken}>
+                  <Download /> Baixar Token VTT com moldura (PNG 512×512)
+                </Button>
+              </div>
               <Button variant="outline" className="justify-start" onClick={exportJson}>
                 <FileJson /> Configuração (JSON)
               </Button>

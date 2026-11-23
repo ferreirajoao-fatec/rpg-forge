@@ -16,12 +16,14 @@ import { Input } from "@rpg-forge/ui/components/input";
 import { cn } from "@rpg-forge/ui/lib/utils";
 import { rollTreasureAction } from "@/app/actions/gm";
 import { paginate, Pager } from "@/components/pager";
-import type { GmCreature, GmEntry } from "@/server/gm";
+import type { GmCreature, GmEntry, GmParty } from "@/server/gm";
+import { CombatTracker, type Combatant, type CombatState } from "./combat-tracker";
 
-type Tab = "encontro" | "ameacas" | "perigos" | "regras";
+type Tab = "encontro" | "combate" | "ameacas" | "perigos" | "regras";
 
 const TABS: [Tab, string][] = [
   ["encontro", "Encontro"],
+  ["combate", "Rastreador"],
   ["ameacas", "Ameaças"],
   ["perigos", "Perigos"],
   ["regras", "Regras e condições"],
@@ -66,13 +68,41 @@ function NumberField(props: { label: string; value: number; min: number; max: nu
   );
 }
 
-export function GmTools(props: { creatures: GmCreature[]; entries: GmEntry[]; packVersion: string }) {
+export function GmTools(props: { creatures: GmCreature[]; entries: GmEntry[]; packVersion: string; parties?: GmParty[] }) {
   const [tab, setTab] = useState<Tab>("encontro");
   const [encounter, setEncounter] = useState<{ id: string; count: number }[]>([]);
+  const [combat, setCombat] = useState<CombatState>({ round: 1, activeId: null, combatants: [] });
   const byId = useMemo(() => new Map(props.creatures.map((c) => [c.id, c])), [props.creatures]);
 
   const add = (id: string) => {
     setEncounter((e) => (e.some((x) => x.id === id) ? e.map((x) => (x.id === id ? { ...x, count: x.count + 1 } : x)) : [...e, { id, count: 1 }]));
+  };
+
+  const sendToTracker = () => {
+    const added: Combatant[] = [];
+    for (const item of encounter) {
+      const c = byId.get(item.id);
+      if (!c) continue;
+      const hp = c.hp ?? 20;
+      const init = c.initiative ?? 0;
+      for (let i = 1; i <= item.count; i++) {
+        added.push({
+          id: `${c.id}-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+          name: item.count > 1 ? `${c.name} #${i}` : c.name,
+          kind: "enemy",
+          initiative: 0,
+          initFormula: `1d20${init >= 0 ? `+${init}` : init}`,
+          hp,
+          maxHp: hp,
+          defense: c.defense ?? null,
+          conditions: [],
+        });
+      }
+    }
+    if (added.length) {
+      setCombat((prev) => ({ ...prev, combatants: [...prev.combatants, ...added] }));
+      setTab("combate");
+    }
   };
 
   return (
@@ -89,11 +119,13 @@ export function GmTools(props: { creatures: GmCreature[]; entries: GmEntry[]; pa
           >
             {label}
             {id === "encontro" && encounter.length > 0 && <span className="ml-1 text-xs text-muted-foreground">({encounter.reduce((t, x) => t + x.count, 0)})</span>}
+            {id === "combate" && combat.combatants.length > 0 && <span className="ml-1 text-xs text-muted-foreground">({combat.combatants.length})</span>}
           </button>
         ))}
       </div>
 
-      {tab === "encontro" && <EncounterBuilder creatures={props.creatures} byId={byId} encounter={encounter} setEncounter={setEncounter} onAdd={add} />}
+      {tab === "encontro" && <EncounterBuilder creatures={props.creatures} byId={byId} encounter={encounter} setEncounter={setEncounter} onAdd={add} onSendToTracker={sendToTracker} />}
+      {tab === "combate" && <CombatTracker storageKey="rpgforge:combat:t20" parties={props.parties ?? []} state={combat} onChange={setCombat} />}
       {tab === "ameacas" && <Bestiary creatures={props.creatures} onAdd={(id) => add(id)} />}
       {tab === "perigos" && <EntryList entries={props.entries.filter((e) => e.kind === "hazard")} groups={HAZARD_LABEL} label="perigos" />}
       {tab === "regras" && (
@@ -116,6 +148,7 @@ function EncounterBuilder(props: {
   encounter: { id: string; count: number }[];
   setEncounter: React.Dispatch<React.SetStateAction<{ id: string; count: number }[]>>;
   onAdd: (id: string) => void;
+  onSendToTracker: () => void;
 }) {
   const [level, setLevel] = useState(1);
   const [size, setSize] = useState(4);
@@ -285,6 +318,9 @@ function EncounterBuilder(props: {
           <p className="text-xs text-muted-foreground">
             O livro sugere um ou dois combates do nível do grupo antes de descansar. Em aventuras com muitas lutas, reduza o ND de cada uma em 1 ou 2.
           </p>
+          <Button type="button" variant="outline" className="w-full" disabled={!groups.length} onClick={props.onSendToTracker}>
+            <Swords className="size-4" /> Enviar para o rastreador
+          </Button>
         </section>
 
         <section aria-labelledby="treasure-title" className="space-y-2 rounded-xl border bg-card p-4">

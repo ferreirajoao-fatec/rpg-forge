@@ -1,6 +1,7 @@
 import "server-only";
 import { del, get, put } from "@vercel/blob";
 import { z } from "zod";
+import { getEngine, hasEngine, type CharacterData } from "@rpg-forge/rules-engine";
 import { loadCatalog } from "@/server/rulesets";
 import { db } from "@/server/db";
 import { loadWithAccess } from "@/server/characters";
@@ -115,15 +116,19 @@ export async function generatePortrait(characterId: string, userId: string, raw:
 
   const data = ch.data as {
     speciesId?: string | null;
-    classes?: { classId: string }[];
+    backgroundId?: string | null;
+    classes?: { classId: string; levels?: number }[];
     inventory?: { contentId?: string; customName?: string; equipped?: boolean }[];
   } | null;
   const catalog = await loadCatalog(ch.rulesetId, ch.rulesetVersionId);
+  const engine = hasEngine(ch.rulesetId) ? getEngine(ch.rulesetId) : undefined;
   const nameOf = (id: string | null | undefined) => (id ? (catalog.get(id)?.name ?? bareId(id)) : undefined);
   const prompt = buildPrompt({
     name: ch.name,
     level: ch.level,
-    species: nameOf(data?.speciesId),
+    levelLabel: engine?.formatLevel ? engine.formatLevel(ch.level, (ch.data as CharacterData | null) ?? undefined) : undefined,
+    genre: engine?.portraitGenre,
+    species: nameOf(data?.speciesId) ?? (engine?.portraitGenre ? nameOf(data?.backgroundId) : undefined),
     className: nameOf(data?.classes?.[0]?.classId),
     gear: (data?.inventory ?? []).filter((it) => it.equipped).map((it) => it.customName || nameOf(it.contentId) || ""),
     style: input.style,

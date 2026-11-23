@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <defs>
+    <filter id="f-primary" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{primary-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="f-metal" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{metal-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+  </defs>
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <g data-anchor="torso">
+      <path fill="#{primary}" stroke="#{primary-deep}" stroke-width="1.2" filter="url(#f-primary)" d="M234 176 L278 176 L284 202 L228 202 Z"/>
+      <path fill="#{primary}" stroke="#{primary-deep}" stroke-width="1.2" filter="url(#f-primary)" d="M210 198 L302 198 C312 246 314 316 312 396 C292 404 274 406 256 406 C238 406 220 404 200 396 C198 316 200 246 210 198 Z"/>
+      <path fill="#{metal}" stroke="#{metal-deep}" stroke-width="1" filter="url(#f-metal)" d="M222 222 L290 222 L296 296 L216 296 Z"/>
+      <path fill="#{secondary}" stroke="#{secondary-deep}" stroke-width="0.9" d="M220 306 L292 306 L292 372 L220 372 Z M234 380 L278 380 L282 414 L230 414 Z"/>
+      <path fill="none" stroke="#{primary-deep}" stroke-width="1" opacity="0.7" d="M224 252 L288 252 M224 274 L288 274 M256 222 L256 372"/>
+      <g id="tacShoulderL">
+        <path fill="#{primary}" stroke="#{primary-deep}" stroke-width="1.1" filter="url(#f-primary)" d="M210 190 C190 184 168 192 160 214 C156 228 156 248 160 264 C172 268 184 266 194 258 C200 236 205 210 210 190 Z"/>
+        <path fill="#{metal}" stroke="#{metal-deep}" stroke-width="0.8" d="M164 220 L192 220 L190 244 L162 244 Z"/>
+      </g>
+      <use href="#tacShoulderL" transform="matrix(-1 0 0 1 512 0)"/>
+    </g>
+  </g>
+</svg>

@@ -60,6 +60,9 @@
     { "id": "torso:tunica", "slot": "torso", "name": "Túnica", "defaults": { "primary": "#5b6e8c", "secondary": "#c9a66b" }, "layers": [{ "layer": "torso", "file": "torso/tunica.svg" }] },
     { "id": "torso:camisa-colete", "slot": "torso", "name": "Camisa e colete", "defaults": { "primary": "#6b4a32", "secondary": "#e8dcc4", "metal": "#b08d57" }, "layers": [{ "layer": "torso", "file": "torso/camisa-colete.svg" }] },
     { "id": "torso:manto-longo", "slot": "torso", "name": "Manto longo", "defaults": { "primary": "#3c3a6b", "secondary": "#c9a66b" }, "layers": [{ "layer": "torso", "file": "torso/manto-longo.svg" }] },
+    { "id": "torso:sobretudo", "slot": "torso", "name": "Sobretudo de investigador", "defaults": { "primary": "#4a3f38", "secondary": "#2b2f38", "metal": "#9aa0a6" }, "layers": [{ "layer": "torso", "file": "torso/sobretudo.svg" }] },
+    { "id": "torso:jaqueta-tatica", "slot": "torso", "name": "Jaqueta tática", "defaults": { "primary": "#2f3a40", "secondary": "#4f555d", "metal": "#9aa0a6" }, "layers": [{ "layer": "torso", "file": "torso/jaqueta-tatica.svg" }] },
+    { "id": "torso:terno-ordem", "slot": "torso", "name": "Terno de agente", "defaults": { "primary": "#242830", "secondary": "#8b1e24", "metal": "#b08d57" }, "layers": [{ "layer": "torso", "file": "torso/terno-ordem.svg" }] },
 
     { "id": "legs:calca", "slot": "legs", "name": "Calça", "defaults": { "primary": "#4a3b30" }, "layers": [{ "layer": "legs", "file": "legs/calca.svg" }] },
     { "id": "legs:saia", "slot": "legs", "name": "Saia", "defaults": { "primary": "#6b2a34", "secondary": "#c9a66b" }, "layers": [{ "layer": "legs", "file": "legs/saia.svg" }] },
@@ -70,6 +73,8 @@
     { "id": "armor:couro", "slot": "armor", "name": "Couro", "defaults": { "primary": "#7a5232", "metal": "#b08d57" }, "layers": [{ "layer": "armor", "file": "armor/couro.svg" }] },
     { "id": "armor:cota-de-malha", "slot": "armor", "name": "Cota de malha", "defaults": { "metal": "#9aa0a6" }, "layers": [{ "layer": "armor", "file": "armor/cota-de-malha.svg" }] },
     { "id": "armor:peitoral", "slot": "armor", "name": "Peitoral de placas", "defaults": { "metal": "#a9b0b8", "secondary": "#6b2a34" }, "layers": [{ "layer": "armor", "file": "armor/peitoral.svg" }] },
+    { "id": "armor:colete-balistico", "slot": "armor", "name": "Colete balístico", "defaults": { "primary": "#2b303a", "secondary": "#3e4652", "metal": "#8c939d" }, "layers": [{ "layer": "armor", "file": "armor/colete-balistico.svg" }] },
+    { "id": "armor:protecao-pesada", "slot": "armor", "name": "Proteção tática pesada", "defaults": { "primary": "#262b34", "secondary": "#434b56", "metal": "#737a84" }, "layers": [{ "layer": "armor", "file": "armor/protecao-pesada.svg" }] },
 
     { "id": "belt:cinto-bolsa", "slot": "belt", "name": "Cinto com bolsa", "defaults": { "primary": "#5a3b26", "metal": "#b08d57" }, "layers": [{ "layer": "belt", "file": "belt/cinto-bolsa.svg" }] },
     { "id": "necklace:pingente", "slot": "necklace", "name": "Colar com pingente", "defaults": { "metal": "#c9a66b", "secondary": "#3f8f7a" }, "layers": [{ "layer": "necklace", "file": "necklace/pingente.svg" }] },
@@ -86,6 +91,7 @@
 
     { "id": "shield:redondo", "slot": "shield", "name": "Escudo redondo", "defaults": { "primary": "#7a5232", "metal": "#9aa0a6" }, "layers": [{ "layer": "shield", "file": "shield/redondo.svg" }] },
     { "id": "shield:heraldico", "slot": "shield", "name": "Escudo heráldico", "defaults": { "primary": "#3c3a6b", "secondary": "#c9a66b", "metal": "#a9b0b8" }, "layers": [{ "layer": "shield", "file": "shield/heraldico.svg" }] },
+    { "id": "shield:escudo-balistico", "slot": "shield", "name": "Escudo balístico", "defaults": { "primary": "#232830", "secondary": "#8b1e24", "metal": "#6e7682" }, "layers": [{ "layer": "shield", "file": "shield/escudo-balistico.svg" }] },
 
     { "id": "marks:cicatriz-olho", "slot": "marks", "name": "Cicatriz no olho", "pivot": [241, 119], "layers": [{ "layer": "marks", "file": "marks/cicatriz-olho.svg" }] },
     { "id": "marks:cicatriz-bochecha", "slot": "marks", "name": "Cicatriz na bochecha", "pivot": [273, 139], "layers": [{ "layer": "marks", "file": "marks/cicatriz-bochecha.svg" }] },
@@ -93,9 +99,12 @@
     { "id": "marks:tatuagem-tribal", "slot": "marks", "name": "Tatuagem tribal", "pivot": [277, 130], "defaults": { "ink": "#1f3a6b" }, "layers": [{ "layer": "marks", "file": "marks/tatuagem-tribal.svg" }] },
     { "id": "marks:runa-testa", "slot": "marks", "name": "Runa na testa", "pivot": [256, 99], "defaults": { "ink": "#3f8f7a" }, "layers": [{ "layer": "marks", "file": "marks/runa-testa.svg" }] },
     { "id": "marks:pintura-de-guerra", "slot": "marks", "name": "Pintura de guerra", "pivot": [256, 142], "defaults": { "ink": "#8a2f2f" }, "layers": [{ "layer": "marks", "file": "marks/pintura-de-guerra.svg" }] },
+    { "id": "marks:oculos", "slot": "marks", "name": "Óculos", "pivot": [256, 117], "defaults": { "ink": "#2b2b2b" }, "layers": [{ "layer": "marks", "file": "marks/oculos.svg" }] },
+    { "id": "marks:sigilo-paranormal", "slot": "marks", "name": "Sigilo paranormal", "pivot": [256, 99], "defaults": { "ink": "#8a2f2f" }, "layers": [{ "layer": "marks", "file": "marks/sigilo-paranormal.svg" }] },
 
     { "id": "background:pergaminho", "slot": "background", "name": "Pergaminho", "defaults": { "bg": "#d9c9a3" }, "layers": [{ "layer": "background", "file": "background/pergaminho.svg" }] },
     { "id": "background:arco", "slot": "background", "name": "Arco de pedra", "defaults": { "bg": "#7d7468" }, "layers": [{ "layer": "background", "file": "background/arco.svg" }] },
-    { "id": "background:estrelado", "slot": "background", "name": "Céu estrelado", "defaults": { "bg": "#2c3560" }, "layers": [{ "layer": "background", "file": "background/estrelado.svg" }] }
+    { "id": "background:estrelado", "slot": "background", "name": "Céu estrelado", "defaults": { "bg": "#2c3560" }, "layers": [{ "layer": "background", "file": "background/estrelado.svg" }] },
+    { "id": "background:escritorio-ordem", "slot": "background", "name": "Escritório de investigação", "defaults": { "bg": "#363b48" }, "layers": [{ "layer": "background", "file": "background/escritorio-ordem.svg" }] }
   ]
 }

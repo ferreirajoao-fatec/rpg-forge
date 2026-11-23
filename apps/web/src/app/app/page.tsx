@@ -7,6 +7,8 @@ import { requireUser } from "@/server/auth/dal";
 import { listCharacters } from "@/server/characters";
 import { portraitsFor } from "@/server/avatars";
 import { getEngine, hasEngine, type ValidationReport } from "@rpg-forge/rules-engine";
+import { DuplicateButton } from "./duplicate-button";
+import { ImportCharacter } from "./import-character";
 
 export const metadata: Metadata = { title: "Personagens" };
 
@@ -27,9 +29,12 @@ export default async function Dashboard() {
           <h1 className="text-2xl font-semibold">Seus personagens</h1>
           <p className="mt-1 text-sm text-muted-foreground">Rascunhos são salvos automaticamente enquanto você edita.</p>
         </div>
-        <Link href="/app/personagens/novo" className={buttonVariants()}>
-          <Plus /> Novo personagem
-        </Link>
+        <div className="flex flex-wrap items-center gap-2">
+          <ImportCharacter />
+          <Link href="/app/personagens/novo" className={buttonVariants()}>
+            <Plus /> Novo personagem
+          </Link>
+        </div>
       </div>
 
       {characters.length === 0 ? (
@@ -48,10 +53,10 @@ export default async function Dashboard() {
           {characters.map((c) => {
             const report = c.validation as ValidationReport | null;
             return (
-              <li key={c.id}>
+              <li key={c.id} className="flex h-full flex-col rounded-lg border bg-card transition-colors hover:border-gold/60">
                 <Link
                   href={`/app/personagens/${c.id}`}
-                  className="block h-full rounded-lg border bg-card p-4 transition-colors hover:border-gold/60 focus-visible:outline-2 focus-visible:outline-ring"
+                  className="block flex-1 p-4 focus-visible:outline-2 focus-visible:outline-ring"
                 >
                   <div className="flex items-start gap-3">
                     {portraits[c.id] ? (
@@ -67,7 +72,12 @@ export default async function Dashboard() {
                         {report && <SeverityBadge status={report.status} />}
                       </div>
                       <p className="mt-1 text-sm text-muted-foreground">
-                        {hasEngine(c.rulesetId) ? getEngine(c.rulesetId).meta.name : c.rulesetId} · Nível {c.level}
+                        {hasEngine(c.rulesetId)
+                          ? (() => {
+                              const eng = getEngine(c.rulesetId);
+                              return `${eng.meta.name} · ${eng.formatLevel ? eng.formatLevel(c.level) : `Nível ${c.level}`}`;
+                            })()
+                          : `${c.rulesetId} · Nível ${c.level}`}
                       </p>
                     </div>
                   </div>
@@ -75,6 +85,17 @@ export default async function Dashboard() {
                     {STATUS_LABEL[c.status]} · atualizado em {c.updatedAt.toLocaleDateString("pt-BR")}
                   </p>
                 </Link>
+                <div className="flex items-center justify-between gap-2 border-t px-4 py-2 text-xs">
+                  <div className="flex items-center gap-1">
+                    <Link href={`/app/personagens/${c.id}/ficha?modo=mesa`} className={buttonVariants({ variant: "ghost", size: "xs" })}>
+                      Modo Mesa
+                    </Link>
+                    <Link href={`/app/personagens/${c.id}/ficha`} className={buttonVariants({ variant: "ghost", size: "xs" })}>
+                      Ficha
+                    </Link>
+                  </div>
+                  <DuplicateButton characterId={c.id} />
+                </div>
               </li>
             );
           })}

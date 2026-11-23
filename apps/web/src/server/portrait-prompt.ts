@@ -17,6 +17,8 @@ export const MAX_GEAR = 8;
 export function buildPrompt(opts: {
   name: string;
   level: number;
+  levelLabel?: string;
+  genre?: string;
   species?: string;
   className?: string;
   style: PortraitStyle;
@@ -25,12 +27,26 @@ export function buildPrompt(opts: {
   /** Nomes dos itens equipados (armas, armadura, escudo...). */
   gear?: string[];
 }) {
-  const who = [opts.species, opts.className].filter(Boolean).join(" ") || "adventurer";
+  const genre = opts.genre?.trim() || "fantasy tabletop role-playing game";
+  const isFantasy = /fantasy/i.test(genre);
+  const who = [opts.species, opts.className].filter(Boolean).join(" ") || (isFantasy ? "adventurer" : "investigator");
+  const stylePrompt = isFantasy
+    ? PORTRAIT_STYLES[opts.style].prompt
+    : PORTRAIT_STYLES[opts.style].prompt
+        .replace(/\bclassic fantasy book illustration\b/gi, "atmospheric graphic novel illustration")
+        .replace(/\bfantasy\b/gi, "contemporary investigative noir")
+        .replace(/\band armor\b/gi, "and tactical outerwear");
+  const framing = isFantasy
+    ? "Framing: the whole figure from head to feet, standing in a confident heroic pose, three-quarter view, centered with some space around it, with a simple atmospheric background that matches the character. Show the complete outfit clearly: weapons, armor, shield, clothing and adventuring gear."
+    : "Framing: the whole figure from head to feet, standing in a confident investigative pose, three-quarter view, centered with some space around it, with a moody contemporary urban or occult atmospheric background that matches the character. Show the complete outfit clearly: modern clothing, protective vest, tactical or investigative gear and carried items.";
+  const characterLine = opts.levelLabel
+    ? `Character: ${opts.name || (isFantasy ? "an unnamed hero" : "an unnamed agent")}, ${who} (${opts.levelLabel}).`
+    : `Character: ${opts.name || "an unnamed hero"}, a level ${opts.level} ${who}.`;
   const lines = [
-    "Create a full-length character illustration for a fantasy tabletop role-playing game.",
-    "Framing: the whole figure from head to feet, standing in a confident heroic pose, three-quarter view, centered with some space around it, with a simple atmospheric background that matches the character. Show the complete outfit clearly: weapons, armor, shield, clothing and adventuring gear.",
-    `Art style: ${PORTRAIT_STYLES[opts.style].prompt}.`,
-    `Character: ${opts.name || "an unnamed hero"}, a level ${opts.level} ${who}.`,
+    `Create a full-length character illustration for a ${genre}.`,
+    framing,
+    `Art style: ${stylePrompt}.`,
+    characterLine,
   ];
   const gear = (opts.gear ?? []).map((g) => g.trim()).filter(Boolean).slice(0, MAX_GEAR);
   if (gear.length) lines.push(`Equipment the character is carrying or wearing (may be in Portuguese): ${gear.join(", ")}.`);

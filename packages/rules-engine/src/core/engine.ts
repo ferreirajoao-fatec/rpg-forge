@@ -117,10 +117,12 @@ export interface InventoryRow {
   name: string;
   quantity: number;
   equipped: boolean;
-  /** Peso total da linha (quantidade × peso unitário), quando conhecido. */
+  /** Peso total da linha (quantidade × peso unitário), ou espaços ocupados quando o sistema usa espaços. */
   weight?: number;
   /** Valor unitário estimado, já com melhorias, na moeda padrão. */
   value?: number;
+  /** Categoria efetiva do item (0–IV), para sistemas baseados em Patente/Categoria (ex.: Ordem Paranormal). */
+  itemCategory?: number;
   /** Onde o item é equipado (ex.: "armadura", "escudo", "arma", "acessorio"). */
   slot?: string;
   magic: boolean;
@@ -129,14 +131,34 @@ export interface InventoryRow {
   detail?: string;
 }
 
+/** Orçamento de itens por categoria e patente (Ordem Paranormal). */
+export interface CategoryBudget {
+  rank: string;
+  credit: string;
+  prestige: number;
+  nextPrestige?: number;
+  /** Quantidade de itens levados por categoria (chaves 1, 2, 3, 4). */
+  counts: Record<number, number>;
+  /** Limite permitido pela patente por categoria (chaves 1, 2, 3, 4). */
+  limits: Record<number, number>;
+  /** Se a patente permite requisitar itens amaldiçoados. */
+  cursedAllowed: boolean;
+  /** Se o personagem é Sobrevivente (usa limite especial em vez de patente). */
+  isSurvivor?: boolean;
+}
+
 export interface InventorySummary {
   rows: InventoryRow[];
   totalWeight: number;
   totalValue: number;
   /** Dinheiro total na moeda padrão. */
   money: number;
+  /** Unidade de carga ("kg" padrão, ou "espaços"). */
+  loadUnit?: "kg" | "espaços";
   /** Limites de carga, quando o sistema os usa. */
   load?: { light: number; max: number; state: "normal" | "encumbered" | "overloaded" };
+  /** Controle de patente e limite de itens por categoria (Ordem Paranormal). */
+  categoryBudget?: CategoryBudget;
 }
 
 export interface RulesetMeta {
@@ -162,17 +184,26 @@ export interface DerivedStats {
   /** Estatísticas derivadas específicas do sistema (PV, PM, Defesa...). */
   stats?: { key: string; label: string; value: number | string; detail?: string; source?: SourceRef }[];
   /** Modificadores de perícia, quando o sistema os calcula. */
-  skills?: { id: string; name: string; trained: boolean; value: number }[];
+  skills?: { id: string; name: string; trained: boolean; value: number; rank?: "destreinado" | "treinado" | "veterano" | "expert"; dice?: string }[];
   /** Inventário resolvido, quando o sistema o calcula. */
   inventory?: InventorySummary;
 }
 
 /** Limite de escolhas de um tipo (perícias, poderes) para o nível atual. */
 export interface ChoiceLimit {
-  kind: "skill" | "power";
+  kind: "skill" | "power" | "spell";
   used: number;
   max: number;
   /** De onde vem o limite, para mostrar ao jogador ("classe 2 + Inteligência 1 + raça 2"). */
+  detail: string;
+}
+
+/** Limite de aprimoramentos de grau de treinamento de perícias (Ordem Paranormal: Veterano/Expert). */
+export interface SkillUpgradeBudget {
+  used: number;
+  max: number;
+  /** Grau máximo liberado no nível/NEX atual. */
+  maxRank: "treinado" | "veterano" | "expert";
   detail: string;
 }
 
@@ -182,6 +213,14 @@ export interface RulesEngine {
   readonly abilityMethods: AbilityMethod[];
   creationSteps(catalog: Catalog): CreationStep[];
   abilityModifier(score: number): number;
+  /** Rótulo do nível na interface (ex.: "Nível 3", "NEX 15%", "Estágio 2 (NEX 0%)"). */
+  formatLevel?(level: number, c?: CharacterData): string;
+  /** Rótulo secundário do atributo (ex.: "3d20" ou "2d20↓" em sistemas de pool de dados). */
+  abilityRollLabel?(score: number): string;
+  /** Modo de inventário ("currency" padrão ou "op-patente"). */
+  readonly inventoryMode?: "currency" | "op-patente";
+  /** Gênero/ambientação para o prompt de retrato com IA (padrão: fantasia medieval). */
+  readonly portraitGenre?: string;
   /** Nível correspondente a uma quantidade de XP, se o sistema usar XP. */
   levelForXp?(xp: number): number;
   /** XP mínimo de cada nível (índice 0 = 1º nível), se o sistema usar XP. */
@@ -202,10 +241,12 @@ export interface RulesEngine {
    */
   levelBonusBudget?(c: CharacterData, catalog: Catalog): { points: number; max: number; detail: string };
   /**
-   * Quantas escolhas livres de perícia e de poder a ficha tem no nível atual e quantas já usou.
+   * Quantas escolhas livres de perícia, poder ou ritual a ficha tem no nível atual e quantas já usou.
    * Ausente = o sistema não limita (ou limita de outro jeito, na validação).
    */
   choiceLimits?(c: CharacterData, catalog: Catalog): ChoiceLimit[];
+  /** Orçamento de aumentos de grau de treinamento (Veterano/Expert), quando o sistema usa. */
+  skillUpgradeBudget?(c: CharacterData, catalog: Catalog): SkillUpgradeBudget;
   evaluateOption(c: CharacterData, entry: ContentEntry, catalog: Catalog): OptionEvaluation;
 }
 

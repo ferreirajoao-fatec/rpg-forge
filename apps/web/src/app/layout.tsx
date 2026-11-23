@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cinzel, Geist_Mono, Source_Sans_3 } from "next/font/google";
 import { TooltipProvider } from "@rpg-forge/ui/components/tooltip";
+import { PwaRegister } from "@/components/pwa-register";
 import "./globals.css";
 
 const display = Cinzel({ variable: "--font-display", subsets: ["latin"], weight: ["500", "600", "700"] });
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       </head>
       <body className="min-h-full flex flex-col">
         <TooltipProvider>{children}</TooltipProvider>
+        <PwaRegister />
       </body>
     </html>
   );

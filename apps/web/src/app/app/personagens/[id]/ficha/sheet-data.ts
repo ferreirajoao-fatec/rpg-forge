@@ -1,15 +1,18 @@
 import { getEngine, type Catalog, type CharacterData, type ContentEntry, T20_XP_THRESHOLDS } from "@rpg-forge/rules-engine";
 import { nextLevelXp, sheetItems, type SheetItem } from "./sheet-items";
 import { buildDndSheet } from "./sheet-data-dnd";
+import { buildOpSheet } from "./sheet-data-op";
 
 /** Tudo o que a ficha impressa mostra, já calculado pelo motor de regras. */
 export interface SheetData {
-  /** Layout da ficha: Tormenta20 (PM, Defesa, círculos) ou D&D 5e (CA, níveis de magia, talentos). */
-  flavor: "t20" | "dnd";
+  /** Layout da ficha: Tormenta20 (PM, Defesa), D&D 5e (CA, níveis de magia) ou Ordem Paranormal (Dossiê, PV/PE/SAN, pool d20). */
+  flavor: "t20" | "dnd" | "op";
   name: string;
   player: string;
   system: string;
   level: number;
+  /** Rótulo alternativo do nível (ex.: "NEX 35%" ou "Estágio 2 (NEX 0%)"). */
+  levelLabel?: string;
   experience?: number;
   className?: string;
   classOption?: string;
@@ -17,30 +20,48 @@ export interface SheetData {
   origin?: string;
   deity?: string;
   concept: string;
-  abilities: { key: string; abbr: string; label: string; score: number | null; modifier: number | null }[];
+  abilities: { key: string; abbr: string; label: string; score: number | null; modifier: number | null; rollLabel?: string }[];
   saves: SkillLine[];
   skills: SkillLine[];
   stats: Record<string, { label: string; value: number | string; detail?: string }>;
-  attacks: { name: string; test: number | null; damage: string; critical: string; type: string; range?: string }[];
+  attacks: { name: string; test: number | null; roll?: string; damage: string; critical: string; type: string; range?: string }[];
   traits: { name: string; from: string; text: string }[];
   powers: { name: string; text: string }[];
-  /** `circle`: círculo (Tormenta20) ou nível da magia (D&D, 0 = truque). `cost`: PM (só Tormenta20). */
-  spells: { name: string; circle: number; cost?: number; execution?: string; range?: string; duration?: string; text: string }[];
+  /** `circle`: círculo (Tormenta20/OP) ou nível da magia (D&D, 0 = truque). `cost`: PM/PE. */
+  spells: {
+    name: string;
+    circle: number;
+    cost?: number;
+    element?: string;
+    elementId?: string;
+    execution?: string;
+    range?: string;
+    duration?: string;
+    discente?: { cost: string; text: string };
+    verdadeiro?: { cost: string; text: string };
+    text: string;
+  }[];
   proficiencies: string[];
   equipment: SheetItem[];
   /** Barra de experiência: XP atual e faixa do nível (só no modo por XP). */
   xp?: { current: number; from: number; to?: number };
   money: { abbr: string; label: string; amount: number }[];
-  load?: { carried: number; light: number; max: number; state: string };
+  load?: { carried: number; light: number; max: number; state: string; unit?: string };
+  /** Metadados específicos de Ordem Paranormal (Patente, Prestígio, Crédito, Afinidade, Categorias). */
+  opMeta?: { rank: string; credit: string; prestige: number; affinity?: string; categorySummary?: string; usePd?: boolean; debilitatingInjuries?: boolean };
   narrative: CharacterData["narrative"];
   pending: string[];
 }
 
-interface SkillLine {
+export interface SkillLine {
   name: string;
   ability: string;
   value: number | null;
   trained: boolean;
+  /** Grau de treinamento (Ordem Paranormal). */
+  rank?: string;
+  /** Fórmula de rolagem em pool (Ordem Paranormal, ex.: "3d20+10"). */
+  dice?: string;
 }
 
 const SAVES = new Set(["skill:fortitude", "skill:reflexos", "skill:vontade"]);
@@ -58,6 +79,7 @@ const signed = (n: number) => (n >= 0 ? `+${n}` : `${n}`);
 
 export function buildSheet(c: CharacterData, rulesetId: string, catalog: Catalog, player: string): SheetData {
   if (rulesetId.startsWith("dnd5e-")) return buildDndSheet(c, rulesetId, catalog, player);
+  if (rulesetId === "ordem-paranormal-1e") return buildOpSheet(c, rulesetId, catalog, player);
   const engine = getEngine(rulesetId);
   const d = engine.derive(c, catalog);
   const hasAbilities = engine.abilities.every((a) => c.baseAbilities[a.key] !== undefined);

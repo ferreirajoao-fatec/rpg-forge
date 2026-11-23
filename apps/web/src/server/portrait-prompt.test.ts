@@ -47,5 +47,28 @@ describe("texto aceito pelos filtros de conteúdo", () => {
       for (const w of ["bust", "skin", "nude", "naked", "body"]) expect(p, `${style}: ${w}`).not.toMatch(new RegExp(`\\b${w}\\b`));
     }
   });
+
+  it("adapta gênero contemporâneo/paranormal sem marcas registradas nem palavras bloqueadas", () => {
+    const genre = "contemporary urban paranormal investigation tabletop role-playing game";
+    for (const style of Object.keys(PORTRAIT_STYLES) as (keyof typeof PORTRAIT_STYLES)[]) {
+      const p = buildPrompt({
+        name: "Arthur",
+        level: 7,
+        levelLabel: "NEX 35%",
+        genre,
+        species: "Policial",
+        className: "Combatente",
+        style,
+        description: "",
+        withReference: false,
+      });
+      expect(p).toContain("Arthur, Policial Combatente (NEX 35%)");
+      expect(p).toContain("full-length");
+      expect(p).toContain("head to feet");
+      expect(p).not.toMatch(/dungeons|d&d|tormenta|ordem paranormal/i);
+      const low = p.toLowerCase();
+      for (const w of ["bust", "skin", "nude", "naked", "body"]) expect(low, `op ${style}: ${w}`).not.toMatch(new RegExp(`\\b${w}\\b`));
+    }
+  });
 });
 

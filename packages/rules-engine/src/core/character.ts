@@ -86,6 +86,10 @@ export const CharacterDataSchema = z.object({
     .default({ appearance: "", personality: "", ideals: "", bonds: "", flaws: "", backstory: "" }),
   /** Regras opcionais habilitadas (ids definidos pelo motor). */
   optionalRules: z.array(z.string()).default([]),
+  /** NEX independente do nível quando "op:separate-level-nex" (Sobrevivendo ao Horror, p. 99) está ativo. */
+  opSeparateNex: z.number().int().min(0).max(99).optional(),
+  /** Token secreto para link público somente leitura da ficha (`/ficha-publica/[id].[token]`). */
+  publicShareToken: z.string().max(64).optional(),
   session: SessionStateSchema.default({ currentHp: null, tempHp: 0, spent: {}, conditions: [], notes: "" }),
 });
 

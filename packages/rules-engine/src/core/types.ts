@@ -6,7 +6,7 @@
  */
 
 /** Identificador estável de um conjunto de regras (sistema + edição). */
-export type RulesetId = "dnd5e-2014" | "dnd5e-2024" | "tormenta20-2020" | (string & {});
+export type RulesetId = "dnd5e-2014" | "dnd5e-2024" | "tormenta20-2020" | "ordem-paranormal-1e" | (string & {});
 
 /** Origem/licença de um conteúdo. */
 export type ContentOrigin = "official" | "authorized" | "homebrew";

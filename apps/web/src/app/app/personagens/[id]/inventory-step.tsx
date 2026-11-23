@@ -1,9 +1,10 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Coins, Dices, PackagePlus, Plus, Trash2 } from "lucide-react";
+import { Award, Coins, Dices, PackagePlus, Plus, Trash2 } from "lucide-react";
 import {
   cryptoRng,
+  formatOpCategory,
   moneyTotal,
   payWith,
   receive,
@@ -43,13 +44,17 @@ const CATEGORY_LABEL: Record<string, string> = {
   veiculo: "Veículos",
   "arma-magica": "Armas mágicas",
   "armadura-magica": "Armaduras mágicas",
-  acessorio: "Acessórios mágicos",
+  acessorio: "Acessórios",
+  explosivo: "Explosivos",
+  paranormal: "Itens paranormais",
+  "item-amaldicoado": "Itens amaldiçoados",
   pocao: "Poções e óleos",
   artefato: "Artefatos",
 };
 /** Categorias que só existem para melhorar outros itens, ou que não são objetos. */
 const NOT_ITEMS = new Set(["modificacao", "material", "encanto", "servico", "hospedagem"]);
 const GEAR = new Set(["arma", "armadura", "escudo"]);
+const OP_IMPROVABLE = new Set(["arma", "municao", "armadura", "escudo", "acessorio", "vestuario"]);
 
 const SELECT_CLS =
   "h-8 rounded-lg border border-input bg-transparent px-2 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 dark:bg-input/30";
@@ -84,6 +89,9 @@ export function InventoryStep({
 }) {
   const currencies = engine.currencies ?? [];
   const summary = derived.inventory;
+  const isOp = engine.inventoryMode === "op-patente";
+  const categoryBudget = summary?.categoryBudget;
+  const loadUnit = summary?.loadUnit ?? "kg";
   const money = moneyTotal(data.currency, currencies);
   const std = currencies.find((c) => c.value === 1);
   const unit = unitOf(engine);
@@ -137,7 +145,7 @@ export function InventoryStep({
     setMessage(wealth.formula ? `Rolagem de ${wealth.formula}: ${amount} ${unit}.` : `${fmtNum(amount)} ${unit} adicionadas.`);
   };
 
-  const kit = ["equipment:mochila", "equipment:saco-de-dormir", "equipment:traje-de-viajante"].filter((id) => catalog.get(id));
+  const kit = isOp ? [] : ["equipment:mochila", "equipment:saco-de-dormir", "equipment:traje-de-viajante"].filter((id) => catalog.get(id));
   const addKit = () => {
     const missing = kit.filter((id) => !data.inventory.some((i) => i.contentId === id));
     setInventory([
@@ -163,53 +171,114 @@ export function InventoryStep({
 
   return (
     <div className="space-y-6">
-      {/* Dinheiro */}
-      <section aria-labelledby="inv-money" className="space-y-3">
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <h2 id="inv-money" className="flex items-center gap-1.5 font-medium">
-            <Coins className="size-4" aria-hidden /> Dinheiro
-          </h2>
-          <span className="text-sm text-muted-foreground">
-            Total: <strong className="text-foreground tabular-nums">{fmtNum(money)}</strong> {unit}
-          </span>
-        </div>
-        <div className="grid gap-3 sm:grid-cols-3">
-          {currencies.map((cur) => (
-            <div key={cur.key} className="space-y-1">
-              <Label htmlFor={`cur-${cur.key}`}>
-                {cur.label} <span className="text-xs text-muted-foreground">({cur.value === 1 ? "padrão" : `${fmtNum(cur.value)} cada`})</span>
+      {/* Patente e Prestígio (Ordem Paranormal) ou Dinheiro (Tormenta20 / D&D) */}
+      {isOp && categoryBudget ? (
+        <section aria-labelledby="inv-patente" className="space-y-3">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <h2 id="inv-patente" className="flex items-center gap-1.5 font-medium">
+              <Award className="size-4" aria-hidden /> Patente e Pontos de Prestígio
+            </h2>
+            <div className="flex flex-wrap items-center gap-2 text-xs">
+              <Badge variant="secondary">{categoryBudget.rank}</Badge>
+              <Badge variant="outline">Crédito: {categoryBudget.credit}</Badge>
+            </div>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            <div className="space-y-1">
+              <Label htmlFor="cur-pp">
+                Pontos de Prestígio (PP){" "}
+                <span className="text-xs text-muted-foreground">
+                  ({categoryBudget.nextPrestige !== undefined ? `próxima patente: ${categoryBudget.nextPrestige} PP` : "patente máxima"})
+                </span>
               </Label>
               <Input
-                id={`cur-${cur.key}`}
+                id="cur-pp"
                 type="number"
                 min={0}
                 inputMode="numeric"
                 disabled={!canEdit}
-                value={data.currency[cur.key] ?? 0}
-                onChange={(ev) => update({ currency: { ...data.currency, [cur.key]: Math.max(0, Math.floor(Number(ev.target.value) || 0)) } })}
+                value={data.currency.pp ?? 0}
+                onChange={(ev) => update({ currency: { ...data.currency, pp: Math.max(0, Math.floor(Number(ev.target.value) || 0)) } })}
               />
             </div>
-          ))}
-        </div>
-        <div className="flex flex-wrap gap-2">
-          {wealth && std && (
-            <Button variant="outline" size="sm" onClick={grantWealth} disabled={!canEdit}>
-              <Dices /> Dinheiro inicial ({wealth.formula ?? `${fmtNum(wealth.amount ?? 0)} ${unit}`}, nível {derived.level})
-            </Button>
-          )}
-          {kit.length > 0 && (
-            <Button variant="outline" size="sm" onClick={addKit} disabled={!canEdit}>
-              <PackagePlus /> Kit básico
-            </Button>
-          )}
-        </div>
-        {kit.length > 0 && <p className="text-xs text-muted-foreground">
-          Equipamento inicial (p. 138): mochila, saco de dormir e traje de viajante; uma arma simples (e uma marcial, se tiver proficiência);
-          armadura de couro, couro batido ou gibão de peles (brunea, se tiver proficiência com armaduras pesadas); escudo leve, se tiver
-          proficiência com escudos. Arcanistas começam sem armadura. Some os itens da origem.
-        </p>}
-        {packages.length > 0 && <StartingPackages packages={packages} catalog={catalog} unit={unit} canEdit={canEdit} onTake={takePackage} />}
-      </section>
+            <div className="flex items-end">
+              <p className="text-xs text-muted-foreground">
+                {categoryBudget.cursedAllowed
+                  ? "Itens amaldiçoados e maldições liberados pela patente."
+                  : "Itens amaldiçoados exigem patente Agente Especial (50 PP)."}
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+            {[1, 2, 3, 4].map((cat) => {
+              const usedCat = categoryBudget.counts[cat] ?? 0;
+              const maxCat = categoryBudget.limits[cat] ?? 0;
+              const over = usedCat > maxCat;
+              return (
+                <div
+                  key={cat}
+                  className={cn(
+                    "rounded-md border p-2 text-center text-xs",
+                    over && "border-destructive/60 bg-destructive/5 text-destructive",
+                  )}
+                >
+                  <p className="font-medium">Categoria {formatOpCategory(cat)}</p>
+                  <p className="mt-0.5 text-sm font-semibold tabular-nums">
+                    {usedCat} / {maxCat}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      ) : (
+        <section aria-labelledby="inv-money" className="space-y-3">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <h2 id="inv-money" className="flex items-center gap-1.5 font-medium">
+              <Coins className="size-4" aria-hidden /> Dinheiro
+            </h2>
+            <span className="text-sm text-muted-foreground">
+              Total: <strong className="text-foreground tabular-nums">{fmtNum(money)}</strong> {unit}
+            </span>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-3">
+            {currencies.map((cur) => (
+              <div key={cur.key} className="space-y-1">
+                <Label htmlFor={`cur-${cur.key}`}>
+                  {cur.label} <span className="text-xs text-muted-foreground">({cur.value === 1 ? "padrão" : `${fmtNum(cur.value)} cada`})</span>
+                </Label>
+                <Input
+                  id={`cur-${cur.key}`}
+                  type="number"
+                  min={0}
+                  inputMode="numeric"
+                  disabled={!canEdit}
+                  value={data.currency[cur.key] ?? 0}
+                  onChange={(ev) => update({ currency: { ...data.currency, [cur.key]: Math.max(0, Math.floor(Number(ev.target.value) || 0)) } })}
+                />
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {wealth && std && (
+              <Button variant="outline" size="sm" onClick={grantWealth} disabled={!canEdit}>
+                <Dices /> Dinheiro inicial ({wealth.formula ?? `${fmtNum(wealth.amount ?? 0)} ${unit}`}, nível {derived.level})
+              </Button>
+            )}
+            {kit.length > 0 && (
+              <Button variant="outline" size="sm" onClick={addKit} disabled={!canEdit}>
+                <PackagePlus /> Kit básico
+              </Button>
+            )}
+          </div>
+          {kit.length > 0 && <p className="text-xs text-muted-foreground">
+            Equipamento inicial (p. 138): mochila, saco de dormir e traje de viajante; uma arma simples (e uma marcial, se tiver proficiência);
+            armadura de couro, couro batido ou gibão de peles (brunea, se tiver proficiência com armaduras pesadas); escudo leve, se tiver
+            proficiência com escudos. Arcanistas começam sem armadura. Some os itens da origem.
+          </p>}
+          {packages.length > 0 && <StartingPackages packages={packages} catalog={catalog} unit={unit} canEdit={canEdit} onTake={takePackage} />}
+        </section>
+      )}
 
       {/* Itens */}
       <section aria-labelledby="inv-items" className="space-y-3">
@@ -236,6 +305,8 @@ export function InventoryStep({
                   entry={entry}
                   catalog={catalog}
                   unit={unit}
+                  loadUnit={loadUnit}
+                  isOp={isOp}
                   canEdit={canEdit}
                   onPatch={(p) => patchItem(item.entryId, p)}
                   onRemove={() => setInventory(data.inventory.filter((i) => i.entryId !== item.entryId))}
@@ -247,7 +318,9 @@ export function InventoryStep({
         )}
         {summary && (
           <p className="text-xs text-muted-foreground">
-            Peso total {fmtNum(summary.totalWeight)}kg · Valor estimado {fmtNum(summary.totalValue)} {unit}
+            {isOp
+              ? `Carga total: ${fmtNum(summary.totalWeight)} ${loadUnit}`
+              : `Peso total ${fmtNum(summary.totalWeight)}${loadUnit} · Valor estimado ${fmtNum(summary.totalValue)} ${unit}`}
           </p>
         )}
         <IssueList issues={issues} empty="" />
@@ -259,7 +332,7 @@ export function InventoryStep({
         </p>
       )}
 
-      {canEdit && <CatalogPicker entries={entries} money={money} onAdd={add} data={data} catalog={catalog} unit={unit} />}
+      {canEdit && <CatalogPicker entries={entries} money={money} onAdd={add} data={data} catalog={catalog} unit={unit} isOp={isOp} />}
       {canEdit && <CustomItem onAdd={(name) => setInventory([...data.inventory, { entryId: newId(), customName: name, quantity: 1, equipped: false, modifications: [], enchantments: [] }])} />}
     </div>
   );
@@ -267,16 +340,19 @@ export function InventoryStep({
 
 function LoadMeter({ summary }: { summary: NonNullable<DerivedStats["inventory"]> }) {
   const load = summary.load;
+  const loadUnit = summary.loadUnit ?? "kg";
+  const unitSuffix = loadUnit === "kg" ? "kg" : ` ${loadUnit}`;
   if (!load) return <span className="text-xs text-muted-foreground">Defina a Força para calcular a carga.</span>;
   const pct = load.max > 0 ? Math.min(100, (summary.totalWeight / load.max) * 100) : 100;
   const lightPct = load.max > 0 ? (load.light / load.max) * 100 : 0;
   const label = { normal: "Sem penalidade", encumbered: "Sobrecarregado", overloaded: "Acima do máximo" }[load.state];
   return (
-    <div className="w-full max-w-xs space-y-1" title={`Sem penalidade até ${fmtNum(load.light)}kg; máximo ${fmtNum(load.max)}kg (p. 154).`}>
+    <div className="w-full max-w-xs space-y-1" title={`Sem penalidade até ${fmtNum(load.light)}${unitSuffix}; máximo ${fmtNum(load.max)}${unitSuffix}.`}>
       <div className="flex justify-between text-xs">
         <span className={cn(load.state !== "normal" && "font-medium text-destructive")}>Carga: {label}</span>
         <span className="tabular-nums text-muted-foreground">
-          {fmtNum(summary.totalWeight)} / {fmtNum(load.light)} / {fmtNum(load.max)}kg
+          {fmtNum(summary.totalWeight)} / {fmtNum(load.light)} / {fmtNum(load.max)}
+          {unitSuffix}
         </span>
       </div>
       <div className="relative h-2 overflow-hidden rounded-full bg-muted" role="meter" aria-valuemin={0} aria-valuemax={load.max} aria-valuenow={summary.totalWeight} aria-label="Carga">
@@ -293,6 +369,8 @@ function InventoryLine({
   entry,
   catalog,
   unit,
+  loadUnit,
+  isOp,
   canEdit,
   onPatch,
   onRemove,
@@ -303,6 +381,8 @@ function InventoryLine({
   entry?: ContentEntry;
   catalog: Catalog;
   unit: string;
+  loadUnit: string;
+  isOp: boolean;
   canEdit: boolean;
   onPatch: (p: Partial<InventoryItem>) => void;
   onRemove: () => void;
@@ -310,11 +390,13 @@ function InventoryLine({
 }) {
   const category = String(entry?.data.category ?? "");
   const name = row?.name ?? entry?.name ?? item.customName ?? "Item";
+  const canImprove = entry && (isOp ? OP_IMPROVABLE.has(category) || entry.id === "equipment:soqueira" : GEAR.has(category));
   return (
     <li className={cn("rounded-md border p-3", item.equipped && "border-primary/50 bg-primary/5")}>
       <div className="flex flex-wrap items-center gap-2">
         <span className="font-medium">{name}</span>
-        {row?.magic && <Badge variant="secondary">mágico</Badge>}
+        {isOp && row?.itemCategory !== undefined && <Badge variant="outline">Cat. {formatOpCategory(row.itemCategory)}</Badge>}
+        {row?.magic && <Badge variant="secondary">{isOp ? "amaldiçoado" : "mágico"}</Badge>}
         {item.equipped && row && !row.effective && <Badge variant="destructive">sem efeito</Badge>}
         {!entry && <Badge variant="outline">personalizado</Badge>}
         <div className="ml-auto flex items-center gap-2">
@@ -333,7 +415,7 @@ function InventoryLine({
             value={item.quantity}
             onChange={(ev) => onPatch({ quantity: Math.max(0, Math.floor(Number(ev.target.value) || 0)) })}
           />
-          {canEdit && row?.value !== undefined && (
+          {canEdit && !isOp && row?.value !== undefined && (
             <Button variant="ghost" size="xs" onClick={onSell} title="Vender uma unidade pela metade do preço">
               Vender
             </Button>
@@ -349,14 +431,14 @@ function InventoryLine({
         {[
           entry?.summary,
           row?.detail,
-          row?.weight !== undefined ? `${fmtNum(row.weight)}kg` : "",
-          row?.value !== undefined ? `${fmtNum(row.value)} ${unit} cada` : "",
+          row?.weight !== undefined ? (loadUnit === "kg" ? `${fmtNum(row.weight)}kg` : `${fmtNum(row.weight)} ${loadUnit}`) : "",
+          !isOp && row?.value !== undefined ? `${fmtNum(row.value)} ${unit} cada` : "",
           entry?.source.page ? `p. ${entry.source.page}` : "",
         ]
           .filter(Boolean)
           .join(" · ")}
       </p>
-      {entry && GEAR.has(category) && canEdit && <Improvements item={item} category={category} catalog={catalog} onPatch={onPatch} />}
+      {canImprove && canEdit && <Improvements item={item} entry={entry} category={category} catalog={catalog} isOp={isOp} onPatch={onPatch} />}
       <Input
         className="mt-2 h-7 text-xs"
         placeholder="Anotações (cargas, origem do item...)"
@@ -370,21 +452,51 @@ function InventoryLine({
   );
 }
 
-/** Modificações, material especial e encantos aplicados a armas, armaduras e escudos. */
-function Improvements({ item, category, catalog, onPatch }: { item: InventoryItem; category: string; catalog: Catalog; onPatch: (p: Partial<InventoryItem>) => void }) {
+/** Modificações, material especial e encantos/maldições aplicados a equipamentos. */
+function Improvements({
+  item,
+  entry,
+  category,
+  catalog,
+  isOp,
+  onPatch,
+}: {
+  item: InventoryItem;
+  entry: ContentEntry;
+  category: string;
+  catalog: Catalog;
+  isOp: boolean;
+  onPatch: (p: Partial<InventoryItem>) => void;
+}) {
   const all = catalog.ofKind("equipment");
-  const fits = (target: unknown) =>
-    target === "outro" ||
-    (target === "arma" && category === "arma") ||
-    (target === "armadura-escudo" && category !== "arma") ||
-    (target === "escudo" && category === "escudo");
+  const fits = (target: unknown) => {
+    if (isOp) {
+      if (target === "outro") return true;
+      if (target === "arma") return category === "arma" || entry.id === "equipment:soqueira";
+      if (target === "arma-fogo") return entry.data.weaponType === "fogo";
+      if (target === "arma-protecao") return category === "arma" || category === "armadura" || category === "escudo";
+      if (target === "municao") return category === "municao";
+      if (target === "protecao") return category === "armadura" || category === "escudo";
+      if (target === "protecao-pesada") return entry.data.armorType === "pesada";
+      if (target === "acessorio") return category === "acessorio" || category === "vestuario";
+      return false;
+    }
+    return (
+      target === "outro" ||
+      (target === "arma" && category === "arma") ||
+      (target === "armadura-escudo" && category !== "arma") ||
+      (target === "escudo" && category === "escudo")
+    );
+  };
   const mods = all.filter((e) => e.data.category === "modificacao" && e.id !== "equipment:material-especial" && fits(e.data.target));
   const enchants = all.filter((e) => e.data.category === "encanto" && fits(e.data.target));
-  const materials = all.filter((e) => {
-    if (e.data.category !== "material") return false;
-    const cost = e.data.materialCost as Record<string, number | null> | undefined;
-    return cost && Object.values(cost).some((v) => v !== null);
-  });
+  const materials = isOp
+    ? []
+    : all.filter((e) => {
+        if (e.data.category !== "material") return false;
+        const cost = e.data.materialCost as Record<string, number | null> | undefined;
+        return cost && Object.values(cost).some((v) => v !== null);
+      });
   const name = (id: string) => catalog.get(id)?.name.split(" (")[0] ?? id;
   if (!mods.length && !enchants.length && !materials.length && !item.modifications.length && !item.enchantments.length) return null;
   const chips = [
@@ -393,7 +505,9 @@ function Improvements({ item, category, catalog, onPatch }: { item: InventoryIte
   ];
   return (
     <details className="mt-2 text-sm">
-      <summary className="cursor-pointer text-xs text-muted-foreground">Melhorias (itens superiores e encantos)</summary>
+      <summary className="cursor-pointer text-xs text-muted-foreground">
+        {isOp ? "Modificações (+I) e Maldições (+II / +I)" : "Melhorias (itens superiores e encantos)"}
+      </summary>
       <div className="mt-2 space-y-2">
         {chips.length > 0 && (
           <div className="flex flex-wrap gap-1.5">
@@ -411,49 +525,59 @@ function Improvements({ item, category, catalog, onPatch }: { item: InventoryIte
           </div>
         )}
         <div className="flex flex-wrap gap-2">
-          <select
-            className={SELECT_CLS}
-            value=""
-            aria-label="Adicionar modificação"
-            onChange={(ev) => ev.target.value && onPatch({ modifications: [...item.modifications, ev.target.value] })}
-          >
-            <option value="">+ Modificação</option>
-            {mods.filter((m) => !item.modifications.includes(m.id)).map((m) => (
-              <option key={m.id} value={m.id}>
-                {m.name}
-                {typeof m.data.effectSummary === "string" ? ` — ${m.data.effectSummary}` : ""}
-              </option>
-            ))}
-          </select>
-          <select
-            className={SELECT_CLS}
-            value={item.materialId ?? ""}
-            aria-label="Material especial"
-            onChange={(ev) => onPatch({ materialId: ev.target.value || undefined })}
-          >
-            <option value="">Material: comum</option>
-            {materials.map((m) => (
-              <option key={m.id} value={m.id}>
-                {m.name}
-              </option>
-            ))}
-          </select>
-          <select
-            className={SELECT_CLS}
-            value=""
-            aria-label="Adicionar encanto"
-            onChange={(ev) => ev.target.value && onPatch({ enchantments: [...item.enchantments, ev.target.value] })}
-          >
-            <option value="">+ Encanto</option>
-            {enchants.filter((m) => !item.enchantments.includes(m.id)).map((m) => (
-              <option key={m.id} value={m.id}>
-                {m.name}
-                {typeof m.data.effectSummary === "string" ? ` — ${m.data.effectSummary}` : ""}
-              </option>
-            ))}
-          </select>
+          {mods.length > 0 && (
+            <select
+              className={SELECT_CLS}
+              value=""
+              aria-label="Adicionar modificação"
+              onChange={(ev) => ev.target.value && onPatch({ modifications: [...item.modifications, ev.target.value] })}
+            >
+              <option value="">+ Modificação</option>
+              {mods.filter((m) => !item.modifications.includes(m.id)).map((m) => (
+                <option key={m.id} value={m.id}>
+                  {m.name}
+                  {typeof m.data.effectSummary === "string" ? ` — ${m.data.effectSummary}` : ""}
+                </option>
+              ))}
+            </select>
+          )}
+          {materials.length > 0 && (
+            <select
+              className={SELECT_CLS}
+              value={item.materialId ?? ""}
+              aria-label="Material especial"
+              onChange={(ev) => onPatch({ materialId: ev.target.value || undefined })}
+            >
+              <option value="">Material: comum</option>
+              {materials.map((m) => (
+                <option key={m.id} value={m.id}>
+                  {m.name}
+                </option>
+              ))}
+            </select>
+          )}
+          {enchants.length > 0 && (
+            <select
+              className={SELECT_CLS}
+              value=""
+              aria-label={isOp ? "Adicionar maldição" : "Adicionar encanto"}
+              onChange={(ev) => ev.target.value && onPatch({ enchantments: [...item.enchantments, ev.target.value] })}
+            >
+              <option value="">{isOp ? "+ Maldição" : "+ Encanto"}</option>
+              {enchants.filter((m) => !item.enchantments.includes(m.id)).map((m) => (
+                <option key={m.id} value={m.id}>
+                  {m.name}
+                  {typeof m.data.effectSummary === "string" ? ` — ${m.data.effectSummary}` : ""}
+                </option>
+              ))}
+            </select>
+          )}
         </div>
-        <p className="text-xs text-muted-foreground">O preço estimado soma o aumento por modificações (p. 155), encantos (p. 320) e o material (p. 157). Material especial conta como uma modificação.</p>
+        <p className="text-xs text-muted-foreground">
+          {isOp
+            ? "Cada modificação aumenta a categoria em +I. A primeira maldição aumenta em +II e cada maldição adicional em +I; elementos opressores não podem ser combinados no mesmo item."
+            : "O preço estimado soma o aumento por modificações (p. 155), encantos (p. 320) e o material (p. 157). Material especial conta como uma modificação."}
+        </p>
       </div>
     </details>
   );
@@ -466,6 +590,7 @@ function CatalogPicker({
   data,
   catalog,
   unit,
+  isOp,
 }: {
   entries: ContentEntry[];
   money: number;
@@ -473,6 +598,7 @@ function CatalogPicker({
   data: CharacterData;
   catalog: Catalog;
   unit: string;
+  isOp: boolean;
 }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("");
@@ -489,7 +615,7 @@ function CatalogPicker({
       ({ entry: e, fit }) =>
         (!forYou || isForYou(fit.fit)) &&
         (!category || e.data.category === category) &&
-        (!affordable || (priceOf(e) ?? 0) <= money) &&
+        (isOp || !affordable || (priceOf(e) ?? 0) <= money) &&
         (!q || `${e.name} ${e.summary}`.toLocaleLowerCase("pt-BR").includes(q)),
     )
     .sort(
@@ -510,8 +636,10 @@ function CatalogPicker({
       </h2>
       <p className="text-xs text-muted-foreground">
         {ctx.className
-          ? `“Para você” mostra primeiro as armas, armaduras e escudos que um ${ctx.className.toLowerCase()} sabe usar, depois os itens gerais. Itens que exigem outra proficiência ou mágicos ficam no “Catálogo completo”.`
-          : "Escolha uma classe para ver primeiro as armas e armaduras que você sabe usar."}
+          ? isOp
+            ? `“Para você” mostra primeiro as armas e proteções que um ${ctx.className.toLowerCase()} sabe usar, depois os itens gerais e paranormais. Equipamentos que exigem outra proficiência ou itens amaldiçoados ficam no “Catálogo completo”.`
+            : `“Para você” mostra primeiro as armas, armaduras e escudos que um ${ctx.className.toLowerCase()} sabe usar, depois os itens gerais. Itens que exigem outra proficiência ou mágicos ficam no “Catálogo completo”.`
+          : "Escolha uma classe para ver primeiro as armas e proteções que você sabe usar."}
       </p>
       <div className="flex flex-wrap items-center gap-2">
         <Input type="search" className="min-w-48 flex-1" value={query} onChange={(ev) => go(() => setQuery(ev.target.value))} placeholder="Buscar itens" aria-label="Buscar itens" />
@@ -524,15 +652,28 @@ function CatalogPicker({
           ))}
         </select>
         <ScopeToggle forYou={forYou} onChange={(v) => go(() => setForYou(v))} />
-        <label className="flex items-center gap-1.5 text-sm">
-          <input type="checkbox" className="size-4 accent-primary" checked={affordable} onChange={(ev) => go(() => setAffordable(ev.target.checked))} />
-          Só o que posso comprar
-        </label>
+        {!isOp && (
+          <label className="flex items-center gap-1.5 text-sm">
+            <input type="checkbox" className="size-4 accent-primary" checked={affordable} onChange={(ev) => go(() => setAffordable(ev.target.checked))} />
+            Só o que posso comprar
+          </label>
+        )}
       </div>
       <ul className="space-y-1">
         {slice.map(({ entry: e, fit }, i) => {
           const price = priceOf(e);
-          const priceText = typeof e.data.priceText === "string" ? e.data.priceText : price !== undefined ? `${fmtNum(price)} ${unit}` : "";
+          const priceText = isOp
+            ? `Cat. ${formatOpCategory(Number(e.data.itemCategory ?? 0))}`
+            : typeof e.data.priceText === "string"
+              ? e.data.priceText
+              : price !== undefined
+                ? `${fmtNum(price)} ${unit}`
+                : "";
+          const loadText = isOp
+            ? `${fmtNum(Number(e.data.spaces ?? e.data.weight ?? 1))} esp.`
+            : typeof e.data.weight === "number"
+              ? `${fmtNum(e.data.weight)}kg`
+              : "";
           const newGroup = i === 0 || slice[i - 1].fit.fit !== fit.fit;
           return (
             <li key={e.id}>
@@ -543,13 +684,13 @@ function CatalogPicker({
                     {e.name} <FitChip fit={fit.fit} label={fit.label} />
                   </p>
                   <p className="truncate text-xs text-muted-foreground">
-                    {[CATEGORY_LABEL[String(e.data.category)], priceText, typeof e.data.weight === "number" ? `${fmtNum(e.data.weight)}kg` : "", e.summary].filter(Boolean).join(" · ")}
+                    {[CATEGORY_LABEL[String(e.data.category)], priceText, loadText, e.summary].filter(Boolean).join(" · ")}
                   </p>
                 </div>
                 <Button variant="ghost" size="xs" onClick={() => onAdd(e, false)} aria-label={`Adicionar ${e.name}`}>
                   <Plus /> Adicionar
                 </Button>
-                {price !== undefined && (
+                {!isOp && price !== undefined && (
                   <Button variant="outline" size="xs" onClick={() => onAdd(e, true)} disabled={price > money} aria-label={`Comprar ${e.name}`}>
                     Comprar
                   </Button>
