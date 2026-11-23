@@ -11,14 +11,29 @@ export type PortraitStyle = keyof typeof PORTRAIT_STYLES;
 export const STYLE_IDS = Object.keys(PORTRAIT_STYLES) as [PortraitStyle, ...PortraitStyle[]];
 
 /** Pedido em inglês (o modelo segue melhor), com a descrição do jogador citada como veio. */
-export function buildPrompt(opts: { name: string; level: number; species?: string; className?: string; style: PortraitStyle; description: string; withReference: boolean }) {
+/** Itens equipados citados no pedido, no máximo. */
+export const MAX_GEAR = 8;
+
+export function buildPrompt(opts: {
+  name: string;
+  level: number;
+  species?: string;
+  className?: string;
+  style: PortraitStyle;
+  description: string;
+  withReference: boolean;
+  /** Nomes dos itens equipados (armas, armadura, escudo...). */
+  gear?: string[];
+}) {
   const who = [opts.species, opts.className].filter(Boolean).join(" ") || "adventurer";
   const lines = [
-    "Create a character portrait for a fantasy tabletop role-playing game.",
-    "Framing: head-and-shoulders portrait, three-quarter view, looking toward the viewer, centered, with a simple atmospheric background that matches the character.",
+    "Create a full-length character illustration for a fantasy tabletop role-playing game.",
+    "Framing: the whole figure from head to feet, standing in a confident heroic pose, three-quarter view, centered with some space around it, with a simple atmospheric background that matches the character. Show the complete outfit clearly: weapons, armor, shield, clothing and adventuring gear.",
     `Art style: ${PORTRAIT_STYLES[opts.style].prompt}.`,
     `Character: ${opts.name || "an unnamed hero"}, a level ${opts.level} ${who}.`,
   ];
+  const gear = (opts.gear ?? []).map((g) => g.trim()).filter(Boolean).slice(0, MAX_GEAR);
+  if (gear.length) lines.push(`Equipment the character is carrying or wearing (may be in Portuguese): ${gear.join(", ")}.`);
   if (opts.description) lines.push(`Appearance and details described by the player (may be in Portuguese): """${opts.description}"""`);
   if (opts.withReference) {
     lines.push(
