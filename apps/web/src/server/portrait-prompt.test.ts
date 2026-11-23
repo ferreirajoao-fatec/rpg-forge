@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { buildPrompt } from "./portrait-prompt";
+import { buildPrompt, PORTRAIT_STYLES } from "./portrait-prompt";
 
 const base = { name: "Lyra", level: 3, species: "Elfo", className: "Mago", style: "aquarela" as const, description: "", withReference: false };
 
@@ -23,3 +23,14 @@ describe("pedido de retrato para o Gemini", () => {
     expect(p).toMatch(/no(t include)? any text/i);
   });
 });
+
+describe("texto aceito pelos filtros de conteúdo", () => {
+  // O filtro do Cloudflare barrou o pedido por "NSFW" quando o texto fixo dizia "bust" (busto).
+  it("o texto fixo não usa palavras que disparam alarme falso", () => {
+    for (const style of Object.keys(PORTRAIT_STYLES) as (keyof typeof PORTRAIT_STYLES)[]) {
+      const p = buildPrompt({ ...base, style }).toLowerCase();
+      for (const w of ["bust", "skin", "nude", "naked", "body"]) expect(p, `${style}: ${w}`).not.toMatch(new RegExp(`\\b${w}\\b`));
+    }
+  });
+});
+

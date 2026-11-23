@@ -3,7 +3,7 @@
 export const PORTRAIT_STYLES = {
   pintura: { label: "Pintura digital", prompt: "painterly digital fantasy illustration, rich brushwork, dramatic lighting, classic fantasy book illustration" },
   aquarela: { label: "Aquarela", prompt: "watercolor painting, soft washes, visible paper texture, delicate ink outlines" },
-  realista: { label: "Realista", prompt: "realistic cinematic portrait, detailed skin and materials, shallow depth of field, soft key light" },
+  realista: { label: "Realista", prompt: "realistic cinematic portrait, detailed face, fabrics and armor, shallow depth of field, soft key light" },
   anime: { label: "Anime", prompt: "anime / cel-shaded illustration, clean line art, vibrant colors" },
   esboco: { label: "Esboço a lápis", prompt: "graphite and ink pencil sketch on parchment, cross-hatching, monochrome sepia tones" },
 } as const;
@@ -15,7 +15,7 @@ export function buildPrompt(opts: { name: string; level: number; species?: strin
   const who = [opts.species, opts.className].filter(Boolean).join(" ") || "adventurer";
   const lines = [
     "Create a character portrait for a fantasy tabletop role-playing game.",
-    "Framing: head and shoulders bust, three-quarter view, looking toward the viewer, centered, with a simple atmospheric background that matches the character.",
+    "Framing: head-and-shoulders portrait, three-quarter view, looking toward the viewer, centered, with a simple atmospheric background that matches the character.",
     `Art style: ${PORTRAIT_STYLES[opts.style].prompt}.`,
     `Character: ${opts.name || "an unnamed hero"}, a level ${opts.level} ${who}.`,
   ];
