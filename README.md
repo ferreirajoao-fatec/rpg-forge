@@ -1,8 +1,15 @@
 # RPG Forge
 
 Plataforma para criar, validar e evoluir personagens de RPG de mesa: D&D 5e (2014), D&D 5e revisado (2024) e
-Tormenta20 (livro básico de 2020, sob OGL 1.0a), com um Avatar Studio 2D por camadas para a aparência de cada
-personagem e ferramentas do mestre (encontros, experiência, tesouro e consulta de ameaças). Arquitetura, decisões e plano de fases estão em [docs/ARQUITETURA.md](docs/ARQUITETURA.md).
+Tormenta20 (livro básico de 2020, sob OGL 1.0a, exibido como "Fantasia d20 (2020)"). Inclui:
+
+* **Ficha guiada por etapas**, com validação de regras em tempo real (limites de perícias e poderes por nível,
+  pré-requisitos, inventário) e ficha imprimível.
+* **Subida de nível** ("Meu próximo nível"): o que muda, habilidades novas e decisões pendentes, com versão no histórico.
+* **Avatar Studio 2D** por camadas e **retrato ilustrado por IA** (corpo inteiro, com o equipamento equipado na ficha).
+* **Campanhas** com convite por link e **ferramentas do mestre** (encontros, experiência, tesouro e consulta de ameaças).
+
+Arquitetura, decisões e plano de fases estão em [docs/ARQUITETURA.md](docs/ARQUITETURA.md).
 
 ## Requisitos
 
@@ -17,8 +24,22 @@ cp .env.example .env          # ajuste DATABASE_URL (o .env fica na raiz e vale 
 pnpm db:up                    # Postgres no Docker
 pnpm db:migrate               # aplica as migrações
 pnpm content:import content/tormenta20-2020/pack.ts   # importa o catálogo do Tormenta20 (2020)
+pnpm content:import content/dnd5e-2014/pack.ts         # e os do D&D 5e (SRD 5.1 e 5.2.1), se for usar
+pnpm content:import content/dnd5e-2024/pack.ts
 pnpm dev                      # http://localhost:3000
 ```
+
+### Retrato com IA (opcional)
+
+Sem estas variáveis, a página do avatar mostra só o editor manual. Detalhes em `.env.example`.
+
+| Variável | Para quê |
+|---|---|
+| `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_API_TOKEN` | Cloudflare Workers AI (FLUX.1 schnell): cota grátis diária. Token com a permissão "Workers AI". |
+| `GEMINI_API_KEY` | Alternativa paga: a API do Gemini não gera imagens no plano gratuito. Aceita o avatar desenhado como referência. |
+| `AI_PORTRAIT_PROVIDER` | `cloudflare` ou `gemini`. Sem ela, usa o primeiro configurado (Cloudflare, depois Gemini). |
+| `BLOB_STORE_ID` ou `BLOB_READ_WRITE_TOKEN` | Vercel Blob privado onde as imagens ficam. Na Vercel, o store conectado usa OIDC (`BLOB_STORE_ID`). |
+| `AI_PORTRAIT_DAILY_LIMIT` | Gerações por usuário a cada 24 h (padrão 10). |
 
 ## Scripts (na raiz)
 
@@ -33,6 +54,7 @@ pnpm dev                      # http://localhost:3000
 | `pnpm typecheck` | Verificação de tipos em todos os pacotes |
 | `pnpm lint` | ESLint em todo o monorepo |
 | `pnpm content:import pacote.json [--dry-run]` | Valida e importa um pacote de conteúdo (JSON ou módulo `.ts`) como nova versão do catálogo |
+| `pnpm srd:fetch` / `pnpm srd:build` | Baixa o SRD do D&D 5e (5e-database, commit fixado) e regera `content/dnd5e-*` traduzido |
 | `pnpm assets:build` | Valida `assets/avatar` (SVG e `catalog.json`) e regera o módulo de peças do avatar. Rode após editar as peças |
 | `python scripts/tormenta20/extract.py "Tormenta 20.pdf"` | Regera `content/tormenta20-2020/data/` a partir do seu PDF do livro (Python 3.11+ e PyMuPDF) |
 
@@ -64,7 +86,8 @@ Nenhuma Identidade do Produto é distribuída: veja `docs/ARQUITETURA.md`.
 
 `.github/workflows/ci.yml` roda a cada push na `main` e em pull requests: instala, aplica as migrações num
 Postgres vazio, importa o pacote de conteúdo e roda `typecheck`, `lint`, `test`, `build` e os testes de tela
-(login, personagem, ficha, avatar e mestre). Quando um teste de tela falha, o rastro fica nos artefatos da execução.
+(login, personagem, ficha e limite de poderes, avatar, mestre, subida de nível e campanha com convite). Quando um
+teste de tela falha, o rastro fica nos artefatos da execução.
 
 ## Segurança do login
 
@@ -75,9 +98,15 @@ por hora). As tentativas ficam no `AuditLog` só como hash, nunca com o e-mail o
 
 * **Site:** https://rpg-forge-omega.vercel.app (Vercel, plano Hobby, região São Paulo, pasta `apps/web`).
 * **Banco:** Postgres no Neon (plano grátis, São Paulo), criado pelo Marketplace da Vercel, que injeta o `DATABASE_URL`.
+* **Imagens:** Vercel Blob privado (`rpg-forge-blob`), conectado por OIDC. Os retratos passam pela rota
+  `/app/personagens/[id]/retrato/[portraitId]`, que só entrega ao dono ou ao mestre da campanha.
+* **IA de imagem:** Cloudflare Workers AI (`CLOUDFLARE_ACCOUNT_ID` e `CLOUDFLARE_API_TOKEN`, Sensitive, só em Production).
+  Erros da geração aparecem nos logs da Vercel com o prefixo `[portraits]`.
 * **Deploy:** automático a cada push na `main`; cada pull request ganha um link de pré-visualização.
-* **Mudanças no banco de produção** são manuais: `vercel env pull .env.local` e, com o `DATABASE_URL_UNPOOLED`
-  desse arquivo, `pnpm exec prisma migrate deploy` (novas migrações) e `pnpm content:import ...` (novo pacote).
+* **Mudanças no banco de produção** são manuais e vêm **antes** do merge do PR que as usa:
+  `vercel env pull .env.production.local --environment=production` e, com o `DATABASE_URL_UNPOOLED` desse arquivo,
+  `pnpm exec prisma migrate deploy` (novas migrações) e `pnpm content:import ...` (novo pacote). Apague o arquivo
+  depois: ele contém os segredos de produção.
 * **Testar o site publicado:** `PLAYWRIGHT_BASE_URL=https://rpg-forge-omega.vercel.app pnpm test:e2e`, com o
   `DATABASE_URL` de produção no ambiente para a limpeza apagar a conta de teste.
 * A página `/licenca` traz o texto da OGL, obrigatório ao publicar o conteúdo do livro.
