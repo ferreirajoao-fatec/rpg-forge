@@ -455,3 +455,59 @@ describe("Tormenta20 (2020) — inventário", () => {
     expect(t20.derive(c, catalog).inventory!.rows[0].name).toBe("Medalhão da família");
   });
 });
+
+describe("Tormenta20 (2020) — limite de perícias e poderes por nível", () => {
+  const ch = (slot: string, contentId: string) => ({ slot, contentId, atLevel: 1, locked: false });
+  const skills = (...ids: string[]) => ids.map((id) => ch(`skill:${id}`, `skill:${id}`));
+  const powers = (...ids: string[]) => ids.map((id) => ch(`power:${id}`, `power:${id}`));
+  const limits = (c: ReturnType<typeof emptyCharacter>) => Object.fromEntries(t20.choiceLimits!(c, catalog).map((l) => [l.kind, l]));
+  const guerreiro = catalog.get("class:guerreiro")!.data as { skills: { oneOf?: string[][]; choose: number } };
+  const classSkills = (guerreiro.skills.oneOf?.length ?? 0) + guerreiro.skills.choose;
+  const fighter = (levels: number, extra: Partial<Parameters<typeof emptyCharacter>[0]> = {}) =>
+    emptyCharacter({ name: "G", speciesId: "species:anao", classes: [{ classId: "class:guerreiro", levels }], level: levels, baseAbilities: base, ...extra });
+
+  it("perícias: as da classe mais o bônus de Inteligência", () => {
+    expect(limits(fighter(1)).skill.max).toBe(classSkills);
+    expect(limits(fighter(1, { baseAbilities: { ...base, int: 14 } })).skill.max).toBe(classSkills + 2);
+  });
+
+  it("poderes: nenhum no 1º nível; um por nível a partir do 2º", () => {
+    expect(limits(fighter(1)).power.max).toBe(0);
+    expect(limits(fighter(2)).power.max).toBe(1);
+    expect(limits(fighter(5)).power.max).toBe(4);
+  });
+
+  it("devoto ganha um poder concedido; poder à escolha da origem conta à parte", () => {
+    const devoto = fighter(1, { choices: [ch("deity", "deity:deus-aberrante")] });
+    expect(limits(devoto).power.max).toBe(1);
+    const soldado = fighter(1, { backgroundId: "origin:soldado", choices: [ch("origin-benefit:open:um poder de combate à escolha", "origin:soldado")] });
+    expect(limits(soldado).power.max).toBe(1);
+  });
+
+  it("benefícios da origem não gastam o limite da classe", () => {
+    const c = fighter(2, { backgroundId: "origin:trabalhador", choices: [ch("origin-benefit:skill:atletismo", "skill:atletismo"), ...powers("acuidade-com-arma")] });
+    expect(limits(c).skill.used).toBe(0);
+    expect(limits(c).power.used).toBe(1);
+    expect(codes(c)).not.toContain("powers.too_many");
+  });
+
+  it("humano: uma perícia a mais e uma escolha que pode ser perícia ou poder", () => {
+    const h = (choices: ReturnType<typeof ch>[]) =>
+      limits(emptyCharacter({ name: "H", speciesId: "species:humano", classes: [{ classId: "class:guerreiro", levels: 1 }], baseAbilities: base, choices }));
+    expect(h([]).skill.max).toBe(classSkills + 2);
+    // Usando a escolha flexível como poder geral, sobra uma perícia a menos.
+    const asPower = h(powers("acuidade-com-arma"));
+    expect(asPower.power.max).toBe(1);
+    expect(asPower.skill.max).toBe(classSkills + 1);
+  });
+
+  it("escolhas além do limite deixam a ficha inválida, com a conta explicada", () => {
+    const c = fighter(2, { choices: powers("acuidade-com-arma", "ataque-poderoso", "esquiva") });
+    const issue = t20.validate(c, catalog).issues.find((i) => i.code === "powers.too_many")!;
+    expect(issue.severity).toBe("invalid");
+    expect(issue.message).toContain("Há 3 poderes");
+    expect(issue.message).toContain("máximo é 1");
+    const many = fighter(1, { choices: skills("luta", "pontaria", "atletismo", "furtividade", "intuicao", "iniciativa", "percepcao", "cura") });
+    expect(codes(many)).toContain("skills.too_many");
+  });
+});
