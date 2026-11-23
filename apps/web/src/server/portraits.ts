@@ -1,6 +1,6 @@
 import "server-only";
 import { GoogleGenAI } from "@google/genai";
-import { del, put } from "@vercel/blob";
+import { del, get, put } from "@vercel/blob";
 import { z } from "zod";
 import { loadCatalog } from "@/server/rulesets";
 import { db } from "@/server/db";
@@ -10,7 +10,9 @@ import { buildPrompt, PORTRAIT_STYLES, STYLE_IDS } from "@/server/portrait-promp
 export { PORTRAIT_STYLES };
 
 /**
- * Retratos ilustrados gerados por IA (Gemini). A imagem fica no Vercel Blob; o banco guarda a URL e o pedido.
+ * Retratos ilustrados gerados por IA (Gemini). A imagem fica num Vercel Blob PRIVADO; o banco guarda o endereço
+ * no Blob e o pedido. A página nunca vê o endereço do Blob: a imagem passa pela rota
+ * /app/personagens/[id]/retrato/[portraitId], que confere a permissão (dono ou mestre da campanha).
  * No máximo um retrato ativo por personagem: ele aparece na ficha e na lista no lugar do avatar desenhado.
  * O avatar desenhado continua existindo: serve de referência de aparência e para token e exportação.
  */
@@ -26,8 +28,17 @@ const GENERATE_ACTION = "avatar.portrait.generate";
 
 const dailyLimit = () => Math.max(0, Number(process.env.AI_PORTRAIT_DAILY_LIMIT ?? 10) || 0);
 
-/** A geração só fica disponível quando o servidor tem a chave do Gemini e o token do Blob. */
-export const portraitsEnabled = () => Boolean(process.env.GEMINI_API_KEY && process.env.BLOB_READ_WRITE_TOKEN);
+/**
+ * Credenciais do Blob: na Vercel, o store conectado ao projeto usa OIDC (BLOB_STORE_ID + o token OIDC que a
+ * Vercel injeta). Fora dela, vale um BLOB_READ_WRITE_TOKEN.
+ */
+const blobConfigured = () => Boolean(process.env.BLOB_STORE_ID || process.env.BLOB_READ_WRITE_TOKEN);
+
+/** A geração só fica disponível quando o servidor tem a chave do Gemini e acesso ao Blob. */
+export const portraitsEnabled = () => Boolean(process.env.GEMINI_API_KEY && blobConfigured());
+
+/** Endereço da imagem para as páginas (a rota que confere permissão), nunca o do Blob. */
+export const portraitSrc = (characterId: string, portraitId: string) => `/app/personagens/${characterId}/retrato/${portraitId}`;
 
 export const generateInputSchema = z.object({
   style: z.enum(STYLE_IDS),
@@ -49,9 +60,9 @@ export interface PortraitView {
   createdAt: string;
 }
 
-const view = (p: { id: string; url: string; style: string; description: string; active: boolean; createdAt: Date }): PortraitView => ({
+const view = (p: { id: string; characterId: string; style: string; description: string; active: boolean; createdAt: Date }): PortraitView => ({
   id: p.id,
-  url: p.url,
+  url: portraitSrc(p.characterId, p.id),
   style: p.style,
   description: p.description,
   active: p.active,
@@ -130,7 +141,7 @@ export async function generatePortrait(characterId: string, userId: string, raw:
   let blob: Awaited<ReturnType<typeof put>>;
   try {
     blob = await put(`portraits/${characterId}/retrato.${mime.split("/")[1]}`, Buffer.from(image.data, "base64"), {
-      access: "public",
+      access: "private",
       contentType: mime,
       addRandomSuffix: true,
     });
@@ -161,7 +172,7 @@ export async function generatePortrait(characterId: string, userId: string, raw:
 }
 
 async function removeFiles(urls: string[]) {
-  if (!urls.length || !process.env.BLOB_READ_WRITE_TOKEN) return;
+  if (!urls.length || !blobConfigured()) return;
   await del(urls).catch((e) => console.error("[portraits] falha ao apagar do Blob", e));
 }
 
@@ -191,9 +202,19 @@ export async function deletePortraitFiles(characterId: string) {
   await removeFiles(rows.map((r) => r.url));
 }
 
-/** URLs dos retratos ativos (para a ficha e a lista). */
+/** Endereços dos retratos ativos (para a ficha e a lista). */
 export async function activePortraitUrls(characterIds: string[]): Promise<Record<string, string>> {
   if (!characterIds.length) return {};
-  const rows = await db.avatarPortrait.findMany({ where: { characterId: { in: characterIds }, active: true }, select: { characterId: true, url: true } });
-  return Object.fromEntries(rows.map((r) => [r.characterId, r.url]));
+  const rows = await db.avatarPortrait.findMany({ where: { characterId: { in: characterIds }, active: true }, select: { id: true, characterId: true } });
+  return Object.fromEntries(rows.map((r) => [r.characterId, portraitSrc(r.characterId, r.id)]));
+}
+
+/** Abre a imagem de um retrato para quem pode ver o personagem (dono ou mestre). null = não existe. */
+export async function openPortrait(characterId: string, userId: string, portraitId: string) {
+  await loadWithAccess(characterId, userId, "read");
+  const p = await db.avatarPortrait.findFirst({ where: { id: portraitId, characterId }, select: { pathname: true } });
+  if (!p || !blobConfigured()) return null;
+  const file = await get(p.pathname, { access: "private" });
+  if (!file?.stream) return null;
+  return { stream: file.stream, contentType: file.blob.contentType ?? "image/png" };
 }
