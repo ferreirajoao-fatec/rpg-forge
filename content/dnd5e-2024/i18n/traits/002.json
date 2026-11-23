@@ -1,0 +1,143 @@
+{
+ "giant-ancestry": {
+  "n": "Ancestralidade Gigante",
+  "d": [
+   "Você descende de Gigantes. Escolha um dos benefícios a seguir, uma dádiva sobrenatural da sua ancestralidade. Você pode usar o benefício escolhido um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo:",
+   "Salto das Nuvens (Gigante das Nuvens). Com uma Ação Bônus, você se teletransporta magicamente até 9 metros para um espaço desocupado que consiga ver.",
+   "Queimadura do Fogo (Gigante do Fogo). Quando atinge um alvo com uma jogada de ataque e causa dano a ele, você também pode causar 1d10 de dano de Fogo a esse alvo.",
+   "Frio do Gelo (Gigante do Gelo). Quando atinge um alvo com uma jogada de ataque e causa dano a ele, você também pode causar 1d6 de dano de Frio a esse alvo e reduzir o Deslocamento dele em 3 metros até o início do seu próximo turno.",
+   "Tombo das Colinas (Gigante das Colinas). Quando atinge uma criatura Grande ou menor com uma jogada de ataque e causa dano a ela, você pode deixá-la com a condição Caído.",
+   "Resistência da Pedra (Gigante da Pedra). Quando sofre dano, você pode usar uma Reação para rolar 1d12. Some seu modificador de Constituição ao resultado e reduza o dano nesse total.",
+   "Trovão da Tempestade (Gigante da Tempestade). Quando sofre dano de uma criatura a até 18 metros de você, pode usar uma Reação para causar 1d8 de dano Trovejante a essa criatura."
+  ]
+ },
+ "giant-ancestry-clouds-jaunt": {
+  "n": "Ancestralidade Gigante: Salto das Nuvens",
+  "d": ["Com uma Ação Bônus, você se teletransporta magicamente até 9 metros para um espaço desocupado que consiga ver."]
+ },
+ "giant-ancestry-fires-burn": {
+  "n": "Ancestralidade Gigante: Queimadura do Fogo",
+  "d": ["Quando atinge um alvo com uma jogada de ataque e causa dano a ele, você também pode causar 1d10 de dano de Fogo a esse alvo."]
+ },
+ "giant-ancestry-frosts-chill": {
+  "n": "Ancestralidade Gigante: Frio do Gelo",
+  "d": ["Quando atinge um alvo com uma jogada de ataque e causa dano a ele, você também pode causar 1d6 de dano de Frio a esse alvo e reduzir o Deslocamento dele em 3 metros até o início do seu próximo turno."]
+ },
+ "giant-ancestry-hills-tumble": {
+  "n": "Ancestralidade Gigante: Tombo das Colinas",
+  "d": ["Quando atinge uma criatura Grande ou menor com uma jogada de ataque e causa dano a ela, você pode deixá-la com a condição Caído."]
+ },
+ "giant-ancestry-stones-endurance": {
+  "n": "Ancestralidade Gigante: Resistência da Pedra",
+  "d": ["Quando sofre dano, você pode usar uma Reação para rolar 1d12. Some seu modificador de Constituição ao resultado e reduza o dano nesse total."]
+ },
+ "giant-ancestry-storms-thunder": {
+  "n": "Ancestralidade Gigante: Trovão da Tempestade",
+  "d": ["Quando sofre dano de uma criatura a até 18 metros de você, pode usar uma Reação para causar 1d8 de dano Trovejante a essa criatura."]
+ },
+ "gnomish-cunning": {
+  "n": "Esperteza Gnômica",
+  "d": ["Você tem Vantagem em testes de resistência de Inteligência, Sabedoria e Carisma."]
+ },
+ "gnomish-lineage": {
+  "n": "Linhagem Gnômica",
+  "d": [
+   "Você pertence a uma linhagem que lhe concede habilidades sobrenaturais. Escolha uma das opções a seguir; qualquer que seja a escolha, Inteligência, Sabedoria ou Carisma é sua habilidade de conjuração para as magias lançadas com este traço (escolha ao selecionar a linhagem):",
+   "Gnomo da Floresta. Você conhece o truque Ilusão Menor. Também tem sempre preparada a magia Falar com Animais. Pode lançá-la sem gastar espaço de magia um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo. Também pode usar qualquer espaço de magia que tenha para lançá-la.",
+   "Gnomo das Rochas. Você conhece os truques Reparar e Prestidigitação. Além disso, pode gastar 10 minutos lançando Prestidigitação para criar um dispositivo mecânico Miúdo (CA 5, 1 PV), como um brinquedo, um acendedor ou uma caixa de música. Ao criar o dispositivo, você define a função dele escolhendo um dos efeitos de Prestidigitação; o dispositivo produz esse efeito sempre que você ou outra criatura usa uma Ação Bônus para ativá-lo com um toque. Se o efeito escolhido tiver opções, você escolhe uma delas para o dispositivo ao criá-lo.",
+   "Por exemplo, se escolher o efeito de acender ou apagar da magia, você define se o dispositivo acende ou apaga o fogo; ele não faz as duas coisas. Você pode ter três desses dispositivos ao mesmo tempo, e cada um se desfaz 8 horas depois de criado ou quando você o desmonta com um toque, usando a ação Utilizar."
+  ]
+ },
+ "gnomish-lineage-forest-gnome": {
+  "n": "Linhagem Gnômica: Gnomo da Floresta",
+  "d": ["Você tem sempre preparada a magia Falar com Animais. Pode lançá-la sem gastar espaço de magia um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo. Também pode usar qualquer espaço de magia que tenha para lançá-la."]
+ },
+ "gnomish-lineage-rock-gnome": {
+  "n": "Linhagem Gnômica: Gnomo das Rochas",
+  "d": ["Você conhece o truque Prestidigitação. Além disso, pode gastar 10 minutos lançando Prestidigitação para criar um dispositivo mecânico Miúdo (CA 5, 1 PV), como um brinquedo, um acendedor ou uma caixa de música. Ao criar o dispositivo, você define a função dele escolhendo um dos efeitos de Prestidigitação; o dispositivo produz esse efeito sempre que você ou outra criatura usa uma Ação Bônus para ativá-lo com um toque. Se o efeito escolhido tiver opções, você escolhe uma delas para o dispositivo ao criá-lo. Por exemplo, se escolher o efeito de acender ou apagar da magia, você define se o dispositivo acende ou apaga o fogo; ele não faz as duas coisas. Você pode ter três desses dispositivos ao mesmo tempo, e cada um se desfaz 8 horas depois de criado ou quando você o desmonta com um toque, usando a ação Utilizar."]
+ },
+ "halfling-nimbleness": {
+  "d": ["Você pode atravessar o espaço de qualquer criatura um tamanho maior que você, mas não pode parar nesse espaço."]
+ },
+ "high-elf-cantrip-versatility": {
+  "n": "Alto Elfo: Versatilidade de Truque",
+  "d": ["Você conhece o truque Prestidigitação. Sempre que terminar um Descanso Longo, pode trocar esse truque por outro da lista de magias de Mago."]
+ },
+ "keen-senses": {
+  "d": ["Você tem proficiência na perícia Intuição, Percepção ou Sobrevivência."]
+ },
+ "large-form": {
+  "n": "Forma Grande",
+  "d": ["A partir do nível de personagem 5, você pode mudar seu tamanho para Grande com uma Ação Bônus, se estiver num espaço grande o bastante. A transformação dura 10 minutos ou até você encerrá-la (sem gastar ação). Nesse período, você tem Vantagem em testes de Força, e seu Deslocamento aumenta em 3 metros. Depois de usar este traço, você só pode usá-lo de novo após terminar um Descanso Longo."]
+ },
+ "lineage-resistance-fire": {
+  "d": ["Você tem Resistência a dano de Fogo."]
+ },
+ "lineage-resistance-necrotic": {
+  "n": "Resistência a Dano: Necrótico",
+  "d": ["Você tem Resistência a dano Necrótico."]
+ },
+ "lineage-resistance-poison": {
+  "d": ["Você tem Resistência a dano de Veneno."]
+ },
+ "lineage-spell-chill-touch": { "n": "Toque Arrepiante", "d": ["Você conhece a magia Toque Arrepiante."] },
+ "lineage-spell-dancing-lights": { "n": "Globos de Luz", "d": ["Você conhece a magia Globos de Luz."] },
+ "lineage-spell-darkness": { "n": "Escuridão", "d": ["Você conhece a magia Escuridão."] },
+ "lineage-spell-detect-magic": { "n": "Detectar Magia", "d": ["Você conhece a magia Detectar Magia."] },
+ "lineage-spell-faerie-fire": { "n": "Fogo das Fadas", "d": ["Você conhece a magia Fogo das Fadas."] },
+ "lineage-spell-false-life": { "n": "Vitalidade Falsa", "d": ["Você conhece a magia Vitalidade Falsa."] },
+ "lineage-spell-fire-bolt": { "n": "Raio de Fogo", "d": ["Você conhece a magia Raio de Fogo."] },
+ "lineage-spell-hellish-rebuke": { "n": "Repreensão Infernal", "d": ["Você conhece a magia Repreensão Infernal."] },
+ "lineage-spell-hold-person": { "n": "Imobilizar Pessoa", "d": ["Você conhece a magia Imobilizar Pessoa."] },
+ "lineage-spell-longstrider": { "n": "Passos Longos", "d": ["Você aprende a magia Passos Longos."] },
+ "lineage-spell-mending": { "n": "Reparar", "d": ["Você conhece o truque Reparar."] },
+ "lineage-spell-minor-illusion": { "n": "Ilusão Menor", "d": ["Você conhece a magia Ilusão Menor."] },
+ "lineage-spell-misty-step": { "n": "Passo Nebuloso", "d": ["Você conhece a magia Passo Nebuloso."] },
+ "lineage-spell-pass-without-trace": { "n": "Passos sem Pegadas", "d": ["Você aprende a magia Passos sem Pegadas."] },
+ "lineage-spell-poison-spray": { "n": "Rajada de Veneno", "d": ["Você conhece a magia Rajada de Veneno."] },
+ "lineage-spell-ray-of-enfeeblement": { "n": "Raio do Enfraquecimento", "d": ["Você conhece a magia Raio do Enfraquecimento."] },
+ "lineage-spell-ray-of-sickness": { "n": "Raio Nauseante", "d": ["Você conhece a magia Raio Nauseante."] },
+ "luck": {
+  "n": "Sorte",
+  "d": ["Quando tirar 1 no d20 de um Teste de D20, você pode rolar o dado de novo e deve usar o novo resultado."]
+ },
+ "naturally-stealthy": {
+  "d": ["Você pode realizar a ação Esconder mesmo quando estiver encoberto apenas por uma criatura pelo menos um tamanho maior que você."]
+ },
+ "otherworldly-presence": {
+  "n": "Presença de Outro Mundo",
+  "d": ["Você conhece o truque Taumaturgia. Quando o lança com este traço, a magia usa a mesma habilidade de conjuração do seu traço Legado Ínfero."]
+ },
+ "powerful-build": {
+  "n": "Constituição Poderosa",
+  "d": ["Você tem Vantagem em qualquer teste de atributo para encerrar a condição Agarrado. Também conta como um tamanho maior para determinar sua capacidade de carga."]
+ },
+ "relentless-endurance": {
+  "d": ["Quando é reduzido a 0 Pontos de Vida mas não morre na hora, você pode ficar com 1 Ponto de Vida em vez disso. Depois de usar este traço, você só pode usá-lo de novo após terminar um Descanso Longo."]
+ },
+ "resourceful": {
+  "n": "Engenhoso",
+  "d": ["Você ganha Inspiração Heroica sempre que termina um Descanso Longo."]
+ },
+ "skillful": {
+  "n": "Habilidoso",
+  "d": ["Você ganha proficiência numa perícia à sua escolha."]
+ },
+ "stonecunning": {
+  "d": [
+   "Com uma Ação Bônus, você ganha Sentido Sísmico com alcance de 18 metros por 10 minutos. Você precisa estar sobre uma superfície de pedra ou tocando uma para usar esse Sentido Sísmico. A pedra pode ser natural ou trabalhada.",
+   "Você pode usar esta Ação Bônus um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo."
+  ]
+ },
+ "trance": {
+  "d": ["Você não precisa dormir, e magia não pode fazer você dormir. Você pode terminar um Descanso Longo em 4 horas se passar essas horas numa meditação parecida com um transe, durante a qual continua consciente."]
+ },
+ "versatile": {
+  "n": "Versátil",
+  "d": ["Você ganha um talento de Origem à sua escolha (veja \"Talentos\"). Habilidoso é o recomendado."]
+ },
+ "wood-elf-speed-increase": {
+  "n": "Elfo da Floresta: Aumento de Deslocamento",
+  "d": ["Seu Deslocamento aumenta para 10,5 metros."]
+ }
+}

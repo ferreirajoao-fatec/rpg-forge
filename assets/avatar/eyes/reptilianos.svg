@@ -1,14 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g stroke="#{line}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
-    <path fill="#{eyeL-light}" d="M215 173 C222 161 238 161 245 172 C238 182 222 183 215 173 Z"/>
-    <circle fill="#{eyeL}" stroke="none" cx="230" cy="172" r="8" opacity="0.8"/>
-    <ellipse fill="#120c0a" stroke="none" cx="230" cy="172" rx="1.8" ry="8"/>
-    <circle fill="#ffffff" stroke="none" cx="234" cy="168" r="1.6"/>
-    <path fill="none" stroke-width="3.5" d="M214 173 C222 159 238 159 246 171"/>
-    <path fill="#{eyeR-light}" d="M267 173 C274 161 290 161 297 172 C290 182 274 183 267 173 Z"/>
-    <circle fill="#{eyeR}" stroke="none" cx="282" cy="172" r="8" opacity="0.8"/>
-    <ellipse fill="#120c0a" stroke="none" cx="282" cy="172" rx="1.8" ry="8"/>
-    <circle fill="#ffffff" stroke="none" cx="286" cy="168" r="1.6"/>
-    <path fill="none" stroke-width="3.5" d="M266 173 C274 159 290 159 298 171"/>
+  <defs>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="0.9"/></filter>
+  </defs>
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <clipPath id="cl"><path d="M231.5 117.6 C234.5 113.6 244.5 112.8 249.4 116.9 C245.6 120.6 236.4 121.2 231.5 117.6 Z"/></clipPath>
+    
+    <path fill="#{eyeL-dark}" d="M231.5 117.6 C234.5 113.6 244.5 112.8 249.4 116.9 C245.6 120.6 236.4 121.2 231.5 117.6 Z"/>
+    <g clip-path="url(#cl)">
+      <circle fill="#{eyeL}" cx="240.6" cy="117" r="6"/>
+      <circle fill="none" stroke="#{eyeL-deep}" stroke-width="0.8" cx="240.6" cy="117" r="5.7"/>
+      <circle fill="#{eyeL-light}" opacity="0.55" cx="241.2" cy="118.4" r="3" filter="url(#soft)"/>
+      <ellipse fill="#120c0a" cx="240.6" cy="117" rx="0.9" ry="5.4"/>
+      <path fill="#{skin-deep}" opacity="0.55" filter="url(#soft)" d="M226 108 L254 108 L254 116.6 C246 114.6 236 114.6 226 118 Z"/>
+      <circle fill="#ffffff" opacity="0.9" cx="239.2" cy="115.6" r="0.95"/>
+    </g>
+    <path fill="none" stroke="#{line}" stroke-width="1.3" d="M231.5 117.6 C234.5 113.6 244.5 112.8 249.4 116.9"/>
+    <path fill="none" stroke="#{skin-deep}" stroke-width="0.7" opacity="0.6" d="M249.4 116.9 C245.6 120.6 236.4 121.2 231.5 117.6"/>
+    <path fill="none" stroke="#{skin-deep}" stroke-width="0.7" opacity="0.4" d="M232.5 114.4 C236.5 110.4 245 110 249 113"/>
+  </g>
+  <g transform="matrix(-1 0 0 1 512 0)">
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <clipPath id="cr"><path d="M231.5 117.6 C234.5 113.6 244.5 112.8 249.4 116.9 C245.6 120.6 236.4 121.2 231.5 117.6 Z"/></clipPath>
+    
+    <path fill="#{eyeR-dark}" d="M231.5 117.6 C234.5 113.6 244.5 112.8 249.4 116.9 C245.6 120.6 236.4 121.2 231.5 117.6 Z"/>
+    <g clip-path="url(#cr)">
+      <circle fill="#{eyeR}" cx="240.6" cy="117" r="6"/>
+      <circle fill="none" stroke="#{eyeR-deep}" stroke-width="0.8" cx="240.6" cy="117" r="5.7"/>
+      <circle fill="#{eyeR-light}" opacity="0.55" cx="241.2" cy="118.4" r="3" filter="url(#soft)"/>
+      <ellipse fill="#120c0a" cx="240.6" cy="117" rx="0.9" ry="5.4"/>
+      <path fill="#{skin-deep}" opacity="0.55" filter="url(#soft)" d="M226 108 L254 108 L254 116.6 C246 114.6 236 114.6 226 118 Z"/>
+      <circle fill="#ffffff" opacity="0.9" cx="239.2" cy="115.6" r="0.95"/>
+    </g>
+    <path fill="none" stroke="#{line}" stroke-width="1.3" d="M231.5 117.6 C234.5 113.6 244.5 112.8 249.4 116.9"/>
+    <path fill="none" stroke="#{skin-deep}" stroke-width="0.7" opacity="0.6" d="M249.4 116.9 C245.6 120.6 236.4 121.2 231.5 117.6"/>
+    <path fill="none" stroke="#{skin-deep}" stroke-width="0.7" opacity="0.4" d="M232.5 114.4 C236.5 110.4 245 110 249 113"/>
+  </g>
   </g>
 </svg>

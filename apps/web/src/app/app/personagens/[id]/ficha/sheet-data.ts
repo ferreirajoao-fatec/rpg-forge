@@ -1,7 +1,11 @@
-import { getEngine, type Catalog, type CharacterData, type ContentEntry } from "@rpg-forge/rules-engine";
+import { getEngine, type Catalog, type CharacterData, type ContentEntry, T20_XP_THRESHOLDS } from "@rpg-forge/rules-engine";
+import { nextLevelXp, sheetItems, type SheetItem } from "./sheet-items";
+import { buildDndSheet } from "./sheet-data-dnd";
 
 /** Tudo o que a ficha impressa mostra, já calculado pelo motor de regras. */
 export interface SheetData {
+  /** Layout da ficha: Tormenta20 (PM, Defesa, círculos) ou D&D 5e (CA, níveis de magia, talentos). */
+  flavor: "t20" | "dnd";
   name: string;
   player: string;
   system: string;
@@ -20,9 +24,12 @@ export interface SheetData {
   attacks: { name: string; test: number | null; damage: string; critical: string; type: string; range?: string }[];
   traits: { name: string; from: string; text: string }[];
   powers: { name: string; text: string }[];
-  spells: { name: string; circle: number; cost: number; execution?: string; range?: string; duration?: string; text: string }[];
+  /** `circle`: círculo (Tormenta20) ou nível da magia (D&D, 0 = truque). `cost`: PM (só Tormenta20). */
+  spells: { name: string; circle: number; cost?: number; execution?: string; range?: string; duration?: string; text: string }[];
   proficiencies: string[];
-  equipment: { name: string; quantity: number; equipped: boolean; weight?: number; detail?: string }[];
+  equipment: SheetItem[];
+  /** Barra de experiência: XP atual e faixa do nível (só no modo por XP). */
+  xp?: { current: number; from: number; to?: number };
   money: { abbr: string; label: string; amount: number }[];
   load?: { carried: number; light: number; max: number; state: string };
   narrative: CharacterData["narrative"];
@@ -50,6 +57,7 @@ const str = (v: unknown) => (typeof v === "string" ? v : undefined);
 const signed = (n: number) => (n >= 0 ? `+${n}` : `${n}`);
 
 export function buildSheet(c: CharacterData, rulesetId: string, catalog: Catalog, player: string): SheetData {
+  if (rulesetId.startsWith("dnd5e-")) return buildDndSheet(c, rulesetId, catalog, player);
   const engine = getEngine(rulesetId);
   const d = engine.derive(c, catalog);
   const hasAbilities = engine.abilities.every((a) => c.baseAbilities[a.key] !== undefined);
@@ -148,6 +156,7 @@ export function buildSheet(c: CharacterData, rulesetId: string, catalog: Catalog
   const currencies = engine.currencies ?? [];
 
   return {
+    flavor: "t20",
     name: c.name || "Sem nome",
     player,
     system: engine.meta.name,
@@ -174,7 +183,8 @@ export function buildSheet(c: CharacterData, rulesetId: string, catalog: Catalog
     powers,
     spells,
     proficiencies,
-    equipment: (inv?.rows ?? []).map((r) => ({ name: r.name, quantity: r.quantity, equipped: r.equipped, weight: r.weight, detail: r.detail })),
+    equipment: sheetItems(inv?.rows, catalog),
+    xp: c.progressionMode === "xp" ? { current: c.experience ?? 0, ...nextLevelXp(T20_XP_THRESHOLDS, d.level) } : undefined,
     money: currencies.map((cur) => ({ abbr: cur.abbr, label: cur.label, amount: c.currency[cur.key] ?? 0 })),
     load: inv?.load ? { carried: inv.totalWeight, light: inv.load.light, max: inv.load.max, state: inv.load.state } : undefined,
     narrative: c.narrative,

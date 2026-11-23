@@ -1,6 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <defs>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.6"/></filter>
+  </defs>
   <g stroke-linecap="round" stroke-linejoin="round">
-    <path fill="#{skin-dark}" stroke="none" opacity="0.4" d="M246 204 C250 196 262 196 266 204 C262 210 250 210 246 204 Z"/>
-    <path fill="none" stroke="#{skin-deep}" stroke-width="2.5" d="M247 205 C250 210 262 210 265 205"/>
+    <path fill="#{skin-dark}" opacity="0.5" filter="url(#soft)" d="M250.5 119 C250 125 249 129 248 132 L251 132 C252 127 252.5 123 253 119 Z M261.5 119 C262 125 263 129 264 132 L261 132 C260 127 259.5 123 259 119 Z"/>
+    <path fill="#{skin-light}" opacity="0.55" filter="url(#soft)" d="M255 120 L257 120 L257.6 130 C257 132.6 255 132.6 254.4 130 Z"/>
+    <path fill="#{skin-dark}" opacity="0.55" filter="url(#soft)" d="M249.5 135.5 C252.5 138 259.5 138 262.5 135.5 L261.5 139.5 C258 141 254 141 250.5 139.5 Z"/>
+    <path fill="none" stroke="#{skin-deep}" stroke-width="0.9" opacity="0.7" d="M250 130.6 C247.4 132.4 247.6 136.4 250.8 137 M262 130.6 C264.6 132.4 264.4 136.4 261.2 137"/>
+    <path fill="none" stroke="#{skin-deep}" stroke-width="0.8" opacity="0.55" d="M252.6 137.2 C254.6 138 257.4 138 259.4 137.2"/>
+    <path fill="#{skin-deep}" opacity="0.75" d="M250.4 136 C251.4 134.6 253.6 134.8 254 136.4 C253 137.2 251.2 137 250.4 136 Z M261.6 136 C260.6 134.6 258.4 134.8 258 136.4 C259 137.2 260.8 137 261.6 136 Z"/>
+    <ellipse fill="#{skin-light}" opacity="0.5" filter="url(#soft)" cx="256" cy="132" rx="3" ry="2"/>
   </g>
 </svg>

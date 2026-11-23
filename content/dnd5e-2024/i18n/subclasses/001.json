@@ -1,0 +1,61 @@
+{
+ "path-of-the-berserker": {
+  "n": "Caminho do Furioso",
+  "d": ["Bárbaros que trilham o Caminho do Furioso direcionam sua Fúria principalmente à violência. O caminho deles é de fúria desenfreada, e eles se deliciam com o caos da batalha enquanto deixam a Fúria dominá-los e fortalecê-los."]
+ },
+ "college-of-lore": {
+  "n": "Colégio do Conhecimento",
+  "d": ["Os bardos do Colégio do Conhecimento reúnem magias e segredos de fontes diversas, como tomos eruditos, ritos místicos e histórias de camponeses. Os membros do colégio se encontram em bibliotecas e universidades para trocar conhecimentos. Também se reúnem em festivais ou eventos de Estado, onde podem expor a corrupção, desvendar mentiras e zombar de figuras de autoridade cheias de si."]
+ },
+ "life-domain": {
+  "n": "Domínio da Vida",
+  "d": [
+   "O Domínio da Vida se concentra na energia positiva que ajuda a sustentar toda a vida no multiverso. Clérigos que recorrem a este domínio são mestres da cura e usam essa força vital para curar muitos males.",
+   "A própria existência depende da energia positiva associada a este domínio, por isso um Clérigo de quase qualquer tradição religiosa pode escolhê-lo. O domínio é associado sobretudo a divindades da agricultura, deuses da cura ou da resistência e deuses do lar e da comunidade. Ordens religiosas dedicadas à cura também buscam a magia deste domínio."
+  ]
+ },
+ "circle-of-the-land": {
+  "n": "Círculo da Terra",
+  "d": ["O Círculo da Terra reúne místicos e sábios que guardam conhecimentos e ritos antigos. Esses Druidas se encontram em círculos sagrados de árvores ou de pedras erguidas para sussurrar segredos primordiais em Druídico. Os membros mais sábios do círculo atuam como sacerdotes principais de suas comunidades."]
+ },
+ "champion": {
+  "n": "Campeão",
+  "d": ["O Campeão se dedica a desenvolver a proeza marcial numa busca incansável pela vitória. Campeões combinam treinamento rigoroso e excelência física para desferir golpes devastadores, resistir ao perigo e conquistar glória. Seja em competições atléticas ou em batalhas sangrentas, os Campeões lutam pela coroa do vencedor."]
+ },
+ "warrior-of-the-open-hand": {
+  "n": "Guerreiro da Mão Aberta",
+  "d": ["Os Guerreiros da Mão Aberta são mestres do combate desarmado. Aprendem técnicas para empurrar e derrubar os oponentes e manipulam a própria energia para se proteger do mal."]
+ },
+ "oath-of-devotion": {
+  "n": "Juramento de Devoção",
+  "d": [
+   "O Juramento de Devoção prende os Paladinos aos ideais de justiça e ordem. Esses Paladinos encarnam o arquétipo do cavaleiro de armadura reluzente. Seguem os mais altos padrões de conduta, e alguns, para o bem ou para o mal, cobram o mesmo do resto do mundo.",
+   "Muitos dos que fazem este juramento são devotos de deuses da lei e do bem e usam os preceitos deles como",
+   "medida da devoção pessoal. Outros têm os anjos como ideal e incorporam imagens de asas angelicais nos elmos ou brasões.",
+   "Esses paladinos compartilham os seguintes preceitos:",
+   "- Que sua palavra seja sua promessa.",
+   "- Proteja os fracos e nunca tema agir.",
+   "- Que seus atos honrados sirvam de exemplo."
+  ]
+ },
+ "hunter": {
+  "n": "Caçador",
+  "d": ["Você persegue presas nas terras selvagens e em outros lugares, usando suas habilidades de Caçador para proteger a natureza e as pessoas de toda parte das forças que as destruiriam."]
+ },
+ "thief": {
+  "n": "Ladrão",
+  "d": ["Misto de arrombador, caçador de tesouros e explorador, você é a própria essência do aventureiro. Além de melhorar sua agilidade e furtividade, ganha habilidades úteis para explorar ruínas e aproveitar ao máximo os itens mágicos que encontra nelas."]
+ },
+ "draconic-sorcery": {
+  "n": "Feitiçaria Dracônica",
+  "d": ["Sua magia inata vem da dádiva de um dragão. Talvez um dragão ancião, diante da morte, tenha legado parte do seu poder mágico a você ou a um ancestral seu. Você pode ter absorvido magia de um lugar impregnado do poder dos dragões. Ou talvez tenha manuseado um tesouro tirado do covil de um dragão e encharcado de poder dracônico. Ou ainda pode ter um dragão entre seus ancestrais."]
+ },
+ "fiend-patron": {
+  "n": "Patrono Ínfero",
+  "d": ["Seu pacto se apoia nos Planos Inferiores, os reinos da perdição. Você pode ter feito um acordo com um lorde demônio, um arquidiabo ou outro ínfero especialmente poderoso. Os objetivos desse patrono são malignos (a corrupção ou destruição de todas as coisas, incluindo você, no fim), e seu caminho é definido pelo quanto você luta contra esses objetivos."]
+ },
+ "evoker": {
+  "n": "Evocador",
+  "d": ["Seus estudos se concentram na magia que cria poderosos efeitos elementais, como frio cortante, chamas abrasadoras, trovões retumbantes, relâmpagos crepitantes e ácido corrosivo. Alguns Evocadores trabalham para forças militares, servindo como artilharia para destruir exércitos à distância. Outros usam seu poder para proteger os outros, e alguns buscam o próprio ganho."]
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "aura-of-life": {
+  "n": "Aura de Vida",
+  "d": ["Uma aura irradia de você numa Emanação de 9 metros pela duração. Enquanto estiverem na aura, você e seus aliados têm Resistência a dano Necrótico, e o máximo de Pontos de Vida de vocês não pode ser reduzido. Se um aliado com 0 Pontos de Vida começar o turno na aura, recupera 1 Ponto de Vida."]
+ },
+ "awaken": {
+  "d": [
+   "Você passa o tempo de conjuração traçando caminhos mágicos dentro de uma pedra preciosa e então toca o alvo. O alvo precisa ser uma criatura Fera ou Planta com Inteligência 3 ou menor, ou uma planta natural que não seja criatura. O alvo ganha Inteligência 10 e a capacidade de falar um idioma que você conheça. Se o alvo for uma planta natural, torna-se uma criatura Planta e ganha a capacidade de mover galhos, raízes, cipós, trepadeiras e afins, além de sentidos semelhantes aos de um humano. O Mestre escolhe estatísticas apropriadas para a Planta despertada, como as do Arbusto Desperto ou da Árvore Desperta em \"Monstros\".",
+   "O alvo despertado fica com a condição Enfeitiçado por 30 dias ou até você ou seus aliados causarem dano a ele. Quando essa condição termina, a criatura despertada escolhe sua atitude em relação a você."
+  ],
+  "m": "Uma ágata no valor de 1.000+ PO, que a magia consome."
+ },
+ "bane": {
+  "d": ["Até três criaturas à sua escolha que você consiga ver dentro do alcance devem fazer um teste de resistência de Carisma cada. Sempre que um alvo que falhou nesse teste fizer uma jogada de ataque ou um teste de resistência antes de a magia terminar, precisa subtrair 1d4 da jogada de ataque ou do teste."],
+  "h": ["Você pode escolher como alvo uma criatura adicional para cada nível de espaço de magia acima de 1."],
+  "m": "Uma gota de sangue."
+ },
+ "banishment": {
+  "d": [
+   "Uma criatura que você consiga ver dentro do alcance deve passar num teste de resistência de Carisma ou é transportada para um semiplano inofensivo pela duração. Enquanto estiver lá, o alvo fica com a condição Incapacitado. Quando a magia termina, o alvo reaparece no espaço que deixou ou, se ele estiver ocupado, no espaço desocupado mais próximo.",
+   "Se o alvo for uma Aberração, um Celestial, um Elemental, uma Fada ou um Ínfero, ele não volta se a magia durar 1 minuto. Em vez disso, é transportado para um local aleatório num plano (à escolha do Mestre) associado ao seu tipo de criatura."
+  ],
+  "h": ["Você pode escolher como alvo uma criatura adicional para cada nível de espaço de magia acima de 4."],
+  "m": "Um pentáculo."
+ },
+ "barkskin": {
+  "d": ["Você toca uma criatura voluntária. Até a magia terminar, a pele do alvo assume uma aparência de casca de árvore, e o alvo tem Classe de Armadura 17 se a CA dele for menor que isso."],
+  "m": "Um punhado de casca de árvore."
+ },
+ "beacon-of-hope": {
+  "d": ["Escolha qualquer número de criaturas dentro do alcance. Pela duração, cada alvo tem Vantagem em testes de resistência de Sabedoria e em Testes de Resistência contra a Morte e recupera o máximo possível de Pontos de Vida de qualquer cura."]
+ },
+ "befuddlement": {
+  "n": "Confusão Mental",
+  "d": [
+   "Você atinge a mente de uma criatura que consiga ver dentro do alcance. O alvo faz um teste de resistência de Inteligência.",
+   "Se falhar, o alvo sofre 10d12 de dano Psíquico e não pode lançar magias nem realizar a ação de Magia. Ao fim de cada 30 dias, o alvo repete o teste, encerrando o efeito se passar. O efeito também pode ser encerrado pelas magias Restauração Maior, Cura Completa ou Desejo.",
+   "Se passar, o alvo sofre apenas metade do dano."
+  ],
+  "m": "Um chaveiro sem chaves."
+ },
+ "bestow-curse": {
+  "d": ["Você toca uma criatura, que deve passar num teste de resistência de Sabedoria ou fica amaldiçoada pela duração. Até a maldição terminar, o alvo sofre um dos efeitos a seguir, à sua escolha: • Escolha um atributo. O alvo tem Desvantagem em testes de atributo e testes de resistência feitos com ele. • O alvo tem Desvantagem em jogadas de ataque contra você. • Em combate, o alvo deve passar num teste de resistência de Sabedoria no início de cada turno dele ou é forçado a realizar a ação Esquivar naquele turno. • Se você causar dano ao alvo com uma jogada de ataque ou uma magia, ele sofre 1d8 de dano Necrótico extra."],
+  "h": ["Se você lançar esta magia usando um espaço de magia de nível 4, pode manter a Concentração nela por até 10 minutos. Se usar um espaço de nível 5+, a magia não exige Concentração, e a duração passa a ser de 8 horas (espaço de nível 5-6) ou 24 horas (espaço de nível 7-8). Se usar um espaço de nível 9, a magia dura até ser dissipada."]
+ },
+ "black-tentacles": {
+  "d": [
+   "Tentáculos negros e contorcidos preenchem um quadrado de 6 metros no chão que você consiga ver dentro do alcance. Pela duração, esses tentáculos transformam o chão da área em Terreno Difícil.",
+   "Cada criatura nessa área faz um teste de resistência de Força. Se falhar, sofre 3d6 de dano de Concussão e fica com a condição Impedido até a magia terminar. Uma criatura também faz esse teste se entrar na área ou terminar o turno ali. A criatura só faz esse teste uma vez por turno.",
+   "Uma criatura Impedida pode realizar uma ação para fazer um teste de Força (Atletismo) contra a CD de resistência das suas magias, encerrando a condição em si mesma se passar."
+  ],
+  "m": "Um tentáculo."
+ },
+ "blade-barrier": {
+  "d": [
+   "Você cria uma muralha de lâminas giratórias feitas de energia mágica. A muralha aparece dentro do alcance e dura pela duração. Você faz uma muralha reta de até 30 metros de comprimento, 6 metros de altura e 1,5 metro de espessura, ou uma muralha circular de até 18 metros de diâmetro, 6 metros de altura e 1,5 metro de espessura. A muralha concede Três Quartos de Cobertura, e seu espaço é Terreno Difícil.",
+   "Qualquer criatura no espaço da muralha faz um teste de resistência de Destreza, sofrendo 6d10 de dano de Energia se falhar, ou metade se passar. Uma criatura também faz esse teste se entrar no espaço da muralha ou terminar o turno ali. A criatura só faz esse teste uma vez por turno."
+  ]
+ },
+ "bless": {
+  "d": ["Você abençoa até três criaturas dentro do alcance. Sempre que um alvo fizer uma jogada de ataque ou um teste de resistência antes de a magia terminar, soma 1d4 à jogada de ataque ou ao teste."],
+  "m": "Um Símbolo Sagrado no valor de 5+ PO."
+ },
+ "blight": {
+  "d": [
+   "Uma criatura que você consiga ver dentro do alcance faz um teste de resistência de Constituição, sofrendo 8d8 de dano Necrótico se falhar, ou metade se passar. Uma criatura Planta falha automaticamente no teste.",
+   "Em vez disso, escolha como alvo uma planta não mágica que não seja criatura, como uma árvore ou um arbusto. Ela não faz teste; simplesmente murcha e morre."
+  ],
+  "h": ["O dano aumenta em 1d8 para cada nível de espaço de magia acima de 4."]
+ },
+ "blindness-deafness": {
+  "d": ["Uma criatura que você consiga ver dentro do alcance deve passar num teste de resistência de Constituição, ou fica com a condição Cego ou Surdo (à sua escolha) pela duração. No fim de cada turno dele, o alvo repete o teste, encerrando a magia em si mesmo se passar."],
+  "h": ["Você pode escolher como alvo uma criatura adicional para cada nível de espaço de magia acima de 2."]
+ },
+ "blink": {
+  "d": [
+   "Role 1d6 no fim de cada um dos seus turnos pela duração. Com 4-6, você desaparece do seu plano de existência atual e aparece no Plano Etéreo (a magia termina instantaneamente se você já estiver nesse plano). Enquanto estiver no Plano Etéreo, consegue perceber o plano que deixou, visto em tons de cinza, mas não consegue ver nada ali a mais de 18 metros. Só pode afetar e ser afetado por outras criaturas no Plano Etéreo, e as criaturas no outro plano não conseguem percebê-lo, a menos que tenham uma habilidade especial que lhes permita perceber coisas no Plano Etéreo.",
+   "Você volta ao outro plano no início do seu próximo turno e quando a magia termina, se estiver no Plano Etéreo. Volta para um espaço desocupado à sua escolha que consiga ver a até 3 metros do espaço que deixou. Se não houver espaço desocupado nesse alcance, aparece no espaço desocupado mais próximo."
+  ]
+ },
+ "blur": {
+  "d": ["Seu corpo fica borrado. Pela duração, qualquer criatura tem Desvantagem em jogadas de ataque contra você. Um atacante é imune a este efeito se o perceber com Percepção às Cegas ou Visão Verdadeira."]
+ },
+ "burning-hands": {
+  "d": [
+   "Uma fina camada de chamas dispara de você. Cada criatura num Cone de 4,5 metros faz um teste de resistência de Destreza, sofrendo 3d6 de dano de Fogo se falhar, ou metade se passar.",
+   "Objetos inflamáveis no Cone que não estejam sendo vestidos nem carregados começam a queimar."
+  ],
+  "h": ["O dano aumenta em 1d6 para cada nível de espaço de magia acima de 1."]
+ },
+ "call-lightning": {
+  "d": [
+   "Uma nuvem de tempestade aparece num ponto dentro do alcance que você consiga ver acima de você. Ela tem a forma de um Cilindro de 3 metros de altura e 18 metros de raio.",
+   "Ao lançar a magia, escolha um ponto que consiga ver sob a nuvem. Um relâmpago dispara da nuvem até esse ponto. Cada criatura a até 1,5 metro desse ponto faz um teste de resistência de Destreza, sofrendo 3d10 de dano Elétrico se falhar, ou metade se passar.",
+   "Até a magia terminar, você pode realizar uma ação de Magia para chamar um relâmpago dessa forma de novo, escolhendo o mesmo ponto ou outro.",
+   "Se estiver ao ar livre durante uma tempestade quando lançar esta magia, ela lhe dá controle sobre essa tempestade em vez de criar uma nova. Nessas condições, o dano da magia aumenta em 1d10."
+  ],
+  "h": ["O dano aumenta em 1d10 para cada nível de espaço de magia acima de 3."]
+ }
+}

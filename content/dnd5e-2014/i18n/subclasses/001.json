@@ -1,0 +1,49 @@
+{
+ "berserker": {
+  "n": "Furioso",
+  "d": ["Para alguns bárbaros, a fúria é um meio para um fim, e esse fim é a violência. O Caminho do Furioso é um caminho de fúria desenfreada, banhado em sangue. Ao entrar na fúria do furioso, você se delicia com o caos da batalha, sem se importar com a própria saúde ou bem-estar."]
+ },
+ "lore": {
+  "n": "Conhecimento",
+  "d": ["Os bardos do Colégio do Conhecimento sabem um pouco de quase tudo, reunindo fragmentos de saber de fontes tão diversas quanto tomos eruditos e histórias de camponeses. Seja cantando baladas populares em tavernas ou composições elaboradas em cortes reais, esses bardos usam seus dons para encantar as plateias. Quando os aplausos cessam, o público pode se pegar questionando tudo o que tinha como verdade, da fé no sacerdócio do templo local à lealdade ao rei. A lealdade desses bardos está na busca da beleza e da verdade, não na fidelidade a um monarca ou na obediência aos preceitos de uma divindade. Um nobre que mantém um bardo assim como arauto ou conselheiro sabe que ele prefere ser honesto a ser diplomático. Os membros do colégio se reúnem em bibliotecas e às vezes em colégios de verdade, com salas de aula e dormitórios, para trocar conhecimentos. Também se encontram em festivais ou eventos de Estado, onde podem expor a corrupção, desvendar mentiras e zombar de figuras de autoridade cheias de si."]
+ },
+ "life": {
+  "n": "Vida",
+  "d": ["O domínio da Vida se concentra na vibrante energia positiva, uma das forças fundamentais do universo, que sustenta toda a vida. Os deuses da vida promovem vitalidade e saúde curando doentes e feridos, cuidando dos necessitados e afastando as forças da morte e dos mortos-vivos. Quase toda divindade que não seja maligna pode reivindicar influência sobre este domínio, em especial as divindades da agricultura, os deuses do sol, os deuses da cura ou da resistência e os deuses do lar e da comunidade."]
+ },
+ "land": {
+  "n": "Terra"
+ },
+ "champion": {
+  "n": "Campeão",
+  "d": ["O arquétipo do Campeão se concentra no desenvolvimento do poder físico bruto, afiado até a perfeição mortal. Quem segue este arquétipo combina treinamento rigoroso e excelência física para desferir golpes devastadores."]
+ },
+ "open-hand": {
+  "n": "Mão Aberta",
+  "d": ["Os monges do Caminho da Mão Aberta são os mestres supremos do combate marcial, armado ou desarmado. Aprendem técnicas para empurrar e derrubar os oponentes, manipulam o ki para curar ferimentos no próprio corpo e praticam meditações avançadas que podem protegê-los do mal."]
+ },
+ "devotion": {
+  "n": "Devoção",
+  "d": ["O Juramento de Devoção prende o paladino aos ideais mais elevados de justiça, virtude e ordem. Às vezes chamados de cavaleiros, cavaleiros brancos ou guerreiros sagrados, esses paladinos encarnam o ideal do cavaleiro de armadura reluzente, agindo com honra em busca da justiça e do bem maior. Seguem os mais altos padrões de conduta, e alguns, para o bem ou para o mal, cobram o mesmo do resto do mundo. Muitos dos que fazem este juramento são devotos de deuses da lei e do bem e usam os preceitos deles como medida da própria devoção. Têm os anjos, os servos perfeitos do bem, como ideal, e incorporam imagens de asas angelicais nos elmos ou brasões."]
+ },
+ "hunter": {
+  "n": "Caçador",
+  "d": ["Seguir o arquétipo do Caçador é aceitar seu lugar como baluarte entre a civilização e os terrores das terras selvagens. No caminho do Caçador, você aprende técnicas especializadas para enfrentar as ameaças que surgem, de ogros em fúria e hordas de orcs a gigantes imensos e dragões aterrorizantes."]
+ },
+ "thief": {
+  "n": "Ladrão",
+  "d": ["Você aprimora suas habilidades nas artes do furto. Arrombadores, bandidos, batedores de carteira e outros criminosos costumam seguir este arquétipo, mas também os ladinos que preferem se ver como caçadores de tesouros profissionais, exploradores, desbravadores e investigadores. Além de melhorar sua agilidade e furtividade, você aprende habilidades úteis para explorar ruínas antigas, ler idiomas desconhecidos e usar itens mágicos que normalmente não conseguiria usar."]
+ },
+ "draconic": {
+  "n": "Linhagem Dracônica",
+  "d": ["Sua magia inata vem de magia dracônica que se misturou ao seu sangue ou ao de seus ancestrais. Na maioria das vezes, feiticeiros com esta origem descendem de um poderoso feiticeiro de tempos antigos que fez um pacto com um dragão, ou que talvez até tenha tido um dragão como pai ou mãe. Algumas dessas linhagens são bem conhecidas no mundo, mas a maioria é obscura. Qualquer feiticeiro pode ser o primeiro de uma nova linhagem, fruto de um pacto ou de alguma outra circunstância excepcional."]
+ },
+ "fiend": {
+  "n": "Ínfero",
+  "d": ["Você fez um pacto com um ínfero dos planos inferiores de existência, um ser de objetivos malignos, mesmo que você lute contra eles. Esses seres desejam a corrupção ou a destruição de todas as coisas, incluindo você, no fim. Entre os ínferos poderosos o bastante para firmar um pacto estão lordes demônios como Demogorgon, Orcus, Fraz'Urb-luu e Baphomet; arquidiabos como Asmodeus, Dispater, Mefistófeles e Belial; diabos das profundezas e balors especialmente poderosos; e ultroloths e outros senhores dos yugoloths."]
+ },
+ "evocation": {
+  "n": "Evocação",
+  "d": ["Você concentra seus estudos na magia que cria poderosos efeitos elementais, como frio cortante, chamas abrasadoras, trovões retumbantes, relâmpagos crepitantes e ácido corrosivo. Alguns evocadores trabalham para forças militares, servindo como artilharia para destruir exércitos inimigos à distância. Outros usam seu poder espetacular para proteger os fracos, e alguns buscam o próprio ganho como bandidos, aventureiros ou aspirantes a tirano."]
+ }
+}

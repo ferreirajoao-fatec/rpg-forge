@@ -1,0 +1,558 @@
+[
+ {
+  "id": "species:dragonborn",
+  "kind": "species",
+  "name": "Draconato",
+  "summary": "Médio · deslocamento 9 m. Visão no Escuro (18 m), Voo Dracônico.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Species"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "size": "Médio",
+   "speed": 9,
+   "creatureType": "Humanoide",
+   "abilityBonuses": {},
+   "skills": [],
+   "proficiencies": [],
+   "traits": [
+    {
+     "id": "darkvision-60",
+     "name": "Visão no Escuro (18 m)",
+     "summary": "Você tem Visão no Escuro com alcance de 18 metros.",
+     "text": [
+      "Você tem Visão no Escuro com alcance de 18 metros."
+     ]
+    },
+    {
+     "id": "draconic-flight",
+     "name": "Voo Dracônico",
+     "summary": "Ao chegar ao nível de personagem 5, você pode canalizar magia dracônica para voar temporariamente. Com uma Ação Bônus, asas espectrais brotam nas suas costas e duram 10 minutos, ou até você recolhê-las (sem gastar ação) ou ficar com a…",
+     "text": [
+      "Ao chegar ao nível de personagem 5, você pode canalizar magia dracônica para voar temporariamente. Com uma Ação Bônus, asas espectrais brotam nas suas costas e duram 10 minutos, ou até você recolhê-las (sem gastar ação) ou ficar com a condição Incapacitado. Nesse período, você tem Deslocamento de Voo igual ao seu Deslocamento. As asas parecem feitas da mesma energia da sua Arma de Sopro. Depois de usar este traço, você só pode usá-lo de novo após terminar um Descanso Longo."
+     ]
+    }
+   ],
+   "subspecies": [
+    "subspecies:draconic-ancestor-black",
+    "subspecies:draconic-ancestor-blue",
+    "subspecies:draconic-ancestor-brass",
+    "subspecies:draconic-ancestor-bronze",
+    "subspecies:draconic-ancestor-copper",
+    "subspecies:draconic-ancestor-gold",
+    "subspecies:draconic-ancestor-green",
+    "subspecies:draconic-ancestor-red",
+    "subspecies:draconic-ancestor-silver",
+    "subspecies:draconic-ancestor-white"
+   ],
+   "darkvision": true
+  }
+ },
+ {
+  "id": "species:dwarf",
+  "kind": "species",
+  "name": "Anão",
+  "summary": "Médio · deslocamento 9 m. Visão no Escuro (36 m), Resiliência Anã, Robustez Anã, Especialização em Pedra.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Species"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "size": "Médio",
+   "speed": 9,
+   "creatureType": "Humanoide",
+   "abilityBonuses": {},
+   "skills": [],
+   "proficiencies": [],
+   "traits": [
+    {
+     "id": "darkvision-120",
+     "name": "Visão no Escuro (36 m)",
+     "summary": "Você tem Visão no Escuro com alcance de 36 metros.",
+     "text": [
+      "Você tem Visão no Escuro com alcance de 36 metros."
+     ]
+    },
+    {
+     "id": "dwarven-resilience",
+     "name": "Resiliência Anã",
+     "summary": "Você tem Resistência a dano de Veneno. Também tem Vantagem em testes de resistência para evitar ou encerrar a condição Envenenado.",
+     "text": [
+      "Você tem Resistência a dano de Veneno. Também tem Vantagem em testes de resistência para evitar ou encerrar a condição Envenenado."
+     ]
+    },
+    {
+     "id": "dwarven-toughness",
+     "name": "Robustez Anã",
+     "summary": "Seu máximo de Pontos de Vida aumenta em 1, e aumenta em 1 de novo sempre que você ganha um nível.",
+     "text": [
+      "Seu máximo de Pontos de Vida aumenta em 1, e aumenta em 1 de novo sempre que você ganha um nível."
+     ]
+    },
+    {
+     "id": "stonecunning",
+     "name": "Especialização em Pedra",
+     "summary": "Com uma Ação Bônus, você ganha Sentido Sísmico com alcance de 18 metros por 10 minutos. Você precisa estar sobre uma superfície de pedra ou tocando uma para usar esse Sentido Sísmico. A pedra pode ser natural ou trabalhada.",
+     "text": [
+      "Com uma Ação Bônus, você ganha Sentido Sísmico com alcance de 18 metros por 10 minutos. Você precisa estar sobre uma superfície de pedra ou tocando uma para usar esse Sentido Sísmico. A pedra pode ser natural ou trabalhada.",
+      "Você pode usar esta Ação Bônus um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo."
+     ]
+    }
+   ],
+   "subspecies": [],
+   "darkvision": true
+  }
+ },
+ {
+  "id": "species:elf",
+  "kind": "species",
+  "name": "Elfo",
+  "summary": "Médio · deslocamento 9 m. Visão no Escuro (18 m), Linhagem Élfica, Ancestralidade Feérica, Sentidos Aguçados, Transe.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Species"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "size": "Médio",
+   "speed": 9,
+   "creatureType": "Humanoide",
+   "abilityBonuses": {},
+   "skills": [],
+   "flexibleSkills": 1,
+   "proficiencies": [],
+   "traits": [
+    {
+     "id": "darkvision-60",
+     "name": "Visão no Escuro (18 m)",
+     "summary": "Você tem Visão no Escuro com alcance de 18 metros.",
+     "text": [
+      "Você tem Visão no Escuro com alcance de 18 metros."
+     ]
+    },
+    {
+     "id": "elven-lineage",
+     "name": "Linhagem Élfica",
+     "summary": "Você pertence a uma linhagem que lhe concede habilidades sobrenaturais. Escolha uma linhagem na tabela de Linhagens Élficas. Você recebe o benefício de nível 1 dessa linhagem.",
+     "text": [
+      "Você pertence a uma linhagem que lhe concede habilidades sobrenaturais. Escolha uma linhagem na tabela de Linhagens Élficas. Você recebe o benefício de nível 1 dessa linhagem.",
+      "Ao chegar aos níveis de personagem 3 e 5, você aprende uma magia de nível mais alto, como mostra a tabela.",
+      "Você sempre tem essa magia preparada. Pode lançá-la uma vez sem gastar espaço de magia e recupera essa capacidade quando termina um Descanso Longo. Também pode lançá-la usando qualquer espaço de magia de nível apropriado que tenha.",
+      "Linhagens Élficas",
+      "Drow",
+      "Nível 1. O alcance da sua Visão no Escuro aumenta para 36 metros. Você também conhece o truque Globos de Luz.",
+      "Nível 3. Fogo das Fadas",
+      "Nível 5. Escuridão",
+      "Alto Elfo",
+      "Nível 1. Você conhece o truque Prestidigitação. Sempre que terminar um Descanso Longo, pode trocar esse truque por outro da lista de magias de Mago.",
+      "Nível 3. Detectar Magia",
+      "Nível 5. Passo Nebuloso",
+      "Elfo da Floresta",
+      "Nível 1. Seu Deslocamento aumenta para 10,5 metros. Você também conhece o truque Arte Druídica.",
+      "Nível 3. Passos Longos",
+      "Nível 5. Passos sem Pegadas",
+      "Inteligência, Sabedoria ou Carisma é sua habilidade de conjuração para as magias lançadas com este traço (escolha ao selecionar a linhagem)."
+     ]
+    },
+    {
+     "id": "fey-ancestry",
+     "name": "Ancestralidade Feérica",
+     "summary": "Você tem Vantagem em testes de resistência para evitar ou encerrar a condição Enfeitiçado.",
+     "text": [
+      "Você tem Vantagem em testes de resistência para evitar ou encerrar a condição Enfeitiçado."
+     ]
+    },
+    {
+     "id": "keen-senses",
+     "name": "Sentidos Aguçados",
+     "summary": "Você tem proficiência na perícia Intuição, Percepção ou Sobrevivência.",
+     "text": [
+      "Você tem proficiência na perícia Intuição, Percepção ou Sobrevivência."
+     ]
+    },
+    {
+     "id": "trance",
+     "name": "Transe",
+     "summary": "Você não precisa dormir, e magia não pode fazer você dormir. Você pode terminar um Descanso Longo em 4 horas se passar essas horas numa meditação parecida com um transe, durante a qual continua consciente.",
+     "text": [
+      "Você não precisa dormir, e magia não pode fazer você dormir. Você pode terminar um Descanso Longo em 4 horas se passar essas horas numa meditação parecida com um transe, durante a qual continua consciente."
+     ]
+    }
+   ],
+   "subspecies": [
+    "subspecies:elven-lineage-drow",
+    "subspecies:elven-lineage-high-elf",
+    "subspecies:elven-lineage-wood-elf"
+   ],
+   "darkvision": true
+  }
+ },
+ {
+  "id": "species:gnome",
+  "kind": "species",
+  "name": "Gnomo",
+  "summary": "Pequeno · deslocamento 9 m. Visão no Escuro (18 m), Esperteza Gnômica, Linhagem Gnômica.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Species"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "size": "Pequeno",
+   "speed": 9,
+   "creatureType": "Humanoide",
+   "abilityBonuses": {},
+   "skills": [],
+   "proficiencies": [],
+   "traits": [
+    {
+     "id": "darkvision-60",
+     "name": "Visão no Escuro (18 m)",
+     "summary": "Você tem Visão no Escuro com alcance de 18 metros.",
+     "text": [
+      "Você tem Visão no Escuro com alcance de 18 metros."
+     ]
+    },
+    {
+     "id": "gnomish-cunning",
+     "name": "Esperteza Gnômica",
+     "summary": "Você tem Vantagem em testes de resistência de Inteligência, Sabedoria e Carisma.",
+     "text": [
+      "Você tem Vantagem em testes de resistência de Inteligência, Sabedoria e Carisma."
+     ]
+    },
+    {
+     "id": "gnomish-lineage",
+     "name": "Linhagem Gnômica",
+     "summary": "Você pertence a uma linhagem que lhe concede habilidades sobrenaturais. Escolha uma das opções a seguir; qualquer que seja a escolha, Inteligência, Sabedoria ou Carisma é sua habilidade de conjuração para as magias lançadas com este traço…",
+     "text": [
+      "Você pertence a uma linhagem que lhe concede habilidades sobrenaturais. Escolha uma das opções a seguir; qualquer que seja a escolha, Inteligência, Sabedoria ou Carisma é sua habilidade de conjuração para as magias lançadas com este traço (escolha ao selecionar a linhagem):",
+      "Gnomo da Floresta. Você conhece o truque Ilusão Menor. Também tem sempre preparada a magia Falar com Animais. Pode lançá-la sem gastar espaço de magia um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo. Também pode usar qualquer espaço de magia que tenha para lançá-la.",
+      "Gnomo das Rochas. Você conhece os truques Reparar e Prestidigitação. Além disso, pode gastar 10 minutos lançando Prestidigitação para criar um dispositivo mecânico Miúdo (CA 5, 1 PV), como um brinquedo, um acendedor ou uma caixa de música. Ao criar o dispositivo, você define a função dele escolhendo um dos efeitos de Prestidigitação; o dispositivo produz esse efeito sempre que você ou outra criatura usa uma Ação Bônus para ativá-lo com um toque. Se o efeito escolhido tiver opções, você escolhe uma delas para o dispositivo ao criá-lo.",
+      "Por exemplo, se escolher o efeito de acender ou apagar da magia, você define se o dispositivo acende ou apaga o fogo; ele não faz as duas coisas. Você pode ter três desses dispositivos ao mesmo tempo, e cada um se desfaz 8 horas depois de criado ou quando você o desmonta com um toque, usando a ação Utilizar."
+     ]
+    }
+   ],
+   "subspecies": [
+    "subspecies:gnomish-lineage-forest-gnome",
+    "subspecies:gnomish-lineage-rock-gnome"
+   ],
+   "darkvision": true
+  }
+ },
+ {
+  "id": "species:goliath",
+  "kind": "species",
+  "name": "Golias",
+  "summary": "Médio · deslocamento 10,5 m. Ancestralidade Gigante, Forma Grande, Constituição Poderosa.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Species"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "size": "Médio",
+   "speed": 10.5,
+   "creatureType": "Humanoide",
+   "abilityBonuses": {},
+   "skills": [],
+   "proficiencies": [],
+   "traits": [
+    {
+     "id": "giant-ancestry",
+     "name": "Ancestralidade Gigante",
+     "summary": "Você descende de Gigantes. Escolha um dos benefícios a seguir, uma dádiva sobrenatural da sua ancestralidade. Você pode usar o benefício escolhido um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando…",
+     "text": [
+      "Você descende de Gigantes. Escolha um dos benefícios a seguir, uma dádiva sobrenatural da sua ancestralidade. Você pode usar o benefício escolhido um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo:",
+      "Salto das Nuvens (Gigante das Nuvens). Com uma Ação Bônus, você se teletransporta magicamente até 9 metros para um espaço desocupado que consiga ver.",
+      "Queimadura do Fogo (Gigante do Fogo). Quando atinge um alvo com uma jogada de ataque e causa dano a ele, você também pode causar 1d10 de dano de Fogo a esse alvo.",
+      "Frio do Gelo (Gigante do Gelo). Quando atinge um alvo com uma jogada de ataque e causa dano a ele, você também pode causar 1d6 de dano de Frio a esse alvo e reduzir o Deslocamento dele em 3 metros até o início do seu próximo turno.",
+      "Tombo das Colinas (Gigante das Colinas). Quando atinge uma criatura Grande ou menor com uma jogada de ataque e causa dano a ela, você pode deixá-la com a condição Caído.",
+      "Resistência da Pedra (Gigante da Pedra). Quando sofre dano, você pode usar uma Reação para rolar 1d12. Some seu modificador de Constituição ao resultado e reduza o dano nesse total.",
+      "Trovão da Tempestade (Gigante da Tempestade). Quando sofre dano de uma criatura a até 18 metros de você, pode usar uma Reação para causar 1d8 de dano Trovejante a essa criatura."
+     ]
+    },
+    {
+     "id": "large-form",
+     "name": "Forma Grande",
+     "summary": "A partir do nível de personagem 5, você pode mudar seu tamanho para Grande com uma Ação Bônus, se estiver num espaço grande o bastante. A transformação dura 10 minutos ou até você encerrá-la (sem gastar ação). Nesse período, você tem…",
+     "text": [
+      "A partir do nível de personagem 5, você pode mudar seu tamanho para Grande com uma Ação Bônus, se estiver num espaço grande o bastante. A transformação dura 10 minutos ou até você encerrá-la (sem gastar ação). Nesse período, você tem Vantagem em testes de Força, e seu Deslocamento aumenta em 3 metros. Depois de usar este traço, você só pode usá-lo de novo após terminar um Descanso Longo."
+     ]
+    },
+    {
+     "id": "powerful-build",
+     "name": "Constituição Poderosa",
+     "summary": "Você tem Vantagem em qualquer teste de atributo para encerrar a condição Agarrado. Também conta como um tamanho maior para determinar sua capacidade de carga.",
+     "text": [
+      "Você tem Vantagem em qualquer teste de atributo para encerrar a condição Agarrado. Também conta como um tamanho maior para determinar sua capacidade de carga."
+     ]
+    }
+   ],
+   "subspecies": [
+    "subspecies:giant-ancestry-clouds-jaunt",
+    "subspecies:giant-ancestry-fires-burn",
+    "subspecies:giant-ancestry-frosts-chill",
+    "subspecies:giant-ancestry-hills-tumble",
+    "subspecies:giant-ancestry-stones-endurance",
+    "subspecies:giant-ancestry-storms-thunder"
+   ],
+   "darkvision": false
+  }
+ },
+ {
+  "id": "species:halfling",
+  "kind": "species",
+  "name": "Halfling",
+  "summary": "Pequeno · deslocamento 9 m. Corajoso, Agilidade Halfling, Sorte, Furtividade Natural.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Species"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "size": "Pequeno",
+   "speed": 9,
+   "creatureType": "Humanoide",
+   "abilityBonuses": {},
+   "skills": [],
+   "proficiencies": [],
+   "traits": [
+    {
+     "id": "brave",
+     "name": "Corajoso",
+     "summary": "Você tem Vantagem em testes de resistência para evitar ou encerrar a condição Amedrontado.",
+     "text": [
+      "Você tem Vantagem em testes de resistência para evitar ou encerrar a condição Amedrontado."
+     ]
+    },
+    {
+     "id": "halfling-nimbleness",
+     "name": "Agilidade Halfling",
+     "summary": "Você pode atravessar o espaço de qualquer criatura um tamanho maior que você, mas não pode parar nesse espaço.",
+     "text": [
+      "Você pode atravessar o espaço de qualquer criatura um tamanho maior que você, mas não pode parar nesse espaço."
+     ]
+    },
+    {
+     "id": "luck",
+     "name": "Sorte",
+     "summary": "Quando tirar 1 no d20 de um Teste de D20, você pode rolar o dado de novo e deve usar o novo resultado.",
+     "text": [
+      "Quando tirar 1 no d20 de um Teste de D20, você pode rolar o dado de novo e deve usar o novo resultado."
+     ]
+    },
+    {
+     "id": "naturally-stealthy",
+     "name": "Furtividade Natural",
+     "summary": "Você pode realizar a ação Esconder mesmo quando estiver encoberto apenas por uma criatura pelo menos um tamanho maior que você.",
+     "text": [
+      "Você pode realizar a ação Esconder mesmo quando estiver encoberto apenas por uma criatura pelo menos um tamanho maior que você."
+     ]
+    }
+   ],
+   "subspecies": [],
+   "darkvision": false
+  }
+ },
+ {
+  "id": "species:human",
+  "kind": "species",
+  "name": "Humano",
+  "summary": "Médio · deslocamento 9 m. Engenhoso, Habilidoso, Versátil.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Species"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "size": "Médio",
+   "speed": 9,
+   "creatureType": "Humanoide",
+   "abilityBonuses": {},
+   "skills": [],
+   "flexibleSkills": 1,
+   "proficiencies": [],
+   "traits": [
+    {
+     "id": "resourceful",
+     "name": "Engenhoso",
+     "summary": "Você ganha Inspiração Heroica sempre que termina um Descanso Longo.",
+     "text": [
+      "Você ganha Inspiração Heroica sempre que termina um Descanso Longo."
+     ]
+    },
+    {
+     "id": "skillful",
+     "name": "Habilidoso",
+     "summary": "Você ganha proficiência numa perícia à sua escolha.",
+     "text": [
+      "Você ganha proficiência numa perícia à sua escolha."
+     ]
+    },
+    {
+     "id": "versatile",
+     "name": "Versátil",
+     "summary": "Você ganha um talento de Origem à sua escolha (veja \"Talentos\"). Habilidoso é o recomendado.",
+     "text": [
+      "Você ganha um talento de Origem à sua escolha (veja \"Talentos\"). Habilidoso é o recomendado."
+     ]
+    }
+   ],
+   "subspecies": [],
+   "darkvision": false
+  }
+ },
+ {
+  "id": "species:orc",
+  "kind": "species",
+  "name": "Orc",
+  "summary": "Médio · deslocamento 9 m. Descarga de Adrenalina, Visão no Escuro (36 m), Resistência Implacável.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Species"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "size": "Médio",
+   "speed": 9,
+   "creatureType": "Humanoide",
+   "abilityBonuses": {},
+   "skills": [],
+   "proficiencies": [],
+   "traits": [
+    {
+     "id": "adrenaline-rush",
+     "name": "Descarga de Adrenalina",
+     "summary": "Você pode realizar a ação de Disparada como Ação Bônus. Quando faz isso, ganha Pontos de Vida Temporários iguais ao seu Bônus de Proficiência.",
+     "text": [
+      "Você pode realizar a ação de Disparada como Ação Bônus. Quando faz isso, ganha Pontos de Vida Temporários iguais ao seu Bônus de Proficiência.",
+      "Você pode usar este traço um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Curto ou Longo."
+     ]
+    },
+    {
+     "id": "darkvision-120",
+     "name": "Visão no Escuro (36 m)",
+     "summary": "Você tem Visão no Escuro com alcance de 36 metros.",
+     "text": [
+      "Você tem Visão no Escuro com alcance de 36 metros."
+     ]
+    },
+    {
+     "id": "relentless-endurance",
+     "name": "Resistência Implacável",
+     "summary": "Quando é reduzido a 0 Pontos de Vida mas não morre na hora, você pode ficar com 1 Ponto de Vida em vez disso. Depois de usar este traço, você só pode usá-lo de novo após terminar um Descanso Longo.",
+     "text": [
+      "Quando é reduzido a 0 Pontos de Vida mas não morre na hora, você pode ficar com 1 Ponto de Vida em vez disso. Depois de usar este traço, você só pode usá-lo de novo após terminar um Descanso Longo."
+     ]
+    }
+   ],
+   "subspecies": [],
+   "darkvision": true
+  }
+ },
+ {
+  "id": "species:tiefling",
+  "kind": "species",
+  "name": "Tiefling",
+  "summary": "undefined · deslocamento 9 m. Visão no Escuro (18 m), Legado Ínfero, Presença de Outro Mundo.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Species"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "speed": 9,
+   "creatureType": "Humanoide",
+   "abilityBonuses": {},
+   "skills": [],
+   "proficiencies": [],
+   "traits": [
+    {
+     "id": "darkvision-60",
+     "name": "Visão no Escuro (18 m)",
+     "summary": "Você tem Visão no Escuro com alcance de 18 metros.",
+     "text": [
+      "Você tem Visão no Escuro com alcance de 18 metros."
+     ]
+    },
+    {
+     "id": "fiendish-legacy",
+     "name": "Legado Ínfero",
+     "summary": "Você recebeu um legado que lhe concede habilidades sobrenaturais. Escolha um legado na tabela de Legados Ínferos. Você recebe o benefício de nível 1 do legado escolhido.",
+     "text": [
+      "Você recebeu um legado que lhe concede habilidades sobrenaturais. Escolha um legado na tabela de Legados Ínferos. Você recebe o benefício de nível 1 do legado escolhido.",
+      "Ao chegar aos níveis de personagem 3 e 5, você aprende uma magia de nível mais alto, como mostra a tabela.",
+      "Você sempre tem essa magia preparada. Pode lançá-la uma vez sem gastar espaço de magia e recupera essa capacidade quando termina um Descanso Longo. Também pode lançá-la usando qualquer espaço de magia de nível apropriado que tenha.",
+      "Inteligência, Sabedoria ou Carisma é sua habilidade de conjuração para as magias lançadas com este traço (escolha ao selecionar o legado).",
+      "Legados Ínferos",
+      "Abissal.",
+      "Nível 1. Você tem Resistência a dano de Veneno. Também conhece o truque Rajada de Veneno.",
+      "Nível 3. Raio Nauseante",
+      "Nível 5. Imobilizar Pessoa",
+      "Ctônico.",
+      "Nível 1. Você tem Resistência a dano Necrótico. Também conhece o truque Toque Arrepiante.",
+      "Nível 3. Vitalidade Falsa",
+      "Nível 5. Raio do Enfraquecimento",
+      "Infernal.",
+      "Nível 1. Você tem Resistência a dano de Fogo. Também conhece o truque Raio de Fogo.",
+      "Nível 3. Repreensão Infernal",
+      "Nível 5. Escuridão"
+     ]
+    },
+    {
+     "id": "otherworldly-presence",
+     "name": "Presença de Outro Mundo",
+     "summary": "Você conhece o truque Taumaturgia. Quando o lança com este traço, a magia usa a mesma habilidade de conjuração do seu traço Legado Ínfero.",
+     "text": [
+      "Você conhece o truque Taumaturgia. Quando o lança com este traço, a magia usa a mesma habilidade de conjuração do seu traço Legado Ínfero."
+     ]
+    }
+   ],
+   "subspecies": [
+    "subspecies:fiendish-legacy-abyssal",
+    "subspecies:fiendish-legacy-chthonic",
+    "subspecies:fiendish-legacy-infernal"
+   ],
+   "darkvision": true
+  }
+ }
+]

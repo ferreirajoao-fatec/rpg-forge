@@ -1,0 +1,95 @@
+{
+ "druid-spellcasting": {
+  "d": [
+   "Você aprendeu a lançar magias estudando as forças místicas da natureza. Veja \"Magias\" para as regras de conjuração. As informações abaixo explicam como usar essas regras com as magias de Druida, que aparecem na lista de magias de Druida mais adiante na descrição da classe.",
+   "Truques. Você conhece dois truques à sua escolha da lista de magias de Druida. Arte Druídica e Produzir Chama são os recomendados.",
+   "Sempre que ganhar um nível de Druida, pode trocar um dos seus truques por outro à sua escolha da lista de magias de Druida.",
+   "Ao chegar aos níveis de Druida 4 e 10, você aprende mais um truque à sua escolha da lista de magias de Druida, como mostra a coluna Truques da tabela de Características do Druida.",
+   "Espaços de Magia. A tabela de Características do Druida mostra quantos espaços de magia você tem para lançar suas magias de nível 1 ou superior. Você recupera todos os espaços gastos quando termina um Descanso Longo.",
+   "Magias Preparadas de Nível 1+. Você prepara a lista de magias de nível 1 ou superior que pode lançar com esta característica. Para começar, escolha quatro magias de nível 1 da lista de magias de Druida. Amizade Animal, Curar Ferimentos, Fogo das Fadas e Onda Trovejante são as recomendadas.",
+   "O número de magias na sua lista aumenta conforme você ganha níveis de Druida, como mostra a coluna Magias Preparadas da tabela de Características do Druida. Sempre que esse número aumentar, escolha magias adicionais da lista de magias de Druida até que o número de magias na sua lista seja igual ao da tabela. As magias escolhidas precisam ser de um nível para o qual você tenha espaços de magia. Por exemplo, se você for um Druida de nível 3, sua lista de magias preparadas pode incluir seis magias de nível 1 e 2 em qualquer combinação.",
+   "Se outra característica de Druida lhe der magias que você sempre tem preparadas, elas não contam no número de magias que você pode preparar com esta característica, mas fora isso contam como magias de Druida para você.",
+   "Trocar suas Magias Preparadas. Sempre que terminar um Descanso Longo, você pode mudar sua lista de magias preparadas, trocando qualquer uma delas por outras magias de Druida para as quais tenha espaços de magia.",
+   "Habilidade de Conjuração. Sabedoria é sua habilidade de conjuração para as magias de Druida.",
+   "Foco de Conjuração. Você pode usar um Foco Druídico como Foco de Conjuração para suas magias de Druida."
+  ]
+ },
+ "druid-druidic": {
+  "d": [
+   "Você conhece o Druídico, o idioma secreto dos Druidas. Ao aprender essa língua antiga, também desbloqueou a magia de se comunicar com animais; você sempre tem a magia Falar com Animais preparada.",
+   "Você pode usar o Druídico para deixar mensagens ocultas. Você e outros que conhecem o Druídico notam essas mensagens automaticamente. Outros notam a presença da mensagem com um teste de Inteligência (Investigação) CD 15 bem-sucedido, mas não conseguem decifrá-la sem magia."
+  ]
+ },
+ "druid-primal-order": {
+  "n": "Ordem Primitiva",
+  "d": [
+   "Você se dedicou a um dos papéis sagrados a seguir, à sua escolha.",
+   "Mágico. Você conhece um truque extra da lista de magias de Druida. Além disso, sua ligação mística com a natureza lhe dá um bônus nos testes de Inteligência (Arcanismo ou Natureza). O bônus é igual ao seu modificador de Sabedoria (bônus mínimo de +1).",
+   "Guardião. Treinado para a batalha, você ganha proficiência com armas Marciais e treinamento com armadura Média."
+  ]
+ },
+ "druid-wild-shape": {
+  "n": "Forma Selvagem",
+  "d": [
+   "O poder da natureza permite assumir a forma de um animal. Com uma Ação Bônus, você se transforma numa forma de Fera que aprendeu para esta característica (veja \"Formas Conhecidas\" abaixo). Fica nessa forma por um número de horas igual à metade do seu nível de Druida ou até usar Forma Selvagem de novo, ficar com a condição Incapacitado ou morrer. Também pode deixar a forma antes com uma Ação Bônus.",
+   "Número de Usos. Você pode usar Forma Selvagem duas vezes. Recupera um uso gasto quando termina um Descanso Curto e todos os usos gastos quando termina um Descanso Longo.",
+   "Você ganha usos adicionais ao chegar a certos níveis de Druida, como mostra a coluna Forma Selvagem da tabela de Características do Druida.",
+   "Formas Conhecidas. Você conhece quatro formas de Fera para esta característica, escolhidas entre blocos de estatísticas de Fera com Nível de Desafio máximo de 1/4 e sem Deslocamento de Voo (veja \"Animais\" em \"Monstros\" para as opções). Rato, Cavalo de Montaria, Aranha e Lobo são os recomendados. Sempre que terminar um Descanso Longo, você pode trocar uma das formas conhecidas por outra elegível.",
+   "Ao chegar a certos níveis de Druida, o número de formas conhecidas e o Nível de Desafio máximo delas aumentam, como mostra a tabela de Formas de Fera. Além disso, a partir do nível 8, você pode adotar uma forma com Deslocamento de Voo.",
+   "Ao escolher as formas conhecidas, você pode procurar Feras elegíveis em outras fontes, se o Mestre permitir.",
+   "Formas de Fera",
+   "Nível de Druida / Formas Conhecidas / ND Máximo / Deslocamento de Voo",
+   "2 / 4 / 1/4 / Não",
+   "4 / 6 / 1/2 / Não",
+   "8 / 8 / 1 / Sim",
+   "Regras Enquanto Transformado. Enquanto estiver numa forma, você mantém sua personalidade, memórias e capacidade de falar, e valem as regras a seguir:",
+   "Pontos de Vida Temporários. Ao assumir uma forma de Forma Selvagem, você ganha Pontos de Vida Temporários iguais ao seu nível de Druida.",
+   "Estatísticas de Jogo. Suas estatísticas de jogo são substituídas pelo bloco de estatísticas da Fera, mas você mantém seu tipo de criatura, Pontos de Vida, Dados de Pontos de Vida, valores de Inteligência, Sabedoria e Carisma, características de classe, idiomas e talentos. Também mantém suas proficiências em perícias e testes de resistência e usa seu Bônus de Proficiência nelas, além de ganhar as proficiências da criatura. Se um modificador de perícia ou de teste de resistência no bloco de estatísticas da Fera for maior que o seu, use o do bloco.",
+   "Sem Conjuração. Você não pode lançar magias, mas a transformação não interrompe sua Concentração nem interfere numa magia já lançada.",
+   "Objetos. Sua capacidade de manusear objetos é determinada pelos membros da forma, não pelos seus. Além disso, você escolhe se seu equipamento cai no seu espaço, se funde à nova forma ou é vestido por ela. O equipamento vestido funciona normalmente, mas o Mestre decide se é prático para a nova forma usar cada peça, com base no tamanho e no formato da criatura. O equipamento não muda de tamanho nem de formato para se ajustar à nova forma, e o que ela não puder vestir deve cair no chão ou se fundir a ela. O equipamento fundido não tem efeito enquanto você estiver nessa forma."
+  ]
+ },
+ "druid-wild-companion": {
+  "n": "Companheiro Selvagem",
+  "d": [
+   "Você pode invocar um espírito da natureza que assume forma animal para ajudá-lo. Com uma ação de Magia, pode gastar um espaço de magia ou um uso de Forma Selvagem para lançar a magia Encontrar Familiar sem componentes Materiais.",
+   "Quando lança a magia assim, o familiar é uma Fada e desaparece quando você termina um Descanso Longo."
+  ]
+ },
+ "druid-subclass": {
+  "n": "Subclasse de Druida",
+  "d": ["Você ganha uma subclasse de Druida à sua escolha. Uma subclasse é uma especialização que concede características em certos níveis de Druida. Pelo resto da sua carreira, você ganha cada característica da subclasse de nível igual ou menor que seu nível de Druida."]
+ },
+ "druid-ability-score-improvement": {
+  "d": ["Você ganha o talento Aumento no Valor de Habilidade (veja \"Talentos\") ou outro talento à sua escolha para o qual se qualifique. Ganha esta característica de novo nos níveis de Druida 8, 12 e 16."]
+ },
+ "druid-wild-resurgence": {
+  "n": "Ressurgência Selvagem",
+  "d": [
+   "Uma vez em cada um dos seus turnos, se não tiver mais usos de Forma Selvagem, você pode ganhar um uso gastando um espaço de magia (sem gastar ação).",
+   "Além disso, pode gastar um uso de Forma Selvagem (sem gastar ação) para ganhar um espaço de magia de nível 1, mas só pode fazer isso de novo depois de terminar um Descanso Longo."
+  ]
+ },
+ "druid-elemental-fury": {
+  "n": "Fúria Elemental",
+  "d": [
+   "O poder dos elementos flui por você. Você ganha uma das opções a seguir, à sua escolha.",
+   "Conjuração Poderosa. Some seu modificador de Sabedoria ao dano que causa com qualquer truque de Druida.",
+   "Golpe Primitivo. Uma vez em cada um dos seus turnos, quando atinge uma criatura com uma jogada de ataque usando uma arma ou o ataque de uma forma de Fera em Forma Selvagem, você pode fazer o alvo sofrer 1d8 de dano extra de Frio, Fogo, Elétrico ou Trovejante (escolha ao acertar)."
+  ]
+ },
+ "druid-improved-elemental-fury": {
+  "n": "Fúria Elemental Aprimorada",
+  "d": [
+   "A opção que você escolheu para Fúria Elemental fica mais poderosa, como detalhado abaixo.",
+   "Conjuração Poderosa. Quando lança um truque de Druida com alcance de 3 metros ou mais, o alcance da magia aumenta em 90 metros.",
+   "Golpe Primitivo. O dano extra do seu Golpe Primitivo aumenta para 2d8."
+  ]
+ },
+ "druid-beast-spells": {
+  "d": ["Enquanto usa Forma Selvagem, você pode lançar magias na forma de Fera, exceto magias com componente Material de custo especificado ou que consumam o componente Material."]
+ },
+ "druid-epic-boon": {
+  "d": ["Você ganha um talento de Dádiva Épica (veja \"Talentos\") ou outro talento à sua escolha para o qual se qualifique. Dádiva da Viagem Dimensional é a recomendada."]
+ }
+}

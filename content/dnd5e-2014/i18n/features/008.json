@@ -1,0 +1,157 @@
+{
+ "flexible-casting-converting-spell-slot": {
+  "n": "Conjuração Flexível: Converter Espaço de Magia",
+  "d": ["Com uma ação bônus no seu turno, você pode gastar um espaço de magia e ganhar pontos de feitiçaria iguais ao nível do espaço."]
+ },
+ "metamagic-1": {
+  "n": "Metamagia",
+  "d": [
+   "No 3º nível, você ganha a capacidade de distorcer suas magias conforme sua necessidade. Ganha duas das opções de Metamagia a seguir, à sua escolha, e mais uma no 10º e no 17º nível.",
+   "Você só pode usar uma opção de Metamagia numa magia ao lançá-la, salvo indicação em contrário."
+  ]
+ },
+ "metamagic-careful-spell": {
+  "n": "Metamagia: Magia Cuidadosa",
+  "d": ["Quando lança uma magia que força outras criaturas a fazer um teste de resistência, você pode proteger algumas delas da força total da magia. Para isso, gasta 1 ponto de feitiçaria e escolhe um número dessas criaturas até seu modificador de Carisma (no mínimo uma). Cada criatura escolhida passa automaticamente no teste de resistência contra a magia."]
+ },
+ "metamagic-distant-spell": {
+  "n": "Metamagia: Magia Distante",
+  "d": [
+   "Quando lança uma magia com alcance de 1,5 metro ou mais, você pode gastar 1 ponto de feitiçaria para dobrar o alcance da magia.",
+   "Quando lança uma magia com alcance de toque, pode gastar 1 ponto de feitiçaria para que o alcance passe a ser 9 metros."
+  ]
+ },
+ "metamagic-empowered-spell": {
+  "n": "Metamagia: Magia Potencializada",
+  "d": [
+   "Quando rola o dano de uma magia, você pode gastar 1 ponto de feitiçaria para rolar de novo um número de dados de dano até seu modificador de Carisma (no mínimo um). Deve usar os novos resultados.",
+   "Você pode usar Magia Potencializada mesmo que já tenha usado outra opção de Metamagia ao lançar a magia."
+  ]
+ },
+ "metamagic-extended-spell": {
+  "n": "Metamagia: Magia Estendida",
+  "d": ["Quando lança uma magia com duração de 1 minuto ou mais, você pode gastar 1 ponto de feitiçaria para dobrar a duração, até o máximo de 24 horas."]
+ },
+ "metamagic-heightened-spell": {
+  "n": "Metamagia: Magia Intensificada",
+  "d": ["Quando lança uma magia que força uma criatura a fazer um teste de resistência para resistir aos efeitos, você pode gastar 3 pontos de feitiçaria para dar a um dos alvos desvantagem no primeiro teste de resistência contra a magia."]
+ },
+ "metamagic-quickened-spell": {
+  "n": "Metamagia: Magia Acelerada",
+  "d": ["Quando lança uma magia com tempo de conjuração de 1 ação, você pode gastar 2 pontos de feitiçaria para mudar o tempo de conjuração para 1 ação bônus nesta conjuração."]
+ },
+ "metamagic-subtle-spell": {
+  "n": "Metamagia: Magia Sutil",
+  "d": ["Quando lança uma magia, você pode gastar 1 ponto de feitiçaria para lançá-la sem componentes somáticos nem verbais."]
+ },
+ "metamagic-twinned-spell": {
+  "n": "Metamagia: Magia Gêmea",
+  "d": [
+   "Quando lança uma magia que tem como alvo uma única criatura e não tem alcance pessoal, você pode gastar um número de pontos de feitiçaria igual ao nível da magia para escolher uma segunda criatura no alcance como alvo da mesma magia (1 ponto de feitiçaria se a magia for um truque).",
+   "Para ser elegível, a magia não pode ser capaz de ter mais de uma criatura como alvo no nível atual. Por exemplo, mísseis mágicos e raio ardente não são elegíveis, mas raio de gelo é."
+  ]
+ },
+ "sorcerous-origin-improvement-1": { "n": "Característica da Origem de Feitiçaria" },
+ "elemental-affinity": {
+  "n": "Afinidade Elemental",
+  "d": ["A partir do 6º nível, quando lança uma magia que causa dano do tipo associado à sua ancestralidade dracônica, você pode somar seu modificador de Carisma a uma jogada de dano dessa magia. Ao mesmo tempo, pode gastar 1 ponto de feitiçaria para ganhar resistência a esse tipo de dano por 1 hora."]
+ },
+ "dragon-wings": {
+  "n": "Asas de Dragão",
+  "d": [
+   "No 14º nível, você ganha a capacidade de fazer brotar um par de asas de dragão nas costas, ganhando deslocamento de voo igual ao seu deslocamento atual. Pode criar as asas com uma ação bônus no seu turno. Elas duram até você dispensá-las com uma ação bônus no seu turno.",
+   "Você não pode manifestar as asas enquanto usa armadura, a não ser que ela seja feita para acomodá-las, e roupas não feitas para acomodá-las podem ser destruídas quando você as manifesta."
+  ]
+ },
+ "draconic-presence": {
+  "n": "Presença Dracônica",
+  "d": ["A partir do 18º nível, você pode canalizar a presença temível do seu ancestral dracônico, deixando os que estão ao redor admirados ou amedrontados. Com uma ação, pode gastar 5 pontos de feitiçaria para recorrer a esse poder e exalar uma aura de admiração ou de medo (à sua escolha) até 18 metros. Por 1 minuto ou até perder a concentração (como se estivesse lançando uma magia de concentração), cada criatura hostil que começa o turno na aura deve passar num teste de resistência de Sabedoria ou ficar enfeitiçada (se escolheu admiração) ou amedrontada (se escolheu medo) até a aura terminar. Uma criatura que passa no teste fica imune à sua aura por 24 horas."]
+ },
+ "sorcerous-restoration": {
+  "n": "Restauração Feiticeira",
+  "d": ["No 20º nível, você recupera 4 pontos de feitiçaria gastos sempre que termina um descanso curto."]
+ },
+ "otherworldly-patron": {
+  "n": "Patrono Transcendental",
+  "d": ["No 1º nível, você fez um acordo com um ser de outro mundo à sua escolha, como o Ínfero. A escolha concede características no 1º nível e de novo no 6º, 10º e 14º."]
+ },
+ "dark-ones-blessing": {
+  "n": "Bênção do Obscuro",
+  "d": ["A partir do 1º nível, quando reduz uma criatura hostil a 0 pontos de vida, você ganha pontos de vida temporários iguais ao seu modificador de Carisma + seu nível de bruxo (mínimo de 1)."]
+ },
+ "pact-magic": {
+  "n": "Magia de Pacto",
+  "d": ["Sua pesquisa arcana e a magia concedida pelo seu patrono lhe deram facilidade com magias."]
+ },
+ "eldritch-invocations": {
+  "n": "Invocações Místicas",
+  "d": [
+   "No seu estudo do saber oculto, você desenterrou invocações místicas, fragmentos de conhecimento proibido que lhe concedem uma capacidade mágica permanente.",
+   "No 2º nível, você ganha duas invocações místicas à sua escolha. As opções estão detalhadas no fim da descrição da classe. Ao chegar a certos níveis de bruxo, ganha invocações adicionais à sua escolha, como mostra a coluna Invocações Conhecidas da tabela do Bruxo.",
+   "Além disso, quando ganha um nível nesta classe, pode escolher uma das invocações que conhece e trocá-la por outra que poderia aprender nesse nível."
+  ]
+ },
+ "eldritch-invocation-agonizing-blast": {
+  "n": "Invocação Mística: Rajada Agonizante",
+  "d": ["Quando lança rajada mística, some seu modificador de Carisma ao dano que ela causa ao acertar."]
+ },
+ "eldritch-invocation-armor-of-shadows": {
+  "n": "Invocação Mística: Armadura de Sombras",
+  "d": ["Você pode lançar armadura arcana em si mesmo à vontade, sem gastar espaço de magia nem componentes materiais."]
+ },
+ "eldritch-invocation-beast-speech": {
+  "n": "Invocação Mística: Fala das Feras",
+  "d": ["Você pode lançar falar com animais à vontade, sem gastar espaço de magia."]
+ },
+ "eldritch-invocation-beguiling-influence": {
+  "n": "Invocação Mística: Influência Sedutora",
+  "d": ["Você ganha proficiência nas perícias Enganação e Persuasão."]
+ },
+ "eldritch-invocation-book-of-ancient-secrets": {
+  "n": "Invocação Mística: Livro de Segredos Antigos",
+  "d": [
+   "Agora você pode inscrever rituais mágicos no seu Livro das Sombras. Escolha duas magias de 1º nível com a marca de ritual da lista de magias de qualquer classe (não precisam ser da mesma lista). As magias aparecem no livro e não contam no número de magias que você conhece. Com o Livro das Sombras em mãos, pode lançar as magias escolhidas como rituais. Não pode lançá-las de outra forma, a não ser que as tenha aprendido por outro meio. Também pode lançar como ritual uma magia de bruxo que conheça, se ela tiver a marca de ritual.",
+   "Nas suas aventuras, pode acrescentar outras magias de ritual ao Livro das Sombras. Quando encontra uma magia assim, pode acrescentá-la se o nível dela for igual ou menor que a metade do seu nível de bruxo (arredondado para cima) e se tiver tempo para transcrevê-la. Para cada nível da magia, a transcrição leva 2 horas e custa 50 po em tintas raras necessárias para inscrevê-la."
+  ]
+ },
+ "eldritch-invocation-devils-sight": {
+  "n": "Invocação Mística: Visão do Diabo",
+  "d": ["Você enxerga normalmente na escuridão, mágica e não mágica, até 36 metros."]
+ },
+ "eldritch-invocation-eldritch-sight": {
+  "n": "Invocação Mística: Visão Mística",
+  "d": ["Você pode lançar detectar magia à vontade, sem gastar espaço de magia."]
+ },
+ "eldritch-invocation-eldritch-spear": {
+  "n": "Invocação Mística: Lança Mística",
+  "d": ["Quando você lança rajada mística, o alcance dela é 90 metros."]
+ },
+ "eldritch-invocation-eyes-of-the-rune-keeper": {
+  "n": "Invocação Mística: Olhos do Guardião das Runas",
+  "d": ["Você consegue ler qualquer escrita."]
+ },
+ "eldritch-invocation-fiendish-vigor": {
+  "n": "Invocação Mística: Vigor Ínfero",
+  "d": ["Você pode lançar vitalidade falsa em si mesmo à vontade, como magia de 1º nível, sem gastar espaço de magia nem componentes materiais."]
+ },
+ "eldritch-invocation-gaze-of-two-minds": {
+  "n": "Invocação Mística: Olhar de Duas Mentes",
+  "d": ["Você pode usar sua ação para tocar um humanoide voluntário e perceber pelos sentidos dele até o fim do seu próximo turno. Enquanto a criatura estiver no mesmo plano de existência que você, pode usar sua ação nos turnos seguintes para manter a conexão, estendendo a duração até o fim do seu próximo turno. Enquanto percebe pelos sentidos da outra criatura, você se beneficia de qualquer sentido especial que ela tenha e fica cego e surdo para o que está ao seu redor."]
+ },
+ "eldritch-invocation-mask-of-many-faces": {
+  "n": "Invocação Mística: Máscara de Muitas Faces",
+  "d": ["Você pode lançar disfarçar-se à vontade, sem gastar espaço de magia."]
+ },
+ "eldritch-invocation-misty-visions": {
+  "n": "Invocação Mística: Visões Nebulosas",
+  "d": ["Você pode lançar imagem silenciosa à vontade, sem gastar espaço de magia nem componentes materiais."]
+ },
+ "eldritch-invocation-repelling-blast": {
+  "n": "Invocação Mística: Rajada Repulsora",
+  "d": ["Quando atinge uma criatura com rajada mística, você pode empurrá-la até 3 metros para longe de você em linha reta."]
+ },
+ "eldritch-invocation-thief-of-five-fates": {
+  "n": "Invocação Mística: Ladrão dos Cinco Destinos",
+  "d": ["Você pode lançar perdição uma vez usando um espaço de magia de bruxo. Só pode fazer isso de novo depois de terminar um descanso longo."]
+ }
+}

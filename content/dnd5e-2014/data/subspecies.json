@@ -1,0 +1,183 @@
+[
+ {
+  "id": "subspecies:hill-dwarf",
+  "kind": "subspecies",
+  "name": "Anão da Colina",
+  "summary": "+1 Sabedoria · Robustez Anã",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Subraces"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:dwarf"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:dwarf",
+   "abilityBonuses": {
+    "wis": 1
+   },
+   "hpPerLevel": 1,
+   "traits": [
+    {
+     "id": "dwarven-toughness",
+     "name": "Robustez Anã",
+     "summary": "Seu máximo de pontos de vida aumenta em 1, e aumenta em 1 de novo cada vez que você sobe de nível.",
+     "text": [
+      "Seu máximo de pontos de vida aumenta em 1, e aumenta em 1 de novo cada vez que você sobe de nível."
+     ]
+    }
+   ],
+   "text": [
+    "Como anão da colina, você tem sentidos aguçados, intuição profunda e uma resistência notável."
+   ]
+  }
+ },
+ {
+  "id": "subspecies:high-elf",
+  "kind": "subspecies",
+  "name": "Alto Elfo",
+  "summary": "+1 Inteligência · Treinamento Élfico com Armas, Truque de Alto Elfo, Idioma Adicional",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Subraces"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:elf"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:elf",
+   "abilityBonuses": {
+    "int": 1
+   },
+   "traits": [
+    {
+     "id": "elf-weapon-training",
+     "name": "Treinamento Élfico com Armas",
+     "summary": "Você tem proficiência com espada longa, espada curta, arco curto e arco longo.",
+     "text": [
+      "Você tem proficiência com espada longa, espada curta, arco curto e arco longo."
+     ]
+    },
+    {
+     "id": "high-elf-cantrip",
+     "name": "Truque de Alto Elfo",
+     "summary": "Você conhece um truque à sua escolha da lista de magias de mago. Inteligência é sua habilidade de conjuração para ele.",
+     "text": [
+      "Você conhece um truque à sua escolha da lista de magias de mago. Inteligência é sua habilidade de conjuração para ele."
+     ]
+    },
+    {
+     "id": "extra-language",
+     "name": "Idioma Adicional",
+     "summary": "Você sabe falar, ler e escrever um idioma adicional à sua escolha.",
+     "text": [
+      "Você sabe falar, ler e escrever um idioma adicional à sua escolha."
+     ]
+    }
+   ],
+   "text": [
+    "Como alto elfo, você tem uma mente afiada e domina pelo menos o básico da magia. Em muitos mundos de fantasia há dois tipos de altos elfos. Um é altivo e recluso, e se acha superior aos não elfos e até a outros elfos. O outro é mais comum e mais amigável, e costuma ser encontrado entre humanos e outras raças."
+   ]
+  }
+ },
+ {
+  "id": "subspecies:lightfoot-halfling",
+  "kind": "subspecies",
+  "name": "Halfling Pés-Leves",
+  "summary": "+1 Carisma · Furtividade Natural",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Subraces"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:halfling"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:halfling",
+   "abilityBonuses": {
+    "cha": 1
+   },
+   "traits": [
+    {
+     "id": "naturally-stealthy",
+     "name": "Furtividade Natural",
+     "summary": "Você pode tentar se esconder mesmo quando estiver encoberto apenas por uma criatura pelo menos um tamanho maior que você.",
+     "text": [
+      "Você pode tentar se esconder mesmo quando estiver encoberto apenas por uma criatura pelo menos um tamanho maior que você."
+     ]
+    }
+   ],
+   "text": [
+    "Como halfling pés-leves, você se esconde com facilidade, usando até outras pessoas como cobertura. Você tende a ser afável e a se dar bem com os outros. Os pés-leves têm mais vontade de viajar que os outros halflings e muitas vezes vivem entre outras raças ou levam uma vida nômade."
+   ]
+  }
+ },
+ {
+  "id": "subspecies:rock-gnome",
+  "kind": "subspecies",
+  "name": "Gnomo das Rochas",
+  "summary": "+1 Constituição · Conhecimento de Artífice, Engenhoqueiro",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Subraces"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:gnome"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:gnome",
+   "abilityBonuses": {
+    "con": 1
+   },
+   "traits": [
+    {
+     "id": "artificers-lore",
+     "name": "Conhecimento de Artífice",
+     "summary": "Sempre que fizer um teste de Inteligência (História) relacionado a itens mágicos, objetos alquímicos ou dispositivos tecnológicos, você pode somar o dobro do seu bônus de proficiência, em vez do bônus que normalmente aplicaria.",
+     "text": [
+      "Sempre que fizer um teste de Inteligência (História) relacionado a itens mágicos, objetos alquímicos ou dispositivos tecnológicos, você pode somar o dobro do seu bônus de proficiência, em vez do bônus que normalmente aplicaria."
+     ]
+    },
+    {
+     "id": "tinker",
+     "name": "Engenhoqueiro",
+     "summary": "Você tem proficiência com ferramentas de artesão (ferramentas de funileiro). Com elas, pode gastar 1 hora e 10 po em materiais para construir um dispositivo mecânico Miúdo (CA 5, 1 PV). O dispositivo para de funcionar depois de 24 horas (a…",
+     "text": [
+      "Você tem proficiência com ferramentas de artesão (ferramentas de funileiro). Com elas, pode gastar 1 hora e 10 po em materiais para construir um dispositivo mecânico Miúdo (CA 5, 1 PV). O dispositivo para de funcionar depois de 24 horas (a não ser que você gaste 1 hora consertando-o para mantê-lo funcionando) ou quando você usa sua ação para desmontá-lo; nesse momento, pode recuperar os materiais usados. Você pode ter até três desses dispositivos ativos ao mesmo tempo.",
+      "Ao criar um dispositivo, escolha uma das opções a seguir:",
+      "Brinquedo Mecânico: um animal, monstro ou pessoa de corda, como um sapo, rato, pássaro, dragão ou soldado. Posto no chão, o brinquedo se move 1,5 metro numa direção aleatória a cada turno seu, fazendo ruídos apropriados à criatura que representa.",
+      "Acendedor: o dispositivo produz uma pequena chama, que você pode usar para acender uma vela, tocha ou fogueira. Usar o dispositivo exige sua ação.",
+      "Caixa de Música: ao ser aberta, toca uma única canção em volume moderado. A caixa para de tocar quando a canção termina ou quando é fechada."
+     ]
+    }
+   ],
+   "text": [
+    "Como gnomo das rochas, você tem uma inventividade natural e uma robustez maiores que as dos outros gnomos."
+   ]
+  }
+ }
+]

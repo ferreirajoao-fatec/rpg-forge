@@ -1,0 +1,78 @@
+{
+ "enlarge-reduce": {
+  "n": "Aumentar/Reduzir",
+  "d": [
+   "Você faz uma criatura ou um objeto que consiga ver dentro do alcance ficar maior ou menor pela duração. Escolha uma criatura ou um objeto que não esteja sendo vestido nem carregado. Se o alvo não for voluntário, pode fazer um teste de resistência de Constituição. Se passar, a magia não tem efeito.",
+   "Se o alvo for uma criatura, tudo o que ela veste e carrega muda de tamanho com ela. Qualquer item largado por uma criatura afetada volta ao tamanho normal na hora.",
+   "*Aumentar.* O tamanho do alvo dobra em todas as dimensões, e seu peso é multiplicado por oito. Esse crescimento aumenta seu tamanho em uma categoria (de Médio para Grande, por exemplo). Se não houver espaço suficiente para o alvo dobrar de tamanho, a criatura ou o objeto atinge o tamanho máximo possível no espaço disponível. Até a magia terminar, o alvo também tem vantagem em testes de Força e testes de resistência de Força. As armas do alvo também crescem para acompanhar o novo tamanho. Enquanto estiverem aumentadas, os ataques do alvo com elas causam 1d4 de dano extra.",
+   "*Reduzir.* O tamanho do alvo cai pela metade em todas as dimensões, e seu peso é reduzido a um oitavo do normal. Essa redução diminui seu tamanho em uma categoria (de Médio para Pequeno, por exemplo). Até a magia terminar, o alvo também tem desvantagem em testes de Força e testes de resistência de Força. As armas do alvo também encolhem para acompanhar o novo tamanho. Enquanto estiverem reduzidas, os ataques do alvo com elas causam 1d4 de dano a menos (o que não pode reduzir o dano abaixo de 1)."
+  ],
+  "m": "Uma pitada de ferro em pó."
+ },
+ "entangle": {
+  "n": "Constrição",
+  "d": [
+   "Ervas e cipós agarradores brotam do chão num quadrado de 6 metros a partir de um ponto dentro do alcance. Pela duração, essas plantas tornam o chão da área terreno difícil.",
+   "Uma criatura na área quando você lança a magia deve passar num teste de resistência de Força ou ficar impedida pelas plantas emaranhadas até a magia terminar. Uma criatura impedida pelas plantas pode usar sua ação para fazer um teste de Força contra a CD de resistência das suas magias. Se passar, ela se liberta.",
+   "Quando a magia termina, as plantas conjuradas murcham."
+  ]
+ },
+ "enthrall": {
+  "n": "Fascinar",
+  "d": ["Você tece uma sequência de palavras que distrai, fazendo criaturas à sua escolha que consiga ver dentro do alcance e que consigam ouvi-lo fazer um teste de resistência de Sabedoria. Qualquer criatura que não possa ser enfeitiçada passa automaticamente, e, se você ou seus companheiros estiverem lutando contra uma criatura, ela tem vantagem no teste. Se falhar, o alvo tem desvantagem em testes de Sabedoria (Percepção) feitos para perceber qualquer criatura que não seja você até a magia terminar ou até não conseguir mais ouvi-lo. A magia termina se você ficar incapacitado ou não puder mais falar."]
+ },
+ "etherealness": {
+  "n": "Forma Etérea",
+  "d": [
+   "Você entra nas regiões fronteiriças do Plano Etéreo, na área em que ele se sobrepõe ao seu plano atual. Permanece na Fronteira Etérea pela duração ou até usar sua ação para dispensar a magia. Nesse período, pode se mover em qualquer direção. Se se mover para cima ou para baixo, cada metro de movimento custa um metro extra. Você consegue ver e ouvir o plano de onde veio, mas tudo lá parece cinza, e você não consegue ver nada a mais de 18 metros.",
+   "Enquanto estiver no Plano Etéreo, só pode afetar e ser afetado por outras criaturas nesse plano. Criaturas que não estão no Plano Etéreo não conseguem percebê-lo nem interagir com você, a menos que uma habilidade especial ou uma magia lhes dê essa capacidade.",
+   "Você ignora todos os objetos e efeitos que não estão no Plano Etéreo, podendo atravessar objetos que percebe no plano de onde veio.",
+   "Quando a magia termina, você volta imediatamente ao plano de onde veio, no ponto que ocupa naquele momento. Se ocupar o mesmo ponto que um objeto sólido ou uma criatura quando isso acontecer, é empurrado imediatamente para o espaço desocupado mais próximo que possa ocupar e sofre dano de energia igual a 2 pontos para cada 30 centímetros que for deslocado.",
+   "Esta magia não tem efeito se for lançada enquanto você estiver no Plano Etéreo ou num plano que não faça fronteira com ele, como um dos Planos Exteriores."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 8º nível ou superior, pode escolher como alvo até três criaturas voluntárias (incluindo você) para cada nível de espaço acima do 7º. As criaturas precisam estar a até 3 metros de você quando você lança a magia."]
+ },
+ "expeditious-retreat": {
+  "n": "Recuo Acelerado",
+  "d": ["Esta magia permite que você se mova num ritmo incrível. Quando lança a magia, e depois com uma ação bônus em cada um dos seus turnos até ela terminar, você pode realizar a ação Disparada."]
+ },
+ "eyebite": {
+  "n": "Olhar Penetrante",
+  "d": [
+   "Pela duração da magia, seus olhos se tornam um vazio negro como tinta, imbuído de um poder terrível. Uma criatura à sua escolha a até 18 metros de você que consiga ver deve passar num teste de resistência de Sabedoria ou ser afetada por um dos efeitos a seguir, à sua escolha, pela duração. Em cada um dos seus turnos até a magia terminar, você pode usar sua ação para escolher outra criatura como alvo, mas não pode escolher de novo uma criatura que tenha passado num teste de resistência contra esta conjuração de olhar penetrante.",
+   "*Adormecido.* O alvo cai inconsciente. Ele acorda se sofrer qualquer dano ou se outra criatura usar sua ação para sacudi-lo.",
+   "*Em Pânico.* O alvo fica amedrontado por você. Em cada turno dele, a criatura amedrontada deve realizar a ação Disparada e se afastar de você pela rota mais segura e curta disponível, a não ser que não haja para onde ir. Se o alvo for para um lugar a pelo menos 18 metros de você de onde não consiga mais vê-lo, este efeito termina.",
+   "*Nauseado.* O alvo tem desvantagem em jogadas de ataque e testes de habilidade. No fim de cada turno dele, pode fazer outro teste de resistência de Sabedoria. Se passar, o efeito termina."
+  ]
+ },
+ "fabricate": {
+  "n": "Fabricar",
+  "d": [
+   "Você converte matérias-primas em produtos do mesmo material. Por exemplo, pode fabricar uma ponte de madeira a partir de um grupo de árvores, uma corda a partir de uma moita de cânhamo e roupas a partir de linho ou lã.",
+   "Escolha matérias-primas que consiga ver dentro do alcance. Você pode fabricar um objeto Grande ou menor (contido num cubo de 3 metros, ou em oito cubos de 1,5 metro conectados), desde que haja matéria-prima suficiente. Se estiver trabalhando com metal, pedra ou outra substância mineral, porém, o objeto fabricado não pode ser maior que Médio (contido num único cubo de 1,5 metro). A qualidade dos objetos feitos pela magia corresponde à qualidade das matérias-primas.",
+   "Criaturas e itens mágicos não podem ser criados nem transmutados por esta magia. Também não é possível usá-la para criar itens que normalmente exigem um alto grau de habilidade artesanal, como joias, armas, vidro ou armadura, a não ser que você tenha proficiência com o tipo de ferramentas de artesão usadas para fabricar esses objetos."
+  ]
+ },
+ "faerie-fire": {
+  "n": "Fogo das Fadas",
+  "d": [
+   "Cada objeto num cubo de 6 metros dentro do alcance fica contornado por luz azul, verde ou violeta (à sua escolha). Qualquer criatura na área quando a magia é lançada também fica contornada de luz se falhar num teste de resistência de Destreza. Pela duração, os objetos e as criaturas afetadas emitem penumbra num raio de 3 metros.",
+   "Qualquer jogada de ataque contra uma criatura ou um objeto afetado tem vantagem se o atacante conseguir vê-lo, e a criatura ou o objeto afetado não pode se beneficiar de estar invisível."
+  ]
+ },
+ "faithful-hound": {
+  "n": "Cão Fiel",
+  "d": [
+   "Você conjura um cão de guarda fantasma num espaço desocupado que consiga ver dentro do alcance, onde ele permanece pela duração, até você dispensá-lo com uma ação ou até você se afastar mais de 30 metros dele.",
+   "O cão é invisível para todas as criaturas, exceto você, e não pode ser ferido. Quando uma criatura Pequena ou maior chega a até 9 metros dele sem antes dizer a senha que você especificou ao lançar a magia, o cão começa a latir alto. O cão vê criaturas invisíveis e consegue ver o Plano Etéreo. Ele ignora ilusões.",
+   "No início de cada um dos seus turnos, o cão tenta morder uma criatura a até 1,5 metro dele que seja hostil a você. O bônus de ataque do cão é igual ao seu modificador de habilidade de conjuração + seu bônus de proficiência. Se acertar, causa 4d8 de dano perfurante."
+  ],
+  "m": "Um apito de prata minúsculo, um pedaço de osso e um fio"
+ },
+ "false-life": {
+  "n": "Vitalidade Falsa",
+  "d": ["Fortalecendo-se com uma imitação necromântica de vida, você ganha 1d4 + 4 pontos de vida temporários pela duração."],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 2º nível ou superior, ganha 5 pontos de vida temporários adicionais para cada nível de espaço acima do 1º."],
+  "m": "Uma pequena quantidade de álcool ou de aguardente."
+ }
+}

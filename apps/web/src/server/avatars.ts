@@ -141,7 +141,7 @@ export async function deletePreset(userId: string, presetId: string) {
  * Retratos (SVG) de vários personagens, para a ficha e a lista. Só gera para avatares salvos.
  * O SVG vem do catálogo e de cores validadas, então pode ser embutido na página.
  */
-export async function portraitsFor(characterIds: string[], frame: "portrait" | "full" = "portrait"): Promise<Record<string, string>> {
+export async function portraitsFor(characterIds: string[], frame: "portrait" | "bust" | "full" = "portrait"): Promise<Record<string, string>> {
   if (!characterIds.length) return {};
   const rows = await db.avatar.findMany({ where: { characterId: { in: characterIds } }, select: { characterId: true, config: true } });
   return Object.fromEntries(rows.map((r) => [r.characterId, composeSvg(parseAvatar(r.config), { frame, idPrefix: `av${r.characterId}` })]));

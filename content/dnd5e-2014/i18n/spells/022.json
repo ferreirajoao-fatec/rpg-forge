@@ -1,0 +1,77 @@
+{
+ "meld-into-stone": {
+  "n": "Fundir-se com a Pedra",
+  "d": [
+   "Você entra num objeto ou numa superfície de pedra grande o bastante para conter todo o seu corpo, fundindo a si mesmo e todo o equipamento que carrega com a pedra pela duração. Usando seu movimento, você entra na pedra num ponto que consiga tocar. Nada da sua presença continua visível ou detectável por sentidos não mágicos.",
+   "Enquanto estiver fundido com a pedra, você não consegue ver o que acontece fora dela, e qualquer teste de Sabedoria (Percepção) para ouvir sons lá fora é feito com desvantagem. Continua percebendo a passagem do tempo e pode lançar magias em si mesmo enquanto estiver fundido. Pode usar seu movimento para sair da pedra por onde entrou, o que encerra a magia. Fora isso, não pode se mover.",
+   "Danos físicos pequenos à pedra não o ferem, mas a destruição parcial dela ou uma mudança na sua forma (a ponto de você não caber mais) o expele e lhe causa 6d6 de dano de concussão. A destruição completa da pedra (ou sua transmutação em outra substância) o expele e lhe causa 50 de dano de concussão. Se for expelido, você cai no chão num espaço desocupado mais próximo de onde entrou."
+  ]
+ },
+ "mending": {
+  "n": "Reparar",
+  "d": [
+   "Esta magia repara uma única quebra ou rasgo num objeto que você toca, como uma chave quebrada, um manto rasgado ou um odre furado. Desde que a quebra ou o rasgo não tenha mais de 30 centímetros em nenhuma dimensão, você o conserta, sem deixar vestígio do dano anterior.",
+   "Esta magia pode reparar fisicamente um item mágico ou um constructo, mas não pode restaurar a magia desse objeto."
+  ],
+  "m": "Dois ímãs naturais."
+ },
+ "message": {
+  "n": "Mensagem",
+  "d": [
+   "Você aponta o dedo para uma criatura dentro do alcance e sussurra uma mensagem. O alvo (e somente ele) ouve a mensagem e pode responder num sussurro que só você ouve.",
+   "Você pode lançar esta magia através de objetos sólidos se conhecer o alvo e souber que ele está além da barreira. Silêncio mágico, 30 centímetros de pedra, 2,5 centímetros de metal comum, uma folha fina de chumbo ou 90 centímetros de madeira bloqueiam a magia. A magia não precisa seguir uma linha reta e pode contornar esquinas ou passar por aberturas livremente."
+  ],
+  "m": "Um pedacinho de fio de cobre."
+ },
+ "meteor-swarm": {
+  "n": "Chuva de Meteoros",
+  "d": [
+   "Orbes de fogo flamejantes despencam no chão em quatro pontos diferentes que você consiga ver dentro do alcance. Cada criatura numa esfera de 12 metros de raio centrada em cada ponto escolhido deve fazer um teste de resistência de Destreza. A esfera contorna esquinas. A criatura sofre 20d6 de dano de fogo e 20d6 de dano de concussão se falhar, ou metade se passar. Uma criatura na área de mais de uma explosão é afetada só uma vez.",
+   "A magia causa dano aos objetos na área e incendeia objetos inflamáveis que não estejam sendo vestidos nem carregados."
+  ]
+ },
+ "mind-blank": {
+  "n": "Mente em Branco",
+  "d": ["Até a magia terminar, uma criatura voluntária que você toca fica imune a dano psíquico, a qualquer efeito que sinta suas emoções ou leia seus pensamentos, a magias de adivinhação e à condição enfeitiçado. A magia frustra até magias desejo e magias ou efeitos de poder semelhante usados para afetar a mente do alvo ou obter informações sobre ele."]
+ },
+ "minor-illusion": {
+  "n": "Ilusão Menor",
+  "d": [
+   "Você cria um som ou a imagem de um objeto dentro do alcance que dura pela duração. A ilusão também termina se você a dispensar com uma ação ou lançar esta magia de novo.",
+   "Se criar um som, o volume pode ir de um sussurro a um grito. Pode ser sua voz, a voz de outra pessoa, o rugido de um leão, batidas de tambor ou qualquer outro som que escolher. O som continua sem interrupção por toda a duração, ou você pode fazer sons separados em momentos diferentes antes de a magia terminar.",
+   "Se criar a imagem de um objeto (como uma cadeira, pegadas de lama ou um pequeno baú), ela não pode ser maior que um cubo de 1,5 metro. A imagem não pode criar som, luz, cheiro nem qualquer outro efeito sensorial. A interação física com a imagem revela que ela é uma ilusão, porque as coisas a atravessam.",
+   "Se uma criatura usar sua ação para examinar o som ou a imagem, pode determinar que é uma ilusão passando num teste de Inteligência (Investigação) contra a CD de resistência das suas magias. Se uma criatura perceber a ilusão pelo que ela é, a ilusão fica tênue para ela."
+  ]
+ },
+ "mirage-arcane": {
+  "n": "Miragem Arcana",
+  "d": [
+   "Você faz o terreno numa área de até 1,5 km de lado parecer, soar, cheirar e até ter a sensação ao toque de outro tipo de terreno. A forma geral do terreno, porém, continua a mesma. Campos abertos ou uma estrada podem parecer um pântano, uma colina, uma fenda ou outro terreno difícil ou intransponível. Um lago pode parecer um prado gramado, um precipício pode parecer uma encosta suave, e uma ravina cheia de pedras pode parecer uma estrada larga e lisa.",
+   "Da mesma forma, você pode alterar a aparência de estruturas ou acrescentá-las onde não existem. A magia não disfarça, esconde nem acrescenta criaturas.",
+   "A ilusão inclui elementos sonoros, visuais, táteis e olfativos, então pode transformar chão livre em terreno difícil (ou vice-versa) ou atrapalhar de outra forma o movimento pela área. Qualquer pedaço do terreno ilusório (como uma pedra ou um graveto) retirado da área da magia desaparece imediatamente.",
+   "Criaturas com visão verdadeira conseguem ver através da ilusão a forma real do terreno; no entanto, todos os outros elementos da ilusão permanecem, então, embora a criatura saiba da presença da ilusão, ainda pode interagir fisicamente com ela."
+  ]
+ },
+ "mirror-image": {
+  "n": "Reflexos",
+  "d": [
+   "Três duplicatas ilusórias suas aparecem no seu espaço. Até a magia terminar, as duplicatas se movem com você e imitam suas ações, trocando de posição de modo que é impossível saber qual imagem é a real. Você pode usar sua ação para dispensar as duplicatas ilusórias.",
+   "Cada vez que uma criatura o escolher como alvo de um ataque durante a magia, role um d20 para determinar se o ataque atinge uma das suas duplicatas em vez de você.",
+   "Se você tiver três duplicatas, precisa tirar 6 ou mais para mudar o alvo do ataque para uma duplicata. Com duas duplicatas, precisa tirar 8 ou mais. Com uma duplicata, precisa tirar 11 ou mais.",
+   "A CA de uma duplicata é 10 + seu modificador de Destreza. Se um ataque atingir uma duplicata, ela é destruída. Uma duplicata só pode ser destruída por um ataque que a atinja. Ela ignora todos os outros danos e efeitos. A magia termina quando as três duplicatas são destruídas.",
+   "Uma criatura não é afetada por esta magia se não conseguir ver, se depender de outros sentidos além da visão, como percepção às cegas, ou se conseguir perceber ilusões como falsas, como com visão verdadeira."
+  ]
+ },
+ "mislead": {
+  "n": "Enganar",
+  "d": [
+   "Você fica invisível ao mesmo tempo que um duplo ilusório seu aparece onde você está. O duplo dura pela duração, mas a invisibilidade termina se você atacar ou lançar uma magia.",
+   "Você pode usar sua ação para mover o duplo ilusório até o dobro do seu deslocamento e fazê-lo gesticular, falar e se comportar como quiser.",
+   "Você consegue ver pelos olhos dele e ouvir pelos ouvidos dele como se estivesse onde ele está. Em cada um dos seus turnos, com uma ação bônus, pode alternar entre usar os sentidos dele e os seus. Enquanto estiver usando os sentidos dele, fica cego e surdo em relação ao que está ao seu redor."
+  ]
+ },
+ "misty-step": {
+  "n": "Passo Nebuloso",
+  "d": ["Envolto por um instante numa névoa prateada, você se teletransporta até 9 metros para um espaço desocupado que consiga ver."]
+ }
+}

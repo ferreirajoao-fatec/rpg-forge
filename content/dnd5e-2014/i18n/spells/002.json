@@ -1,0 +1,65 @@
+{
+ "animate-objects": {
+  "n": "Animar Objetos",
+  "d": [
+   "Objetos ganham vida sob seu comando. Escolha até dez objetos não mágicos dentro do alcance que não estejam sendo vestidos nem carregados. Alvos Médios contam como dois objetos, Grandes como quatro e Enormes como oito. Você não pode animar nenhum objeto maior que Enorme. Cada alvo se anima e se torna uma criatura sob seu controle até a magia terminar ou até ser reduzido a 0 pontos de vida.",
+   "Com uma ação bônus, você pode comandar mentalmente qualquer criatura que criou com esta magia, se ela estiver a até 150 metros de você (se controlar várias criaturas, pode comandar qualquer uma ou todas ao mesmo tempo, dando o mesmo comando a cada uma). Você decide qual ação a criatura realizará e para onde se moverá no próximo turno dela, ou pode dar um comando geral, como vigiar uma câmara ou um corredor específico. Se não der comandos, a criatura apenas se defende de criaturas hostis. Depois de receber uma ordem, a criatura continua a cumpri-la até a tarefa estar concluída.",
+   "##### Estatísticas de Objeto Animado",
+   "| Tamanho | PV | CA | Ataque | For | Des |",
+   "|---|---|---|---|---|---|",
+   "| Miúdo | 20 | 18 | +8 para acertar, 1d4 + 4 de dano | 4 | 18 |",
+   "| Pequeno | 25 | 16 | +6 para acertar, 1d8 + 2 de dano | 6 | 14 |",
+   "| Médio | 40 | 13 | +5 para acertar, 2d6 + 1 de dano | 10 | 12 |",
+   "| Grande | 50 | 10 | +6 para acertar, 2d10 + 2 de dano | 14 | 10 |",
+   "| Enorme | 80 | 10 | +8 para acertar, 2d12 + 4 de dano | 18 | 6 |",
+   "Um objeto animado é um constructo com CA, pontos de vida, ataques, Força e Destreza determinados pelo tamanho. Sua Constituição é 10, sua Inteligência e Sabedoria são 3 e seu Carisma é 1. Seu deslocamento é 9 metros; se o objeto não tiver pernas ou outros apêndices para se locomover, tem deslocamento de voo de 9 metros e pode pairar. Se estiver bem preso a uma superfície ou a um objeto maior, como uma corrente pregada numa parede, seu deslocamento é 0. Tem percepção às cegas num raio de 9 metros e é cego além dessa distância. Quando o objeto animado cai a 0 pontos de vida, volta à forma original de objeto, e qualquer dano restante passa para essa forma.",
+   "Se você mandar um objeto atacar, ele pode fazer um único ataque corpo a corpo contra uma criatura a até 1,5 metro dele. Faz um ataque de pancada com bônus de ataque e dano de concussão determinados pelo tamanho. O Mestre pode decidir que um objeto específico causa dano cortante ou perfurante com base na forma dele."
+  ],
+  "h": ["Se você lançar esta magia usando um espaço de magia de 6º nível ou superior, pode animar dois objetos adicionais para cada nível de espaço acima do 5º."]
+ },
+ "antilife-shell": {
+  "n": "Concha Antivida",
+  "d": [
+   "Uma barreira cintilante se estende a partir de você num raio de 3 metros e se move com você, permanecendo centrada em você e mantendo afastadas criaturas que não sejam mortos-vivos nem constructos. A barreira dura pela duração.",
+   "A barreira impede que uma criatura afetada a atravesse ou passe o braço por ela. Uma criatura afetada pode lançar magias ou fazer ataques com armas à distância ou de alcance através da barreira.",
+   "Se você se mover de modo que uma criatura afetada seja forçada a atravessar a barreira, a magia termina."
+  ]
+ },
+ "antimagic-field": {
+  "n": "Campo Antimagia",
+  "d": [
+   "Uma esfera invisível de antimagia com 3 metros de raio o envolve. Essa área fica isolada da energia mágica que permeia o multiverso. Dentro da esfera, magias não podem ser lançadas, criaturas invocadas desaparecem e até itens mágicos se tornam comuns. Até a magia terminar, a esfera se move com você, centrada em você.",
+   "Magias e outros efeitos mágicos, exceto os criados por um artefato ou uma divindade, ficam suprimidos na esfera e não podem se projetar para dentro dela. Um espaço gasto para lançar uma magia suprimida é consumido. Enquanto um efeito está suprimido, ele não funciona, mas o tempo que passa suprimido conta na sua duração.",
+   "*Efeitos com Alvo.* Magias e outros efeitos mágicos, como mísseis mágicos e enfeitiçar pessoa, que tenham como alvo uma criatura ou um objeto na esfera não têm efeito sobre esse alvo.",
+   "*Áreas de Magia.* A área de outra magia ou efeito mágico, como bola de fogo, não pode se estender para dentro da esfera. Se a esfera se sobrepuser a uma área de magia, a parte da área coberta pela esfera fica suprimida. Por exemplo, as chamas criadas por uma muralha de fogo ficam suprimidas dentro da esfera, abrindo uma brecha na muralha se a sobreposição for grande o bastante.",
+   "*Magias.* Qualquer magia ativa ou outro efeito mágico numa criatura ou num objeto na esfera fica suprimido enquanto a criatura ou o objeto estiver nela.",
+   "*Itens Mágicos.* As propriedades e os poderes de itens mágicos ficam suprimidos na esfera. Por exemplo, uma espada longa +1 na esfera funciona como uma espada longa não mágica.",
+   "As propriedades e os poderes de uma arma mágica ficam suprimidos se ela for usada contra um alvo na esfera ou empunhada por um atacante na esfera. Se uma arma mágica ou uma munição mágica sair completamente da esfera (por exemplo, se você disparar uma flecha mágica ou arremessar uma lança mágica num alvo fora da esfera), a magia do item deixa de ser suprimida assim que sai.",
+   "*Viagem Mágica.* Teletransporte e viagem planar não funcionam na esfera, seja ela o destino ou o ponto de partida dessa viagem mágica. Um portal para outro local, mundo ou plano de existência, assim como uma abertura para um espaço extradimensional como o criado pela magia truque de corda, fecha-se temporariamente enquanto estiver na esfera.",
+   "*Criaturas e Objetos.* Uma criatura ou um objeto invocado ou criado por magia deixa de existir temporariamente na esfera. A criatura reaparece instantaneamente assim que o espaço que ocupava deixa de estar dentro da esfera.",
+   "*Dissipar Magia.* Magias e efeitos mágicos como dissipar magia não têm efeito sobre a esfera. Da mesma forma, as esferas criadas por magias campo antimagia diferentes não se anulam."
+  ],
+  "m": "Uma pitada de ferro em pó ou limalha de ferro."
+ },
+ "antipathy-sympathy": {
+  "n": "Antipatia/Simpatia",
+  "d": [
+   "Esta magia atrai ou repele criaturas à sua escolha. Você escolhe como alvo algo dentro do alcance: um objeto ou uma criatura Enorme ou menor, ou uma área que não seja maior que um cubo de 60 metros. Depois, especifica um tipo de criatura inteligente, como dragões vermelhos, goblins ou vampiros. Você imbui o alvo de uma aura que atrai ou repele as criaturas especificadas pela duração. Escolha antipatia ou simpatia como efeito da aura.",
+   "*Antipatia.* O encantamento faz as criaturas do tipo designado sentirem um impulso intenso de deixar a área e evitar o alvo. Quando uma dessas criaturas consegue ver o alvo ou chega a até 18 metros dele, deve passar num teste de resistência de Sabedoria ou ficar amedrontada. A criatura continua amedrontada enquanto conseguir ver o alvo ou estiver a até 18 metros dele. Enquanto estiver amedrontada pelo alvo, deve usar seu movimento para ir ao local seguro mais próximo de onde não consiga vê-lo. Se a criatura se afastar mais de 18 metros do alvo e não conseguir vê-lo, deixa de estar amedrontada, mas volta a ficar se o avistar de novo ou chegar a até 18 metros dele.",
+   "*Simpatia.* O encantamento faz as criaturas especificadas sentirem um impulso intenso de se aproximar do alvo enquanto estiverem a até 18 metros dele ou conseguirem vê-lo. Quando uma dessas criaturas consegue ver o alvo ou chega a até 18 metros dele, deve passar num teste de resistência de Sabedoria ou usar seu movimento em cada um dos seus turnos para entrar na área ou ficar ao alcance do alvo. Depois de fazer isso, não pode se afastar voluntariamente do alvo.",
+   "Se o alvo causar dano ou ferir de outra forma uma criatura afetada, ela pode fazer um teste de resistência de Sabedoria para encerrar o efeito, como descrito abaixo.",
+   "*Encerrar o Efeito.* Se uma criatura afetada terminar o turno fora de 18 metros do alvo e sem conseguir vê-lo, faz um teste de resistência de Sabedoria. Se passar, deixa de ser afetada pelo alvo e reconhece o sentimento de repulsa ou atração como mágico. Além disso, uma criatura afetada pela magia pode fazer outro teste de resistência de Sabedoria a cada 24 horas enquanto a magia persistir.",
+   "Uma criatura que passa no teste contra este efeito fica imune a ele por 1 minuto; depois disso, pode ser afetada de novo."
+  ],
+  "m": "Um pedaço de alúmen embebido em vinagre para o efeito de antipatia, ou uma gota de mel para o efeito de simpatia."
+ },
+ "arcane-eye": {
+  "n": "Olho Arcano",
+  "d": [
+   "Você cria um olho mágico invisível dentro do alcance que paira no ar pela duração.",
+   "Você recebe mentalmente as informações visuais do olho, que tem visão normal e visão no escuro até 9 metros. O olho pode olhar em todas as direções.",
+   "Com uma ação, você pode mover o olho até 9 metros em qualquer direção. Não há limite para a distância a que o olho pode se afastar de você, mas ele não pode entrar em outro plano de existência. Uma barreira sólida bloqueia o movimento do olho, mas ele pode passar por uma abertura de apenas 2,5 centímetros de diâmetro."
+  ],
+  "m": "Um pouco de pelo de morcego."
+ }
+}

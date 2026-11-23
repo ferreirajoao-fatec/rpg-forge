@@ -1,0 +1,134 @@
+{
+ "darkvision": {
+  "n": "Visão no Escuro",
+  "d": ["Você enxerga melhor no escuro e na penumbra. Até 18 metros de você, enxerga na penumbra como se fosse luz plena, e na escuridão como se fosse penumbra. Na escuridão você não distingue cores, só tons de cinza."]
+ },
+ "dwarven-resilience": {
+  "n": "Resiliência Anã",
+  "d": ["Você tem vantagem em testes de resistência contra veneno e resistência a dano de veneno."]
+ },
+ "dwarven-combat-training": {
+  "n": "Treinamento Anão em Combate",
+  "d": ["Você tem proficiência com machado de batalha, machadinha, martelo leve e martelo de guerra."]
+ },
+ "tool-proficiency": {
+  "n": "Proficiência com Ferramentas",
+  "d": ["Você ganha proficiência com uma ferramenta de artesão à sua escolha: ferramentas de ferreiro, suprimentos de cervejeiro ou ferramentas de pedreiro."]
+ },
+ "stonecunning": {
+  "n": "Especialização em Pedra",
+  "d": ["Sempre que fizer um teste de Inteligência (História) relacionado à origem de um trabalho em pedra, você é considerado proficiente em História e soma o dobro do seu bônus de proficiência ao teste, em vez do bônus normal."]
+ },
+ "dwarven-toughness": {
+  "n": "Robustez Anã",
+  "d": ["Seu máximo de pontos de vida aumenta em 1, e aumenta em 1 de novo cada vez que você sobe de nível."]
+ },
+ "keen-senses": {
+  "n": "Sentidos Aguçados",
+  "d": ["Você tem proficiência na perícia Percepção."]
+ },
+ "fey-ancestry": {
+  "n": "Ancestralidade Feérica",
+  "d": ["Você tem vantagem em testes de resistência contra ser enfeitiçado, e magia não pode fazer você dormir."]
+ },
+ "trance": {
+  "n": "Transe",
+  "d": ["Elfos não precisam dormir. Em vez disso, meditam profundamente, semiconscientes, por 4 horas por dia. (Em Comum, essa meditação se chama \"transe\".) Enquanto medita, você pode sonhar de certa forma; esses sonhos são, na verdade, exercícios mentais que se tornaram reflexos depois de anos de prática. Depois de descansar assim, você recebe o mesmo benefício que um humano recebe de 8 horas de sono."]
+ },
+ "elf-weapon-training": {
+  "n": "Treinamento Élfico com Armas",
+  "d": ["Você tem proficiência com espada longa, espada curta, arco curto e arco longo."]
+ },
+ "high-elf-cantrip": {
+  "n": "Truque de Alto Elfo",
+  "d": ["Você conhece um truque à sua escolha da lista de magias de mago. Inteligência é sua habilidade de conjuração para ele."]
+ },
+ "extra-language": {
+  "n": "Idioma Adicional",
+  "d": ["Você sabe falar, ler e escrever um idioma adicional à sua escolha."]
+ },
+ "lucky": {
+  "n": "Sortudo",
+  "d": ["Quando tirar 1 no d20 numa jogada de ataque, teste de habilidade ou teste de resistência, você pode rolar o dado de novo e deve usar o novo resultado."]
+ },
+ "brave": {
+  "n": "Corajoso",
+  "d": ["Você tem vantagem em testes de resistência contra ficar amedrontado."]
+ },
+ "halfling-nimbleness": {
+  "n": "Agilidade Halfling",
+  "d": ["Você pode atravessar o espaço de qualquer criatura de tamanho maior que o seu."]
+ },
+ "naturally-stealthy": {
+  "n": "Furtividade Natural",
+  "d": ["Você pode tentar se esconder mesmo quando estiver encoberto apenas por uma criatura pelo menos um tamanho maior que você."]
+ },
+ "draconic-ancestry": {
+  "n": "Ancestralidade Dracônica",
+  "d": ["Você descende de dragões. Escolha um tipo de dragão na tabela de Ancestralidade Dracônica. Sua arma de sopro e sua resistência a dano são determinadas pelo tipo de dragão, como mostra a tabela."]
+ },
+ "draconic-ancestry-black": { "n": "Ancestralidade Dracônica (Negro)" },
+ "draconic-ancestry-blue": { "n": "Ancestralidade Dracônica (Azul)" },
+ "draconic-ancestry-brass": { "n": "Ancestralidade Dracônica (Latão)" },
+ "draconic-ancestry-bronze": { "n": "Ancestralidade Dracônica (Bronze)" },
+ "draconic-ancestry-copper": { "n": "Ancestralidade Dracônica (Cobre)" },
+ "draconic-ancestry-gold": { "n": "Ancestralidade Dracônica (Ouro)" },
+ "draconic-ancestry-green": { "n": "Ancestralidade Dracônica (Verde)" },
+ "draconic-ancestry-red": { "n": "Ancestralidade Dracônica (Vermelho)" },
+ "draconic-ancestry-silver": { "n": "Ancestralidade Dracônica (Prata)" },
+ "draconic-ancestry-white": { "n": "Ancestralidade Dracônica (Branco)" },
+ "breath-weapon": {
+  "n": "Arma de Sopro",
+  "d": [
+   "Você pode usar sua ação para exalar energia destrutiva. Sua ancestralidade dracônica determina o tamanho, a forma e o tipo de dano da exalação.",
+   "Quando você usa a arma de sopro, cada criatura na área da exalação deve fazer um teste de resistência, cujo tipo é determinado pela sua ancestralidade dracônica. A CD desse teste é 8 + seu modificador de Constituição + seu bônus de proficiência. A criatura sofre 2d6 de dano se falhar, ou metade disso se passar. O dano aumenta para 3d6 no 6º nível, 4d6 no 11º e 5d6 no 16º.",
+   "Depois de usar a arma de sopro, você só pode usá-la de novo após terminar um descanso curto ou longo."
+  ]
+ },
+ "damage-resistance": {
+  "n": "Resistência a Dano",
+  "d": ["Você tem resistência ao tipo de dano associado à sua ancestralidade dracônica."]
+ },
+ "gnome-cunning": {
+  "n": "Esperteza Gnômica",
+  "d": ["Você tem vantagem em todos os testes de resistência de Inteligência, Sabedoria e Carisma contra magia."]
+ },
+ "artificers-lore": {
+  "n": "Conhecimento de Artífice",
+  "d": ["Sempre que fizer um teste de Inteligência (História) relacionado a itens mágicos, objetos alquímicos ou dispositivos tecnológicos, você pode somar o dobro do seu bônus de proficiência, em vez do bônus que normalmente aplicaria."]
+ },
+ "tinker": {
+  "n": "Engenhoqueiro",
+  "d": [
+   "Você tem proficiência com ferramentas de artesão (ferramentas de funileiro). Com elas, pode gastar 1 hora e 10 po em materiais para construir um dispositivo mecânico Miúdo (CA 5, 1 PV). O dispositivo para de funcionar depois de 24 horas (a não ser que você gaste 1 hora consertando-o para mantê-lo funcionando) ou quando você usa sua ação para desmontá-lo; nesse momento, pode recuperar os materiais usados. Você pode ter até três desses dispositivos ativos ao mesmo tempo.",
+   "Ao criar um dispositivo, escolha uma das opções a seguir:",
+   "Brinquedo Mecânico: um animal, monstro ou pessoa de corda, como um sapo, rato, pássaro, dragão ou soldado. Posto no chão, o brinquedo se move 1,5 metro numa direção aleatória a cada turno seu, fazendo ruídos apropriados à criatura que representa.",
+   "Acendedor: o dispositivo produz uma pequena chama, que você pode usar para acender uma vela, tocha ou fogueira. Usar o dispositivo exige sua ação.",
+   "Caixa de Música: ao ser aberta, toca uma única canção em volume moderado. A caixa para de tocar quando a canção termina ou quando é fechada."
+  ]
+ },
+ "skill-versatility": {
+  "n": "Versatilidade em Perícia",
+  "d": ["Você ganha proficiência em duas perícias à sua escolha."]
+ },
+ "menacing": {
+  "n": "Ameaçador",
+  "d": ["Você ganha proficiência na perícia Intimidação."]
+ },
+ "relentless-endurance": {
+  "n": "Resistência Implacável",
+  "d": ["Quando é reduzido a 0 pontos de vida mas não morre na hora, você pode ficar com 1 ponto de vida em vez disso. Você só pode usar esta característica de novo depois de terminar um descanso longo."]
+ },
+ "savage-attacks": {
+  "n": "Ataques Selvagens",
+  "d": ["Quando conseguir um acerto crítico com um ataque com arma corpo a corpo, você pode rolar mais uma vez um dos dados de dano da arma e somá-lo ao dano extra do crítico."]
+ },
+ "hellish-resistance": {
+  "n": "Resistência Infernal",
+  "d": ["Você tem resistência a dano de fogo."]
+ },
+ "infernal-legacy": {
+  "n": "Legado Infernal",
+  "d": ["Você conhece o truque taumaturgia. Ao chegar ao 3º nível, pode lançar a magia repreensão infernal como magia de 2º nível uma vez com este traço, recuperando essa capacidade ao terminar um descanso longo. Ao chegar ao 5º nível, pode lançar a magia escuridão uma vez com este traço, recuperando essa capacidade ao terminar um descanso longo. Carisma é sua habilidade de conjuração para essas magias."]
+ }
+}

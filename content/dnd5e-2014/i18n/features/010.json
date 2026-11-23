@@ -1,0 +1,54 @@
+{
+ "arcane-recovery": {
+  "n": "Recuperação Arcana",
+  "d": [
+   "Você aprendeu a recuperar parte da sua energia mágica estudando seu grimório. Uma vez por dia, quando termina um descanso curto, pode escolher espaços de magia gastos para recuperar. Os espaços podem ter nível somado igual ou menor que a metade do seu nível de mago (arredondado para cima), e nenhum deles pode ser de 6º nível ou superior.",
+   "Por exemplo, um mago de 4º nível pode recuperar até dois níveis de espaços de magia: um espaço de 2º nível ou dois de 1º."
+  ]
+ },
+ "arcane-tradition": {
+  "n": "Tradição Arcana",
+  "d": [
+   "Ao chegar ao 2º nível, você escolhe uma tradição arcana, moldando sua prática de magia por meio de uma das oito escolas, como a Evocação.",
+   "A escolha concede características no 2º nível e de novo no 6º, 10º e 14º."
+  ]
+ },
+ "evocation-savant": {
+  "n": "Especialista em Evocação",
+  "d": ["A partir do momento em que escolhe esta escola, no 2º nível, o ouro e o tempo que você gasta para copiar uma magia de evocação no grimório caem pela metade."]
+ },
+ "sculpt-spells": {
+  "n": "Esculpir Magias",
+  "d": ["A partir do 2º nível, você pode criar bolsões de relativa segurança dentro dos efeitos das suas magias de evocação. Quando lança uma magia de evocação que afeta outras criaturas que você consiga ver, pode escolher um número delas igual a 1 + o nível da magia. As criaturas escolhidas passam automaticamente nos testes de resistência contra a magia e não sofrem dano se normalmente sofreriam metade ao passar."]
+ },
+ "arcane-tradition-improvement-1": { "n": "Característica da Tradição Arcana" },
+ "potent-cantrip": {
+  "n": "Truque Poderoso",
+  "d": ["A partir do 6º nível, seus truques de dano afetam até as criaturas que evitam o grosso do efeito. Quando uma criatura passa num teste de resistência contra seu truque, sofre metade do dano dele (se houver), mas nenhum efeito adicional."]
+ },
+ "empowered-evocation": {
+  "n": "Evocação Potencializada",
+  "d": ["A partir do 10º nível, você pode somar seu modificador de Inteligência a uma jogada de dano de qualquer magia de evocação de mago que lançar."]
+ },
+ "overchannel": {
+  "n": "Sobrecanalizar",
+  "d": [
+   "A partir do 14º nível, você pode aumentar o poder das suas magias mais simples. Quando lança uma magia de mago de 1º a 5º nível que causa dano, pode causar o dano máximo com ela.",
+   "Na primeira vez que faz isso, não sofre efeito negativo. Se usar esta característica de novo antes de terminar um descanso longo, sofre 2d12 de dano necrótico por nível da magia, logo depois de lançá-la. Cada vez que a usar de novo antes de terminar um descanso longo, o dano necrótico por nível da magia aumenta em 1d12. Esse dano ignora resistência e imunidade."
+  ]
+ },
+ "spell-mastery": {
+  "n": "Domínio de Magia",
+  "d": [
+   "No 18º nível, você alcançou tamanho domínio sobre certas magias que pode lançá-las à vontade. Escolha uma magia de mago de 1º nível e uma de 2º nível que estejam no seu grimório. Você pode lançá-las no nível mais baixo sem gastar espaço de magia quando as tem preparadas. Se quiser lançar qualquer uma delas num nível mais alto, precisa gastar um espaço de magia como de costume.",
+   "Passando 8 horas estudando, você pode trocar uma ou ambas as magias escolhidas por outras dos mesmos níveis."
+  ]
+ },
+ "signature-spell": {
+  "n": "Magia Assinatura",
+  "d": [
+   "Ao chegar ao 20º nível, você domina duas magias poderosas e consegue lançá-las com pouco esforço. Escolha duas magias de mago de 3º nível do seu grimório como magias assinatura. Você sempre as tem preparadas, elas não contam no número de magias preparadas, e você pode lançar cada uma uma vez no 3º nível sem gastar espaço de magia. Depois disso, só pode fazê-lo de novo após terminar um descanso curto ou longo.",
+   "Se quiser lançar qualquer uma delas num nível mais alto, precisa gastar um espaço de magia como de costume."
+  ]
+ }
+}

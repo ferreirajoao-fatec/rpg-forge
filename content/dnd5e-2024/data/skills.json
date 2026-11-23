@@ -1,0 +1,380 @@
+[
+ {
+  "id": "skill:acrobatics",
+  "kind": "skill",
+  "name": "Acrobacia",
+  "summary": "Manter-se de pé numa situação difícil ou realizar uma acrobacia.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Skills"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "ability": "dex",
+   "text": [
+    "Manter-se de pé numa situação difícil ou realizar uma acrobacia."
+   ]
+  }
+ },
+ {
+  "id": "skill:animal-handling",
+  "kind": "skill",
+  "name": "Lidar com Animais",
+  "summary": "Acalmar ou treinar um animal, ou fazê-lo se comportar de certa maneira.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Skills"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "ability": "wis",
+   "text": [
+    "Acalmar ou treinar um animal, ou fazê-lo se comportar de certa maneira."
+   ]
+  }
+ },
+ {
+  "id": "skill:arcana",
+  "kind": "skill",
+  "name": "Arcanismo",
+  "summary": "Lembrar conhecimentos sobre magias, itens mágicos e os planos de existência.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Skills"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "ability": "int",
+   "text": [
+    "Lembrar conhecimentos sobre magias, itens mágicos e os planos de existência."
+   ]
+  }
+ },
+ {
+  "id": "skill:athletics",
+  "kind": "skill",
+  "name": "Atletismo",
+  "summary": "Saltar mais longe que o normal, manter-se à tona em águas agitadas ou quebrar algo.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Skills"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "ability": "str",
+   "text": [
+    "Saltar mais longe que o normal, manter-se à tona em águas agitadas ou quebrar algo."
+   ]
+  }
+ },
+ {
+  "id": "skill:deception",
+  "kind": "skill",
+  "name": "Enganação",
+  "summary": "Contar uma mentira convincente ou usar um disfarce de forma convincente.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Skills"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "ability": "cha",
+   "text": [
+    "Contar uma mentira convincente ou usar um disfarce de forma convincente."
+   ]
+  }
+ },
+ {
+  "id": "skill:history",
+  "kind": "skill",
+  "name": "História",
+  "summary": "Lembrar conhecimentos sobre eventos históricos, pessoas, nações e culturas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Skills"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "ability": "int",
+   "text": [
+    "Lembrar conhecimentos sobre eventos históricos, pessoas, nações e culturas."
+   ]
+  }
+ },
+ {
+  "id": "skill:insight",
+  "kind": "skill",
+  "name": "Intuição",
+  "summary": "Perceber o estado de espírito e as intenções de uma pessoa.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Skills"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "ability": "wis",
+   "text": [
+    "Perceber o estado de espírito e as intenções de uma pessoa."
+   ]
+  }
+ },
+ {
+  "id": "skill:intimidation",
+  "kind": "skill",
+  "name": "Intimidação",
+  "summary": "Impressionar ou ameaçar alguém para que faça o que você quer.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Skills"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "ability": "cha",
+   "text": [
+    "Impressionar ou ameaçar alguém para que faça o que você quer."
+   ]
+  }
+ },
+ {
+  "id": "skill:investigation",
+  "kind": "skill",
+  "name": "Investigação",
+  "summary": "Encontrar informações obscuras em livros ou deduzir como algo funciona.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Skills"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "ability": "int",
+   "text": [
+    "Encontrar informações obscuras em livros ou deduzir como algo funciona."
+   ]
+  }
+ },
+ {
+  "id": "skill:medicine",
+  "kind": "skill",
+  "name": "Medicina",
+  "summary": "Diagnosticar uma doença ou determinar o que matou alguém que morreu há pouco.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Skills"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "ability": "wis",
+   "text": [
+    "Diagnosticar uma doença ou determinar o que matou alguém que morreu há pouco."
+   ]
+  }
+ },
+ {
+  "id": "skill:nature",
+  "kind": "skill",
+  "name": "Natureza",
+  "summary": "Lembrar conhecimentos sobre terrenos, plantas, animais e clima.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Skills"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "ability": "int",
+   "text": [
+    "Lembrar conhecimentos sobre terrenos, plantas, animais e clima."
+   ]
+  }
+ },
+ {
+  "id": "skill:perception",
+  "kind": "skill",
+  "name": "Percepção",
+  "summary": "Usando uma combinação de sentidos, notar algo que passa despercebido com facilidade.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Skills"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "ability": "wis",
+   "text": [
+    "Usando uma combinação de sentidos, notar algo que passa despercebido com facilidade."
+   ]
+  }
+ },
+ {
+  "id": "skill:performance",
+  "kind": "skill",
+  "name": "Atuação",
+  "summary": "Atuar, contar uma história, tocar música ou dançar.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Skills"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "ability": "cha",
+   "text": [
+    "Atuar, contar uma história, tocar música ou dançar."
+   ]
+  }
+ },
+ {
+  "id": "skill:persuasion",
+  "kind": "skill",
+  "name": "Persuasão",
+  "summary": "Convencer alguém de algo com honestidade e cortesia.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Skills"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "ability": "cha",
+   "text": [
+    "Convencer alguém de algo com honestidade e cortesia."
+   ]
+  }
+ },
+ {
+  "id": "skill:religion",
+  "kind": "skill",
+  "name": "Religião",
+  "summary": "Lembrar conhecimentos sobre deuses, rituais religiosos e símbolos sagrados.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Skills"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "ability": "int",
+   "text": [
+    "Lembrar conhecimentos sobre deuses, rituais religiosos e símbolos sagrados."
+   ]
+  }
+ },
+ {
+  "id": "skill:sleight-of-hand",
+  "kind": "skill",
+  "name": "Prestidigitação",
+  "summary": "Bater uma carteira, esconder um objeto pequeno ou fazer um truque de mãos.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Skills"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "ability": "dex",
+   "text": [
+    "Bater uma carteira, esconder um objeto pequeno ou fazer um truque de mãos."
+   ]
+  }
+ },
+ {
+  "id": "skill:stealth",
+  "kind": "skill",
+  "name": "Furtividade",
+  "summary": "Passar despercebido movendo-se em silêncio e escondendo-se atrás de coisas.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Skills"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "ability": "dex",
+   "text": [
+    "Passar despercebido movendo-se em silêncio e escondendo-se atrás de coisas."
+   ]
+  }
+ },
+ {
+  "id": "skill:survival",
+  "kind": "skill",
+  "name": "Sobrevivência",
+  "summary": "Seguir rastros, coletar alimento, achar uma trilha ou evitar perigos naturais.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Skills"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "ability": "wis",
+   "text": [
+    "Seguir rastros, coletar alimento, achar uma trilha ou evitar perigos naturais."
+   ]
+  }
+ }
+]

@@ -1,35 +1,77 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+  <defs>
+    <filter id="form" x="-15%" y="-5%" width="130%" height="110%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{skin-deep}" flood-opacity="0.7"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="formS" x="-20%" y="-10%" width="140%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{skin-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="soft2" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+  <g stroke="#{skin-deep}" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round">
     <g data-anchor="legs">
-      <!-- Pernas -->
-      <path fill="#{skin}" d="M190 468 L254 468 L252 600 C251 648 249 690 247 716 L211 716 C208 688 203 640 199 600 Z"/>
-      <path fill="#{skin}" d="M322 468 L258 468 L260 600 C261 648 263 690 265 716 L301 716 C304 688 309 640 313 600 Z"/>
-      <path fill="#{skin-dark}" stroke="none" opacity="0.35" d="M240 480 L252 480 L250 600 C249 648 248 690 246 712 L238 712 C240 680 242 640 242 600 Z"/>
-      <path fill="#{skin-dark}" stroke="none" opacity="0.35" d="M272 480 L260 480 L262 600 C263 648 264 690 266 712 L274 712 C272 680 270 640 270 600 Z"/>
-      <!-- Pés -->
-      <path fill="#{skin}" d="M209 712 L249 712 L252 730 C252 740 244 744 232 744 L206 744 C198 744 196 736 202 730 Z"/>
-      <path fill="#{skin}" d="M303 712 L263 712 L260 730 C260 740 268 744 280 744 L306 744 C314 744 316 736 310 730 Z"/>
+      <g id="legL">
+        <!-- Perna: coxa, joelho, panturrilha e tornozelo -->
+        <path fill="#{skin}" filter="url(#form)" d="M193 392 C185 424 185 466 190 510 C194 544 201 568 205 586 C201 604 200 636 206 670 C209 688 213 700 217 710 L239 710 C238 696 238 680 240 660 C242 636 243 610 239 590 C239 570 242 540 246 504 C249 474 252 450 254 426 Z"/>
+        <path fill="none" stroke-width="0.9" opacity="0.45" d="M211 580 C216 588 226 590 234 584"/>
+        <path fill="none" stroke-width="0.8" opacity="0.3" d="M213 598 C219 602 228 602 234 598 M200 470 C204 500 208 530 214 556"/>
+        <path fill="#{skin-light}" stroke="none" opacity="0.35" filter="url(#soft)" d="M214 440 C210 480 212 520 220 556 L230 556 C228 520 228 480 230 440 Z"/>
+        <path fill="#{skin-light}" stroke="none" opacity="0.3" filter="url(#soft)" d="M216 612 C214 640 218 668 224 690 L230 690 C228 664 228 638 228 612 Z"/>
+        <!-- Pé visto de frente, com dedos -->
+        <path fill="#{skin}" filter="url(#formS)" d="M217 704 C216 716 211 724 205 731 C201 736 201 742 205 744 C208 746 212 745 214 744 C216 746 219 746 221 745 C223 747 226 747 228 745 C230 747 234 747 236 745 C239 747 244 746 246 742 C248 736 246 728 243 720 C241 714 240 708 240 704 Z"/>
+        <path fill="none" stroke-width="0.8" opacity="0.5" d="M214 744 L214.5 738 M221 745 L221.5 739 M228 745 L228.5 739 M236 745 L236 738"/>
+        <path fill="none" stroke-width="0.8" opacity="0.4" d="M218 712 C217 717 219 721 223 722 M236 712 C238 716 239 718 238 721"/>
+      </g>
+      <use href="#legL" transform="matrix(-1 0 0 1 512 0)"/>
     </g>
     <g data-anchor="torso">
-      <!-- Braços -->
-      <path fill="#{skin}" d="M170 296 C152 308 146 348 147 390 C148 432 149 472 151 506 L177 506 C177 470 180 432 182 392 C184 360 187 330 188 310 Z"/>
-      <path fill="#{skin}" d="M342 296 C360 308 366 348 365 390 C364 432 363 472 361 506 L335 506 C335 470 332 432 330 392 C328 360 325 330 324 310 Z"/>
-      <path fill="#{skin-dark}" stroke="none" opacity="0.3" d="M170 330 C166 360 166 400 168 440 L176 440 C176 400 178 360 182 330 Z"/>
-      <path fill="#{skin-dark}" stroke="none" opacity="0.3" d="M342 330 C346 360 346 400 344 440 L336 440 C336 400 334 360 330 330 Z"/>
-      <!-- Mãos -->
-      <path fill="#{skin}" d="M150 502 C144 512 144 532 152 542 C160 550 172 548 177 538 C181 528 180 512 178 502 Z"/>
-      <path fill="#{skin}" d="M362 502 C368 512 368 532 360 542 C352 550 340 548 335 538 C331 528 332 512 334 502 Z"/>
-      <!-- Tronco -->
-      <path fill="#{skin}" d="M198 282 C222 270 290 270 314 282 L342 298 C350 330 338 362 326 382 L320 440 C318 454 322 464 326 472 L186 472 C190 464 194 454 192 440 L186 382 C174 362 162 330 170 298 Z"/>
-      <path fill="#{skin-dark}" stroke="none" opacity="0.28" d="M226 330 C240 340 272 340 286 330 C282 346 272 352 256 352 C240 352 230 346 226 330 Z"/>
-      <path fill="#{skin-dark}" stroke="none" opacity="0.22" d="M300 300 C318 330 316 380 312 440 L320 440 L326 382 C338 362 350 330 342 298 Z"/>
       <!-- Pescoço -->
-      <path fill="#{skin}" d="M238 226 L274 226 L278 284 C268 292 244 292 234 284 Z"/>
-      <path fill="#{skin-dark}" stroke="none" opacity="0.35" d="M238 230 L274 230 L275 252 C264 258 248 258 237 252 Z"/>
+      <path fill="#{skin}" filter="url(#form)" d="M238 140 L274 140 C274 156 276 168 280 180 C268 189 244 189 232 180 C236 168 238 156 238 140 Z"/>
+      <path fill="#{skin-dark}" stroke="none" opacity="0.6" filter="url(#soft2)" d="M240 156 L272 156 L272 168 C264 174 248 174 240 168 Z"/>
+      <path fill="none" stroke-width="0.8" opacity="0.35" d="M244 160 C246 168 250 176 253 184 M268 160 C266 168 262 176 259 184"/>
+      <!-- Tronco: trapézio inclinado, peito, cintura e quadril -->
+      <path fill="#{skin}" filter="url(#form)" d="M236 174 C226 182 210 186 198 189 C186 192 176 198 172 210 L192 240 C193 258 196 280 201 302 C205 318 206 334 203 350 C199 368 192 386 191 406 L256 434 L321 406 C320 386 313 368 309 350 C306 334 307 318 311 302 C316 280 319 258 320 240 L340 210 C336 198 326 192 314 189 C302 186 286 182 276 174 Z"/>
+      <!-- Clavículas, peitoral, esterno, umbigo, oblíquos -->
+      <path fill="none" stroke-width="0.9" opacity="0.4" d="M246 191 C234 194 218 194 204 197 M266 191 C278 194 294 194 308 197"/>
+      <path fill="#{skin-dark}" stroke="none" opacity="0.4" filter="url(#soft)" d="M204 254 C216 270 238 274 254 264 L254 278 C236 288 214 282 204 266 Z M308 254 C296 270 274 274 258 264 L258 278 C276 288 298 282 308 266 Z"/>
+      <path fill="none" stroke-width="0.9" opacity="0.35" d="M206 254 C218 268 238 270 252 262 M306 254 C294 268 274 270 260 262"/>
+      <path fill="#{skin-dark}" stroke="none" opacity="0.25" filter="url(#soft2)" d="M255 278 L257 278 L257 340 L255 340 Z"/>
+      <path fill="none" stroke-width="0.9" opacity="0.5" d="M253 350 C254 354 258 354 259 350"/>
+      <path fill="#{skin-dark}" stroke="none" opacity="0.3" filter="url(#soft)" d="M208 300 C214 330 214 350 208 372 L216 372 C222 350 222 326 214 300 Z M304 300 C298 330 298 350 304 372 L296 372 C290 350 290 326 298 300 Z"/>
+      <path fill="none" stroke-width="0.8" opacity="0.3" d="M212 376 C226 394 240 406 254 416 M300 376 C286 394 272 406 258 416"/>
+      <path fill="#{skin-light}" stroke="none" opacity="0.35" filter="url(#soft)" d="M214 212 C228 204 246 206 250 222 C246 242 226 246 212 236 Z M298 212 C284 204 266 206 262 222 C266 242 286 246 300 236 Z"/>
+      <path fill="#{skin-light}" stroke="none" opacity="0.25" filter="url(#soft)" d="M234 290 C246 286 266 286 278 290 C276 320 270 336 256 338 C242 336 236 320 234 290 Z"/>
+      <g id="armL">
+        <!-- Braço: deltoide arredondado, bíceps, cotovelo e antebraço -->
+        <path fill="#{skin}" stroke="none" filter="url(#form)" d="M202 193 C186 190 170 197 164 213 C159 227 159 247 159 268 C159 286 160 304 162 320 C157 336 153 356 154 378 C155 394 157 408 159 418 L178 418 C179 404 182 384 184 364 C185 348 184 334 182 322 C186 300 190 272 191 244 C192 226 198 208 202 193 Z"/>
+        <path fill="none" d="M202 193 C186 190 170 197 164 213 C159 227 159 247 159 268 C159 286 160 304 162 320 C157 336 153 356 154 378 C155 394 157 408 159 418"/>
+        <path fill="none" d="M191 244 C190 272 186 300 182 322 C184 334 185 348 184 364 C182 384 179 404 178 418"/>
+        <path fill="none" stroke-width="0.8" opacity="0.35" d="M196 204 C193 216 191 230 191 244"/>
+        <path fill="none" stroke-width="0.9" opacity="0.4" d="M162 246 C168 252 176 256 186 258"/>
+        <path fill="none" stroke-width="0.8" opacity="0.35" d="M164 320 C170 324 176 324 181 320 M170 334 C168 350 166 366 166 384"/>
+        <path fill="#{skin-light}" stroke="none" opacity="0.35" filter="url(#soft2)" d="M172 202 C166 214 166 230 170 242 L176 240 C174 228 176 214 180 204 Z"/>
+        <path fill="#{skin-light}" stroke="none" opacity="0.3" filter="url(#soft2)" d="M168 262 C166 280 166 296 168 310 L174 310 C174 296 174 280 176 262 Z"/>
+        <!-- Mão relaxada, dedos levemente curvados, polegar à frente -->
+        <path fill="#{skin}" filter="url(#formS)" d="M159 414 C155 426 152 440 152 454 C152 466 154 478 158 486 C161 491 166 493 170 490 C173 494 177 491 178 486 C180 478 180 466 179 456 L180 446 C184 450 187 456 187 462 C187 467 183 468 181 464 C180 460 179 456 179 452 L178 414 Z"/>
+        <path fill="none" stroke-width="0.8" opacity="0.5" d="M157 462 C158 472 160 480 163 487 M163 460 C164 470 166 480 169 489 M170 460 C171 470 173 478 175 486"/>
+        <path fill="none" stroke-width="0.8" opacity="0.45" d="M179 440 C182 446 184 452 184 458 M156 446 C160 450 166 452 172 452"/>
+      </g>
+      <use href="#armL" transform="matrix(-1 0 0 1 512 0)"/>
     </g>
     <g data-anchor="legs">
-      <!-- Roupa de baixo neutra -->
-      <path fill="#7a6552" d="M184 464 L328 464 L332 520 L266 526 L256 504 L246 526 L180 520 Z"/>
+      <!-- Roupa de baixo neutra (linho) -->
+      <path fill="#7d6a57" stroke="#4a3c30" d="M190 394 C211 400 234 402 256 402 C278 402 301 400 322 394 L327 456 C311 462 288 462 268 458 L256 432 L244 458 C224 462 201 462 185 456 Z"/>
+      <path fill="#4a3c30" stroke="none" opacity="0.35" filter="url(#soft2)" d="M190 396 C211 402 234 404 256 404 C278 404 301 402 322 396 L322 404 C300 410 278 412 256 412 C234 412 212 410 190 404 Z"/>
+      <path fill="none" stroke="#4a3c30" stroke-width="0.8" opacity="0.6" d="M196 410 C212 414 232 416 250 416 M316 410 C300 414 280 416 262 416 M214 420 L222 452 M298 420 L290 452"/>
     </g>
   </g>
 </svg>

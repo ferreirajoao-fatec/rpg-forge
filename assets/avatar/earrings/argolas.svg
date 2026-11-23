@@ -1,6 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g fill="none" stroke="#{metal}" stroke-width="3">
-    <circle cx="188" cy="204" r="7"/>
-    <circle cx="324" cy="204" r="7"/>
+  <defs>
+    <filter id="soft2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="0.4"/></filter>
+  </defs>
+  <g id="ringL">
+    <circle fill="none" stroke="#{metal-deep}" stroke-width="2" cx="213" cy="144.5" r="4.2"/>
+    <circle fill="none" stroke="#{metal}" stroke-width="1.2" cx="213" cy="144.5" r="4.2"/>
+    <path fill="none" stroke="#{metal-light}" stroke-width="0.6" d="M209.6 143 C210 141.6 211 140.8 212.2 140.4"/>
   </g>
+  <use href="#ringL" transform="matrix(-1 0 0 1 512 0)"/>
 </svg>

@@ -1,0 +1,207 @@
+{
+ "club": { "n": "Clava" },
+ "dagger": { "n": "Adaga" },
+ "greatclub": { "n": "Clava grande" },
+ "handaxe": { "n": "Machadinha" },
+ "javelin": { "n": "Azagaia" },
+ "light-hammer": { "n": "Martelo leve" },
+ "mace": { "n": "Maça" },
+ "quarterstaff": { "n": "Bordão" },
+ "sickle": { "n": "Foice curta" },
+ "spear": { "n": "Lança" },
+ "crossbow-light": { "n": "Besta leve" },
+ "dart": { "n": "Dardo" },
+ "shortbow": { "n": "Arco curto" },
+ "sling": { "n": "Funda" },
+ "battleaxe": { "n": "Machado de batalha" },
+ "flail": { "n": "Mangual" },
+ "glaive": { "n": "Glaive" },
+ "greataxe": { "n": "Machado grande" },
+ "greatsword": { "n": "Espada grande" },
+ "halberd": { "n": "Alabarda" },
+ "lance": { "n": "Lança de cavalaria" },
+ "longsword": { "n": "Espada longa" },
+ "maul": { "n": "Marreta" },
+ "morningstar": { "n": "Maça-estrela" },
+ "pike": { "n": "Pique" },
+ "rapier": { "n": "Rapieira" },
+ "scimitar": { "n": "Cimitarra" },
+ "shortsword": { "n": "Espada curta" },
+ "trident": { "n": "Tridente" },
+ "war-pick": { "n": "Picareta de guerra" },
+ "warhammer": { "n": "Martelo de guerra" },
+ "whip": { "n": "Chicote" },
+ "blowgun": { "n": "Zarabatana" },
+ "crossbow-hand": { "n": "Besta de mão" },
+ "crossbow-heavy": { "n": "Besta pesada" },
+ "longbow": { "n": "Arco longo" },
+ "net": { "n": "Rede" },
+ "padded-armor": { "n": "Armadura acolchoada" },
+ "leather-armor": { "n": "Armadura de couro" },
+ "studded-leather-armor": { "n": "Armadura de couro batido" },
+ "hide-armor": { "n": "Armadura de peles" },
+ "chain-shirt": { "n": "Camisão de malha" },
+ "scale-mail": { "n": "Brunea" },
+ "breastplate": { "n": "Peitoral" },
+ "half-plate-armor": { "n": "Meia armadura" },
+ "ring-mail": { "n": "Cota de anéis" },
+ "chain-mail": { "n": "Cota de malha" },
+ "splint-armor": { "n": "Armadura de talas" },
+ "plate-armor": { "n": "Armadura de placas" },
+ "shield": { "n": "Escudo" },
+ "abacus": { "n": "Ábaco" },
+ "acid-vial": {
+  "n": "Ácido (frasco)",
+  "d": [
+   "Com uma ação, você pode espirrar o conteúdo deste frasco numa criatura a até 1,5 metro de você ou arremessá-lo a até 6 metros, quebrando-o no impacto. Em ambos os casos, faça um ataque à distância contra uma criatura ou objeto, tratando o ácido como arma improvisada.",
+   "Se acertar, o alvo sofre 2d6 de dano de ácido."
+  ]
+ },
+ "alchemists-fire-flask": {
+  "n": "Fogo alquímico (frasco)",
+  "d": [
+   "Este fluido grudento e adesivo pega fogo quando exposto ao ar.",
+   "Com uma ação, você pode arremessar este frasco a até 6 metros, quebrando-o no impacto. Faça um ataque à distância contra uma criatura ou objeto, tratando o fogo alquímico como arma improvisada.",
+   "Se acertar, o alvo sofre 1d4 de dano de fogo no início de cada um de seus turnos. Uma criatura pode encerrar esse dano usando sua ação para fazer um teste de Destreza CD 10 e apagar as chamas."
+  ]
+ },
+ "alms-box": { "n": "Caixa de esmolas", "d": ["Uma pequena caixa para esmolas, comum no pacote de sacerdote."] },
+ "arrow": { "n": "Flecha" },
+ "block-of-incense": { "n": "Bloco de incenso", "d": ["Um bloco de incenso, comum no pacote de sacerdote."] },
+ "blowgun-needle": { "n": "Agulha de zarabatana" },
+ "censer": { "n": "Incensário", "d": ["Um incensário, comum no pacote de sacerdote."] },
+ "crossbow-bolt": { "n": "Virote" },
+ "sling-bullet": { "n": "Bala de funda" },
+ "amulet": {
+  "n": "Amuleto",
+  "d": [
+   "Um símbolo sagrado é uma representação de um deus ou panteão. Pode ser um amuleto com um símbolo que representa uma divindade, o mesmo símbolo gravado ou incrustado com cuidado como emblema num escudo, ou uma caixinha que guarda um fragmento de uma relíquia sagrada.",
+   "O Apêndice B lista os símbolos normalmente associados a muitos deuses do multiverso. Um clérigo ou paladino pode usar um símbolo sagrado como foco de conjuração. Para isso, precisa segurá-lo na mão, usá-lo à vista ou carregá-lo num escudo."
+  ]
+ },
+ "antitoxin-vial": {
+  "n": "Antitoxina (frasco)",
+  "d": ["Uma criatura que bebe este frasco de líquido ganha vantagem em testes de resistência contra veneno por 1 hora. Não traz benefício a mortos-vivos nem a constructos."]
+ },
+ "crystal": {
+  "n": "Cristal",
+  "d": ["Um foco arcano é um item especial (um orbe, um cristal, uma haste, um cajado feito sob medida, uma vareta de madeira parecida com uma varinha ou algo semelhante) projetado para canalizar o poder de magias arcanas. Um feiticeiro, bruxo ou mago pode usar um item assim como foco de conjuração."]
+ },
+ "orb": { "n": "Orbe" },
+ "rod": { "n": "Haste" },
+ "staff": { "n": "Cajado" },
+ "wand": { "n": "Varinha" },
+ "backpack": { "n": "Mochila" },
+ "ball-bearings-bag-of-1000": {
+  "n": "Esferas de metal (saco com 1.000)",
+  "d": [
+   "Com uma ação, você pode espalhar essas bolinhas de metal da bolsa para cobrir uma área quadrada e plana de 3 metros de lado.",
+   "Uma criatura que atravessa a área coberta deve passar num teste de resistência de Destreza CD 10 ou cair.",
+   "Uma criatura que atravessa a área com metade do deslocamento não precisa fazer o teste."
+  ]
+ },
+ "barrel": { "n": "Barril" },
+ "basket": { "n": "Cesto" },
+ "bedroll": { "n": "Saco de dormir" },
+ "bell": { "n": "Sino" },
+ "blanket": { "n": "Cobertor" },
+ "block-and-tackle": {
+  "n": "Talha",
+  "d": ["Um conjunto de roldanas com um cabo passado por elas e um gancho para prender objetos. A talha permite içar até quatro vezes o peso que você normalmente consegue levantar."]
+ },
+ "book": {
+  "n": "Livro",
+  "d": ["Um livro pode conter poesia, relatos históricos, informações sobre um campo de conhecimento, diagramas e anotações sobre engenhocas gnômicas ou quase qualquer coisa que se possa representar com texto ou imagens. Um livro de magias é um grimório (descrito mais adiante nesta seção)."]
+ },
+ "bottle-glass": { "n": "Garrafa de vidro" },
+ "bucket": { "n": "Balde" },
+ "caltrops": {
+  "n": "Estrepes",
+  "d": [
+   "Com uma ação, você pode espalhar um saco de estrepes para cobrir uma área quadrada de 1,5 metro de lado.",
+   "Qualquer criatura que entra na área deve passar num teste de resistência de Destreza CD 15 ou parar de se mover neste turno e sofrer 1 de dano perfurante.",
+   "Sofrer esse dano reduz o deslocamento de caminhada da criatura em 3 metros até ela recuperar pelo menos 1 ponto de vida.",
+   "Uma criatura que atravessa a área com metade do deslocamento não precisa fazer o teste."
+  ]
+ },
+ "candle": {
+  "n": "Vela",
+  "d": ["Por 1 hora, uma vela emite luz plena num raio de 1,5 metro e penumbra por mais 1,5 metro."]
+ },
+ "case-crossbow-bolt": { "n": "Estojo de virotes", "d": ["Este estojo de madeira comporta até vinte virotes."] },
+ "case-map-or-scroll": {
+  "n": "Estojo para mapas ou pergaminhos",
+  "d": ["Este estojo cilíndrico de couro comporta até dez folhas de papel ou cinco folhas de pergaminho enroladas."]
+ },
+ "chain-10-feet": {
+  "n": "Corrente (3 metros)",
+  "d": ["Uma corrente tem 10 pontos de vida. Pode ser rompida com um teste de Força CD 20 bem-sucedido."]
+ },
+ "chalk-1-piece": { "n": "Giz (1 pedaço)" },
+ "chest": { "n": "Baú" },
+ "clothes-common": { "n": "Roupas comuns" },
+ "clothes-costume": { "n": "Fantasia" },
+ "clothes-fine": { "n": "Roupas finas" },
+ "clothes-travelers": { "n": "Roupas de viajante" },
+ "component-pouch": {
+  "n": "Bolsa de componentes",
+  "d": ["Uma bolsa de componentes é uma pequena bolsa de cinto, de couro e à prova d'água, com compartimentos para guardar todos os componentes materiais e outros itens especiais necessários para lançar suas magias, exceto os componentes com custo específico (indicado na descrição da magia)."]
+ },
+ "crowbar": {
+  "n": "Pé de cabra",
+  "d": ["Usar um pé de cabra concede vantagem em testes de Força em que a alavanca possa ser aplicada."]
+ },
+ "sprig-of-mistletoe": {
+  "n": "Ramo de visco",
+  "d": ["Um foco druídico pode ser um ramo de visco ou azevinho, uma varinha ou cetro de teixo ou outra madeira especial, um cajado tirado inteiro de uma árvore viva ou um totem com penas, pelos, ossos e dentes de animais sagrados. Um druida pode usar um objeto assim como foco de conjuração."]
+ },
+ "totem": { "n": "Totem" },
+ "wooden-staff": { "n": "Cajado de madeira" },
+ "yew-wand": { "n": "Varinha de teixo" },
+ "emblem": { "n": "Emblema" },
+ "fishing-tackle": {
+  "n": "Equipamento de pesca",
+  "d": ["Este kit inclui uma vara de madeira, linha de seda, boias de cortiça, anzóis de aço, chumbadas, iscas de veludo e uma rede estreita."]
+ },
+ "flask-or-tankard": { "n": "Cantil ou caneca" },
+ "grappling-hook": { "n": "Gancho de escalada" },
+ "hammer": { "n": "Martelo" },
+ "hammer-sledge": { "n": "Marreta de ferreiro" },
+ "holy-water-flask": {
+  "n": "Água benta (frasco)",
+  "d": [
+   "Com uma ação, você pode espirrar o conteúdo deste frasco numa criatura a até 1,5 metro de você ou arremessá-lo a até 6 metros, quebrando-o no impacto. Em ambos os casos, faça um ataque à distância contra uma criatura, tratando a água benta como arma improvisada.",
+   "Se o alvo for um ínfero ou morto-vivo, sofre 2d6 de dano radiante.",
+   "Um clérigo ou paladino pode criar água benta realizando um ritual especial.",
+   "O ritual leva 1 hora, consome 25 po de prata em pó e exige que o conjurador gaste um espaço de magia de 1º nível."
+  ]
+ },
+ "hourglass": { "n": "Ampulheta" },
+ "hunting-trap": {
+  "n": "Armadilha de caça",
+  "d": [
+   "Quando você usa sua ação para armá-la, esta armadilha forma um anel de aço dentado que se fecha quando uma criatura pisa na placa de pressão no centro. A armadilha fica presa por uma corrente pesada a um objeto imóvel, como uma árvore ou uma estaca cravada no chão.",
+   "Uma criatura que pisa na placa deve passar num teste de resistência de Destreza CD 13 ou sofrer 1d4 de dano perfurante e parar de se mover. Depois disso, até se soltar, o movimento dela fica limitado ao comprimento da corrente (normalmente 90 centímetros).",
+   "Uma criatura pode usar sua ação para fazer um teste de Força CD 13; se passar, liberta a si mesma ou outra criatura ao seu alcance. Cada teste fracassado causa 1 de dano perfurante à criatura presa."
+  ]
+ },
+ "ink-1-ounce-bottle": { "n": "Tinta (frasco de 30 ml)" },
+ "ink-pen": { "n": "Pena de escrever" },
+ "jug-or-pitcher": { "n": "Jarro ou moringa" },
+ "climbers-kit": {
+  "n": "Kit de escalada",
+  "d": ["Um kit de escalada inclui pitons especiais, biqueiras, luvas e um arnês. Você pode usar o kit com uma ação para se ancorar; quando faz isso, não pode cair mais de 7,5 metros a partir do ponto de ancoragem, nem escalar mais de 7,5 metros para longe dele sem desfazer a ancoragem."]
+ },
+ "disguise-kit": {
+  "n": "Kit de disfarce",
+  "d": ["Esta bolsa de cosméticos, tintura de cabelo e pequenos adereços permite criar disfarces que mudam sua aparência física. Proficiência com este kit permite somar seu bônus de proficiência a qualquer teste de habilidade para criar um disfarce visual."]
+ },
+ "forgery-kit": {
+  "n": "Kit de falsificação",
+  "d": ["Esta caixinha contém vários papéis e pergaminhos, penas e tintas, selos e lacre, folhas de ouro e prata e outros materiais necessários para falsificar documentos de forma convincente. Proficiência com este kit permite somar seu bônus de proficiência a qualquer teste de habilidade para falsificar fisicamente um documento."]
+ },
+ "herbalism-kit": {
+  "n": "Kit de herbalismo",
+  "d": ["Este kit contém vários instrumentos, como tesouras de poda, almofariz e pilão, além de bolsas e frascos usados por herbalistas para criar remédios e poções. Proficiência com este kit permite somar seu bônus de proficiência a qualquer teste de habilidade para identificar ou aplicar ervas. A proficiência também é exigida para criar antitoxina e poções de cura."]
+ }
+}

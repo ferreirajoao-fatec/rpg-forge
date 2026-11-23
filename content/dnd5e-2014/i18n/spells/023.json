@@ -1,0 +1,65 @@
+{
+ "modify-memory": {
+  "n": "Modificar Memória",
+  "d": [
+   "Você tenta remodelar as memórias de outra criatura. Uma criatura que você consiga ver deve fazer um teste de resistência de Sabedoria. Se você estiver lutando contra ela, ela tem vantagem no teste. Se falhar, o alvo fica enfeitiçado por você pela duração. O alvo enfeitiçado fica incapacitado e alheio ao que está ao redor, embora ainda consiga ouvi-lo. Se sofrer qualquer dano ou for alvo de outra magia, esta magia termina, e nenhuma memória do alvo é modificada.",
+   "Enquanto o feitiço durar, você pode afetar a memória do alvo sobre um acontecimento que ele viveu nas últimas 24 horas e que não durou mais de 10 minutos. Pode eliminar permanentemente toda a memória do acontecimento, permitir que o alvo o relembre com clareza perfeita e todos os detalhes, mudar a memória dele sobre os detalhes ou criar a memória de outro acontecimento.",
+   "Você precisa falar com o alvo para descrever como as memórias dele são afetadas, e ele precisa entender seu idioma para que as memórias modificadas se fixem. A mente dele preenche quaisquer lacunas nos detalhes da sua descrição. Se a magia terminar antes de você terminar de descrever as memórias modificadas, a memória da criatura não é alterada. Caso contrário, as memórias modificadas se fixam quando a magia termina.",
+   "Uma memória modificada não afeta necessariamente o comportamento da criatura, sobretudo se contradisser as inclinações naturais, a tendência ou as crenças dela. Uma memória modificada ilógica, como a de quanto a criatura gostou de se banhar em ácido, é descartada, talvez como um sonho ruim. O Mestre pode considerar uma memória modificada absurda demais para afetar a criatura de modo significativo.",
+   "Uma magia remover maldição ou restauração maior lançada no alvo restaura a memória verdadeira da criatura."
+  ],
+  "h": ["Se você lançar esta magia usando um espaço de magia de 6º nível ou superior, pode alterar as memórias do alvo sobre um acontecimento ocorrido há até 7 dias (6º nível), 30 dias (7º nível), 1 ano (8º nível) ou em qualquer momento do passado da criatura (9º nível)."]
+ },
+ "moonbeam": {
+  "n": "Raio Lunar",
+  "d": [
+   "Um feixe prateado de luz pálida desce num cilindro de 1,5 metro de raio e 12 metros de altura, centrado num ponto dentro do alcance. Até a magia terminar, penumbra preenche o cilindro.",
+   "Quando uma criatura entra na área da magia pela primeira vez num turno ou começa o turno ali, é envolvida por chamas fantasmagóricas que causam uma dor lancinante e deve fazer um teste de resistência de Constituição. Sofre 2d10 de dano radiante se falhar, ou metade se passar.",
+   "Um metamorfo faz o teste de resistência com desvantagem. Se falhar, também volta instantaneamente à forma original e não pode assumir outra forma até sair da luz da magia.",
+   "Em cada um dos seus turnos depois de lançar esta magia, você pode usar uma ação para mover o feixe 18 metros em qualquer direção."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 3º nível ou superior, o dano aumenta em 1d10 para cada nível de espaço acima do 2º."],
+  "m": "Várias sementes de qualquer planta lunária e um pedaço de feldspato opalescente."
+ },
+ "move-earth": {
+  "n": "Mover Terra",
+  "d": [
+   "Escolha uma área de terreno de no máximo 12 metros de lado dentro do alcance. Você pode remodelar terra, areia ou argila na área como quiser pela duração. Pode elevar ou rebaixar o nível da área, criar ou encher uma vala, erguer ou nivelar uma parede ou formar um pilar. A extensão dessas mudanças não pode exceder metade da maior dimensão da área. Assim, se afetar um quadrado de 12 metros, pode criar um pilar de até 6 metros de altura, elevar ou rebaixar o nível do quadrado em até 6 metros, cavar uma vala de até 6 metros de profundidade e assim por diante. Essas mudanças levam 10 minutos para se completar.",
+   "Ao fim de cada 10 minutos que passar se concentrando na magia, você pode escolher uma nova área de terreno para afetar.",
+   "Como a transformação do terreno é lenta, as criaturas na área normalmente não podem ser presas nem feridas pelo movimento do chão.",
+   "Esta magia não pode manipular pedra natural nem construções de pedra. Rochas e estruturas se deslocam para se acomodar ao novo terreno. Se a forma como você moldar o terreno deixar uma estrutura instável, ela pode desabar.",
+   "Da mesma forma, esta magia não afeta diretamente o crescimento das plantas. A terra movida carrega as plantas junto."
+  ],
+  "m": "Uma lâmina de ferro e um saquinho com uma mistura de solos: argila, terra fértil e areia."
+ },
+ "nondetection": {
+  "n": "Indetectável",
+  "d": ["Pela duração, você esconde de magias de adivinhação um alvo que tocar. O alvo pode ser uma criatura voluntária, ou um lugar ou objeto de no máximo 3 metros em qualquer dimensão. O alvo não pode ser alvo de nenhuma magia de adivinhação nem percebido por sensores mágicos de vidência."],
+  "m": "Uma pitada de pó de diamante no valor de 25 po polvilhada sobre o alvo, que a magia consome."
+ },
+ "pass-without-trace": {
+  "n": "Passos sem Pegadas",
+  "d": ["Um véu de sombras e silêncio irradia de você, ocultando você e seus companheiros. Pela duração, cada criatura à sua escolha a até 9 metros de você (incluindo você) tem +10 de bônus em testes de Destreza (Furtividade) e não pode ser rastreada, exceto por meios mágicos. Uma criatura que recebe esse bônus não deixa pegadas nem outros rastros da sua passagem."],
+  "m": "Cinzas de uma folha de visco queimada e um raminho de abeto."
+ },
+ "passwall": {
+  "n": "Criar Passagem",
+  "d": [
+   "Uma passagem aparece num ponto à sua escolha que você consiga ver numa superfície de madeira, gesso ou pedra (como uma parede, um teto ou um piso) dentro do alcance, e dura pela duração. Você escolhe as dimensões da abertura: até 1,5 metro de largura, 2,4 metros de altura e 6 metros de profundidade. A passagem não causa instabilidade na estrutura ao redor.",
+   "Quando a abertura desaparece, quaisquer criaturas ou objetos ainda na passagem criada pela magia são expelidos com segurança para o espaço desocupado mais próximo da superfície em que você lançou a magia."
+  ],
+  "m": "Uma pitada de sementes de gergelim."
+ },
+ "phantasmal-killer": {
+  "n": "Assassino Fantasmagórico",
+  "d": ["Você acessa os pesadelos de uma criatura que consiga ver dentro do alcance e cria uma manifestação ilusória dos medos mais profundos dela, visível apenas para ela. O alvo deve fazer um teste de resistência de Sabedoria. Se falhar, fica amedrontado pela duração. No início de cada turno do alvo antes de a magia terminar, ele deve passar num teste de resistência de Sabedoria ou sofrer 4d10 de dano psíquico. Se passar, a magia termina."],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 5º nível ou superior, o dano aumenta em 1d10 para cada nível de espaço acima do 4º."]
+ },
+ "phantom-steed": {
+  "n": "Montaria Fantasma",
+  "d": [
+   "Uma criatura Grande, quase real e parecida com um cavalo, aparece no chão num espaço desocupado à sua escolha dentro do alcance. Você decide a aparência da criatura, mas ela vem equipada com sela, freio e rédeas. Qualquer equipamento criado pela magia desaparece numa nuvem de fumaça se for levado a mais de 3 metros da montaria.",
+   "Pela duração, você ou uma criatura à sua escolha pode montar a montaria. A criatura usa as estatísticas de um cavalo de montaria, mas tem deslocamento de 30 metros e pode percorrer 15 km em uma hora, ou 19,5 km em ritmo rápido. Quando a magia termina, a montaria desvanece aos poucos, dando ao cavaleiro 1 minuto para desmontar. A magia termina se você usar uma ação para dispensá-la ou se a montaria sofrer qualquer dano."
+  ]
+ }
+}

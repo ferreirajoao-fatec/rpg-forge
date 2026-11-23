@@ -36,6 +36,11 @@ const SPECIES: Record<string, Hint> = {
   elf: { build: "esguio", slots: { ears: "ears:pontuda", beard: null }, note: "Elfo: corpo esguio e orelhas pontudas." },
   tiefling: { skin: "#b8423a", slots: { horns: "horns:curvados", tail: "tail:demoniaca" }, note: "Tiefling: pele avermelhada, chifres e cauda." },
   dragonborn: { build: "robusto", skin: "#8a5a3a", slots: { hair: null, eyes: "eyes:reptilianos", tail: "tail:reptiliana" }, note: "Draconato: escamas, olhos e cauda reptilianos." },
+  gnome: { slots: { ears: "ears:pontuda", nose: "nose:aquilino" }, note: "Gnomo: orelhas pontudas e nariz marcante." },
+  "half-elf": { slots: { ears: "ears:pontuda" }, note: "Meio-elfo: orelhas levemente pontudas." },
+  "half-orc": { build: "robusto", skin: "#8a9a6a", slots: { mouth: "mouth:presas" }, note: "Meio-orc: corpo robusto, pele acinzentada e presas." },
+  orc: { build: "robusto", skin: "#7a9060", slots: { mouth: "mouth:presas" }, note: "Orc: corpo robusto, pele esverdeada e presas." },
+  goliath: { build: "robusto", skin: "#9a9aa0", slots: { hair: null }, note: "Golias: corpo robusto e pele acinzentada." },
 };
 
 const CLASSES: Record<string, Hint> = {
@@ -57,6 +62,14 @@ const CLASSES: Record<string, Hint> = {
   fighter: { slots: { armor: "armor:cota-de-malha" }, note: "Guerreiro: cota de malha." },
   rogue: { slots: { hood: "hood:capuz", armor: "armor:couro" }, note: "Ladino: capuz e couro." },
   cleric: { slots: { armor: "armor:cota-de-malha", necklace: "necklace:pingente" }, note: "Clérigo: cota e símbolo sagrado." },
+  barbarian: { slots: { torso: "torso:camisa-colete", armor: "armor:couro", necklace: "necklace:pingente" }, note: "Bárbaro: couro e adornos." },
+  bard: { slots: { torso: "torso:camisa-colete", cape: "cape:capa", earrings: "earrings:argolas" }, note: "Bardo: colete, capa e brincos." },
+  druid: { slots: { torso: "torso:tunica", hood: "hood:capuz", feet: "feet:sandalias" }, note: "Druida: túnica, capuz e sandálias." },
+  monk: { slots: { torso: "torso:tunica", armor: null, feet: "feet:sandalias" }, note: "Monge: túnica leve e sandálias." },
+  paladin: { slots: { armor: "armor:peitoral", cape: "cape:capa", necklace: "necklace:pingente" }, note: "Paladino: peitoral, capa e símbolo." },
+  ranger: { slots: { torso: "torso:tunica", hood: "hood:capuz", armor: "armor:couro", cape: "cape:capa" }, note: "Patrulheiro: capuz, couro e capa." },
+  sorcerer: { slots: { torso: "torso:manto-longo", necklace: "necklace:pingente", armor: null }, note: "Feiticeiro: manto e amuleto." },
+  warlock: { slots: { torso: "torso:manto-longo", hood: "hood:capuz", armor: null }, note: "Bruxo: manto longo e capuz." },
 };
 
 function apply(config: AvatarConfig, hint: Hint): AvatarConfig {

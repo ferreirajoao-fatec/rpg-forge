@@ -35,13 +35,27 @@ export function selectedIds(kind: string, data: CharacterData): string[] {
 
 const choice = (slot: string, contentId: string, atLevel: number): Choice => ({ slot, contentId, atLevel, locked: false });
 
+/** Slot da sub-raça (D&D 2014) ou da linhagem/legado/ancestralidade (D&D 2024). */
+const SUBSPECIES_SLOT = "subspecies";
+
+/** Texto completo de uma opção: string (Tormenta20) ou parágrafos (D&D). */
+export function fullTextOf(e: ContentEntry): string {
+  const t = e.data.text;
+  const text = Array.isArray(t) ? (t as string[]).join("\n\n") : typeof t === "string" ? t : "";
+  return text && text !== e.summary ? text : "";
+}
+
 /** Alteração na ficha ao marcar ou desmarcar uma opção. */
 export function toggleOption(kind: string, entry: ContentEntry, data: CharacterData): Partial<CharacterData> {
   const isSelected = selectedIds(kind, data).includes(entry.id);
   switch (kind) {
     case "species":
-      // Trocar de raça zera os bônus distribuídos da raça anterior.
-      return { speciesId: isSelected ? undefined : entry.id, assignedBonuses: {} };
+      // Trocar de raça zera os bônus distribuídos e a sub-raça/linhagem da raça anterior.
+      return {
+        speciesId: isSelected ? undefined : entry.id,
+        assignedBonuses: {},
+        choices: data.choices.filter((ch) => ch.slot !== SUBSPECIES_SLOT),
+      };
     case "class":
       return {
         classes: isSelected ? [] : [{ classId: entry.id, levels: data.level }],
@@ -50,10 +64,11 @@ export function toggleOption(kind: string, entry: ContentEntry, data: CharacterD
       };
     case "origin":
     case "background":
-      // Benefícios escolhidos da origem anterior deixam de valer.
+      // Benefícios escolhidos da origem anterior deixam de valer (e, no D&D 2024, o bônus de atributo dela).
       return {
         backgroundId: isSelected ? undefined : entry.id,
         choices: data.choices.filter((ch) => !ch.slot.startsWith("origin-benefit:")),
+        ...(Array.isArray(entry.data.abilityScores) && (entry.data.abilityScores as string[]).length ? { assignedBonuses: {} } : {}),
       };
     case "deity": {
       const rest = data.choices.filter((ch) => ch.slot !== "deity");
@@ -137,6 +152,9 @@ export function ChoiceStep({
       </div>
 
       {kind === "species" && <FlexibleBonus data={data} update={update} engine={engine} catalog={catalog} canEdit={canEdit} />}
+      {kind === "species" && <SubspeciesPicker data={data} update={update} catalog={catalog} canEdit={canEdit} />}
+      {kind === "class" && <SubclassPicker data={data} update={update} catalog={catalog} canEdit={canEdit} />}
+      {kind === "skill" && <GrantedSkills data={data} catalog={catalog} />}
       {(kind === "origin" || kind === "background") && <OriginBenefits data={data} update={update} catalog={catalog} canEdit={canEdit} />}
       {kind === "class" && <ClassOptions data={data} update={update} engine={engine} catalog={catalog} canEdit={canEdit} />}
 
@@ -200,7 +218,7 @@ export function ChoiceStep({
       ) : (
         <ul className="space-y-2">
           {slice.map(({ entry: e, ev, chosen, fit }, i) => {
-            const fullText = typeof e.data.text === "string" && e.data.text !== e.summary ? e.data.text : "";
+            const fullText = fullTextOf(e);
             const blocked = !chosen && ev.availability !== "available_now";
             const newGroup = filterByFit && (i === 0 || slice[i - 1].fit.fit !== fit.fit);
             return (
@@ -410,6 +428,8 @@ interface OriginData {
 function OriginBenefits({ data, update, catalog, canEdit }: { data: CharacterData; update: Update; catalog: Catalog; canEdit: boolean }) {
   const origin = data.backgroundId ? catalog.get(data.backgroundId) : undefined;
   if (!origin) return null;
+  // Antecedente do D&D: perícias fixas, bônus de atributo (2024), talento de origem e característica.
+  if (Array.isArray(origin.data.skills)) return <DndBackground origin={origin} data={data} update={update} catalog={catalog} canEdit={canEdit} />;
   const od = origin.data as OriginData;
   const max = od.benefitsToChoose ?? 2;
   if (max === 0) {
@@ -465,5 +485,224 @@ function OriginBenefits({ data, update, catalog, canEdit }: { data: CharacterDat
         })}
       </div>
     </fieldset>
+  );
+}
+
+/* ------------------------------------------------------------------ D&D 5e */
+
+/** Escolha entre opções curtas, em grade (sub-raça, subclasse...). */
+function OptionGrid({
+  legend,
+  options,
+  current,
+  onPick,
+  canEdit,
+}: {
+  legend: string;
+  options: ContentEntry[];
+  current?: string;
+  onPick: (id: string | undefined) => void;
+  canEdit: boolean;
+}) {
+  return (
+    <fieldset className="rounded-md border p-3">
+      <legend className="px-1 text-sm font-medium">{legend}</legend>
+      <div className="mt-1 grid gap-2 sm:grid-cols-2">
+        {options.map((e) => {
+          const on = current === e.id;
+          const text = fullTextOf(e);
+          return (
+            <div key={e.id} className={cn("rounded-md border p-2 text-sm", on && "border-primary bg-primary/5")}>
+              <button
+                type="button"
+                disabled={!canEdit}
+                aria-pressed={on}
+                onClick={() => onPick(on ? undefined : e.id)}
+                className="w-full text-left hover:underline disabled:no-underline"
+              >
+                <span className="font-medium">{e.name}</span>
+                {on && <Check className="ml-1 inline size-3.5 text-primary" aria-label="escolhido" />}
+                {e.summary && <span className="mt-1 block text-xs text-muted-foreground">{e.summary}</span>}
+              </button>
+              {text && (
+                <details className="mt-1">
+                  <summary className="cursor-pointer text-xs text-muted-foreground">Texto completo</summary>
+                  <p className="mt-1 whitespace-pre-line text-xs">{text}</p>
+                </details>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </fieldset>
+  );
+}
+
+/** Sub-raça (2014) ou linhagem, legado e ancestralidade (2024). */
+function SubspeciesPicker({ data, update, catalog, canEdit }: { data: CharacterData; update: Update; catalog: Catalog; canEdit: boolean }) {
+  const species = data.speciesId ? catalog.get(data.speciesId) : undefined;
+  const ids = (species?.data.subspecies as string[] | undefined) ?? [];
+  const options = ids.map((id) => catalog.get(id)).filter((e): e is ContentEntry => !!e);
+  if (!species || !options.length) return null;
+  const current = data.choices.find((ch) => ch.slot === SUBSPECIES_SLOT)?.contentId;
+  const rest = data.choices.filter((ch) => ch.slot !== SUBSPECIES_SLOT);
+  return (
+    <OptionGrid
+      legend={`Variação de ${species.name} (escolha uma)`}
+      options={options}
+      current={current}
+      canEdit={canEdit}
+      onPick={(id) => update({ choices: id ? [...rest, choice(SUBSPECIES_SLOT, id, data.level)] : rest })}
+    />
+  );
+}
+
+/** Subclasse, a partir do nível indicado pela classe. */
+function SubclassPicker({ data, update, catalog, canEdit }: { data: CharacterData; update: Update; catalog: Catalog; canEdit: boolean }) {
+  const cl = data.classes[0];
+  const cls = cl ? catalog.get(cl.classId) : undefined;
+  const at = Number(cls?.data.subclassLevel ?? 0);
+  if (!cl || !cls || !at) return null;
+  const options = catalog.ofKind("subclass").filter((e) => e.data.classId === cls.id);
+  if (!options.length) return null;
+  if (cl.levels < at) {
+    return (
+      <p className="rounded-md border p-3 text-sm text-muted-foreground">
+        {cls.name} escolhe a subclasse no {at}º nível ({options.map((o) => o.name).join(", ")}).
+      </p>
+    );
+  }
+  return (
+    <OptionGrid
+      legend={`Subclasse de ${cls.name}`}
+      options={options}
+      current={cl.subclassId}
+      canEdit={canEdit}
+      onPick={(id) => update({ classes: [{ ...cl, subclassId: id }, ...data.classes.slice(1)] })}
+    />
+  );
+}
+
+/** Perícias que já vêm treinadas pelo antecedente e pela raça (não contam na escolha da classe). */
+function GrantedSkills({ data, catalog }: { data: CharacterData; catalog: Catalog }) {
+  const bg = data.backgroundId ? catalog.get(data.backgroundId) : undefined;
+  const sp = data.speciesId ? catalog.get(data.speciesId) : undefined;
+  const cls = data.classes[0] ? catalog.get(data.classes[0].classId) : undefined;
+  const fromBg = Array.isArray(bg?.data.skills) ? (bg.data.skills as string[]) : [];
+  const fromSp = Array.isArray(sp?.data.skills) ? (sp.data.skills as string[]) : [];
+  const skills = cls?.data.skills as { choose?: number; from?: string[] } | undefined;
+  const flex = Number(sp?.data.flexibleSkills ?? 0);
+  // Só no D&D: lá a lista da classe é "escolha N de", e antecedente/raça dão perícias fixas.
+  if (!Array.isArray(skills?.from) || skills.choose === undefined || "fixed" in (skills ?? {})) return null;
+  const names = (ids: string[]) => ids.map((id) => catalog.get(id)?.name ?? slug(id)).join(", ");
+  return (
+    <div className="space-y-1 rounded-md border p-3 text-sm">
+      {cls && (
+        <p>
+          <span className="font-medium">{cls.name}:</span> escolha {skills.choose} da lista da classe
+          {flex && sp ? `, mais ${flex} à sua escolha (${sp.name})` : ""}.
+        </p>
+      )}
+      {bg && fromBg.length > 0 && (
+        <p className="text-muted-foreground">
+          Já treinadas pelo antecedente ({bg.name}): {names(fromBg)}.
+        </p>
+      )}
+      {sp && fromSp.length > 0 && (
+        <p className="text-muted-foreground">
+          Já treinadas pela raça ({sp.name}): {names(fromSp)}.
+        </p>
+      )}
+    </div>
+  );
+}
+
+interface DndBackgroundData {
+  skills: string[];
+  tools?: string[];
+  abilityScores?: string[];
+  featId?: string;
+  featNote?: string;
+  feature?: { name: string; text: string[] };
+}
+
+const DND_ABILITY_LABEL: Record<string, string> = { str: "Força", dex: "Destreza", con: "Constituição", int: "Inteligência", wis: "Sabedoria", cha: "Carisma" };
+
+/** Antecedente do D&D: o que ele concede e, em 2024, a distribuição do bônus de atributo. */
+function DndBackground({ origin, data, update, catalog, canEdit }: { origin: ContentEntry; data: CharacterData; update: Update; catalog: Catalog; canEdit: boolean }) {
+  const d = origin.data as unknown as DndBackgroundData;
+  const feat = d.featId ? catalog.get(d.featId) : undefined;
+  const abilities = d.abilityScores ?? [];
+  const set = (k: string, v: number) => {
+    const next = { ...data.assignedBonuses };
+    if (v) next[k] = v;
+    else delete next[k];
+    update({ assignedBonuses: next });
+  };
+  const pattern = abilities
+    .map((k) => data.assignedBonuses[k] ?? 0)
+    .filter(Boolean)
+    .sort((a, b) => b - a)
+    .join(",");
+  const ok = pattern === "2,1" || pattern === "1,1,1";
+  return (
+    <div className="space-y-3">
+      <div className="space-y-1 rounded-md border p-3 text-sm">
+        <p>
+          <span className="font-medium">Perícias:</span> {d.skills.map((id) => catalog.get(id)?.name ?? slug(id)).join(", ")}
+        </p>
+        {d.tools?.length ? (
+          <p>
+            <span className="font-medium">Ferramenta:</span> {d.tools.join(", ")}
+          </p>
+        ) : null}
+        {feat && (
+          <p>
+            <span className="font-medium">Talento de origem:</span> {feat.name}
+            {d.featNote ? ` (${d.featNote})` : ""} — {feat.summary}
+          </p>
+        )}
+        {d.feature && (
+          <details>
+            <summary className="cursor-pointer">
+              <span className="font-medium">Característica:</span> {d.feature.name}
+            </summary>
+            <p className="mt-1 whitespace-pre-line text-muted-foreground">{d.feature.text.join("\n\n")}</p>
+          </details>
+        )}
+      </div>
+      {abilities.length > 0 && (
+        <fieldset className="rounded-md border p-3">
+          <legend className="px-1 text-sm font-medium">
+            Bônus de atributo: +2 e +1, ou +1 nos três {ok && <Check className="ml-1 inline size-3.5 text-primary" aria-label="completo" />}
+          </legend>
+          <div className="mt-1 grid gap-2 sm:grid-cols-3">
+            {abilities.map((k) => {
+              const v = data.assignedBonuses[k] ?? 0;
+              const name = DND_ABILITY_LABEL[k] ?? k;
+              return (
+                <div key={k} className="flex items-center justify-between gap-2 rounded-md border p-2 text-sm">
+                  <span>{name}</span>
+                  <div role="group" aria-label={`Bônus em ${name}`} className="inline-flex rounded-md border p-0.5">
+                    {[0, 1, 2].map((n) => (
+                      <button
+                        key={n}
+                        type="button"
+                        disabled={!canEdit}
+                        aria-pressed={v === n}
+                        onClick={() => set(k, n)}
+                        className={cn("rounded px-2 py-0.5 text-xs tabular-nums", v === n ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground")}
+                      >
+                        {n ? `+${n}` : "0"}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </fieldset>
+      )}
+    </div>
   );
 }

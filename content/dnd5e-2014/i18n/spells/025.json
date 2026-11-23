@@ -1,0 +1,70 @@
+{
+ "prestidigitation": {
+  "n": "Prestidigitação",
+  "d": [
+   "Esta magia é um truque mágico menor que conjuradores novatos usam para praticar. Você cria um dos efeitos mágicos a seguir dentro do alcance:",
+   "Você cria um efeito sensorial instantâneo e inofensivo, como uma chuva de faíscas, uma lufada de vento, notas musicais suaves ou um cheiro estranho.",
+   "Você acende ou apaga instantaneamente uma vela, uma tocha ou uma pequena fogueira.",
+   "Você limpa ou suja instantaneamente um objeto de no máximo 28 litros de volume.",
+   "Você esfria, esquenta ou dá sabor a até 28 litros de material sem vida por 1 hora.",
+   "Você faz uma cor, uma pequena marca ou um símbolo aparecer num objeto ou numa superfície por 1 hora.",
+   "Você cria uma bugiganga não mágica ou uma imagem ilusória que caiba na sua mão e dure até o fim do seu próximo turno.",
+   "Se lançar esta magia várias vezes, pode ter até três dos efeitos não instantâneos dela ativos ao mesmo tempo, e pode dispensar um desses efeitos com uma ação."
+  ]
+ },
+ "prismatic-spray": {
+  "n": "Spray Prismático",
+  "d": [
+   "Oito raios de luz multicoloridos lampejam da sua mão. Cada raio tem uma cor diferente, com poder e propósito diferentes. Cada criatura num cone de 18 metros deve fazer um teste de resistência de Destreza. Para cada alvo, role um d8 para determinar qual raio o afeta.",
+   "*1. Vermelho.* O alvo sofre 10d6 de dano de fogo se falhar, ou metade se passar.",
+   "*2. Laranja.* O alvo sofre 10d6 de dano de ácido se falhar, ou metade se passar.",
+   "*3. Amarelo.* O alvo sofre 10d6 de dano elétrico se falhar, ou metade se passar.",
+   "*4. Verde.* O alvo sofre 10d6 de dano de veneno se falhar, ou metade se passar.",
+   "*5. Azul.* O alvo sofre 10d6 de dano de frio se falhar, ou metade se passar.",
+   "*6. Anil.* Se falhar, o alvo fica impedido. Então deve fazer um teste de resistência de Constituição no fim de cada turno dele. Se passar três vezes, a magia termina. Se falhar três vezes, vira pedra permanentemente e fica com a condição petrificado. Os sucessos e as falhas não precisam ser consecutivos; anote ambos até o alvo juntar três de um tipo.",
+   "*7. Violeta.* Se falhar, o alvo fica cego. Então deve fazer um teste de resistência de Sabedoria no início do seu próximo turno. Se passar, a cegueira termina. Se falhar, a criatura é transportada para outro plano de existência à escolha do Mestre e deixa de estar cega. (Normalmente, uma criatura que esteja num plano que não seja o seu de origem é banida para casa, enquanto as outras costumam ser lançadas no Plano Astral ou no Etéreo.)",
+   "*8. Especial.* O alvo é atingido por dois raios. Role mais duas vezes, rolando de novo qualquer 8."
+  ]
+ },
+ "prismatic-wall": {
+  "n": "Muralha Prismática",
+  "d": [
+   "Um plano de luz cintilante e multicolorido forma uma muralha vertical opaca (com até 27 metros de comprimento, 9 metros de altura e 2,5 centímetros de espessura) centrada num ponto que você consiga ver dentro do alcance. Em vez disso, você pode dar à muralha a forma de uma esfera de até 9 metros de diâmetro centrada num ponto à sua escolha dentro do alcance. A muralha permanece no lugar pela duração. Se você posicioná-la de modo que atravesse um espaço ocupado por uma criatura, a magia falha, e sua ação e o espaço de magia são desperdiçados.",
+   "A muralha emite luz plena num alcance de 30 metros e penumbra por mais 30 metros. Você e as criaturas que designar ao lançar a magia podem atravessá-la e ficar perto dela sem se ferir. Se outra criatura que consiga ver a muralha chegar a até 6 metros dela ou começar o turno ali, deve passar num teste de resistência de Constituição ou ficar cega por 1 minuto.",
+   "A muralha é formada por sete camadas, cada uma de uma cor diferente. Quando uma criatura tenta passar o braço pela muralha ou atravessá-la, faz isso uma camada de cada vez, por todas as camadas. Ao atravessar cada camada, a criatura deve fazer um teste de resistência de Destreza ou ser afetada pelas propriedades dela, como descrito abaixo.",
+   "A muralha pode ser destruída, também uma camada de cada vez, na ordem do vermelho ao violeta, por meios específicos de cada camada. Depois de destruída, a camada continua assim pela duração da magia. Um bastão de cancelamento destrói uma muralha prismática, mas um campo antimagia não tem efeito sobre ela.",
+   "*1. Vermelho.* A criatura sofre 10d6 de dano de fogo se falhar, ou metade se passar. Enquanto esta camada existir, ataques à distância não mágicos não atravessam a muralha. A camada pode ser destruída causando pelo menos 25 de dano de frio a ela.",
+   "*2. Laranja.* A criatura sofre 10d6 de dano de ácido se falhar, ou metade se passar. Enquanto esta camada existir, ataques à distância mágicos não atravessam a muralha. A camada é destruída por um vento forte.",
+   "*3. Amarelo.* A criatura sofre 10d6 de dano elétrico se falhar, ou metade se passar. Esta camada pode ser destruída causando pelo menos 60 de dano de energia a ela.",
+   "*4. Verde.* A criatura sofre 10d6 de dano de veneno se falhar, ou metade se passar. Uma magia criar passagem, ou outra magia de nível igual ou maior que possa abrir um portal numa superfície sólida, destrói esta camada.",
+   "*5. Azul.* A criatura sofre 10d6 de dano de frio se falhar, ou metade se passar. Esta camada pode ser destruída causando pelo menos 25 de dano de fogo a ela.",
+   "*6. Anil.* Se falhar, a criatura fica impedida. Então deve fazer um teste de resistência de Constituição no fim de cada turno dela. Se passar três vezes, a magia termina. Se falhar três vezes, vira pedra permanentemente e fica com a condição petrificado. Os sucessos e as falhas não precisam ser consecutivos; anote ambos até a criatura juntar três de um tipo.",
+   "Enquanto esta camada existir, magias não podem ser lançadas através da muralha. A camada é destruída pela luz plena emitida por uma magia luz do dia ou uma magia semelhante de nível igual ou maior.",
+   "*7. Violeta.* Se falhar, a criatura fica cega. Então deve fazer um teste de resistência de Sabedoria no início do seu próximo turno. Se passar, a cegueira termina. Se falhar, a criatura é transportada para outro plano à escolha do Mestre e deixa de estar cega. (Normalmente, uma criatura que esteja num plano que não seja o seu de origem é banida para casa, enquanto as outras costumam ser lançadas no Plano Astral ou no Etéreo.) Esta camada é destruída por uma magia dissipar magia ou uma magia semelhante de nível igual ou maior que possa encerrar magias e efeitos mágicos."
+  ]
+ },
+ "private-sanctum": {
+  "n": "Santuário Particular",
+  "d": [
+   "Você torna magicamente segura uma área dentro do alcance. A área é um cubo que pode ter de 1,5 a 30 metros de lado. A magia dura pela duração ou até você usar uma ação para dispensá-la.",
+   "Ao lançar a magia, você decide que tipo de segurança ela oferece, escolhendo uma, várias ou todas as propriedades a seguir:",
+   "- O som não atravessa a barreira na borda da área protegida.",
+   "- A barreira da área protegida parece escura e enevoada, impedindo a visão (incluindo a visão no escuro) através dela.",
+   "- Sensores criados por magias de adivinhação não podem aparecer dentro da área protegida nem atravessar a barreira do perímetro.",
+   "- Criaturas na área não podem ser alvo de magias de adivinhação.",
+   "- Nada pode se teletransportar para dentro ou para fora da área protegida.",
+   "- A viagem planar fica bloqueada dentro da área protegida.",
+   "Lançar esta magia no mesmo lugar todos os dias por um ano torna o efeito permanente."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 5º nível ou superior, pode aumentar o tamanho do cubo em 30 metros para cada nível de espaço acima do 4º. Assim, poderia proteger um cubo de até 60 metros de lado usando um espaço de 5º nível."],
+  "m": "Uma folha fina de chumbo, um pedaço de vidro opaco, um chumaço de algodão ou pano e crisólita em pó."
+ },
+ "produce-flame": {
+  "n": "Produzir Chama",
+  "d": [
+   "Uma chama bruxuleante aparece na sua mão. A chama permanece ali pela duração e não fere você nem seu equipamento. Ela emite luz plena num raio de 3 metros e penumbra por mais 3 metros. A magia termina se você a dispensar com uma ação ou se lançá-la de novo.",
+   "Você também pode atacar com a chama, mas isso encerra a magia. Quando lança esta magia, ou com uma ação num turno posterior, pode arremessar a chama numa criatura a até 9 metros de você. Faça um ataque mágico à distância. Se acertar, o alvo sofre 1d8 de dano de fogo.",
+   "O dano desta magia aumenta em 1d8 quando você alcança o 5º nível (2d8), o 11º nível (3d8) e o 17º nível (4d8)."
+  ]
+ }
+}

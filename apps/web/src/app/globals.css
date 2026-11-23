@@ -160,142 +160,444 @@
 }
 
 /* ------------------------------------------------------------------ */
-/* Ficha impressa (/app/personagens/[id]/ficha)                        */
+/* Ficha em pergaminho (/app/personagens/[id]/ficha)                   */
 /* O papel é sempre claro, inclusive no tema escuro, para imprimir.   */
 /* ------------------------------------------------------------------ */
 
 .ficha {
-  --sheet-paper: oklch(0.955 0.03 85);
-  --sheet-panel: oklch(0.98 0.02 88);
-  --sheet-ink: oklch(0.22 0.012 60);
-  --sheet-muted: oklch(0.45 0.02 60);
-  --sheet-line: oklch(0.55 0.03 60);
-  --sheet-accent: oklch(0.45 0.16 27);
-  --sheet-ribbon: oklch(0.88 0.05 70);
+  --sheet-paper: #efe3c4;
+  --sheet-panel: oklch(0.93 0.035 85 / 0.72);
+  --sheet-ink: #2b1d12;
+  --sheet-muted: #6b5238;
+  --sheet-line: #8a6a44;
+  --sheet-gold: #d2a64e;
+  --sheet-gold-deep: #7a5320;
+  --sheet-bronze: #8c5a2b;
+  --sheet-accent: #8e2b22;
   color: var(--sheet-ink);
   max-width: 210mm;
 }
 
 .ficha-page {
-  background: var(--sheet-paper);
-  padding: 8mm 8mm 6mm;
+  position: relative;
+  isolation: isolate;
   min-height: 297mm;
-  box-shadow: 0 1px 3px oklch(0 0 0 / 0.15), 0 8px 24px oklch(0 0 0 / 0.08);
-  border: 1px solid var(--sheet-line);
+  padding: 13mm 12mm 11mm 21mm;
+  filter: drop-shadow(0 6px 18px oklch(0 0 0 / 0.28));
+}
+.ficha-parchment {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.ficha-content {
+  position: relative;
 }
 
-.ficha-box {
+.ficha-corner {
+  position: absolute;
+  width: 22mm;
+  height: 22mm;
+  pointer-events: none;
+}
+.ficha-corner-tl {
+  top: 4mm;
+  left: 4mm;
+}
+.ficha-corner-tr {
+  top: 4mm;
+  right: 4mm;
+  transform: scaleX(-1);
+}
+.ficha-corner-bl {
+  bottom: 4mm;
+  left: 4mm;
+  transform: scaleY(-1);
+}
+.ficha-corner-br {
+  bottom: 4mm;
+  right: 4mm;
+  transform: scale(-1, -1);
+}
+
+.ficha-runes {
+  position: absolute;
+  left: 8.5mm;
+  top: 30mm;
+  width: 7mm;
+  height: calc(100% - 60mm);
+}
+
+/* Painel: papel mais escuro com moldura dupla em bronze. */
+.ficha-panel {
   position: relative;
   background: var(--sheet-panel);
-  border: 1.5px solid var(--sheet-ink);
-  border-radius: 3px 10px 4px 12px;
-  padding: 0.85rem 0.7rem 0.6rem;
-  box-shadow: inset 0 0 0 3px var(--sheet-panel), inset 0 0 0 4px oklch(0.55 0.03 60 / 0.45);
+  border: 1px solid var(--sheet-gold-deep);
+  border-radius: 2px;
+  padding: 0.55rem 0.6rem 0.5rem;
+  box-shadow:
+    inset 0 0 0 2px oklch(0.96 0.03 85 / 0.8),
+    inset 0 0 0 3px oklch(0.55 0.08 70 / 0.45),
+    inset 0 0 14px oklch(0.45 0.07 60 / 0.18);
 }
-
-/* Faixa com pontas recortadas, como um pergaminho dobrado. */
-.ficha-ribbon {
-  position: relative;
-  background: var(--sheet-ribbon);
-  border-block: 1.5px solid var(--sheet-ink);
-  padding: 0.15rem 1.4rem;
-  clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 50%, 100% 100%, 0 100%, 10px 50%);
+.ficha-panel-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: -0.1rem 0 0.4rem;
+  font-family: var(--font-display), serif;
+  font-size: 9pt;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
   color: var(--sheet-ink);
-  line-height: 1.15;
-  white-space: nowrap;
-}
-/* Cabeçalho: espaço embaixo para as faixas de classe, nome e raça. */
-.ficha-header {
-  padding-bottom: 2.9rem;
-}
-
-.ficha-ribbon-main {
-  padding-block: 0.3rem;
-  background: var(--sheet-panel);
-}
-.ficha-ribbon-side {
-  margin-bottom: 0.35rem;
-}
-
-.ficha-portrait {
-  width: 118px;
-  height: 118px;
-  border-radius: 9999px;
-  border: 2px solid var(--sheet-ink);
-  background: var(--sheet-paper);
-  box-shadow: inset 0 0 0 4px var(--sheet-panel), inset 0 0 0 5px var(--sheet-line);
   overflow: hidden;
+}
+.ficha-flourish {
+  flex: 0 1 34px;
+  min-width: 0;
+  height: 9px;
+}
+.ficha-panel-title > span {
+  flex-shrink: 0;
+}
+
+/* Cabeçalho */
+.ficha-portrait-frame {
+  position: relative;
+  width: 46mm;
+  aspect-ratio: 200 / 260;
+}
+.ficha-portrait {
+  position: absolute;
+  left: 11%;
+  top: 9.2%;
+  width: 78%;
+  height: 80%;
+  background: radial-gradient(circle at 50% 40%, #fbf3dc, #d9c39a);
 }
 .ficha-portrait svg {
   display: block;
   width: 100%;
   height: 100%;
 }
+.ficha-arch {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  filter: drop-shadow(0 1px 1.5px oklch(0.2 0.03 60 / 0.45));
+}
+.ficha-name {
+  font-family: var(--font-display), serif;
+  font-size: 23pt;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--sheet-gold-deep);
+  padding-bottom: 2px;
+}
+.ficha-subtitle {
+  margin-top: 3px;
+  font-family: var(--font-display), serif;
+  font-size: 9.5pt;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--sheet-bronze);
+}
+.ficha-meta {
+  margin-top: 6px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0 10px;
+}
+.ficha-meta dt {
+  font-family: var(--font-display), serif;
+  font-size: 6pt;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sheet-muted);
+}
+.ficha-meta dd {
+  font-size: 8.5pt;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-bottom: 1px solid oklch(0.55 0.05 65 / 0.5);
+}
 
-/* Selo de atributo: modificador grande, valor do atributo no círculo menor. */
-.ficha-ability {
+/* Barras: experiência (bronze), vida (vermelho), mana (azul), dados de vida (verde). */
+.ficha-bar-row {
+  display: grid;
+  grid-template-columns: 24mm 1fr;
+  align-items: center;
+  gap: 6px;
+}
+.ficha-bar-label {
+  font-family: var(--font-display), serif;
+  font-size: 7pt;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.ficha-bar {
+  --bar: #9a6a32;
+  --bar-light: #d9a865;
+  position: relative;
+  height: 15px;
+  border: 1px solid var(--sheet-gold-deep);
+  border-radius: 8px;
+  background: oklch(0.3 0.02 60 / 0.18);
+  box-shadow: inset 0 1px 2px oklch(0 0 0 / 0.3);
+  overflow: hidden;
+}
+.ficha-bar-hp {
+  --bar: #8e2b22;
+  --bar-light: #d0574a;
+}
+.ficha-bar-mp {
+  --bar: #2c4a7a;
+  --bar-light: #5c86c4;
+}
+.ficha-bar-hd {
+  --bar: #3f6b35;
+  --bar-light: #74a362;
+}
+.ficha-bar-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: linear-gradient(to bottom, var(--bar-light), var(--bar) 55%, color-mix(in oklch, var(--bar), black 25%));
+}
+.ficha-bar-text {
   position: relative;
   display: flex;
-  flex-direction: column;
+  height: 100%;
   align-items: center;
-  gap: 2px;
-  background: var(--sheet-panel);
-  border: 1.5px solid var(--sheet-ink);
-  border-radius: 14px 14px 30px 30px;
-  padding: 5px 4px 14px;
-  margin-bottom: 8px;
+  justify-content: flex-end;
+  gap: 4px;
+  padding: 0 8px;
+  font-size: 7.5pt;
+  font-weight: 700;
+  color: #fff8e8;
+  text-shadow: 0 1px 1px oklch(0 0 0 / 0.6);
+  font-variant-numeric: tabular-nums;
 }
-.ficha-ability-score {
-  position: absolute;
-  bottom: -9px;
-  min-width: 26px;
-  padding: 0 4px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 9pt;
-  background: var(--sheet-ribbon);
-  border: 1.5px solid var(--sheet-ink);
-  border-radius: 9999px;
+.ficha-bar-blank {
+  display: inline-block;
+  width: 26px;
+  height: 10px;
+  border-radius: 2px;
+  background: oklch(0.97 0.02 85 / 0.85);
+  box-shadow: inset 0 0 0 1px oklch(0.3 0.03 60 / 0.5);
 }
 
-.ficha-stat {
-  border: 1px solid var(--sheet-line);
+/* Atributos e perícias */
+.ficha-ability {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 8.5pt;
+  padding: 2px 0;
+  border-bottom: 1px solid oklch(0.55 0.05 65 / 0.3);
+}
+.ficha-ability-mod {
+  display: inline-grid;
+  place-items: center;
+  min-width: 30px;
+  height: 20px;
+  border: 1px solid var(--sheet-gold-deep);
   border-radius: 4px;
-  padding: 4px;
-  min-height: 58px;
+  background: linear-gradient(#f6ebcf, #e0c993);
+  font-family: var(--font-display), serif;
+  font-size: 10pt;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.ficha-skill {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  break-inside: avoid;
+  padding: 0.6px 0;
+  border-bottom: 1px dotted oklch(0.55 0.05 65 / 0.45);
+}
+.ficha-skill-value {
+  min-width: 22px;
+  text-align: right;
+  font-family: var(--font-display), serif;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.ficha-pip {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  flex-shrink: 0;
+  transform: rotate(45deg);
+  background: var(--sheet-accent);
 }
 
-/* Defesa num escudo. */
+/* Defesa num escudo heráldico. */
 .ficha-shield {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2px;
-  min-height: 58px;
-  background: var(--sheet-ribbon);
-  border: 1.5px solid var(--sheet-ink);
-  clip-path: polygon(0 0, 100% 0, 100% 62%, 50% 100%, 0 62%);
+  gap: 1px;
+  width: 54px;
+  height: 62px;
+  flex-shrink: 0;
   padding-bottom: 10px;
+  color: #fff8e8;
+  text-shadow: 0 1px 1px oklch(0 0 0 / 0.55);
+  background: linear-gradient(135deg, #a8473a, #6e1f19);
+  clip-path: polygon(0 0, 100% 0, 100% 55%, 50% 100%, 0 55%);
+  box-shadow: inset 0 0 0 2px var(--sheet-gold);
+}
+.ficha-blank {
+  height: 14px;
+  border-bottom: 1px dashed var(--sheet-line);
+}
+
+/* Equipamento: espaços em volta do círculo arcano. */
+.ficha-ring {
+  position: relative;
+  width: 100%;
+  max-width: 76mm;
+  margin-inline: auto;
+  aspect-ratio: 1;
+}
+.ficha-arcane {
+  position: absolute;
+  inset: 13%;
+  width: 74%;
+  height: 74%;
+  opacity: 0.75;
+}
+.ficha-ring-slot {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  width: 15.5mm;
+  height: 15.5mm;
+  padding: 2px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 5.8pt;
+  line-height: 1.05;
+  color: oklch(0.45 0.03 60 / 0.75);
+  border: 1px solid var(--sheet-gold-deep);
+  border-radius: 4px;
+  background: oklch(0.88 0.04 80 / 0.85);
+  box-shadow: inset 0 0 0 2px oklch(0.96 0.03 85 / 0.7);
+}
+.ficha-ring-slot-full {
+  color: var(--sheet-ink);
+  font-weight: 600;
+  background: linear-gradient(#f7ecd0, #e2cb98);
+  box-shadow:
+    inset 0 0 0 2px oklch(0.96 0.03 85 / 0.7),
+    0 0 0 1.5px var(--sheet-gold);
+}
+
+/* Inventário 10 × 4 */
+.ficha-inventory {
+  display: grid;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  gap: 3px;
+}
+.ficha-slot {
+  position: relative;
+  aspect-ratio: 1;
+  border: 1px solid oklch(0.5 0.06 65 / 0.6);
+  border-radius: 3px;
+  background: oklch(0.85 0.04 78 / 0.55);
+  box-shadow: inset 0 1px 3px oklch(0.3 0.04 60 / 0.25);
+}
+.ficha-slot-full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  padding: 2px;
+  font-size: 5.6pt;
+  background: linear-gradient(#f5e9cb, #e3cd9d);
+}
+.ficha-slot-equipped {
+  border-color: var(--sheet-gold-deep);
+  box-shadow: 0 0 0 1px var(--sheet-gold);
+}
+.ficha-slot-magic {
+  background: linear-gradient(#eee4f5, #d8c6e6);
+}
+.ficha-slot-qty {
+  position: absolute;
+  right: 2px;
+  bottom: 0;
+  font-size: 6pt;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.ficha-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border: 1px solid var(--sheet-gold-deep);
+  border-radius: 3px 3px 0 0;
+  background: oklch(0.88 0.04 80 / 0.7);
+  font-family: var(--font-display), serif;
+  font-size: 7pt;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sheet-ink);
+  cursor: pointer;
+}
+.ficha-tab[aria-selected="true"] {
+  background: linear-gradient(#f7ecd0, #e2cb98);
+  box-shadow: 0 0 0 1px var(--sheet-gold);
+}
+.ficha-tab:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.ficha-tab:focus-visible {
+  outline: 2px solid var(--sheet-accent);
+  outline-offset: 1px;
 }
 
 .ficha-coin {
-  display: inline-grid;
-  place-items: center;
-  width: 26px;
-  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  min-width: 34px;
+  height: 20px;
+  padding: 0 5px;
   border-radius: 9999px;
-  border: 1.5px solid var(--sheet-ink);
-  background: var(--sheet-ribbon);
+  border: 1px solid var(--sheet-gold-deep);
+  background: radial-gradient(circle at 35% 30%, #f6dc94, #b8863a);
   font-family: var(--font-display), serif;
-  font-size: 7.5pt;
-  font-weight: 600;
+  font-size: 7pt;
+  font-weight: 700;
 }
 
 /* Linhas em branco para escrever à mão. */
 .ficha-lines {
   background-image: repeating-linear-gradient(to bottom, transparent 0 17px, var(--sheet-line) 17px 18px);
-  opacity: 0.5;
+  opacity: 0.45;
 }
 
 @media print {
@@ -313,11 +615,9 @@
     -webkit-print-color-adjust: exact;
   }
   .ficha-page {
-    box-shadow: none;
-    border: 0;
-    min-height: 297mm;
+    filter: none;
   }
-  .ficha-box {
+  .ficha-panel {
     break-inside: avoid;
   }
 }

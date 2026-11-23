@@ -1,0 +1,85 @@
+{
+ "branding-smite": {
+  "n": "Destruição Marcante",
+  "d": ["Na próxima vez que você atingir uma criatura com um ataque com arma antes de a magia terminar, a arma brilha com radiância astral no golpe. O ataque causa 2d6 de dano radiante extra ao alvo, que se torna visível se estiver invisível; o alvo emite penumbra num raio de 1,5 metro e não pode ficar invisível até a magia terminar."],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 3º nível ou superior, o dano extra aumenta em 1d6 para cada nível de espaço acima do 2º."]
+ },
+ "burning-hands": {
+  "n": "Mãos Flamejantes",
+  "d": [
+   "Com as mãos juntas pelos polegares e os dedos abertos, uma fina camada de chamas jorra das pontas dos seus dedos estendidos. Cada criatura num cone de 4,5 metros deve fazer um teste de resistência de Destreza. A criatura sofre 3d6 de dano de fogo se falhar, ou metade se passar.",
+   "O fogo incendeia qualquer objeto inflamável na área que não esteja sendo vestido nem carregado."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 2º nível ou superior, o dano aumenta em 1d6 para cada nível de espaço acima do 1º."]
+ },
+ "call-lightning": {
+  "n": "Convocar Relâmpagos",
+  "d": [
+   "Uma nuvem de tempestade aparece na forma de um cilindro de 3 metros de altura e 18 metros de raio, centrado num ponto que você consiga ver 30 metros diretamente acima de você. A magia falha se você não conseguir ver um ponto no ar onde a nuvem possa aparecer (por exemplo, se estiver num cômodo que não comporte a nuvem).",
+   "Ao lançar a magia, escolha um ponto que consiga ver dentro do alcance. Um relâmpago desce da nuvem até esse ponto. Cada criatura a até 1,5 metro desse ponto deve fazer um teste de resistência de Destreza. A criatura sofre 3d10 de dano elétrico se falhar, ou metade se passar. Em cada um dos seus turnos até a magia terminar, você pode usar sua ação para chamar um relâmpago dessa forma de novo, no mesmo ponto ou em outro.",
+   "Se estiver ao ar livre durante uma tempestade quando lançar esta magia, a magia lhe dá controle sobre a tempestade existente em vez de criar uma nova. Nessas condições, o dano da magia aumenta em 1d10."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 4º nível ou superior, o dano aumenta em 1d10 para cada nível de espaço acima do 3º."]
+ },
+ "calm-emotions": {
+  "n": "Acalmar Emoções",
+  "d": [
+   "Você tenta suprimir emoções fortes num grupo de pessoas. Cada humanoide numa esfera de 6 metros de raio centrada num ponto à sua escolha dentro do alcance deve fazer um teste de resistência de Carisma; uma criatura pode escolher falhar nesse teste se quiser. Se uma criatura falhar, escolha um dos dois efeitos a seguir. Você pode suprimir qualquer efeito que esteja deixando o alvo enfeitiçado ou amedrontado. Quando esta magia terminar, qualquer efeito suprimido volta a valer, desde que sua duração não tenha expirado nesse meio-tempo.",
+   "Em vez disso, você pode deixar o alvo indiferente a criaturas à sua escolha com as quais ele seja hostil. Essa indiferença termina se o alvo for atacado ou ferido por uma magia ou se presenciar algum amigo seu sendo ferido. Quando a magia termina, a criatura volta a ser hostil, a não ser que o Mestre decida o contrário."
+  ]
+ },
+ "chain-lightning": {
+  "n": "Relâmpago em Cadeia",
+  "d": [
+   "Você cria um relâmpago que salta em direção a um alvo à sua escolha que consiga ver dentro do alcance. Três raios então saltam desse alvo para até três outros alvos, cada um a até 9 metros do primeiro. Um alvo pode ser uma criatura ou um objeto, e só pode ser atingido por um dos raios.",
+   "O alvo deve fazer um teste de resistência de Destreza. Sofre 10d8 de dano elétrico se falhar, ou metade se passar."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 7º nível ou superior, um raio adicional salta do primeiro alvo para outro alvo para cada nível de espaço acima do 6º."],
+  "m": "Um pouco de pelo; um pedaço de âmbar, vidro ou um bastão de cristal; e três alfinetes de prata."
+ },
+ "charm-person": {
+  "n": "Enfeitiçar Pessoa",
+  "d": ["Você tenta enfeitiçar um humanoide que consiga ver dentro do alcance. Ele deve fazer um teste de resistência de Sabedoria, com vantagem se você ou seus companheiros estiverem lutando contra ele. Se falhar, fica enfeitiçado por você até a magia terminar ou até você ou seus companheiros fazerem algo que o prejudique. A criatura enfeitiçada o considera um conhecido amigável. Quando a magia termina, a criatura sabe que foi enfeitiçada por você."],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 2º nível ou superior, pode escolher uma criatura adicional como alvo para cada nível de espaço acima do 1º. As criaturas precisam estar a até 9 metros umas das outras quando você as escolhe."]
+ },
+ "chill-touch": {
+  "n": "Toque Arrepiante",
+  "d": [
+   "Você cria uma mão esquelética e fantasmagórica no espaço de uma criatura dentro do alcance. Faça um ataque mágico à distância contra a criatura para atacá-la com o frio da sepultura. Se acertar, o alvo sofre 1d8 de dano necrótico e não pode recuperar pontos de vida até o início do seu próximo turno. Até lá, a mão fica agarrada ao alvo.",
+   "Se você acertar um alvo morto-vivo, ele também tem desvantagem em jogadas de ataque contra você até o fim do seu próximo turno.",
+   "O dano desta magia aumenta em 1d8 quando você alcança o 5º nível (2d8), o 11º nível (3d8) e o 17º nível (4d8)."
+  ]
+ },
+ "circle-of-death": {
+  "n": "Círculo da Morte",
+  "d": ["Uma esfera de energia negativa se propaga num raio de 18 metros a partir de um ponto dentro do alcance. Cada criatura nessa área deve fazer um teste de resistência de Constituição. O alvo sofre 8d6 de dano necrótico se falhar, ou metade se passar."],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 7º nível ou superior, o dano aumenta em 2d6 para cada nível de espaço acima do 6º."],
+  "m": "O pó de uma pérola negra triturada no valor de pelo menos 500 po."
+ },
+ "clairvoyance": {
+  "n": "Clarividência",
+  "d": [
+   "Você cria um sensor invisível dentro do alcance num local que conheça (um lugar que já visitou ou viu) ou num local óbvio que não conheça (como atrás de uma porta, depois de uma esquina ou num bosque). O sensor fica no lugar pela duração e não pode ser atacado nem receber qualquer outra interação.",
+   "Ao lançar a magia, você escolhe visão ou audição. Pode usar o sentido escolhido pelo sensor como se estivesse no espaço dele. Com sua ação, pode alternar entre visão e audição.",
+   "Uma criatura que consiga ver o sensor (como uma criatura sob o efeito de ver o invisível ou com visão verdadeira) vê um orbe luminoso e intangível do tamanho do seu punho."
+  ],
+  "m": "Um foco no valor de pelo menos 100 po: um chifre com joias para audição ou um olho de vidro para visão."
+ },
+ "clone": {
+  "n": "Clone",
+  "d": [
+   "Esta magia faz crescer uma duplicata inerte de uma criatura viva como garantia contra a morte. O clone se forma dentro de um recipiente selado e atinge tamanho e maturidade completos após 120 dias; você também pode escolher que o clone seja uma versão mais jovem da mesma criatura. Ele permanece inerte e dura indefinidamente, desde que o recipiente não seja perturbado.",
+   "A qualquer momento depois de o clone amadurecer, se a criatura original morrer, a alma dela se transfere para o clone, desde que esteja livre e disposta a voltar. O clone é fisicamente idêntico ao original e tem a mesma personalidade, memórias e capacidades, mas nenhum equipamento do original. Os restos físicos da criatura original, se ainda existirem, ficam inertes e não podem mais ser trazidos de volta à vida, já que a alma da criatura está em outro lugar."
+  ],
+  "m": "Um diamante no valor de pelo menos 1.000 po e pelo menos 16 centímetros cúbicos de carne da criatura a ser clonada, consumidos pela magia, e um recipiente no valor de pelo menos 2.000 po com tampa que possa ser selada e grande o bastante para conter uma criatura Média, como uma urna enorme, um caixão, um cisto cheio de lama no chão ou um recipiente de cristal cheio de água salgada."
+ },
+ "cloudkill": {
+  "n": "Névoa Mortal",
+  "d": [
+   "Você cria uma esfera de 6 metros de raio de névoa venenosa amarelo-esverdeada, centrada num ponto à sua escolha dentro do alcance. A névoa contorna esquinas. Dura pela duração ou até um vento forte dispersá-la, encerrando a magia. A área fica muito obscurecida.",
+   "Quando uma criatura entra na área da magia pela primeira vez num turno ou começa o turno ali, deve fazer um teste de resistência de Constituição. A criatura sofre 5d8 de dano de veneno se falhar, ou metade se passar. As criaturas são afetadas mesmo que prendam a respiração ou não precisem respirar.",
+   "A névoa se afasta 3 metros de você no início de cada um dos seus turnos, rolando pela superfície do chão. Os vapores, mais pesados que o ar, descem para o nível mais baixo do terreno, escorrendo até por aberturas."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 6º nível ou superior, o dano aumenta em 1d8 para cada nível de espaço acima do 5º."]
+ }
+}

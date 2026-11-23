@@ -16,7 +16,7 @@ export function testPack(rulesetId: string): ContentPack {
     entries: [
       { id: "class:test-fighter", kind: "class", name: "Guerreiro de Teste", summary: "", origin: "authorized", source, license: "test-only", roles: [], data: {} },
       { id: "class:test-mage", kind: "class", name: "Mago de Teste", summary: "", origin: "authorized", source, license: "test-only", roles: [], data: {} },
-      { id: "species:test-elf", kind: "species", name: "Elfo de Teste", summary: "", origin: "authorized", source, license: "test-only", roles: [], data: { abilityBonuses: { dex: 2 } } },
+      { id: "species:test-elf", kind: "species", name: "Elfo de Teste", summary: "", origin: "authorized", source, license: "test-only", roles: [], data: { abilityBonuses: { dex: 2 }, speed: 9, size: "Médio" } },
       {
         id: "background:test-sage",
         kind: "background",
@@ -26,7 +26,7 @@ export function testPack(rulesetId: string): ContentPack {
         source,
         license: "test-only",
         roles: [],
-        data: { abilityOptions: ["int", "wis", "con"] },
+        data: { abilityScores: ["int", "wis", "con"] },
       },
       {
         id: "power:test-lvl6",
@@ -76,7 +76,7 @@ export function testPack(rulesetId: string): ContentPack {
         prerequisites: { type: "minAbility", ability: "str", value: 13 },
         data: {},
       },
-      { id: "feat:test-homebrew", kind: "feat", name: "Talento Caseiro", summary: "", origin: "homebrew", source, license: "test-only", roles: [], data: {} },
+      { id: "feat:test-homebrew", kind: "feat", name: "Talento Caseiro", summary: "", origin: "homebrew", source, license: "test-only", roles: [], data: { type: "origin" } },
     ],
   };
 }

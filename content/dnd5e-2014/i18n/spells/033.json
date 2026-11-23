@@ -1,0 +1,81 @@
+{
+ "tree-stride": {
+  "n": "Caminhar em Árvores",
+  "d": [
+   "Você ganha a capacidade de entrar numa árvore e se mover de dentro dela para dentro de outra árvore da mesma espécie a até 150 metros. As duas árvores precisam estar vivas e ter pelo menos o seu tamanho. Você precisa usar 1,5 metro de movimento para entrar numa árvore. Sabe instantaneamente a localização de todas as outras árvores da mesma espécie a até 150 metros e, como parte do movimento usado para entrar na árvore, pode passar para uma delas ou sair da árvore em que está. Você aparece num ponto à sua escolha a até 1,5 metro da árvore de destino, usando mais 1,5 metro de movimento. Se não tiver movimento restante, aparece a até 1,5 metro da árvore em que entrou.",
+   "Você pode usar essa capacidade de transporte uma vez por rodada pela duração. Precisa terminar cada turno fora de uma árvore."
+  ]
+ },
+ "true-polymorph": {
+  "n": "Metamorfose Verdadeira",
+  "d": [
+   "Escolha uma criatura ou um objeto não mágico que você consiga ver dentro do alcance. Você transforma a criatura em outra criatura, a criatura num objeto ou o objeto numa criatura (o objeto não pode estar sendo vestido nem carregado por outra criatura). A transformação dura pela duração, ou até o alvo cair a 0 pontos de vida ou morrer. Se você se concentrar na magia por toda a duração, a transformação se torna permanente.",
+   "Metamorfos não são afetados por esta magia. Uma criatura não voluntária pode fazer um teste de resistência de Sabedoria e, se passar, não é afetada.",
+   "*Criatura em Criatura.* Se transformar uma criatura em outro tipo de criatura, a nova forma pode ser de qualquer tipo à sua escolha cujo nível de desafio seja igual ou menor que o do alvo (ou que o nível dele, se o alvo não tiver nível de desafio). As estatísticas de jogo do alvo, incluindo os valores de habilidades mentais, são substituídas pelas da nova forma. Ele mantém sua tendência e personalidade.",
+   "O alvo assume os pontos de vida da nova forma e, quando volta à forma normal, retorna aos pontos de vida que tinha antes de se transformar. Se voltar por ter caído a 0 pontos de vida, o dano excedente passa para a forma normal. Desde que o dano excedente não reduza a forma normal a 0 pontos de vida, a criatura não fica inconsciente.",
+   "A criatura fica limitada nas ações que pode realizar pela natureza da nova forma e não pode falar, lançar magias nem realizar qualquer outra ação que exija mãos ou fala, a menos que a nova forma seja capaz disso.",
+   "O equipamento do alvo se funde à nova forma. A criatura não pode ativar, usar, empunhar nem se beneficiar de nenhum modo do seu equipamento.",
+   "*Objeto em Criatura.* Você pode transformar um objeto em qualquer tipo de criatura, desde que o tamanho dela não seja maior que o do objeto e o nível de desafio dela seja 9 ou menor. A criatura é amistosa com você e seus companheiros. Ela age em cada um dos seus turnos. Você decide que ação ela realiza e como se move. O Mestre tem as estatísticas da criatura e resolve todas as ações e movimentos dela.",
+   "Se a magia se tornar permanente, você deixa de controlar a criatura. Ela pode continuar amistosa, dependendo de como você a tratou.",
+   "*Criatura em Objeto.* Se transformar uma criatura num objeto, ela se transforma nessa forma junto com tudo o que estiver vestindo e carregando. As estatísticas da criatura passam a ser as do objeto, e ela não guarda nenhuma memória do tempo passado nessa forma depois que a magia termina e ela volta à forma normal."
+  ],
+  "m": "Uma gota de mercúrio, uma porção de goma-arábica e um fiapo de fumaça."
+ },
+ "true-resurrection": {
+  "n": "Ressurreição Verdadeira",
+  "d": [
+   "Você toca uma criatura morta há no máximo 200 anos e que tenha morrido por qualquer motivo, exceto velhice. Se a alma da criatura estiver livre e disposta, ela volta à vida com todos os pontos de vida.",
+   "Esta magia fecha todas as feridas, neutraliza qualquer veneno, cura todas as doenças e remove quaisquer maldições que afetavam a criatura quando ela morreu. A magia substitui órgãos e membros danificados ou perdidos.",
+   "A magia pode até fornecer um novo corpo se o original não existir mais; nesse caso, você precisa dizer o nome da criatura. Ela então aparece num espaço desocupado à sua escolha a até 3 metros de você."
+  ],
+  "m": "Algumas gotas de água benta e diamantes no valor de pelo menos 25.000 po, que a magia consome."
+ },
+ "true-seeing": {
+  "n": "Visão da Verdade",
+  "d": ["Esta magia dá à criatura voluntária que você toca a capacidade de ver as coisas como realmente são. Pela duração, a criatura tem visão verdadeira, percebe portas secretas escondidas por magia e consegue ver o Plano Etéreo, tudo num alcance de 36 metros."],
+  "m": "Uma pomada para os olhos que custa 25 po, feita de pó de cogumelo, açafrão e gordura, que a magia consome."
+ },
+ "true-strike": {
+  "n": "Golpe Certeiro",
+  "d": ["Você estende a mão e aponta um dedo para um alvo dentro do alcance. Sua magia lhe concede uma breve percepção das defesas do alvo. No seu próximo turno, você tem vantagem na primeira jogada de ataque contra o alvo, desde que esta magia não tenha terminado."]
+ },
+ "unseen-servant": {
+  "n": "Servo Invisível",
+  "d": [
+   "Esta magia cria uma força invisível, sem mente e sem forma, que realiza tarefas simples sob seu comando até a magia terminar. O servo surge num espaço desocupado no chão dentro do alcance. Ele tem CA 10, 1 ponto de vida e Força 2, e não pode atacar. Se cair a 0 pontos de vida, a magia termina.",
+   "Uma vez em cada um dos seus turnos, com uma ação bônus, você pode comandar mentalmente o servo a se mover até 4,5 metros e interagir com um objeto. O servo pode realizar tarefas simples que um servo humano faria, como buscar coisas, limpar, consertar, dobrar roupas, acender fogueiras, servir comida e servir vinho. Depois que você dá o comando, o servo realiza a tarefa da melhor forma possível até concluí-la e então espera seu próximo comando.",
+   "Se você comandar o servo a realizar uma tarefa que o leve a mais de 18 metros de você, a magia termina."
+  ],
+  "m": "Um pedaço de barbante e um pedacinho de madeira."
+ },
+ "vampiric-touch": {
+  "n": "Toque Vampírico",
+  "d": ["O toque da sua mão envolta em sombras pode drenar a força vital dos outros para curar seus ferimentos. Faça um ataque mágico corpo a corpo contra uma criatura ao seu alcance. Se acertar, o alvo sofre 3d6 de dano necrótico, e você recupera pontos de vida iguais à metade do dano necrótico causado. Até a magia terminar, você pode fazer o ataque de novo em cada um dos seus turnos com uma ação."]
+ },
+ "vicious-mockery": {
+  "n": "Zombaria Viciosa",
+  "d": [
+   "Você solta uma série de insultos carregados de encantamentos sutis contra uma criatura que consiga ver dentro do alcance. Se o alvo conseguir ouvi-lo (mesmo sem entendê-lo), deve passar num teste de resistência de Sabedoria ou sofrer 1d4 de dano psíquico e ter desvantagem na próxima jogada de ataque que fizer antes do fim do próximo turno dele.",
+   "O dano desta magia aumenta em 1d4 quando você alcança o 5º nível (2d4), o 11º nível (3d4) e o 17º nível (4d4)."
+  ]
+ },
+ "wall-of-fire": {
+  "n": "Muralha de Fogo",
+  "d": [
+   "Você cria uma muralha de fogo numa superfície sólida dentro do alcance. Pode fazer a muralha com até 18 metros de comprimento, 6 metros de altura e 30 centímetros de espessura, ou uma muralha circular de até 6 metros de diâmetro, 6 metros de altura e 30 centímetros de espessura. A muralha é opaca e dura pela duração.",
+   "Quando a muralha aparece, cada criatura na área dela deve fazer um teste de resistência de Destreza. A criatura sofre 5d8 de dano de fogo se falhar, ou metade se passar.",
+   "Um lado da muralha, escolhido por você ao lançar a magia, causa 5d8 de dano de fogo a cada criatura que termine o turno a até 3 metros desse lado ou dentro da muralha. Uma criatura sofre o mesmo dano quando entra na muralha pela primeira vez num turno ou termina o turno ali.",
+   "O outro lado da muralha não causa dano."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 5º nível ou superior, o dano aumenta em 1d8 para cada nível de espaço acima do 4º."],
+  "m": "Um pedacinho de fósforo."
+ },
+ "wall-of-force": {
+  "n": "Muralha de Energia",
+  "d": [
+   "Uma muralha invisível de energia surge num ponto à sua escolha dentro do alcance. A muralha aparece na orientação que você escolher, como uma barreira horizontal, vertical ou inclinada. Pode flutuar livremente ou se apoiar numa superfície sólida. Você pode dar a ela a forma de uma cúpula hemisférica ou de uma esfera com raio de até 3 metros, ou moldar uma superfície plana formada por dez painéis de 3 por 3 metros. Cada painel precisa estar encostado em outro. Em qualquer forma, a muralha tem 6 milímetros de espessura. Dura pela duração. Se a muralha atravessar o espaço de uma criatura quando aparecer, a criatura é empurrada para um dos lados dela (você escolhe qual).",
+   "Nada pode atravessar fisicamente a muralha. Ela é imune a todo dano e não pode ser dissipada por dissipar magia. Uma magia desintegrar, porém, destrói a muralha instantaneamente. A muralha também se estende ao Plano Etéreo, bloqueando a viagem etérea através dela."
+  ],
+  "m": "Uma pitada de pó feito esmagando uma pedra preciosa transparente."
+ }
+}

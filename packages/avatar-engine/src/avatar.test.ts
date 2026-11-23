@@ -119,19 +119,26 @@ describe("composição", () => {
   it("ids internos ganham prefixo por camada", () => {
     const c = withSlot(base(), "eyes", "eyes:brilhantes");
     const svg = composeSvg(c);
-    expect(svg).toContain('id="eyes-eyes-brilho"');
-    expect(svg).toContain("url(#eyes-eyes-brilho)");
+    expect(svg).toContain('id="eyes-eyes-glow"');
+    expect(svg).toContain("url(#eyes-eyes-glow)");
+  });
+
+  it("referências de <use> seguem o prefixo do id", () => {
+    const svg = composeSvg(base());
+    expect(svg).toContain('id="body-body-legL"');
+    expect(svg).toContain('href="#body-body-legL"');
+    expect(svg).not.toMatch(/href="#(?!body-|ears-|brows-|feet-|torso-|hair-|eyes-|nose-|mouth-|head-|legs-|belt-|background-)/);
   });
 
   it("prefixo extra deixa ids únicos entre avatares na mesma página", () => {
     const svg = composeSvg(withSlot(base(), "eyes", "eyes:brilhantes"), { idPrefix: "c1" });
-    expect(svg).toContain('id="c1-eyes-eyes-brilho"');
-    expect(svg).toContain("url(#c1-eyes-eyes-brilho)");
+    expect(svg).toContain('id="c1-eyes-eyes-glow"');
+    expect(svg).toContain("url(#c1-eyes-eyes-glow)");
   });
 
   it("gera retrato recortado e opção sem fundo", () => {
     const portrait = composeSvg(base(), { frame: "portrait" });
-    expect(portrait).toContain('viewBox="136 36 240 240"');
+    expect(portrait).toContain('viewBox="194 50 124 124"');
     expect(composeSvg(base(), { background: false })).not.toContain('data-layer="background');
   });
 });

@@ -1,0 +1,86 @@
+{
+ "conjure-elemental": {
+  "n": "Conjurar Elemental",
+  "d": [
+   "Você chama um servo elemental. Escolha uma área de ar, terra, fogo ou água que preencha um cubo de 3 metros dentro do alcance. Um elemental de nível de desafio 5 ou menor apropriado à área escolhida aparece num espaço desocupado a até 3 metros dela. Por exemplo, um elemental do fogo emerge de uma fogueira, e um elemental da terra se ergue do chão. O elemental desaparece quando cai a 0 pontos de vida ou quando a magia termina.",
+   "O elemental é amigável com você e seus companheiros pela duração. Role iniciativa para ele, que tem seus próprios turnos. Ele obedece a qualquer comando verbal que você der (sem exigir ação sua). Se você não der comandos, ele se defende de criaturas hostis, mas fora isso não realiza ações.",
+   "Se sua concentração for interrompida, o elemental não desaparece. Em vez disso, você perde o controle sobre ele, que se torna hostil a você e a seus companheiros e pode atacar. Você não pode dispensar um elemental descontrolado, e ele desaparece 1 hora depois de ter sido invocado.",
+   "O Mestre tem as estatísticas do elemental."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 6º nível ou superior, o nível de desafio aumenta em 1 para cada nível de espaço acima do 5º."],
+  "m": "Incenso queimando para o ar, argila mole para a terra, enxofre e fósforo para o fogo, ou água e areia para a água."
+ },
+ "conjure-fey": {
+  "n": "Conjurar Fada",
+  "d": [
+   "Você invoca uma criatura feérica de nível de desafio 6 ou menor, ou um espírito feérico que assume a forma de uma fera de nível de desafio 6 ou menor. Ela aparece num espaço desocupado que você consiga ver dentro do alcance. A criatura feérica desaparece quando cai a 0 pontos de vida ou quando a magia termina.",
+   "A criatura feérica é amigável com você e seus companheiros pela duração. Role iniciativa para ela, que tem seus próprios turnos. Ela obedece a qualquer comando verbal que você der (sem exigir ação sua), desde que não viole sua tendência. Se você não der comandos, ela se defende de criaturas hostis, mas fora isso não realiza ações.",
+   "Se sua concentração for interrompida, a criatura feérica não desaparece. Em vez disso, você perde o controle sobre ela, que se torna hostil a você e a seus companheiros e pode atacar. Você não pode dispensar uma criatura feérica descontrolada, e ela desaparece 1 hora depois de ter sido invocada.",
+   "O Mestre tem as estatísticas da criatura feérica."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 7º nível ou superior, o nível de desafio aumenta em 1 para cada nível de espaço acima do 6º."]
+ },
+ "conjure-minor-elementals": {
+  "n": "Conjurar Elementais Menores",
+  "d": [
+   "Você invoca elementais que aparecem em espaços desocupados que consiga ver dentro do alcance. Escolha uma das opções a seguir para o que aparece:",
+   "- Um elemental de nível de desafio 2 ou menor",
+   "- Dois elementais de nível de desafio 1 ou menor",
+   "- Quatro elementais de nível de desafio 1/2 ou menor",
+   "- Oito elementais de nível de desafio 1/4 ou menor.",
+   "Um elemental invocado por esta magia desaparece quando cai a 0 pontos de vida ou quando a magia termina.",
+   "As criaturas invocadas são amigáveis com você e seus companheiros. Role iniciativa para elas como um grupo, que tem seus próprios turnos. Elas obedecem a qualquer comando verbal que você der (sem exigir ação sua). Se você não der comandos, elas se defendem de criaturas hostis, mas fora isso não realizam ações.",
+   "O Mestre tem as estatísticas das criaturas."
+  ],
+  "h": ["Quando você lança esta magia usando certos espaços de magia de nível mais alto, escolhe uma das opções de invocação acima, e aparecem mais criaturas: o dobro com um espaço de 6º nível e o triplo com um de 8º nível."]
+ },
+ "conjure-woodland-beings": {
+  "n": "Conjurar Seres da Floresta",
+  "d": [
+   "Você invoca criaturas feéricas que aparecem em espaços desocupados que consiga ver dentro do alcance. Escolha uma das opções a seguir para o que aparece:",
+   "- Uma criatura feérica de nível de desafio 2 ou menor",
+   "- Duas criaturas feéricas de nível de desafio 1 ou menor",
+   "- Quatro criaturas feéricas de nível de desafio 1/2 ou menor",
+   "- Oito criaturas feéricas de nível de desafio 1/4 ou menor",
+   "Uma criatura invocada desaparece quando cai a 0 pontos de vida ou quando a magia termina.",
+   "As criaturas invocadas são amigáveis com você e seus companheiros. Role iniciativa para elas como um grupo, que tem seus próprios turnos. Elas obedecem a qualquer comando verbal que você der (sem exigir ação sua). Se você não der comandos, elas se defendem de criaturas hostis, mas fora isso não realizam ações.",
+   "O Mestre tem as estatísticas das criaturas."
+  ],
+  "m": "Uma baga de azevinho por criatura invocada."
+ },
+ "contact-other-plane": {
+  "n": "Contatar Outro Plano",
+  "d": [
+   "Você contata mentalmente um semideus, o espírito de um sábio morto há muito tempo ou alguma outra entidade misteriosa de outro plano. Contatar essa inteligência extraplanar pode sobrecarregar ou até destruir sua mente. Ao lançar esta magia, faça um teste de resistência de Inteligência CD 15. Se falhar, você sofre 6d6 de dano psíquico e fica insano até terminar um descanso longo. Enquanto estiver insano, não pode realizar ações, não entende o que as outras criaturas dizem, não consegue ler e só fala coisas sem sentido. Uma magia restauração maior lançada em você encerra esse efeito.",
+   "Se passar, você pode fazer até cinco perguntas à entidade. Precisa fazê-las antes de a magia terminar. O Mestre responde a cada pergunta com uma palavra, como \"sim\", \"não\", \"talvez\", \"nunca\", \"irrelevante\" ou \"incerto\" (se a entidade não souber a resposta). Se uma resposta de uma palavra puder ser enganosa, o Mestre pode oferecer uma frase curta como resposta."
+  ]
+ },
+ "contagion": {
+  "n": "Contágio",
+  "d": [
+   "Seu toque transmite doença. Faça um ataque mágico corpo a corpo contra uma criatura ao seu alcance. Se acertar, você aflige a criatura com uma doença à sua escolha entre as descritas abaixo.",
+   "No fim de cada turno do alvo, ele deve fazer um teste de resistência de Constituição. Depois de falhar em três desses testes, os efeitos da doença duram pela duração, e a criatura para de fazer os testes. Depois de passar em três desses testes, a criatura se recupera da doença, e a magia termina.",
+   "Como esta magia induz uma doença natural no alvo, qualquer efeito que remova uma doença ou atenue seus efeitos se aplica a ela.",
+   "*Doença Cegante.* A dor domina a mente da criatura, e seus olhos ficam brancos como leite. A criatura tem desvantagem em testes de Sabedoria e testes de resistência de Sabedoria e fica cega.",
+   "*Febre da Imundície.* Uma febre violenta se espalha pelo corpo da criatura. Ela tem desvantagem em testes de Força, testes de resistência de Força e jogadas de ataque que usam Força.",
+   "*Carne Podre.* A carne da criatura apodrece. Ela tem desvantagem em testes de Carisma e vulnerabilidade a todo dano.",
+   "*Mente em Chamas.* A mente da criatura fica febril. Ela tem desvantagem em testes de Inteligência e testes de resistência de Inteligência e se comporta como se estivesse sob os efeitos da magia confusão durante o combate.",
+   "*Convulsão.* A criatura é tomada por tremores. Ela tem desvantagem em testes de Destreza, testes de resistência de Destreza e jogadas de ataque que usam Destreza.",
+   "*Perdição Viscosa.* A criatura começa a sangrar sem controle. Ela tem desvantagem em testes de Constituição e testes de resistência de Constituição. Além disso, sempre que sofre dano, fica atordoada até o fim do próximo turno dela."
+  ]
+ },
+ "contingency": {
+  "n": "Contingência",
+  "d": [
+   "Escolha uma magia de 5º nível ou menor que você possa lançar, com tempo de conjuração de 1 ação e que possa ter você como alvo. Você lança essa magia (chamada de magia contingente) como parte da conjuração de contingência, gastando espaços de magia para as duas, mas a magia contingente não entra em efeito. Em vez disso, ela entra em efeito quando ocorre uma certa circunstância, que você descreve ao lançar as duas magias. Por exemplo, uma contingência lançada com respirar na água pode estipular que respirar na água entre em efeito quando você for engolido por água ou por um líquido semelhante.",
+   "A magia contingente entra em efeito imediatamente depois de a circunstância acontecer pela primeira vez, queira você ou não, e então contingência termina.",
+   "A magia contingente só faz efeito em você, mesmo que normalmente possa ter outros como alvo. Você só pode usar uma magia contingência por vez. Se lançar esta magia de novo, o efeito de outra magia contingência em você termina. Além disso, contingência termina se o componente material dela deixar de estar com você."
+  ],
+  "m": "Uma estatueta sua esculpida em marfim e decorada com gemas, no valor de pelo menos 1.500 po."
+ },
+ "continual-flame": {
+  "n": "Chama Contínua",
+  "d": ["Uma chama, com o brilho equivalente ao de uma tocha, surge de um objeto que você toca. O efeito parece uma chama comum, mas não gera calor nem consome oxigênio. Uma chama contínua pode ser coberta ou escondida, mas não abafada nem apagada."],
+  "m": "Pó de rubi no valor de 50 po, que a magia consome."
+ }
+}

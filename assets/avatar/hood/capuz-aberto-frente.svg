@@ -1,10 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
-    <path fill="#{primary}" d="M182 240 C170 170 186 104 226 82 C246 72 266 72 286 82 C326 104 342 170 330 240 C328 200 318 150 296 122 C282 108 268 104 256 104 C244 104 230 108 216 122 C194 150 184 200 182 240 Z"/>
-    <path fill="#{primary}" d="M182 236 C196 262 220 278 236 284 L276 284 C292 278 316 262 330 236 C344 260 352 290 346 304 C322 296 190 296 166 304 C160 290 168 260 182 236 Z"/>
-    <path fill="#{primary-light}" stroke="none" opacity="0.35" d="M226 88 C246 80 266 80 286 88 C268 86 244 86 226 94 Z"/>
-    <path fill="none" stroke="#{secondary}" stroke-width="4" d="M186 236 C184 196 194 150 218 124 C232 110 244 106 256 106 C268 106 280 110 294 124 C318 150 328 196 326 236"/>
-    <path fill="#{primary-deep}" d="M204 110 C210 100 222 96 230 100 C226 110 218 118 208 122 Z"/>
-    <path fill="#{primary-deep}" d="M308 110 C302 100 290 96 282 100 C286 110 294 118 304 122 Z"/>
+  <defs>
+    <filter id="f-primary" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{primary-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="f-secondary" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{secondary-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="soft2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.5"/></filter>
+  </defs>
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <clipPath id="face"><path d="M256 76 C238 76 226 86 222 104 C219 122 220 142 226 158 C234 170 246 178 256 181 C266 178 278 170 286 158 C292 142 293 122 290 104 C286 86 274 76 256 76 Z"/></clipPath>
+    <path fill="#{primary-deep}" stroke="none" opacity="0.7" filter="url(#soft)" clip-path="url(#face)" d="M256 76 C238 76 226 86 222 104 C219 122 220 142 226 158 C234 170 246 178 256 181 C266 178 278 170 286 158 C292 142 293 122 290 104 C286 86 274 76 256 76 M256 96 C240 96 232 110 230 126 C229 140 236 156 256 164 C276 156 283 140 282 126 C280 110 272 96 256 96 Z" fill-rule="evenodd"/>
+    <path fill="#{primary}" stroke="#{primary-deep}" stroke-width="1" filter="url(#f-primary)" d="M256 54 C230 54 210 72 205 100 C200 128 201 156 206 178 C200 186 188 192 176 198 C168 203 164 210 166 219 C190 229 222 235 256 237 C290 235 322 229 346 219 C348 210 344 203 336 198 C324 192 312 186 306 178 C311 156 312 128 307 100 C302 72 282 54 256 54 Z M256 76 C238 76 226 86 222 104 C219 122 220 142 226 158 C234 170 246 178 256 181 C266 178 278 170 286 158 C292 142 293 122 290 104 C286 86 274 76 256 76 Z" fill-rule="evenodd"/>
+    <path fill="none" stroke="#{primary-deep}" stroke-width="2.4" opacity="0.8" d="M256 76 C238 76 226 86 222 104 C219 122 220 142 226 158 C234 170 246 178 256 181 C266 178 278 170 286 158 C292 142 293 122 290 104 C286 86 274 76 256 76 Z"/>
+    <path fill="none" stroke="#{primary-light}" stroke-width="0.8" opacity="0.5" d="M256 73 C236 73 222 84 219 104 C216 124 217 144 223 160 C232 173 245 181 256 184 C267 181 280 173 289 160 C295 144 296 124 293 104 C290 84 276 73 256 73"/>
+    <path fill="none" stroke="#{primary-deep}" stroke-width="0.8" opacity="0.45" d="M212 120 C210 140 210 160 214 178 M300 120 C302 140 302 160 298 178 M180 204 C200 214 222 220 240 222 M332 204 C312 214 290 220 272 222 M236 66 C228 76 222 88 220 100 M276 66 C284 76 290 88 292 100"/>
+    <path fill="#{primary-light}" stroke="none" opacity="0.35" filter="url(#soft)" d="M236 60 C248 56 264 56 276 60 C266 62 248 64 240 70 Z"/>
+    <path fill="#{secondary}" stroke="#{secondary-deep}" stroke-width="0.7" d="M249 214 C251 210 261 210 263 214 C261 218 251 218 249 214 Z"/>
+    <path fill="none" stroke="#{secondary}" stroke-width="1.4" d="M251 216 C249 224 248 232 249 238 M261 216 C263 224 264 232 263 238"/>
+    <path fill="#{primary-deep}" stroke="#{primary-deep}" stroke-width="0.8" d="M232 80 C234 76 242 76 244 80 C242 86 234 86 232 80 Z M268 80 C270 76 278 76 280 80 C278 86 270 86 268 80 Z"/>
+    <path fill="none" stroke="#{secondary}" stroke-width="1.2" d="M231 80 C233 74 243 74 245 80 C243 87 233 87 231 80 Z M267 80 C269 74 279 74 281 80 C279 87 269 87 267 80 Z"/>
   </g>
 </svg>

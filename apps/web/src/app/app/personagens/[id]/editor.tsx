@@ -152,7 +152,7 @@ export function CharacterEditor(props: {
         <div className="mt-6 rounded-lg border bg-card p-5">
           {step.id === "concept" && <ConceptStep data={data} update={update} issues={issuesFor("name")} />}
           {step.id === "level" && <LevelStep data={data} update={update} engine={engine} issues={issuesFor("level")} />}
-          {step.id === "abilities" && <AbilitiesStep data={data} update={update} engine={engine} derived={derived} issues={issuesFor("abilities").concat(issuesFor("abilityMethod"))} />}
+          {step.id === "abilities" && <AbilitiesStep data={data} update={update} engine={engine} catalog={catalog} derived={derived} issues={issuesFor("abilities").concat(issuesFor("abilityMethod"), issuesFor("levelBonuses"))} />}
           {step.id === "narrative" && <NarrativeStep data={data} update={update} />}
           {step.id === "review" && (
             <ReviewStep
@@ -366,10 +366,20 @@ function AbilitiesStep({
   data,
   update,
   engine,
+  catalog,
   derived,
   issues,
-}: StepProps & { engine: Engine; derived: ReturnType<Engine["derive"]>; issues: ValidationIssue[] }) {
+}: StepProps & { engine: Engine; catalog: Catalog; derived: ReturnType<Engine["derive"]>; issues: ValidationIssue[] }) {
   const method = engine.abilityMethods.find((m) => m.id === data.abilityMethod);
+  const budget = engine.levelBonusBudget?.(data, catalog);
+  const used = Object.values(data.levelBonuses ?? {}).reduce((t, v) => t + v, 0);
+  const setLevelBonus = (key: string, delta: number) => {
+    const next = { ...(data.levelBonuses ?? {}) };
+    const v = Math.max(0, (next[key] ?? 0) + delta);
+    if (v) next[key] = v;
+    else delete next[key];
+    update({ levelBonuses: next });
+  };
   return (
     <div className="space-y-5">
       <fieldset>
@@ -431,6 +441,43 @@ function AbilitiesStep({
           );
         })}
       </div>
+      {budget && (budget.points > 0 || used > 0) && (
+        <fieldset className="rounded-md border p-3">
+          <legend className="px-1 text-sm font-medium">
+            Aumentos por nível: {used}/{budget.points} ponto(s)
+          </legend>
+          <p className="text-xs text-muted-foreground">{budget.detail}</p>
+          <div className="mt-2 grid gap-2 sm:grid-cols-3">
+            {engine.abilities.map((a) => {
+              const v = data.levelBonuses?.[a.key] ?? 0;
+              const total = derived.abilities[a.key]?.score ?? 0;
+              return (
+                <div key={a.key} className="flex items-center justify-between gap-2 rounded-md border p-2 text-sm">
+                  <span>
+                    {a.abbr} <span className="text-xs text-muted-foreground">({total})</span>
+                  </span>
+                  <span className="inline-flex items-center gap-1">
+                    <Button type="button" size="sm" variant="outline" aria-label={`Tirar 1 de ${a.label}`} disabled={!v} onClick={() => setLevelBonus(a.key, -1)}>
+                      −
+                    </Button>
+                    <span className="w-6 text-center tabular-nums">{v ? `+${v}` : "0"}</span>
+                    <Button
+                      type="button"
+                      size="sm"
+                      variant="outline"
+                      aria-label={`Somar 1 em ${a.label}`}
+                      disabled={used >= budget.points || total >= budget.max}
+                      onClick={() => setLevelBonus(a.key, 1)}
+                    >
+                      +
+                    </Button>
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </fieldset>
+      )}
       <IssueList issues={issues} empty={method ? "Atributos válidos para este método." : "Escolha um método para começar."} />
     </div>
   );

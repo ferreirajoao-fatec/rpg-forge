@@ -1,8 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g fill="#{hair}" stroke="#{line}" stroke-width="3" stroke-linejoin="round">
-    <path d="M190 196 C180 130 210 84 258 84 C304 84 334 128 322 196 C316 168 306 144 292 128 C276 140 246 142 220 128 C208 146 198 168 190 196 Z"/>
-    <path d="M190 180 C186 230 192 280 200 312 C208 296 212 260 210 220 C206 200 200 186 190 180 Z"/>
-    <path d="M322 180 C326 230 320 280 312 312 C304 296 300 260 302 220 C306 200 312 186 322 180 Z"/>
-    <path fill="#{hair-light}" stroke="none" opacity="0.5" d="M224 100 C244 92 270 92 290 102 C270 100 246 102 224 110 Z"/>
+  <defs>
+    <filter id="form" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3.5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{hair-deep}" flood-opacity="0.65"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2"/></filter>
+    <filter id="tiny" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="0.5"/></filter>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#{hair}" stroke="#{hair-deep}" stroke-width="0.9" filter="url(#form)" d="M256 84 C248 86 238 90 230 98 C224 106 221 116 220 130 C219 148 222 168 228 188 C232 204 236 222 236 246 C228 238 220 232 212 236 C210 214 206 194 204 172 C201 146 203 112 212 88 C220 70 236 60 256 59 C276 60 292 70 300 88 C309 112 311 146 308 172 C306 194 302 214 300 236 C292 232 284 238 276 246 C276 222 280 204 284 188 C290 168 293 148 292 130 C291 116 288 106 282 98 C274 90 264 86 256 84 Z"/>
+    <path fill="#{hair-light}" opacity="0.45" filter="url(#soft)" d="M228 72 C240 64 252 62 256 64 C246 70 236 80 230 92 Z M284 72 C272 64 260 62 256 64 C266 70 276 80 282 92 Z"/>
+    <path fill="none" stroke="#{hair-deep}" stroke-width="0.55" opacity="0.55" d="M256 60 L256 84 M252 64 C240 70 230 82 226 100 M248 66 C232 76 222 96 220 120 M244 70 C226 84 216 110 214 150 C214 180 220 206 226 236 M260 64 C272 70 282 82 286 100 M264 66 C280 76 290 96 292 120 M268 70 C286 84 296 110 298 150 C298 180 292 206 286 236 M210 150 C210 180 214 206 218 232 M302 150 C302 180 298 206 294 232"/>
+    <path fill="none" stroke="#{hair-light}" stroke-width="0.5" opacity="0.55" d="M232 84 C222 104 218 132 220 160 M280 84 C290 104 294 132 292 160"/>
   </g>
 </svg>

@@ -1,6 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g fill="#{hair}" stroke="#{line}" stroke-width="3" stroke-linejoin="round">
-    <path d="M190 150 C180 210 176 290 184 352 C210 362 302 362 328 352 C336 290 332 210 322 150 C312 110 290 88 256 88 C222 88 200 110 190 150 Z"/>
-    <path fill="#{hair-dark}" stroke="none" opacity="0.4" d="M200 250 C198 290 200 330 206 350 L224 352 C216 320 212 290 214 250 Z M312 250 C314 290 312 330 306 350 L288 352 C296 320 300 290 298 250 Z"/>
+  <defs>
+    <filter id="form" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3.5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{hair-deep}" flood-opacity="0.65"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2"/></filter>
+    <filter id="tiny" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="0.5"/></filter>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#{hair}" stroke="#{hair-deep}" stroke-width="0.9" filter="url(#form)" d="M215 98 C205 130 202 180 202 230 C202 268 206 296 214 318 C232 324 280 324 298 318 C306 296 310 268 310 230 C310 180 307 130 297 98 Z"/>
+    
+    <path fill="none" stroke="#{hair-deep}" stroke-width="0.55" opacity="0.55" d="M210 160 C208 200 208 250 212 300 M302 160 C304 200 304 250 300 300 M218 200 C216 240 216 280 220 316 M294 200 C296 240 296 280 292 316"/>
+    
   </g>
 </svg>

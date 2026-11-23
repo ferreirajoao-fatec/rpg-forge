@@ -1,0 +1,309 @@
+[
+ {
+  "id": "background:acolyte",
+  "kind": "background",
+  "name": "Acólito",
+  "summary": "Perícias: Intuição e Religião. Atributos: Inteligência, Sabedoria, Carisma.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Backgrounds"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "skills": [
+    "skill:insight",
+    "skill:religion"
+   ],
+   "tools": [
+    "suprimentos de calígrafo"
+   ],
+   "languages": 0,
+   "abilityScores": [
+    "int",
+    "wis",
+    "cha"
+   ],
+   "featId": "feat:magic-initiate",
+   "featNote": "Clérigo",
+   "startingEquipment": {
+    "fixed": [],
+    "groups": [
+     {
+      "choose": 1,
+      "options": [
+       {
+        "label": "A: Suprimentos de calígrafo, Livro, 10 × Pergaminho, Túnica, 1 símbolo sagrado à escolha, 8 po",
+        "items": [
+         {
+          "id": "equipment:calligraphers-supplies",
+          "quantity": 1
+         },
+         {
+          "id": "equipment:book",
+          "quantity": 1
+         },
+         {
+          "id": "equipment:parchment",
+          "quantity": 10
+         },
+         {
+          "id": "equipment:robe",
+          "quantity": 1
+         }
+        ],
+        "gold": 8,
+        "open": [
+         {
+          "category": "holy-symbols",
+          "count": 1,
+          "label": "1 símbolo sagrado à escolha"
+         }
+        ]
+       },
+       {
+        "label": "B: 50 po",
+        "items": [],
+        "gold": 50,
+        "open": []
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "background:criminal",
+  "kind": "background",
+  "name": "Criminoso",
+  "summary": "Perícias: Prestidigitação e Furtividade. Atributos: Destreza, Constituição, Inteligência.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Backgrounds"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "skills": [
+    "skill:sleight-of-hand",
+    "skill:stealth"
+   ],
+   "tools": [
+    "ferramentas de ladrão"
+   ],
+   "languages": 0,
+   "abilityScores": [
+    "dex",
+    "con",
+    "int"
+   ],
+   "featId": "feat:alert",
+   "startingEquipment": {
+    "fixed": [],
+    "groups": [
+     {
+      "choose": 1,
+      "options": [
+       {
+        "label": "A: 2 × Adaga, Ferramentas de ladrão, Pé de cabra, 2 × Bolsa, Roupas de Viajante, 16 po",
+        "items": [
+         {
+          "id": "equipment:dagger",
+          "quantity": 2
+         },
+         {
+          "id": "equipment:thieves-tools",
+          "quantity": 1
+         },
+         {
+          "id": "equipment:crowbar",
+          "quantity": 1
+         },
+         {
+          "id": "equipment:pouch",
+          "quantity": 2
+         },
+         {
+          "id": "equipment:clothes-travelers",
+          "quantity": 1
+         }
+        ],
+        "gold": 16,
+        "open": []
+       },
+       {
+        "label": "B: 50 po",
+        "items": [],
+        "gold": 50,
+        "open": []
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "background:sage",
+  "kind": "background",
+  "name": "Sábio",
+  "summary": "Perícias: Arcanismo e História. Atributos: Constituição, Inteligência, Sabedoria.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Backgrounds"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "skills": [
+    "skill:arcana",
+    "skill:history"
+   ],
+   "tools": [
+    "suprimentos de calígrafo"
+   ],
+   "languages": 0,
+   "abilityScores": [
+    "con",
+    "int",
+    "wis"
+   ],
+   "featId": "feat:magic-initiate",
+   "startingEquipment": {
+    "fixed": [],
+    "groups": [
+     {
+      "choose": 1,
+      "options": [
+       {
+        "label": "A: Bordão, Suprimentos de calígrafo, Livro, 8 × Pergaminho, Túnica, 8 po",
+        "items": [
+         {
+          "id": "equipment:quarterstaff",
+          "quantity": 1
+         },
+         {
+          "id": "equipment:calligraphers-supplies",
+          "quantity": 1
+         },
+         {
+          "id": "equipment:book",
+          "quantity": 1
+         },
+         {
+          "id": "equipment:parchment",
+          "quantity": 8
+         },
+         {
+          "id": "equipment:robe",
+          "quantity": 1
+         }
+        ],
+        "gold": 8,
+        "open": []
+       },
+       {
+        "label": "B: 50 po",
+        "items": [],
+        "gold": 50,
+        "open": []
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "background:soldier",
+  "kind": "background",
+  "name": "Soldado",
+  "summary": "Perícias: Atletismo e Intimidação. Atributos: Força, Destreza, Constituição.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Backgrounds"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "skills": [
+    "skill:athletics",
+    "skill:intimidation"
+   ],
+   "tools": [],
+   "languages": 0,
+   "abilityScores": [
+    "str",
+    "dex",
+    "con"
+   ],
+   "featId": "feat:savage-attacker",
+   "startingEquipment": {
+    "fixed": [],
+    "groups": [
+     {
+      "choose": 1,
+      "options": [
+       {
+        "label": "A: Lança, Arco curto, 20 × Flechas, Kit de curandeiro, Aljava, Roupas de Viajante, 1 kit de jogo à escolha, 14 po",
+        "items": [
+         {
+          "id": "equipment:spear",
+          "quantity": 1
+         },
+         {
+          "id": "equipment:shortbow",
+          "quantity": 1
+         },
+         {
+          "id": "equipment:arrows",
+          "quantity": 20
+         },
+         {
+          "id": "equipment:healers-kit",
+          "quantity": 1
+         },
+         {
+          "id": "equipment:quiver",
+          "quantity": 1
+         },
+         {
+          "id": "equipment:clothes-travelers",
+          "quantity": 1
+         }
+        ],
+        "gold": 14,
+        "open": [
+         {
+          "category": "gaming-sets",
+          "count": 1,
+          "label": "1 kit de jogo à escolha"
+         }
+        ]
+       },
+       {
+        "label": "B: 50 po",
+        "items": [],
+        "gold": 50,
+        "open": []
+       }
+      ]
+     }
+    ]
+   }
+  }
+ }
+]

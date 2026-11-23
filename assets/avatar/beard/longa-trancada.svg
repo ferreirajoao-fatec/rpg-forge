@@ -1,9 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g fill="#{hair}" stroke="#{line}" stroke-width="3" stroke-linejoin="round">
-    <path d="M194 176 C192 236 210 286 236 312 L240 360 C244 376 268 376 272 360 L276 312 C302 286 320 236 318 176 C314 204 302 224 286 232 C280 244 268 248 256 248 C244 248 232 244 226 232 C210 224 198 204 194 176 Z"/>
-    <path fill="#{hair-dark}" stroke="none" opacity="0.45" d="M224 258 C232 290 244 310 256 314 C268 310 280 290 288 258 C282 286 270 300 256 302 C242 300 230 286 224 258 Z"/>
-    <rect fill="#{metal}" x="237" y="326" width="38" height="10" rx="4"/>
-    <rect fill="#{metal}" x="240" y="350" width="32" height="9" rx="4"/>
-    <path d="M236 222 C242 212 252 212 256 216 C260 212 270 212 276 222 C270 220 262 220 256 222 C250 220 242 220 236 222 Z"/>
+  <defs>
+    <filter id="form" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{hair-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.6"/></filter>
+    <filter id="stub" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1"/></filter>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#{hair}" stroke="#{hair-deep}" stroke-width="0.8" filter="url(#form)" d="M219 112 C219 128 221 144 226 158 C232 176 240 192 248 204 L264 204 C272 192 280 176 286 158 C291 144 293 128 293 112 L290 114 C289 126 286 136 281 143 C276 148 272 151 268 152.6 C265 156.4 261 158 256 158 C251 158 247 156.4 244 152.6 C240 151 236 148 231 143 C226 136 223 126 222 114 Z"/>
+    <path fill="#{hair-light}" opacity="0.45" filter="url(#soft)" d="M238 162 C244 178 250 192 254 200 C248 190 242 176 240 160 Z"/>
+    <path fill="none" stroke="#{hair-deep}" stroke-width="0.55" opacity="0.55" d="M226 130 C230 150 238 174 248 198 M234 150 C240 168 246 184 252 200 M286 130 C282 150 274 174 264 198 M278 150 C272 168 266 184 260 200 M256 162 L256 200"/>
+    
+    <path fill="#{hair}" stroke="#{hair-deep}" stroke-width="0.7" filter="url(#form)" d="M243.6 149 C245 144.6 250.6 142.4 256 144 C261.4 142.4 267 144.6 268.4 149 C268.8 151 268.4 153 267.4 154.4 C266.4 151 262.6 147.8 256 147.8 C249.4 147.8 245.6 151 244.6 154.4 C243.6 153 243.2 151 243.6 149 Z"/>
+    <path fill="#{hair}" stroke="#{hair-deep}" stroke-width="0.8" filter="url(#form)" d="M249 202 C248 216 249 232 252 246 L260 246 C263 232 264 216 263 202 Z"/>
+    <path fill="none" stroke="#{hair-deep}" stroke-width="0.6" opacity="0.7" d="M250 210 L262 216 M250 218 L262 224 M250 226 L262 232 M251 234 L261 240 M262 210 L250 216 M262 218 L250 224 M262 226 L250 232 M261 234 L251 240"/>
+    <path fill="#{hair}" stroke="#{hair-deep}" stroke-width="0.7" d="M252 252 C251 258 253 264 256 268 C259 264 261 258 260 252 Z"/>
+    <rect fill="#{metal}" stroke="#{metal-deep}" stroke-width="0.7" x="248" y="204" width="16" height="6" rx="2"/><rect fill="#{metal-light}" opacity="0.7" x="250" y="205" width="6" height="1.6" rx="0.8"/>
+    <rect fill="#{metal}" stroke="#{metal-deep}" stroke-width="0.7" x="248" y="246" width="16" height="6" rx="2"/><rect fill="#{metal-light}" opacity="0.7" x="250" y="247" width="6" height="1.6" rx="0.8"/>
   </g>
 </svg>

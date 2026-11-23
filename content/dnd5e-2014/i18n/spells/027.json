@@ -1,0 +1,109 @@
+{
+ "resilient-sphere": {
+  "n": "Esfera Resiliente",
+  "d": [
+   "Uma esfera de energia cintilante envolve uma criatura ou um objeto Grande ou menor dentro do alcance. Uma criatura não voluntária deve fazer um teste de resistência de Destreza. Se falhar, fica envolvida pela duração.",
+   "Nada (nem objetos físicos, nem energia, nem efeitos de outras magias) pode atravessar a barreira, para dentro ou para fora, embora uma criatura na esfera consiga respirar ali. A esfera é imune a todo dano, e uma criatura ou um objeto dentro dela não pode sofrer dano de ataques ou efeitos vindos de fora, nem uma criatura dentro da esfera pode causar dano a nada fora dela.",
+   "A esfera não tem peso e é grande o bastante apenas para conter a criatura ou o objeto. Uma criatura envolvida pode usar sua ação para empurrar as paredes da esfera e fazê-la rolar a até metade do deslocamento da criatura. Da mesma forma, o globo pode ser erguido e movido por outras criaturas.",
+   "Uma magia desintegrar que tenha o globo como alvo o destrói sem ferir nada que esteja dentro."
+  ],
+  "m": "Um pedaço hemisférico de cristal transparente e um pedaço hemisférico de goma-arábica do mesmo tamanho."
+ },
+ "resistance": {
+  "n": "Resistência",
+  "d": ["Você toca uma criatura voluntária. Uma vez antes de a magia terminar, o alvo pode rolar um d4 e somar o resultado a um teste de resistência à escolha dele. Pode rolar o dado antes ou depois de fazer o teste. Então a magia termina."],
+  "m": "Uma capa em miniatura."
+ },
+ "resurrection": {
+  "n": "Ressurreição",
+  "d": [
+   "Você toca uma criatura morta há no máximo um século, que não tenha morrido de velhice e que não seja morta-viva. Se a alma dela estiver livre e disposta, o alvo volta à vida com todos os pontos de vida.",
+   "Esta magia neutraliza quaisquer venenos e cura doenças comuns que afligiam a criatura quando ela morreu. Não remove, porém, doenças mágicas, maldições e afins; se esses efeitos não forem removidos antes de lançar a magia, afligem o alvo quando ele volta à vida.",
+   "Esta magia fecha todas as feridas mortais e restaura quaisquer partes do corpo perdidas.",
+   "Voltar dos mortos é uma provação. O alvo sofre -4 de penalidade em todas as jogadas de ataque, testes de resistência e testes de habilidade. Cada vez que o alvo termina um descanso longo, a penalidade diminui em 1 até desaparecer.",
+   "Lançar esta magia para devolver a vida a uma criatura morta há um ano ou mais o desgasta muito. Até terminar um descanso longo, você não pode lançar magias de novo e tem desvantagem em todas as jogadas de ataque, testes de habilidade e testes de resistência."
+  ],
+  "m": "Um diamante no valor de pelo menos 1.000 po, que a magia consome."
+ },
+ "reverse-gravity": {
+  "n": "Inverter a Gravidade",
+  "d": [
+   "Esta magia inverte a gravidade num cilindro de 15 metros de raio e 30 metros de altura, centrado num ponto dentro do alcance. Todas as criaturas e objetos na área que não estejam de alguma forma presos ao chão caem para cima e chegam ao topo da área quando você lança a magia. Uma criatura pode fazer um teste de resistência de Destreza para se agarrar a um objeto fixo ao seu alcance, evitando a queda.",
+   "Se algum objeto sólido (como um teto) for encontrado nessa queda, os objetos e as criaturas em queda o atingem como numa queda normal para baixo. Se um objeto ou uma criatura chegar ao topo da área sem atingir nada, fica ali, oscilando levemente, pela duração.",
+   "No fim da duração, os objetos e as criaturas afetados caem de volta para baixo."
+  ],
+  "m": "Um ímã natural e limalha de ferro."
+ },
+ "revivify": {
+  "n": "Revivificar",
+  "d": ["Você toca uma criatura que tenha morrido no último minuto. Ela volta à vida com 1 ponto de vida. Esta magia não pode trazer de volta à vida uma criatura que tenha morrido de velhice, nem restaurar partes do corpo perdidas."],
+  "m": "Diamantes no valor de 300 po, que a magia consome."
+ },
+ "rope-trick": {
+  "n": "Truque de Corda",
+  "d": [
+   "Você toca um pedaço de corda de até 18 metros de comprimento. Uma ponta da corda sobe no ar até a corda inteira ficar pendurada perpendicular ao chão. Na ponta de cima, uma entrada invisível se abre para um espaço extradimensional que dura até a magia terminar.",
+   "O espaço extradimensional pode ser alcançado subindo até o topo da corda. Ele comporta até oito criaturas Médias ou menores. A corda pode ser puxada para dentro do espaço, desaparecendo de vista do lado de fora.",
+   "Ataques e magias não atravessam a entrada para dentro ou para fora do espaço extradimensional, mas quem está dentro consegue ver o lado de fora como se fosse por uma janela de 90 centímetros por 1,5 metro centrada na corda.",
+   "Tudo o que estiver dentro do espaço extradimensional cai quando a magia termina."
+  ],
+  "m": "Extrato de milho em pó e uma laçada torcida de pergaminho."
+ },
+ "sacred-flame": {
+  "n": "Chama Sagrada",
+  "d": [
+   "Uma radiância semelhante a chamas desce sobre uma criatura que você consiga ver dentro do alcance. O alvo deve passar num teste de resistência de Destreza ou sofrer 1d8 de dano radiante. O alvo não recebe nenhum benefício de cobertura nesse teste.",
+   "O dano desta magia aumenta em 1d8 quando você alcança o 5º nível (2d8), o 11º nível (3d8) e o 17º nível (4d8)."
+  ]
+ },
+ "sanctuary": {
+  "n": "Santuário",
+  "d": [
+   "Você protege uma criatura dentro do alcance contra ataques. Até a magia terminar, qualquer criatura que escolha a criatura protegida como alvo de um ataque ou de uma magia nociva deve primeiro fazer um teste de resistência de Sabedoria. Se falhar, precisa escolher um novo alvo ou perde o ataque ou a magia. Esta magia não protege a criatura de efeitos em área, como a explosão de uma bola de fogo.",
+   "Se a criatura protegida fizer um ataque ou lançar uma magia que afete uma criatura inimiga, esta magia termina."
+  ],
+  "m": "Um pequeno espelho de prata."
+ },
+ "scorching-ray": {
+  "n": "Raio Ardente",
+  "d": [
+   "Você cria três raios de fogo e os arremessa em alvos dentro do alcance. Pode arremessá-los num alvo ou em vários.",
+   "Faça um ataque mágico à distância para cada raio. Se acertar, o alvo sofre 2d6 de dano de fogo."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 3º nível ou superior, cria um raio adicional para cada nível de espaço acima do 2º."]
+ },
+ "scrying": {
+  "n": "Vidência",
+  "d": [
+   "Você consegue ver e ouvir uma criatura específica à sua escolha que esteja no mesmo plano de existência que você. O alvo deve fazer um teste de resistência de Sabedoria, modificado por quão bem você o conhece e pelo tipo de ligação física que tem com ele. Se o alvo souber que você está lançando esta magia, pode falhar voluntariamente no teste se quiser ser observado.",
+   "| Conhecimento | Modificador do Teste |",
+   "|---|---|",
+   "| Indireto (você ouviu falar do alvo) | +5 |",
+   "| Direto (você já encontrou o alvo) | +0 |",
+   "| Familiar (você conhece bem o alvo) | -5 |",
+   "| Ligação | Modificador do Teste |",
+   "|---|---|",
+   "| Retrato ou imagem | -2 |",
+   "| Pertence ou peça de roupa | -4 |",
+   "| Parte do corpo, mecha de cabelo, pedaço de unha ou afins | -10 |",
+   "Se passar, o alvo não é afetado, e você não pode usar esta magia contra ele de novo por 24 horas.",
+   "Se falhar, a magia cria um sensor invisível a até 3 metros do alvo. Você consegue ver e ouvir pelo sensor como se estivesse lá. O sensor se move com o alvo, permanecendo a até 3 metros dele pela duração. Uma criatura que consiga ver objetos invisíveis vê o sensor como um orbe luminoso do tamanho do seu punho.",
+   "Em vez de escolher uma criatura como alvo, você pode escolher um local que já tenha visto. Quando faz isso, o sensor aparece nesse local e não se move."
+  ],
+  "m": "Um foco no valor de pelo menos 1.000 po, como uma bola de cristal, um espelho de prata ou uma pia cheia de água benta."
+ },
+ "secret-chest": {
+  "n": "Baú Secreto",
+  "d": [
+   "Você esconde um baú, e todo o seu conteúdo, no Plano Etéreo. Precisa tocar o baú e a réplica em miniatura que serve de componente material da magia. O baú pode conter até 340 litros de material sem vida (90 por 60 por 60 centímetros).",
+   "Enquanto o baú estiver no Plano Etéreo, você pode usar uma ação e tocar a réplica para chamá-lo de volta. Ele aparece num espaço desocupado no chão a até 1,5 metro de você. Você pode mandar o baú de volta ao Plano Etéreo usando uma ação e tocando o baú e a réplica.",
+   "Depois de 60 dias, há uma chance cumulativa de 5% por dia de o efeito da magia terminar. O efeito termina se você lançar esta magia de novo, se a réplica menor for destruída ou se você escolher encerrar a magia com uma ação. Se a magia terminar com o baú maior no Plano Etéreo, ele se perde para sempre."
+  ],
+  "m": "Um baú requintado de 90 por 60 por 60 centímetros, feito de materiais raros no valor de pelo menos 5.000 po, e uma réplica Miúda feita dos mesmos materiais, no valor de pelo menos 50 po."
+ },
+ "see-invisibility": {
+  "n": "Ver o Invisível",
+  "d": ["Pela duração da magia, você vê criaturas e objetos invisíveis como se fossem visíveis e consegue ver o Plano Etéreo. Os objetos e as criaturas etéreos parecem fantasmagóricos e translúcidos."],
+  "m": "Uma pitada de talco e um pouco de prata em pó."
+ }
+}

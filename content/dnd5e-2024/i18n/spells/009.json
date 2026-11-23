@@ -1,0 +1,80 @@
+{
+ "earthquake": {
+  "d": [
+   "Escolha um ponto no chão que você consiga ver dentro do alcance. Pela duração, um tremor intenso rasga o chão num círculo de 30 metros de raio centrado nesse ponto. O chão ali é Terreno Difícil.",
+   "Quando você lança esta magia e no fim de cada um dos seus turnos pela duração, cada criatura no chão da área faz um teste de resistência de Destreza. Se falhar, a criatura fica com a condição Caído e sua Concentração é quebrada. Você também pode causar os efeitos abaixo.",
+   "Fissuras. Um total de 1d6 fissuras se abre na área da magia no fim do turno em que você a lança. Você escolhe a localização das fissuras, que não podem ficar sob estruturas. Cada fissura tem 1d10 × 3 metros de profundidade e 3 metros de largura e se estende de uma borda da área da magia a outra. Uma criatura no mesmo espaço de uma fissura deve passar num teste de resistência de Destreza ou cai nela. Uma criatura que passa no teste se move com a borda da fissura enquanto ela se abre.",
+   "Estruturas. O tremor causa 50 de dano de Concussão a qualquer estrutura em contato com o chão na área quando você lança a magia e no fim de cada um dos seus turnos até a magia terminar. Se uma estrutura cair a 0 Pontos de Vida, desaba.",
+   "Uma criatura a uma distância de uma estrutura que desaba igual à metade da altura dela faz um teste de resistência de Destreza. Se falhar, sofre 12d6 de dano de Concussão, fica com a condição Caído e é soterrada pelos escombros, precisando de um teste de Força (Atletismo) CD 20 como ação para escapar. Se passar, sofre apenas metade do dano."
+  ],
+  "m": "Uma pedra rachada."
+ },
+ "eldritch-blast": {
+  "d": [
+   "Você arremessa um feixe de energia crepitante. Faça um ataque mágico à distância contra uma criatura ou um objeto dentro do alcance. Se acertar, o alvo sofre 1d10 de dano de Energia.",
+   "Aprimoramento de Truque. A magia cria dois feixes no nível 5, três no nível 11 e quatro no nível 17. Você pode direcionar os feixes ao mesmo alvo ou a alvos diferentes. Faça uma jogada de ataque separada para cada feixe."
+  ]
+ },
+ "elementalism": {
+  "n": "Elementalismo",
+  "d": [
+   "Você exerce controle sobre os elementos, criando um dos efeitos a seguir dentro do alcance.",
+   "Chamar o Ar. Você cria uma brisa forte o bastante para ondular tecidos, levantar poeira, farfalhar folhas e fechar portas e janelas abertas, tudo num Cubo de 1,5 metro. Portas e janelas sendo mantidas abertas por alguém ou algo não são afetadas.",
+   "Chamar a Terra. Você cria uma fina camada de poeira ou areia que cobre as superfícies numa área de 1,5 metro de lado, ou faz uma única palavra aparecer com sua caligrafia num trecho de terra ou areia.",
+   "Chamar o Fogo. Você cria uma nuvem fina de brasas inofensivas e fumaça colorida e perfumada num Cubo de 1,5 metro. Você escolhe a cor e o cheiro, e as brasas podem acender velas, tochas ou lampiões nessa área. O cheiro da fumaça permanece por 1 minuto.",
+   "Chamar a Água. Você cria um borrifo de névoa fresca que umedece levemente criaturas e objetos num Cubo de 1,5 metro. Em vez disso, pode criar 1 copo de água limpa num recipiente aberto ou numa superfície, e a água evapora em 1 minuto.",
+   "Esculpir Elemento. Você faz terra, areia, fogo, fumaça, névoa ou água que caiba num Cubo de 30 centímetros assumir uma forma rudimentar (como a de uma criatura) por 1 hora."
+  ]
+ },
+ "enhance-ability": {
+  "d": ["Você toca uma criatura e escolhe Força, Destreza, Inteligência, Sabedoria ou Carisma. Pela duração, o alvo tem Vantagem em testes de atributo usando o atributo escolhido."],
+  "h": ["Você pode escolher como alvo uma criatura adicional para cada nível de espaço de magia acima de 2. Pode escolher um atributo diferente para cada alvo."],
+  "m": "Pelo ou uma pena."
+ },
+ "enlarge-reduce": {
+  "d": [
+   "Pela duração, a magia aumenta ou reduz uma criatura ou um objeto que você consiga ver dentro do alcance (veja o efeito escolhido abaixo). Um objeto escolhido como alvo não pode estar sendo vestido nem carregado. Se o alvo for uma criatura não voluntária, pode fazer um teste de resistência de Constituição. Se passar, a magia não tem efeito.",
+   "Tudo o que uma criatura-alvo estiver vestindo e carregando muda de tamanho com ela. Qualquer item que ela largue volta ao tamanho normal na hora. Uma arma arremessada ou uma munição volta ao tamanho normal imediatamente depois de acertar ou errar um alvo.",
+   "Aumentar. O tamanho do alvo aumenta em uma categoria (de Médio para Grande, por exemplo). O alvo também tem Vantagem em testes de Força e testes de resistência de Força. Os ataques do alvo com as armas aumentadas ou com Ataques Desarmados causam 1d4 de dano extra ao acertar.",
+   "Reduzir. O tamanho do alvo diminui em uma categoria (de Médio para Pequeno, por exemplo). O alvo também tem Desvantagem em testes de Força e testes de resistência de Força. Os ataques do alvo com as armas reduzidas ou com Ataques Desarmados causam 1d4 a menos de dano ao acertar (isso não pode reduzir o dano abaixo de 1)."
+  ],
+  "m": "Uma pitada de ferro em pó."
+ },
+ "ensnaring-strike": {
+  "n": "Golpe Enredante",
+  "d": [
+   "Quando você acerta o alvo, trepadeiras agarradoras aparecem nele, e ele faz um teste de resistência de Força. Uma criatura Grande ou maior tem Vantagem nesse teste. Se falhar, o alvo fica com a condição Impedido até a magia terminar. Se passar, as trepadeiras murcham, e a magia termina.",
+   "Enquanto estiver Impedido, o alvo sofre 1d6 de dano Perfurante no início de cada turno dele. O alvo ou uma criatura ao alcance dele pode realizar uma ação para fazer um teste de Força (Atletismo) contra a CD de resistência das suas magias. Se passar, a magia termina."
+  ],
+  "ct": "Ação Bônus, que você realiza imediatamente depois de acertar uma criatura com uma arma"
+ },
+ "entangle": {
+  "d": [
+   "Plantas agarradoras brotam do chão num quadrado de 6 metros dentro do alcance. Pela duração, essas plantas transformam o chão da área em Terreno Difícil. Elas desaparecem quando a magia termina.",
+   "Cada criatura (exceto você) na área quando você lança a magia deve passar num teste de resistência de Força ou fica com a condição Impedido até a magia terminar. Uma criatura Impedida pode realizar uma ação para fazer um teste de Força (Atletismo) contra a CD de resistência das suas magias. Se passar, liberta-se das plantas e deixa de estar Impedida por elas."
+  ]
+ },
+ "enthrall": {
+  "d": ["Você tece uma série de palavras que distraem, fazendo criaturas à sua escolha que consiga ver dentro do alcance fazerem um teste de resistência de Sabedoria. Qualquer criatura com quem você ou seus companheiros estejam lutando passa automaticamente nesse teste. Se falhar, o alvo sofre -10 de penalidade em testes de Sabedoria (Percepção) e na Percepção Passiva até a magia terminar."]
+ },
+ "etherealness": {
+  "d": [
+   "Você entra nas regiões fronteiriças do Plano Etéreo, onde ele se sobrepõe ao seu plano atual. Permanece na Fronteira Etérea pela duração. Durante esse tempo, pode se mover em qualquer direção. Se subir ou descer, cada metro de movimento custa um metro extra. Você consegue perceber o plano que deixou, que parece cinzento, e não consegue ver nada ali a mais de 18 metros.",
+   "Enquanto estiver no Plano Etéreo, só pode afetar e ser afetado por criaturas, objetos e efeitos nesse plano. Criaturas que não estejam no Plano Etéreo não conseguem percebê-lo nem interagir com você, a menos que uma característica lhes dê essa capacidade.",
+   "Quando a magia termina, você volta ao plano que deixou, no ponto que corresponde ao seu espaço na Fronteira Etérea. Se aparecer num espaço ocupado, é empurrado para o espaço desocupado mais próximo e sofre 2 de dano de Energia para cada 30 centímetros que for deslocado.",
+   "Esta magia termina instantaneamente se você a lançar enquanto estiver no Plano Etéreo ou num plano que não faça fronteira com ele, como um dos Planos Exteriores."
+  ],
+  "h": ["Você pode escolher como alvo até três criaturas voluntárias (incluindo você) para cada nível de espaço de magia acima de 7. As criaturas precisam estar a até 3 metros de você quando você lança a magia."]
+ },
+ "expeditious-retreat": {
+  "d": ["Você realiza a ação Disparada e, até a magia terminar, pode realizar essa ação de novo como Ação Bônus."]
+ },
+ "eyebite": {
+  "d": [
+   "Pela duração, seus olhos se tornam um vazio de tinta. Uma criatura à sua escolha a até 18 metros de você que consiga ver deve passar num teste de resistência de Sabedoria ou é afetada por um dos efeitos a seguir, à sua escolha, pela duração.",
+   "Em cada um dos seus turnos até a magia terminar, você pode realizar uma ação de Magia para escolher outra criatura como alvo, mas não pode escolher de novo uma criatura que já tenha passado num teste contra esta conjuração da magia.",
+   "Adormecido. O alvo fica com a condição Inconsciente. Acorda se sofrer qualquer dano ou se outra criatura realizar uma ação para sacudi-lo.",
+   "Em Pânico. O alvo fica com a condição Amedrontado. Em cada turno dele, o alvo Amedrontado precisa realizar a ação Disparada e se afastar de você pelo caminho mais seguro e curto disponível. Se o alvo se mover para um espaço a pelo menos 18 metros de você onde não consiga vê-lo, este efeito termina. Enjoado. O alvo fica com a condição Envenenado."
+  ]
+ }
+}

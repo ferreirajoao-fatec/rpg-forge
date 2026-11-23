@@ -1,0 +1,576 @@
+[
+ {
+  "id": "feat:alert",
+  "kind": "feat",
+  "name": "Alerta",
+  "summary": "Você recebe os seguintes benefícios.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Feats"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "type": "origin",
+   "typeLabel": "Talento de origem",
+   "repeatable": false,
+   "text": [
+    "Você recebe os seguintes benefícios.",
+    "Proficiência em Iniciativa. Quando rolar Iniciativa, você pode somar seu Bônus de Proficiência à jogada.",
+    "Troca de Iniciativa. Logo depois de rolar Iniciativa, você pode trocar sua Iniciativa com a de um aliado voluntário no mesmo combate. Você não pode fazer essa troca se você ou o aliado estiver com a condição Incapacitado."
+   ]
+  }
+ },
+ {
+  "id": "feat:magic-initiate",
+  "kind": "feat",
+  "name": "Iniciado em Magia",
+  "summary": "Você recebe os seguintes benefícios.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Feats"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "type": "origin",
+   "typeLabel": "Talento de origem",
+   "repeatable": true,
+   "text": [
+    "Você recebe os seguintes benefícios.",
+    "Dois Truques. Você aprende dois truques à sua escolha da lista de magias de Clérigo, Druida ou Mago. Inteligência, Sabedoria ou Carisma é sua habilidade de conjuração para as magias deste talento (escolha ao pegar o talento).",
+    "Magia de Nível 1. Escolha uma magia de nível 1 da mesma lista que você escolheu para os truques deste talento. Você sempre tem essa magia preparada. Pode lançá-la uma vez sem gastar espaço de magia e recupera essa capacidade quando termina um Descanso Longo. Também pode lançá-la usando qualquer espaço de magia que tenha.",
+    "Troca de Magia. Sempre que ganhar um nível, você pode trocar uma das magias escolhidas para este talento por outra do mesmo nível da lista escolhida."
+   ]
+  }
+ },
+ {
+  "id": "feat:savage-attacker",
+  "kind": "feat",
+  "name": "Atacante Selvagem",
+  "summary": "Você treinou para desferir golpes especialmente danosos. Uma vez por turno, quando atinge um alvo com uma arma, você pode rolar os dados de dano da arma duas vezes e usar qualquer…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Feats"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "type": "origin",
+   "typeLabel": "Talento de origem",
+   "repeatable": false,
+   "text": [
+    "Você treinou para desferir golpes especialmente danosos. Uma vez por turno, quando atinge um alvo com uma arma, você pode rolar os dados de dano da arma duas vezes e usar qualquer um dos resultados contra o alvo."
+   ]
+  }
+ },
+ {
+  "id": "feat:skilled",
+  "kind": "feat",
+  "name": "Habilidoso",
+  "summary": "Você ganha proficiência em qualquer combinação de três perícias ou ferramentas à sua escolha.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Feats"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "type": "origin",
+   "typeLabel": "Talento de origem",
+   "repeatable": true,
+   "text": [
+    "Você ganha proficiência em qualquer combinação de três perícias ou ferramentas à sua escolha."
+   ]
+  }
+ },
+ {
+  "id": "feat:ability-score-improvement",
+  "kind": "feat",
+  "name": "Aumento no Valor de Habilidade",
+  "summary": "Aumente um valor de habilidade à sua escolha em 2, ou dois valores de habilidade à sua escolha em 1. Este talento não pode aumentar um valor de habilidade acima de 20.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Feats"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "minLevel",
+   "level": 4
+  },
+  "roles": [],
+  "data": {
+   "type": "general",
+   "typeLabel": "Talento geral",
+   "repeatable": true,
+   "text": [
+    "Aumente um valor de habilidade à sua escolha em 2, ou dois valores de habilidade à sua escolha em 1. Este talento não pode aumentar um valor de habilidade acima de 20."
+   ]
+  }
+ },
+ {
+  "id": "feat:grappler",
+  "kind": "feat",
+  "name": "Agarrador",
+  "summary": "Você recebe os seguintes benefícios.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Feats"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "minLevel",
+   "level": 4
+  },
+  "roles": [],
+  "data": {
+   "type": "general",
+   "typeLabel": "Talento geral",
+   "repeatable": false,
+   "text": [
+    "Você recebe os seguintes benefícios.",
+    "Aumento no Valor de Habilidade. Aumente sua Força ou Destreza em 1, até o máximo de 20.",
+    "Socar e Agarrar. Quando você atinge uma criatura com um Ataque Desarmado como parte da ação de Ataque no seu turno, pode usar tanto a opção Dano quanto a opção Agarrar. Você só pode usar este benefício uma vez por turno.",
+    "Vantagem no Ataque. Você tem Vantagem em jogadas de ataque contra uma criatura Agarrada por você.",
+    "Lutador Ágil. Você não precisa gastar movimento extra para mover uma criatura Agarrada por você se ela for do seu tamanho ou menor."
+   ]
+  }
+ },
+ {
+  "id": "feat:archery",
+  "kind": "feat",
+  "name": "Arquearia",
+  "summary": "Você recebe +2 de bônus nas jogadas de ataque que faz com armas À Distância.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Feats"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "anyOf",
+   "of": [
+    {
+     "type": "minClassLevel",
+     "classId": "class:fighter",
+     "level": 1
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:paladin",
+     "level": 2
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:ranger",
+     "level": 2
+    }
+   ]
+  },
+  "roles": [],
+  "data": {
+   "type": "fighting-style",
+   "typeLabel": "Estilo de luta",
+   "repeatable": false,
+   "text": [
+    "Você recebe +2 de bônus nas jogadas de ataque que faz com armas À Distância."
+   ]
+  }
+ },
+ {
+  "id": "feat:defense",
+  "kind": "feat",
+  "name": "Defesa",
+  "summary": "Enquanto estiver usando armadura Leve, Média ou Pesada, você recebe +1 de bônus na Classe de Armadura.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Feats"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "anyOf",
+   "of": [
+    {
+     "type": "minClassLevel",
+     "classId": "class:fighter",
+     "level": 1
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:paladin",
+     "level": 2
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:ranger",
+     "level": 2
+    }
+   ]
+  },
+  "roles": [],
+  "data": {
+   "type": "fighting-style",
+   "typeLabel": "Estilo de luta",
+   "repeatable": false,
+   "text": [
+    "Enquanto estiver usando armadura Leve, Média ou Pesada, você recebe +1 de bônus na Classe de Armadura."
+   ]
+  }
+ },
+ {
+  "id": "feat:great-weapon-fighting",
+  "kind": "feat",
+  "name": "Combate com Armas Grandes",
+  "summary": "Quando rolar o dano de um ataque com uma arma Corpo a Corpo que esteja segurando com as duas mãos, você pode tratar qualquer 1 ou 2 num dado de dano como 3. A arma precisa ter a…",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Feats"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "anyOf",
+   "of": [
+    {
+     "type": "minClassLevel",
+     "classId": "class:fighter",
+     "level": 1
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:paladin",
+     "level": 2
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:ranger",
+     "level": 2
+    }
+   ]
+  },
+  "roles": [],
+  "data": {
+   "type": "fighting-style",
+   "typeLabel": "Estilo de luta",
+   "repeatable": false,
+   "text": [
+    "Quando rolar o dano de um ataque com uma arma Corpo a Corpo que esteja segurando com as duas mãos, você pode tratar qualquer 1 ou 2 num dado de dano como 3. A arma precisa ter a propriedade Duas Mãos ou Versátil para receber este benefício."
+   ]
+  }
+ },
+ {
+  "id": "feat:two-weapon-fighting",
+  "kind": "feat",
+  "name": "Combate com Duas Armas",
+  "summary": "Quando você faz um ataque extra por usar uma arma com a propriedade Leve, pode somar seu modificador de atributo ao dano desse ataque, se ainda não o estiver somando.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Feats"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "anyOf",
+   "of": [
+    {
+     "type": "minClassLevel",
+     "classId": "class:fighter",
+     "level": 1
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:paladin",
+     "level": 2
+    },
+    {
+     "type": "minClassLevel",
+     "classId": "class:ranger",
+     "level": 2
+    }
+   ]
+  },
+  "roles": [],
+  "data": {
+   "type": "fighting-style",
+   "typeLabel": "Estilo de luta",
+   "repeatable": false,
+   "text": [
+    "Quando você faz um ataque extra por usar uma arma com a propriedade Leve, pode somar seu modificador de atributo ao dano desse ataque, se ainda não o estiver somando."
+   ]
+  }
+ },
+ {
+  "id": "feat:boon-of-combat-prowess",
+  "kind": "feat",
+  "name": "Dádiva da Proeza em Combate",
+  "summary": "Você recebe os seguintes benefícios.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Feats"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "minLevel",
+   "level": 19
+  },
+  "roles": [],
+  "data": {
+   "type": "epic-boon",
+   "typeLabel": "Dádiva épica",
+   "repeatable": false,
+   "text": [
+    "Você recebe os seguintes benefícios.",
+    "Aumento no Valor de Habilidade. Aumente um valor de habilidade à sua escolha em 1, até o máximo de 30.",
+    "Mira Inigualável. Quando errar uma jogada de ataque, você pode acertar em vez disso. Depois de usar este benefício, você só pode usá-lo de novo no início do seu próximo turno."
+   ]
+  }
+ },
+ {
+  "id": "feat:boon-of-dimensional-travel",
+  "kind": "feat",
+  "name": "Dádiva da Viagem Dimensional",
+  "summary": "Você recebe os seguintes benefícios.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Feats"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "minLevel",
+   "level": 19
+  },
+  "roles": [],
+  "data": {
+   "type": "epic-boon",
+   "typeLabel": "Dádiva épica",
+   "repeatable": false,
+   "text": [
+    "Você recebe os seguintes benefícios.",
+    "Aumento no Valor de Habilidade. Aumente um valor de habilidade à sua escolha em 1, até o máximo de 30.",
+    "Passos Cintilantes. Logo depois de realizar a ação de Ataque ou a ação de Magia, você pode se teletransportar até 9 metros para um espaço desocupado que consiga ver."
+   ]
+  }
+ },
+ {
+  "id": "feat:boon-of-fate",
+  "kind": "feat",
+  "name": "Dádiva do Destino",
+  "summary": "Você recebe os seguintes benefícios.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Feats"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "minLevel",
+   "level": 19
+  },
+  "roles": [],
+  "data": {
+   "type": "epic-boon",
+   "typeLabel": "Dádiva épica",
+   "repeatable": false,
+   "text": [
+    "Você recebe os seguintes benefícios.",
+    "Aumento no Valor de Habilidade. Aumente um valor de habilidade à sua escolha em 1, até o máximo de 30.",
+    "Melhorar o Destino. Quando você ou outra criatura a até 18 metros de você tiver sucesso ou falhar num Teste de D20, você pode rolar 2d4 e aplicar o total como bônus ou penalidade à jogada do d20. Depois de usar este benefício, você só pode usá-lo de novo quando rolar Iniciativa ou terminar um Descanso Curto ou Longo."
+   ]
+  }
+ },
+ {
+  "id": "feat:boon-of-irresistible-offense",
+  "kind": "feat",
+  "name": "Dádiva da Ofensiva Irresistível",
+  "summary": "Você recebe os seguintes benefícios.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Feats"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "minLevel",
+   "level": 19
+  },
+  "roles": [],
+  "data": {
+   "type": "epic-boon",
+   "typeLabel": "Dádiva épica",
+   "repeatable": false,
+   "text": [
+    "Você recebe os seguintes benefícios.",
+    "Aumento no Valor de Habilidade. Aumente um valor de habilidade à sua escolha em 1, até o máximo de 30.",
+    "Superar Defesas. O dano de Concussão, Perfurante e Cortante que você causa sempre ignora Resistência.",
+    "Golpe Avassalador. Quando tirar 20 no d20 de uma jogada de ataque, você pode causar ao alvo dano extra igual ao valor de habilidade aumentado por este talento. O dano extra é do mesmo tipo do ataque."
+   ]
+  }
+ },
+ {
+  "id": "feat:boon-of-spell-recall",
+  "kind": "feat",
+  "name": "Dádiva da Recordação de Magia",
+  "summary": "Você recebe os seguintes benefícios.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Feats"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "allOf",
+   "of": [
+    {
+     "type": "minLevel",
+     "level": 19
+    },
+    {
+     "type": "anyOf",
+     "of": [
+      {
+       "type": "hasClass",
+       "classId": "class:bard"
+      },
+      {
+       "type": "hasClass",
+       "classId": "class:cleric"
+      },
+      {
+       "type": "hasClass",
+       "classId": "class:druid"
+      },
+      {
+       "type": "hasClass",
+       "classId": "class:paladin"
+      },
+      {
+       "type": "hasClass",
+       "classId": "class:ranger"
+      },
+      {
+       "type": "hasClass",
+       "classId": "class:sorcerer"
+      },
+      {
+       "type": "hasClass",
+       "classId": "class:warlock"
+      },
+      {
+       "type": "hasClass",
+       "classId": "class:wizard"
+      }
+     ]
+    }
+   ]
+  },
+  "roles": [],
+  "data": {
+   "type": "epic-boon",
+   "typeLabel": "Dádiva épica",
+   "repeatable": false,
+   "text": [
+    "Você recebe os seguintes benefícios.",
+    "Aumento no Valor de Habilidade. Aumente um valor de habilidade à sua escolha em 1, até o máximo de 30.",
+    "Conjuração Livre. Sempre que lançar uma magia usando um espaço de magia de nível 1 a 4, role 1d4. Se o resultado for igual ao nível do espaço, o espaço não é gasto."
+   ]
+  }
+ },
+ {
+  "id": "feat:boon-of-the-night-spirit",
+  "kind": "feat",
+  "name": "Dádiva do Espírito da Noite",
+  "summary": "Você recebe os seguintes benefícios.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Feats"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "minLevel",
+   "level": 19
+  },
+  "roles": [],
+  "data": {
+   "type": "epic-boon",
+   "typeLabel": "Dádiva épica",
+   "repeatable": false,
+   "text": [
+    "Você recebe os seguintes benefícios.",
+    "Aumento no Valor de Habilidade. Aumente um valor de habilidade à sua escolha em 1, até o máximo de 30.",
+    "Fundir-se às Sombras. Enquanto estiver em Penumbra ou Escuridão, você pode se dar a condição Invisível com uma Ação Bônus. A condição termina logo depois que você realiza uma ação, uma Ação Bônus ou uma Reação.",
+    "Forma Sombria. Enquanto estiver em Penumbra ou Escuridão, você tem Resistência a todo dano, exceto Psíquico e Radiante."
+   ]
+  }
+ },
+ {
+  "id": "feat:boon-of-truesight",
+  "kind": "feat",
+  "name": "Dádiva da Visão Verdadeira",
+  "summary": "Você recebe os seguintes benefícios.",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Feats"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "minLevel",
+   "level": 19
+  },
+  "roles": [],
+  "data": {
+   "type": "epic-boon",
+   "typeLabel": "Dádiva épica",
+   "repeatable": false,
+   "text": [
+    "Você recebe os seguintes benefícios.",
+    "Aumento no Valor de Habilidade. Aumente um valor de habilidade à sua escolha em 1, até o máximo de 30.",
+    "Visão Verdadeira. Você tem Visão Verdadeira com alcance de 18 metros."
+   ]
+  }
+ }
+]

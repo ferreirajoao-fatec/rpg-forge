@@ -1,0 +1,96 @@
+{
+ "daylight": {
+  "d": [
+   "Pela duração, luz solar se espalha a partir de um ponto dentro do alcance e preenche uma Esfera de 18 metros de raio. A área da luz solar é de Luz Plena e emite Penumbra por mais 18 metros.",
+   "Em vez disso, você pode lançar a magia num objeto que não esteja sendo vestido nem carregado, fazendo a luz solar preencher uma Emanação de 18 metros que se origina nesse objeto. Cobrir esse objeto com algo opaco, como uma tigela ou um elmo, bloqueia a luz solar.",
+   "Se qualquer parte da área desta magia se sobrepuser a uma área de Escuridão criada por uma magia de nível 3 ou inferior, essa outra magia é dissipada."
+  ]
+ },
+ "death-ward": {
+  "d": [
+   "Você toca uma criatura e lhe concede uma certa proteção contra a morte. Na primeira vez que o alvo fosse cair a 0 Pontos de Vida antes de a magia terminar, ele cai a 1 Ponto de Vida em vez disso, e a magia termina.",
+   "Se a magia ainda estiver ativa quando o alvo for submetido a um efeito que o mataria instantaneamente sem causar dano, esse efeito é anulado contra o alvo, e a magia termina."
+  ]
+ },
+ "delayed-blast-fireball": {
+  "d": [
+   "Um feixe de luz amarela lampeja de você e então se condensa num ponto escolhido dentro do alcance, como uma conta brilhante, pela duração. Quando a magia termina, a conta explode, e cada criatura numa Esfera de 6 metros de raio centrada nesse ponto faz um teste de resistência de Destreza. A criatura sofre dano de Fogo igual ao total de dano acumulado se falhar, ou metade se passar.",
+   "O dano básico da magia é 12d6, e ele aumenta em 1d6 sempre que seu turno termina sem que a magia tenha terminado.",
+   "Se uma criatura tocar a conta brilhante antes de a magia terminar, ela faz um teste de resistência de Destreza. Se falhar, a magia termina, fazendo a conta explodir. Se passar, a criatura pode arremessar a conta até 12 metros. Se a conta arremessada entrar no espaço de uma criatura ou colidir com um objeto sólido, a magia termina, e a conta explode.",
+   "Quando a conta explode, objetos inflamáveis na explosão que não estejam sendo vestidos nem carregados começam a queimar."
+  ],
+  "h": ["O dano básico aumenta em 1d6 para cada nível de espaço de magia acima de 7."],
+  "m": "Uma bolinha de guano de morcego e enxofre."
+ },
+ "demiplane": {
+  "d": [
+   "Você cria uma porta sombria Média numa superfície sólida e plana que consiga ver dentro do alcance. Essa porta pode ser aberta e fechada e leva a um semiplano que é uma sala vazia de 9 metros em cada dimensão, feita de madeira ou pedra (à sua escolha).",
+   "Quando a magia termina, a porta desaparece, e os objetos dentro do semiplano permanecem lá. As criaturas dentro dele também permanecem, a menos que escolham ser expelidas pela porta enquanto ela desaparece, caindo com a condição Caído nos espaços desocupados mais próximos de onde a porta estava.",
+   "Cada vez que lançar esta magia, você pode criar um novo semiplano ou ligar a porta sombria a um semiplano criado numa conjuração anterior desta magia. Além disso, se conhecer a natureza e o conteúdo de um semiplano criado por esta magia lançada por outra criatura, pode ligar a porta sombria a esse semiplano."
+  ]
+ },
+ "detect-evil-and-good": {
+  "d": [
+   "Pela duração, você sente a localização de qualquer Aberração, Celestial, Elemental, Fada, Ínfero ou Morto-Vivo a até 9 metros de você. Também sente se a magia Consagrar está ativa ali e, se estiver, onde.",
+   "A magia é bloqueada por 30 centímetros de pedra, terra ou madeira, 2,5 centímetros de metal ou uma folha fina de chumbo."
+  ]
+ },
+ "detect-magic": {
+  "d": [
+   "Pela duração, você sente a presença de efeitos mágicos a até 9 metros de você. Se sentir esses efeitos, pode realizar a ação de Magia para ver uma aura tênue ao redor de qualquer criatura ou objeto visível na área que carregue a magia e, se um efeito foi criado por uma magia, descobre a escola de magia dela.",
+   "A magia é bloqueada por 30 centímetros de pedra, terra ou madeira, 2,5 centímetros de metal ou uma folha fina de chumbo."
+  ]
+ },
+ "detect-poison-and-disease": {
+  "d": [
+   "Pela duração, você sente a localização de venenos, criaturas venenosas ou peçonhentas e contágios mágicos a até 9 metros de você. Sente o tipo de veneno, criatura ou contágio em cada caso.",
+   "A magia é bloqueada por 30 centímetros de pedra, terra ou madeira, 2,5 centímetros de metal ou uma folha fina de chumbo."
+  ],
+  "m": "Uma folha de teixo."
+ },
+ "detect-thoughts": {
+  "d": [
+   "Você ativa um dos efeitos abaixo. Até a magia terminar, pode ativar qualquer um deles com uma ação de Magia nos seus turnos posteriores.",
+   "Sentir Pensamentos. Você sente a presença de pensamentos a até 9 metros de você que pertençam a criaturas que conheçam idiomas ou sejam telepáticas. Não lê os pensamentos, mas sabe que há uma criatura pensante presente.",
+   "A magia é bloqueada por 30 centímetros de pedra, terra ou madeira, 2,5 centímetros de metal ou uma folha fina de chumbo.",
+   "Ler Pensamentos. Escolha como alvo uma criatura que consiga ver a até 9 metros de você ou uma criatura a até 9 metros de você que tenha detectado com a opção Sentir Pensamentos. Você descobre o que mais ocupa a mente do alvo neste momento. Se o alvo não conhecer nenhum idioma e não for telepático, você não descobre nada.",
+   "Com uma ação de Magia no seu próximo turno, você pode tentar sondar mais fundo a mente do alvo. Se fizer isso, o alvo faz um teste de resistência de Sabedoria. Se falhar, você percebe o raciocínio, as emoções e algo que pesa muito na mente dele (como uma preocupação, um amor ou um ódio). Se passar, a magia termina. De qualquer forma, o alvo sabe que você está sondando a mente dele e, até você desviar a atenção da mente do alvo, ele pode realizar uma ação no turno dele para fazer um teste de Inteligência (Arcanismo) contra a CD de resistência das suas magias, encerrando a magia se passar."
+  ],
+  "m": "1 Peça de Cobre."
+ },
+ "dimension-door": {
+  "d": [
+   "Você se teletransporta para um local dentro do alcance. Chega exatamente ao ponto desejado. Pode ser um lugar que consiga ver, que consiga visualizar ou que consiga descrever informando distância e direção, como \"60 metros para baixo\" ou \"90 metros para cima, a noroeste, num ângulo de 45 graus\".",
+   "Você também pode teletransportar uma criatura voluntária. Ela precisa estar a até 1,5 metro de você quando você se teletransporta e vai para um espaço a até 1,5 metro do seu espaço de destino.",
+   "Se você, a outra criatura ou ambos fossem chegar a um espaço ocupado por uma criatura ou completamente preenchido por um ou mais objetos, você e qualquer criatura que viaje com você sofrem 4d6 de dano de Energia cada, e o teletransporte falha."
+  ]
+ },
+ "disguise-self": {
+  "d": [
+   "Você faz a si mesmo (incluindo roupas, armadura, armas e outros pertences que carrega) parecer diferente até a magia terminar. Pode parecer 30 centímetros mais baixo ou mais alto e parecer mais pesado ou mais leve. Precisa adotar uma forma com a mesma disposição básica de membros que a sua. Fora isso, a extensão da ilusão fica a seu critério.",
+   "As mudanças feitas por esta magia não resistem a uma inspeção física. Por exemplo, se usar esta magia para acrescentar um chapéu à sua roupa, os objetos atravessam o chapéu, e quem o tocar não sente nada.",
+   "Para perceber que você está disfarçado, uma criatura precisa realizar a ação Estudar para inspecionar sua aparência e passar num teste de Inteligência (Investigação) contra a CD de resistência das suas magias."
+  ]
+ },
+ "disintegrate": {
+  "d": [
+   "Você dispara um raio verde num alvo que consiga ver dentro do alcance. O alvo pode ser uma criatura, um objeto não mágico ou uma criação de energia mágica, como a muralha criada por Muralha de Energia.",
+   "Uma criatura escolhida como alvo desta magia faz um teste de resistência de Destreza. Se falhar, sofre 10d6 + 40 de dano de Energia. Se esse dano a reduzir a 0 Pontos de Vida, ela e tudo o que for não mágico que estiver vestindo e carregando são desintegrados em pó cinza. O alvo só pode ser revivido pelas magias Ressurreição Verdadeira ou Desejo.",
+   "Esta magia desintegra automaticamente um objeto não mágico Grande ou menor ou uma criação de energia mágica. Se esse alvo for Enorme ou maior, a magia desintegra uma porção dele do tamanho de um Cubo de 3 metros."
+  ],
+  "h": ["O dano aumenta em 3d6 para cada nível de espaço de magia acima de 6."],
+  "m": "Um ímã natural e poeira."
+ },
+ "dispel-evil-and-good": {
+  "d": [
+   "Pela duração, Celestiais, Elementais, Fadas, Ínferos e Mortos-Vivos têm Desvantagem em jogadas de ataque contra você. Você pode encerrar a magia antes usando uma das funções especiais a seguir.",
+   "Quebrar Encantamento. Com uma ação de Magia, você toca uma criatura possuída por uma ou mais criaturas dos tipos acima, ou com a condição Enfeitiçado ou Amedrontado causada por elas. O alvo deixa de estar possuído, Enfeitiçado ou Amedrontado por essas criaturas.",
+   "Expulsão. Com uma ação de Magia, você escolhe como alvo uma criatura que consiga ver a até 1,5 metro de você e que seja de um dos tipos acima. O alvo deve passar num teste de resistência de Carisma ou é mandado de volta ao plano de origem, se ainda não estiver nele. Se não estiverem no plano de origem, Mortos-Vivos são mandados ao Pendor das Sombras, e Fadas, à Agrestia das Fadas."
+  ],
+  "m": "Prata e ferro em pó."
+ },
+ "dispel-magic": {
+  "d": ["Escolha uma criatura, um objeto ou um efeito mágico dentro do alcance. Qualquer magia de nível 3 ou inferior em andamento no alvo termina. Para cada magia de nível 4 ou superior em andamento no alvo, faça um teste de atributo usando sua habilidade de conjuração (CD 10 mais o nível dessa magia). Se passar, a magia termina."],
+  "h": ["Você encerra automaticamente uma magia no alvo se o nível dela for igual ou menor que o nível do espaço de magia que usar."]
+ }
+}

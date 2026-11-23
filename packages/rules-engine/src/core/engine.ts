@@ -97,6 +97,19 @@ export interface CurrencyDef {
   value: number;
 }
 
+/** Pacote de equipamento inicial (de uma classe ou antecedente), com alternativas. */
+export interface StartingPackage {
+  /** De onde vem (ex.: "Guerreiro", "Acólito"). */
+  source: string;
+  /** Itens que vêm sempre. */
+  fixed: { id: string; quantity: number }[];
+  /** Grupos de alternativas: escolha `choose` opção(ões) de cada grupo. */
+  groups: {
+    choose: number;
+    options: { label: string; items: { id: string; quantity: number }[]; gold: number; open: { category: string; count: number; label: string }[] }[];
+  }[];
+}
+
 /** Linha do inventário com dados resolvidos pelo motor. */
 export interface InventoryRow {
   entryId: string;
@@ -167,6 +180,13 @@ export interface RulesEngine {
   readonly currencies?: CurrencyDef[];
   /** Dinheiro inicial para um nível: quantia fixa ou fórmula de dados (na moeda padrão). */
   startingWealth?(level: number): { amount?: number; formula?: string };
+  /** Pacotes de equipamento inicial da classe e do antecedente escolhidos, quando o sistema os tiver. */
+  startingPackages?(c: CharacterData, catalog: Catalog): StartingPackage[];
+  /**
+   * Aumentos de atributo por nível (CharacterData.levelBonuses): quantos pontos o personagem
+   * pode distribuir agora e o teto de cada atributo. Ausente = o sistema não usa.
+   */
+  levelBonusBudget?(c: CharacterData, catalog: Catalog): { points: number; max: number; detail: string };
   evaluateOption(c: CharacterData, entry: ContentEntry, catalog: Catalog): OptionEvaluation;
 }
 

@@ -1,0 +1,133 @@
+{
+ "rage": {
+  "n": "Fúria",
+  "d": [
+   "Em batalha, você luta com ferocidade primitiva. No seu turno, pode entrar em fúria com uma ação bônus. Enquanto estiver em fúria, você recebe os benefícios a seguir, se não estiver usando armadura pesada:",
+   "- Você tem vantagem em testes de Força e testes de resistência de Força.",
+   "- Quando faz um ataque com arma corpo a corpo usando Força, recebe +2 de bônus na jogada de dano. Esse bônus aumenta conforme você sobe de nível.",
+   "- Você tem resistência a dano de concussão, perfurante e cortante.",
+   "Se puder lançar magias, você não pode lançá-las nem se concentrar nelas enquanto estiver em fúria.",
+   "A fúria dura 1 minuto. Termina antes se você ficar inconsciente ou se o seu turno terminar sem que você tenha atacado uma criatura hostil ou sofrido dano desde o seu último turno. Você também pode encerrar a fúria no seu turno com uma ação bônus.",
+   "Depois de entrar em fúria o número máximo de vezes do seu nível de bárbaro, você precisa terminar um descanso longo antes de poder entrar em fúria de novo. Você pode entrar em fúria 2 vezes no 1º nível, 3 no 3º, 4 no 6º, 5 no 12º e 6 no 17º."
+  ]
+ },
+ "barbarian-unarmored-defense": {
+  "n": "Defesa sem Armadura",
+  "d": ["Enquanto não estiver usando armadura, sua Classe de Armadura é 10 + seu modificador de Destreza + seu modificador de Constituição. Você pode usar um escudo e ainda receber este benefício."]
+ },
+ "reckless-attack": {
+  "n": "Ataque Descuidado",
+  "d": ["A partir do 2º nível, você pode deixar de lado qualquer preocupação com a defesa para atacar com desespero feroz. Ao fazer seu primeiro ataque no turno, pode decidir atacar de forma descuidada. Isso concede vantagem em jogadas de ataque com armas corpo a corpo usando Força durante este turno, mas jogadas de ataque contra você têm vantagem até o seu próximo turno."]
+ },
+ "danger-sense": {
+  "n": "Sentido de Perigo",
+  "d": ["No 2º nível, você ganha um sentido sobrenatural de quando algo por perto não está como deveria, o que lhe dá uma vantagem ao se esquivar do perigo. Você tem vantagem em testes de resistência de Destreza contra efeitos que consiga ver, como armadilhas e magias. Para receber este benefício, você não pode estar cego, surdo nem incapacitado."]
+ },
+ "primal-path": {
+  "n": "Caminho Primitivo",
+  "d": ["No 3º nível, você escolhe um caminho que molda a natureza da sua fúria. Escolha o Caminho do Furioso ou o Caminho do Guerreiro Totêmico, ambos detalhados no fim da descrição da classe. A escolha concede características no 3º nível e de novo no 6º, 10º e 14º."]
+ },
+ "frenzy": {
+  "n": "Frenesi",
+  "d": ["A partir do momento em que escolhe este caminho, no 3º nível, você pode entrar em frenesi quando entra em fúria. Se fizer isso, enquanto a fúria durar, pode fazer um único ataque com arma corpo a corpo como ação bônus em cada um dos seus turnos seguintes. Quando a fúria termina, você sofre um nível de exaustão (como descrito no apêndice A)."]
+ },
+ "barbarian-ability-score-improvement-1": {
+  "n": "Aumento no Valor de Habilidade",
+  "d": ["Ao chegar ao 4º nível, e de novo no 8º, 12º, 16º e 19º, você pode aumentar um valor de habilidade à sua escolha em 2, ou dois valores de habilidade à sua escolha em 1. Como de costume, não pode aumentar um valor de habilidade acima de 20 com esta característica."]
+ },
+ "barbarian-extra-attack": {
+  "n": "Ataque Extra",
+  "d": ["A partir do 5º nível, você pode atacar duas vezes, em vez de uma, sempre que realiza a ação de Ataque no seu turno."]
+ },
+ "fast-movement": {
+  "n": "Movimento Rápido",
+  "d": ["A partir do 5º nível, seu deslocamento aumenta em 3 metros enquanto você não estiver usando armadura pesada."]
+ },
+ "mindless-rage": {
+  "n": "Fúria Irracional",
+  "d": ["A partir do 6º nível, você não pode ser enfeitiçado nem amedrontado enquanto estiver em fúria. Se estiver enfeitiçado ou amedrontado quando entrar em fúria, o efeito fica suspenso enquanto a fúria durar."]
+ },
+ "primal-path-improvement-1": { "n": "Característica do Caminho" },
+ "feral-instinct": {
+  "n": "Instinto Selvagem",
+  "d": [
+   "No 7º nível, seus instintos estão tão afiados que você tem vantagem nas jogadas de iniciativa.",
+   "Além disso, se for surpreendido no início do combate e não estiver incapacitado, pode agir normalmente no seu primeiro turno, mas só se entrar em fúria antes de fazer qualquer outra coisa nesse turno."
+  ]
+ },
+ "brutal-critical-1-die": {
+  "n": "Crítico Brutal (1 dado)",
+  "d": ["A partir do 9º nível, você pode rolar um dado de dano da arma adicional ao calcular o dano extra de um acerto crítico com ataque corpo a corpo. Isso aumenta para dois dados adicionais no 13º nível e três no 17º."]
+ },
+ "intimidating-presence": {
+  "n": "Presença Intimidante",
+  "d": [
+   "A partir do 10º nível, você pode usar sua ação para amedrontar alguém com sua presença ameaçadora. Quando faz isso, escolha uma criatura que consiga ver a até 9 metros de você. Se ela puder ver ou ouvir você, deve passar num teste de resistência de Sabedoria (CD 8 + seu bônus de proficiência + seu modificador de Carisma) ou ficar amedrontada por você até o fim do seu próximo turno. Nos turnos seguintes, você pode usar sua ação para estender a duração do efeito na criatura amedrontada até o fim do seu próximo turno. O efeito termina se a criatura terminar o turno fora da sua linha de visão ou a mais de 18 metros de você.",
+   "Se a criatura passar no teste de resistência, você não pode usar esta característica nela de novo por 24 horas."
+  ]
+ },
+ "relentless-rage": {
+  "n": "Fúria Implacável",
+  "d": [
+   "A partir do 11º nível, sua fúria pode manter você lutando apesar de ferimentos graves. Se cair a 0 pontos de vida enquanto estiver em fúria e não morrer na hora, você pode fazer um teste de resistência de Constituição CD 10. Se passar, fica com 1 ponto de vida em vez disso.",
+   "Cada vez que usar esta característica depois da primeira, a CD aumenta em 5. Quando você termina um descanso curto ou longo, a CD volta a 10."
+  ]
+ },
+ "brutal-critical-2-dice": { "n": "Crítico Brutal (2 dados)" },
+ "retaliation": {
+  "n": "Retaliação",
+  "d": ["A partir do 14º nível, quando sofrer dano de uma criatura a até 1,5 metro de você, pode usar sua reação para fazer um ataque com arma corpo a corpo contra ela."]
+ },
+ "persistent-rage": {
+  "n": "Fúria Persistente",
+  "d": ["A partir do 15º nível, sua fúria é tão intensa que só termina antes se você cair inconsciente ou se decidir encerrá-la."]
+ },
+ "brutal-critical-3-dice": { "n": "Crítico Brutal (3 dados)" },
+ "indomitable-might": {
+  "n": "Poder Indomável",
+  "d": ["A partir do 18º nível, se o total de um teste de Força seu for menor que seu valor de Força, você pode usar esse valor no lugar do total."]
+ },
+ "primal-champion": {
+  "n": "Campeão Primitivo",
+  "d": ["No 20º nível, você encarna o poder das terras selvagens. Seus valores de Força e Constituição aumentam em 4. O máximo desses valores passa a ser 24."]
+ },
+ "spellcasting-bard": {
+  "n": "Conjuração: Bardo",
+  "d": ["Você aprendeu a desembaraçar e remodelar o tecido da realidade em harmonia com seus desejos e sua música. Suas magias fazem parte do seu vasto repertório, uma magia que você pode afinar para situações diferentes."]
+ },
+ "bardic-inspiration-d6": {
+  "n": "Inspiração de Bardo (d6)",
+  "d": [
+   "Você pode inspirar os outros com palavras ou música emocionantes. Para isso, usa uma ação bônus no seu turno para escolher uma criatura, que não seja você, a até 18 metros e que possa ouvi-lo. Ela ganha um dado de Inspiração de Bardo, um d6. Uma vez nos próximos 10 minutos, a criatura pode rolar o dado e somar o resultado a um teste de habilidade, jogada de ataque ou teste de resistência. Ela pode esperar até depois de rolar o d20 para decidir usar o dado, mas precisa decidir antes de o Mestre dizer se a jogada teve sucesso ou falhou. Depois de rolado, o dado de Inspiração de Bardo se perde. Uma criatura só pode ter um dado de Inspiração de Bardo por vez.",
+   "Você pode usar esta característica um número de vezes igual ao seu modificador de Carisma (no mínimo uma vez). Recupera os usos gastos quando termina um descanso longo.",
+   "Seu dado de Inspiração de Bardo muda quando você chega a certos níveis nesta classe. Ele passa a ser d8 no 5º nível, d10 no 10º e d12 no 15º."
+  ]
+ },
+ "jack-of-all-trades": {
+  "n": "Pau para Toda Obra",
+  "d": ["A partir do 2º nível, você pode somar metade do seu bônus de proficiência, arredondado para baixo, a qualquer teste de habilidade que ainda não inclua seu bônus de proficiência."]
+ },
+ "song-of-rest-d6": {
+  "n": "Canção de Descanso (d6)",
+  "d": [
+   "A partir do 2º nível, você pode usar música ou oratória tranquilizadora para ajudar a revigorar aliados feridos durante um descanso curto. Se você ou qualquer criatura amigável que possa ouvir sua apresentação recuperar pontos de vida no fim do descanso curto gastando um ou mais Dados de Vida, cada uma dessas criaturas recupera 1d6 pontos de vida extras.",
+   "Os pontos de vida extras aumentam quando você chega a certos níveis nesta classe: para 1d8 no 9º nível, 1d10 no 13º e 1d12 no 17º."
+  ]
+ },
+ "bard-college": {
+  "n": "Colégio de Bardo",
+  "d": ["No 3º nível, você se aprofunda nas técnicas avançadas de um colégio de bardo à sua escolha, como o Colégio do Conhecimento. A escolha concede características no 3º nível e de novo no 6º e 14º."]
+ },
+ "bonus-proficiencies": {
+  "n": "Proficiências Adicionais",
+  "d": ["Ao entrar para o Colégio do Conhecimento no 3º nível, você ganha proficiência em três perícias à sua escolha."]
+ },
+ "cutting-words": {
+  "n": "Palavras Cortantes",
+  "d": [
+   "Também no 3º nível, você aprende a usar sua sagacidade para distrair, confundir e minar a confiança e a competência dos outros.",
+   "Quando uma criatura que você consiga ver a até 18 metros faz uma jogada de ataque, um teste de habilidade ou uma jogada de dano, você pode usar sua reação para gastar um uso de Inspiração de Bardo, rolando um dado de Inspiração de Bardo e subtraindo o resultado da jogada da criatura.",
+   "Você pode usar esta característica depois de a criatura rolar, mas antes de o Mestre determinar se a jogada de ataque ou o teste de habilidade teve sucesso ou falhou, ou antes de a criatura causar o dano. A criatura é imune se não puder ouvi-lo ou se for imune a ser enfeitiçada."
+  ]
+ }
+}

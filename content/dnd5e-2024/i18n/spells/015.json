@@ -1,0 +1,94 @@
+{
+ "hunters-mark": {
+  "d": [
+   "Você marca magicamente uma criatura que consiga ver dentro do alcance como sua presa. Até a magia terminar, você causa 1d6 de dano de Energia extra ao alvo sempre que o acertar com uma jogada de ataque. Você também tem Vantagem em qualquer teste de Sabedoria (Percepção ou Sobrevivência) que fizer para encontrá-lo.",
+   "Se o alvo cair a 0 Pontos de Vida antes de a magia terminar, você pode realizar uma Ação Bônus para passar a marca para uma nova criatura que consiga ver dentro do alcance."
+  ],
+  "h": ["Sua Concentração pode durar mais com um espaço de magia de nível 3-4 (até 8 horas) ou 5+ (até 24 horas)."]
+ },
+ "hypnotic-pattern": {
+  "d": [
+   "Você cria um padrão retorcido de cores num Cubo de 9 metros dentro do alcance. O padrão aparece por um instante e some. Cada criatura na área que consiga ver o padrão deve passar num teste de resistência de Sabedoria ou fica com a condição Enfeitiçado pela duração. Enquanto estiver Enfeitiçada, a criatura fica com a condição Incapacitado e Deslocamento 0.",
+   "A magia termina para uma criatura afetada se ela sofrer qualquer dano ou se outra pessoa usar uma ação para tirá-la do torpor sacudindo-a."
+  ],
+  "m": "Uma pitada de confete."
+ },
+ "ice-knife": {
+  "n": "Faca de Gelo",
+  "d": ["Você cria um estilhaço de gelo e o arremessa numa criatura dentro do alcance. Faça um ataque mágico à distância contra o alvo. Se acertar, o alvo sofre 1d10 de dano Perfurante. Acertando ou errando, o estilhaço então explode. O alvo e cada criatura a até 1,5 metro dele devem passar num teste de resistência de Destreza ou sofrer 2d6 de dano de Frio."],
+  "h": ["O dano de Frio aumenta em 1d6 para cada nível de espaço de magia acima de 1."],
+  "m": "Uma gota de água ou um pedaço de gelo."
+ },
+ "ice-storm": {
+  "d": [
+   "Granizo cai num Cilindro de 6 metros de raio e 12 metros de altura centrado num ponto dentro do alcance. Cada criatura no Cilindro faz um teste de resistência de Destreza. A criatura sofre 2d10 de dano de Concussão e 4d6 de dano de Frio se falhar, ou metade se passar.",
+   "O granizo transforma o chão no Cilindro em Terreno Difícil até o fim do seu próximo turno."
+  ],
+  "h": ["O dano de Concussão aumenta em 1d10 para cada nível de espaço de magia acima de 4."],
+  "m": "Uma luva de lã."
+ },
+ "identify": {
+  "d": [
+   "Você toca um objeto durante toda a conjuração da magia. Se o objeto for um item mágico ou outro objeto mágico, você descobre suas propriedades e como usá-las, se ele exige Sintonização e quantas cargas tem, se tiver. Descobre se há magias em andamento afetando o item e quais são. Se o item foi criado por uma magia, descobre o nome dela.",
+   "Se, em vez disso, tocar uma criatura durante toda a conjuração, descobre quais magias em andamento a estão afetando, se houver."
+  ],
+  "m": "Uma pérola no valor de 100+ PO."
+ },
+ "illusory-script": {
+  "d": [
+   "Você escreve em pergaminho, papel ou outro material adequado e o imbui de uma ilusão que dura pela duração. Para você e para as criaturas que designar ao lançar a magia, a escrita parece normal, feita com sua caligrafia, e transmite o significado que você pretendia. Para todos os outros, a escrita parece feita numa escrita desconhecida ou mágica, ininteligível. Em vez disso, a ilusão pode alterar o significado, a caligrafia e o idioma do texto, mas o idioma precisa ser um que você conheça.",
+   "Se a magia for dissipada, a escrita original e a ilusão desaparecem.",
+   "Uma criatura com Visão Verdadeira consegue ler a mensagem oculta."
+  ],
+  "m": "Tinta no valor de 10+ PO, que a magia consome."
+ },
+ "imprisonment": {
+  "d": [
+   "Você cria uma contenção mágica para prender uma criatura que consiga ver dentro do alcance. O alvo deve fazer um teste de resistência de Sabedoria. Se passar, não é afetado e fica imune a esta magia pelas próximas 24 horas. Se falhar, fica aprisionado. Enquanto estiver aprisionado, o alvo não precisa respirar, comer nem beber e não envelhece. Magias de adivinhação não conseguem localizar nem perceber o alvo aprisionado, e ele não pode se teletransportar.",
+   "Até a magia terminar, o alvo também é afetado por um dos efeitos a seguir, à sua escolha: Sepultamento. O alvo é enterrado sob a terra num globo oco de energia mágica grande o bastante apenas para contê-lo. Nada pode entrar no globo nem sair dele. Acorrentamento. Correntes firmemente presas ao chão mantêm o alvo no lugar. Ele fica com a condição Impedido e não pode ser movido por nenhum meio. Prisão Cercada. O alvo fica preso num semiplano protegido contra teletransporte e viagem planar. O semiplano pode ser um labirinto, uma jaula, uma torre ou algo assim, à sua escolha. Contenção Mínima. O alvo fica com 2,5 centímetros de altura e preso dentro de uma pedra preciosa indestrutível ou objeto semelhante. A luz atravessa a pedra (permitindo que o alvo veja o lado de fora e que outras criaturas o vejam), mas nada mais consegue atravessá-la por nenhum meio. Sono. O alvo fica com a condição Inconsciente e não pode ser acordado.",
+   "Encerrar a Magia. Ao lançar a magia, especifique um gatilho que a encerrará. O gatilho pode ser tão simples ou elaborado quanto quiser, mas o Mestre precisa concordar que ele tem grande chance de acontecer na próxima década. O gatilho precisa ser uma ação observável, como alguém fazer uma oferenda específica no templo do seu deus, salvar seu verdadeiro amor ou derrotar um monstro específico.",
+   "Uma magia Dissipar Magia só pode encerrar esta magia se for lançada com um espaço de magia de nível 9, tendo como alvo a prisão ou o componente usado para criá-la."
+  ],
+  "m": "Uma estatueta do alvo no valor de 5.000+ PO."
+ },
+ "incendiary-cloud": {
+  "d": [
+   "Uma nuvem turbulenta de brasas e fumaça preenche uma Esfera de 6 metros de raio centrada num ponto dentro do alcance. A área da nuvem tem Escuridão Densa. Ela dura pela duração ou até um vento forte (como o criado por Lufada de Vento) dispersá-la.",
+   "Quando a nuvem aparece, cada criatura nela faz um teste de resistência de Destreza, sofrendo 10d8 de dano de Fogo se falhar, ou metade se passar. Uma criatura também precisa fazer esse teste quando a Esfera entra no espaço dela e quando entra na Esfera ou termina o turno ali. A criatura só faz esse teste uma vez por turno.",
+   "A nuvem se afasta 3 metros de você, numa direção à sua escolha, no início de cada um dos seus turnos."
+  ]
+ },
+ "inflict-wounds": {
+  "d": ["Uma criatura que você toca faz um teste de resistência de Constituição, sofrendo 2d10 de dano Necrótico se falhar, ou metade se passar."]
+ },
+ "insect-plague": {
+  "d": [
+   "Um enxame de gafanhotos preenche uma Esfera de 6 metros de raio centrada num ponto à sua escolha dentro do alcance. A Esfera permanece pela duração, e sua área tem Escuridão Leve e é Terreno Difícil.",
+   "Quando o enxame aparece, cada criatura nele faz um teste de resistência de Constituição, sofrendo 4d10 de dano Perfurante se falhar, ou metade se passar. Uma criatura também faz esse teste quando entra na área da magia pela primeira vez num turno ou termina o turno ali. A criatura só faz esse teste uma vez por turno."
+  ],
+  "h": ["O dano aumenta em 1d10 para cada nível de espaço de magia acima de 5."],
+  "m": "Um gafanhoto."
+ },
+ "instant-summons": {
+  "d": [
+   "Você toca a safira usada na conjuração e um objeto de no máximo 5 kg cuja maior dimensão seja de no máximo 1,8 metro. A magia deixa uma marca Invisível nesse objeto e inscreve invisivelmente o nome dele na safira. Cada vez que lançar esta magia, você precisa usar uma safira diferente.",
+   "Depois disso, você pode realizar uma ação de Magia para dizer o nome do objeto e esmagar a safira. O objeto aparece instantaneamente na sua mão, sejam quais forem as distâncias físicas ou planares, e a magia termina.",
+   "Se outra criatura estiver segurando ou carregando o objeto, esmagar a safira não o transporta, mas você descobre quem é essa criatura e onde ela está no momento."
+  ],
+  "m": "Uma safira no valor de 1.000+ PO."
+ },
+ "irresistible-dance": {
+  "d": [
+   "Uma criatura que você consiga ver dentro do alcance deve fazer um teste de resistência de Sabedoria. Se passar, o alvo dança de forma cômica até o fim do próximo turno dele, durante o qual precisa gastar todo o movimento dançando no lugar.",
+   "Se falhar, o alvo fica com a condição Enfeitiçado pela duração. Enquanto estiver Enfeitiçado, dança de forma cômica, precisa usar todo o movimento dançando no lugar e tem Desvantagem em testes de resistência de Destreza e jogadas de ataque, e as outras criaturas têm Vantagem em jogadas de ataque contra ele. Em cada turno dele, o alvo pode realizar uma ação para se recompor e repetir o teste, encerrando a magia em si mesmo se passar."
+  ]
+ },
+ "invisibility": {
+  "d": ["Uma criatura que você toca fica com a condição Invisível até a magia terminar. A magia termina antes imediatamente depois que o alvo faz uma jogada de ataque, causa dano ou lança uma magia."],
+  "m": "Um cílio envolto em goma-arábica."
+ },
+ "jump": {
+  "d": ["Você toca uma criatura voluntária. Uma vez em cada turno dela até a magia terminar, essa criatura pode saltar até 9 metros gastando 3 metros de movimento."],
+  "m": "A perna traseira de um gafanhoto."
+ }
+}

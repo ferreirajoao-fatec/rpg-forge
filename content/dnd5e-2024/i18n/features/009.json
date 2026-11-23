@@ -1,0 +1,125 @@
+{
+ "rogue-expertise": {
+  "d": [
+   "Você ganha Especialização em duas das suas proficiências em perícia à sua escolha. Prestidigitação e Furtividade são as recomendadas, se você tiver proficiência nelas.",
+   "No nível de Ladino 6, você ganha Especialização em mais duas das suas proficiências em perícia à sua escolha."
+  ]
+ },
+ "rogue-sneak-attack": {
+  "d": [
+   "Você sabe golpear com sutileza e aproveitar a distração do inimigo. Uma vez por turno, pode causar 1d6 de dano extra a uma criatura que atingir com uma jogada de ataque se tiver Vantagem na jogada e o ataque usar uma arma de Acuidade ou À Distância. O dano extra é do mesmo tipo do da arma.",
+   "Você não precisa de Vantagem na jogada de ataque se pelo menos um aliado seu estiver a até 1,5 metro do alvo, esse aliado não estiver com a condição Incapacitado e você não tiver Desvantagem na jogada.",
+   "O dano extra aumenta conforme você ganha níveis de Ladino, como mostra a coluna Ataque Furtivo da tabela de Características do Ladino."
+  ]
+ },
+ "rogue-thieves-cant": {
+  "d": ["Você aprendeu vários idiomas nas comunidades onde exerceu seus talentos de ladino. Conhece a Gíria de Ladrão e mais um idioma à sua escolha, escolhido nas tabelas de idiomas de \"Criação de Personagem\"."]
+ },
+ "rogue-weapon-mastery": {
+  "d": [
+   "Seu treinamento com armas permite usar as propriedades de maestria de dois tipos de armas à sua escolha com as quais tenha proficiência, como Adagas e Arcos Curtos.",
+   "Sempre que terminar um Descanso Longo, você pode mudar os tipos de armas escolhidos. Por exemplo, pode passar a usar as propriedades de maestria de Cimitarras e Espadas Curtas."
+  ]
+ },
+ "rogue-cunning-action": {
+  "d": ["Seu raciocínio rápido e sua agilidade permitem se mover e agir depressa. No seu turno, você pode realizar uma das ações a seguir como Ação Bônus: Disparada, Desengajar ou Esconder."]
+ },
+ "rogue-subclass": {
+  "n": "Subclasse de Ladino",
+  "d": ["Você ganha uma subclasse de Ladino à sua escolha. Uma subclasse é uma especialização que concede características em certos níveis de Ladino. Pelo resto da sua carreira, você ganha cada característica da subclasse de nível igual ou menor que seu nível de Ladino."]
+ },
+ "rogue-steady-aim": {
+  "n": "Mira Firme",
+  "d": ["Com uma Ação Bônus, você se dá Vantagem na próxima jogada de ataque do turno atual. Só pode usar esta característica se não tiver se movido neste turno e, depois de usá-la, seu Deslocamento é 0 até o fim do turno atual."]
+ },
+ "rogue-ability-score-improvement": {
+  "d": ["Você ganha o talento Aumento no Valor de Habilidade (veja \"Talentos\") ou outro talento à sua escolha para o qual se qualifique. Ganha esta característica de novo nos níveis de Ladino 8, 10, 12 e 16."]
+ },
+ "rogue-cunning-strike": {
+  "n": "Golpe Ardiloso",
+  "d": [
+   "Você desenvolveu formas astutas de usar o Ataque Furtivo. Quando causa dano de Ataque Furtivo, pode acrescentar um dos efeitos de Golpe Ardiloso a seguir.",
+   "Cada efeito tem um custo em dados, que é o número de dados de dano do Ataque Furtivo de que você precisa abrir mão para acrescentar o efeito. Você remove o dado antes de rolar, e o efeito acontece logo depois de o dano do ataque ser causado. Por exemplo, se acrescentar o efeito Veneno, remova 1d6 do dano do Ataque Furtivo antes de rolar.",
+   "Se um efeito de Golpe Ardiloso exigir teste de resistência, a CD é 8 + seu modificador de Destreza + seu Bônus de Proficiência.",
+   "Veneno (Custo: 1d6). Você acrescenta uma toxina ao golpe, forçando o alvo a fazer um teste de resistência de Constituição. Se falhar, fica com a condição Envenenado por 1 minuto. No fim de cada turno dele, o alvo Envenenado repete o teste, encerrando o efeito em si mesmo se passar.",
+   "Para usar este efeito, você precisa ter um Kit de Envenenador consigo.",
+   "Derrubar (Custo: 1d6). Se o alvo for Grande ou menor, deve passar num teste de resistência de Destreza ou ficar com a condição Caído.",
+   "Recuar (Custo: 1d6). Logo depois do ataque, você se move até metade do seu Deslocamento sem provocar Ataques de Oportunidade."
+  ]
+ },
+ "rogue-uncanny-dodge": {
+  "d": ["Quando um atacante que você consiga ver o atinge com uma jogada de ataque, você pode usar uma Reação para reduzir à metade o dano do ataque contra você (arredondado para baixo)."]
+ },
+ "rogue-evasion": {
+  "d": [
+   "Você consegue se esquivar com agilidade de certos perigos.",
+   "Quando for alvo de um efeito que permite um teste de resistência de Destreza para sofrer só metade do dano, você não sofre dano se passar e sofre só metade se falhar. Não pode usar esta característica se estiver com a condição Incapacitado."
+  ]
+ },
+ "rogue-reliable-talent": {
+  "d": ["Sempre que fizer um teste de atributo que use uma das suas proficiências em perícia ou ferramenta, você pode tratar um resultado de 9 ou menos no d20 como 10."]
+ },
+ "rogue-improved-cunning-strike": {
+  "n": "Golpe Ardiloso Aprimorado",
+  "d": ["Você pode usar até dois efeitos de Golpe Ardiloso quando causa dano de Ataque Furtivo, pagando o custo em dados de cada um."]
+ },
+ "rogue-devious-strikes": {
+  "n": "Golpes Traiçoeiros",
+  "d": [
+   "Você praticou novas formas de usar o Ataque Furtivo de forma traiçoeira. Os efeitos a seguir passam a fazer parte das suas opções de Golpe Ardiloso.",
+   "Atordoar (Custo: 2d6). O alvo deve passar num teste de resistência de Constituição ou, no próximo turno dele, só poderá fazer uma destas coisas: se mover, realizar uma ação ou realizar uma Ação Bônus.",
+   "Nocautear (Custo: 6d6). O alvo deve passar num teste de resistência de Constituição ou ficar com a condição Inconsciente por 1 minuto ou até sofrer qualquer dano. O alvo Inconsciente repete o teste no fim de cada turno dele, encerrando o efeito em si mesmo se passar.",
+   "Cegar (Custo: 3d6). O alvo deve passar num teste de resistência de Destreza ou ficar com a condição Cego até o fim do próximo turno dele."
+  ]
+ },
+ "rogue-slippery-mind": {
+  "d": [
+   "Sua mente astuta é excepcionalmente difícil de controlar.",
+   "Você ganha proficiência em testes de resistência de Sabedoria e Carisma."
+  ]
+ },
+ "rogue-elusive": {
+  "d": ["Você é tão evasivo que os atacantes raramente levam a melhor contra você. Nenhuma jogada de ataque pode ter Vantagem contra você, a não ser que você esteja com a condição Incapacitado."]
+ },
+ "rogue-epic-boon": {
+  "d": ["Você ganha um talento de Dádiva Épica (veja \"Talentos\") ou outro talento à sua escolha para o qual se qualifique. Dádiva do Espírito da Noite é a recomendada."]
+ },
+ "rogue-stroke-of-luck": {
+  "d": [
+   "Você tem um talento maravilhoso para ter sucesso quando precisa. Se falhar num Teste de D20, pode transformar o resultado num 20.",
+   "Depois de usar esta característica, você só pode usá-la de novo após terminar um Descanso Curto ou Longo."
+  ]
+ },
+ "thief-fast-hands": {
+  "d": [
+   "Com uma Ação Bônus, você pode fazer uma das coisas a seguir.",
+   "Prestidigitação. Fazer um teste de Destreza (Prestidigitação) para abrir uma fechadura ou desarmar uma armadilha com Ferramentas de Ladrão, ou para bater uma carteira.",
+   "Usar um Objeto. Realizar a ação Utilizar, ou a ação de Magia para usar um item mágico que exija essa ação."
+  ]
+ },
+ "thief-second-story-work": {
+  "d": [
+   "Você treinou para entrar em lugares especialmente difíceis de alcançar, o que lhe dá os benefícios a seguir.",
+   "Escalador. Você ganha Deslocamento de Escalada igual ao seu Deslocamento.",
+   "Saltador. Você pode determinar a distância dos seus saltos usando Destreza em vez de Força."
+  ]
+ },
+ "thief-supreme-sneak": {
+  "d": [
+   "Você ganha a opção de Golpe Ardiloso a seguir.",
+   "Ataque Furtivo Oculto (Custo: 1d6). Se estiver com a condição Invisível da ação Esconder, este ataque não encerra a condição se você terminar o turno atrás de Cobertura de Três Quartos ou Cobertura Total."
+  ]
+ },
+ "thief-use-magic-device": {
+  "d": [
+   "Você aprendeu a aproveitar ao máximo os itens mágicos, o que lhe dá os benefícios a seguir.",
+   "Sintonização. Você pode se sintonizar com até quatro itens mágicos ao mesmo tempo.",
+   "Cargas. Sempre que usar uma propriedade de item mágico que gaste cargas, role 1d6. Com 6, você usa a propriedade sem gastar as cargas.",
+   "Pergaminhos. Você pode usar qualquer Pergaminho de Magia, com Inteligência como habilidade de conjuração para a magia. Se a magia for um truque ou de nível 1, você consegue lançá-la sem falhar.",
+   "Se o pergaminho tiver uma magia de nível mais alto, você precisa primeiro passar num teste de Inteligência (Arcanismo) (CD 10 + o nível da magia). Se passar, lança a magia do pergaminho. Se falhar, o pergaminho se desintegra."
+  ]
+ },
+ "thief-thiefs-reflexes": {
+  "d": ["Você é hábil em armar emboscadas e escapar depressa do perigo. Pode ter dois turnos na primeira rodada de qualquer combate. O primeiro turno é na sua Iniciativa normal e o segundo na sua Iniciativa menos 10."]
+ }
+}

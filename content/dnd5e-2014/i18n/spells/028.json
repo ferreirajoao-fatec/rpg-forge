@@ -1,0 +1,85 @@
+{
+ "seeming": {
+  "n": "Semelhança",
+  "d": [
+   "Esta magia permite mudar a aparência de qualquer número de criaturas que você consiga ver dentro do alcance. Você dá a cada alvo escolhido uma nova aparência ilusória. Um alvo não voluntário pode fazer um teste de resistência de Carisma e, se passar, não é afetado pela magia.",
+   "A magia disfarça a aparência física, assim como roupas, armaduras, armas e equipamento. Você pode fazer cada criatura parecer 30 centímetros mais baixa ou mais alta e parecer magra, gorda ou algo entre os dois. Não pode mudar o tipo de corpo do alvo, então precisa escolher uma forma com a mesma disposição básica de membros. Fora isso, a extensão da ilusão fica a seu critério. A magia dura pela duração, a menos que você use sua ação para dispensá-la antes.",
+   "As mudanças feitas por esta magia não resistem a uma inspeção física. Por exemplo, se usar esta magia para acrescentar um chapéu à roupa de uma criatura, os objetos atravessam o chapéu, e quem o tocar não sente nada ou sente a cabeça e o cabelo da criatura. Se usar esta magia para parecer mais magro do que é, a mão de quem tentar tocá-lo esbarra em você enquanto ainda parece estar no ar.",
+   "Uma criatura pode usar sua ação para inspecionar um alvo e fazer um teste de Inteligência (Investigação) contra a CD de resistência das suas magias. Se passar, percebe que o alvo está disfarçado."
+  ]
+ },
+ "sending": {
+  "n": "Enviar Mensagem",
+  "d": [
+   "Você envia uma mensagem curta, de vinte e cinco palavras ou menos, a uma criatura que conheça. A criatura ouve a mensagem na mente, reconhece você como remetente se o conhecer e pode responder da mesma forma imediatamente. A magia permite que criaturas com valor de Inteligência de pelo menos 1 entendam o significado da sua mensagem.",
+   "Você pode enviar a mensagem a qualquer distância e até a outros planos de existência, mas, se o alvo estiver num plano diferente do seu, há 5% de chance de a mensagem não chegar."
+  ],
+  "m": "Um pedacinho de fio fino de cobre."
+ },
+ "sequester": {
+  "n": "Isolamento",
+  "d": [
+   "Por meio desta magia, uma criatura voluntária ou um objeto pode ser escondido, a salvo de detecção pela duração. Quando você lança a magia e toca o alvo, ele fica invisível e não pode ser alvo de magias de adivinhação nem percebido por sensores de vidência criados por magias de adivinhação.",
+   "Se o alvo for uma criatura, entra num estado de animação suspensa. O tempo deixa de passar para ela, e ela não envelhece.",
+   "Você pode definir uma condição para a magia terminar antes. A condição pode ser qualquer uma que escolher, mas precisa ocorrer ou ser visível a até 1,5 km do alvo. Exemplos: \"depois de 1.000 anos\" ou \"quando a tarrasque despertar\". Esta magia também termina se o alvo sofrer qualquer dano."
+  ],
+  "m": "Um pó composto de pó de diamante, esmeralda, rubi e safira no valor de pelo menos 5.000 po, que a magia consome."
+ },
+ "shapechange": {
+  "n": "Mudança de Forma",
+  "d": [
+   "Você assume a forma de outra criatura pela duração. A nova forma pode ser de qualquer criatura com nível de desafio igual ou menor que o seu nível. A criatura não pode ser um constructo nem um morto-vivo, e você precisa ter visto esse tipo de criatura pelo menos uma vez. Você se transforma num exemplo médio dessa criatura, sem níveis de classe nem o traço Conjuração.",
+   "Suas estatísticas de jogo são substituídas pelas da criatura escolhida, mas você mantém sua tendência e seus valores de Inteligência, Sabedoria e Carisma. Também mantém todas as suas proficiências em perícias e testes de resistência, além de ganhar as da criatura. Se a criatura tiver a mesma proficiência que você e o bônus listado nas estatísticas dela for maior que o seu, use o bônus dela no lugar do seu. Você não pode usar ações lendárias nem ações de covil da nova forma.",
+   "Você assume os pontos de vida e os Dados de Vida da nova forma. Quando volta à forma normal, retorna aos pontos de vida que tinha antes de se transformar. Se voltar por ter caído a 0 pontos de vida, o dano excedente passa para a forma normal. Desde que o dano excedente não reduza sua forma normal a 0 pontos de vida, você não fica inconsciente.",
+   "Você mantém o benefício de quaisquer características da sua classe, raça ou outra fonte e pode usá-las, desde que a nova forma seja fisicamente capaz disso. Não pode usar sentidos especiais que tenha (por exemplo, visão no escuro), a menos que a nova forma também tenha esse sentido. Só pode falar se a criatura normalmente puder falar.",
+   "Ao se transformar, você escolhe se seu equipamento cai no chão, se funde à nova forma ou é vestido por ela. O equipamento vestido funciona normalmente. O Mestre determina se é viável a nova forma vestir uma peça de equipamento, com base no formato e no tamanho da criatura. Seu equipamento não muda de forma nem de tamanho para se ajustar à nova forma, e qualquer equipamento que a nova forma não possa vestir precisa cair no chão ou se fundir a ela. Equipamento fundido não tem efeito nesse estado.",
+   "Durante a magia, você pode usar sua ação para assumir outra forma, seguindo as mesmas restrições e regras da forma original, com uma exceção: se a nova forma tiver mais pontos de vida que a atual, seus pontos de vida continuam no valor atual."
+  ],
+  "m": "Um diadema de jade no valor de pelo menos 1.500 po, que você precisa colocar na cabeça antes de lançar a magia."
+ },
+ "shatter": {
+  "n": "Despedaçar",
+  "d": [
+   "Um súbito ruído alto e retumbante, dolorosamente intenso, irrompe de um ponto à sua escolha dentro do alcance. Cada criatura numa esfera de 3 metros de raio centrada nesse ponto deve fazer um teste de resistência de Constituição. A criatura sofre 3d8 de dano trovejante se falhar, ou metade se passar. Uma criatura feita de material inorgânico, como pedra, cristal ou metal, tem desvantagem nesse teste.",
+   "Um objeto não mágico que não esteja sendo vestido nem carregado também sofre o dano se estiver na área da magia."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 3º nível ou superior, o dano aumenta em 1d8 para cada nível de espaço acima do 2º."],
+  "m": "Uma lasca de mica."
+ },
+ "shield": {
+  "n": "Escudo Arcano",
+  "d": ["Uma barreira invisível de energia mágica aparece e protege você. Até o início do seu próximo turno, você tem +5 de bônus na CA, inclusive contra o ataque que desencadeou a magia, e não sofre dano de mísseis mágicos."]
+ },
+ "shield-of-faith": {
+  "n": "Escudo da Fé",
+  "d": ["Um campo cintilante aparece e envolve uma criatura à sua escolha dentro do alcance, concedendo a ela +2 de bônus na CA pela duração."],
+  "m": "Um pequeno pergaminho com um trecho de texto sagrado escrito."
+ },
+ "shillelagh": {
+  "n": "Bordão Místico",
+  "d": ["A madeira de um porrete ou de um bordão que você está segurando é imbuída do poder da natureza. Pela duração, você pode usar sua habilidade de conjuração em vez de Força nas jogadas de ataque e de dano de ataques corpo a corpo com essa arma, e o dado de dano dela vira d8. A arma também se torna mágica, se ainda não for. A magia termina se você lançá-la de novo ou se soltar a arma."],
+  "m": "Visco, uma folha de trevo e um porrete ou bordão."
+ },
+ "shocking-grasp": {
+  "n": "Toque Chocante",
+  "d": [
+   "Relâmpagos saltam da sua mão para dar um choque numa criatura que você tenta tocar. Faça um ataque mágico corpo a corpo contra o alvo. Você tem vantagem na jogada de ataque se o alvo estiver usando armadura de metal. Se acertar, o alvo sofre 1d8 de dano elétrico e não pode realizar reações até o início do próximo turno dele.",
+   "O dano desta magia aumenta em 1d8 quando você alcança o 5º nível (2d8), o 11º nível (3d8) e o 17º nível (4d8)."
+  ]
+ },
+ "silence": {
+  "n": "Silêncio",
+  "d": [
+   "Pela duração, nenhum som pode ser criado dentro de uma esfera de 6 metros de raio centrada num ponto à sua escolha dentro do alcance, nem atravessá-la. Qualquer criatura ou objeto inteiramente dentro da esfera é imune a dano trovejante, e as criaturas ficam surdas enquanto estiverem inteiramente dentro dela.",
+   "Lançar ali uma magia que tenha componente verbal é impossível."
+  ]
+ },
+ "silent-image": {
+  "n": "Imagem Silenciosa",
+  "d": [
+   "Você cria a imagem de um objeto, de uma criatura ou de outro fenômeno visível que não seja maior que um cubo de 4,5 metros. A imagem aparece num ponto dentro do alcance e dura pela duração. Ela é puramente visual; não vem acompanhada de som, cheiro nem outros efeitos sensoriais.",
+   "Você pode usar sua ação para fazer a imagem se mover para qualquer ponto dentro do alcance. Enquanto a imagem muda de lugar, você pode alterar a aparência dela para que os movimentos pareçam naturais. Por exemplo, se criar a imagem de uma criatura e movê-la, pode alterá-la para que pareça estar andando.",
+   "A interação física com a imagem revela que ela é uma ilusão, porque as coisas a atravessam. Uma criatura que use sua ação para examinar a imagem pode determinar que é uma ilusão passando num teste de Inteligência (Investigação) contra a CD de resistência das suas magias. Se uma criatura perceber a ilusão pelo que ela é, consegue ver através da imagem."
+  ]
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "hallow": {
+  "d": [
+   "Você toca um ponto e infunde a área ao redor com poder sagrado ou profano. A área pode ter raio de até 18 metros, e a magia falha se o raio incluir uma área já sob o efeito de Consagrar. A área afetada tem os efeitos a seguir.",
+   "Proteção Consagrada. Escolha qualquer um destes tipos de criatura: Aberração, Celestial, Elemental, Fada, Ínfero ou Morto-Vivo. Criaturas dos tipos escolhidos não podem entrar voluntariamente na área, e qualquer criatura possuída por essas criaturas, ou com a condição Enfeitiçado ou Amedrontado causada por elas, deixa de estar possuída, Enfeitiçada ou Amedrontada por elas enquanto estiver na área.",
+   "Efeito Extra. Você vincula à área um efeito extra da lista abaixo: Coragem. Criaturas dos tipos que você escolher não podem ficar com a condição Amedrontado enquanto estiverem na área. Escuridão. Escuridão preenche a área. Luz normal, assim como luz mágica criada por magias de nível menor que esta, não consegue iluminar a área. Luz do Dia. Luz Plena preenche a área. Escuridão mágica criada por magias de nível menor que esta não consegue apagar a luz. Descanso Pacífico. Cadáveres enterrados na área não podem ser transformados em Mortos-Vivos. Interferência Extradimensional. Criaturas dos tipos que você escolher não podem entrar na área nem sair dela usando teletransporte ou viagem interplanar. Medo. Criaturas dos tipos que você escolher ficam com a condição Amedrontado enquanto estiverem na área. Resistência. Criaturas dos tipos que você escolher têm Resistência a um tipo de dano à sua escolha enquanto estiverem na área. Silêncio. Nenhum som pode sair da área, e nenhum som pode entrar nela. Idiomas. Criaturas dos tipos que você escolher podem se comunicar com qualquer outra criatura na área, mesmo sem um idioma em comum. Vulnerabilidade. Criaturas dos tipos que você escolher têm Vulnerabilidade a um tipo de dano à sua escolha enquanto estiverem na área."
+  ],
+  "m": "Incenso no valor de 1.000+ PO, que a magia consome."
+ },
+ "hallucinatory-terrain": {
+  "d": [
+   "Você faz o terreno natural num Cubo de 45 metros dentro do alcance parecer, soar e cheirar como outro tipo de terreno natural. Assim, campos abertos ou uma estrada podem parecer um pântano, uma colina, uma fenda ou outro terreno difícil ou intransponível. Um lago pode parecer um prado gramado, um precipício pode parecer uma encosta suave, e uma ravina cheia de pedras pode parecer uma estrada larga e lisa. Estruturas construídas, equipamento e criaturas na área não mudam.",
+   "As características táteis do terreno não mudam, então as criaturas que entram na área provavelmente percebem a ilusão. Se a diferença não for óbvia ao toque, uma criatura que examine a ilusão pode realizar a ação Estudar para fazer um teste de Inteligência (Investigação) contra a CD de resistência das suas magias para desacreditá-la. Se uma criatura perceber que o terreno é ilusório, vê uma imagem vaga sobreposta ao terreno real."
+  ],
+  "m": "Um cogumelo."
+ },
+ "harm": {
+  "d": ["Você libera uma magia virulenta numa criatura que consiga ver dentro do alcance. O alvo faz um teste de resistência de Constituição. Se falhar, sofre 14d6 de dano Necrótico, e seu máximo de Pontos de Vida é reduzido numa quantidade igual ao dano Necrótico sofrido. Se passar, sofre apenas metade do dano. Esta magia não pode reduzir o máximo de Pontos de Vida do alvo abaixo de 1."]
+ },
+ "haste": {
+  "d": [
+   "Escolha uma criatura voluntária que você consiga ver dentro do alcance. Até a magia terminar, o Deslocamento do alvo dobra, ele ganha +2 de bônus na Classe de Armadura, tem Vantagem em testes de resistência de Destreza e ganha uma ação adicional em cada turno dele. Essa ação só pode ser usada para realizar as ações Atacar (um ataque apenas), Disparada, Desengajar, Esconder ou Usar.",
+   "Quando a magia termina, o alvo fica Incapacitado e com Deslocamento 0 até o fim do próximo turno dele, enquanto uma onda de letargia o domina."
+  ],
+  "m": "Uma lasca de raiz de alcaçuz."
+ },
+ "heal": {
+  "d": ["Escolha uma criatura que você consiga ver dentro do alcance. Energia positiva percorre o alvo, restaurando 70 Pontos de Vida. Esta magia também encerra as condições Cego, Surdo e Envenenado no alvo."],
+  "h": ["A cura aumenta em 10 para cada nível de espaço de magia acima de 6."]
+ },
+ "healing-word": {
+  "d": ["Uma criatura à sua escolha que você consiga ver dentro do alcance recupera Pontos de Vida iguais a 2d4 mais seu modificador de habilidade de conjuração."],
+  "h": ["A cura aumenta em 2d4 para cada nível de espaço de magia acima de 1."]
+ },
+ "heat-metal": {
+  "d": [
+   "Escolha um objeto de metal fabricado, como uma arma de metal ou uma armadura de metal Pesada ou Média, que você consiga ver dentro do alcance. Você faz o objeto ficar em brasa. Qualquer criatura em contato físico com o objeto sofre 2d8 de dano de Fogo quando você lança a magia. Até a magia terminar, você pode realizar uma Ação Bônus em cada um dos seus turnos posteriores para causar esse dano de novo, se o objeto estiver dentro do alcance.",
+   "Se uma criatura estiver segurando ou vestindo o objeto e sofrer o dano dele, precisa passar num teste de resistência de Constituição ou larga o objeto, se puder. Se não largar, tem Desvantagem em jogadas de ataque e testes de atributo até o início do seu próximo turno."
+  ],
+  "h": ["O dano aumenta em 1d8 para cada nível de espaço de magia acima de 2."],
+  "m": "Um pedaço de ferro e uma chama."
+ },
+ "hellish-rebuke": {
+  "d": ["A criatura que lhe causou dano é envolvida por um instante em chamas verdes. Ela faz um teste de resistência de Destreza, sofrendo 2d10 de dano de Fogo se falhar, ou metade se passar."],
+  "h": ["O dano aumenta em 1d10 para cada nível de espaço de magia acima de 1."],
+  "ct": "Reação, que você realiza ao sofrer dano de uma criatura que consiga ver a até 18 metros de você"
+ },
+ "heroes-feast": {
+  "d": [
+   "Você conjura um banquete que aparece sobre uma superfície num Cubo desocupado de 3 metros ao seu lado. O banquete leva 1 hora para ser consumido e desaparece ao fim desse tempo, e os efeitos benéficos só começam depois dessa hora. Até doze criaturas podem participar do banquete.",
+   "Uma criatura que participa ganha vários benefícios, que duram 24 horas. Tem Resistência a dano de Veneno e Imunidade às condições Amedrontado e Envenenado. Seu máximo de Pontos de Vida também aumenta em 2d10, e ela ganha a mesma quantidade de Pontos de Vida."
+  ],
+  "m": "Uma tigela incrustada de gemas no valor de 1.000+ PO, que a magia consome."
+ },
+ "heroism": {
+  "d": ["Uma criatura voluntária que você toca é imbuída de bravura. Até a magia terminar, a criatura é imune à condição Amedrontado e ganha Pontos de Vida Temporários iguais ao seu modificador de habilidade de conjuração no início de cada turno dela."]
+ },
+ "hex": {
+  "n": "Bruxaria",
+  "d": [
+   "Você amaldiçoa uma criatura que consiga ver dentro do alcance. Até a magia terminar, você causa 1d6 de dano Necrótico extra ao alvo sempre que o acertar com uma jogada de ataque. Além disso, escolha um atributo ao lançar a magia. O alvo tem Desvantagem em testes de atributo feitos com o atributo escolhido.",
+   "Se o alvo cair a 0 Pontos de Vida antes de a magia terminar, você pode realizar uma Ação Bônus num turno posterior para amaldiçoar uma nova criatura."
+  ],
+  "h": ["Sua Concentração pode durar mais com um espaço de magia de nível 2 (até 4 horas), 3-4 (até 8 horas) ou 5+ (24 horas)."],
+  "m": "O olho petrificado de um tritão."
+ },
+ "hideous-laughter": {
+  "d": [
+   "Uma criatura à sua escolha que você consiga ver dentro do alcance faz um teste de resistência de Sabedoria. Se falhar, fica com as condições Caído e Incapacitado pela duração. Durante esse tempo, ri descontroladamente, se for capaz de rir, e não pode encerrar a condição Caído em si mesma.",
+   "No fim de cada turno dela e cada vez que sofrer dano, faz outro teste de resistência de Sabedoria. O alvo tem Vantagem no teste se ele for provocado por dano. Se passar, a magia termina."
+  ],
+  "m": "Uma torta e uma pena."
+ },
+ "hold-monster": {
+  "d": ["Escolha uma criatura que você consiga ver dentro do alcance. O alvo deve passar num teste de resistência de Sabedoria ou fica com a condição Paralisado pela duração. No fim de cada turno dele, o alvo repete o teste, encerrando a magia em si mesmo se passar."],
+  "h": ["Você pode escolher como alvo uma criatura adicional para cada nível de espaço de magia acima de 5."],
+  "m": "Um pedaço reto de ferro."
+ },
+ "hold-person": {
+  "d": ["Escolha um Humanoide que você consiga ver dentro do alcance. O alvo deve passar num teste de resistência de Sabedoria ou fica com a condição Paralisado pela duração. No fim de cada turno dele, o alvo repete o teste, encerrando a magia em si mesmo se passar."],
+  "h": ["Você pode escolher como alvo um Humanoide adicional para cada nível de espaço de magia acima de 2."]
+ },
+ "holy-aura": {
+  "d": ["Pela duração, você emite uma aura numa Emanação de 9 metros. Enquanto estiverem na aura, criaturas à sua escolha têm Vantagem em todos os testes de resistência, e as outras criaturas têm Desvantagem em jogadas de ataque contra elas. Além disso, quando um Ínfero ou um Morto-Vivo acerta uma criatura afetada com uma jogada de ataque corpo a corpo, o atacante precisa passar num teste de resistência de Constituição ou fica com a condição Cego até o fim do próximo turno dele."],
+  "m": "Um relicário no valor de 1.000+ PO."
+ }
+}

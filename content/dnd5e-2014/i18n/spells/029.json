@@ -1,0 +1,88 @@
+{
+ "simulacrum": {
+  "n": "Simulacro",
+  "d": [
+   "Você molda uma duplicata ilusória de uma fera ou de um humanoide que esteja dentro do alcance durante todo o tempo de conjuração da magia. A duplicata é uma criatura, parcialmente real e formada de gelo ou neve, e pode realizar ações e ser afetada como uma criatura normal. Parece igual à original, mas tem metade do máximo de pontos de vida da criatura e é formada sem nenhum equipamento. Fora isso, a ilusão usa todas as estatísticas da criatura que duplica.",
+   "O simulacro é amistoso com você e com as criaturas que designar. Obedece aos seus comandos falados, movendo-se e agindo conforme sua vontade e agindo no seu turno em combate. O simulacro não tem capacidade de aprender nem de ficar mais poderoso, então nunca aumenta de nível nem melhora outras habilidades, nem pode recuperar espaços de magia gastos.",
+   "Se o simulacro sofrer dano, você pode repará-lo num laboratório alquímico, usando ervas e minerais raros no valor de 100 po por ponto de vida recuperado. O simulacro dura até cair a 0 pontos de vida, momento em que volta a ser neve e derrete instantaneamente.",
+   "Se você lançar esta magia de novo, quaisquer duplicatas ativas criadas por ela são destruídas instantaneamente."
+  ],
+  "m": "Neve ou gelo em quantidade suficiente para fazer uma cópia em tamanho real da criatura duplicada; um pouco de cabelo, aparas de unha ou outro pedaço do corpo dessa criatura colocado dentro da neve ou do gelo; e rubi em pó no valor de 1.500 po, polvilhado sobre a duplicata e consumido pela magia."
+ },
+ "sleep": {
+  "n": "Sono",
+  "d": [
+   "Esta magia faz criaturas caírem num sono mágico. Role 5d8; o total é quantos pontos de vida de criaturas a magia pode afetar. As criaturas a até 6 metros de um ponto à sua escolha dentro do alcance são afetadas em ordem crescente de pontos de vida atuais (ignorando criaturas inconscientes).",
+   "Começando pela criatura com menos pontos de vida atuais, cada criatura afetada fica inconsciente até a magia terminar, até sofrer dano ou até alguém usar uma ação para sacudi-la ou estapeá-la e acordá-la. Subtraia os pontos de vida de cada criatura do total antes de passar para a criatura com os próximos menores pontos de vida. Os pontos de vida da criatura precisam ser iguais ou menores que o total restante para que ela seja afetada.",
+   "Mortos-vivos e criaturas imunes a ficar enfeitiçadas não são afetados por esta magia."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 2º nível ou superior, role 2d8 adicionais para cada nível de espaço acima do 1º."],
+  "m": "Uma pitada de areia fina, pétalas de rosa ou um grilo."
+ },
+ "sleet-storm": {
+  "n": "Nevasca",
+  "d": [
+   "Até a magia terminar, chuva congelante e granizo caem num cilindro de 6 metros de altura e 12 metros de raio, centrado num ponto à sua escolha dentro do alcance. A área fica com escuridão densa, e as chamas expostas nela se apagam.",
+   "O chão da área fica coberto de gelo escorregadio, tornando-se terreno difícil. Quando uma criatura entra na área da magia pela primeira vez num turno ou começa o turno ali, deve fazer um teste de resistência de Destreza. Se falhar, cai no chão.",
+   "Se uma criatura estiver se concentrando na área da magia, precisa passar num teste de resistência de Constituição contra a CD de resistência das suas magias ou perde a concentração."
+  ]
+ },
+ "slow": {
+  "n": "Lentidão",
+  "d": [
+   "Você altera o tempo ao redor de até seis criaturas à sua escolha num cubo de 12 metros dentro do alcance. Cada alvo deve passar num teste de resistência de Sabedoria ou é afetado pela magia pela duração.",
+   "O deslocamento de um alvo afetado cai pela metade, ele sofre -2 de penalidade na CA e em testes de resistência de Destreza e não pode usar reações. No turno dele, pode usar uma ação ou uma ação bônus, não as duas. Sejam quais forem as habilidades ou os itens mágicos da criatura, ela não pode fazer mais de um ataque corpo a corpo ou à distância no turno dela.",
+   "Se a criatura tentar lançar uma magia com tempo de conjuração de 1 ação, role um d20. Com 11 ou mais, a magia só faz efeito no próximo turno da criatura, e ela precisa usar a ação desse turno para completá-la. Se não puder, a magia é desperdiçada.",
+   "Uma criatura afetada por esta magia faz outro teste de resistência de Sabedoria no fim do turno dela. Se passar, o efeito termina para ela."
+  ],
+  "m": "Uma gota de melaço."
+ },
+ "spare-the-dying": {
+  "n": "Poupar os Moribundos",
+  "d": ["Você toca uma criatura viva que tenha 0 pontos de vida. A criatura fica estável. Esta magia não tem efeito em mortos-vivos nem em constructos."]
+ },
+ "speak-with-animals": {
+  "n": "Falar com Animais",
+  "d": ["Você ganha a capacidade de compreender feras e se comunicar verbalmente com elas pela duração. O conhecimento e a percepção de muitas feras são limitados pela inteligência delas, mas, no mínimo, as feras podem lhe dar informações sobre locais e monstros próximos, incluindo o que conseguem perceber ou perceberam no último dia. Você pode conseguir convencer uma fera a lhe fazer um pequeno favor, a critério do Mestre."]
+ },
+ "speak-with-dead": {
+  "n": "Falar com os Mortos",
+  "d": [
+   "Você concede uma aparência de vida e inteligência a um cadáver à sua escolha dentro do alcance, permitindo que ele responda às perguntas que fizer. O cadáver ainda precisa ter boca e não pode ser morto-vivo. A magia falha se o cadáver tiver sido alvo desta magia nos últimos 10 dias.",
+   "Até a magia terminar, você pode fazer até cinco perguntas ao cadáver. Ele só sabe o que sabia em vida, incluindo os idiomas que conhecia. As respostas costumam ser breves, enigmáticas ou repetitivas, e o cadáver não é obrigado a responder com a verdade se você for hostil a ele ou se ele o reconhecer como inimigo. Esta magia não devolve a alma da criatura ao corpo, apenas o espírito que o anima. Assim, o cadáver não pode aprender informações novas, não compreende nada do que aconteceu desde que morreu e não pode especular sobre acontecimentos futuros."
+  ],
+  "m": "Incenso aceso."
+ },
+ "speak-with-plants": {
+  "n": "Falar com Plantas",
+  "d": [
+   "Você imbui as plantas a até 9 metros de você de uma consciência e um movimento limitados, dando a elas a capacidade de se comunicar com você e seguir comandos simples. Pode perguntar às plantas sobre acontecimentos na área da magia no último dia, obtendo informações sobre criaturas que passaram, o clima e outras circunstâncias.",
+   "Também pode transformar terreno difícil causado por vegetação (como moitas e mato) em terreno comum pela duração. Ou pode transformar terreno comum onde haja plantas em terreno difícil pela duração, fazendo trepadeiras e galhos atrapalharem perseguidores, por exemplo.",
+   "As plantas podem realizar outras tarefas por você, a critério do Mestre. A magia não permite que as plantas se desenraízem e se desloquem, mas elas podem mover livremente galhos, gavinhas e caules.",
+   "Se houver uma criatura planta na área, você pode se comunicar com ela como se tivessem um idioma em comum, mas não ganha nenhuma capacidade mágica de influenciá-la.",
+   "Esta magia pode fazer as plantas criadas pela magia constrição soltarem uma criatura impedida."
+  ]
+ },
+ "spider-climb": {
+  "n": "Patas de Aranha",
+  "d": ["Até a magia terminar, uma criatura voluntária que você toca ganha a capacidade de subir, descer e atravessar superfícies verticais e andar de cabeça para baixo pelo teto, mantendo as mãos livres. O alvo também ganha deslocamento de escalada igual ao seu deslocamento de caminhada."],
+  "m": "Uma gota de betume e uma aranha."
+ },
+ "spike-growth": {
+  "n": "Crescer Espinhos",
+  "d": [
+   "O chão num raio de 6 metros centrado num ponto dentro do alcance se retorce e brota espinhos e pontas duras. A área se torna terreno difícil pela duração. Quando uma criatura entra na área ou se move dentro dela, sofre 2d4 de dano perfurante para cada 1,5 metro que percorrer.",
+   "A transformação do chão é camuflada para parecer natural. Qualquer criatura que não consiga ver a área quando a magia é lançada pode fazer um teste de Sabedoria (Percepção) contra a CD de resistência das suas magias para reconhecer o terreno como perigoso antes de entrar nele."
+  ],
+  "m": "Sete espinhos afiados ou sete gravetos pequenos, cada um apontado."
+ },
+ "spirit-guardians": {
+  "n": "Espíritos Guardiões",
+  "d": [
+   "Você invoca espíritos para protegê-lo. Eles esvoaçam ao seu redor até uma distância de 4,5 metros pela duração. Se você for bom ou neutro, a forma espectral deles parece angelical ou feérica (à sua escolha). Se for mau, parecem ínferos.",
+   "Ao lançar esta magia, você pode designar qualquer número de criaturas que consiga ver para não serem afetadas por ela. O deslocamento de uma criatura afetada cai pela metade na área, e quando ela entra na área pela primeira vez num turno ou começa o turno ali, deve fazer um teste de resistência de Sabedoria. Se falhar, sofre 3d8 de dano radiante (se você for bom ou neutro) ou 3d8 de dano necrótico (se for mau). Se passar, sofre metade do dano."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 4º nível ou superior, o dano aumenta em 1d8 para cada nível de espaço acima do 3º."],
+  "m": "Um símbolo sagrado."
+ }
+}

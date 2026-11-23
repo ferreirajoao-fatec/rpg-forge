@@ -27,7 +27,7 @@ export default async function SheetPage({ params }: PageProps<"/app/personagens/
   }
   const { record, data, catalog } = loaded;
   const sheet = buildSheet(data, record.rulesetId, catalog, user.displayName);
-  const portrait = (await portraitsFor([record.id]))[record.id];
+  const portrait = (await portraitsFor([record.id], "bust"))[record.id];
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-3 print:hidden">

@@ -40,3 +40,5 @@ export * from "./core/content";
 export * from "./core/engine";
 export * from "./core/dice";
 export * from "./core/money";
+export { T20_XP_THRESHOLDS } from "./systems/tormenta20";
+export { DND_XP_THRESHOLDS } from "./systems/dnd5e-common";

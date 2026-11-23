@@ -1,0 +1,145 @@
+{
+ "eldritch-invocation-voice-of-the-chain-master": {
+  "n": "Invocação Mística: Voz do Mestre da Corrente",
+  "d": [
+   "Você pode se comunicar telepaticamente com seu familiar e perceber pelos sentidos dele enquanto estiverem no mesmo plano de existência.",
+   "Além disso, enquanto percebe pelos sentidos do familiar, também pode falar através dele com sua própria voz, mesmo que o familiar normalmente não consiga falar."
+  ]
+ },
+ "eldritch-invocation-mire-the-mind": {
+  "n": "Invocação Mística: Atolar a Mente",
+  "d": ["Você pode lançar lentidão uma vez usando um espaço de magia de bruxo. Só pode fazer isso de novo depois de terminar um descanso longo."]
+ },
+ "eldritch-invocation-one-with-shadows": {
+  "n": "Invocação Mística: Um com as Sombras",
+  "d": ["Quando estiver numa área de penumbra ou escuridão, você pode usar sua ação para ficar invisível até se mover ou usar uma ação ou reação."]
+ },
+ "eldritch-invocation-sign-of-ill-omen": {
+  "n": "Invocação Mística: Sinal de Mau Agouro",
+  "d": ["Você pode lançar rogar maldição uma vez usando um espaço de magia de bruxo. Só pode fazer isso de novo depois de terminar um descanso longo."]
+ },
+ "eldritch-invocation-thirsting-blade": {
+  "n": "Invocação Mística: Lâmina Sedenta",
+  "d": ["Você pode atacar duas vezes com sua arma de pacto, em vez de uma, sempre que realiza a ação de Ataque no seu turno."]
+ },
+ "otherworldly-patron-improvement-1": { "n": "Característica do Patrono Transcendental" },
+ "eldritch-invocation-bewitching-whispers": {
+  "n": "Invocação Mística: Sussurros Enfeitiçantes",
+  "d": ["Você pode lançar compulsão uma vez usando um espaço de magia de bruxo. Só pode fazer isso de novo depois de terminar um descanso longo."]
+ },
+ "eldritch-invocation-dreadful-word": {
+  "n": "Invocação Mística: Palavra Terrível",
+  "d": ["Você pode lançar confusão uma vez usando um espaço de magia de bruxo. Só pode fazer isso de novo depois de terminar um descanso longo."]
+ },
+ "eldritch-invocation-sculptor-of-flesh": {
+  "n": "Invocação Mística: Escultor de Carne",
+  "d": ["Você pode lançar metamorfose uma vez usando um espaço de magia de bruxo. Só pode fazer isso de novo depois de terminar um descanso longo."]
+ },
+ "eldritch-invocation-ascendant-step": {
+  "n": "Invocação Mística: Passo Ascendente",
+  "d": ["Você pode lançar levitação em si mesmo à vontade, sem gastar espaço de magia nem componentes materiais."]
+ },
+ "eldritch-invocation-minions-of-chaos": {
+  "n": "Invocação Mística: Lacaios do Caos",
+  "d": ["Você pode lançar conjurar elemental uma vez usando um espaço de magia de bruxo. Só pode fazer isso de novo depois de terminar um descanso longo."]
+ },
+ "eldritch-invocation-otherworldly-leap": {
+  "n": "Invocação Mística: Salto Transcendental",
+  "d": ["Você pode lançar salto em si mesmo à vontade, sem gastar espaço de magia nem componentes materiais."]
+ },
+ "eldritch-invocation-whispers-of-the-grave": {
+  "n": "Invocação Mística: Sussurros do Túmulo",
+  "d": ["Você pode lançar falar com os mortos à vontade, sem gastar espaço de magia."]
+ },
+ "eldritch-invocation-lifedrinker": {
+  "n": "Invocação Mística: Bebedor de Vida",
+  "d": ["Quando atinge uma criatura com sua arma de pacto, ela sofre dano necrótico extra igual ao seu modificador de Carisma (mínimo 1)."]
+ },
+ "eldritch-invocation-chains-of-carceri": {
+  "n": "Invocação Mística: Correntes de Carceri",
+  "d": ["Você pode lançar imobilizar monstro à vontade, tendo como alvo um celestial, ínfero ou elemental, sem gastar espaço de magia nem componentes materiais. Precisa terminar um descanso longo antes de usar esta invocação na mesma criatura de novo."]
+ },
+ "eldritch-invocation-master-of-myriad-forms": {
+  "n": "Invocação Mística: Mestre das Mil Formas",
+  "d": ["Você pode lançar alterar-se à vontade, sem gastar espaço de magia."]
+ },
+ "eldritch-invocation-visions-of-distant-realms": {
+  "n": "Invocação Mística: Visões de Reinos Distantes",
+  "d": ["Você pode lançar olho arcano à vontade, sem gastar espaço de magia."]
+ },
+ "eldritch-invocation-witch-sight": {
+  "n": "Invocação Mística: Visão de Bruxa",
+  "d": ["Você pode ver a forma verdadeira de qualquer metamorfo ou criatura oculta por magia de ilusão ou transmutação enquanto ela estiver a até 9 metros de você e na sua linha de visão."]
+ },
+ "pact-boon": {
+  "n": "Dádiva do Pacto",
+  "d": ["No 3º nível, seu patrono transcendental lhe concede um presente pelo serviço leal. Você ganha uma das características a seguir, à sua escolha."]
+ },
+ "pact-of-the-chain": {
+  "n": "Pacto da Corrente",
+  "d": [
+   "Você aprende a magia encontrar familiar e pode lançá-la como ritual. A magia não conta no número de magias que você conhece.",
+   "Ao lançar a magia, pode escolher uma das formas normais para o familiar ou uma das formas especiais a seguir: diabrete, pseudodragão, quasit ou duende.",
+   "Além disso, quando realiza a ação de Ataque, pode abrir mão de um dos seus ataques para permitir que seu familiar faça um ataque próprio com a reação dele.",
+   "Seu familiar é mais astuto que um familiar comum. A forma padrão dele pode refletir seu patrono, com diabretes e quasits ligados ao Ínfero."
+  ]
+ },
+ "pact-of-the-blade": {
+  "n": "Pacto da Lâmina",
+  "d": [
+   "Você pode usar sua ação para criar uma arma de pacto na mão vazia. Pode escolher a forma dessa arma corpo a corpo cada vez que a cria. Você é proficiente com ela enquanto a empunha. Ela conta como mágica para superar resistência e imunidade a ataques e dano não mágicos.",
+   "Sua arma de pacto desaparece se ficar a mais de 1,5 metro de você por 1 minuto ou mais. Também desaparece se você usar esta característica de novo, se a dispensar (sem gastar ação) ou se você morrer.",
+   "Você pode transformar uma arma mágica na sua arma de pacto realizando um ritual especial enquanto a segura. O ritual leva 1 hora e pode ser feito durante um descanso curto. Depois, pode dispensar a arma, enviando-a a um espaço extradimensional, e ela aparece sempre que você criar sua arma de pacto dali em diante. Você não pode fazer isso com um artefato nem com uma arma senciente. A arma deixa de ser sua arma de pacto se você morrer, se fizer o ritual de 1 hora com outra arma ou se usar um ritual de 1 hora para romper o vínculo com ela. Se estiver no espaço extradimensional quando o vínculo se romper, a arma aparece aos seus pés.",
+   "Se você serve ao Ínfero, sua arma pode ser um machado de metal negro adornado com chamas decorativas."
+  ]
+ },
+ "pact-of-the-tome": {
+  "n": "Pacto do Tomo",
+  "d": [
+   "Seu patrono lhe dá um grimório chamado Livro das Sombras. Ao ganhar esta característica, escolha três truques da lista de magias de qualquer classe (não precisam ser da mesma lista). Enquanto estiver com o livro, você pode lançar esses truques à vontade. Eles não contam no número de truques que você conhece. Se não aparecerem na lista de magias de bruxo, mesmo assim são magias de bruxo para você.",
+   "Se perder o Livro das Sombras, pode realizar uma cerimônia de 1 hora para receber outro do seu patrono. A cerimônia pode ser feita durante um descanso curto ou longo e destrói o livro anterior. O livro vira cinzas quando você morre.",
+   "Seu Livro das Sombras pode ser um tomo pesado, encadernado em pele de demônio cravejada de ferro, com magias de conjuração e uma riqueza de saber proibido sobre as regiões sinistras do cosmos, um presente do Ínfero."
+  ]
+ },
+ "dark-ones-own-luck": {
+  "n": "A Sorte do Obscuro",
+  "d": [
+   "A partir do 6º nível, você pode pedir ao seu patrono que altere o destino a seu favor. Quando faz um teste de habilidade ou de resistência, pode usar esta característica para somar um d10 à jogada. Pode fazer isso depois de ver o resultado inicial, mas antes de qualquer efeito da jogada acontecer.",
+   "Depois de usar esta característica, você precisa terminar um descanso curto ou longo para usá-la de novo."
+  ]
+ },
+ "fiendish-resilience": {
+  "n": "Resiliência Ínfera",
+  "d": ["A partir do 10º nível, você pode escolher um tipo de dano quando termina um descanso curto ou longo. Ganha resistência a esse tipo de dano até escolher outro com esta característica. Dano de armas mágicas ou de prata ignora essa resistência."]
+ },
+ "mystic-arcanum-6th-level": {
+  "n": "Arcano Místico (6º nível)",
+  "d": [
+   "No 11º nível, seu patrono lhe concede um segredo mágico chamado arcano. Escolha uma magia de 6º nível da lista de magias de bruxo como esse arcano.",
+   "Você pode lançar a magia do arcano uma vez sem gastar espaço de magia. Precisa terminar um descanso longo antes de fazer isso de novo.",
+   "Em níveis mais altos, você ganha mais magias de bruxo à sua escolha que podem ser lançadas assim: uma de 7º nível no 13º, uma de 8º nível no 15º e uma de 9º nível no 17º. Recupera todos os usos do Arcano Místico quando termina um descanso longo."
+  ]
+ },
+ "mystic-arcanum-7th-level": { "n": "Arcano Místico (7º nível)" },
+ "hurl-through-hell": {
+  "n": "Arremessar ao Inferno",
+  "d": [
+   "A partir do 14º nível, quando atinge uma criatura com um ataque, você pode usar esta característica para transportar o alvo instantaneamente pelos planos inferiores. A criatura desaparece e é lançada por uma paisagem de pesadelo.",
+   "No fim do seu próximo turno, o alvo volta ao espaço que ocupava, ou ao espaço desocupado mais próximo. Se não for um ínfero, sofre 10d10 de dano psíquico, abalado pela experiência horrível.",
+   "Depois de usar esta característica, você precisa terminar um descanso longo para usá-la de novo."
+  ]
+ },
+ "mystic-arcanum-8th-level": { "n": "Arcano Místico (8º nível)" },
+ "mystic-arcanum-9th-level": { "n": "Arcano Místico (9º nível)" },
+ "eldritch-master": {
+  "n": "Mestre Místico",
+  "d": [
+   "No 20º nível, você pode recorrer à sua reserva interior de poder místico enquanto suplica ao seu patrono para recuperar espaços de magia gastos. Pode passar 1 minuto suplicando ajuda ao patrono para recuperar todos os espaços de magia gastos da sua característica Magia de Pacto.",
+   "Depois de recuperar espaços de magia com esta característica, você precisa terminar um descanso longo para fazer isso de novo."
+  ]
+ },
+ "spellcasting-wizard": {
+  "n": "Conjuração: Mago",
+  "d": ["Como estudante de magia arcana, você tem um grimório com magias que mostram os primeiros lampejos do seu verdadeiro poder."]
+ }
+}

@@ -1,0 +1,1062 @@
+[
+ {
+  "id": "subspecies:draconic-ancestor-black",
+  "kind": "subspecies",
+  "name": "Ancestral Dracônico: Negro",
+  "summary": "Arma de Sopro: Ácido, Resistência a Dano: Ácido",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:dragonborn"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:dragonborn",
+   "abilityBonuses": {},
+   "damageType": "ácido",
+   "traits": [
+    {
+     "id": "draconic-breath-weapon-acid",
+     "name": "Arma de Sopro: Ácido",
+     "summary": "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na…",
+     "text": [
+      "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na área deve fazer um teste de resistência de Destreza (CD 8 + seu modificador de Constituição + seu Bônus de Proficiência). Se falhar, sofre 1d10 de dano de ácido; se passar, sofre metade. Esse dano aumenta em 1d10 quando você chega aos níveis de personagem 5 (2d10), 11 (3d10) e 17 (4d10).",
+      "Você pode usar esta Arma de Sopro um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo."
+     ]
+    },
+    {
+     "id": "draconic-damage-resistance-acid",
+     "name": "Resistência a Dano: Ácido",
+     "summary": "Você tem Resistência a dano de ácido, conforme seu traço Ancestralidade Dracônica.",
+     "text": [
+      "Você tem Resistência a dano de ácido, conforme seu traço Ancestralidade Dracônica."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:draconic-ancestor-blue",
+  "kind": "subspecies",
+  "name": "Ancestral Dracônico: Azul",
+  "summary": "Arma de Sopro: Elétrico, Resistência a Dano: Elétrico",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:dragonborn"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:dragonborn",
+   "abilityBonuses": {},
+   "damageType": "elétrico",
+   "traits": [
+    {
+     "id": "draconic-breath-weapon-lightning",
+     "name": "Arma de Sopro: Elétrico",
+     "summary": "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na…",
+     "text": [
+      "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na área deve fazer um teste de resistência de Destreza (CD 8 + seu modificador de Constituição + seu Bônus de Proficiência). Se falhar, sofre 1d10 de dano elétrico; se passar, sofre metade. Esse dano aumenta em 1d10 quando você chega aos níveis de personagem 5 (2d10), 11 (3d10) e 17 (4d10).",
+      "Você pode usar esta Arma de Sopro um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo."
+     ]
+    },
+    {
+     "id": "draconic-damage-resistance-lightning",
+     "name": "Resistência a Dano: Elétrico",
+     "summary": "Você tem Resistência a dano elétrico, conforme seu traço Ancestralidade Dracônica.",
+     "text": [
+      "Você tem Resistência a dano elétrico, conforme seu traço Ancestralidade Dracônica."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:draconic-ancestor-brass",
+  "kind": "subspecies",
+  "name": "Ancestral Dracônico: Latão",
+  "summary": "Arma de Sopro: Fogo, Resistência a Dano: Fogo",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:dragonborn"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:dragonborn",
+   "abilityBonuses": {},
+   "damageType": "fogo",
+   "traits": [
+    {
+     "id": "draconic-breath-weapon-fire",
+     "name": "Arma de Sopro: Fogo",
+     "summary": "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na…",
+     "text": [
+      "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na área deve fazer um teste de resistência de Destreza (CD 8 + seu modificador de Constituição + seu Bônus de Proficiência). Se falhar, sofre 1d10 de dano de fogo; se passar, sofre metade. Esse dano aumenta em 1d10 quando você chega aos níveis de personagem 5 (2d10), 11 (3d10) e 17 (4d10).",
+      "Você pode usar esta Arma de Sopro um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo."
+     ]
+    },
+    {
+     "id": "draconic-damage-resistance-fire",
+     "name": "Resistência a Dano: Fogo",
+     "summary": "Você tem Resistência a dano de fogo, conforme seu traço Ancestralidade Dracônica.",
+     "text": [
+      "Você tem Resistência a dano de fogo, conforme seu traço Ancestralidade Dracônica."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:draconic-ancestor-bronze",
+  "kind": "subspecies",
+  "name": "Ancestral Dracônico: Bronze",
+  "summary": "Arma de Sopro: Elétrico, Resistência a Dano: Elétrico",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:dragonborn"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:dragonborn",
+   "abilityBonuses": {},
+   "damageType": "elétrico",
+   "traits": [
+    {
+     "id": "draconic-breath-weapon-lightning",
+     "name": "Arma de Sopro: Elétrico",
+     "summary": "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na…",
+     "text": [
+      "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na área deve fazer um teste de resistência de Destreza (CD 8 + seu modificador de Constituição + seu Bônus de Proficiência). Se falhar, sofre 1d10 de dano elétrico; se passar, sofre metade. Esse dano aumenta em 1d10 quando você chega aos níveis de personagem 5 (2d10), 11 (3d10) e 17 (4d10).",
+      "Você pode usar esta Arma de Sopro um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo."
+     ]
+    },
+    {
+     "id": "draconic-damage-resistance-lightning",
+     "name": "Resistência a Dano: Elétrico",
+     "summary": "Você tem Resistência a dano elétrico, conforme seu traço Ancestralidade Dracônica.",
+     "text": [
+      "Você tem Resistência a dano elétrico, conforme seu traço Ancestralidade Dracônica."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:draconic-ancestor-copper",
+  "kind": "subspecies",
+  "name": "Ancestral Dracônico: Cobre",
+  "summary": "Arma de Sopro: Ácido, Resistência a Dano: Ácido",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:dragonborn"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:dragonborn",
+   "abilityBonuses": {},
+   "damageType": "ácido",
+   "traits": [
+    {
+     "id": "draconic-breath-weapon-acid",
+     "name": "Arma de Sopro: Ácido",
+     "summary": "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na…",
+     "text": [
+      "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na área deve fazer um teste de resistência de Destreza (CD 8 + seu modificador de Constituição + seu Bônus de Proficiência). Se falhar, sofre 1d10 de dano de ácido; se passar, sofre metade. Esse dano aumenta em 1d10 quando você chega aos níveis de personagem 5 (2d10), 11 (3d10) e 17 (4d10).",
+      "Você pode usar esta Arma de Sopro um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo."
+     ]
+    },
+    {
+     "id": "draconic-damage-resistance-acid",
+     "name": "Resistência a Dano: Ácido",
+     "summary": "Você tem Resistência a dano de ácido, conforme seu traço Ancestralidade Dracônica.",
+     "text": [
+      "Você tem Resistência a dano de ácido, conforme seu traço Ancestralidade Dracônica."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:draconic-ancestor-gold",
+  "kind": "subspecies",
+  "name": "Ancestral Dracônico: Ouro",
+  "summary": "Arma de Sopro: Fogo, Resistência a Dano: Fogo",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:dragonborn"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:dragonborn",
+   "abilityBonuses": {},
+   "damageType": "fogo",
+   "traits": [
+    {
+     "id": "draconic-breath-weapon-fire",
+     "name": "Arma de Sopro: Fogo",
+     "summary": "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na…",
+     "text": [
+      "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na área deve fazer um teste de resistência de Destreza (CD 8 + seu modificador de Constituição + seu Bônus de Proficiência). Se falhar, sofre 1d10 de dano de fogo; se passar, sofre metade. Esse dano aumenta em 1d10 quando você chega aos níveis de personagem 5 (2d10), 11 (3d10) e 17 (4d10).",
+      "Você pode usar esta Arma de Sopro um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo."
+     ]
+    },
+    {
+     "id": "draconic-damage-resistance-fire",
+     "name": "Resistência a Dano: Fogo",
+     "summary": "Você tem Resistência a dano de fogo, conforme seu traço Ancestralidade Dracônica.",
+     "text": [
+      "Você tem Resistência a dano de fogo, conforme seu traço Ancestralidade Dracônica."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:draconic-ancestor-green",
+  "kind": "subspecies",
+  "name": "Ancestral Dracônico: Verde",
+  "summary": "Arma de Sopro: Veneno, Resistência a Dano: Veneno",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:dragonborn"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:dragonborn",
+   "abilityBonuses": {},
+   "damageType": "veneno",
+   "traits": [
+    {
+     "id": "draconic-breath-weapon-poison",
+     "name": "Arma de Sopro: Veneno",
+     "summary": "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na…",
+     "text": [
+      "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na área deve fazer um teste de resistência de Destreza (CD 8 + seu modificador de Constituição + seu Bônus de Proficiência). Se falhar, sofre 1d10 de dano de veneno; se passar, sofre metade. Esse dano aumenta em 1d10 quando você chega aos níveis de personagem 5 (2d10), 11 (3d10) e 17 (4d10).",
+      "Você pode usar esta Arma de Sopro um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo."
+     ]
+    },
+    {
+     "id": "draconic-damage-resistance-poison",
+     "name": "Resistência a Dano: Veneno",
+     "summary": "Você tem Resistência a dano de veneno, conforme seu traço Ancestralidade Dracônica.",
+     "text": [
+      "Você tem Resistência a dano de veneno, conforme seu traço Ancestralidade Dracônica."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:draconic-ancestor-red",
+  "kind": "subspecies",
+  "name": "Ancestral Dracônico: Vermelho",
+  "summary": "Arma de Sopro: Fogo, Resistência a Dano: Fogo",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:dragonborn"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:dragonborn",
+   "abilityBonuses": {},
+   "damageType": "fogo",
+   "traits": [
+    {
+     "id": "draconic-breath-weapon-fire",
+     "name": "Arma de Sopro: Fogo",
+     "summary": "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na…",
+     "text": [
+      "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na área deve fazer um teste de resistência de Destreza (CD 8 + seu modificador de Constituição + seu Bônus de Proficiência). Se falhar, sofre 1d10 de dano de fogo; se passar, sofre metade. Esse dano aumenta em 1d10 quando você chega aos níveis de personagem 5 (2d10), 11 (3d10) e 17 (4d10).",
+      "Você pode usar esta Arma de Sopro um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo."
+     ]
+    },
+    {
+     "id": "draconic-damage-resistance-fire",
+     "name": "Resistência a Dano: Fogo",
+     "summary": "Você tem Resistência a dano de fogo, conforme seu traço Ancestralidade Dracônica.",
+     "text": [
+      "Você tem Resistência a dano de fogo, conforme seu traço Ancestralidade Dracônica."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:draconic-ancestor-silver",
+  "kind": "subspecies",
+  "name": "Ancestral Dracônico: Prata",
+  "summary": "Arma de Sopro: Frio, Resistência a Dano: Frio",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:dragonborn"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:dragonborn",
+   "abilityBonuses": {},
+   "damageType": "frio",
+   "traits": [
+    {
+     "id": "draconic-breath-weapon-cold",
+     "name": "Arma de Sopro: Frio",
+     "summary": "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na…",
+     "text": [
+      "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na área deve fazer um teste de resistência de Destreza (CD 8 + seu modificador de Constituição + seu Bônus de Proficiência). Se falhar, sofre 1d10 de dano de frio; se passar, sofre metade. Esse dano aumenta em 1d10 quando você chega aos níveis de personagem 5 (2d10), 11 (3d10) e 17 (4d10).",
+      "Você pode usar esta Arma de Sopro um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo."
+     ]
+    },
+    {
+     "id": "draconic-damage-resistance-cold",
+     "name": "Resistência a Dano: Frio",
+     "summary": "Você tem Resistência a dano de frio, conforme seu traço Ancestralidade Dracônica.",
+     "text": [
+      "Você tem Resistência a dano de frio, conforme seu traço Ancestralidade Dracônica."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:draconic-ancestor-white",
+  "kind": "subspecies",
+  "name": "Ancestral Dracônico: Branco",
+  "summary": "Arma de Sopro: Frio, Resistência a Dano: Frio",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:dragonborn"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:dragonborn",
+   "abilityBonuses": {},
+   "damageType": "frio",
+   "traits": [
+    {
+     "id": "draconic-breath-weapon-cold",
+     "name": "Arma de Sopro: Frio",
+     "summary": "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na…",
+     "text": [
+      "Quando realiza a ação de Ataque no seu turno, você pode substituir um dos ataques por uma exalação de energia mágica num Cone de 4,5 metros ou numa Linha de 9 metros com 1,5 metro de largura (escolha a forma a cada vez). Cada criatura na área deve fazer um teste de resistência de Destreza (CD 8 + seu modificador de Constituição + seu Bônus de Proficiência). Se falhar, sofre 1d10 de dano de frio; se passar, sofre metade. Esse dano aumenta em 1d10 quando você chega aos níveis de personagem 5 (2d10), 11 (3d10) e 17 (4d10).",
+      "Você pode usar esta Arma de Sopro um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo."
+     ]
+    },
+    {
+     "id": "draconic-damage-resistance-cold",
+     "name": "Resistência a Dano: Frio",
+     "summary": "Você tem Resistência a dano de frio, conforme seu traço Ancestralidade Dracônica.",
+     "text": [
+      "Você tem Resistência a dano de frio, conforme seu traço Ancestralidade Dracônica."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:elven-lineage-drow",
+  "kind": "subspecies",
+  "name": "Linhagem Élfica: Drow",
+  "summary": "Visão no Escuro (36 m), Globos de Luz, Fogo das Fadas, Escuridão",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:elf"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:elf",
+   "abilityBonuses": {},
+   "traits": [
+    {
+     "id": "darkvision-120",
+     "name": "Visão no Escuro (36 m)",
+     "summary": "Você tem Visão no Escuro com alcance de 36 metros.",
+     "text": [
+      "Você tem Visão no Escuro com alcance de 36 metros."
+     ]
+    },
+    {
+     "id": "lineage-spell-dancing-lights",
+     "name": "Globos de Luz",
+     "summary": "Você conhece a magia Globos de Luz.",
+     "text": [
+      "Você conhece a magia Globos de Luz."
+     ]
+    },
+    {
+     "id": "lineage-spell-faerie-fire",
+     "name": "Fogo das Fadas",
+     "summary": "Você conhece a magia Fogo das Fadas.",
+     "text": [
+      "Você conhece a magia Fogo das Fadas."
+     ]
+    },
+    {
+     "id": "lineage-spell-darkness",
+     "name": "Escuridão",
+     "summary": "Você conhece a magia Escuridão.",
+     "text": [
+      "Você conhece a magia Escuridão."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:elven-lineage-high-elf",
+  "kind": "subspecies",
+  "name": "Linhagem Élfica: Alto Elfo",
+  "summary": "Alto Elfo: Versatilidade de Truque, Detectar Magia, Passo Nebuloso",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:elf"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:elf",
+   "abilityBonuses": {},
+   "traits": [
+    {
+     "id": "high-elf-cantrip-versatility",
+     "name": "Alto Elfo: Versatilidade de Truque",
+     "summary": "Você conhece o truque Prestidigitação. Sempre que terminar um Descanso Longo, pode trocar esse truque por outro da lista de magias de Mago.",
+     "text": [
+      "Você conhece o truque Prestidigitação. Sempre que terminar um Descanso Longo, pode trocar esse truque por outro da lista de magias de Mago."
+     ]
+    },
+    {
+     "id": "lineage-spell-detect-magic",
+     "name": "Detectar Magia",
+     "summary": "Você conhece a magia Detectar Magia.",
+     "text": [
+      "Você conhece a magia Detectar Magia."
+     ]
+    },
+    {
+     "id": "lineage-spell-misty-step",
+     "name": "Passo Nebuloso",
+     "summary": "Você conhece a magia Passo Nebuloso.",
+     "text": [
+      "Você conhece a magia Passo Nebuloso."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:elven-lineage-wood-elf",
+  "kind": "subspecies",
+  "name": "Linhagem Élfica: Elfo da Floresta",
+  "summary": "Elfo da Floresta: Aumento de Deslocamento, Passos Longos, Passos sem Pegadas",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:elf"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:elf",
+   "abilityBonuses": {},
+   "traits": [
+    {
+     "id": "wood-elf-speed-increase",
+     "name": "Elfo da Floresta: Aumento de Deslocamento",
+     "summary": "Seu Deslocamento aumenta para 10,5 metros.",
+     "text": [
+      "Seu Deslocamento aumenta para 10,5 metros."
+     ]
+    },
+    {
+     "id": "lineage-spell-longstrider",
+     "name": "Passos Longos",
+     "summary": "Você aprende a magia Passos Longos.",
+     "text": [
+      "Você aprende a magia Passos Longos."
+     ]
+    },
+    {
+     "id": "lineage-spell-pass-without-trace",
+     "name": "Passos sem Pegadas",
+     "summary": "Você aprende a magia Passos sem Pegadas.",
+     "text": [
+      "Você aprende a magia Passos sem Pegadas."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:gnomish-lineage-forest-gnome",
+  "kind": "subspecies",
+  "name": "Linhagem Gnômica: Gnomo da Floresta",
+  "summary": "Linhagem Gnômica: Gnomo da Floresta, Ilusão Menor",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:gnome"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:gnome",
+   "abilityBonuses": {},
+   "traits": [
+    {
+     "id": "gnomish-lineage-forest-gnome",
+     "name": "Linhagem Gnômica: Gnomo da Floresta",
+     "summary": "Você tem sempre preparada a magia Falar com Animais. Pode lançá-la sem gastar espaço de magia um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo. Também pode usar qualquer…",
+     "text": [
+      "Você tem sempre preparada a magia Falar com Animais. Pode lançá-la sem gastar espaço de magia um número de vezes igual ao seu Bônus de Proficiência e recupera todos os usos gastos quando termina um Descanso Longo. Também pode usar qualquer espaço de magia que tenha para lançá-la."
+     ]
+    },
+    {
+     "id": "lineage-spell-minor-illusion",
+     "name": "Ilusão Menor",
+     "summary": "Você conhece a magia Ilusão Menor.",
+     "text": [
+      "Você conhece a magia Ilusão Menor."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:gnomish-lineage-rock-gnome",
+  "kind": "subspecies",
+  "name": "Linhagem Gnômica: Gnomo das Rochas",
+  "summary": "Linhagem Gnômica: Gnomo das Rochas, Reparar",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:gnome"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:gnome",
+   "abilityBonuses": {},
+   "traits": [
+    {
+     "id": "gnomish-lineage-rock-gnome",
+     "name": "Linhagem Gnômica: Gnomo das Rochas",
+     "summary": "Você conhece o truque Prestidigitação. Além disso, pode gastar 10 minutos lançando Prestidigitação para criar um dispositivo mecânico Miúdo (CA 5, 1 PV), como um brinquedo, um acendedor ou uma caixa de música. Ao criar o dispositivo, você…",
+     "text": [
+      "Você conhece o truque Prestidigitação. Além disso, pode gastar 10 minutos lançando Prestidigitação para criar um dispositivo mecânico Miúdo (CA 5, 1 PV), como um brinquedo, um acendedor ou uma caixa de música. Ao criar o dispositivo, você define a função dele escolhendo um dos efeitos de Prestidigitação; o dispositivo produz esse efeito sempre que você ou outra criatura usa uma Ação Bônus para ativá-lo com um toque. Se o efeito escolhido tiver opções, você escolhe uma delas para o dispositivo ao criá-lo. Por exemplo, se escolher o efeito de acender ou apagar da magia, você define se o dispositivo acende ou apaga o fogo; ele não faz as duas coisas. Você pode ter três desses dispositivos ao mesmo tempo, e cada um se desfaz 8 horas depois de criado ou quando você o desmonta com um toque, usando a ação Utilizar."
+     ]
+    },
+    {
+     "id": "lineage-spell-mending",
+     "name": "Reparar",
+     "summary": "Você conhece o truque Reparar.",
+     "text": [
+      "Você conhece o truque Reparar."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:giant-ancestry-clouds-jaunt",
+  "kind": "subspecies",
+  "name": "Ancestralidade Gigante: Salto das Nuvens",
+  "summary": "Ancestralidade Gigante: Salto das Nuvens",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:goliath"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:goliath",
+   "abilityBonuses": {},
+   "traits": [
+    {
+     "id": "giant-ancestry-clouds-jaunt",
+     "name": "Ancestralidade Gigante: Salto das Nuvens",
+     "summary": "Com uma Ação Bônus, você se teletransporta magicamente até 9 metros para um espaço desocupado que consiga ver.",
+     "text": [
+      "Com uma Ação Bônus, você se teletransporta magicamente até 9 metros para um espaço desocupado que consiga ver."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:giant-ancestry-fires-burn",
+  "kind": "subspecies",
+  "name": "Ancestralidade Gigante: Queimadura do Fogo",
+  "summary": "Ancestralidade Gigante: Queimadura do Fogo",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:goliath"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:goliath",
+   "abilityBonuses": {},
+   "traits": [
+    {
+     "id": "giant-ancestry-fires-burn",
+     "name": "Ancestralidade Gigante: Queimadura do Fogo",
+     "summary": "Quando atinge um alvo com uma jogada de ataque e causa dano a ele, você também pode causar 1d10 de dano de Fogo a esse alvo.",
+     "text": [
+      "Quando atinge um alvo com uma jogada de ataque e causa dano a ele, você também pode causar 1d10 de dano de Fogo a esse alvo."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:giant-ancestry-frosts-chill",
+  "kind": "subspecies",
+  "name": "Ancestralidade Gigante: Frio do Gelo",
+  "summary": "Ancestralidade Gigante: Frio do Gelo",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:goliath"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:goliath",
+   "abilityBonuses": {},
+   "traits": [
+    {
+     "id": "giant-ancestry-frosts-chill",
+     "name": "Ancestralidade Gigante: Frio do Gelo",
+     "summary": "Quando atinge um alvo com uma jogada de ataque e causa dano a ele, você também pode causar 1d6 de dano de Frio a esse alvo e reduzir o Deslocamento dele em 3 metros até o início do seu próximo turno.",
+     "text": [
+      "Quando atinge um alvo com uma jogada de ataque e causa dano a ele, você também pode causar 1d6 de dano de Frio a esse alvo e reduzir o Deslocamento dele em 3 metros até o início do seu próximo turno."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:giant-ancestry-hills-tumble",
+  "kind": "subspecies",
+  "name": "Ancestralidade Gigante: Tombo das Colinas",
+  "summary": "Ancestralidade Gigante: Tombo das Colinas",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:goliath"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:goliath",
+   "abilityBonuses": {},
+   "traits": [
+    {
+     "id": "giant-ancestry-hills-tumble",
+     "name": "Ancestralidade Gigante: Tombo das Colinas",
+     "summary": "Quando atinge uma criatura Grande ou menor com uma jogada de ataque e causa dano a ela, você pode deixá-la com a condição Caído.",
+     "text": [
+      "Quando atinge uma criatura Grande ou menor com uma jogada de ataque e causa dano a ela, você pode deixá-la com a condição Caído."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:giant-ancestry-stones-endurance",
+  "kind": "subspecies",
+  "name": "Ancestralidade Gigante: Resistência da Pedra",
+  "summary": "Ancestralidade Gigante: Resistência da Pedra",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:goliath"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:goliath",
+   "abilityBonuses": {},
+   "traits": [
+    {
+     "id": "giant-ancestry-stones-endurance",
+     "name": "Ancestralidade Gigante: Resistência da Pedra",
+     "summary": "Quando sofre dano, você pode usar uma Reação para rolar 1d12. Some seu modificador de Constituição ao resultado e reduza o dano nesse total.",
+     "text": [
+      "Quando sofre dano, você pode usar uma Reação para rolar 1d12. Some seu modificador de Constituição ao resultado e reduza o dano nesse total."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:giant-ancestry-storms-thunder",
+  "kind": "subspecies",
+  "name": "Ancestralidade Gigante: Trovão da Tempestade",
+  "summary": "Ancestralidade Gigante: Trovão da Tempestade",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:goliath"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:goliath",
+   "abilityBonuses": {},
+   "traits": [
+    {
+     "id": "giant-ancestry-storms-thunder",
+     "name": "Ancestralidade Gigante: Trovão da Tempestade",
+     "summary": "Quando sofre dano de uma criatura a até 18 metros de você, pode usar uma Reação para causar 1d8 de dano Trovejante a essa criatura.",
+     "text": [
+      "Quando sofre dano de uma criatura a até 18 metros de você, pode usar uma Reação para causar 1d8 de dano Trovejante a essa criatura."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:fiendish-legacy-abyssal",
+  "kind": "subspecies",
+  "name": "Legado Ínfero: Abissal",
+  "summary": "Resistência a Dano: Veneno, Rajada de Veneno, Raio Nauseante, Imobilizar Pessoa",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:tiefling"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:tiefling",
+   "abilityBonuses": {},
+   "traits": [
+    {
+     "id": "lineage-resistance-poison",
+     "name": "Resistência a Dano: Veneno",
+     "summary": "Você tem Resistência a dano de Veneno.",
+     "text": [
+      "Você tem Resistência a dano de Veneno."
+     ]
+    },
+    {
+     "id": "lineage-spell-poison-spray",
+     "name": "Rajada de Veneno",
+     "summary": "Você conhece a magia Rajada de Veneno.",
+     "text": [
+      "Você conhece a magia Rajada de Veneno."
+     ]
+    },
+    {
+     "id": "lineage-spell-ray-of-sickness",
+     "name": "Raio Nauseante",
+     "summary": "Você conhece a magia Raio Nauseante.",
+     "text": [
+      "Você conhece a magia Raio Nauseante."
+     ]
+    },
+    {
+     "id": "lineage-spell-hold-person",
+     "name": "Imobilizar Pessoa",
+     "summary": "Você conhece a magia Imobilizar Pessoa.",
+     "text": [
+      "Você conhece a magia Imobilizar Pessoa."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:fiendish-legacy-chthonic",
+  "kind": "subspecies",
+  "name": "Legado Ínfero: Ctônico",
+  "summary": "Resistência a Dano: Necrótico, Toque Arrepiante, Vitalidade Falsa, Raio do Enfraquecimento",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:tiefling"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:tiefling",
+   "abilityBonuses": {},
+   "traits": [
+    {
+     "id": "lineage-resistance-necrotic",
+     "name": "Resistência a Dano: Necrótico",
+     "summary": "Você tem Resistência a dano Necrótico.",
+     "text": [
+      "Você tem Resistência a dano Necrótico."
+     ]
+    },
+    {
+     "id": "lineage-spell-chill-touch",
+     "name": "Toque Arrepiante",
+     "summary": "Você conhece a magia Toque Arrepiante.",
+     "text": [
+      "Você conhece a magia Toque Arrepiante."
+     ]
+    },
+    {
+     "id": "lineage-spell-false-life",
+     "name": "Vitalidade Falsa",
+     "summary": "Você conhece a magia Vitalidade Falsa.",
+     "text": [
+      "Você conhece a magia Vitalidade Falsa."
+     ]
+    },
+    {
+     "id": "lineage-spell-ray-of-enfeeblement",
+     "name": "Raio do Enfraquecimento",
+     "summary": "Você conhece a magia Raio do Enfraquecimento.",
+     "text": [
+      "Você conhece a magia Raio do Enfraquecimento."
+     ]
+    }
+   ],
+   "text": []
+  }
+ },
+ {
+  "id": "subspecies:fiendish-legacy-infernal",
+  "kind": "subspecies",
+  "name": "Legado Ínfero: Infernal",
+  "summary": "Resistência a Dano: Fogo, Raio de Fogo, Repreensão Infernal, Escuridão",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.2.1",
+   "edition": "2024",
+   "version": "5.2.1",
+   "section": "Subspecies"
+  },
+  "license": "CC-BY-4.0",
+  "prerequisites": {
+   "type": "hasSpecies",
+   "speciesId": "species:tiefling"
+  },
+  "roles": [],
+  "data": {
+   "parent": "species:tiefling",
+   "abilityBonuses": {},
+   "traits": [
+    {
+     "id": "lineage-resistance-fire",
+     "name": "Resistência a Dano: Fogo",
+     "summary": "Você tem Resistência a dano de Fogo.",
+     "text": [
+      "Você tem Resistência a dano de Fogo."
+     ]
+    },
+    {
+     "id": "lineage-spell-fire-bolt",
+     "name": "Raio de Fogo",
+     "summary": "Você conhece a magia Raio de Fogo.",
+     "text": [
+      "Você conhece a magia Raio de Fogo."
+     ]
+    },
+    {
+     "id": "lineage-spell-hellish-rebuke",
+     "name": "Repreensão Infernal",
+     "summary": "Você conhece a magia Repreensão Infernal.",
+     "text": [
+      "Você conhece a magia Repreensão Infernal."
+     ]
+    },
+    {
+     "id": "lineage-spell-darkness",
+     "name": "Escuridão",
+     "summary": "Você conhece a magia Escuridão.",
+     "text": [
+      "Você conhece a magia Escuridão."
+     ]
+    }
+   ],
+   "text": []
+  }
+ }
+]

@@ -1,0 +1,93 @@
+{
+ "sending": {
+  "d": [
+   "Você envia uma mensagem curta, de no máximo 25 palavras, a uma criatura que já conheceu ou que lhe foi descrita por alguém que a conheceu. O alvo ouve a mensagem na mente, reconhece você como remetente se o conhecer e pode responder da mesma forma imediatamente. A magia permite que os alvos entendam o significado da mensagem.",
+   "Você pode enviar a mensagem a qualquer distância e até para outros planos de existência, mas, se o alvo estiver num plano diferente do seu, há 5% de chance de a mensagem não chegar. Você sabe se a entrega falhar.",
+   "Ao receber sua mensagem, uma criatura pode bloquear sua capacidade de alcançá-la de novo com esta magia por 8 horas. Se você tentar enviar outra mensagem nesse período, descobre que está bloqueado, e a magia falha."
+  ]
+ },
+ "sequester": {
+  "d": [
+   "Com um toque, você isola magicamente um objeto ou uma criatura voluntária. Pela duração, o alvo fica com a condição Invisível e não pode ser alvo de magias de Adivinhação, detectado por magia nem observado à distância por magia.",
+   "Se o alvo for uma criatura, entra num estado de animação suspensa: fica com a condição Inconsciente, não envelhece e não precisa de comida, água nem ar.",
+   "Você pode definir uma condição para a magia terminar antes. Ela pode ser qualquer coisa que escolher, mas precisa ocorrer ou ser visível a até 1,5 km do alvo. Exemplos incluem \"depois de 1.000 anos\" ou \"quando o tarrasque despertar\". Esta magia também termina se o alvo sofrer qualquer dano."
+  ],
+  "m": "Pó de gemas no valor de 5.000+ PO, que a magia consome."
+ },
+ "shapechange": {
+  "d": [
+   "Você muda de forma para outra criatura pela duração ou até realizar uma ação de Magia para mudar para outra forma permitida. A nova forma precisa ser de uma criatura com Nível de Desafio que não seja maior que seu nível ou Nível de Desafio. Você precisa já ter visto esse tipo de criatura, e ela não pode ser um Constructo nem um Morto-Vivo.",
+   "Ao lançar a magia, você ganha Pontos de Vida Temporários iguais aos Pontos de Vida da primeira forma que assumir. Esses Pontos de Vida Temporários desaparecem, se restarem, quando a magia termina.",
+   "Suas estatísticas de jogo são substituídas pela ficha da forma escolhida, mas você mantém seu tipo de criatura, tendência, personalidade, valores de Inteligência, Sabedoria e Carisma, Pontos de Vida, Dados de Pontos de Vida, proficiências e capacidade de se comunicar. Se tiver a característica Conjuração, também a mantém.",
+   "Ao mudar de forma, você decide se seu equipamento cai no chão ou muda de tamanho e formato para servir na nova forma enquanto estiver nela."
+  ],
+  "m": "Um diadema de jade no valor de 1.500+ PO."
+ },
+ "shatter": {
+  "d": [
+   "Um barulho alto irrompe de um ponto à sua escolha dentro do alcance. Cada criatura numa Esfera de 3 metros de raio centrada ali faz um teste de resistência de Constituição, sofrendo 3d8 de dano Trovejante se falhar, ou metade se passar. Um Constructo tem Desvantagem no teste.",
+   "Um objeto não mágico que não esteja sendo vestido nem carregado também sofre o dano se estiver na área da magia. Usando um Espaço de Magia de Nível Superior. O dano aumenta em 1d8 para cada nível de espaço de magia acima de 2."
+  ],
+  "m": "Uma lasca de mica."
+ },
+ "shield": {
+  "d": ["Uma barreira imperceptível de energia mágica protege você. Até o início do seu próximo turno, você tem +5 de bônus na CA, inclusive contra o ataque que desencadeou a magia, e não sofre dano de Mísseis Mágicos."],
+  "ct": "Reação, que você realiza quando é atingido por uma jogada de ataque ou é alvo da magia Mísseis Mágicos"
+ },
+ "shield-of-faith": {
+  "d": ["Um campo cintilante envolve uma criatura à sua escolha dentro do alcance, concedendo a ela +2 de bônus na CA pela duração."],
+  "m": "Um pergaminho de oração."
+ },
+ "shillelagh": {
+  "d": [
+   "Um Bordão ou Clava que você esteja segurando é imbuído do poder da natureza. Pela duração, você pode usar sua habilidade de conjuração em vez da Força nas jogadas de ataque e de dano de ataques corpo a corpo com essa arma, e o dado de dano da arma passa a ser d8. Se o ataque causar dano, pode ser dano de Energia ou o tipo de dano normal da arma (à sua escolha).",
+   "A magia termina antes se você lançá-la de novo ou soltar a arma.",
+   "Aprimoramento de Truque. O dado de dano muda quando você alcança os níveis 5 (d10), 11 (d12) e 17 (2d6)."
+  ],
+  "m": "Visco."
+ },
+ "shining-smite": {
+  "n": "Destruição Luminosa",
+  "d": ["O alvo atingido pelo golpe sofre 2d6 de dano Radiante extra do ataque. Até a magia terminar, o alvo emite Luz Plena num raio de 1,5 metro, jogadas de ataque contra ele têm Vantagem, e ele não pode se beneficiar da condição Invisível."],
+  "ct": "Ação Bônus, que você realiza imediatamente depois de acertar uma criatura com uma arma Corpo a Corpo ou um Ataque Desarmado"
+ },
+ "shocking-grasp": {
+  "d": [
+   "Um relâmpago salta de você para uma criatura que tenta tocar. Faça um ataque mágico corpo a corpo contra o alvo. Se acertar, o alvo sofre 1d8 de dano Elétrico e não pode fazer Ataques de Oportunidade até o início do próximo turno dele.",
+   "Aprimoramento de Truque. O dano aumenta em 1d8 quando você alcança os níveis 5 (2d8), 11 (3d8) e 17 (4d8)."
+  ]
+ },
+ "silence": {
+  "d": ["Pela duração, nenhum som pode ser criado dentro de uma Esfera de 6 metros de raio centrada num ponto à sua escolha dentro do alcance, nem atravessá-la. Qualquer criatura ou objeto totalmente dentro da Esfera tem Imunidade a dano Trovejante, e as criaturas ficam com a condição Surdo enquanto estiverem totalmente dentro dela. É impossível lançar ali uma magia que tenha componente Verbal."]
+ },
+ "silent-image": {
+  "d": [
+   "Você cria a imagem de um objeto, de uma criatura ou de outro fenômeno visível que não seja maior que um Cubo de 4,5 metros. A imagem aparece num ponto dentro do alcance e dura pela duração. É puramente visual: não vem acompanhada de som, cheiro nem outros efeitos sensoriais.",
+   "Com uma ação de Magia, você pode fazer a imagem se mover para qualquer ponto dentro do alcance. Enquanto a imagem muda de lugar, pode alterar a aparência dela para que os movimentos pareçam naturais. Por exemplo, se criar a imagem de uma criatura e movê-la, pode alterá-la para que pareça estar andando.",
+   "A interação física com a imagem revela que ela é uma ilusão, porque as coisas a atravessam. Uma criatura que realize a ação Estudar para examinar a imagem pode determinar que é uma ilusão passando num teste de Inteligência (Investigação) contra a CD de resistência das suas magias. Se uma criatura perceber a ilusão pelo que ela é, consegue ver através da imagem."
+  ]
+ },
+ "simulacrum": {
+  "d": [
+   "Você cria um simulacro de uma Fera ou de um Humanoide que esteja a até 3 metros de você durante toda a conjuração. Você termina a conjuração tocando a criatura e um monte de gelo ou neve do mesmo tamanho dela, e o monte se transforma no simulacro, que é uma criatura. Ele usa as estatísticas de jogo da criatura original no momento da conjuração, mas é um Constructo, tem metade do máximo de Pontos de Vida e não pode lançar esta magia.",
+   "O simulacro é Amigável com você e com as criaturas que designar. Ele obedece aos seus comandos e age no seu turno em combate. O simulacro não pode ganhar níveis nem fazer Descansos Curtos ou Longos.",
+   "Se o simulacro sofrer dano, a única forma de restaurar seus Pontos de Vida é consertá-lo enquanto você faz um Descanso Longo, durante o qual gasta componentes no valor de 100 PO por Ponto de Vida restaurado. O simulacro precisa ficar a até 1,5 metro de você durante o conserto.",
+   "O simulacro dura até cair a 0 Pontos de Vida, quando volta a ser neve e derrete. Se você lançar esta magia de novo, qualquer simulacro criado por ela é destruído instantaneamente."
+  ],
+  "m": "Pó de rubi no valor de 1.500+ PO, que a magia consome."
+ },
+ "sleep": {
+  "d": [
+   "Cada criatura à sua escolha numa Esfera de 1,5 metro de raio centrada num ponto dentro do alcance deve passar num teste de resistência de Sabedoria ou fica com a condição Incapacitado até o fim do próximo turno dela, quando precisa repetir o teste. Se falhar no segundo teste, fica com a condição Inconsciente pela duração. A magia termina para um alvo se ele sofrer dano ou se alguém a até 1,5 metro dele usar uma ação para sacudi-lo e tirá-lo do efeito.",
+   "Criaturas que não dormem, como os elfos, ou que têm Imunidade à condição Exaustão passam automaticamente nos testes contra esta magia."
+  ],
+  "m": "Uma pitada de areia ou pétalas de rosa."
+ },
+ "sleet-storm": {
+  "d": [
+   "Até a magia terminar, chuva congelada cai num Cilindro de 12 metros de altura e 6 metros de raio centrado num ponto à sua escolha dentro do alcance. A área tem Escuridão Densa, e chamas expostas nela se apagam.",
+   "O chão no Cilindro é Terreno Difícil. Quando uma criatura entra no Cilindro pela primeira vez num turno ou começa o turno ali, deve passar num teste de resistência de Destreza ou fica com a condição Caído e perde a Concentração."
+  ],
+  "m": "Um guarda-chuva em miniatura."
+ }
+}

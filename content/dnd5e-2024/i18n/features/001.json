@@ -1,0 +1,123 @@
+{
+ "barbarian-rage": {
+  "d": [
+   "Você pode se imbuir de um poder primordial chamado Fúria, uma força que lhe concede vigor e resiliência extraordinários. Pode entrar em Fúria com uma Ação Bônus, se não estiver usando armadura Pesada.",
+   "Você pode entrar em Fúria o número de vezes mostrado para o seu nível de Bárbaro na coluna Fúrias da tabela de Características do Bárbaro. Recupera um uso gasto quando termina um Descanso Curto e todos os usos gastos quando termina um Descanso Longo.",
+   "Enquanto estiver ativa, sua Fúria segue as regras abaixo.",
+   "Resistência a Dano. Você tem Resistência a dano de Concussão, Perfurante e Cortante.",
+   "Dano de Fúria. Quando faz um ataque usando Força, com uma arma ou um Ataque Desarmado, e causa dano ao alvo, você recebe um bônus no dano que aumenta conforme ganha níveis de Bárbaro, como mostra a coluna Dano de Fúria da tabela de Características do Bárbaro.",
+   "Vantagem em Força. Você tem Vantagem em testes de Força e testes de resistência de Força.",
+   "Sem Concentração nem Magias. Você não pode manter Concentração nem lançar magias.",
+   "Duração. A Fúria dura até o fim do seu próximo turno e termina antes se você vestir armadura Pesada ou ficar com a condição Incapacitado. Se a Fúria ainda estiver ativa no seu próximo turno, você pode estendê-la por mais uma rodada fazendo uma das coisas a seguir:",
+   "- Fazer uma jogada de ataque contra um inimigo.",
+   "- Forçar um inimigo a fazer um teste de resistência.",
+   "- Usar uma Ação Bônus para estender a Fúria.",
+   "Cada vez que a Fúria é estendida, dura até o fim do seu próximo turno. Você pode manter uma Fúria por até 10 minutos."
+  ]
+ },
+ "barbarian-unarmored-defense": {
+  "d": ["Enquanto não estiver usando armadura, sua Classe de Armadura base é 10 + seus modificadores de Destreza e Constituição. Você pode usar um Escudo e ainda receber este benefício."]
+ },
+ "barbarian-weapon-mastery": {
+  "n": "Maestria com Armas",
+  "d": [
+   "Seu treinamento com armas permite usar as propriedades de maestria de dois tipos de armas Simples ou Marciais Corpo a Corpo à sua escolha, como Machados Grandes e Machadinhas. Sempre que terminar um Descanso Longo, você pode praticar exercícios com armas e trocar uma dessas escolhas.",
+   "Ao chegar a certos níveis de Bárbaro, você ganha a capacidade de usar as propriedades de maestria de mais tipos de armas, como mostra a coluna Maestria com Armas da tabela de Características do Bárbaro."
+  ]
+ },
+ "barbarian-danger-sense": {
+  "d": ["Você ganha um sentido sobrenatural de quando algo não está como deveria, o que lhe dá uma vantagem ao se esquivar de perigos. Você tem Vantagem em testes de resistência de Destreza, a não ser que esteja com a condição Incapacitado."]
+ },
+ "barbarian-reckless-attack": {
+  "d": [
+   "Você pode deixar de lado qualquer preocupação com a defesa para atacar com ferocidade redobrada. Ao fazer sua primeira jogada de ataque no turno, pode decidir atacar de forma descuidada. Isso concede Vantagem em jogadas de ataque usando Força até o início do seu próximo",
+   "turno, mas jogadas de ataque contra você têm Vantagem nesse período."
+  ]
+ },
+ "barbarian-subclass": {
+  "n": "Subclasse de Bárbaro",
+  "d": ["Você ganha uma subclasse de Bárbaro à sua escolha. Uma subclasse é uma especialização que concede características em certos níveis de Bárbaro. Pelo resto da sua carreira, você ganha cada característica da subclasse de nível igual ou menor que seu nível de Bárbaro."]
+ },
+ "barbarian-primal-knowledge": {
+  "n": "Conhecimento Primitivo",
+  "d": [
+   "Você ganha proficiência em mais uma perícia à sua escolha da lista de perícias disponíveis para Bárbaros no nível 1.",
+   "Além disso, enquanto sua Fúria estiver ativa, você pode canalizar poder primitivo ao tentar certas tarefas: sempre que fizer um teste de atributo usando uma das perícias a seguir, pode fazê-lo como teste de Força, mesmo que normalmente use outro atributo: Acrobacia, Intimidação, Percepção,",
+   "Furtividade ou Sobrevivência. Quando você usa esta capacidade, sua Força representa o poder primitivo que corre por você, afiando sua agilidade, sua postura e seus sentidos."
+  ]
+ },
+ "barbarian-ability-score-improvement": {
+  "d": ["Você ganha o talento Aumento no Valor de Habilidade (veja \"Talentos\") ou outro talento à sua escolha para o qual se qualifique. Ganha esta característica de novo nos níveis de Bárbaro 8, 12 e 16."]
+ },
+ "barbarian-extra-attack": {
+  "d": ["Você pode atacar duas vezes, em vez de uma, sempre que realiza a ação de Ataque no seu turno."]
+ },
+ "barbarian-fast-movement": {
+  "d": ["Seu Deslocamento aumenta em 3 metros enquanto você não estiver usando armadura Pesada."]
+ },
+ "barbarian-feral-instinct": {
+  "d": ["Seus instintos estão tão afiados que você tem Vantagem nas jogadas de Iniciativa."]
+ },
+ "barbarian-instinctive-pounce": {
+  "n": "Bote Instintivo",
+  "d": ["Como parte da Ação Bônus que usa para entrar em Fúria, você pode se mover até metade do seu Deslocamento."]
+ },
+ "barbarian-brutal-strike": {
+  "n": "Golpe Brutal",
+  "d": [
+   "Se usar Ataque Descuidado, você pode abrir mão de qualquer Vantagem numa jogada de ataque baseada em Força à sua escolha no seu turno. A jogada escolhida não pode ter Desvantagem. Se ela acertar, o alvo sofre 1d10 de dano extra do mesmo tipo causado pela arma ou pelo Ataque Desarmado, e você pode causar um efeito de Golpe Brutal à sua escolha. Você tem as opções de efeito a seguir.",
+   "Golpe Contundente. O alvo é empurrado 4,5 metros em linha reta para longe de você. Depois, você pode se mover até metade do seu Deslocamento em linha reta na direção do alvo sem provocar Ataques de Oportunidade.",
+   "Golpe no Jarrete. O Deslocamento do alvo é reduzido em 4,5 metros até o início do seu próximo turno. Um alvo só pode ser afetado por um Golpe no Jarrete por vez, o mais recente."
+  ]
+ },
+ "barbarian-relentless-rage": {
+  "d": [
+   "Sua Fúria pode manter você lutando apesar de ferimentos graves. Se cair a 0 Pontos de Vida com a Fúria ativa e não morrer na hora, você pode fazer um teste de resistência de Constituição CD 10. Se passar, seus Pontos de Vida passam a ser iguais ao dobro do seu nível de Bárbaro.",
+   "Cada vez que usar esta característica depois da primeira, a CD aumenta em 5. Quando você termina um Descanso Curto ou Longo, a CD volta a 10."
+  ]
+ },
+ "barbarian-improved-brutal-strike-1": {
+  "n": "Golpe Brutal Aprimorado",
+  "d": [
+   "Você aperfeiçoou novas formas de atacar com fúria. Os efeitos a seguir passam a fazer parte das suas opções de Golpe Brutal.",
+   "Golpe Atordoante. O alvo tem Desvantagem no próximo teste de resistência que fizer e não pode fazer Ataques de Oportunidade até o início do seu próximo turno.",
+   "Golpe Fendente. Antes do início do seu próximo turno, a próxima jogada de ataque feita por outra criatura contra o alvo recebe +5 de bônus. Uma jogada de ataque só pode receber um bônus de Golpe Fendente."
+  ]
+ },
+ "barbarian-persistent-rage": {
+  "d": [
+   "Quando rola Iniciativa, você pode recuperar todos os usos gastos de Fúria. Depois de recuperar usos de Fúria assim, só pode fazer isso de novo após terminar um Descanso Longo.",
+   "Além disso, sua Fúria é tão intensa que agora dura 10 minutos sem que você precise fazer nada para estendê-la de rodada em rodada. A Fúria termina antes se você ficar com a condição Inconsciente (não apenas Incapacitado) ou vestir armadura Pesada."
+  ]
+ },
+ "barbarian-improved-brutal-strike-2": {
+  "d": ["O dano extra do seu Golpe Brutal aumenta para 2d10. Além disso, você pode usar dois efeitos diferentes de Golpe Brutal sempre que usa a característica Golpe Brutal."]
+ },
+ "barbarian-indomitable-might": {
+  "d": ["Se o total de um teste de Força ou teste de resistência de Força seu for menor que seu valor de Força, você pode usar esse valor no lugar do total."]
+ },
+ "barbarian-epic-boon": {
+  "n": "Dádiva Épica",
+  "d": ["Você ganha um talento de Dádiva Épica (veja \"Talentos\") ou outro talento à sua escolha para o qual se qualifique. Dádiva da Ofensiva Irresistível é a recomendada."]
+ },
+ "barbarian-primal-champion": {
+  "d": ["Você encarna o poder primitivo. Seus valores de Força e Constituição aumentam em 4, até o máximo de 25."]
+ },
+ "berserker-frenzy": {
+  "d": ["Se usar Ataque Descuidado com a Fúria ativa, você causa dano extra ao primeiro alvo que atingir no seu turno com um ataque baseado em Força. Para determinar o dano extra, role um número de d6 igual ao seu bônus de Dano de Fúria e some os resultados. O dano é do mesmo tipo da arma ou do Ataque Desarmado usado no ataque."]
+ },
+ "berserker-mindless-rage": {
+  "d": ["Você tem Imunidade às condições Enfeitiçado e Amedrontado enquanto sua Fúria estiver ativa. Se estiver Enfeitiçado ou Amedrontado quando entrar em Fúria, a condição termina."]
+ },
+ "berserker-retaliation": {
+  "d": ["Quando sofrer dano de uma criatura a até 1,5 metro de você, pode usar uma Reação para fazer um ataque corpo a corpo contra ela, usando uma arma ou um Ataque Desarmado."]
+ },
+ "berserker-intimidating-presence": {
+  "d": [
+   "Com uma Ação Bônus, você pode aterrorizar os outros com sua presença ameaçadora e seu poder primitivo.",
+   "Quando faz isso, cada criatura à sua escolha numa Emanação de 9 metros a partir de você deve fazer um teste de resistência de Sabedoria (CD 8 + seu modificador de Força + seu Bônus de Proficiência). Se falhar,",
+   "a criatura fica com a condição Amedrontado por 1 minuto. No fim de cada turno da criatura Amedrontada, ela repete o teste, encerrando o efeito em si mesma se passar.",
+   "Depois de usar esta característica, você só pode usá-la de novo após terminar um Descanso Longo, a não ser que gaste um uso de Fúria (sem gastar ação) para recuperar o uso dela."
+  ]
+ }
+}

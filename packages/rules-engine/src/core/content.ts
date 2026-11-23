@@ -53,6 +53,8 @@ export const ContentKindSchema = z.enum([
   "class",
   "subclass",
   "species",
+  /** Sub-raça (2014) ou linhagem/legado/ancestralidade (2024). */
+  "subspecies",
   "background",
   "origin",
   "feat",

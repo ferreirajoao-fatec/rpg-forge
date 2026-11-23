@@ -7,8 +7,8 @@ export const CANVAS = { width: 512, height: 768 } as const;
 /** Enquadramentos prontos (seção 11: corpo inteiro e aproximação no rosto; seção 13: retrato e token). */
 export const FRAMES = {
   full: { x: 0, y: 0, width: 512, height: 768 },
-  portrait: { x: 136, y: 36, width: 240, height: 240 },
-  bust: { x: 96, y: 24, width: 320, height: 400 },
+  portrait: { x: 194, y: 50, width: 124, height: 124 },
+  bust: { x: 156, y: 40, width: 200, height: 250 },
 } as const;
 export type FrameId = keyof typeof FRAMES;
 
@@ -28,7 +28,7 @@ export interface Composition {
 }
 
 /** Ponto de apoio das transformações de cada slot ajustável (base dos chifres, no topo da cabeça). */
-const PIVOT: Partial<Record<SlotId, [number, number]>> = { horns: [256, 112] };
+const PIVOT: Partial<Record<SlotId, [number, number]>> = { horns: [256, 78] };
 
 const anchorTransform = (sx: number) => (sx === 1 ? "" : `translate(256 0) scale(${sx} 1) translate(-256 0)`);
 
@@ -40,9 +40,12 @@ export function colorize(svg: string, colors: Record<string, string | undefined>
   });
 }
 
-/** Prefixa ids internos (gradientes, filtros, padrões) para que camadas juntas num só documento não colidam. */
+/** Prefixa ids internos (gradientes, filtros, recortes, `<use>`) para que camadas juntas num só documento não colidam. */
 function scopeIds(svg: string, prefix: string): string {
-  return svg.replace(/\bid="([^"]+)"/g, `id="${prefix}-$1"`).replace(/url\(#([^)]+)\)/g, `url(#${prefix}-$1)`);
+  return svg
+    .replace(/\bid="([^"]+)"/g, `id="${prefix}-$1"`)
+    .replace(/url\(#([^)]+)\)/g, `url(#${prefix}-$1)`)
+    .replace(/\bhref="#([^"]+)"/g, `href="#${prefix}-$1"`);
 }
 
 function layerRefs(part: AssetPart, config: AvatarConfig, notes: string[]): AssetLayerRef[] {

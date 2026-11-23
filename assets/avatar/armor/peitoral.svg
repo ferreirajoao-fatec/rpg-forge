@@ -1,14 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+  <defs>
+    <filter id="f-metal" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{metal-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="f-secondary" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{secondary-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="soft2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.5"/></filter>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#{metal-deep}" stop-opacity="0.55"/>
+      <stop offset="0.28" stop-color="#{metal-light}" stop-opacity="0.65"/>
+      <stop offset="0.45" stop-color="#{metal}" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#{metal}" stop-opacity="0"/>
+      <stop offset="0.72" stop-color="#{metal-light}" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#{metal-deep}" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <g stroke-linejoin="round" stroke-linecap="round">
     <g data-anchor="torso">
-      <path fill="#{metal}" d="M200 288 C224 300 288 300 312 288 L324 302 C330 336 324 370 316 392 L314 440 C316 452 318 462 320 468 L192 468 C194 462 196 452 198 440 L196 392 C188 370 182 336 188 302 Z"/>
-      <path fill="#{metal-light}" stroke="none" opacity="0.7" d="M214 312 C222 340 226 370 224 400 L236 400 C238 370 234 336 226 312 Z"/>
-      <path fill="#{metal-dark}" stroke="none" opacity="0.5" d="M294 300 C312 330 314 380 310 440 L320 468 C318 462 316 452 314 440 L316 392 C324 370 330 336 324 302 Z"/>
-      <path fill="none" stroke="#{metal-deep}" stroke-width="2.5" d="M256 300 L256 420 M200 420 C230 430 282 430 312 420"/>
-      <path fill="#{metal}" d="M160 300 C162 276 190 268 208 282 C212 296 206 314 196 324 C182 330 164 324 160 300 Z"/>
-      <path fill="#{metal}" d="M352 300 C350 276 322 268 304 282 C300 296 306 314 316 324 C330 330 348 324 352 300 Z"/>
-      <path fill="#{metal-light}" stroke="none" opacity="0.7" d="M170 292 C176 282 190 278 198 284 C188 286 178 292 172 302 Z M342 292 C336 282 322 278 314 284 C324 286 334 292 340 302 Z"/>
-      <path fill="#{secondary}" d="M196 452 L316 452 L320 470 L192 470 Z"/>
+      <path fill="#{secondary}" stroke="#{secondary-deep}" stroke-width="1" filter="url(#f-secondary)" d="M256 436 L200 430 C197 448 194 464 192 478 C214 486 236 488 256 488 C276 488 298 486 320 478 C318 464 315 448 312 430 L256 436 Z"/>
+      <path fill="none" stroke="#{secondary-deep}" stroke-width="0.8" opacity="0.5" d="M216 444 L212 482 M236 446 L234 486 M276 446 L278 486 M296 444 L300 482"/>
+      <path fill="#{metal}" stroke="#{metal-deep}" stroke-width="1" filter="url(#f-metal)" d="M256 416 L202 408 C200 418 199 426 198 434 C220 440 238 442 256 442 C274 442 292 440 314 434 C313 426 312 418 310 408 L256 416 Z"/><path fill="url(#sheen)" stroke="none" d="M256 416 L202 408 C200 418 199 426 198 434 C220 440 238 442 256 442 C274 442 292 440 314 434 C313 426 312 418 310 408 L256 416 Z"/>
+      <path fill="#{metal}" stroke="#{metal-deep}" stroke-width="1" filter="url(#f-metal)" d="M256 394 L205 386 C204 396 203 404 202 412 C222 418 240 420 256 420 C272 420 290 418 310 412 C309 404 308 396 307 386 L256 394 Z"/><path fill="url(#sheen)" stroke="none" d="M256 394 L205 386 C204 396 203 404 202 412 C222 418 240 420 256 420 C272 420 290 418 310 412 C309 404 308 396 307 386 L256 394 Z"/>
+      <path fill="#{metal}" stroke="#{metal-deep}" stroke-width="1" filter="url(#f-metal)" d="M256 200 L244 186 C232 191 220 195 208 199 C203 216 201 236 201 254 C203 284 206 312 208 338 C207 358 206 374 205 390 C222 396 240 398 256 398 C272 398 290 396 307 390 C306 374 305 358 304 338 C306 312 309 284 311 254 C311 236 309 216 304 199 C292 195 280 191 268 186 L256 200 Z"/><path fill="url(#sheen)" stroke="none" d="M256 200 L244 186 C232 191 220 195 208 199 C203 216 201 236 201 254 C203 284 206 312 208 338 C207 358 206 374 205 390 C222 396 240 398 256 398 C272 398 290 396 307 390 C306 374 305 358 304 338 C306 312 309 284 311 254 C311 236 309 216 304 199 C292 195 280 191 268 186 L256 200 Z"/>
+      <path fill="none" stroke="#{metal-deep}" stroke-width="0.9" opacity="0.6" d="M256 202 L256 396"/>
+      <path fill="none" stroke="#{metal-light}" stroke-width="1.2" opacity="0.8" d="M257.4 206 L257.4 392"/>
+      <path fill="none" stroke="#{metal-deep}" stroke-width="0.9" opacity="0.5" d="M212 262 C226 280 244 284 254 276 M300 262 C286 280 268 284 258 276 M244 186 C246 192 250 198 256 202 M268 186 C266 192 262 198 256 202"/>
+      <path fill="#{metal-light}" stroke="none" opacity="0.6" filter="url(#soft2)" d="M224 222 C232 216 240 220 242 232 C238 246 228 248 222 238 Z"/>
+      <path fill="#{metal}" stroke="#{metal-deep}" stroke-width="1" filter="url(#f-metal)" d="M236 172 C244 180 268 180 276 172 L280 186 C268 196 244 196 232 186 Z"/>
+      <path fill="none" stroke="#{secondary}" stroke-width="3" d="M206 200 L204 254 M306 200 L308 254"/>
+      <g><circle fill="#{metal}" stroke="#{metal-deep}" stroke-width="0.5" cx="211" cy="206" r="1.7"/><circle fill="#{metal}" stroke="#{metal-deep}" stroke-width="0.5" cx="301" cy="206" r="1.7"/><circle fill="#{metal}" stroke="#{metal-deep}" stroke-width="0.5" cx="210" cy="392" r="1.7"/><circle fill="#{metal}" stroke="#{metal-deep}" stroke-width="0.5" cx="302" cy="392" r="1.7"/><circle fill="#{metal}" stroke="#{metal-deep}" stroke-width="0.5" cx="208" cy="414" r="1.7"/><circle fill="#{metal}" stroke="#{metal-deep}" stroke-width="0.5" cx="304" cy="414" r="1.7"/></g>
+      <g id="lamesL">
+        <path fill="#{metal}" stroke="#{metal-deep}" stroke-width="1" filter="url(#f-metal)" d="M157 258 C156 266 157 274 159 281 C170 285 182 283 191 277 L192 256 C181 264 168 265 157 258 Z"/><path fill="url(#sheen)" stroke="none" d="M157 258 C156 266 157 274 159 281 C170 285 182 283 191 277 L192 256 C181 264 168 265 157 258 Z"/>
+        <path fill="#{metal}" stroke="#{metal-deep}" stroke-width="1" filter="url(#f-metal)" d="M156 234 C154 244 155 254 157 263 C169 268 182 266 192 259 L193 237 C181 245 167 245 156 234 Z"/><path fill="url(#sheen)" stroke="none" d="M156 234 C154 244 155 254 157 263 C169 268 182 266 192 259 L193 237 C181 245 167 245 156 234 Z"/>
+        <path fill="#{metal}" stroke="#{metal-deep}" stroke-width="1" filter="url(#f-metal)" d="M214 186 C193 180 170 188 159 207 C155 217 154 229 155 240 C167 246 181 245 192 238 C199 222 206 202 214 186 Z"/><path fill="url(#sheen)" stroke="none" d="M214 186 C193 180 170 188 159 207 C155 217 154 229 155 240 C167 246 181 245 192 238 C199 222 206 202 214 186 Z"/>
+        <path fill="#{metal-light}" stroke="none" opacity="0.7" filter="url(#soft2)" d="M188 190 C176 192 166 200 162 212 C170 204 180 198 194 196 Z"/>
+        <g><circle fill="#{metal}" stroke="#{metal-deep}" stroke-width="0.5" cx="200" cy="194" r="1.7"/><circle fill="#{metal}" stroke="#{metal-deep}" stroke-width="0.5" cx="164" cy="214" r="1.7"/><circle fill="#{metal}" stroke="#{metal-deep}" stroke-width="0.5" cx="176" cy="242" r="1.7"/><circle fill="#{metal}" stroke="#{metal-deep}" stroke-width="0.5" cx="170" cy="264" r="1.7"/><circle fill="#{metal}" stroke="#{metal-deep}" stroke-width="0.5" cx="172" cy="280" r="1.7"/></g>
+      </g>
+      <use href="#lamesL" transform="matrix(-1 0 0 1 512 0)"/>
     </g>
   </g>
 </svg>

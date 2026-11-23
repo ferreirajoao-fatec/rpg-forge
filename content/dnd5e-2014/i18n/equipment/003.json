@@ -1,0 +1,42 @@
+{
+ "barding-padded": {
+  "n": "Barda: acolchoada",
+  "d": ["Barda é uma armadura feita para proteger a cabeça, o pescoço, o peito e o corpo de um animal. Qualquer tipo de armadura da tabela de Armaduras pode ser comprado como barda. O custo é quatro vezes o da armadura equivalente feita para humanoides, e ela pesa o dobro."]
+ },
+ "barding-leather": { "n": "Barda: couro" },
+ "barding-studded-leather": { "n": "Barda: couro batido" },
+ "barding-hide": { "n": "Barda: peles" },
+ "barding-chain-shirt": { "n": "Barda: camisão de malha" },
+ "barding-scale-mail": { "n": "Barda: brunea" },
+ "barding-breastplate": { "n": "Barda: peitoral" },
+ "barding-half-plate": { "n": "Barda: meia armadura" },
+ "barding-ring-mail": { "n": "Barda: cota de anéis" },
+ "barding-chain-mail": { "n": "Barda: cota de malha" },
+ "barding-splint": { "n": "Barda: talas" },
+ "barding-plate": { "n": "Barda: placas" },
+ "bit-and-bridle": { "n": "Freio e rédeas" },
+ "carriage": { "n": "Carruagem" },
+ "cart": { "n": "Carroça" },
+ "chariot": { "n": "Biga" },
+ "animal-feed-1-day": { "n": "Ração animal (1 dia)" },
+ "saddle-exotic": { "n": "Sela exótica", "d": ["É preciso uma sela exótica para montar qualquer montaria aquática ou voadora."] },
+ "saddle-military": {
+  "n": "Sela militar",
+  "d": ["Uma sela militar firma o cavaleiro, ajudando você a se manter sobre uma montaria ativa em batalha. Concede vantagem em qualquer teste para continuar montado."]
+ },
+ "saddle-pack": { "n": "Sela de carga" },
+ "saddle-riding": { "n": "Sela de montaria" },
+ "saddlebags": { "n": "Alforjes" },
+ "sled": { "n": "Trenó" },
+ "stabling-1-day": { "n": "Estábulo (1 dia)" },
+ "wagon": { "n": "Carroção" },
+ "galley": { "n": "Galé" },
+ "keelboat": {
+  "n": "Barcaça",
+  "d": ["Barcaças e botes a remo são usados em lagos e rios. Rio abaixo, some a velocidade da correnteza (normalmente 4,5 km por hora) à velocidade do veículo. Esses veículos não podem ser remados contra uma correnteza significativa, mas podem ser puxados rio acima por animais de tração nas margens. Um bote a remo pesa 50 kg, caso os aventureiros precisem carregá-lo por terra."]
+ },
+ "longship": { "n": "Drakar" },
+ "rowboat": { "n": "Bote a remo" },
+ "sailing-ship": { "n": "Veleiro" },
+ "warship": { "n": "Navio de guerra" }
+}

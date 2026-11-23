@@ -1,0 +1,74 @@
+{
+ "fabricate": {
+  "d": [
+   "Você converte matérias-primas em produtos do mesmo material. Por exemplo, pode fabricar uma ponte de madeira a partir de um grupo de árvores, uma corda a partir de um trecho de cânhamo ou roupas a partir de linho ou lã.",
+   "Escolha matérias-primas que consiga ver dentro do alcance. Você pode fabricar um objeto Grande ou menor (contido num Cubo de 3 metros ou em oito Cubos de 1,5 metro conectados), desde que haja material suficiente. Se estiver trabalhando com metal, pedra ou outra substância mineral, porém, o objeto fabricado não pode ser maior que Médio (contido num Cubo de 1,5 metro). A qualidade dos objetos fabricados depende da qualidade das matérias-primas.",
+   "Criaturas e itens mágicos não podem ser criados por esta magia. Você também não pode usá-la para criar itens que exijam muita habilidade, como armas e armaduras, a menos que tenha proficiência com o tipo de Ferramentas de Artesão usado para fazer esses objetos."
+  ]
+ },
+ "faerie-fire": {
+  "d": [
+   "Objetos num Cubo de 6 metros dentro do alcance ficam contornados por luz azul, verde ou violeta (à sua escolha). Cada criatura no Cubo também fica contornada se falhar num teste de resistência de Destreza. Pela duração, os objetos e as criaturas afetadas emitem Penumbra num raio de 3 metros e não podem se beneficiar da condição Invisível.",
+   "Jogadas de ataque contra uma criatura ou um objeto afetado têm Vantagem se o atacante conseguir vê-lo."
+  ]
+ },
+ "faithful-hound": {
+  "d": [
+   "Você conjura um cão de guarda fantasma num espaço desocupado que consiga ver dentro do alcance. O cão permanece pela duração ou até vocês dois estarem a mais de 90 metros um do outro.",
+   "Ninguém além de você consegue ver o cão, e ele é intangível e invulnerável. Quando uma criatura Pequena ou maior chega a até 9 metros dele sem antes dizer a senha que você especificou ao lançar a magia, o cão começa a latir alto. O cão tem Visão Verdadeira com alcance de 9 metros.",
+   "No início de cada um dos seus turnos, o cão tenta morder um inimigo a até 1,5 metro dele. Esse inimigo deve passar num teste de resistência de Destreza ou sofrer 4d8 de dano de Energia.",
+   "Nos seus turnos posteriores, você pode realizar uma ação de Magia para mover o cão até 9 metros."
+  ],
+  "m": "Um apito de prata."
+ },
+ "false-life": {
+  "d": ["Você ganha 2d4 + 4 Pontos de Vida Temporários."],
+  "h": ["Você ganha 5 Pontos de Vida Temporários adicionais para cada nível de espaço de magia acima de 1."],
+  "m": "Uma gota de álcool."
+ },
+ "fear": {
+  "d": [
+   "Cada criatura num Cone de 9 metros deve passar num teste de resistência de Sabedoria ou larga o que estiver segurando e fica com a condição Amedrontado pela duração.",
+   "Uma criatura Amedrontada realiza a ação Disparada e se afasta de você pelo caminho mais seguro em cada turno dela, a menos que não haja para onde ir. Se a criatura terminar o turno num espaço sem linha de visão até você, faz um teste de resistência de Sabedoria. Se passar, a magia termina para ela."
+  ],
+  "m": "Uma pena branca."
+ },
+ "feather-fall": {
+  "d": ["Escolha até cinco criaturas em queda dentro do alcance. A velocidade de descida de uma criatura em queda diminui para 18 metros por rodada até a magia terminar. Se a criatura pousar antes de a magia terminar, não sofre dano da queda, e a magia termina para ela."],
+  "m": "Uma pequena pena ou um pouco de penugem.",
+  "ct": "Reação, que você realiza quando você ou uma criatura que consiga ver a até 18 metros de você cai"
+ },
+ "find-familiar": {
+  "d": [
+   "Você ganha os serviços de um familiar, um espírito que assume uma forma animal à sua escolha: Morcego, Gato, Sapo, Falcão, Lagarto, Polvo, Coruja, Rato, Corvo, Aranha, Doninha ou outra Fera com Nível de Desafio 0. Aparecendo num espaço desocupado dentro do alcance, o familiar tem as estatísticas da forma escolhida (veja \"Monstros\"), embora seja um Celestial, uma Fada ou um Ínfero (à sua escolha) em vez de uma Fera. Seu familiar age de forma independente, mas obedece aos seus comandos.",
+   "Conexão Telepática. Enquanto seu familiar estiver a até 30 metros de você, pode se comunicar com ele telepaticamente. Além disso, com uma Ação Bônus, pode ver pelos olhos do familiar e ouvir o que ele ouve até o início do seu próximo turno, ganhando os benefícios de quaisquer sentidos especiais que ele tenha.",
+   "Por fim, quando você lança uma magia com alcance de toque, seu familiar pode entregar o toque. Ele precisa estar a até 30 metros de você e usar uma Reação para entregar o toque quando você lança a magia.",
+   "Combate. O familiar é aliado seu e dos seus aliados. Ele rola a própria Iniciativa e age no próprio turno. Um familiar não pode atacar, mas pode realizar outras ações normalmente.",
+   "Desaparecimento do Familiar. Quando o familiar cai a 0 Pontos de Vida, desaparece. Reaparece depois que você lança esta magia de novo. Com uma ação de Magia, você pode dispensar o familiar temporariamente para uma dimensão de bolso. Em vez disso, pode dispensá-lo para sempre. Com uma ação de Magia enquanto ele estiver dispensado temporariamente, pode fazê-lo reaparecer num espaço desocupado a até 9 metros de você. Sempre que o familiar cai a 0 Pontos de Vida ou desaparece na dimensão de bolso, deixa no espaço dele tudo o que estiver vestindo ou carregando.",
+   "Apenas um Familiar. Você não pode ter mais de um familiar ao mesmo tempo. Se lançar esta magia enquanto tiver um familiar, em vez disso faz ele adotar uma nova forma elegível."
+  ],
+  "m": "Incenso aceso no valor de 10+ PO, que a magia consome."
+ },
+ "find-steed": {
+  "d": [
+   "Você invoca um ser de outro mundo que aparece como uma montaria leal num espaço desocupado à sua escolha dentro do alcance. Essa criatura usa a ficha de Montaria de Outro Mundo. Se você já tiver uma montaria desta magia, ela é substituída pela nova.",
+   "A montaria se parece com um animal Grande que possa ser montado, à sua escolha, como um cavalo, um camelo, um lobo atroz ou um alce. Sempre que lançar a magia, escolha o tipo de criatura da montaria (Celestial, Fada ou Ínfero), que determina certos traços da ficha.",
+   "Combate. A montaria é aliada sua e dos seus aliados. Em combate, compartilha sua contagem de Iniciativa e funciona como montaria controlada enquanto você a monta (conforme as regras de combate montado). Se você estiver com a condição Incapacitado, a montaria age logo depois de você e de forma independente, concentrando-se em protegê-lo.",
+   "Desaparecimento da Montaria. A montaria desaparece se cair a 0 Pontos de Vida ou se você morrer. Quando desaparece, deixa para trás tudo o que estiver vestindo ou carregando. Se lançar esta magia de novo, você decide se invoca a montaria que desapareceu ou outra."
+  ],
+  "h": ["Use o nível do espaço de magia como nível da magia na ficha. Montaria de Outro Mundo: Celestial, Fada ou Ínfero Grande (à sua escolha), Neutro. CA 10 + 1 por nível da magia. PV 5 + 10 por nível da magia (a montaria tem Dados de Vida [d10] iguais ao nível da magia). Deslocamento 18 m, Voo 18 m (exige magia de nível 4+). For 18 (+4, resistência +4), Des 12 (+1, +1), Con 14 (+2, +2), Int 6 (-2, -2), Sab 12 (+1, +1), Car 8 (-1, -1). Sentidos: Percepção Passiva 11. Idiomas: Telepatia 1,5 km (funciona apenas com você). ND nenhum (XP 0; BP igual ao seu Bônus de Proficiência). Traços: Vínculo Vital. Quando você recupera Pontos de Vida de uma magia de nível 1+, a montaria recupera a mesma quantidade se você estiver a até 1,5 metro dela. Ações: Pancada de Outro Mundo. Jogada de Ataque Corpo a Corpo: bônus igual ao seu modificador de ataque mágico, alcance 1,5 m. Acerto: 1d8 mais o nível da magia de dano Radiante (Celestial), Psíquico (Fada) ou Necrótico (Ínfero). Ações Bônus: Olhar Funesto (apenas Ínfero; recarrega após um Descanso Longo). Teste de Resistência de Sabedoria: CD igual à CD de resistência das suas magias, uma criatura a até 18 metros que a montaria consiga ver. Falha: o alvo fica com a condição Amedrontado até o fim do seu próximo turno. Passo Feérico (apenas Fada; recarrega após um Descanso Longo). A montaria se teletransporta, junto com o cavaleiro, para um espaço desocupado à sua escolha a até 18 metros dela. Toque Curativo (apenas Celestial; recarrega após um Descanso Longo). Uma criatura a até 1,5 metro da montaria recupera Pontos de Vida iguais a 2d8 mais o nível da magia."]
+ },
+ "find-the-path": {
+  "d": [
+   "Você sente magicamente o caminho físico mais direto até um local que nomear. Precisa conhecer o local, e a magia falha se nomear um destino em outro plano de existência, um destino em movimento (como uma fortaleza móvel) ou um destino inespecífico (como \"o covil de um dragão verde\").",
+   "Pela duração, enquanto estiver no mesmo plano de existência que o destino, você sabe a que distância ele está e em que direção. Sempre que tiver de escolher entre caminhos no trajeto, sabe qual é o mais direto."
+  ],
+  "m": "Um conjunto de ferramentas de adivinhação (como cartas ou runas) no valor de 100+ PO."
+ },
+ "find-traps": {
+  "d": [
+   "Você sente qualquer armadilha dentro do alcance que esteja na sua linha de visão. Para esta magia, uma armadilha inclui qualquer objeto ou mecanismo criado para causar dano ou outro perigo. Assim, a magia detectaria as magias Alarme ou Glifo de Proteção ou um fosso mecânico, mas não revelaria uma fragilidade natural do piso, um teto instável ou um sumidouro escondido.",
+   "Esta magia revela que há uma armadilha presente, mas não onde ela está. Você descobre a natureza geral do perigo representado pela armadilha detectada."
+  ]
+ }
+}

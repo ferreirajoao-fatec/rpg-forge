@@ -1,0 +1,42 @@
+{
+ "ammunition": {
+  "n": "Munição",
+  "d": ["Você só pode usar uma arma com a propriedade Munição para fazer um ataque à distância se tiver munição para disparar com ela. O tipo de munição exigido é indicado junto ao alcance da arma. Cada ataque gasta uma unidade de munição. Sacar a munição faz parte do ataque (você precisa de uma mão livre para carregar uma arma de uma mão). Depois de um combate, você pode gastar 1 minuto para recuperar metade da munição (arredondada para baixo) que usou na luta; o resto se perde."]
+ },
+ "finesse": {
+  "n": "Acuidade",
+  "d": ["Ao atacar com uma arma de Acuidade, use, à sua escolha, o modificador de Força ou de Destreza nas jogadas de ataque e de dano. Você deve usar o mesmo modificador nas duas jogadas."]
+ },
+ "heavy": {
+  "n": "Pesada",
+  "d": ["Você tem Desvantagem em jogadas de ataque com uma arma Pesada se ela for uma arma Corpo a Corpo e seu valor de Força não for pelo menos 13, ou se for uma arma À Distância e seu valor de Destreza não for pelo menos 13."]
+ },
+ "light": {
+  "n": "Leve",
+  "d": ["Quando você realiza a ação de Ataque no seu turno e ataca com uma arma Leve, pode fazer um ataque extra como Ação Bônus mais tarde no mesmo turno. Esse ataque extra deve ser feito com outra arma Leve, e você não soma seu modificador de atributo ao dano do ataque extra, a não ser que o modificador seja negativo. Por exemplo, você pode atacar com uma Espada Curta numa mão e uma Adaga na outra usando a ação de Ataque e uma Ação Bônus, mas não soma seu modificador de Força ou Destreza à jogada de dano da Ação Bônus, a não ser que ele seja negativo."]
+ },
+ "loading": {
+  "n": "Recarga",
+  "d": ["Você só pode disparar uma unidade de munição de uma arma de Recarga quando usa uma ação, uma Ação Bônus ou uma Reação para dispará-la, não importa quantos ataques possa fazer normalmente."]
+ },
+ "range": {
+  "n": "Distância",
+  "d": ["Uma arma de Distância tem um alcance entre parênteses depois da propriedade Munição ou Arremesso. O alcance tem dois números: o primeiro é o alcance normal da arma e o segundo, o alcance longo (no RPG Forge, em metros). Ao atacar um alvo além do alcance normal, você tem Desvantagem na jogada de ataque. Você não pode atacar um alvo além do alcance longo."]
+ },
+ "reach": {
+  "n": "Alcance",
+  "d": ["Uma arma de Alcance soma 1,5 metro ao seu alcance quando você ataca com ela, inclusive para determinar seu alcance para Ataques de Oportunidade com ela."]
+ },
+ "thrown": {
+  "n": "Arremesso",
+  "d": ["Se uma arma tem a propriedade Arremesso, você pode arremessá-la para fazer um ataque à distância e pode sacá-la como parte do ataque. Se a arma for Corpo a Corpo, use nas jogadas de ataque e de dano o mesmo modificador de atributo que usaria num ataque corpo a corpo com ela."]
+ },
+ "two-handed": {
+  "n": "Duas Mãos",
+  "d": ["Uma arma de Duas Mãos exige as duas mãos para atacar com ela."]
+ },
+ "versatile": {
+  "n": "Versátil",
+  "d": ["Uma arma Versátil pode ser usada com uma ou duas mãos. Um valor de dano entre parênteses acompanha a propriedade: é o dano que a arma causa quando usada com as duas mãos num ataque corpo a corpo."]
+ }
+}

@@ -1,6 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g fill="#{hair}" stroke="none" opacity="0.45">
-    <path d="M198 192 C202 222 222 246 256 250 C290 246 310 222 314 192 C308 214 296 232 280 238 C272 232 240 232 232 238 C216 232 204 214 198 192 Z"/>
-    <path d="M236 222 C242 212 252 212 256 216 C260 212 270 212 276 222 C270 220 262 220 256 222 C250 220 242 220 236 222 Z"/>
+  <defs>
+    <filter id="form" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{hair-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.6"/></filter>
+    <filter id="stub" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1"/></filter>
+  </defs>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#{hair-dark}" opacity="0.32" filter="url(#stub)" d="M220 118 C221 136 226 150 236 160 C243 166 250 170 256 170 C262 170 269 166 276 160 C286 150 291 136 292 118 C289 130 284 140 276 146 C270 150 264 152 256 152 C248 152 242 150 236 146 C228 140 223 130 220 118 Z"/>
+    <path fill="#{hair-dark}" opacity="0.3" filter="url(#stub)" d="M246 143 C250 142 254 142.6 256 143.4 C258 142.6 262 142 266 143 C264 145 260 145.4 256 145 C252 145.4 248 145 246 143 Z"/>
+    <path fill="#{hair-dark}" opacity="0.28" filter="url(#stub)" d="M250 156 C252 160 260 160 262 156 L262 166 C258 168 254 168 250 166 Z"/>
   </g>
 </svg>

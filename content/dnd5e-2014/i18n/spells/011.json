@@ -1,0 +1,73 @@
+{
+ "dominate-monster": {
+  "n": "Dominar Monstro",
+  "d": [
+   "Você tenta seduzir uma criatura que consiga ver dentro do alcance. Ela deve passar num teste de resistência de Sabedoria ou ficar enfeitiçada por você pela duração. Se você ou criaturas amigáveis a você estiverem lutando contra ela, ela tem vantagem no teste.",
+   "Enquanto a criatura estiver enfeitiçada, você tem uma ligação telepática com ela, desde que os dois estejam no mesmo plano de existência. Pode usar essa ligação para dar comandos à criatura enquanto estiver consciente (sem gastar ação), e ela faz o possível para obedecer. Você pode especificar um curso de ação simples e genérico, como \"Ataque aquela criatura\", \"Corra até ali\" ou \"Pegue aquele objeto\". Se a criatura cumprir a ordem e não receber mais instruções, ela se defende e se preserva da melhor forma possível.",
+   "Você pode usar sua ação para assumir controle total e preciso do alvo. Até o fim do seu próximo turno, a criatura só realiza as ações que você escolher e não faz nada que você não permita. Nesse período, você também pode fazer a criatura usar uma reação, mas isso exige que você use a sua própria reação também.",
+   "Cada vez que o alvo sofre dano, faz um novo teste de resistência de Sabedoria contra a magia. Se passar, a magia termina."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 9º nível, a duração passa a ser concentração, até 8 horas."]
+ },
+ "dominate-person": {
+  "n": "Dominar Pessoa",
+  "d": [
+   "Você tenta seduzir um humanoide que consiga ver dentro do alcance. Ele deve passar num teste de resistência de Sabedoria ou ficar enfeitiçado por você pela duração. Se você ou criaturas amigáveis a você estiverem lutando contra ele, ele tem vantagem no teste.",
+   "Enquanto o alvo estiver enfeitiçado, você tem uma ligação telepática com ele, desde que os dois estejam no mesmo plano de existência. Pode usar essa ligação para dar comandos à criatura enquanto estiver consciente (sem gastar ação), e ela faz o possível para obedecer. Você pode especificar um curso de ação simples e genérico, como \"Ataque aquela criatura\", \"Corra até ali\" ou \"Pegue aquele objeto\". Se a criatura cumprir a ordem e não receber mais instruções, ela se defende e se preserva da melhor forma possível.",
+   "Você pode usar sua ação para assumir controle total e preciso do alvo. Até o fim do seu próximo turno, a criatura só realiza as ações que você escolher e não faz nada que você não permita. Nesse período, você também pode fazer a criatura usar uma reação, mas isso exige que você use a sua própria reação também.",
+   "Cada vez que o alvo sofre dano, faz um novo teste de resistência de Sabedoria contra a magia. Se passar, a magia termina."
+  ],
+  "h": ["Quando você lança esta magia usando um espaço de magia de 6º nível, a duração passa a ser concentração, até 10 minutos. Com um espaço de 7º nível, concentração, até 1 hora. Com um espaço de 8º nível ou superior, concentração, até 8 horas."]
+ },
+ "dream": {
+  "n": "Sonho",
+  "d": [
+   "Esta magia molda os sonhos de uma criatura. Escolha uma criatura que você conheça como alvo. O alvo precisa estar no mesmo plano de existência que você. Criaturas que não dormem, como elfos, não podem ser contatadas por esta magia. Você, ou uma criatura voluntária que você toque, entra em transe, agindo como mensageiro.",
+   "Durante o transe, o mensageiro percebe o que acontece ao redor, mas não pode realizar ações nem se mover.",
+   "Se o alvo estiver dormindo, o mensageiro aparece nos sonhos dele e pode conversar com ele enquanto continuar dormindo, pela duração da magia. O mensageiro também pode moldar o ambiente do sonho, criando paisagens, objetos e outras imagens. O mensageiro pode sair do transe a qualquer momento, encerrando a magia antes. O alvo se lembra do sonho perfeitamente ao acordar. Se o alvo estiver acordado quando você lançar a magia, o mensageiro sabe disso e pode encerrar o transe (e a magia) ou esperar o alvo adormecer; então aparece nos sonhos dele.",
+   "Você pode fazer o mensageiro parecer monstruoso e aterrorizante para o alvo. Se fizer isso, o mensageiro pode entregar uma mensagem de no máximo dez palavras, e então o alvo deve fazer um teste de resistência de Sabedoria. Se falhar, ecos da monstruosidade fantasmagórica geram um pesadelo que dura enquanto o alvo dormir e o impede de receber qualquer benefício desse descanso. Além disso, quando o alvo acorda, sofre 3d6 de dano psíquico.",
+   "Se você tiver uma parte do corpo, uma mecha de cabelo, um pedaço de unha ou algo semelhante do corpo do alvo, ele faz o teste de resistência com desvantagem."
+  ],
+  "m": "Um punhado de areia, um pingo de tinta e uma pena de escrever arrancada de um pássaro adormecido."
+ },
+ "druidcraft": {
+  "n": "Arte Druídica",
+  "d": [
+   "Sussurrando aos espíritos da natureza, você cria um dos efeitos a seguir dentro do alcance:",
+   "- Você cria um efeito sensorial minúsculo e inofensivo que prevê como será o tempo no seu local pelas próximas 24 horas. O efeito pode se manifestar como um orbe dourado para céu limpo, uma nuvem para chuva, flocos caindo para neve e assim por diante. Esse efeito dura 1 rodada.",
+   "- Você faz instantaneamente uma flor desabrochar, uma vagem de sementes se abrir ou um broto de folha brotar.",
+   "- Você cria um efeito sensorial instantâneo e inofensivo, como folhas caindo, uma lufada de vento, o som de um animal pequeno ou um leve cheiro de gambá. O efeito precisa caber num cubo de 1,5 metro.",
+   "- Você acende ou apaga instantaneamente uma vela, uma tocha ou uma pequena fogueira."
+  ]
+ },
+ "earthquake": {
+  "n": "Terremoto",
+  "d": [
+   "Você cria um abalo sísmico num ponto do chão que consiga ver dentro do alcance. Pela duração, um tremor intenso rasga o chão num círculo de 30 metros de raio centrado nesse ponto e sacode as criaturas e estruturas em contato com o chão dessa área.",
+   "O chão na área se torna terreno difícil. Cada criatura no chão que esteja se concentrando deve fazer um teste de resistência de Constituição. Se falhar, sua concentração é interrompida.",
+   "Quando você lança esta magia, e no fim de cada turno que passa se concentrando nela, cada criatura no chão na área deve fazer um teste de resistência de Destreza. Se falhar, a criatura cai no chão.",
+   "Esta magia pode ter efeitos adicionais conforme o terreno da área, a critério do Mestre.",
+   "Fendas. Fendas se abrem por toda a área da magia no início do seu próximo turno depois de lançá-la. Um total de 1d6 fendas se abre em locais escolhidos pelo Mestre. Cada uma tem 1d10 × 3 metros de profundidade, 3 metros de largura e vai de uma borda da área da magia até o lado oposto. Uma criatura que esteja num ponto onde uma fenda se abre deve passar num teste de resistência de Destreza ou cair nela. Uma criatura que passa se move com a borda da fenda enquanto ela se abre.",
+   "Uma fenda que se abre debaixo de uma estrutura a faz desabar automaticamente (veja abaixo).",
+   "Estruturas. O tremor causa 50 de dano de concussão a qualquer estrutura em contato com o chão na área quando você lança a magia e no início de cada um dos seus turnos até ela terminar. Se uma estrutura cair a 0 pontos de vida, desaba e pode ferir criaturas próximas. Uma criatura a uma distância de até metade da altura da estrutura deve fazer um teste de resistência de Destreza. Se falhar, sofre 5d6 de dano de concussão, cai no chão e fica soterrada nos escombros, precisando de um teste de Força (Atletismo) CD 20, com uma ação, para escapar. O Mestre pode ajustar a CD para mais ou para menos, conforme a natureza dos escombros. Se passar, a criatura sofre metade do dano e não cai nem fica soterrada."
+  ],
+  "m": "Uma pitada de terra, um pedaço de rocha e um torrão de argila."
+ },
+ "eldritch-blast": {
+  "n": "Rajada Mística",
+  "d": ["Um feixe de energia crepitante dispara em direção a uma criatura dentro do alcance. Faça um ataque mágico à distância contra o alvo. Se acertar, o alvo sofre 1d10 de dano de energia. A magia cria mais de um feixe quando você alcança níveis mais altos: dois feixes no 5º nível, três no 11º e quatro no 17º. Você pode direcionar os feixes ao mesmo alvo ou a alvos diferentes. Faça uma jogada de ataque separada para cada feixe."]
+ },
+ "enhance-ability": {
+  "n": "Aprimorar Habilidade",
+  "d": [
+   "Você toca uma criatura e lhe concede um aprimoramento mágico. Escolha um dos efeitos a seguir; o alvo recebe esse efeito até a magia terminar.",
+   "*Vigor do Urso.* O alvo tem vantagem em testes de Constituição. Também ganha 2d6 pontos de vida temporários, que se perdem quando a magia termina.",
+   "*Força do Touro.* O alvo tem vantagem em testes de Força, e sua capacidade de carga dobra.",
+   "*Graça do Gato.* O alvo tem vantagem em testes de Destreza. Também não sofre dano de quedas de 6 metros ou menos, se não estiver incapacitado.",
+   "*Esplendor da Águia.* O alvo tem vantagem em testes de Carisma.",
+   "*Astúcia da Raposa.* O alvo tem vantagem em testes de Inteligência.",
+   "*Sabedoria da Coruja.* O alvo tem vantagem em testes de Sabedoria."
+  ],
+  "m": "Pelo ou uma pena de uma fera."
+ }
+}

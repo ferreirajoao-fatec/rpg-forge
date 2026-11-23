@@ -1,0 +1,91 @@
+{
+ "finger-of-death": {
+  "d": [
+   "Você libera energia negativa contra uma criatura que consiga ver dentro do alcance. O alvo faz um teste de resistência de Constituição, sofrendo 7d8 + 30 de dano Necrótico se falhar, ou metade se passar.",
+   "Um Humanoide morto por esta magia se ergue no início do seu próximo turno como um Zumbi (veja \"Monstros\") que segue suas ordens verbais."
+  ]
+ },
+ "fireball": {
+  "d": [
+   "Um risco brilhante lampeja de você até um ponto à sua escolha dentro do alcance e então desabrocha, com um rugido grave, numa explosão de fogo. Cada criatura numa Esfera de 6 metros de raio centrada nesse ponto faz um teste de resistência de Destreza, sofrendo 8d6 de dano de Fogo se falhar, ou metade se passar.",
+   "Objetos inflamáveis na área que não estejam sendo vestidos nem carregados começam a queimar."
+  ],
+  "h": ["O dano aumenta em 1d6 para cada nível de espaço de magia acima de 3."]
+ },
+ "fire-bolt": {
+  "d": [
+   "Você arremessa uma fagulha de fogo numa criatura ou num objeto dentro do alcance. Faça um ataque mágico à distância contra o alvo. Se acertar, o alvo sofre 1d10 de dano de Fogo. Um objeto inflamável atingido por esta magia começa a queimar se não estiver sendo vestido nem carregado.",
+   "Aprimoramento de Truque. O dano aumenta em 1d10 quando você alcança os níveis 5 (2d10), 11 (3d10) e 17 (4d10)."
+  ]
+ },
+ "fire-shield": {
+  "d": [
+   "Chamas tênues envolvem seu corpo pela duração, emitindo Luz Plena num raio de 3 metros e Penumbra por mais 3 metros.",
+   "As chamas lhe dão um escudo quente ou um escudo gélido, à sua escolha. O escudo quente lhe concede Resistência a dano de Frio, e o escudo gélido lhe concede Resistência a dano de Fogo.",
+   "Além disso, sempre que uma criatura a até 1,5 metro de você o acertar com uma jogada de ataque corpo a corpo, o escudo irrompe em chamas. O atacante sofre 2d8 de dano de Fogo do escudo quente ou 2d8 de dano de Frio do escudo gélido."
+  ],
+  "m": "Um pedacinho de fósforo ou um vaga-lume."
+ },
+ "fire-storm": {
+  "d": [
+   "Uma tempestade de fogo aparece dentro do alcance. A área da tempestade consiste em até dez Cubos de 3 metros, que você dispõe como quiser. Cada Cubo precisa estar encostado em pelo menos um outro. Cada criatura na área faz um teste de resistência de Destreza, sofrendo 7d10 de dano de Fogo se falhar, ou metade se passar.",
+   "Objetos inflamáveis na área que não estejam sendo vestidos nem carregados começam a queimar."
+  ]
+ },
+ "flame-blade": {
+  "d": [
+   "Você evoca uma lâmina de fogo na sua mão livre. A lâmina tem tamanho e formato semelhantes aos de uma cimitarra e dura pela duração. Se soltar a lâmina, ela desaparece, mas você pode evocá-la de novo com uma Ação Bônus.",
+   "Com uma ação de Magia, você pode fazer um ataque mágico corpo a corpo com a lâmina de fogo. Se acertar, o alvo sofre dano de Fogo igual a 3d6 mais seu modificador de habilidade de conjuração.",
+   "A lâmina flamejante emite Luz Plena num raio de 3 metros e Penumbra por mais 3 metros."
+  ],
+  "h": ["O dano aumenta em 1d6 para cada nível de espaço de magia acima de 2."],
+  "m": "Uma folha de sumagre."
+ },
+ "flame-strike": {
+  "d": ["Uma coluna vertical de fogo brilhante desce rugindo do alto. Cada criatura num Cilindro de 3 metros de raio e 12 metros de altura centrado num ponto dentro do alcance faz um teste de resistência de Destreza, sofrendo 5d6 de dano de Fogo e 5d6 de dano Radiante se falhar, ou metade se passar."],
+  "h": ["O dano de Fogo e o dano Radiante aumentam em 1d6 para cada nível de espaço de magia acima de 5."],
+  "m": "Uma pitada de enxofre."
+ },
+ "flaming-sphere": {
+  "d": [
+   "Você cria uma esfera de fogo de 1,5 metro de diâmetro num espaço desocupado no chão dentro do alcance. Ela dura pela duração. Qualquer criatura que termine o turno a até 1,5 metro da esfera faz um teste de resistência de Destreza, sofrendo 2d6 de dano de Fogo se falhar, ou metade se passar.",
+   "Com uma Ação Bônus, você pode mover a esfera até 9 metros, rolando-a pelo chão. Se mover a esfera para o espaço de uma criatura, essa criatura faz o teste contra a esfera, e a esfera para de se mover naquele turno.",
+   "Ao mover a esfera, você pode fazê-la passar por cima de barreiras de até 1,5 metro de altura e saltar sobre fossos de até 3 metros de largura. Objetos inflamáveis que não estejam sendo vestidos nem carregados começam a queimar se tocados pela esfera, e ela emite Luz Plena num raio de 6 metros e Penumbra por mais 6 metros."
+  ],
+  "m": "Uma bola de cera."
+ },
+ "flesh-to-stone": {
+  "d": [
+   "Você tenta transformar em pedra uma criatura que consiga ver dentro do alcance. O alvo faz um teste de resistência de Constituição. Se falhar, fica com a condição Impedido pela duração. Se passar, seu Deslocamento é 0 até o início do seu próximo turno. Constructos passam automaticamente no teste.",
+   "Um alvo Impedido faz outro teste de resistência de Constituição no fim de cada turno dele. Se passar três vezes contra esta magia, ela termina. Se falhar três vezes, vira pedra e fica com a condição Petrificado pela duração. Os sucessos e as falhas não precisam ser consecutivos; anote ambos até o alvo juntar três de um tipo.",
+   "Se você mantiver a Concentração nesta magia por toda a duração possível, o alvo fica Petrificado até a condição ser encerrada por Restauração Maior ou magia semelhante."
+  ],
+  "m": "Uma pena de cocatriz."
+ },
+ "floating-disk": {
+  "d": [
+   "Esta magia cria um plano de energia circular e horizontal, com 90 centímetros de diâmetro e 2,5 centímetros de espessura, que flutua a 90 centímetros do chão num espaço desocupado à sua escolha que consiga ver dentro do alcance. O disco permanece pela duração e pode suportar até 250 kg. Se mais peso for colocado sobre ele, a magia termina, e tudo o que estiver no disco cai no chão.",
+   "O disco fica imóvel enquanto você estiver a até 6 metros dele. Se você se afastar mais de 6 metros, o disco o segue para permanecer a até 6 metros de você. Ele pode atravessar terreno irregular, subir ou descer escadas, encostas e afins, mas não pode transpor uma mudança de elevação de 3 metros ou mais. Por exemplo, o disco não consegue atravessar um fosso de 3 metros de profundidade nem sair de um fosso desses se tiver sido criado no fundo.",
+   "Se você se afastar mais de 30 metros do disco (normalmente porque ele não consegue contornar um obstáculo para segui-lo), a magia termina."
+  ],
+  "m": "Uma gota de mercúrio."
+ },
+ "fly": {
+  "d": ["Você toca uma criatura voluntária. Pela duração, o alvo ganha Deslocamento de Voo de 18 metros e pode pairar. Quando a magia termina, o alvo cai se ainda estiver no ar, a menos que consiga deter a queda."],
+  "h": ["Você pode escolher como alvo uma criatura adicional para cada nível de espaço de magia acima de 3."],
+  "m": "Uma pena."
+ },
+ "fog-cloud": {
+  "d": ["Você cria uma Esfera de neblina de 6 metros de raio centrada num ponto dentro do alcance. A Esfera tem Escuridão Densa. Ela dura pela duração ou até um vento forte (como o criado por Lufada de Vento) dispersá-la."],
+  "h": ["O raio da neblina aumenta em 6 metros para cada nível de espaço de magia acima de 1."]
+ },
+ "forbiddance": {
+  "d": [
+   "Você cria uma proteção contra viagens mágicas que protege até 3.600 metros quadrados de piso, até uma altura de 9 metros acima dele. Pela duração, criaturas não podem se teletransportar para a área nem usar portais, como os criados pela magia Portal, para entrar nela. A magia protege a área contra viagens planares e, portanto, impede que criaturas cheguem à área pelo Plano Astral, pelo Plano Etéreo, pela Agrestia das Fadas, pelo Pendor das Sombras ou pela magia Viagem Planar.",
+   "Além disso, a magia causa dano a tipos de criatura que você escolhe ao lançá-la. Escolha um ou mais dos seguintes: Aberrações, Celestiais, Elementais, Fadas, Ínferos e Mortos-Vivos. Quando uma criatura de um tipo escolhido entra na área da magia pela primeira vez num turno ou termina o turno ali, sofre 5d10 de dano Radiante ou Necrótico (à sua escolha ao lançar a magia).",
+   "Você pode designar uma senha ao lançar a magia. Uma criatura que diga a senha ao entrar na área não sofre dano da magia.",
+   "A área da magia não pode se sobrepor à área de outra magia Proibição. Se você lançar Proibição todos os dias por 30 dias no mesmo local, a magia dura até ser dissipada, e os componentes Materiais são consumidos na última conjuração."
+  ],
+  "m": "Pó de rubi no valor de 1.000+ PO."
+ }
+}

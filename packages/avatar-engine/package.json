@@ -10,7 +10,8 @@
   },
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "assets:build": "tsx scripts/build-assets.ts"
+    "assets:build": "tsx scripts/build-assets.ts",
+    "assets:preview": "tsx scripts/preview.ts"
   },
   "dependencies": {
     "pixi.js": "8.22.0",

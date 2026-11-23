@@ -1,10 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+  <defs>
+    <filter id="f-primary" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{primary-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="soft2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.5"/></filter>
+  </defs>
+  <g stroke-linejoin="round" stroke-linecap="round">
     <g data-anchor="legs">
-      <path fill="#{primary}" d="M184 460 L257 460 L255 600 C254 648 252 690 250 714 L207 714 C204 688 199 640 195 600 Z"/>
-      <path fill="#{primary}" d="M328 460 L255 460 L257 600 C258 648 260 690 262 714 L305 714 C308 688 313 640 317 600 Z"/>
-      <path fill="#{primary-dark}" stroke="none" opacity="0.4" d="M240 470 L254 470 L252 600 C251 648 250 690 248 712 L238 712 C240 680 242 640 242 600 Z M292 480 L306 480 C306 560 304 640 300 712 L290 712 C294 640 296 560 292 480 Z"/>
-      <rect fill="#{primary-dark}" x="182" y="458" width="148" height="14" rx="3"/>
+      <path fill="#{primary}" stroke="#{primary-deep}" stroke-width="1" filter="url(#f-primary)" d="M256 388 L189 388 C183 422 183 466 188 510 C192 546 199 570 202 588 C198 610 198 640 204 672 C207 690 210 702 213 714 L242 714 C242 698 242 680 243 660 C245 636 246 612 243 592 C243 570 246 540 250 506 C253 478 255 456 256 440 C257 456 259 478 262 506 C266 540 269 570 269 592 C266 612 267 636 269 660 C270 680 270 698 270 714 L299 714 C302 702 305 690 308 672 C314 640 314 610 310 588 C313 570 320 546 324 510 C329 466 329 422 323 388 L256 388 Z"/>
+      <path fill="#{primary}" stroke="#{primary-deep}" stroke-width="1" filter="url(#f-primary)" d="M256 388 L189 388 L190 399 C212 402 234 403 256 403 C278 403 300 402 322 399 L323 388 L256 388 Z"/>
+      <path fill="#{primary-deep}" stroke="none" opacity="0.45" filter="url(#soft2)" d="M256 400 L190 396 L190 404 C212 407 234 408 256 408 C278 408 300 407 322 404 L322 396 L256 400 Z"/>
+      <path fill="none" stroke="#{primary-deep}" stroke-width="0.8" opacity="0.45" d="M256 403 L256 438 M206 582 C214 591 228 593 239 587 M306 582 C298 591 284 593 273 587 M212 690 C220 695 232 695 241 690 M300 690 C292 695 280 695 271 690 M213 702 C222 706 232 706 241 702 M299 702 C290 706 280 706 271 702 M246 444 C238 462 226 472 214 476 M266 444 C274 462 286 472 298 476 M190 410 C186 450 188 500 196 560 M322 410 C326 450 324 500 316 560"/>
+      <path fill="#{primary-deep}" stroke="none" opacity="0.35" filter="url(#soft)" d="M196 430 C194 480 198 530 206 580 L212 578 C206 530 202 480 204 430 Z M316 430 C318 480 314 530 306 580 L300 578 C306 530 310 480 308 430 Z"/>
+      <path fill="#{primary-light}" stroke="none" opacity="0.28" filter="url(#soft)" d="M214 430 C210 480 212 530 220 570 L228 570 C226 530 226 480 228 430 Z M298 430 C302 480 300 530 292 570 L284 570 C286 530 286 480 284 430 Z M216 610 C214 640 216 670 222 696 L228 696 C226 670 226 640 228 610 Z M296 610 C298 640 296 670 290 696 L284 696 C286 670 286 640 284 610 Z"/>
     </g>
   </g>
 </svg>

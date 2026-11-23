@@ -1,0 +1,68 @@
+{
+ "forcecage": {
+  "d": [
+   "Uma prisão imóvel e Invisível em forma de Cubo, feita de energia mágica, surge ao redor de uma área à sua escolha dentro do alcance. A prisão pode ser uma jaula ou uma caixa maciça, à sua escolha.",
+   "Uma prisão em forma de jaula pode ter até 6 metros de lado e é feita de barras de 1,25 centímetro de diâmetro, espaçadas 1,25 centímetro entre si. Uma prisão em forma de caixa pode ter até 3 metros de lado, criando uma barreira sólida que impede qualquer matéria de atravessá-la e bloqueia quaisquer magias lançadas para dentro ou para fora da área.",
+   "Ao lançar a magia, qualquer criatura completamente dentro da área da jaula fica presa. Criaturas apenas parcialmente dentro da área, ou grandes demais para caber nela, são empurradas para longe do centro até ficarem completamente fora.",
+   "Uma criatura dentro da jaula não consegue sair dela por meios não mágicos. Se tentar usar teletransporte ou viagem interplanar para sair, precisa primeiro fazer um teste de resistência de Carisma. Se passar, pode usar essa magia para sair da jaula. Se falhar, não sai e desperdiça a magia ou o efeito. A jaula também se estende ao Plano Etéreo, bloqueando a viagem etérea. Esta magia não pode ser dissipada por Dissipar Magia."
+  ],
+  "m": "Pó de rubi no valor de 1.500+ PO, que a magia consome."
+ },
+ "foresight": {
+  "d": ["Você toca uma criatura voluntária e lhe concede uma capacidade limitada de ver o futuro imediato. Pela duração, o alvo tem Vantagem em Testes de D20, e as outras criaturas têm Desvantagem em jogadas de ataque contra ele. A magia termina antes se você a lançar de novo."],
+  "m": "Uma pena de beija-flor."
+ },
+ "freedom-of-movement": {
+  "d": ["Você toca uma criatura voluntária. Pela duração, o movimento do alvo não é afetado por Terreno Difícil, e magias e outros efeitos mágicos não podem reduzir o Deslocamento dele nem lhe impor as condições Paralisado ou Impedido. O alvo também tem Deslocamento de Natação igual ao Deslocamento dele. Além disso, o alvo pode gastar 1,5 metro de movimento para escapar automaticamente de amarras não mágicas, como algemas ou uma criatura que lhe imponha a condição Agarrado."],
+  "m": "Uma tira de couro."
+ },
+ "freezing-sphere": {
+  "d": [
+   "Um globo gélido dispara de você até um ponto à sua escolha dentro do alcance, onde explode numa Esfera de 18 metros de raio. Cada criatura nessa área faz um teste de resistência de Constituição, sofrendo 10d6 de dano de Frio se falhar, ou metade se passar.",
+   "Se o globo atingir um corpo d'água, congela a água até 15 centímetros de profundidade numa área de 9 metros de lado. Esse gelo dura 1 minuto. Criaturas que estavam nadando na superfície da água congelada ficam presas no gelo e com a condição Impedido. Uma criatura presa pode realizar uma ação para fazer um teste de Força (Atletismo) contra a CD de resistência das suas magias para se libertar.",
+   "Você pode deixar de disparar o globo depois de concluir a conjuração. Se fizer isso, um globo do tamanho de uma bala de funda, frio ao toque, aparece na sua mão. A qualquer momento, você ou uma criatura a quem der o globo pode arremessá-lo (a um alcance de 12 metros) ou dispará-lo com uma funda (no alcance normal da funda). Ele se despedaça ao impacto, com o mesmo efeito de uma conjuração normal da magia. Você também pode pousar o globo sem quebrá-lo. Depois de 1 minuto, se o globo ainda não tiver se despedaçado, ele explode."
+  ],
+  "h": ["O dano aumenta em 1d6 para cada nível de espaço de magia acima de 6."],
+  "m": "Uma esfera de cristal em miniatura."
+ },
+ "gaseous-form": {
+  "d": [
+   "Uma criatura voluntária que você toca muda de forma, junto com tudo o que estiver vestindo e carregando, para uma nuvem enevoada pela duração. A magia termina para o alvo se ele cair a 0 Pontos de Vida ou se realizar uma ação de Magia para encerrá-la em si mesmo.",
+   "Nessa forma, o único meio de movimento do alvo é um Deslocamento de Voo de 3 metros, e ele pode pairar. O alvo pode entrar no espaço de outra criatura e ocupá-lo. Tem Resistência a dano de Concussão, Perfurante e Cortante, Imunidade à condição Caído e Vantagem em testes de resistência de Força, Destreza e Constituição. O alvo pode passar por aberturas estreitas, mas trata líquidos como se fossem superfícies sólidas.",
+   "O alvo não pode falar nem manipular objetos, e os objetos que estava carregando ou segurando não podem ser largados, usados nem manipulados de outro modo. Por fim, o alvo não pode atacar nem lançar magias."
+  ],
+  "m": "Um pedacinho de gaze."
+ },
+ "gate": {
+  "d": [
+   "Você conjura um portal que liga um espaço desocupado que consiga ver dentro do alcance a um local exato em outro plano de existência. O portal é uma abertura circular com 1,5 a 6 metros de diâmetro, à sua escolha. Você pode orientar o portal em qualquer direção. Ele dura pela duração, e o destino é visível através dele.",
+   "O portal tem uma frente e um verso em cada plano em que aparece. Só é possível viajar por ele passando pela frente. Tudo o que fizer isso é transportado instantaneamente para o outro plano, aparecendo no espaço desocupado mais próximo do portal.",
+   "Divindades e outros governantes planares podem impedir que portais criados por esta magia se abram na presença deles ou em qualquer lugar dos seus domínios.",
+   "Ao lançar esta magia, você pode dizer o nome de uma criatura específica (pseudônimo, título ou apelido não funcionam). Se essa criatura estiver num plano diferente do seu, o portal se abre ao lado dela e a transporta para o espaço desocupado mais próximo do seu lado do portal. Você não ganha nenhum poder especial sobre a criatura, e ela fica livre para agir como o Mestre achar adequado. Pode ir embora, atacá-lo ou ajudá-lo."
+  ],
+  "m": "Um diamante no valor de 5.000+ PO."
+ },
+ "geas": {
+  "d": [
+   "Você dá um comando verbal a uma criatura que consiga ver dentro do alcance, ordenando que preste algum serviço ou se abstenha de uma ação ou de um curso de atividade, como você decidir. O alvo deve passar num teste de resistência de Sabedoria ou fica com a condição Enfeitiçado pela duração. O alvo passa automaticamente se não conseguir entender seu comando.",
+   "Enquanto estiver Enfeitiçada, a criatura sofre 5d10 de dano Psíquico se agir de forma diretamente contrária ao seu comando. Sofre esse dano no máximo uma vez por dia.",
+   "Você pode dar qualquer comando que quiser, exceto uma atividade que resulte em morte certa. Se der um comando suicida, a magia termina.",
+   "Uma magia Remover Maldição, Restauração Maior ou Desejo encerra esta magia."
+  ],
+  "h": ["Se usar um espaço de magia de nível 7 ou 8, a duração é de 365 dias. Se usar um espaço de nível 9, a magia dura até ser encerrada por uma das magias mencionadas acima."]
+ },
+ "gentle-repose": {
+  "d": [
+   "Você toca um cadáver ou outros restos mortais. Pela duração, o alvo fica protegido da decomposição e não pode se tornar Morto-Vivo.",
+   "A magia também estende, na prática, o prazo para trazer o alvo de volta dos mortos, já que os dias passados sob o efeito desta magia não contam para o prazo de magias como Reviver os Mortos."
+  ],
+  "m": "2 Peças de Cobre, que a magia consome."
+ },
+ "giant-insect": {
+  "d": [
+   "Você invoca uma centopeia, uma aranha ou uma vespa gigante (escolhida ao lançar a magia). Ela se manifesta num espaço desocupado que você consiga ver dentro do alcance e usa a ficha de Inseto Gigante. A forma escolhida determina certos detalhes da ficha. A criatura desaparece quando cai a 0 Pontos de Vida ou quando a magia termina.",
+   "A criatura é aliada sua e dos seus aliados. Em combate, ela compartilha sua contagem de Iniciativa, mas age logo depois de você. Obedece aos seus comandos verbais (sem gastar ação sua). Se você não der nenhum, ela realiza a ação Esquivar e usa o movimento para evitar perigo."
+  ],
+  "h": ["Use o nível do espaço de magia como nível da magia na ficha. Inseto Gigante: Fera Grande, Sem Tendência. CA 11 + o nível da magia. PV 30 + 10 para cada nível da magia acima de 4. Deslocamento 12 m, Escalada 12 m, Voo 12 m (apenas Vespa). For 17 (+3, resistência +3), Des 13 (+1, +1), Con 15 (+2, +2), Int 4 (-3, -3), Sab 14 (+2, +2), Car 3 (-4, -4). Sentidos: Visão no Escuro 18 m; Percepção Passiva 12. Idiomas: entende os idiomas que você conhece. ND nenhum (XP 0; BP igual ao seu Bônus de Proficiência). Traços: Patas de Aranha. O inseto pode escalar superfícies difíceis, inclusive pelo teto, sem precisar de teste de atributo. Ações: Ataques Múltiplos. O inseto faz um número de ataques igual à metade do nível da magia (arredondado para baixo). Ferroada Venenosa. Jogada de Ataque Corpo a Corpo: bônus igual ao seu modificador de ataque mágico, alcance 3 m. Acerto: 1d6 + 3 mais o nível da magia de dano Perfurante, mais 1d4 de dano de Veneno. Disparo de Teia (apenas Aranha). Jogada de Ataque à Distância: bônus igual ao seu modificador de ataque mágico, alcance 18 m. Acerto: 1d10 + 3 mais o nível da magia de dano de Concussão, e o Deslocamento do alvo é reduzido a 0 até o início do próximo turno do inseto. Ações Bônus: Jato Peçonhento (apenas Centopeia). Teste de Resistência de Constituição: CD de resistência das suas magias, uma criatura que o inseto consiga ver a até 3 metros. Falha: o alvo fica com a condição Envenenado até o início do próximo turno do inseto."]
+ }
+}

@@ -1,0 +1,172 @@
+{
+ "aura-of-courage": {
+  "n": "Aura de Coragem",
+  "d": [
+   "A partir do 10º nível, você e as criaturas amigáveis a até 3 metros de você não podem ficar amedrontados enquanto você estiver consciente.",
+   "No 18º nível, o alcance desta aura aumenta para 9 metros."
+  ]
+ },
+ "improved-divine-smite": {
+  "n": "Destruição Divina Aprimorada",
+  "d": ["No 11º nível, você está tão impregnado de poder justo que todos os seus golpes com arma corpo a corpo carregam poder divino. Sempre que atinge uma criatura com uma arma corpo a corpo, ela sofre 1d8 de dano radiante extra. Se também usar Destruição Divina num ataque, soma este dano ao dano extra da Destruição Divina."]
+ },
+ "cleansing-touch": {
+  "n": "Toque Purificador",
+  "d": [
+   "A partir do 14º nível, você pode usar sua ação para encerrar uma magia em você ou numa criatura voluntária que tocar.",
+   "Você pode usar esta característica um número de vezes igual ao seu modificador de Carisma (no mínimo uma vez). Recupera os usos gastos quando termina um descanso longo."
+  ]
+ },
+ "purity-of-spirit": {
+  "n": "Pureza de Espírito",
+  "d": ["A partir do 15º nível, você está sempre sob os efeitos da magia proteção contra o bem e o mal."]
+ },
+ "aura-improvements": {
+  "n": "Auras Aprimoradas",
+  "d": ["No 18º nível, o alcance das suas auras aumenta para 9 metros."]
+ },
+ "holy-nimbus": {
+  "n": "Halo Sagrado",
+  "d": [
+   "No 20º nível, com uma ação, você pode emanar uma aura de luz solar. Por 1 minuto, luz plena brilha a partir de você num raio de 9 metros, e penumbra por mais 9 metros.",
+   "Sempre que uma criatura inimiga começa o turno na luz plena, sofre 10 de dano radiante.",
+   "Além disso, enquanto o efeito durar, você tem vantagem em testes de resistência contra magias lançadas por ínferos ou mortos-vivos."
+  ]
+ },
+ "favored-enemy-1-type": {
+  "n": "Inimigo Favorito (1 tipo)",
+  "d": [
+   "A partir do 1º nível, você tem experiência significativa em estudar, rastrear, caçar e até conversar com um certo tipo de inimigo.",
+   "Escolha um tipo de inimigo favorito: aberrações, feras, celestiais, constructos, dragões, elementais, fadas, ínferos, gigantes, monstruosidades, limos, plantas ou mortos-vivos. Em vez disso, pode escolher duas raças de humanoides (como gnolls e orcs) como inimigos favoritos.",
+   "Você tem vantagem em testes de Sabedoria (Sobrevivência) para rastrear seus inimigos favoritos e em testes de Inteligência para lembrar informações sobre eles.",
+   "Ao ganhar esta característica, você também aprende um idioma à sua escolha falado pelos seus inimigos favoritos, se eles falarem algum.",
+   "Você escolhe mais um inimigo favorito, com um idioma associado, no 6º e no 14º nível. Conforme sobe de nível, suas escolhas devem refletir os tipos de monstro que encontrou nas aventuras."
+  ]
+ },
+ "natural-explorer-1-terrain-type": {
+  "n": "Explorador Natural (1 tipo de terreno)",
+  "d": [
+   "Você conhece especialmente bem um tipo de ambiente natural e tem habilidade para viajar e sobreviver nessas regiões. Escolha um tipo de terreno favorito: ártico, litoral, deserto, floresta, pradaria, montanha ou pântano. Quando faz um teste de Inteligência ou Sabedoria relacionado ao seu terreno favorito, seu bônus de proficiência é dobrado se estiver usando uma perícia em que é proficiente.",
+   "Ao viajar por uma hora ou mais no seu terreno favorito, você recebe os benefícios a seguir:",
+   "- Terreno difícil não atrasa a viagem do seu grupo.",
+   "- Seu grupo não pode se perder, exceto por meios mágicos.",
+   "- Mesmo quando está ocupado com outra atividade durante a viagem (como coletar alimento, navegar ou rastrear), você continua alerta ao perigo.",
+   "- Se estiver viajando sozinho, pode se mover furtivamente em ritmo normal.",
+   "- Quando coleta alimento, encontra o dobro do que normalmente encontraria.",
+   "- Ao rastrear outras criaturas, também descobre o número exato delas, seus tamanhos e há quanto tempo passaram pela área.",
+   "Você escolhe tipos de terreno favorito adicionais no 6º e no 10º nível."
+  ]
+ },
+ "ranger-fighting-style": {
+  "d": ["No 2º nível, você adota um estilo de luta específico como especialidade. Escolha uma das opções a seguir. Você não pode pegar a mesma opção de Estilo de Luta mais de uma vez, mesmo que possa escolher de novo depois."]
+ },
+ "spellcasting-ranger": {
+  "n": "Conjuração: Patrulheiro",
+  "d": ["Ao chegar ao 2º nível, você já aprendeu a usar a essência mágica da natureza para lançar magias, assim como um druida."]
+ },
+ "ranger-archetype": {
+  "n": "Arquétipo de Patrulheiro",
+  "d": ["No 3º nível, você escolhe um arquétipo que procura imitar, como o Caçador. A escolha concede características no 3º nível e de novo no 7º, 11º e 15º."]
+ },
+ "hunters-prey": {
+  "n": "Presa do Caçador",
+  "d": [
+   "No 3º nível, você ganha uma das características a seguir, à sua escolha.",
+   "Matador de Colossos",
+   "Assassino de Gigantes",
+   "Destruidor de Hordas"
+  ]
+ },
+ "hunters-prey-colossus-slayer": {
+  "n": "Presa do Caçador: Matador de Colossos",
+  "d": ["Sua tenacidade pode desgastar os inimigos mais poderosos. Quando atinge uma criatura com um ataque com arma, ela sofre 1d8 de dano extra se estiver abaixo do seu máximo de pontos de vida. Você só pode causar esse dano extra uma vez por turno."]
+ },
+ "hunters-prey-giant-killer": {
+  "n": "Presa do Caçador: Assassino de Gigantes",
+  "d": ["Quando uma criatura Grande ou maior a até 1,5 metro de você o acerta ou erra com um ataque, você pode usar sua reação para atacá-la logo depois do ataque dela, desde que consiga vê-la."]
+ },
+ "hunters-prey-horde-breaker": {
+  "n": "Presa do Caçador: Destruidor de Hordas",
+  "d": ["Uma vez em cada um dos seus turnos, quando faz um ataque com arma, você pode fazer outro ataque com a mesma arma contra uma criatura diferente que esteja a até 1,5 metro do alvo original e dentro do alcance da arma."]
+ },
+ "primeval-awareness": {
+  "n": "Consciência Primitiva",
+  "d": ["A partir do 3º nível, você pode usar sua ação e gastar um espaço de magia de patrulheiro para concentrar sua percepção na região ao redor. Por 1 minuto por nível do espaço gasto, você sente se os seguintes tipos de criatura estão presentes a até 1,5 km de você (ou até 9 km, se estiver no seu terreno favorito): aberrações, celestiais, dragões, elementais, fadas, ínferos e mortos-vivos. Esta característica não revela a localização nem o número das criaturas."]
+ },
+ "favored-enemy-2-types": { "n": "Inimigo Favorito (2 tipos)" },
+ "natural-explorer-2-terrain-types": { "n": "Explorador Natural (2 tipos de terreno)" },
+ "ranger-archetype-improvement-1": { "n": "Característica do Arquétipo de Patrulheiro" },
+ "defensive-tactics": {
+  "n": "Táticas Defensivas",
+  "d": [
+   "No 7º nível, você ganha uma das características a seguir, à sua escolha.",
+   "Escapar da Horda",
+   "Defesa contra Ataques Múltiplos",
+   "Vontade de Ferro"
+  ]
+ },
+ "defensive-tactics-escape-the-horde": {
+  "n": "Táticas Defensivas: Escapar da Horda",
+  "d": ["Ataques de oportunidade contra você são feitos com desvantagem."]
+ },
+ "defensive-tactics-multiattack-defense": {
+  "n": "Táticas Defensivas: Defesa contra Ataques Múltiplos",
+  "d": ["Quando uma criatura o atinge com um ataque, você recebe +4 de bônus na CA contra todos os ataques seguintes dessa criatura pelo resto do turno."]
+ },
+ "defensive-tactics-steel-will": {
+  "n": "Táticas Defensivas: Vontade de Ferro",
+  "d": ["Você tem vantagem em testes de resistência contra ficar amedrontado."]
+ },
+ "ranger-lands-stride": {
+  "d": [
+   "A partir do 8º nível, atravessar terreno difícil não mágico não lhe custa movimento extra. Você também pode atravessar plantas não mágicas sem ser retardado por elas e sem sofrer dano caso tenham espinhos, farpas ou perigo semelhante.",
+   "Além disso, você tem vantagem em testes de resistência contra plantas criadas ou manipuladas magicamente para impedir o movimento, como as criadas pela magia constrição."
+  ]
+ },
+ "natural-explorer-3-terrain-types": { "n": "Explorador Natural (3 tipos de terreno)" },
+ "hide-in-plain-sight": {
+  "n": "Esconder-se à Vista",
+  "d": [
+   "A partir do 10º nível, você pode gastar 1 minuto criando uma camuflagem para si. Precisa ter acesso a lama fresca, terra, plantas, fuligem e outros materiais naturais para criá-la.",
+   "Depois de camuflado assim, pode tentar se esconder encostando-se numa superfície sólida, como uma árvore ou parede, pelo menos tão alta e larga quanto você. Recebe +10 de bônus em testes de Destreza (Furtividade) enquanto permanecer ali sem se mover nem agir. Assim que se mover ou usar uma ação ou reação, precisa se camuflar de novo para receber este benefício."
+  ]
+ },
+ "multiattack": {
+  "n": "Ataque Múltiplo",
+  "d": [
+   "No 11º nível, você ganha uma das características a seguir, à sua escolha.",
+   "Saraivada",
+   "Ataque Giratório"
+  ]
+ },
+ "multiattack-volley": {
+  "n": "Ataque Múltiplo: Saraivada",
+  "d": ["Você pode usar sua ação para fazer um ataque à distância contra qualquer número de criaturas a até 3 metros de um ponto que consiga ver dentro do alcance da sua arma. Precisa ter munição para cada alvo, como de costume, e faz uma jogada de ataque separada para cada um."]
+ },
+ "multiattack-whirlwind-attack": {
+  "n": "Ataque Múltiplo: Ataque Giratório",
+  "d": ["Você pode usar sua ação para fazer um ataque corpo a corpo contra qualquer número de criaturas a até 1,5 metro de você, com uma jogada de ataque separada para cada alvo."]
+ },
+ "favored-enemy-3-enemies": { "n": "Inimigo Favorito (3 inimigos)" },
+ "vanish": {
+  "n": "Desaparecer",
+  "d": ["A partir do 14º nível, você pode usar a ação Esconder como ação bônus no seu turno. Além disso, não pode ser rastreado por meios não mágicos, a não ser que decida deixar rastros."]
+ },
+ "superior-hunters-defense": {
+  "n": "Defesa Superior do Caçador",
+  "d": [
+   "No 15º nível, você ganha uma das características a seguir, à sua escolha.",
+   "Evasão",
+   "Resistir à Maré",
+   "Esquiva Sobrenatural"
+  ]
+ },
+ "superior-hunters-defense-evasion": {
+  "n": "Defesa Superior do Caçador: Evasão",
+  "d": ["Quando for alvo de um efeito, como o sopro de fogo de um dragão vermelho ou a magia relâmpago, que permite um teste de resistência de Destreza para sofrer só metade do dano, você não sofre dano se passar e sofre só metade se falhar."]
+ },
+ "superior-hunters-defense-stand-against-the-tide": {
+  "n": "Defesa Superior do Caçador: Resistir à Maré",
+  "d": ["Quando uma criatura hostil erra você com um ataque corpo a corpo, você pode usar sua reação para forçá-la a repetir o mesmo ataque contra outra criatura (que não seja ela mesma) à sua escolha."]
+ }
+}

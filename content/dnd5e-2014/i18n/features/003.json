@@ -1,0 +1,111 @@
+{
+ "wild-shape-cr-1-4-or-below-no-flying-or-swim-speed": {
+  "n": "Forma Selvagem (ND 1/4 ou menor, sem deslocamento de voo ou natação)",
+  "d": [
+   "A partir do 2º nível, você pode usar sua ação para assumir magicamente a forma de uma fera que já tenha visto. Pode usar esta característica duas vezes e recupera os usos gastos quando termina um descanso curto ou longo.",
+   "Seu nível de druida determina em que feras você pode se transformar, como mostra a tabela de Formas de Fera. No 2º nível, por exemplo, pode se transformar em qualquer fera com nível de desafio 1/4 ou menor que não tenha deslocamento de voo nem de natação.",
+   "Você pode ficar na forma de fera por um número de horas igual à metade do seu nível de druida (arredondado para baixo). Depois, volta à forma normal, a não ser que gaste outro uso desta característica. Pode voltar à forma normal antes usando uma ação bônus no seu turno. Volta automaticamente se ficar inconsciente, cair a 0 pontos de vida ou morrer.",
+   "Enquanto estiver transformado, valem as regras a seguir:",
+   "- Suas estatísticas de jogo são substituídas pelas da fera, mas você mantém sua tendência, personalidade e valores de Inteligência, Sabedoria e Carisma. Também mantém todas as suas proficiências em perícias e testes de resistência, além de ganhar as da criatura. Se a criatura tiver a mesma proficiência que você e o bônus no bloco de estatísticas dela for maior, use o bônus da criatura. Se ela tiver ações lendárias ou de covil, você não pode usá-las.",
+   "- Ao se transformar, você assume os pontos de vida e Dados de Vida da fera. Ao voltar à forma normal, retorna aos pontos de vida que tinha antes. Porém, se voltar por ter caído a 0 pontos de vida, o dano excedente passa para a forma normal. Por exemplo, se sofrer 10 de dano na forma animal tendo só 1 ponto de vida, você volta à forma normal e sofre 9 de dano. Desde que o dano excedente não reduza sua forma normal a 0 pontos de vida, você não fica inconsciente.",
+   "- Você não pode lançar magias, e sua capacidade de falar ou de realizar ações que exijam mãos fica limitada às capacidades da forma de fera. Porém, a transformação não interrompe sua concentração numa magia já lançada nem impede ações que façam parte de uma magia já lançada, como convocar relâmpagos.",
+   "- Você mantém os benefícios de qualquer característica da sua classe, raça ou outra fonte e pode usá-los se a nova forma for fisicamente capaz disso. Porém, não pode usar seus sentidos especiais, como visão no escuro, a não ser que a nova forma também os tenha.",
+   "- Você escolhe se seu equipamento cai no chão no seu espaço, se funde à nova forma ou é vestido por ela. O equipamento vestido funciona normalmente, mas o Mestre decide se é prático para a nova forma usar cada peça, com base no formato e no tamanho da criatura. O equipamento não muda de tamanho nem de formato para se ajustar à nova forma, e o que ela não puder vestir deve cair no chão ou se fundir a ela. O equipamento fundido não tem efeito até você deixar a forma."
+  ]
+ },
+ "druid-circle": {
+  "n": "Círculo Druídico",
+  "d": ["No 2º nível, você escolhe se identificar com um círculo de druidas, como o Círculo da Terra. A escolha concede características no 2º nível e de novo no 6º, 10º e 14º."]
+ },
+ "circle-of-the-land": {
+  "n": "Círculo da Terra",
+  "d": ["O Círculo da Terra é formado por místicos e sábios que guardam conhecimentos e ritos antigos por meio de uma vasta tradição oral. Esses druidas se encontram em círculos sagrados de árvores ou de pedras erguidas para sussurrar segredos primordiais em Druídico. Os membros mais sábios do círculo atuam como sacerdotes principais das comunidades que seguem a Antiga Fé e servem de conselheiros aos governantes desses povos. Como membro deste círculo, sua magia é influenciada pela terra onde você foi iniciado nos ritos misteriosos do círculo."]
+ },
+ "circle-of-the-land-arctic": { "n": "Círculo da Terra: Ártico" },
+ "circle-of-the-land-coast": { "n": "Círculo da Terra: Litoral" },
+ "circle-of-the-land-desert": { "n": "Círculo da Terra: Deserto" },
+ "circle-of-the-land-forest": { "n": "Círculo da Terra: Floresta" },
+ "circle-of-the-land-grassland": { "n": "Círculo da Terra: Pradaria" },
+ "circle-of-the-land-mountain": { "n": "Círculo da Terra: Montanha" },
+ "circle-of-the-land-swamp": { "n": "Círculo da Terra: Pântano" },
+ "bonus-cantrip": {
+  "n": "Truque Adicional",
+  "d": ["Quando escolhe este círculo, no 2º nível, você aprende um truque de druida adicional à sua escolha."]
+ },
+ "natural-recovery": {
+  "n": "Recuperação Natural",
+  "d": [
+   "A partir do 2º nível, você pode recuperar parte da sua energia mágica meditando e comungando com a natureza. Durante um descanso curto, escolha espaços de magia gastos para recuperar. Os espaços podem ter nível somado igual ou menor que a metade do seu nível de druida (arredondado para cima), e nenhum deles pode ser de 6º nível ou superior. Você só pode usar esta característica de novo depois de terminar um descanso longo.",
+   "Por exemplo, um druida de 4º nível pode recuperar até dois níveis de espaços de magia: um espaço de 2º nível ou dois de 1º."
+  ]
+ },
+ "circle-spells-1": {
+  "n": "Magias de Círculo",
+  "d": [
+   "Sua ligação mística com a terra lhe concede a capacidade de lançar certas magias. No 3º, 5º, 7º e 9º nível, você ganha acesso a magias de círculo ligadas à terra onde se tornou druida.",
+   "Escolha essa terra (ártico, litoral, deserto, floresta, pradaria, montanha ou pântano) e consulte a lista de magias correspondente.",
+   "Depois de ganhar acesso a uma magia de círculo, você sempre a tem preparada, e ela não conta no número de magias que você pode preparar por dia. Se ganhar acesso a uma magia que não aparece na lista de magias de druida, ela mesmo assim é uma magia de druida para você."
+  ]
+ },
+ "wild-shape-cr-1-2-or-below-no-flying-speed": { "n": "Forma Selvagem (ND 1/2 ou menor, sem deslocamento de voo)" },
+ "druid-circle-improvement-1": { "n": "Característica do Círculo Druídico" },
+ "druid-lands-stride": {
+  "n": "Caminho da Terra",
+  "d": [
+   "A partir do 6º nível, atravessar terreno difícil não mágico não lhe custa movimento extra. Você também pode atravessar plantas não mágicas sem ser retardado por elas e sem sofrer dano caso tenham espinhos, farpas ou perigo semelhante.",
+   "Além disso, você tem vantagem em testes de resistência contra plantas criadas ou manipuladas magicamente para impedir o movimento, como as criadas pela magia constrição."
+  ]
+ },
+ "wild-shape-cr-1-or-below": { "n": "Forma Selvagem (ND 1 ou menor)" },
+ "natures-ward": {
+  "n": "Proteção da Natureza",
+  "d": ["Ao chegar ao 10º nível, você não pode ser enfeitiçado nem amedrontado por elementais ou fadas, e é imune a veneno e doença."]
+ },
+ "natures-sanctuary": {
+  "n": "Santuário da Natureza",
+  "d": ["Ao chegar ao 14º nível, as criaturas do mundo natural sentem sua ligação com a natureza e hesitam em atacá-lo. Quando uma fera ou planta ataca você, deve fazer um teste de resistência de Sabedoria contra a CD de resistência das suas magias de druida. Se falhar, precisa escolher outro alvo, ou o ataque erra automaticamente. Se passar, fica imune a este efeito por 24 horas. A criatura sabe deste efeito antes de atacá-lo."]
+ },
+ "druid-timeless-body": {
+  "n": "Corpo Atemporal",
+  "d": ["A partir do 18º nível, a magia primordial que você maneja faz você envelhecer mais devagar. A cada 10 anos que passam, seu corpo envelhece apenas 1."]
+ },
+ "beast-spells": {
+  "n": "Magias de Fera",
+  "d": ["A partir do 18º nível, você pode lançar muitas das suas magias de druida em qualquer forma assumida com Forma Selvagem. Pode realizar os componentes somáticos e verbais de uma magia de druida na forma de fera, mas não consegue fornecer componentes materiais."]
+ },
+ "archdruid": {
+  "n": "Arquidruida",
+  "d": [
+   "No 20º nível, você pode usar Forma Selvagem um número ilimitado de vezes.",
+   "Além disso, pode ignorar os componentes verbais e somáticos das suas magias de druida, assim como os componentes materiais sem custo que não sejam consumidos pela magia. Você recebe este benefício tanto na forma normal quanto na forma de fera de Forma Selvagem."
+  ]
+ },
+ "fighter-fighting-style": {
+  "n": "Estilo de Luta",
+  "d": ["Você adota um estilo de luta específico como especialidade. Escolha uma das opções a seguir. Você não pode pegar a mesma opção de Estilo de Luta mais de uma vez, mesmo que possa escolher de novo depois."]
+ },
+ "fighter-fighting-style-archery": {
+  "n": "Estilo de Luta: Arquearia",
+  "d": ["Você recebe +2 de bônus nas jogadas de ataque com armas à distância."]
+ },
+ "fighter-fighting-style-defense": {
+  "n": "Estilo de Luta: Defesa",
+  "d": ["Enquanto estiver usando armadura, você recebe +1 de bônus na CA."]
+ },
+ "fighter-fighting-style-dueling": {
+  "n": "Estilo de Luta: Duelismo",
+  "d": ["Quando empunha uma arma corpo a corpo numa das mãos e nenhuma outra arma, você recebe +2 de bônus nas jogadas de dano com essa arma."]
+ },
+ "fighter-fighting-style-great-weapon-fighting": {
+  "n": "Estilo de Luta: Combate com Armas Grandes",
+  "d": ["Quando tirar 1 ou 2 num dado de dano de um ataque com uma arma corpo a corpo empunhada com as duas mãos, você pode rolar o dado de novo e deve usar o novo resultado, mesmo que seja 1 ou 2. A arma precisa ter a propriedade duas mãos ou versátil para você receber este benefício."]
+ },
+ "fighter-fighting-style-protection": {
+  "n": "Estilo de Luta: Proteção",
+  "d": ["Quando uma criatura que você consiga ver ataca um alvo que não seja você e esteja a até 1,5 metro de você, pode usar sua reação para impor desvantagem na jogada de ataque. Você precisa estar empunhando um escudo."]
+ },
+ "fighter-fighting-style-two-weapon-fighting": {
+  "n": "Estilo de Luta: Combate com Duas Armas",
+  "d": ["Quando luta com duas armas, você pode somar seu modificador de habilidade ao dano do segundo ataque."]
+ }
+}

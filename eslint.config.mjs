@@ -15,6 +15,8 @@ const eslintConfig = defineConfig([
   globalIgnores([
     // Default ignores of eslint-config-next:
     ".next/**",
+    // Fontes baixadas (pnpm srd:fetch).
+    ".cache/**",
     "out/**",
     "build/**",
     "next-env.d.ts",

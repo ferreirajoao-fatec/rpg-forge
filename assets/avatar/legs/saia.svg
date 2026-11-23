@@ -1,10 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
-  <g stroke="#{line}" stroke-width="3" stroke-linejoin="round">
+  <defs>
+    <filter id="f-primary" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{primary-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="f-secondary" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{secondary-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="soft2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.5"/></filter>
+  </defs>
+  <g stroke-linejoin="round" stroke-linecap="round">
     <g data-anchor="legs">
-      <path fill="#{primary}" d="M184 460 L328 460 C340 520 352 580 362 640 C300 656 212 656 150 640 C160 580 172 520 184 460 Z"/>
-      <path fill="#{primary-dark}" stroke="none" opacity="0.4" d="M300 470 C316 520 330 580 340 646 L362 640 C352 580 340 520 328 460 Z M226 480 C220 540 214 600 210 652 L224 653 C226 600 230 540 234 480 Z"/>
-      <path fill="none" stroke="#{secondary}" stroke-width="5" d="M156 630 C214 646 298 646 356 630"/>
-      <rect fill="#{primary-dark}" x="182" y="458" width="148" height="14" rx="3"/>
+      <path fill="#{primary}" stroke="#{primary-deep}" stroke-width="1" filter="url(#f-primary)" d="M256 388 L190 388 C186 420 182 460 178 500 C174 540 170 580 167 616 C196 624 226 626 256 626 C286 626 316 624 345 616 C342 580 338 540 334 500 C330 460 326 420 322 388 L256 388 Z"/>
+      <path fill="none" stroke="#{primary-deep}" stroke-width="0.8" opacity="0.45" d="M210 404 C206 470 198 540 190 618 M232 406 C230 480 226 550 222 622 M256 408 L256 626 M302 404 C306 470 314 540 322 618 M280 406 C282 480 286 550 290 622"/>
+      <path fill="#{primary-deep}" stroke="none" opacity="0.3" filter="url(#soft)" d="M196 420 C190 490 182 560 176 616 L186 618 C192 560 200 490 204 420 Z M316 420 C322 490 330 560 336 616 L326 618 C320 560 312 490 308 420 Z M240 440 C238 500 236 560 234 622 L242 622 C244 560 246 500 246 440 Z M272 440 C274 500 276 560 278 622 L270 622 C268 560 266 500 266 440 Z"/>
+      <path fill="#{secondary}" stroke="#{secondary-deep}" stroke-width="1" filter="url(#f-secondary)" d="M256 388 L190 388 L190 400 C212 403 234 404 256 404 C278 404 300 403 322 400 L322 388 L256 388 Z"/>
+      <path fill="none" stroke="#{secondary}" stroke-width="6" d="M168.6 610 C196 618 226 620 256 620 C286 620 316 618 343.4 610"/>
+      <path fill="none" stroke="#{secondary-deep}" stroke-width="0.7" opacity="0.7" d="M169 606.4 C196 614 226 616 256 616 C286 616 316 614 343 606.4"/>
     </g>
   </g>
 </svg>

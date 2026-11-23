@@ -1,0 +1,20 @@
+{
+ "acrobatics": { "d": ["Manter-se de pé numa situação difícil ou realizar uma acrobacia."] },
+ "animal-handling": { "d": ["Acalmar ou treinar um animal, ou fazê-lo se comportar de certa maneira."] },
+ "arcana": { "d": ["Lembrar conhecimentos sobre magias, itens mágicos e os planos de existência."] },
+ "athletics": { "d": ["Saltar mais longe que o normal, manter-se à tona em águas agitadas ou quebrar algo."] },
+ "deception": { "d": ["Contar uma mentira convincente ou usar um disfarce de forma convincente."] },
+ "history": { "d": ["Lembrar conhecimentos sobre eventos históricos, pessoas, nações e culturas."] },
+ "insight": { "d": ["Perceber o estado de espírito e as intenções de uma pessoa."] },
+ "intimidation": { "d": ["Impressionar ou ameaçar alguém para que faça o que você quer."] },
+ "investigation": { "d": ["Encontrar informações obscuras em livros ou deduzir como algo funciona."] },
+ "medicine": { "d": ["Diagnosticar uma doença ou determinar o que matou alguém que morreu há pouco."] },
+ "nature": { "d": ["Lembrar conhecimentos sobre terrenos, plantas, animais e clima."] },
+ "perception": { "d": ["Usando uma combinação de sentidos, notar algo que passa despercebido com facilidade."] },
+ "performance": { "d": ["Atuar, contar uma história, tocar música ou dançar."] },
+ "persuasion": { "d": ["Convencer alguém de algo com honestidade e cortesia."] },
+ "religion": { "d": ["Lembrar conhecimentos sobre deuses, rituais religiosos e símbolos sagrados."] },
+ "sleight-of-hand": { "d": ["Bater uma carteira, esconder um objeto pequeno ou fazer um truque de mãos."] },
+ "stealth": { "d": ["Passar despercebido movendo-se em silêncio e escondendo-se atrás de coisas."] },
+ "survival": { "d": ["Seguir rastros, coletar alimento, achar uma trilha ou evitar perigos naturais."] }
+}

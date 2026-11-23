@@ -1,0 +1,184 @@
+{
+ "healers-kit": {
+  "n": "Kit de curandeiro",
+  "d": ["Este kit é uma bolsa de couro com ataduras, pomadas e talas. Tem dez usos. Com uma ação, você pode gastar um uso para estabilizar uma criatura com 0 pontos de vida, sem precisar fazer um teste de Sabedoria (Medicina)."]
+ },
+ "mess-kit": {
+  "n": "Kit de refeição",
+  "d": ["Esta caixa de lata contém uma caneca e talheres simples. A caixa se fecha, e um dos lados pode ser usado como panela e o outro como prato ou tigela rasa."]
+ },
+ "poisoners-kit": {
+  "n": "Kit de envenenador",
+  "d": ["Um kit de envenenador inclui os frascos, substâncias químicas e outros equipamentos necessários para criar venenos. Proficiência com este kit permite somar seu bônus de proficiência a qualquer teste de habilidade para fabricar ou usar venenos."]
+ },
+ "ladder-10-foot": { "n": "Escada (3 metros)" },
+ "lamp": {
+  "n": "Lamparina",
+  "d": ["Uma lamparina emite luz plena num raio de 4,5 metros e penumbra por mais 9 metros. Acesa, queima por 6 horas com um frasco (meio litro) de óleo."]
+ },
+ "lantern-bullseye": {
+  "n": "Lanterna focada",
+  "d": ["Uma lanterna focada emite luz plena num cone de 18 metros e penumbra por mais 18 metros. Acesa, queima por 6 horas com um frasco (meio litro) de óleo."]
+ },
+ "lantern-hooded": {
+  "n": "Lanterna com anteparo",
+  "d": ["Uma lanterna com anteparo emite luz plena num raio de 9 metros e penumbra por mais 9 metros. Acesa, queima por 6 horas com um frasco (meio litro) de óleo. Com uma ação, você pode baixar o anteparo, reduzindo a luz a penumbra num raio de 1,5 metro."]
+ },
+ "little-bag-of-sand": { "n": "Saquinho de areia", "d": ["Um saquinho de areia, comum no pacote de estudioso."] },
+ "lock": {
+  "n": "Fechadura",
+  "d": ["A fechadura vem com uma chave. Sem a chave, uma criatura proficiente com ferramentas de ladrão pode abri-la com um teste de Destreza CD 15 bem-sucedido. O Mestre pode decidir que existem fechaduras melhores por preços mais altos."]
+ },
+ "magnifying-glass": {
+  "n": "Lupa",
+  "d": [
+   "Esta lente permite ver objetos pequenos de perto. Também serve para substituir pederneira e fuzil ao acender fogo. Acender fogo com uma lupa exige luz tão forte quanto a do sol para focar, material inflamável e cerca de 5 minutos para pegar fogo.",
+   "Uma lupa concede vantagem em qualquer teste de habilidade para avaliar ou examinar um item pequeno ou muito detalhado."
+  ]
+ },
+ "manacles": {
+  "n": "Algemas",
+  "d": [
+   "Estas amarras de metal prendem uma criatura Pequena ou Média. Escapar delas exige um teste de Destreza CD 20 bem-sucedido. Quebrá-las exige um teste de Força CD 20 bem-sucedido.",
+   "Cada par de algemas vem com uma chave. Sem a chave, uma criatura proficiente com ferramentas de ladrão pode abrir a fechadura com um teste de Destreza CD 15 bem-sucedido. Algemas têm 15 pontos de vida."
+  ]
+ },
+ "mirror-steel": { "n": "Espelho de aço" },
+ "oil-flask": {
+  "n": "Óleo (frasco)",
+  "d": [
+   "O óleo costuma vir num frasco de barro de meio litro.",
+   "Com uma ação, você pode espirrar o óleo deste frasco numa criatura a até 1,5 metro de você ou arremessá-lo a até 6 metros, quebrando-o no impacto. Faça um ataque à distância contra uma criatura ou objeto, tratando o óleo como arma improvisada.",
+   "Se acertar, o alvo fica coberto de óleo. Se ele sofrer qualquer dano de fogo antes de o óleo secar (depois de 1 minuto), sofre 5 de dano de fogo adicional do óleo em chamas.",
+   "Você também pode derramar um frasco de óleo no chão para cobrir uma área quadrada de 1,5 metro, desde que a superfície seja plana.",
+   "Se for aceso, o óleo queima por 2 rodadas e causa 5 de dano de fogo a qualquer criatura que entre na área ou termine o turno nela. Uma criatura só pode sofrer esse dano uma vez por turno."
+  ]
+ },
+ "paper-one-sheet": { "n": "Papel (uma folha)" },
+ "parchment-one-sheet": { "n": "Pergaminho (uma folha)" },
+ "perfume-vial": { "n": "Perfume (frasco)" },
+ "pick-miners": { "n": "Picareta de minerador" },
+ "piton": { "n": "Piton" },
+ "poison-basic-vial": {
+  "n": "Veneno básico (frasco)",
+  "d": ["Você pode usar o veneno deste frasco para cobrir uma arma cortante ou perfurante ou até três munições. Aplicar o veneno leva uma ação. Uma criatura atingida pela arma ou munição envenenada deve fazer um teste de resistência de Constituição CD 10 ou sofrer 1d4 de dano de veneno. Depois de aplicado, o veneno mantém o efeito por 1 minuto antes de secar."]
+ },
+ "pole-10-foot": { "n": "Vara (3 metros)" },
+ "pot-iron": { "n": "Panela de ferro" },
+ "pouch": {
+  "n": "Bolsa",
+  "d": ["Uma bolsa de pano ou couro comporta até 20 balas de funda ou 50 agulhas de zarabatana, entre outras coisas. Uma bolsa com compartimentos para guardar componentes de magia se chama bolsa de componentes (descrita antes nesta seção)."]
+ },
+ "quiver": { "n": "Aljava", "d": ["Uma aljava comporta até 20 flechas."] },
+ "ram-portable": {
+  "n": "Aríete portátil",
+  "d": ["Você pode usar um aríete portátil para derrubar portas. Ao fazer isso, recebe +4 de bônus no teste de Força. Outro personagem pode ajudar a usar o aríete, dando vantagem nesse teste."]
+ },
+ "rations-1-day": {
+  "n": "Rações (1 dia)",
+  "d": ["Rações são alimentos secos próprios para viagens longas, como carne-seca, frutas secas, biscoito duro e nozes."]
+ },
+ "reliquary": { "n": "Relicário" },
+ "robes": { "n": "Túnica" },
+ "rope-hempen-50-feet": {
+  "n": "Corda de cânhamo (15 metros)",
+  "d": ["A corda, seja de cânhamo ou de seda, tem 2 pontos de vida e pode ser rompida com um teste de Força CD 17."]
+ },
+ "rope-silk-50-feet": { "n": "Corda de seda (15 metros)" },
+ "sack": { "n": "Saco" },
+ "scale-merchants": {
+  "n": "Balança de mercador",
+  "d": ["A balança inclui um pequeno travessão, pratos e um sortimento adequado de pesos de até 1 kg. Com ela, você pode medir o peso exato de objetos pequenos, como metais preciosos brutos ou mercadorias, para ajudar a definir seu valor."]
+ },
+ "sealing-wax": { "n": "Lacre" },
+ "shovel": { "n": "Pá" },
+ "signal-whistle": { "n": "Apito de sinalização" },
+ "signet-ring": { "n": "Anel de sinete" },
+ "small-knife": { "n": "Faca pequena", "d": ["Uma faca pequena, comum no pacote de estudioso."] },
+ "soap": { "n": "Sabão" },
+ "spellbook": {
+  "n": "Grimório",
+  "d": ["Essencial para magos, o grimório é um tomo encadernado em couro com 100 páginas de velino em branco, próprias para registrar magias."]
+ },
+ "spike-iron": { "n": "Cravo de ferro" },
+ "spyglass": { "n": "Luneta", "d": ["Objetos vistos por uma luneta aparecem ampliados duas vezes."] },
+ "string-10-feet": { "n": "Barbante (3 metros)", "d": ["Um pedaço de barbante de 3 metros, comum no pacote de assaltante."] },
+ "tent-two-person": { "n": "Barraca para duas pessoas", "d": ["Um abrigo de lona simples e portátil; a barraca abriga duas pessoas."] },
+ "tinderbox": {
+  "n": "Caixa de fogo",
+  "d": [
+   "Este pequeno recipiente guarda pederneira, fuzil e isca (normalmente pano seco embebido em óleo leve) para acender fogo. Usá-la para acender uma tocha, ou qualquer outra coisa com combustível abundante e exposto, leva uma ação.",
+   "Acender qualquer outro fogo leva 1 minuto."
+  ]
+ },
+ "torch": {
+  "n": "Tocha",
+  "d": ["Uma tocha queima por 1 hora, emitindo luz plena num raio de 6 metros e penumbra por mais 6 metros. Se você acertar um ataque corpo a corpo com uma tocha acesa, ela causa 1 de dano de fogo."]
+ },
+ "vestments": { "n": "Paramentos", "d": ["Roupas religiosas, comuns no pacote de sacerdote."] },
+ "vial": { "n": "Frasco" },
+ "waterskin": { "n": "Odre" },
+ "whetstone": { "n": "Pedra de amolar" },
+ "burglars-pack": { "n": "Pacote de assaltante" },
+ "diplomats-pack": { "n": "Pacote de diplomata" },
+ "dungeoneers-pack": { "n": "Pacote de explorador de masmorras" },
+ "entertainers-pack": { "n": "Pacote de artista" },
+ "explorers-pack": { "n": "Pacote de aventureiro" },
+ "priests-pack": { "n": "Pacote de sacerdote" },
+ "scholars-pack": { "n": "Pacote de estudioso" },
+ "alchemists-supplies": {
+  "n": "Suprimentos de alquimista",
+  "d": ["Estas ferramentas especiais incluem os itens necessários para exercer um ofício ou profissão. A tabela mostra exemplos dos tipos de ferramenta mais comuns, cada um com itens ligados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite somar seu bônus de proficiência a qualquer teste de habilidade feito com as ferramentas do seu ofício. Cada tipo de ferramenta de artesão exige uma proficiência separada."]
+ },
+ "brewers-supplies": { "n": "Suprimentos de cervejeiro" },
+ "calligraphers-supplies": { "n": "Suprimentos de calígrafo" },
+ "carpenters-tools": { "n": "Ferramentas de carpinteiro" },
+ "cartographers-tools": { "n": "Ferramentas de cartógrafo" },
+ "cobblers-tools": { "n": "Ferramentas de sapateiro" },
+ "cooks-utensils": { "n": "Utensílios de cozinheiro" },
+ "glassblowers-tools": { "n": "Ferramentas de vidreiro" },
+ "jewelers-tools": { "n": "Ferramentas de joalheiro" },
+ "leatherworkers-tools": { "n": "Ferramentas de coureiro" },
+ "masons-tools": { "n": "Ferramentas de pedreiro" },
+ "painters-supplies": { "n": "Suprimentos de pintor" },
+ "potters-tools": { "n": "Ferramentas de oleiro" },
+ "smiths-tools": { "n": "Ferramentas de ferreiro" },
+ "tinkers-tools": { "n": "Ferramentas de funileiro" },
+ "weavers-tools": { "n": "Ferramentas de tecelão" },
+ "woodcarvers-tools": { "n": "Ferramentas de entalhador" },
+ "dice-set": {
+  "n": "Jogo de dados",
+  "d": ["Este item abrange várias peças de jogo, incluindo dados e baralhos (para jogos como o Truco dos Três Dragões). Alguns exemplos comuns aparecem na tabela de Ferramentas, mas existem outros tipos de jogo. Se você for proficiente com um jogo, pode somar seu bônus de proficiência a testes de habilidade para jogar com ele. Cada tipo de jogo exige uma proficiência separada."]
+ },
+ "playing-card-set": { "n": "Baralho" },
+ "bagpipes": {
+  "n": "Gaita de foles",
+  "d": ["A tabela mostra como exemplo vários dos tipos mais comuns de instrumento musical. Se tiver proficiência com um instrumento, você pode somar seu bônus de proficiência a qualquer teste de habilidade para tocar música com ele. Um bardo pode usar um instrumento musical como foco de conjuração. Cada tipo de instrumento musical exige uma proficiência separada."]
+ },
+ "drum": { "n": "Tambor" },
+ "dulcimer": { "n": "Saltério" },
+ "flute": { "n": "Flauta" },
+ "lute": { "n": "Alaúde" },
+ "lyre": { "n": "Lira" },
+ "horn": { "n": "Trompa" },
+ "pan-flute": { "n": "Flauta de Pã" },
+ "shawm": { "n": "Charamela" },
+ "viol": { "n": "Viola de arco" },
+ "navigators-tools": {
+  "n": "Ferramentas de navegador",
+  "d": ["Este conjunto de instrumentos é usado para navegar no mar. Proficiência com ferramentas de navegador permite traçar a rota de um navio e seguir cartas náuticas. Além disso, essas ferramentas permitem somar seu bônus de proficiência a qualquer teste de habilidade para não se perder no mar."]
+ },
+ "thieves-tools": {
+  "n": "Ferramentas de ladrão",
+  "d": ["Este conjunto inclui uma pequena lima, um jogo de gazuas, um espelhinho com cabo de metal, uma tesoura de lâminas finas e um alicate. Proficiência com estas ferramentas permite somar seu bônus de proficiência a qualquer teste de habilidade para desarmar armadilhas ou abrir fechaduras."]
+ },
+ "camel": { "n": "Camelo" },
+ "donkey": { "n": "Burro" },
+ "mule": { "n": "Mula" },
+ "elephant": { "n": "Elefante" },
+ "horse-draft": { "n": "Cavalo de tração" },
+ "horse-riding": { "n": "Cavalo de montaria" },
+ "mastiff": { "n": "Mastim" },
+ "pony": { "n": "Pônei" },
+ "warhorse": { "n": "Cavalo de guerra" }
+}

@@ -1,0 +1,6120 @@
+[
+ {
+  "id": "equipment:club",
+  "kind": "equipment",
+  "name": "Clava",
+  "summary": "1d4 concussão · 1 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 0.1,
+   "priceText": "1 pp",
+   "weight": 1,
+   "text": [],
+   "proficiency": "simples",
+   "grip": "corpo-a-corpo",
+   "damage": "1d4",
+   "damageType": "concussão",
+   "critical": "20",
+   "properties": [
+    "Leve",
+    "Monge"
+   ]
+  }
+ },
+ {
+  "id": "equipment:dagger",
+  "kind": "equipment",
+  "name": "Adaga",
+  "summary": "1d4 perfurante · 2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 0.5,
+   "text": [],
+   "proficiency": "simples",
+   "grip": "corpo-a-corpo",
+   "damage": "1d4",
+   "damageType": "perfurante",
+   "critical": "20",
+   "range": "6/18 m",
+   "properties": [
+    "Acuidade",
+    "Leve",
+    "Arremesso",
+    "Monge"
+   ]
+  }
+ },
+ {
+  "id": "equipment:greatclub",
+  "kind": "equipment",
+  "name": "Clava grande",
+  "summary": "1d8 concussão · 2 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 0.2,
+   "priceText": "2 pp",
+   "weight": 5,
+   "text": [],
+   "proficiency": "simples",
+   "grip": "corpo-a-corpo",
+   "damage": "1d8",
+   "damageType": "concussão",
+   "critical": "20",
+   "properties": [
+    "Duas Mãos"
+   ]
+  }
+ },
+ {
+  "id": "equipment:handaxe",
+  "kind": "equipment",
+  "name": "Machadinha",
+  "summary": "1d6 cortante · 5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 1,
+   "text": [],
+   "proficiency": "simples",
+   "grip": "corpo-a-corpo",
+   "damage": "1d6",
+   "damageType": "cortante",
+   "critical": "20",
+   "range": "6/18 m",
+   "properties": [
+    "Leve",
+    "Arremesso",
+    "Monge"
+   ]
+  }
+ },
+ {
+  "id": "equipment:javelin",
+  "kind": "equipment",
+  "name": "Azagaia",
+  "summary": "1d6 perfurante · 5 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 0.5,
+   "priceText": "5 pp",
+   "weight": 1,
+   "text": [],
+   "proficiency": "simples",
+   "grip": "corpo-a-corpo",
+   "damage": "1d6",
+   "damageType": "perfurante",
+   "critical": "20",
+   "range": "9/36 m",
+   "properties": [
+    "Arremesso",
+    "Monge"
+   ]
+  }
+ },
+ {
+  "id": "equipment:light-hammer",
+  "kind": "equipment",
+  "name": "Martelo leve",
+  "summary": "1d4 concussão · 2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 1,
+   "text": [],
+   "proficiency": "simples",
+   "grip": "corpo-a-corpo",
+   "damage": "1d4",
+   "damageType": "concussão",
+   "critical": "20",
+   "range": "6/18 m",
+   "properties": [
+    "Leve",
+    "Arremesso",
+    "Monge"
+   ]
+  }
+ },
+ {
+  "id": "equipment:mace",
+  "kind": "equipment",
+  "name": "Maça",
+  "summary": "1d6 concussão · 5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 2,
+   "text": [],
+   "proficiency": "simples",
+   "grip": "corpo-a-corpo",
+   "damage": "1d6",
+   "damageType": "concussão",
+   "critical": "20",
+   "properties": [
+    "Monge"
+   ]
+  }
+ },
+ {
+  "id": "equipment:quarterstaff",
+  "kind": "equipment",
+  "name": "Bordão",
+  "summary": "1d6 concussão · 2 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 0.2,
+   "priceText": "2 pp",
+   "weight": 2,
+   "text": [],
+   "proficiency": "simples",
+   "grip": "corpo-a-corpo",
+   "damage": "1d6",
+   "damageType": "concussão",
+   "versatile": "1d8",
+   "critical": "20",
+   "properties": [
+    "Versátil",
+    "Monge"
+   ]
+  }
+ },
+ {
+  "id": "equipment:sickle",
+  "kind": "equipment",
+  "name": "Foice curta",
+  "summary": "1d4 cortante · 1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 1,
+   "text": [],
+   "proficiency": "simples",
+   "grip": "corpo-a-corpo",
+   "damage": "1d4",
+   "damageType": "cortante",
+   "critical": "20",
+   "properties": [
+    "Leve",
+    "Monge"
+   ]
+  }
+ },
+ {
+  "id": "equipment:spear",
+  "kind": "equipment",
+  "name": "Lança",
+  "summary": "1d6 perfurante · 1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 1.5,
+   "text": [],
+   "proficiency": "simples",
+   "grip": "corpo-a-corpo",
+   "damage": "1d6",
+   "damageType": "perfurante",
+   "versatile": "1d8",
+   "critical": "20",
+   "range": "6/18 m",
+   "properties": [
+    "Arremesso",
+    "Versátil",
+    "Monge"
+   ]
+  }
+ },
+ {
+  "id": "equipment:crossbow-light",
+  "kind": "equipment",
+  "name": "Besta leve",
+  "summary": "1d8 perfurante · 25 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 25,
+   "priceText": "25 po",
+   "weight": 2.5,
+   "text": [],
+   "proficiency": "simples",
+   "grip": "distancia",
+   "damage": "1d8",
+   "damageType": "perfurante",
+   "critical": "20",
+   "range": "24/96 m",
+   "properties": [
+    "Munição",
+    "Recarga",
+    "Duas Mãos"
+   ]
+  }
+ },
+ {
+  "id": "equipment:dart",
+  "kind": "equipment",
+  "name": "Dardo",
+  "summary": "1d4 perfurante · 5 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 0.05,
+   "priceText": "5 pc",
+   "weight": 0.1,
+   "text": [],
+   "proficiency": "simples",
+   "grip": "distancia",
+   "damage": "1d4",
+   "damageType": "perfurante",
+   "critical": "20",
+   "range": "6/18 m",
+   "properties": [
+    "Acuidade",
+    "Arremesso"
+   ]
+  }
+ },
+ {
+  "id": "equipment:shortbow",
+  "kind": "equipment",
+  "name": "Arco curto",
+  "summary": "1d6 perfurante · 25 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 25,
+   "priceText": "25 po",
+   "weight": 1,
+   "text": [],
+   "proficiency": "simples",
+   "grip": "distancia",
+   "damage": "1d6",
+   "damageType": "perfurante",
+   "critical": "20",
+   "range": "24/96 m",
+   "properties": [
+    "Munição",
+    "Duas Mãos"
+   ]
+  }
+ },
+ {
+  "id": "equipment:sling",
+  "kind": "equipment",
+  "name": "Funda",
+  "summary": "1d4 concussão · 1 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 0.1,
+   "priceText": "1 pp",
+   "weight": 0,
+   "text": [],
+   "proficiency": "simples",
+   "grip": "distancia",
+   "damage": "1d4",
+   "damageType": "concussão",
+   "critical": "20",
+   "range": "9/36 m",
+   "properties": [
+    "Munição"
+   ]
+  }
+ },
+ {
+  "id": "equipment:battleaxe",
+  "kind": "equipment",
+  "name": "Machado de batalha",
+  "summary": "1d8 cortante · 10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 2,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "corpo-a-corpo",
+   "damage": "1d8",
+   "damageType": "cortante",
+   "versatile": "1d10",
+   "critical": "20",
+   "properties": [
+    "Versátil"
+   ]
+  }
+ },
+ {
+  "id": "equipment:flail",
+  "kind": "equipment",
+  "name": "Mangual",
+  "summary": "1d8 concussão · 10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 1,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "corpo-a-corpo",
+   "damage": "1d8",
+   "damageType": "concussão",
+   "critical": "20",
+   "properties": []
+  }
+ },
+ {
+  "id": "equipment:glaive",
+  "kind": "equipment",
+  "name": "Glaive",
+  "summary": "1d10 cortante · 20 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 20,
+   "priceText": "20 po",
+   "weight": 3,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "corpo-a-corpo",
+   "damage": "1d10",
+   "damageType": "cortante",
+   "critical": "20",
+   "properties": [
+    "Pesada",
+    "Alcance",
+    "Duas Mãos"
+   ]
+  }
+ },
+ {
+  "id": "equipment:greataxe",
+  "kind": "equipment",
+  "name": "Machado grande",
+  "summary": "1d12 cortante · 30 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 30,
+   "priceText": "30 po",
+   "weight": 3.5,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "corpo-a-corpo",
+   "damage": "1d12",
+   "damageType": "cortante",
+   "critical": "20",
+   "properties": [
+    "Pesada",
+    "Duas Mãos"
+   ]
+  }
+ },
+ {
+  "id": "equipment:greatsword",
+  "kind": "equipment",
+  "name": "Espada grande",
+  "summary": "2d6 cortante · 50 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 50,
+   "priceText": "50 po",
+   "weight": 3,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "corpo-a-corpo",
+   "damage": "2d6",
+   "damageType": "cortante",
+   "critical": "20",
+   "properties": [
+    "Pesada",
+    "Duas Mãos"
+   ]
+  }
+ },
+ {
+  "id": "equipment:halberd",
+  "kind": "equipment",
+  "name": "Alabarda",
+  "summary": "1d10 cortante · 20 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 20,
+   "priceText": "20 po",
+   "weight": 3,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "corpo-a-corpo",
+   "damage": "1d10",
+   "damageType": "cortante",
+   "critical": "20",
+   "properties": [
+    "Pesada",
+    "Alcance",
+    "Duas Mãos"
+   ]
+  }
+ },
+ {
+  "id": "equipment:lance",
+  "kind": "equipment",
+  "name": "Lança de cavalaria",
+  "summary": "1d12 perfurante · 10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 3,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "corpo-a-corpo",
+   "damage": "1d12",
+   "damageType": "perfurante",
+   "critical": "20",
+   "properties": [
+    "Alcance",
+    "Especial"
+   ]
+  }
+ },
+ {
+  "id": "equipment:longsword",
+  "kind": "equipment",
+  "name": "Espada longa",
+  "summary": "1d8 cortante · 15 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 15,
+   "priceText": "15 po",
+   "weight": 1.5,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "corpo-a-corpo",
+   "damage": "1d8",
+   "damageType": "cortante",
+   "versatile": "1d10",
+   "critical": "20",
+   "properties": [
+    "Versátil"
+   ]
+  }
+ },
+ {
+  "id": "equipment:maul",
+  "kind": "equipment",
+  "name": "Marreta",
+  "summary": "2d6 concussão · 10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 5,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "corpo-a-corpo",
+   "damage": "2d6",
+   "damageType": "concussão",
+   "critical": "20",
+   "properties": [
+    "Pesada",
+    "Duas Mãos"
+   ]
+  }
+ },
+ {
+  "id": "equipment:morningstar",
+  "kind": "equipment",
+  "name": "Maça-estrela",
+  "summary": "1d8 perfurante · 15 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 15,
+   "priceText": "15 po",
+   "weight": 2,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "corpo-a-corpo",
+   "damage": "1d8",
+   "damageType": "perfurante",
+   "critical": "20",
+   "properties": []
+  }
+ },
+ {
+  "id": "equipment:pike",
+  "kind": "equipment",
+  "name": "Pique",
+  "summary": "1d10 perfurante · 5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 9,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "corpo-a-corpo",
+   "damage": "1d10",
+   "damageType": "perfurante",
+   "critical": "20",
+   "properties": [
+    "Pesada",
+    "Alcance",
+    "Duas Mãos"
+   ]
+  }
+ },
+ {
+  "id": "equipment:rapier",
+  "kind": "equipment",
+  "name": "Rapieira",
+  "summary": "1d8 perfurante · 25 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 25,
+   "priceText": "25 po",
+   "weight": 1,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "corpo-a-corpo",
+   "damage": "1d8",
+   "damageType": "perfurante",
+   "critical": "20",
+   "properties": [
+    "Acuidade"
+   ]
+  }
+ },
+ {
+  "id": "equipment:scimitar",
+  "kind": "equipment",
+  "name": "Cimitarra",
+  "summary": "1d6 cortante · 25 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 25,
+   "priceText": "25 po",
+   "weight": 1.5,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "corpo-a-corpo",
+   "damage": "1d6",
+   "damageType": "cortante",
+   "critical": "20",
+   "properties": [
+    "Acuidade",
+    "Leve"
+   ]
+  }
+ },
+ {
+  "id": "equipment:shortsword",
+  "kind": "equipment",
+  "name": "Espada curta",
+  "summary": "1d6 perfurante · 10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 1,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "corpo-a-corpo",
+   "damage": "1d6",
+   "damageType": "perfurante",
+   "critical": "20",
+   "properties": [
+    "Acuidade",
+    "Leve",
+    "Monge"
+   ]
+  }
+ },
+ {
+  "id": "equipment:trident",
+  "kind": "equipment",
+  "name": "Tridente",
+  "summary": "1d6 perfurante · 5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 2,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "corpo-a-corpo",
+   "damage": "1d6",
+   "damageType": "perfurante",
+   "versatile": "1d8",
+   "critical": "20",
+   "range": "6/18 m",
+   "properties": [
+    "Arremesso",
+    "Versátil"
+   ]
+  }
+ },
+ {
+  "id": "equipment:war-pick",
+  "kind": "equipment",
+  "name": "Picareta de guerra",
+  "summary": "1d8 perfurante · 5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 1,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "corpo-a-corpo",
+   "damage": "1d8",
+   "damageType": "perfurante",
+   "critical": "20",
+   "properties": []
+  }
+ },
+ {
+  "id": "equipment:warhammer",
+  "kind": "equipment",
+  "name": "Martelo de guerra",
+  "summary": "1d8 concussão · 15 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 15,
+   "priceText": "15 po",
+   "weight": 1,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "corpo-a-corpo",
+   "damage": "1d8",
+   "damageType": "concussão",
+   "versatile": "1d10",
+   "critical": "20",
+   "properties": [
+    "Versátil"
+   ]
+  }
+ },
+ {
+  "id": "equipment:whip",
+  "kind": "equipment",
+  "name": "Chicote",
+  "summary": "1d4 cortante · 2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 1.5,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "corpo-a-corpo",
+   "damage": "1d4",
+   "damageType": "cortante",
+   "critical": "20",
+   "properties": [
+    "Acuidade",
+    "Alcance"
+   ]
+  }
+ },
+ {
+  "id": "equipment:blowgun",
+  "kind": "equipment",
+  "name": "Zarabatana",
+  "summary": "1 perfurante · 10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 0.5,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "distancia",
+   "damage": "1",
+   "damageType": "perfurante",
+   "critical": "20",
+   "range": "7,5/30 m",
+   "properties": [
+    "Munição",
+    "Recarga"
+   ]
+  }
+ },
+ {
+  "id": "equipment:crossbow-hand",
+  "kind": "equipment",
+  "name": "Besta de mão",
+  "summary": "1d6 perfurante · 75 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 75,
+   "priceText": "75 po",
+   "weight": 1.5,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "distancia",
+   "damage": "1d6",
+   "damageType": "perfurante",
+   "critical": "20",
+   "range": "9/36 m",
+   "properties": [
+    "Munição",
+    "Leve",
+    "Recarga"
+   ]
+  }
+ },
+ {
+  "id": "equipment:crossbow-heavy",
+  "kind": "equipment",
+  "name": "Besta pesada",
+  "summary": "1d10 perfurante · 50 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 50,
+   "priceText": "50 po",
+   "weight": 9,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "distancia",
+   "damage": "1d10",
+   "damageType": "perfurante",
+   "critical": "20",
+   "range": "30/120 m",
+   "properties": [
+    "Munição",
+    "Pesada",
+    "Recarga",
+    "Duas Mãos"
+   ]
+  }
+ },
+ {
+  "id": "equipment:longbow",
+  "kind": "equipment",
+  "name": "Arco longo",
+  "summary": "1d8 perfurante · 50 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 50,
+   "priceText": "50 po",
+   "weight": 1,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "distancia",
+   "damage": "1d8",
+   "damageType": "perfurante",
+   "critical": "20",
+   "range": "45/180 m",
+   "properties": [
+    "Munição",
+    "Pesada",
+    "Duas Mãos"
+   ]
+  }
+ },
+ {
+  "id": "equipment:net",
+  "kind": "equipment",
+  "name": "Rede",
+  "summary": "— · 1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "arma",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 1.5,
+   "text": [],
+   "proficiency": "marciais",
+   "grip": "distancia",
+   "critical": "20",
+   "range": "1,5/4,5 m",
+   "properties": [
+    "Arremesso",
+    "Especial"
+   ]
+  }
+ },
+ {
+  "id": "equipment:padded-armor",
+  "kind": "equipment",
+  "name": "Armadura acolchoada",
+  "summary": "CA 11 + Des · 5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "armadura",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 4,
+   "text": [],
+   "armorType": "leve",
+   "ac": 11,
+   "dexBonus": true,
+   "stealthDisadvantage": true
+  }
+ },
+ {
+  "id": "equipment:leather-armor",
+  "kind": "equipment",
+  "name": "Armadura de couro",
+  "summary": "CA 11 + Des · 10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "armadura",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 5,
+   "text": [],
+   "armorType": "leve",
+   "ac": 11,
+   "dexBonus": true,
+   "stealthDisadvantage": false
+  }
+ },
+ {
+  "id": "equipment:studded-leather-armor",
+  "kind": "equipment",
+  "name": "Armadura de couro batido",
+  "summary": "CA 12 + Des · 45 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "armadura",
+   "price": 45,
+   "priceText": "45 po",
+   "weight": 6.5,
+   "text": [],
+   "armorType": "leve",
+   "ac": 12,
+   "dexBonus": true,
+   "stealthDisadvantage": false
+  }
+ },
+ {
+  "id": "equipment:hide-armor",
+  "kind": "equipment",
+  "name": "Armadura de peles",
+  "summary": "CA 12 + Des (máx. 2) · 10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "armadura",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 6,
+   "text": [],
+   "armorType": "media",
+   "ac": 12,
+   "dexBonus": true,
+   "maxDex": 2,
+   "stealthDisadvantage": false
+  }
+ },
+ {
+  "id": "equipment:chain-shirt",
+  "kind": "equipment",
+  "name": "Camisão de malha",
+  "summary": "CA 13 + Des (máx. 2) · 50 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "armadura",
+   "price": 50,
+   "priceText": "50 po",
+   "weight": 10,
+   "text": [],
+   "armorType": "media",
+   "ac": 13,
+   "dexBonus": true,
+   "maxDex": 2,
+   "stealthDisadvantage": false
+  }
+ },
+ {
+  "id": "equipment:scale-mail",
+  "kind": "equipment",
+  "name": "Brunea",
+  "summary": "CA 14 + Des (máx. 2) · 50 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "armadura",
+   "price": 50,
+   "priceText": "50 po",
+   "weight": 22.5,
+   "text": [],
+   "armorType": "media",
+   "ac": 14,
+   "dexBonus": true,
+   "maxDex": 2,
+   "stealthDisadvantage": true
+  }
+ },
+ {
+  "id": "equipment:breastplate",
+  "kind": "equipment",
+  "name": "Peitoral",
+  "summary": "CA 14 + Des (máx. 2) · 400 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "armadura",
+   "price": 400,
+   "priceText": "400 po",
+   "weight": 10,
+   "text": [],
+   "armorType": "media",
+   "ac": 14,
+   "dexBonus": true,
+   "maxDex": 2,
+   "stealthDisadvantage": false
+  }
+ },
+ {
+  "id": "equipment:half-plate-armor",
+  "kind": "equipment",
+  "name": "Meia armadura",
+  "summary": "CA 15 + Des (máx. 2) · 750 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "armadura",
+   "price": 750,
+   "priceText": "750 po",
+   "weight": 20,
+   "text": [],
+   "armorType": "media",
+   "ac": 15,
+   "dexBonus": true,
+   "maxDex": 2,
+   "stealthDisadvantage": true
+  }
+ },
+ {
+  "id": "equipment:ring-mail",
+  "kind": "equipment",
+  "name": "Cota de anéis",
+  "summary": "CA 14 · 30 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "armadura",
+   "price": 30,
+   "priceText": "30 po",
+   "weight": 20,
+   "text": [],
+   "armorType": "pesada",
+   "ac": 14,
+   "dexBonus": false,
+   "stealthDisadvantage": true
+  }
+ },
+ {
+  "id": "equipment:chain-mail",
+  "kind": "equipment",
+  "name": "Cota de malha",
+  "summary": "CA 16 · 75 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "armadura",
+   "price": 75,
+   "priceText": "75 po",
+   "weight": 27.5,
+   "text": [],
+   "armorType": "pesada",
+   "ac": 16,
+   "dexBonus": false,
+   "strMin": 13,
+   "stealthDisadvantage": true
+  }
+ },
+ {
+  "id": "equipment:splint-armor",
+  "kind": "equipment",
+  "name": "Armadura de talas",
+  "summary": "CA 17 · 200 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "armadura",
+   "price": 200,
+   "priceText": "200 po",
+   "weight": 30,
+   "text": [],
+   "armorType": "pesada",
+   "ac": 17,
+   "dexBonus": false,
+   "strMin": 15,
+   "stealthDisadvantage": true
+  }
+ },
+ {
+  "id": "equipment:plate-armor",
+  "kind": "equipment",
+  "name": "Armadura de placas",
+  "summary": "CA 18 · 1500 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "armadura",
+   "price": 1500,
+   "priceText": "1500 po",
+   "weight": 32.5,
+   "text": [],
+   "armorType": "pesada",
+   "ac": 18,
+   "dexBonus": false,
+   "strMin": 15,
+   "stealthDisadvantage": true
+  }
+ },
+ {
+  "id": "equipment:shield",
+  "kind": "equipment",
+  "name": "Escudo",
+  "summary": "+2 na CA · 10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "escudo",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 3,
+   "text": [],
+   "ac": 2
+  }
+ },
+ {
+  "id": "equipment:abacus",
+  "kind": "equipment",
+  "name": "Ábaco",
+  "summary": "2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 1,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:acid-vial",
+  "kind": "equipment",
+  "name": "Ácido (frasco)",
+  "summary": "25 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 25,
+   "priceText": "25 po",
+   "weight": 0.5,
+   "text": [
+    "Com uma ação, você pode espirrar o conteúdo deste frasco numa criatura a até 1,5 metro de você ou arremessá-lo a até 6 metros, quebrando-o no impacto. Em ambos os casos, faça um ataque à distância contra uma criatura ou objeto, tratando o ácido como arma improvisada.",
+    "Se acertar, o alvo sofre 2d6 de dano de ácido."
+   ]
+  }
+ },
+ {
+  "id": "equipment:alchemists-fire-flask",
+  "kind": "equipment",
+  "name": "Fogo alquímico (frasco)",
+  "summary": "50 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 50,
+   "priceText": "50 po",
+   "weight": 0.5,
+   "text": [
+    "Este fluido grudento e adesivo pega fogo quando exposto ao ar.",
+    "Com uma ação, você pode arremessar este frasco a até 6 metros, quebrando-o no impacto. Faça um ataque à distância contra uma criatura ou objeto, tratando o fogo alquímico como arma improvisada.",
+    "Se acertar, o alvo sofre 1d4 de dano de fogo no início de cada um de seus turnos. Uma criatura pode encerrar esse dano usando sua ação para fazer um teste de Destreza CD 10 e apagar as chamas."
+   ]
+  }
+ },
+ {
+  "id": "equipment:alms-box",
+  "kind": "equipment",
+  "name": "Caixa de esmolas",
+  "summary": "0 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0,
+   "priceText": "0 pc",
+   "weight": 0,
+   "text": [
+    "Uma pequena caixa para esmolas, comum no pacote de sacerdote."
+   ]
+  }
+ },
+ {
+  "id": "equipment:arrow",
+  "kind": "equipment",
+  "name": "Flecha",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "municao",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 0.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:block-of-incense",
+  "kind": "equipment",
+  "name": "Bloco de incenso",
+  "summary": "0 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0,
+   "priceText": "0 pc",
+   "weight": 0,
+   "text": [
+    "Um bloco de incenso, comum no pacote de sacerdote."
+   ]
+  }
+ },
+ {
+  "id": "equipment:blowgun-needle",
+  "kind": "equipment",
+  "name": "Agulha de zarabatana",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "municao",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 0.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:censer",
+  "kind": "equipment",
+  "name": "Incensário",
+  "summary": "0 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0,
+   "priceText": "0 pc",
+   "weight": 0,
+   "text": [
+    "Um incensário, comum no pacote de sacerdote."
+   ]
+  }
+ },
+ {
+  "id": "equipment:crossbow-bolt",
+  "kind": "equipment",
+  "name": "Virote",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "municao",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 0.8,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:sling-bullet",
+  "kind": "equipment",
+  "name": "Bala de funda",
+  "summary": "4 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "municao",
+   "price": 0.04,
+   "priceText": "4 pc",
+   "weight": 0.8,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:amulet",
+  "kind": "equipment",
+  "name": "Amuleto",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 0.5,
+   "text": [
+    "Um símbolo sagrado é uma representação de um deus ou panteão. Pode ser um amuleto com um símbolo que representa uma divindade, o mesmo símbolo gravado ou incrustado com cuidado como emblema num escudo, ou uma caixinha que guarda um fragmento de uma relíquia sagrada.",
+    "O Apêndice B lista os símbolos normalmente associados a muitos deuses do multiverso. Um clérigo ou paladino pode usar um símbolo sagrado como foco de conjuração. Para isso, precisa segurá-lo na mão, usá-lo à vista ou carregá-lo num escudo."
+   ]
+  }
+ },
+ {
+  "id": "equipment:antitoxin-vial",
+  "kind": "equipment",
+  "name": "Antitoxina (frasco)",
+  "summary": "50 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 50,
+   "priceText": "50 po",
+   "weight": 0,
+   "text": [
+    "Uma criatura que bebe este frasco de líquido ganha vantagem em testes de resistência contra veneno por 1 hora. Não traz benefício a mortos-vivos nem a constructos."
+   ]
+  }
+ },
+ {
+  "id": "equipment:crystal",
+  "kind": "equipment",
+  "name": "Cristal",
+  "summary": "10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 0.5,
+   "text": [
+    "Um foco arcano é um item especial (um orbe, um cristal, uma haste, um cajado feito sob medida, uma vareta de madeira parecida com uma varinha ou algo semelhante) projetado para canalizar o poder de magias arcanas. Um feiticeiro, bruxo ou mago pode usar um item assim como foco de conjuração."
+   ]
+  }
+ },
+ {
+  "id": "equipment:orb",
+  "kind": "equipment",
+  "name": "Orbe",
+  "summary": "20 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 20,
+   "priceText": "20 po",
+   "weight": 1.5,
+   "text": [
+    "Um foco arcano é um item especial (um orbe, um cristal, uma haste, um cajado feito sob medida, uma vareta de madeira parecida com uma varinha ou algo semelhante) projetado para canalizar o poder de magias arcanas. Um feiticeiro, bruxo ou mago pode usar um item assim como foco de conjuração."
+   ]
+  }
+ },
+ {
+  "id": "equipment:rod",
+  "kind": "equipment",
+  "name": "Haste",
+  "summary": "10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 1,
+   "text": [
+    "Um foco arcano é um item especial (um orbe, um cristal, uma haste, um cajado feito sob medida, uma vareta de madeira parecida com uma varinha ou algo semelhante) projetado para canalizar o poder de magias arcanas. Um feiticeiro, bruxo ou mago pode usar um item assim como foco de conjuração."
+   ]
+  }
+ },
+ {
+  "id": "equipment:staff",
+  "kind": "equipment",
+  "name": "Cajado",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 2,
+   "text": [
+    "Um foco arcano é um item especial (um orbe, um cristal, uma haste, um cajado feito sob medida, uma vareta de madeira parecida com uma varinha ou algo semelhante) projetado para canalizar o poder de magias arcanas. Um feiticeiro, bruxo ou mago pode usar um item assim como foco de conjuração."
+   ]
+  }
+ },
+ {
+  "id": "equipment:wand",
+  "kind": "equipment",
+  "name": "Varinha",
+  "summary": "10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 0.5,
+   "text": [
+    "Um foco arcano é um item especial (um orbe, um cristal, uma haste, um cajado feito sob medida, uma vareta de madeira parecida com uma varinha ou algo semelhante) projetado para canalizar o poder de magias arcanas. Um feiticeiro, bruxo ou mago pode usar um item assim como foco de conjuração."
+   ]
+  }
+ },
+ {
+  "id": "equipment:backpack",
+  "kind": "equipment",
+  "name": "Mochila",
+  "summary": "2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 2.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:ball-bearings-bag-of-1000",
+  "kind": "equipment",
+  "name": "Esferas de metal (saco com 1.000)",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 1,
+   "text": [
+    "Com uma ação, você pode espalhar essas bolinhas de metal da bolsa para cobrir uma área quadrada e plana de 3 metros de lado.",
+    "Uma criatura que atravessa a área coberta deve passar num teste de resistência de Destreza CD 10 ou cair.",
+    "Uma criatura que atravessa a área com metade do deslocamento não precisa fazer o teste."
+   ]
+  }
+ },
+ {
+  "id": "equipment:barrel",
+  "kind": "equipment",
+  "name": "Barril",
+  "summary": "2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 35,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:basket",
+  "kind": "equipment",
+  "name": "Cesto",
+  "summary": "4 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.4,
+   "priceText": "4 pp",
+   "weight": 1,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:bedroll",
+  "kind": "equipment",
+  "name": "Saco de dormir",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 3.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:bell",
+  "kind": "equipment",
+  "name": "Sino",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 0,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:blanket",
+  "kind": "equipment",
+  "name": "Cobertor",
+  "summary": "5 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.5,
+   "priceText": "5 pp",
+   "weight": 1.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:block-and-tackle",
+  "kind": "equipment",
+  "name": "Talha",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 2.5,
+   "text": [
+    "Um conjunto de roldanas com um cabo passado por elas e um gancho para prender objetos. A talha permite içar até quatro vezes o peso que você normalmente consegue levantar."
+   ]
+  }
+ },
+ {
+  "id": "equipment:book",
+  "kind": "equipment",
+  "name": "Livro",
+  "summary": "25 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 25,
+   "priceText": "25 po",
+   "weight": 2.5,
+   "text": [
+    "Um livro pode conter poesia, relatos históricos, informações sobre um campo de conhecimento, diagramas e anotações sobre engenhocas gnômicas ou quase qualquer coisa que se possa representar com texto ou imagens. Um livro de magias é um grimório (descrito mais adiante nesta seção)."
+   ]
+  }
+ },
+ {
+  "id": "equipment:bottle-glass",
+  "kind": "equipment",
+  "name": "Garrafa de vidro",
+  "summary": "2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 1,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:bucket",
+  "kind": "equipment",
+  "name": "Balde",
+  "summary": "5 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.05,
+   "priceText": "5 pc",
+   "weight": 1,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:caltrops",
+  "kind": "equipment",
+  "name": "Estrepes",
+  "summary": "5 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.05,
+   "priceText": "5 pc",
+   "weight": 1,
+   "text": [
+    "Com uma ação, você pode espalhar um saco de estrepes para cobrir uma área quadrada de 1,5 metro de lado.",
+    "Qualquer criatura que entra na área deve passar num teste de resistência de Destreza CD 15 ou parar de se mover neste turno e sofrer 1 de dano perfurante.",
+    "Sofrer esse dano reduz o deslocamento de caminhada da criatura em 3 metros até ela recuperar pelo menos 1 ponto de vida.",
+    "Uma criatura que atravessa a área com metade do deslocamento não precisa fazer o teste."
+   ]
+  }
+ },
+ {
+  "id": "equipment:candle",
+  "kind": "equipment",
+  "name": "Vela",
+  "summary": "1 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.01,
+   "priceText": "1 pc",
+   "weight": 0,
+   "text": [
+    "Por 1 hora, uma vela emite luz plena num raio de 1,5 metro e penumbra por mais 1,5 metro."
+   ]
+  }
+ },
+ {
+  "id": "equipment:case-crossbow-bolt",
+  "kind": "equipment",
+  "name": "Estojo de virotes",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 0.5,
+   "text": [
+    "Este estojo de madeira comporta até vinte virotes."
+   ]
+  }
+ },
+ {
+  "id": "equipment:case-map-or-scroll",
+  "kind": "equipment",
+  "name": "Estojo para mapas ou pergaminhos",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 0.5,
+   "text": [
+    "Este estojo cilíndrico de couro comporta até dez folhas de papel ou cinco folhas de pergaminho enroladas."
+   ]
+  }
+ },
+ {
+  "id": "equipment:chain-10-feet",
+  "kind": "equipment",
+  "name": "Corrente (3 metros)",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 5,
+   "text": [
+    "Uma corrente tem 10 pontos de vida. Pode ser rompida com um teste de Força CD 20 bem-sucedido."
+   ]
+  }
+ },
+ {
+  "id": "equipment:chalk-1-piece",
+  "kind": "equipment",
+  "name": "Giz (1 pedaço)",
+  "summary": "1 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.01,
+   "priceText": "1 pc",
+   "weight": 0,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:chest",
+  "kind": "equipment",
+  "name": "Baú",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 12.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:clothes-common",
+  "kind": "equipment",
+  "name": "Roupas comuns",
+  "summary": "5 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.5,
+   "priceText": "5 pp",
+   "weight": 1.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:clothes-costume",
+  "kind": "equipment",
+  "name": "Fantasia",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 2,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:clothes-fine",
+  "kind": "equipment",
+  "name": "Roupas finas",
+  "summary": "15 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 15,
+   "priceText": "15 po",
+   "weight": 3,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:clothes-travelers",
+  "kind": "equipment",
+  "name": "Roupas de viajante",
+  "summary": "2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 2,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:component-pouch",
+  "kind": "equipment",
+  "name": "Bolsa de componentes",
+  "summary": "25 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 25,
+   "priceText": "25 po",
+   "weight": 1,
+   "text": [
+    "Uma bolsa de componentes é uma pequena bolsa de cinto, de couro e à prova d'água, com compartimentos para guardar todos os componentes materiais e outros itens especiais necessários para lançar suas magias, exceto os componentes com custo específico (indicado na descrição da magia)."
+   ]
+  }
+ },
+ {
+  "id": "equipment:crowbar",
+  "kind": "equipment",
+  "name": "Pé de cabra",
+  "summary": "2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 2.5,
+   "text": [
+    "Usar um pé de cabra concede vantagem em testes de Força em que a alavanca possa ser aplicada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:sprig-of-mistletoe",
+  "kind": "equipment",
+  "name": "Ramo de visco",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 0,
+   "text": [
+    "Um foco druídico pode ser um ramo de visco ou azevinho, uma varinha ou cetro de teixo ou outra madeira especial, um cajado tirado inteiro de uma árvore viva ou um totem com penas, pelos, ossos e dentes de animais sagrados. Um druida pode usar um objeto assim como foco de conjuração."
+   ]
+  }
+ },
+ {
+  "id": "equipment:totem",
+  "kind": "equipment",
+  "name": "Totem",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 0,
+   "text": [
+    "Um foco druídico pode ser um ramo de visco ou azevinho, uma varinha ou cetro de teixo ou outra madeira especial, um cajado tirado inteiro de uma árvore viva ou um totem com penas, pelos, ossos e dentes de animais sagrados. Um druida pode usar um objeto assim como foco de conjuração."
+   ]
+  }
+ },
+ {
+  "id": "equipment:wooden-staff",
+  "kind": "equipment",
+  "name": "Cajado de madeira",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 2,
+   "text": [
+    "Um foco druídico pode ser um ramo de visco ou azevinho, uma varinha ou cetro de teixo ou outra madeira especial, um cajado tirado inteiro de uma árvore viva ou um totem com penas, pelos, ossos e dentes de animais sagrados. Um druida pode usar um objeto assim como foco de conjuração."
+   ]
+  }
+ },
+ {
+  "id": "equipment:yew-wand",
+  "kind": "equipment",
+  "name": "Varinha de teixo",
+  "summary": "10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 0.5,
+   "text": [
+    "Um foco druídico pode ser um ramo de visco ou azevinho, uma varinha ou cetro de teixo ou outra madeira especial, um cajado tirado inteiro de uma árvore viva ou um totem com penas, pelos, ossos e dentes de animais sagrados. Um druida pode usar um objeto assim como foco de conjuração."
+   ]
+  }
+ },
+ {
+  "id": "equipment:emblem",
+  "kind": "equipment",
+  "name": "Emblema",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 0,
+   "text": [
+    "Um símbolo sagrado é uma representação de um deus ou panteão. Pode ser um amuleto com um símbolo que representa uma divindade, o mesmo símbolo gravado ou incrustado com cuidado como emblema num escudo, ou uma caixinha que guarda um fragmento de uma relíquia sagrada.",
+    "O Apêndice B lista os símbolos normalmente associados a muitos deuses do multiverso. Um clérigo ou paladino pode usar um símbolo sagrado como foco de conjuração. Para isso, precisa segurá-lo na mão, usá-lo à vista ou carregá-lo num escudo."
+   ]
+  }
+ },
+ {
+  "id": "equipment:fishing-tackle",
+  "kind": "equipment",
+  "name": "Equipamento de pesca",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 2,
+   "text": [
+    "Este kit inclui uma vara de madeira, linha de seda, boias de cortiça, anzóis de aço, chumbadas, iscas de veludo e uma rede estreita."
+   ]
+  }
+ },
+ {
+  "id": "equipment:flask-or-tankard",
+  "kind": "equipment",
+  "name": "Cantil ou caneca",
+  "summary": "2 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.02,
+   "priceText": "2 pc",
+   "weight": 0.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:grappling-hook",
+  "kind": "equipment",
+  "name": "Gancho de escalada",
+  "summary": "2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 2,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:hammer",
+  "kind": "equipment",
+  "name": "Martelo",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 1.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:hammer-sledge",
+  "kind": "equipment",
+  "name": "Marreta de ferreiro",
+  "summary": "2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:holy-water-flask",
+  "kind": "equipment",
+  "name": "Água benta (frasco)",
+  "summary": "25 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 25,
+   "priceText": "25 po",
+   "weight": 0.5,
+   "text": [
+    "Com uma ação, você pode espirrar o conteúdo deste frasco numa criatura a até 1,5 metro de você ou arremessá-lo a até 6 metros, quebrando-o no impacto. Em ambos os casos, faça um ataque à distância contra uma criatura, tratando a água benta como arma improvisada.",
+    "Se o alvo for um ínfero ou morto-vivo, sofre 2d6 de dano radiante.",
+    "Um clérigo ou paladino pode criar água benta realizando um ritual especial.",
+    "O ritual leva 1 hora, consome 25 po de prata em pó e exige que o conjurador gaste um espaço de magia de 1º nível."
+   ]
+  }
+ },
+ {
+  "id": "equipment:hourglass",
+  "kind": "equipment",
+  "name": "Ampulheta",
+  "summary": "25 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 25,
+   "priceText": "25 po",
+   "weight": 0.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:hunting-trap",
+  "kind": "equipment",
+  "name": "Armadilha de caça",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 12.5,
+   "text": [
+    "Quando você usa sua ação para armá-la, esta armadilha forma um anel de aço dentado que se fecha quando uma criatura pisa na placa de pressão no centro. A armadilha fica presa por uma corrente pesada a um objeto imóvel, como uma árvore ou uma estaca cravada no chão.",
+    "Uma criatura que pisa na placa deve passar num teste de resistência de Destreza CD 13 ou sofrer 1d4 de dano perfurante e parar de se mover. Depois disso, até se soltar, o movimento dela fica limitado ao comprimento da corrente (normalmente 90 centímetros).",
+    "Uma criatura pode usar sua ação para fazer um teste de Força CD 13; se passar, liberta a si mesma ou outra criatura ao seu alcance. Cada teste fracassado causa 1 de dano perfurante à criatura presa."
+   ]
+  }
+ },
+ {
+  "id": "equipment:ink-1-ounce-bottle",
+  "kind": "equipment",
+  "name": "Tinta (frasco de 30 ml)",
+  "summary": "10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 0,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:ink-pen",
+  "kind": "equipment",
+  "name": "Pena de escrever",
+  "summary": "2 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.02,
+   "priceText": "2 pc",
+   "weight": 0,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:jug-or-pitcher",
+  "kind": "equipment",
+  "name": "Jarro ou moringa",
+  "summary": "2 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.02,
+   "priceText": "2 pc",
+   "weight": 2,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:climbers-kit",
+  "kind": "equipment",
+  "name": "Kit de escalada",
+  "summary": "25 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 25,
+   "priceText": "25 po",
+   "weight": 6,
+   "text": [
+    "Um kit de escalada inclui pitons especiais, biqueiras, luvas e um arnês. Você pode usar o kit com uma ação para se ancorar; quando faz isso, não pode cair mais de 7,5 metros a partir do ponto de ancoragem, nem escalar mais de 7,5 metros para longe dele sem desfazer a ancoragem."
+   ]
+  }
+ },
+ {
+  "id": "equipment:disguise-kit",
+  "kind": "equipment",
+  "name": "Kit de disfarce",
+  "summary": "25 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 25,
+   "priceText": "25 po",
+   "weight": 1.5,
+   "text": [
+    "Esta bolsa de cosméticos, tintura de cabelo e pequenos adereços permite criar disfarces que mudam sua aparência física. Proficiência com este kit permite somar seu bônus de proficiência a qualquer teste de habilidade para criar um disfarce visual."
+   ]
+  }
+ },
+ {
+  "id": "equipment:forgery-kit",
+  "kind": "equipment",
+  "name": "Kit de falsificação",
+  "summary": "15 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 15,
+   "priceText": "15 po",
+   "weight": 2.5,
+   "text": [
+    "Esta caixinha contém vários papéis e pergaminhos, penas e tintas, selos e lacre, folhas de ouro e prata e outros materiais necessários para falsificar documentos de forma convincente. Proficiência com este kit permite somar seu bônus de proficiência a qualquer teste de habilidade para falsificar fisicamente um documento."
+   ]
+  }
+ },
+ {
+  "id": "equipment:herbalism-kit",
+  "kind": "equipment",
+  "name": "Kit de herbalismo",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 1.5,
+   "text": [
+    "Este kit contém vários instrumentos, como tesouras de poda, almofariz e pilão, além de bolsas e frascos usados por herbalistas para criar remédios e poções. Proficiência com este kit permite somar seu bônus de proficiência a qualquer teste de habilidade para identificar ou aplicar ervas. A proficiência também é exigida para criar antitoxina e poções de cura."
+   ]
+  }
+ },
+ {
+  "id": "equipment:healers-kit",
+  "kind": "equipment",
+  "name": "Kit de curandeiro",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 1.5,
+   "text": [
+    "Este kit é uma bolsa de couro com ataduras, pomadas e talas. Tem dez usos. Com uma ação, você pode gastar um uso para estabilizar uma criatura com 0 pontos de vida, sem precisar fazer um teste de Sabedoria (Medicina)."
+   ]
+  }
+ },
+ {
+  "id": "equipment:mess-kit",
+  "kind": "equipment",
+  "name": "Kit de refeição",
+  "summary": "2 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.2,
+   "priceText": "2 pp",
+   "weight": 0.5,
+   "text": [
+    "Esta caixa de lata contém uma caneca e talheres simples. A caixa se fecha, e um dos lados pode ser usado como panela e o outro como prato ou tigela rasa."
+   ]
+  }
+ },
+ {
+  "id": "equipment:poisoners-kit",
+  "kind": "equipment",
+  "name": "Kit de envenenador",
+  "summary": "50 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 50,
+   "priceText": "50 po",
+   "weight": 1,
+   "text": [
+    "Um kit de envenenador inclui os frascos, substâncias químicas e outros equipamentos necessários para criar venenos. Proficiência com este kit permite somar seu bônus de proficiência a qualquer teste de habilidade para fabricar ou usar venenos."
+   ]
+  }
+ },
+ {
+  "id": "equipment:ladder-10-foot",
+  "kind": "equipment",
+  "name": "Escada (3 metros)",
+  "summary": "1 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.1,
+   "priceText": "1 pp",
+   "weight": 12.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:lamp",
+  "kind": "equipment",
+  "name": "Lamparina",
+  "summary": "5 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.5,
+   "priceText": "5 pp",
+   "weight": 0.5,
+   "text": [
+    "Uma lamparina emite luz plena num raio de 4,5 metros e penumbra por mais 9 metros. Acesa, queima por 6 horas com um frasco (meio litro) de óleo."
+   ]
+  }
+ },
+ {
+  "id": "equipment:lantern-bullseye",
+  "kind": "equipment",
+  "name": "Lanterna focada",
+  "summary": "10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 1,
+   "text": [
+    "Uma lanterna focada emite luz plena num cone de 18 metros e penumbra por mais 18 metros. Acesa, queima por 6 horas com um frasco (meio litro) de óleo."
+   ]
+  }
+ },
+ {
+  "id": "equipment:lantern-hooded",
+  "kind": "equipment",
+  "name": "Lanterna com anteparo",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 1,
+   "text": [
+    "Uma lanterna com anteparo emite luz plena num raio de 9 metros e penumbra por mais 9 metros. Acesa, queima por 6 horas com um frasco (meio litro) de óleo. Com uma ação, você pode baixar o anteparo, reduzindo a luz a penumbra num raio de 1,5 metro."
+   ]
+  }
+ },
+ {
+  "id": "equipment:little-bag-of-sand",
+  "kind": "equipment",
+  "name": "Saquinho de areia",
+  "summary": "0 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0,
+   "priceText": "0 pc",
+   "weight": 0,
+   "text": [
+    "Um saquinho de areia, comum no pacote de estudioso."
+   ]
+  }
+ },
+ {
+  "id": "equipment:lock",
+  "kind": "equipment",
+  "name": "Fechadura",
+  "summary": "10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 0.5,
+   "text": [
+    "A fechadura vem com uma chave. Sem a chave, uma criatura proficiente com ferramentas de ladrão pode abri-la com um teste de Destreza CD 15 bem-sucedido. O Mestre pode decidir que existem fechaduras melhores por preços mais altos."
+   ]
+  }
+ },
+ {
+  "id": "equipment:magnifying-glass",
+  "kind": "equipment",
+  "name": "Lupa",
+  "summary": "100 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 100,
+   "priceText": "100 po",
+   "weight": 0,
+   "text": [
+    "Esta lente permite ver objetos pequenos de perto. Também serve para substituir pederneira e fuzil ao acender fogo. Acender fogo com uma lupa exige luz tão forte quanto a do sol para focar, material inflamável e cerca de 5 minutos para pegar fogo.",
+    "Uma lupa concede vantagem em qualquer teste de habilidade para avaliar ou examinar um item pequeno ou muito detalhado."
+   ]
+  }
+ },
+ {
+  "id": "equipment:manacles",
+  "kind": "equipment",
+  "name": "Algemas",
+  "summary": "2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 3,
+   "text": [
+    "Estas amarras de metal prendem uma criatura Pequena ou Média. Escapar delas exige um teste de Destreza CD 20 bem-sucedido. Quebrá-las exige um teste de Força CD 20 bem-sucedido.",
+    "Cada par de algemas vem com uma chave. Sem a chave, uma criatura proficiente com ferramentas de ladrão pode abrir a fechadura com um teste de Destreza CD 15 bem-sucedido. Algemas têm 15 pontos de vida."
+   ]
+  }
+ },
+ {
+  "id": "equipment:mirror-steel",
+  "kind": "equipment",
+  "name": "Espelho de aço",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 0.3,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:oil-flask",
+  "kind": "equipment",
+  "name": "Óleo (frasco)",
+  "summary": "1 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.1,
+   "priceText": "1 pp",
+   "weight": 0.5,
+   "text": [
+    "O óleo costuma vir num frasco de barro de meio litro.",
+    "Com uma ação, você pode espirrar o óleo deste frasco numa criatura a até 1,5 metro de você ou arremessá-lo a até 6 metros, quebrando-o no impacto. Faça um ataque à distância contra uma criatura ou objeto, tratando o óleo como arma improvisada.",
+    "Se acertar, o alvo fica coberto de óleo. Se ele sofrer qualquer dano de fogo antes de o óleo secar (depois de 1 minuto), sofre 5 de dano de fogo adicional do óleo em chamas.",
+    "Você também pode derramar um frasco de óleo no chão para cobrir uma área quadrada de 1,5 metro, desde que a superfície seja plana.",
+    "Se for aceso, o óleo queima por 2 rodadas e causa 5 de dano de fogo a qualquer criatura que entre na área ou termine o turno nela. Uma criatura só pode sofrer esse dano uma vez por turno."
+   ]
+  }
+ },
+ {
+  "id": "equipment:paper-one-sheet",
+  "kind": "equipment",
+  "name": "Papel (uma folha)",
+  "summary": "2 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.2,
+   "priceText": "2 pp",
+   "weight": 0,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:parchment-one-sheet",
+  "kind": "equipment",
+  "name": "Pergaminho (uma folha)",
+  "summary": "1 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.1,
+   "priceText": "1 pp",
+   "weight": 0,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:perfume-vial",
+  "kind": "equipment",
+  "name": "Perfume (frasco)",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 0,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:pick-miners",
+  "kind": "equipment",
+  "name": "Picareta de minerador",
+  "summary": "2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:piton",
+  "kind": "equipment",
+  "name": "Piton",
+  "summary": "5 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.05,
+   "priceText": "5 pc",
+   "weight": 0.1,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:poison-basic-vial",
+  "kind": "equipment",
+  "name": "Veneno básico (frasco)",
+  "summary": "100 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 100,
+   "priceText": "100 po",
+   "weight": 0,
+   "text": [
+    "Você pode usar o veneno deste frasco para cobrir uma arma cortante ou perfurante ou até três munições. Aplicar o veneno leva uma ação. Uma criatura atingida pela arma ou munição envenenada deve fazer um teste de resistência de Constituição CD 10 ou sofrer 1d4 de dano de veneno. Depois de aplicado, o veneno mantém o efeito por 1 minuto antes de secar."
+   ]
+  }
+ },
+ {
+  "id": "equipment:pole-10-foot",
+  "kind": "equipment",
+  "name": "Vara (3 metros)",
+  "summary": "5 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.05,
+   "priceText": "5 pc",
+   "weight": 3.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:pot-iron",
+  "kind": "equipment",
+  "name": "Panela de ferro",
+  "summary": "2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:pouch",
+  "kind": "equipment",
+  "name": "Bolsa",
+  "summary": "5 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.5,
+   "priceText": "5 pp",
+   "weight": 0.5,
+   "text": [
+    "Uma bolsa de pano ou couro comporta até 20 balas de funda ou 50 agulhas de zarabatana, entre outras coisas. Uma bolsa com compartimentos para guardar componentes de magia se chama bolsa de componentes (descrita antes nesta seção)."
+   ]
+  }
+ },
+ {
+  "id": "equipment:quiver",
+  "kind": "equipment",
+  "name": "Aljava",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 0.5,
+   "text": [
+    "Uma aljava comporta até 20 flechas."
+   ]
+  }
+ },
+ {
+  "id": "equipment:ram-portable",
+  "kind": "equipment",
+  "name": "Aríete portátil",
+  "summary": "4 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 4,
+   "priceText": "4 po",
+   "weight": 17.5,
+   "text": [
+    "Você pode usar um aríete portátil para derrubar portas. Ao fazer isso, recebe +4 de bônus no teste de Força. Outro personagem pode ajudar a usar o aríete, dando vantagem nesse teste."
+   ]
+  }
+ },
+ {
+  "id": "equipment:rations-1-day",
+  "kind": "equipment",
+  "name": "Rações (1 dia)",
+  "summary": "5 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.5,
+   "priceText": "5 pp",
+   "weight": 1,
+   "text": [
+    "Rações são alimentos secos próprios para viagens longas, como carne-seca, frutas secas, biscoito duro e nozes."
+   ]
+  }
+ },
+ {
+  "id": "equipment:reliquary",
+  "kind": "equipment",
+  "name": "Relicário",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 1,
+   "text": [
+    "Um símbolo sagrado é uma representação de um deus ou panteão. Pode ser um amuleto com um símbolo que representa uma divindade, o mesmo símbolo gravado ou incrustado com cuidado como emblema num escudo, ou uma caixinha que guarda um fragmento de uma relíquia sagrada.",
+    "O Apêndice B lista os símbolos normalmente associados a muitos deuses do multiverso. Um clérigo ou paladino pode usar um símbolo sagrado como foco de conjuração. Para isso, precisa segurá-lo na mão, usá-lo à vista ou carregá-lo num escudo."
+   ]
+  }
+ },
+ {
+  "id": "equipment:robes",
+  "kind": "equipment",
+  "name": "Túnica",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 2,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:rope-hempen-50-feet",
+  "kind": "equipment",
+  "name": "Corda de cânhamo (15 metros)",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 5,
+   "text": [
+    "A corda, seja de cânhamo ou de seda, tem 2 pontos de vida e pode ser rompida com um teste de Força CD 17."
+   ]
+  }
+ },
+ {
+  "id": "equipment:rope-silk-50-feet",
+  "kind": "equipment",
+  "name": "Corda de seda (15 metros)",
+  "summary": "10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 2.5,
+   "text": [
+    "A corda, seja de cânhamo ou de seda, tem 2 pontos de vida e pode ser rompida com um teste de Força CD 17."
+   ]
+  }
+ },
+ {
+  "id": "equipment:sack",
+  "kind": "equipment",
+  "name": "Saco",
+  "summary": "1 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.01,
+   "priceText": "1 pc",
+   "weight": 0.3,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:scale-merchants",
+  "kind": "equipment",
+  "name": "Balança de mercador",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 1.5,
+   "text": [
+    "A balança inclui um pequeno travessão, pratos e um sortimento adequado de pesos de até 1 kg. Com ela, você pode medir o peso exato de objetos pequenos, como metais preciosos brutos ou mercadorias, para ajudar a definir seu valor."
+   ]
+  }
+ },
+ {
+  "id": "equipment:sealing-wax",
+  "kind": "equipment",
+  "name": "Lacre",
+  "summary": "5 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.5,
+   "priceText": "5 pp",
+   "weight": 0,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:shovel",
+  "kind": "equipment",
+  "name": "Pá",
+  "summary": "2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 2.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:signal-whistle",
+  "kind": "equipment",
+  "name": "Apito de sinalização",
+  "summary": "5 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.05,
+   "priceText": "5 pc",
+   "weight": 0,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:signet-ring",
+  "kind": "equipment",
+  "name": "Anel de sinete",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 0,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:small-knife",
+  "kind": "equipment",
+  "name": "Faca pequena",
+  "summary": "0 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0,
+   "priceText": "0 pc",
+   "weight": 0,
+   "text": [
+    "Uma faca pequena, comum no pacote de estudioso."
+   ]
+  }
+ },
+ {
+  "id": "equipment:soap",
+  "kind": "equipment",
+  "name": "Sabão",
+  "summary": "2 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.02,
+   "priceText": "2 pc",
+   "weight": 0,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:spellbook",
+  "kind": "equipment",
+  "name": "Grimório",
+  "summary": "50 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 50,
+   "priceText": "50 po",
+   "weight": 1.5,
+   "text": [
+    "Essencial para magos, o grimório é um tomo encadernado em couro com 100 páginas de velino em branco, próprias para registrar magias."
+   ]
+  }
+ },
+ {
+  "id": "equipment:spike-iron",
+  "kind": "equipment",
+  "name": "Cravo de ferro",
+  "summary": "1 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.1,
+   "priceText": "1 pp",
+   "weight": 2.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:spyglass",
+  "kind": "equipment",
+  "name": "Luneta",
+  "summary": "1000 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 1000,
+   "priceText": "1000 po",
+   "weight": 0.5,
+   "text": [
+    "Objetos vistos por uma luneta aparecem ampliados duas vezes."
+   ]
+  }
+ },
+ {
+  "id": "equipment:string-10-feet",
+  "kind": "equipment",
+  "name": "Barbante (3 metros)",
+  "summary": "0 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0,
+   "priceText": "0 pc",
+   "weight": 0,
+   "text": [
+    "Um pedaço de barbante de 3 metros, comum no pacote de assaltante."
+   ]
+  }
+ },
+ {
+  "id": "equipment:tent-two-person",
+  "kind": "equipment",
+  "name": "Barraca para duas pessoas",
+  "summary": "2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 10,
+   "text": [
+    "Um abrigo de lona simples e portátil; a barraca abriga duas pessoas."
+   ]
+  }
+ },
+ {
+  "id": "equipment:tinderbox",
+  "kind": "equipment",
+  "name": "Caixa de fogo",
+  "summary": "5 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.5,
+   "priceText": "5 pp",
+   "weight": 0.5,
+   "text": [
+    "Este pequeno recipiente guarda pederneira, fuzil e isca (normalmente pano seco embebido em óleo leve) para acender fogo. Usá-la para acender uma tocha, ou qualquer outra coisa com combustível abundante e exposto, leva uma ação.",
+    "Acender qualquer outro fogo leva 1 minuto."
+   ]
+  }
+ },
+ {
+  "id": "equipment:torch",
+  "kind": "equipment",
+  "name": "Tocha",
+  "summary": "1 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.01,
+   "priceText": "1 pc",
+   "weight": 0.5,
+   "text": [
+    "Uma tocha queima por 1 hora, emitindo luz plena num raio de 6 metros e penumbra por mais 6 metros. Se você acertar um ataque corpo a corpo com uma tocha acesa, ela causa 1 de dano de fogo."
+   ]
+  }
+ },
+ {
+  "id": "equipment:vestments",
+  "kind": "equipment",
+  "name": "Paramentos",
+  "summary": "0 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0,
+   "priceText": "0 pc",
+   "weight": 0,
+   "text": [
+    "Roupas religiosas, comuns no pacote de sacerdote."
+   ]
+  }
+ },
+ {
+  "id": "equipment:vial",
+  "kind": "equipment",
+  "name": "Frasco",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 0,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:waterskin",
+  "kind": "equipment",
+  "name": "Odre",
+  "summary": "2 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.2,
+   "priceText": "2 pp",
+   "weight": 2.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:whetstone",
+  "kind": "equipment",
+  "name": "Pedra de amolar",
+  "summary": "1 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "item",
+   "price": 0.01,
+   "priceText": "1 pc",
+   "weight": 0.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:burglars-pack",
+  "kind": "equipment",
+  "name": "Pacote de assaltante",
+  "summary": "16 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "kit",
+   "price": 16,
+   "priceText": "16 po",
+   "text": [],
+   "contents": [
+    {
+     "id": "equipment:backpack",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:ball-bearings-bag-of-1000",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:string-10-feet",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:bell",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:candle",
+     "quantity": 5
+    },
+    {
+     "id": "equipment:crowbar",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:hammer",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:piton",
+     "quantity": 10
+    },
+    {
+     "id": "equipment:lantern-hooded",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:oil-flask",
+     "quantity": 2
+    },
+    {
+     "id": "equipment:rations-1-day",
+     "quantity": 5
+    },
+    {
+     "id": "equipment:tinderbox",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:waterskin",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:rope-hempen-50-feet",
+     "quantity": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:diplomats-pack",
+  "kind": "equipment",
+  "name": "Pacote de diplomata",
+  "summary": "39 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "kit",
+   "price": 39,
+   "priceText": "39 po",
+   "text": [],
+   "contents": [
+    {
+     "id": "equipment:chest",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:case-map-or-scroll",
+     "quantity": 2
+    },
+    {
+     "id": "equipment:clothes-fine",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:ink-1-ounce-bottle",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:ink-pen",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:lamp",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:oil-flask",
+     "quantity": 2
+    },
+    {
+     "id": "equipment:paper-one-sheet",
+     "quantity": 5
+    },
+    {
+     "id": "equipment:perfume-vial",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:sealing-wax",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:soap",
+     "quantity": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:dungeoneers-pack",
+  "kind": "equipment",
+  "name": "Pacote de explorador de masmorras",
+  "summary": "12 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "kit",
+   "price": 12,
+   "priceText": "12 po",
+   "text": [],
+   "contents": [
+    {
+     "id": "equipment:backpack",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:crowbar",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:hammer",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:piton",
+     "quantity": 10
+    },
+    {
+     "id": "equipment:torch",
+     "quantity": 10
+    },
+    {
+     "id": "equipment:tinderbox",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:rations-1-day",
+     "quantity": 10
+    },
+    {
+     "id": "equipment:waterskin",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:rope-hempen-50-feet",
+     "quantity": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:entertainers-pack",
+  "kind": "equipment",
+  "name": "Pacote de artista",
+  "summary": "40 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "kit",
+   "price": 40,
+   "priceText": "40 po",
+   "text": [],
+   "contents": [
+    {
+     "id": "equipment:backpack",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:bedroll",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:clothes-costume",
+     "quantity": 2
+    },
+    {
+     "id": "equipment:candle",
+     "quantity": 5
+    },
+    {
+     "id": "equipment:rations-1-day",
+     "quantity": 5
+    },
+    {
+     "id": "equipment:waterskin",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:disguise-kit",
+     "quantity": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:explorers-pack",
+  "kind": "equipment",
+  "name": "Pacote de aventureiro",
+  "summary": "10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "kit",
+   "price": 10,
+   "priceText": "10 po",
+   "text": [],
+   "contents": [
+    {
+     "id": "equipment:backpack",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:bedroll",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:mess-kit",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:tinderbox",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:torch",
+     "quantity": 10
+    },
+    {
+     "id": "equipment:rations-1-day",
+     "quantity": 10
+    },
+    {
+     "id": "equipment:waterskin",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:rope-hempen-50-feet",
+     "quantity": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:priests-pack",
+  "kind": "equipment",
+  "name": "Pacote de sacerdote",
+  "summary": "19 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "kit",
+   "price": 19,
+   "priceText": "19 po",
+   "text": [],
+   "contents": [
+    {
+     "id": "equipment:backpack",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:blanket",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:candle",
+     "quantity": 10
+    },
+    {
+     "id": "equipment:tinderbox",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:rations-1-day",
+     "quantity": 2
+    },
+    {
+     "id": "equipment:waterskin",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:alms-box",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:block-of-incense",
+     "quantity": 2
+    },
+    {
+     "id": "equipment:censer",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:vestments",
+     "quantity": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:scholars-pack",
+  "kind": "equipment",
+  "name": "Pacote de estudioso",
+  "summary": "40 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "kit",
+   "price": 40,
+   "priceText": "40 po",
+   "text": [],
+   "contents": [
+    {
+     "id": "equipment:backpack",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:book",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:ink-1-ounce-bottle",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:ink-pen",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:parchment-one-sheet",
+     "quantity": 10
+    },
+    {
+     "id": "equipment:little-bag-of-sand",
+     "quantity": 1
+    },
+    {
+     "id": "equipment:small-knife",
+     "quantity": 1
+    }
+   ]
+  }
+ },
+ {
+  "id": "equipment:alchemists-supplies",
+  "kind": "equipment",
+  "name": "Suprimentos de alquimista",
+  "summary": "50 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 50,
+   "priceText": "50 po",
+   "weight": 4,
+   "text": [
+    "Estas ferramentas especiais incluem os itens necessários para exercer um ofício ou profissão. A tabela mostra exemplos dos tipos de ferramenta mais comuns, cada um com itens ligados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite somar seu bônus de proficiência a qualquer teste de habilidade feito com as ferramentas do seu ofício. Cada tipo de ferramenta de artesão exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:brewers-supplies",
+  "kind": "equipment",
+  "name": "Suprimentos de cervejeiro",
+  "summary": "20 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 20,
+   "priceText": "20 po",
+   "weight": 4.5,
+   "text": [
+    "Estas ferramentas especiais incluem os itens necessários para exercer um ofício ou profissão. A tabela mostra exemplos dos tipos de ferramenta mais comuns, cada um com itens ligados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite somar seu bônus de proficiência a qualquer teste de habilidade feito com as ferramentas do seu ofício. Cada tipo de ferramenta de artesão exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:calligraphers-supplies",
+  "kind": "equipment",
+  "name": "Suprimentos de calígrafo",
+  "summary": "10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 2.5,
+   "text": [
+    "Estas ferramentas especiais incluem os itens necessários para exercer um ofício ou profissão. A tabela mostra exemplos dos tipos de ferramenta mais comuns, cada um com itens ligados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite somar seu bônus de proficiência a qualquer teste de habilidade feito com as ferramentas do seu ofício. Cada tipo de ferramenta de artesão exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:carpenters-tools",
+  "kind": "equipment",
+  "name": "Ferramentas de carpinteiro",
+  "summary": "8 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 8,
+   "priceText": "8 po",
+   "weight": 3,
+   "text": [
+    "Estas ferramentas especiais incluem os itens necessários para exercer um ofício ou profissão. A tabela mostra exemplos dos tipos de ferramenta mais comuns, cada um com itens ligados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite somar seu bônus de proficiência a qualquer teste de habilidade feito com as ferramentas do seu ofício. Cada tipo de ferramenta de artesão exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:cartographers-tools",
+  "kind": "equipment",
+  "name": "Ferramentas de cartógrafo",
+  "summary": "15 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 15,
+   "priceText": "15 po",
+   "weight": 3,
+   "text": [
+    "Estas ferramentas especiais incluem os itens necessários para exercer um ofício ou profissão. A tabela mostra exemplos dos tipos de ferramenta mais comuns, cada um com itens ligados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite somar seu bônus de proficiência a qualquer teste de habilidade feito com as ferramentas do seu ofício. Cada tipo de ferramenta de artesão exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:cobblers-tools",
+  "kind": "equipment",
+  "name": "Ferramentas de sapateiro",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 2.5,
+   "text": [
+    "Estas ferramentas especiais incluem os itens necessários para exercer um ofício ou profissão. A tabela mostra exemplos dos tipos de ferramenta mais comuns, cada um com itens ligados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite somar seu bônus de proficiência a qualquer teste de habilidade feito com as ferramentas do seu ofício. Cada tipo de ferramenta de artesão exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:cooks-utensils",
+  "kind": "equipment",
+  "name": "Utensílios de cozinheiro",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 4,
+   "text": [
+    "Estas ferramentas especiais incluem os itens necessários para exercer um ofício ou profissão. A tabela mostra exemplos dos tipos de ferramenta mais comuns, cada um com itens ligados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite somar seu bônus de proficiência a qualquer teste de habilidade feito com as ferramentas do seu ofício. Cada tipo de ferramenta de artesão exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:glassblowers-tools",
+  "kind": "equipment",
+  "name": "Ferramentas de vidreiro",
+  "summary": "30 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 30,
+   "priceText": "30 po",
+   "weight": 2.5,
+   "text": [
+    "Estas ferramentas especiais incluem os itens necessários para exercer um ofício ou profissão. A tabela mostra exemplos dos tipos de ferramenta mais comuns, cada um com itens ligados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite somar seu bônus de proficiência a qualquer teste de habilidade feito com as ferramentas do seu ofício. Cada tipo de ferramenta de artesão exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:jewelers-tools",
+  "kind": "equipment",
+  "name": "Ferramentas de joalheiro",
+  "summary": "25 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 25,
+   "priceText": "25 po",
+   "weight": 1,
+   "text": [
+    "Estas ferramentas especiais incluem os itens necessários para exercer um ofício ou profissão. A tabela mostra exemplos dos tipos de ferramenta mais comuns, cada um com itens ligados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite somar seu bônus de proficiência a qualquer teste de habilidade feito com as ferramentas do seu ofício. Cada tipo de ferramenta de artesão exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:leatherworkers-tools",
+  "kind": "equipment",
+  "name": "Ferramentas de coureiro",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 2.5,
+   "text": [
+    "Estas ferramentas especiais incluem os itens necessários para exercer um ofício ou profissão. A tabela mostra exemplos dos tipos de ferramenta mais comuns, cada um com itens ligados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite somar seu bônus de proficiência a qualquer teste de habilidade feito com as ferramentas do seu ofício. Cada tipo de ferramenta de artesão exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:masons-tools",
+  "kind": "equipment",
+  "name": "Ferramentas de pedreiro",
+  "summary": "10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 4,
+   "text": [
+    "Estas ferramentas especiais incluem os itens necessários para exercer um ofício ou profissão. A tabela mostra exemplos dos tipos de ferramenta mais comuns, cada um com itens ligados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite somar seu bônus de proficiência a qualquer teste de habilidade feito com as ferramentas do seu ofício. Cada tipo de ferramenta de artesão exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:painters-supplies",
+  "kind": "equipment",
+  "name": "Suprimentos de pintor",
+  "summary": "10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 2.5,
+   "text": [
+    "Estas ferramentas especiais incluem os itens necessários para exercer um ofício ou profissão. A tabela mostra exemplos dos tipos de ferramenta mais comuns, cada um com itens ligados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite somar seu bônus de proficiência a qualquer teste de habilidade feito com as ferramentas do seu ofício. Cada tipo de ferramenta de artesão exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:potters-tools",
+  "kind": "equipment",
+  "name": "Ferramentas de oleiro",
+  "summary": "10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 1.5,
+   "text": [
+    "Estas ferramentas especiais incluem os itens necessários para exercer um ofício ou profissão. A tabela mostra exemplos dos tipos de ferramenta mais comuns, cada um com itens ligados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite somar seu bônus de proficiência a qualquer teste de habilidade feito com as ferramentas do seu ofício. Cada tipo de ferramenta de artesão exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:smiths-tools",
+  "kind": "equipment",
+  "name": "Ferramentas de ferreiro",
+  "summary": "20 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 20,
+   "priceText": "20 po",
+   "weight": 4,
+   "text": [
+    "Estas ferramentas especiais incluem os itens necessários para exercer um ofício ou profissão. A tabela mostra exemplos dos tipos de ferramenta mais comuns, cada um com itens ligados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite somar seu bônus de proficiência a qualquer teste de habilidade feito com as ferramentas do seu ofício. Cada tipo de ferramenta de artesão exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:tinkers-tools",
+  "kind": "equipment",
+  "name": "Ferramentas de funileiro",
+  "summary": "50 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 50,
+   "priceText": "50 po",
+   "weight": 5,
+   "text": [
+    "Estas ferramentas especiais incluem os itens necessários para exercer um ofício ou profissão. A tabela mostra exemplos dos tipos de ferramenta mais comuns, cada um com itens ligados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite somar seu bônus de proficiência a qualquer teste de habilidade feito com as ferramentas do seu ofício. Cada tipo de ferramenta de artesão exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:weavers-tools",
+  "kind": "equipment",
+  "name": "Ferramentas de tecelão",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 2.5,
+   "text": [
+    "Estas ferramentas especiais incluem os itens necessários para exercer um ofício ou profissão. A tabela mostra exemplos dos tipos de ferramenta mais comuns, cada um com itens ligados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite somar seu bônus de proficiência a qualquer teste de habilidade feito com as ferramentas do seu ofício. Cada tipo de ferramenta de artesão exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:woodcarvers-tools",
+  "kind": "equipment",
+  "name": "Ferramentas de entalhador",
+  "summary": "1 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 1,
+   "priceText": "1 po",
+   "weight": 2.5,
+   "text": [
+    "Estas ferramentas especiais incluem os itens necessários para exercer um ofício ou profissão. A tabela mostra exemplos dos tipos de ferramenta mais comuns, cada um com itens ligados a um único ofício. Proficiência com um conjunto de ferramentas de artesão permite somar seu bônus de proficiência a qualquer teste de habilidade feito com as ferramentas do seu ofício. Cada tipo de ferramenta de artesão exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:dice-set",
+  "kind": "equipment",
+  "name": "Jogo de dados",
+  "summary": "1 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 0.1,
+   "priceText": "1 pp",
+   "weight": 0,
+   "text": [
+    "Este item abrange várias peças de jogo, incluindo dados e baralhos (para jogos como o Truco dos Três Dragões). Alguns exemplos comuns aparecem na tabela de Ferramentas, mas existem outros tipos de jogo. Se você for proficiente com um jogo, pode somar seu bônus de proficiência a testes de habilidade para jogar com ele. Cada tipo de jogo exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:playing-card-set",
+  "kind": "equipment",
+  "name": "Baralho",
+  "summary": "5 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 0.5,
+   "priceText": "5 pp",
+   "weight": 0,
+   "text": [
+    "Este item abrange várias peças de jogo, incluindo dados e baralhos (para jogos como o Truco dos Três Dragões). Alguns exemplos comuns aparecem na tabela de Ferramentas, mas existem outros tipos de jogo. Se você for proficiente com um jogo, pode somar seu bônus de proficiência a testes de habilidade para jogar com ele. Cada tipo de jogo exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:bagpipes",
+  "kind": "equipment",
+  "name": "Gaita de foles",
+  "summary": "30 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 30,
+   "priceText": "30 po",
+   "weight": 3,
+   "text": [
+    "A tabela mostra como exemplo vários dos tipos mais comuns de instrumento musical. Se tiver proficiência com um instrumento, você pode somar seu bônus de proficiência a qualquer teste de habilidade para tocar música com ele. Um bardo pode usar um instrumento musical como foco de conjuração. Cada tipo de instrumento musical exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:drum",
+  "kind": "equipment",
+  "name": "Tambor",
+  "summary": "6 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 6,
+   "priceText": "6 po",
+   "weight": 1.5,
+   "text": [
+    "A tabela mostra como exemplo vários dos tipos mais comuns de instrumento musical. Se tiver proficiência com um instrumento, você pode somar seu bônus de proficiência a qualquer teste de habilidade para tocar música com ele. Um bardo pode usar um instrumento musical como foco de conjuração. Cada tipo de instrumento musical exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:dulcimer",
+  "kind": "equipment",
+  "name": "Saltério",
+  "summary": "25 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 25,
+   "priceText": "25 po",
+   "weight": 5,
+   "text": [
+    "A tabela mostra como exemplo vários dos tipos mais comuns de instrumento musical. Se tiver proficiência com um instrumento, você pode somar seu bônus de proficiência a qualquer teste de habilidade para tocar música com ele. Um bardo pode usar um instrumento musical como foco de conjuração. Cada tipo de instrumento musical exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:flute",
+  "kind": "equipment",
+  "name": "Flauta",
+  "summary": "2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 0.5,
+   "text": [
+    "A tabela mostra como exemplo vários dos tipos mais comuns de instrumento musical. Se tiver proficiência com um instrumento, você pode somar seu bônus de proficiência a qualquer teste de habilidade para tocar música com ele. Um bardo pode usar um instrumento musical como foco de conjuração. Cada tipo de instrumento musical exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:lute",
+  "kind": "equipment",
+  "name": "Alaúde",
+  "summary": "35 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 35,
+   "priceText": "35 po",
+   "weight": 1,
+   "text": [
+    "A tabela mostra como exemplo vários dos tipos mais comuns de instrumento musical. Se tiver proficiência com um instrumento, você pode somar seu bônus de proficiência a qualquer teste de habilidade para tocar música com ele. Um bardo pode usar um instrumento musical como foco de conjuração. Cada tipo de instrumento musical exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:lyre",
+  "kind": "equipment",
+  "name": "Lira",
+  "summary": "30 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 30,
+   "priceText": "30 po",
+   "weight": 1,
+   "text": [
+    "A tabela mostra como exemplo vários dos tipos mais comuns de instrumento musical. Se tiver proficiência com um instrumento, você pode somar seu bônus de proficiência a qualquer teste de habilidade para tocar música com ele. Um bardo pode usar um instrumento musical como foco de conjuração. Cada tipo de instrumento musical exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:horn",
+  "kind": "equipment",
+  "name": "Trompa",
+  "summary": "3 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 3,
+   "priceText": "3 po",
+   "weight": 1,
+   "text": [
+    "A tabela mostra como exemplo vários dos tipos mais comuns de instrumento musical. Se tiver proficiência com um instrumento, você pode somar seu bônus de proficiência a qualquer teste de habilidade para tocar música com ele. Um bardo pode usar um instrumento musical como foco de conjuração. Cada tipo de instrumento musical exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:pan-flute",
+  "kind": "equipment",
+  "name": "Flauta de Pã",
+  "summary": "12 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 12,
+   "priceText": "12 po",
+   "weight": 1,
+   "text": [
+    "A tabela mostra como exemplo vários dos tipos mais comuns de instrumento musical. Se tiver proficiência com um instrumento, você pode somar seu bônus de proficiência a qualquer teste de habilidade para tocar música com ele. Um bardo pode usar um instrumento musical como foco de conjuração. Cada tipo de instrumento musical exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:shawm",
+  "kind": "equipment",
+  "name": "Charamela",
+  "summary": "2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 0.5,
+   "text": [
+    "A tabela mostra como exemplo vários dos tipos mais comuns de instrumento musical. Se tiver proficiência com um instrumento, você pode somar seu bônus de proficiência a qualquer teste de habilidade para tocar música com ele. Um bardo pode usar um instrumento musical como foco de conjuração. Cada tipo de instrumento musical exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:viol",
+  "kind": "equipment",
+  "name": "Viola de arco",
+  "summary": "30 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 30,
+   "priceText": "30 po",
+   "weight": 0.5,
+   "text": [
+    "A tabela mostra como exemplo vários dos tipos mais comuns de instrumento musical. Se tiver proficiência com um instrumento, você pode somar seu bônus de proficiência a qualquer teste de habilidade para tocar música com ele. Um bardo pode usar um instrumento musical como foco de conjuração. Cada tipo de instrumento musical exige uma proficiência separada."
+   ]
+  }
+ },
+ {
+  "id": "equipment:navigators-tools",
+  "kind": "equipment",
+  "name": "Ferramentas de navegador",
+  "summary": "25 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 25,
+   "priceText": "25 po",
+   "weight": 1,
+   "text": [
+    "Este conjunto de instrumentos é usado para navegar no mar. Proficiência com ferramentas de navegador permite traçar a rota de um navio e seguir cartas náuticas. Além disso, essas ferramentas permitem somar seu bônus de proficiência a qualquer teste de habilidade para não se perder no mar."
+   ]
+  }
+ },
+ {
+  "id": "equipment:thieves-tools",
+  "kind": "equipment",
+  "name": "Ferramentas de ladrão",
+  "summary": "25 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "ferramenta",
+   "price": 25,
+   "priceText": "25 po",
+   "weight": 0.5,
+   "text": [
+    "Este conjunto inclui uma pequena lima, um jogo de gazuas, um espelhinho com cabo de metal, uma tesoura de lâminas finas e um alicate. Proficiência com estas ferramentas permite somar seu bônus de proficiência a qualquer teste de habilidade para desarmar armadilhas ou abrir fechaduras."
+   ]
+  }
+ },
+ {
+  "id": "equipment:camel",
+  "kind": "equipment",
+  "name": "Camelo",
+  "summary": "50 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "animal",
+   "price": 50,
+   "priceText": "50 po",
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:donkey",
+  "kind": "equipment",
+  "name": "Burro",
+  "summary": "8 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "animal",
+   "price": 8,
+   "priceText": "8 po",
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:mule",
+  "kind": "equipment",
+  "name": "Mula",
+  "summary": "8 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "animal",
+   "price": 8,
+   "priceText": "8 po",
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:elephant",
+  "kind": "equipment",
+  "name": "Elefante",
+  "summary": "200 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "animal",
+   "price": 200,
+   "priceText": "200 po",
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:horse-draft",
+  "kind": "equipment",
+  "name": "Cavalo de tração",
+  "summary": "50 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "animal",
+   "price": 50,
+   "priceText": "50 po",
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:horse-riding",
+  "kind": "equipment",
+  "name": "Cavalo de montaria",
+  "summary": "75 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "animal",
+   "price": 75,
+   "priceText": "75 po",
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:mastiff",
+  "kind": "equipment",
+  "name": "Mastim",
+  "summary": "25 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "animal",
+   "price": 25,
+   "priceText": "25 po",
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:pony",
+  "kind": "equipment",
+  "name": "Pônei",
+  "summary": "30 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "animal",
+   "price": 30,
+   "priceText": "30 po",
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:warhorse",
+  "kind": "equipment",
+  "name": "Cavalo de guerra",
+  "summary": "400 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "animal",
+   "price": 400,
+   "priceText": "400 po",
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:barding-padded",
+  "kind": "equipment",
+  "name": "Barda: acolchoada",
+  "summary": "20 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 20,
+   "priceText": "20 po",
+   "weight": 8,
+   "text": [
+    "Barda é uma armadura feita para proteger a cabeça, o pescoço, o peito e o corpo de um animal. Qualquer tipo de armadura da tabela de Armaduras pode ser comprado como barda. O custo é quatro vezes o da armadura equivalente feita para humanoides, e ela pesa o dobro."
+   ]
+  }
+ },
+ {
+  "id": "equipment:barding-leather",
+  "kind": "equipment",
+  "name": "Barda: couro",
+  "summary": "40 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 40,
+   "priceText": "40 po",
+   "weight": 10,
+   "text": [
+    "Barda é uma armadura feita para proteger a cabeça, o pescoço, o peito e o corpo de um animal. Qualquer tipo de armadura da tabela de Armaduras pode ser comprado como barda. O custo é quatro vezes o da armadura equivalente feita para humanoides, e ela pesa o dobro."
+   ]
+  }
+ },
+ {
+  "id": "equipment:barding-studded-leather",
+  "kind": "equipment",
+  "name": "Barda: couro batido",
+  "summary": "180 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 180,
+   "priceText": "180 po",
+   "weight": 13,
+   "text": [
+    "Barda é uma armadura feita para proteger a cabeça, o pescoço, o peito e o corpo de um animal. Qualquer tipo de armadura da tabela de Armaduras pode ser comprado como barda. O custo é quatro vezes o da armadura equivalente feita para humanoides, e ela pesa o dobro."
+   ]
+  }
+ },
+ {
+  "id": "equipment:barding-hide",
+  "kind": "equipment",
+  "name": "Barda: peles",
+  "summary": "40 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 40,
+   "priceText": "40 po",
+   "weight": 12,
+   "text": [
+    "Barda é uma armadura feita para proteger a cabeça, o pescoço, o peito e o corpo de um animal. Qualquer tipo de armadura da tabela de Armaduras pode ser comprado como barda. O custo é quatro vezes o da armadura equivalente feita para humanoides, e ela pesa o dobro."
+   ]
+  }
+ },
+ {
+  "id": "equipment:barding-chain-shirt",
+  "kind": "equipment",
+  "name": "Barda: camisão de malha",
+  "summary": "200 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 200,
+   "priceText": "200 po",
+   "weight": 20,
+   "text": [
+    "Barda é uma armadura feita para proteger a cabeça, o pescoço, o peito e o corpo de um animal. Qualquer tipo de armadura da tabela de Armaduras pode ser comprado como barda. O custo é quatro vezes o da armadura equivalente feita para humanoides, e ela pesa o dobro."
+   ]
+  }
+ },
+ {
+  "id": "equipment:barding-scale-mail",
+  "kind": "equipment",
+  "name": "Barda: brunea",
+  "summary": "200 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 200,
+   "priceText": "200 po",
+   "weight": 45,
+   "text": [
+    "Barda é uma armadura feita para proteger a cabeça, o pescoço, o peito e o corpo de um animal. Qualquer tipo de armadura da tabela de Armaduras pode ser comprado como barda. O custo é quatro vezes o da armadura equivalente feita para humanoides, e ela pesa o dobro."
+   ]
+  }
+ },
+ {
+  "id": "equipment:barding-breastplate",
+  "kind": "equipment",
+  "name": "Barda: peitoral",
+  "summary": "1600 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 1600,
+   "priceText": "1600 po",
+   "weight": 20,
+   "text": [
+    "Barda é uma armadura feita para proteger a cabeça, o pescoço, o peito e o corpo de um animal. Qualquer tipo de armadura da tabela de Armaduras pode ser comprado como barda. O custo é quatro vezes o da armadura equivalente feita para humanoides, e ela pesa o dobro."
+   ]
+  }
+ },
+ {
+  "id": "equipment:barding-half-plate",
+  "kind": "equipment",
+  "name": "Barda: meia armadura",
+  "summary": "3000 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 3000,
+   "priceText": "3000 po",
+   "weight": 40,
+   "text": [
+    "Barda é uma armadura feita para proteger a cabeça, o pescoço, o peito e o corpo de um animal. Qualquer tipo de armadura da tabela de Armaduras pode ser comprado como barda. O custo é quatro vezes o da armadura equivalente feita para humanoides, e ela pesa o dobro."
+   ]
+  }
+ },
+ {
+  "id": "equipment:barding-ring-mail",
+  "kind": "equipment",
+  "name": "Barda: cota de anéis",
+  "summary": "12 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 12,
+   "priceText": "12 po",
+   "weight": 40,
+   "text": [
+    "Barda é uma armadura feita para proteger a cabeça, o pescoço, o peito e o corpo de um animal. Qualquer tipo de armadura da tabela de Armaduras pode ser comprado como barda. O custo é quatro vezes o da armadura equivalente feita para humanoides, e ela pesa o dobro."
+   ]
+  }
+ },
+ {
+  "id": "equipment:barding-chain-mail",
+  "kind": "equipment",
+  "name": "Barda: cota de malha",
+  "summary": "300 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 300,
+   "priceText": "300 po",
+   "weight": 55,
+   "text": [
+    "Barda é uma armadura feita para proteger a cabeça, o pescoço, o peito e o corpo de um animal. Qualquer tipo de armadura da tabela de Armaduras pode ser comprado como barda. O custo é quatro vezes o da armadura equivalente feita para humanoides, e ela pesa o dobro."
+   ]
+  }
+ },
+ {
+  "id": "equipment:barding-splint",
+  "kind": "equipment",
+  "name": "Barda: talas",
+  "summary": "800 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 800,
+   "priceText": "800 po",
+   "weight": 60,
+   "text": [
+    "Barda é uma armadura feita para proteger a cabeça, o pescoço, o peito e o corpo de um animal. Qualquer tipo de armadura da tabela de Armaduras pode ser comprado como barda. O custo é quatro vezes o da armadura equivalente feita para humanoides, e ela pesa o dobro."
+   ]
+  }
+ },
+ {
+  "id": "equipment:barding-plate",
+  "kind": "equipment",
+  "name": "Barda: placas",
+  "summary": "6000 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 6000,
+   "priceText": "6000 po",
+   "weight": 65,
+   "text": [
+    "Barda é uma armadura feita para proteger a cabeça, o pescoço, o peito e o corpo de um animal. Qualquer tipo de armadura da tabela de Armaduras pode ser comprado como barda. O custo é quatro vezes o da armadura equivalente feita para humanoides, e ela pesa o dobro."
+   ]
+  }
+ },
+ {
+  "id": "equipment:bit-and-bridle",
+  "kind": "equipment",
+  "name": "Freio e rédeas",
+  "summary": "2 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 2,
+   "priceText": "2 po",
+   "weight": 0.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:carriage",
+  "kind": "equipment",
+  "name": "Carruagem",
+  "summary": "100 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 100,
+   "priceText": "100 po",
+   "weight": 300,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:cart",
+  "kind": "equipment",
+  "name": "Carroça",
+  "summary": "15 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 15,
+   "priceText": "15 po",
+   "weight": 100,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:chariot",
+  "kind": "equipment",
+  "name": "Biga",
+  "summary": "250 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 250,
+   "priceText": "250 po",
+   "weight": 50,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:animal-feed-1-day",
+  "kind": "equipment",
+  "name": "Ração animal (1 dia)",
+  "summary": "5 pc",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 0.05,
+   "priceText": "5 pc",
+   "weight": 5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:saddle-exotic",
+  "kind": "equipment",
+  "name": "Sela exótica",
+  "summary": "60 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 60,
+   "priceText": "60 po",
+   "weight": 25,
+   "text": [
+    "É preciso uma sela exótica para montar qualquer montaria aquática ou voadora."
+   ]
+  }
+ },
+ {
+  "id": "equipment:saddle-military",
+  "kind": "equipment",
+  "name": "Sela militar",
+  "summary": "20 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 20,
+   "priceText": "20 po",
+   "weight": 15,
+   "text": [
+    "Uma sela militar firma o cavaleiro, ajudando você a se manter sobre uma montaria ativa em batalha. Concede vantagem em qualquer teste para continuar montado."
+   ]
+  }
+ },
+ {
+  "id": "equipment:saddle-pack",
+  "kind": "equipment",
+  "name": "Sela de carga",
+  "summary": "5 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 5,
+   "priceText": "5 po",
+   "weight": 7.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:saddle-riding",
+  "kind": "equipment",
+  "name": "Sela de montaria",
+  "summary": "10 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 10,
+   "priceText": "10 po",
+   "weight": 12.5,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:saddlebags",
+  "kind": "equipment",
+  "name": "Alforjes",
+  "summary": "4 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 4,
+   "priceText": "4 po",
+   "weight": 4,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:sled",
+  "kind": "equipment",
+  "name": "Trenó",
+  "summary": "20 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 20,
+   "priceText": "20 po",
+   "weight": 150,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:stabling-1-day",
+  "kind": "equipment",
+  "name": "Estábulo (1 dia)",
+  "summary": "5 pp",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 0.5,
+   "priceText": "5 pp",
+   "weight": 0,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:wagon",
+  "kind": "equipment",
+  "name": "Carroção",
+  "summary": "35 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 35,
+   "priceText": "35 po",
+   "weight": 200,
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:galley",
+  "kind": "equipment",
+  "name": "Galé",
+  "summary": "30000 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 30000,
+   "priceText": "30000 po",
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:keelboat",
+  "kind": "equipment",
+  "name": "Barcaça",
+  "summary": "3000 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 3000,
+   "priceText": "3000 po",
+   "text": [
+    "Barcaças e botes a remo são usados em lagos e rios. Rio abaixo, some a velocidade da correnteza (normalmente 4,5 km por hora) à velocidade do veículo. Esses veículos não podem ser remados contra uma correnteza significativa, mas podem ser puxados rio acima por animais de tração nas margens. Um bote a remo pesa 50 kg, caso os aventureiros precisem carregá-lo por terra."
+   ]
+  }
+ },
+ {
+  "id": "equipment:longship",
+  "kind": "equipment",
+  "name": "Drakar",
+  "summary": "10000 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 10000,
+   "priceText": "10000 po",
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:rowboat",
+  "kind": "equipment",
+  "name": "Bote a remo",
+  "summary": "50 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 50,
+   "priceText": "50 po",
+   "text": [
+    "Barcaças e botes a remo são usados em lagos e rios. Rio abaixo, some a velocidade da correnteza (normalmente 4,5 km por hora) à velocidade do veículo. Esses veículos não podem ser remados contra uma correnteza significativa, mas podem ser puxados rio acima por animais de tração nas margens. Um bote a remo pesa 50 kg, caso os aventureiros precisem carregá-lo por terra."
+   ]
+  }
+ },
+ {
+  "id": "equipment:sailing-ship",
+  "kind": "equipment",
+  "name": "Veleiro",
+  "summary": "10000 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 10000,
+   "priceText": "10000 po",
+   "text": []
+  }
+ },
+ {
+  "id": "equipment:warship",
+  "kind": "equipment",
+  "name": "Navio de guerra",
+  "summary": "25000 po",
+  "origin": "official",
+  "source": {
+   "sourcebookId": "srd-5.1",
+   "edition": "2014",
+   "version": "5.1",
+   "section": "Equipment"
+  },
+  "license": "CC-BY-4.0",
+  "roles": [],
+  "data": {
+   "category": "veiculo",
+   "price": 25000,
+   "priceText": "25000 po",
+   "text": []
+  }
+ }
+]
