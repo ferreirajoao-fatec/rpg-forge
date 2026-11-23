@@ -102,7 +102,11 @@ por hora). As tentativas ficam no `AuditLog` só como hash, nunca com o e-mail o
   `/app/personagens/[id]/retrato/[portraitId]`, que só entrega ao dono ou ao mestre da campanha.
 * **IA de imagem:** Cloudflare Workers AI (`CLOUDFLARE_ACCOUNT_ID` e `CLOUDFLARE_API_TOKEN`, Sensitive, só em Production).
   Erros da geração aparecem nos logs da Vercel com o prefixo `[portraits]`.
-* **Deploy:** automático a cada push na `main`; cada pull request ganha um link de pré-visualização.
+* **Deploy:** feito pelo GitHub Actions (job `deploy` do `ci.yml`), depois que a verificação passa: push na `main`
+  vai para produção e cada pull request ganha um link de pré-visualização comentado no PR. O Actions usa o token
+  do dono do projeto (secret `VERCEL_TOKEN`; `VERCEL_ORG_ID` e `VERCEL_PROJECT_ID` são variáveis do repositório),
+  porque no plano Hobby a Vercel bloqueia deploys de commits de outros autores. A integração Git da Vercel está
+  desligada em `apps/web/vercel.json`.
 * **Mudanças no banco de produção** são manuais e vêm **antes** do merge do PR que as usa:
   `vercel env pull .env.production.local --environment=production` e, com o `DATABASE_URL_UNPOOLED` desse arquivo,
   `pnpm exec prisma migrate deploy` (novas migrações) e `pnpm content:import ...` (novo pacote). Apague o arquivo
