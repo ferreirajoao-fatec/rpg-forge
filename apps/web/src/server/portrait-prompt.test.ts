@@ -24,6 +24,21 @@ describe("pedido de retrato para o Gemini", () => {
   });
 });
 
+describe("corpo inteiro e equipamento", () => {
+  it("pede a figura inteira, da cabeça aos pés", () => {
+    expect(buildPrompt(base)).toMatch(/full-length/);
+    expect(buildPrompt(base)).toMatch(/head to feet/);
+  });
+  it("cita os itens equipados, sem vazios e com limite", () => {
+    expect(buildPrompt(base)).not.toContain("Equipment");
+    const p = buildPrompt({ ...base, gear: ["Espada longa", " ", "Cota de malha", "Escudo"] });
+    expect(p).toContain("Equipment the character is carrying or wearing (may be in Portuguese): Espada longa, Cota de malha, Escudo.");
+    const many = buildPrompt({ ...base, gear: Array.from({ length: 20 }, (_, i) => `Item ${i}`) });
+    expect(many).toContain("Item 7.");
+    expect(many).not.toContain("Item 8");
+  });
+});
+
 describe("texto aceito pelos filtros de conteúdo", () => {
   // O filtro do Cloudflare barrou o pedido por "NSFW" quando o texto fixo dizia "bust" (busto).
   it("o texto fixo não usa palavras que disparam alarme falso", () => {

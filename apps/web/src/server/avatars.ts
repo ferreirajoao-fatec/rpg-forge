@@ -153,9 +153,9 @@ export async function portraitsFor(characterIds: string[], frame: "portrait" | "
     rows.map((r) => [r.characterId, composeSvg(parseAvatar(r.config), { frame, idPrefix: `av${r.characterId}` })]),
   );
   for (const [id, url] of Object.entries(ai)) {
-    // O retrato é um busto 3:4: no recorte do rosto, sobe o enquadramento.
-    const pos = frame === "portrait" ? "50% 22%" : "50% 30%";
-    out[id] = `<img src="${escapeAttr(url)}" alt="" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;object-position:${pos}" />`;
+    // O retrato mostra a figura inteira. No recorte do rosto (miniatura redonda da lista), amplia a parte de cima.
+    const fit = frame === "portrait" ? "object-position:50% 0%;transform:scale(2.6);transform-origin:50% 9%" : "object-position:50% 50%";
+    out[id] = `<img src="${escapeAttr(url)}" alt="" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;${fit}" />`;
   }
   return out;
 }

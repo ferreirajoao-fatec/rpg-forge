@@ -113,7 +113,11 @@ export async function generatePortrait(characterId: string, userId: string, raw:
   // A tentativa conta no limite mesmo se falhar (evita abuso repetindo pedidos bloqueados).
   const attempt = await db.auditLog.create({ data: { userId, action: GENERATE_ACTION, entityType: "Character", entityId: characterId, diff: { style: input.style } } });
 
-  const data = ch.data as { speciesId?: string | null; classes?: { classId: string }[] } | null;
+  const data = ch.data as {
+    speciesId?: string | null;
+    classes?: { classId: string }[];
+    inventory?: { contentId?: string; customName?: string; equipped?: boolean }[];
+  } | null;
   const catalog = await loadCatalog(ch.rulesetId, ch.rulesetVersionId);
   const nameOf = (id: string | null | undefined) => (id ? (catalog.get(id)?.name ?? bareId(id)) : undefined);
   const prompt = buildPrompt({
@@ -121,6 +125,7 @@ export async function generatePortrait(characterId: string, userId: string, raw:
     level: ch.level,
     species: nameOf(data?.speciesId),
     className: nameOf(data?.classes?.[0]?.classId),
+    gear: (data?.inventory ?? []).filter((it) => it.equipped).map((it) => it.customName || nameOf(it.contentId) || ""),
     style: input.style,
     description: input.description,
     withReference: Boolean(input.reference) && supportsReference(provider),
