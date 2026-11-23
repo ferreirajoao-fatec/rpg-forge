@@ -29,7 +29,7 @@ describe("texto aceito pelos filtros de conteúdo", () => {
   it("o texto fixo não usa palavras que disparam alarme falso", () => {
     for (const style of Object.keys(PORTRAIT_STYLES) as (keyof typeof PORTRAIT_STYLES)[]) {
       const p = buildPrompt({ ...base, style }).toLowerCase();
-      for (const w of ["bust", "skin", "nude", "naked", "body"]) expect(p, `${style}: ${w}`).not.toMatch(new RegExp(`\b${w}\b`));
+      for (const w of ["bust", "skin", "nude", "naked", "body"]) expect(p, `${style}: ${w}`).not.toMatch(new RegExp(`\\b${w}\\b`));
     }
   });
 });
