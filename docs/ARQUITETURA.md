@@ -27,9 +27,9 @@ Restrições que moldam a arquitetura:
 
 | Sistema | Fonte | Licença | Situação |
 |---|---|---|---|
-| D&D 5e (2014) | SRD 5.1 | CC-BY-4.0 | Fórmulas centrais implementadas. Catálogo do SRD a importar (Fase 4). |
-| D&D 5e (2024) | SRD 5.2.1 | CC-BY-4.0 | Fórmulas centrais e regra de bônus de antecedente implementadas. Catálogo a importar (Fase 4). |
-| Tormenta20 (2020) | Livro básico, 1ª edição (Jambô, 2020) | OGL 1.0a | Fórmulas implementadas (atributos, PV, PM, Defesa, perícias, XP, multiclasse). Pacote `content/tormenta20-2020` com raças, classes, origens, perícias, poderes (gerais, de classe, concedidos e aberrantes), magias, divindades, equipamento, itens superiores e itens mágicos (encantos, armas e armaduras específicas, poções, acessórios e artefatos). Regras de fabricação e limites de itens em `tormenta20.ts`. Inventário da ficha (moedas, dinheiro inicial, compra e venda, itens equipados, melhorias, carga, limite de itens mágicos) em `tormenta20-inventory.ts`; o motor aplica armadura, escudo e bônus fixos de itens na Defesa, nas perícias e no deslocamento. Ameaças e regras do mestre: extraídas (`creatures.json`, `hazards.json`, `gm-rules.json`), ainda não ligadas ao app. A edição Jogo do Ano **não** é suportada. |
+| D&D 5e (2014) | SRD 5.1 | CC-BY-4.0 | Fórmulas, validação e progressão implementadas. Catálogo do SRD em `content/dnd5e-2014`, traduzido (`pnpm srd:fetch` e `pnpm srd:build`). |
+| D&D 5e (2024) | SRD 5.2.1 | CC-BY-4.0 | Idem, com a regra de bônus de atributo do antecedente. Catálogo em `content/dnd5e-2024`. |
+| Tormenta20 (2020) | Livro básico, 1ª edição (Jambô, 2020) | OGL 1.0a | Fórmulas implementadas (atributos, PV, PM, Defesa, perícias, XP, multiclasse). Pacote `content/tormenta20-2020` com raças, classes, origens, perícias, poderes (gerais, de classe, concedidos e aberrantes), magias, divindades, equipamento, itens superiores e itens mágicos (encantos, armas e armaduras específicas, poções, acessórios e artefatos). Regras de fabricação e limites de itens em `tormenta20.ts`. Inventário da ficha (moedas, dinheiro inicial, compra e venda, itens equipados, melhorias, carga, limite de itens mágicos) em `tormenta20-inventory.ts`; o motor aplica armadura, escudo e bônus fixos de itens na Defesa, nas perícias e no deslocamento. Ameaças e regras do mestre em `creatures.json`, `hazards.json` e `gm-rules.json`, usadas nas ferramentas do mestre (seção 8.1). Limite de perícias e poderes por nível em `choiceLimits()` (seção 6.1). Na interface, o sistema aparece como "Fantasia d20 (2020)". A edição Jogo do Ano **não** é suportada. |
 
 Conteúdo exclusivo dos livros (por exemplo, subclasses que não estão no SRD) **não** é incluído.
 
@@ -115,6 +115,10 @@ rpg-forge/
 | `web/server/auth` | Senhas com scrypt e sessões opacas no BD (o banco guarda só o hash do token). |
 | `web/server/characters` | CRUD com permissão por recurso, controle de concorrência otimista, snapshots, restauração e auditoria. |
 | `web/server/rulesets` | Sincronização dos motores com o BD e carregamento do catálogo por versão. |
+| `web/server/campaigns` | Campanhas: criação, convite por link (código de 12 caracteres), entrada, vínculo de fichas, remoção de jogadores e exclusão. |
+| `web/server/portraits` | Retratos por IA: limite diário, montagem do pedido, gravação no Blob privado, galeria e retrato ativo. |
+| `web/server/image-providers` | Provedores de imagem (Cloudflare Workers AI e Gemini) atrás de uma interface única, com erros classificados em cota, bloqueio e falha. |
+| `web/server/portrait-prompt` | Estilos e texto do pedido de retrato (sem banco; testável à parte). |
 | `web/app/app/personagens/[id]/relevance` | Ordena e filtra as opções pelas escolhas anteriores (classe, raça, origem, divindade). Só organiza a lista: quem decide a validade é o motor. |
 | `web/scripts/import-content.ts` | Importação administrativa de pacotes, criando uma nova versão do catálogo. |
 
@@ -132,6 +136,8 @@ Arquivo `prisma/schema.prisma` (raiz do monorepo). Principais entidades:
 * `DiceRoll`, `AuditLog`.
 * `Avatar` (1 por personagem: `config` JSON + `assetsVersion` + `revision`), `AvatarRevision` (versões nomeadas,
   até 30), `AvatarPreset` (visuais do usuário, reaproveitáveis em qualquer personagem).
+* `AvatarPortrait`: retratos gerados por IA (até 12 por personagem, um ativo), com o caminho no Blob, estilo,
+  descrição e modelo. As tentativas de geração ficam no `AuditLog` (`avatar.portrait.generate`) para o limite diário.
 
 ## 5. Contratos do motor de regras
 
@@ -143,8 +149,12 @@ interface RulesEngine {
   creationSteps(catalog): CreationStep[];  // ordem adaptada ao sistema
   abilityModifier(score): number;
   levelForXp?(xp): number;
+  xpThresholds?: number[];                 // XP mínimo de cada nível
+  levelUpPlan(character, catalog): LevelUpPlan;  // "Meu próximo nível": valores, habilidades e decisões
   derive(character, catalog): DerivedStats;
   validate(character, catalog): ValidationReport;
+  levelBonusBudget?(character, catalog);   // aumentos de atributo por nível (D&D)
+  choiceLimits?(character, catalog): ChoiceLimit[]; // escolhas livres de perícia e poder no nível atual
   evaluateOption(character, entry, catalog): OptionEvaluation; // agora / futuramente / indisponível / adquirida
 }
 ```
@@ -160,6 +170,22 @@ requisitos necessários."
 3. Cada alteração passa pelo motor no cliente. O painel lateral mostra os atributos derivados e o relatório de validação.
 4. Etapas que dependem de catálogo aparecem com cadeado e explicam por que ainda não há conteúdo, sem dados inventados.
 5. Revisão: relatório completo, versões nomeadas e restauração (que cria uma nova versão).
+
+### 6.1. Limites de perícias e poderes
+
+Nas etapas Perícias e Poderes, um contador mostra "X de Y no Nº nível" com a origem da conta, e o botão "Adicionar"
+trava no limite (remover continua liberado). Passar do limite deixa a ficha inválida, sem bloquear salvar nem subir
+de nível.
+
+* **Tormenta20 (2020)**, em `choiceLimits()`: perícias = as da classe ("uma entre" + "escolha N") + bônus de
+  Inteligência + raça; poderes = um de classe (ou geral) por nível a partir do 2º + um concedido para devotos + o
+  "poder à escolha" de uma origem. Raças com escolhas próprias: Humano (+1 perícia e +1 perícia-ou-poder),
+  Meio-Gnomo (+1 perícia), Esqueleto Desperto (perícia ou poder), Cria Aberrante (+1 poder aberrante); origem
+  Amnésico (+1 perícia e +1 poder). Benefícios da origem têm contador próprio na etapa Origem e não entram na conta.
+* **D&D 5e:** perícias da classe (mais as livres da raça) e talentos limitados pelos Aumentos no Valor de
+  Habilidade, na validação do motor.
+* A regra do poder concedido ao se tornar devoto e a de as perícias extras da Inteligência serem livres foram
+  escritas de memória (o pacote não traz esses textos) e devem ser conferidas no livro.
 
 ## 7. Dependências entre funcionalidades
 
@@ -228,6 +254,25 @@ Rota `/app/mestre`, com conteúdo do pacote Tormenta20 0.4.0 (novos tipos `creat
 * **Consulta:** 80 ameaças com filtro por ND e grupo, 41 perigos, regras do mestre e 33 condições, com busca e página
   do livro.
 
+## 8.2. Retrato com IA
+
+Na página do avatar, o jogador descreve a aparência e escolhe um estilo (pintura, aquarela, realista, anime, esboço).
+
+* **Pedido** (`server/portrait-prompt.ts`): em inglês, com nome, nível, raça, classe, a descrição do jogador entre
+  aspas e os **itens equipados** no inventário (até 8). Enquadramento de **corpo inteiro**, mostrando armas,
+  armadura, escudo e roupas. Sem marcas registradas e sem texto na imagem.
+* **Provedores** (`server/image-providers.ts`): Cloudflare Workers AI com FLUX.1 schnell (padrão; cota grátis de
+  10.000 neurons por dia, renovada às 00:00 UTC; imagem quadrada; não aceita imagem de referência) ou Gemini (pago;
+  retrato 3:4; aceita o avatar desenhado como referência). A opção de referência só aparece quando o provedor aceita.
+* **Filtro de conteúdo:** o Cloudflare barra pedidos pelo texto. Palavras como "bust" e "skin" deram falso positivo;
+  um teste impede que o texto fixo volte a usá-las.
+* **Limite:** `AI_PORTRAIT_DAILY_LIMIT` por usuário a cada 24 h. Tentativas barradas pelo filtro contam; as barradas
+  pela cota do servidor não, e mostram mensagem própria.
+* **Armazenamento:** Vercel Blob **privado**. A página nunca vê o endereço do Blob: a imagem passa por
+  `/app/personagens/[id]/retrato/[portraitId]`, que confere se quem pede é o dono ou o mestre da campanha.
+* **Exibição:** o retrato ativo substitui o avatar desenhado na ficha (figura inteira) e na lista de personagens
+  (miniatura redonda ampliada no rosto). O avatar desenhado continua valendo para token e exportação.
+
 ## 9. Plano incremental
 
 Fases da especificação (seção 28), com a situação real do repositório:
@@ -237,12 +282,12 @@ Fases da especificação (seção 28), com a situação real do repositório:
 | **1. Fundação** | Monorepo pnpm, Next.js, banco, Prisma, autenticação, camada de servidor, design system, layout e dashboard. | **Concluída.** O monorepo foi criado nesta etapa; o resto já existia. Backend no Next (decisão 10.1). |
 | 2. Avatar Studio básico | `packages/avatar-engine`, renderizador PixiJS, camadas, corpo-base, rosto, olhos, cabelo, pele, chifres, roupas, capuz, armadura e acessórios básicos em SVG. | **Concluída** (seção 8). |
 | 3. Persistência do avatar | Salvamento, carregamento, randomização granular com travas, desfazer/refazer, predefinições, PNG, versões. | **Concluída.** Também exporta retrato, token e JSON. |
-| 4. Criador inteligente de fichas | Etapas guiadas, validação, cálculos e salvamento. | **Em grande parte pronta** para Tormenta20 (2020): todas as etapas com seleção, filtro pelas escolhas anteriores, paginação, abas por disponibilidade e ficha imprimível. D&D 5e (2014 e 2024): catálogos do SRD importados e traduzidos (`content/dnd5e-*`, `pnpm srd:fetch`/`srd:build`). Faltam modos assistido e aleatório. |
+| 4. Criador inteligente de fichas | Etapas guiadas, validação, cálculos e salvamento. | **Em grande parte pronta** para Tormenta20 (2020): todas as etapas com seleção, filtro pelas escolhas anteriores, paginação, abas por disponibilidade e ficha imprimível. D&D 5e (2014 e 2024): catálogos do SRD importados e traduzidos (`content/dnd5e-*`, `pnpm srd:fetch`/`srd:build`). Limite de perícias e poderes por nível (seção 6.1). Faltam modos assistido e aleatório. |
 | 5. Ficha + avatar | Vínculo, retrato na ficha, aparência do equipamento, exportação conjunta. | **Concluída** (armas ainda sem desenho). |
 | 6. Editor visual avançado | Caudas, asas, texturas, cicatrizes, tatuagens, anatomias especiais, efeitos. | Parcial: asas, caudas, escudos e marcas do rosto. Faltam texturas, efeitos e poses. |
 | 7. Progressão | Subida de nível, "Meu próximo nível", evolução visual. | Parcial: subida de nível em `/app/personagens/[id]/nivel` ("Meu próximo nível": valores que mudam, habilidades novas e decisões pendentes, com XP e versão no histórico), calculada por `levelUpPlan` no motor. Faltam multiclasse na subida, a tabela de progressão das classes do Tormenta20 e a evolução visual do avatar. |
 | 8. Campanhas e mestre | Convites, permissões, regras opcionais, aprovações, eventos e recompensas. | Parcial: ferramentas do mestre em `/app/mestre` (seção 8.1) e campanhas em `/app/campanhas`: convite por link (`/convite/[código]`, funciona também para quem ainda não tem conta), entrada e vínculo de fichas sem aprovação (decisão do usuário em 23/11/2026), mestre vê as fichas, tira jogadores, gera link novo e exclui. Faltam regras opcionais por campanha, aprovações de homebrew e eventos/recompensas na interface. |
-| 9. Assistente inteligente | Recomendações, análise, interpretação de descrições de avatar. | Parcial: retrato ilustrado por IA na página do avatar, a partir de uma descrição em texto e de um estilo. Provedores em `server/image-providers.ts`: Cloudflare Workers AI (FLUX.1 schnell, cota grátis diária) ou Gemini (pago; aceita o avatar desenhado como referência), escolhidos por `AI_PORTRAIT_PROVIDER` ou pelas credenciais presentes. Imagens no Vercel Blob privado, servidas por uma rota que confere permissão; limite diário por usuário (`AI_PORTRAIT_DAILY_LIMIT`), que não conta tentativas barradas pela cota do servidor. Sem provedor ou sem Blob, a página mostra só o editor manual. Ainda falta preencher o avatar desenhado a partir da descrição. |
+| 9. Assistente inteligente | Recomendações, análise, interpretação de descrições de avatar. | Parcial: retrato ilustrado por IA de corpo inteiro, com o equipamento da ficha (seção 8.2). Provedores escolhidos por `AI_PORTRAIT_PROVIDER` ou pelas credenciais presentes; sem provedor ou sem Blob, a página mostra só o editor manual. Faltam recomendações, análise da ficha e preencher o avatar desenhado a partir da descrição. |
 | 10. Expansão | Sistemas adicionais, poses, tokens, desempenho, acessibilidade. | |
 
 ## 10. Decisões de arquitetura
@@ -267,7 +312,14 @@ usuário em 22/11/2026.
 O pacote cobre o livro básico de 2020, publicado sob a OGL 1.0a (seção 1). A edição Jogo do Ano não é suportada:
 distribuir seu conteúdo exige verificar a licença dela e obter autorização (seção 26 da especificação).
 
-### 10.4. Pacotes consumidos como código-fonte
+### 10.4. Retratos por IA: Cloudflare por padrão, Gemini opcional
+
+A primeira versão usava só o Gemini, mas a API dele não gera imagens no plano gratuito (cota 0, "limit: 0 ... Free
+Tier"). Os créditos mensais da assinatura Google AI Pro exigem uma conta de faturamento do Google Cloud, que no
+Brasil pede pré-pagamento. O Cloudflare Workers AI tem cota grátis diária sem cartão e virou o padrão; o Gemini
+continua no código e é escolhido com `AI_PORTRAIT_PROVIDER=gemini`. Decisão do usuário em 23/11/2026.
+
+### 10.5. Pacotes consumidos como código-fonte
 
 Os pacotes do workspace exportam TypeScript diretamente (`exports` apontando para `src/`). O Next transpila pacotes
 do workspace automaticamente, e o Vitest e o `tsx` leem TypeScript. Isso evita etapas de build por pacote enquanto
@@ -294,4 +346,9 @@ houver um único app.
 | 22/11/2026 | Seleção paginada e filtrada pelas escolhas anteriores (poderes, magias, perícias e equipamento), com abas Disponíveis / Futuras / Indisponíveis / Escolhidas. |
 | 22/11/2026 | Fase 1 da nova especificação: monorepo pnpm (`apps/web`, `packages/rules-engine`, `packages/ui`, `packages/config`), lint e testes unificados na raiz, `.env` compartilhado. Correção: validade da sessão avaliada só na requisição (`connection()`). |
 | 22/11/2026 | Fases 2 e 3 e parte da 5: Avatar Studio com 58 peças SVG originais, `packages/avatar-engine` (composição, randomização com travas, histórico, sugestão pela ficha, renderizador PixiJS), tabelas `Avatar`/`AvatarRevision`/`AvatarPreset`, salvamento automático, versões, visuais, exportação PNG/retrato/token/JSON e retrato na ficha e no dashboard. Critérios 1–14 do MVP atendidos. |
+| 23/11/2026 | D&D 5e: catálogos do SRD 5.1 e 5.2.1 traduzidos, motor e ficha (PR #1). |
+| 23/11/2026 | Fase 7 (parcial): subida de nível com "Meu próximo nível" (`levelUpPlan`), XP e versão no histórico. |
+| 23/11/2026 | Fase 8 (parcial): campanhas com convite por link, sem aprovação do mestre. |
+| 23/11/2026 | Fase 9 (parcial): retrato com IA. Gemini com Blob privado por OIDC (PRs #1 e #2); Cloudflare Workers AI como provedor grátis (PR #3); texto sem palavras barradas pelo filtro (PR #4); corpo inteiro com o equipamento da ficha (PR #5). |
+| 23/11/2026 | Fantasia d20: limite de perícias e poderes por nível, com contador no editor (PR #6). |
 | 22/11/2026 | Fase 6 (parcial) e fim da fase 5: asas, caudas, escudos e marcas do rosto (catálogo 1.1.0, 73 peças), "Vestir equipamento" e exportação conjunta ficha + avatar. Ferramentas do mestre: pacote Tormenta20 0.4.0 com ameaças, perigos e regras; cálculo de ND do combate e XP; tesouro pelas tabelas do livro. |
