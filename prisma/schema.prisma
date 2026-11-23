@@ -31,6 +31,7 @@ model User {
   approvalRequests GmApproval[]     @relation("RequestedBy")
   avatars         Avatar[]
   avatarPresets   AvatarPreset[]
+  avatarPortraits AvatarPortrait[]
 }
 
 /// Sessões no servidor; apenas o hash SHA-256 do token é armazenado.
@@ -163,6 +164,7 @@ model Character {
   gmApprovals    GmApproval[]
   diceRolls      DiceRoll[]
   avatar         Avatar?
+  portraits      AvatarPortrait[]
 
   @@index([ownerId])
   @@index([campaignId])
@@ -230,6 +232,27 @@ model AvatarPreset {
   createdAt DateTime @default(now())
   owner     User     @relation(fields: [ownerId], references: [id], onDelete: Cascade)
 
+  @@index([ownerId])
+}
+
+/// Retrato ilustrado gerado por IA (Gemini). A imagem fica no Vercel Blob; aqui ficam a URL e o pedido.
+/// No máximo um ativo por personagem: ele aparece na ficha e na lista no lugar do avatar desenhado.
+model AvatarPortrait {
+  id          String    @id @default(cuid())
+  characterId String
+  ownerId     String
+  url         String
+  /// Caminho no Blob.
+  pathname    String
+  style       String
+  description String    @default("")
+  model       String
+  active      Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  character   Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  owner       User      @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+
+  @@index([characterId, createdAt])
   @@index([ownerId])
 }
 
@@ -337,4 +360,6 @@ model AuditLog {
   user       User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
 
   @@index([entityType, entityId])
+  /// Limite diário de gerações por IA (conta as tentativas registradas).
+  @@index([userId, action, createdAt])
 }

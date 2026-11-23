@@ -3,6 +3,7 @@ import { avatarConfigSchema, checkAvatar, composeSvg, defaultAvatar, defaultCata
 import { loadCatalog } from "@/server/rulesets";
 import { db } from "@/server/db";
 import { ConflictError, ForbiddenError, loadWithAccess } from "@/server/characters";
+import { activePortraitUrls } from "@/server/portraits";
 import type { Prisma } from "@/generated/prisma/client";
 
 /** Quantas versões nomeadas guardar por avatar (as mais antigas saem primeiro). */
@@ -138,11 +139,25 @@ export async function deletePreset(userId: string, presetId: string) {
 }
 
 /**
- * Retratos (SVG) de vários personagens, para a ficha e a lista. Só gera para avatares salvos.
- * O SVG vem do catálogo e de cores validadas, então pode ser embutido na página.
+ * Retratos de vários personagens, para a ficha e a lista: o retrato gerado por IA em uso, se houver;
+ * senão o SVG do avatar salvo. O SVG vem do catálogo e de cores validadas, e a URL do retrato vem do
+ * nosso Blob (e é escapada), então o HTML pode ser embutido na página.
  */
 export async function portraitsFor(characterIds: string[], frame: "portrait" | "bust" | "full" = "portrait"): Promise<Record<string, string>> {
   if (!characterIds.length) return {};
-  const rows = await db.avatar.findMany({ where: { characterId: { in: characterIds } }, select: { characterId: true, config: true } });
-  return Object.fromEntries(rows.map((r) => [r.characterId, composeSvg(parseAvatar(r.config), { frame, idPrefix: `av${r.characterId}` })]));
+  const [rows, ai] = await Promise.all([
+    db.avatar.findMany({ where: { characterId: { in: characterIds } }, select: { characterId: true, config: true } }),
+    activePortraitUrls(characterIds),
+  ]);
+  const out: Record<string, string> = Object.fromEntries(
+    rows.map((r) => [r.characterId, composeSvg(parseAvatar(r.config), { frame, idPrefix: `av${r.characterId}` })]),
+  );
+  for (const [id, url] of Object.entries(ai)) {
+    // O retrato é um busto 3:4: no recorte do rosto, sobe o enquadramento.
+    const pos = frame === "portrait" ? "50% 22%" : "50% 30%";
+    out[id] = `<img src="${escapeAttr(url)}" alt="" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;object-position:${pos}" />`;
+  }
+  return out;
 }
+
+const escapeAttr = (s: string) => s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");

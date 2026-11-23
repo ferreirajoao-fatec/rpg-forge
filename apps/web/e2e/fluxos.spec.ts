@@ -46,6 +46,10 @@ test("criar personagem, abrir a ficha e acessar um id inexistente", async ({ pag
 test("avatar: salvar a aparência e encontrar salva depois de recarregar", async ({ page }) => {
   const id = await createCharacter(page, "Modelo E2E");
   await page.goto(`/app/personagens/${id}/avatar`);
+  // Sem chave do Gemini, o retrato por IA avisa e o editor manual já vem aberto.
+  await expect(page.getByRole("heading", { name: "Retrato com IA" })).toBeVisible();
+  await expect(page.getByText(/não está configurada neste servidor/)).toBeVisible();
+  await page.screenshot({ path: "test-results/avatar-ia.png", fullPage: false });
   await expect(page.getByText("Sugestão ainda não salva")).toBeVisible();
   await page.getByRole("button", { name: "Usar esta aparência" }).click();
   await expect(page.getByText(/Salvo às \d{2}:\d{2}/)).toBeVisible();
