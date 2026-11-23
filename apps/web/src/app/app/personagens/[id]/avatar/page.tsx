@@ -69,14 +69,14 @@ export default async function AvatarPage({
         initialPortraits={ai.portraits}
         initialRemaining={ai.remaining}
         limit={ai.limit}
-        referenceSvg={referenceSvg}
+        referenceSvg={ai.supportsReference ? referenceSvg : undefined}
       />
       <details open={!ai.enabled} className="group rounded-lg border bg-card">
         <summary className="flex cursor-pointer list-none items-center gap-2 p-4 text-sm font-semibold [&::-webkit-details-marker]:hidden">
           <PencilRuler className="size-4 text-gold" aria-hidden /> Ajustar
           manualmente (avatar desenhado)
           <span className="ml-auto text-xs font-normal text-muted-foreground">
-            Usado no token, na exportação e como referência para a IA
+            {ai.supportsReference ? "Usado no token, na exportação e como referência para a IA" : "Usado no token e na exportação"}
           </span>
         </summary>
         <div className="border-t p-4">

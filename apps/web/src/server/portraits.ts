@@ -1,16 +1,16 @@
 import "server-only";
-import { GoogleGenAI } from "@google/genai";
 import { del, get, put } from "@vercel/blob";
 import { z } from "zod";
 import { loadCatalog } from "@/server/rulesets";
 import { db } from "@/server/db";
 import { loadWithAccess } from "@/server/characters";
 import { buildPrompt, PORTRAIT_STYLES, STYLE_IDS } from "@/server/portrait-prompt";
+import { activeProvider, generateImage, ProviderError, supportsReference } from "@/server/image-providers";
 
 export { PORTRAIT_STYLES };
 
 /**
- * Retratos ilustrados gerados por IA (Gemini). A imagem fica num Vercel Blob PRIVADO; o banco guarda o endereço
+ * Retratos ilustrados gerados por IA (Cloudflare Workers AI ou Gemini, ver image-providers.ts). A imagem fica num Vercel Blob PRIVADO; o banco guarda o endereço
  * no Blob e o pedido. A página nunca vê o endereço do Blob: a imagem passa pela rota
  * /app/personagens/[id]/retrato/[portraitId], que confere a permissão (dono ou mestre da campanha).
  * No máximo um retrato ativo por personagem: ele aparece na ficha e na lista no lugar do avatar desenhado.
@@ -20,8 +20,6 @@ export { PORTRAIT_STYLES };
 /** Erro com mensagem para mostrar ao jogador. */
 export class PortraitError extends Error {}
 
-/** Modelo de imagem do Gemini; dá para trocar sem mexer no código. */
-const MODEL = process.env.GEMINI_IMAGE_MODEL || "gemini-nano-banana-2.1";
 /** Retratos guardados por personagem (os mais antigos, fora o ativo, saem primeiro). */
 const MAX_PER_CHARACTER = 12;
 const GENERATE_ACTION = "avatar.portrait.generate";
@@ -34,8 +32,8 @@ const dailyLimit = () => Math.max(0, Number(process.env.AI_PORTRAIT_DAILY_LIMIT 
  */
 const blobConfigured = () => Boolean(process.env.BLOB_STORE_ID || process.env.BLOB_READ_WRITE_TOKEN);
 
-/** A geração só fica disponível quando o servidor tem a chave do Gemini e acesso ao Blob. */
-export const portraitsEnabled = () => Boolean(process.env.GEMINI_API_KEY && blobConfigured());
+/** A geração só fica disponível quando o servidor tem um provedor de imagem e acesso ao Blob. */
+export const portraitsEnabled = () => Boolean(activeProvider() && blobConfigured());
 
 /** Endereço da imagem para as páginas (a rota que confere permissão), nunca o do Blob. */
 export const portraitSrc = (characterId: string, portraitId: string) => `/app/personagens/${characterId}/retrato/${portraitId}`;
@@ -89,7 +87,13 @@ export async function getPortraits(characterId: string, userId: string) {
   await loadWithAccess(characterId, userId, "read");
   const rows = await db.avatarPortrait.findMany({ where: { characterId }, orderBy: { createdAt: "desc" } });
   const limit = dailyLimit();
-  return { portraits: rows.map(view), remaining: Math.max(0, limit - (await usedToday(userId))), limit, enabled: portraitsEnabled() };
+  return {
+    portraits: rows.map(view),
+    remaining: Math.max(0, limit - (await usedToday(userId))),
+    limit,
+    enabled: portraitsEnabled(),
+    supportsReference: supportsReference(activeProvider()),
+  };
 }
 
 /** "species:elf" → "elf", para quando o catálogo não tem o nome. */
@@ -97,7 +101,8 @@ const bareId = (prefixed: string) => prefixed.replace(/^[a-z]+:/, "");
 
 /** Gera um retrato com o Gemini, guarda no Blob e o deixa ativo. */
 export async function generatePortrait(characterId: string, userId: string, raw: unknown) {
-  if (!portraitsEnabled()) throw new PortraitError("A geração de retratos por IA não está configurada neste servidor.");
+  const provider = activeProvider();
+  if (!provider || !blobConfigured()) throw new PortraitError("A geração de retratos por IA não está configurada neste servidor.");
   const parsed = generateInputSchema.safeParse(raw);
   if (!parsed.success) throw new PortraitError("Pedido inválido. Confira a descrição e o estilo.");
   const input = parsed.data;
@@ -106,7 +111,7 @@ export async function generatePortrait(characterId: string, userId: string, raw:
   if ((await usedToday(userId)) >= limit) throw new PortraitError(`Você atingiu o limite de ${limit} retratos por dia. Tente de novo amanhã.`);
 
   // A tentativa conta no limite mesmo se falhar (evita abuso repetindo pedidos bloqueados).
-  await db.auditLog.create({ data: { userId, action: GENERATE_ACTION, entityType: "Character", entityId: characterId, diff: { style: input.style } } });
+  const attempt = await db.auditLog.create({ data: { userId, action: GENERATE_ACTION, entityType: "Character", entityId: characterId, diff: { style: input.style } } });
 
   const data = ch.data as { speciesId?: string | null; classes?: { classId: string }[] } | null;
   const catalog = await loadCatalog(ch.rulesetId, ch.rulesetVersionId);
@@ -118,46 +123,31 @@ export async function generatePortrait(characterId: string, userId: string, raw:
     className: nameOf(data?.classes?.[0]?.classId),
     style: input.style,
     description: input.description,
-    withReference: Boolean(input.reference),
+    withReference: Boolean(input.reference) && supportsReference(provider),
   });
 
-  const client = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-  let image: { data?: string; mime_type?: string } | null | undefined;
+  let image: Awaited<ReturnType<typeof generateImage>>;
   try {
-    const interaction = await client.interactions.create({
-      model: MODEL,
-      // API v1: a entrada é uma lista de passos; o texto e a imagem vão dentro de um passo "user_input".
-      input: [
-        {
-          type: "user_input",
-          content: [
-            { type: "text", text: prompt },
-            ...(input.reference ? [{ type: "image" as const, mime_type: "image/jpeg" as const, data: input.reference }] : []),
-          ],
-        },
-      ],
-      response_format: { type: "image", aspect_ratio: "3:4", image_size: "1K" },
-      store: false,
-    });
-    // A imagem vem em output_image; por garantia, procura também no último passo do modelo.
-    image =
-      interaction.output_image ??
-      interaction.steps
-        ?.filter((st) => st.type === "model_output")
-        .flatMap((st) => st.content ?? [])
-        .findLast((c) => c.type === "image");
+    image = await generateImage(provider, prompt, supportsReference(provider) ? input.reference : undefined);
   } catch (e) {
-    console.error("[portraits] falha no Gemini", e);
-    throw new PortraitError("O Gemini não respondeu. Tente de novo em instantes.");
+    if (!(e instanceof ProviderError)) {
+      console.error("[portraits] falha inesperada", e);
+      throw new PortraitError("A IA não respondeu. Tente de novo em instantes.");
+    }
+    if (e.kind === "quota") {
+      // A cota é do servidor, não do jogador: a tentativa não conta no limite dele.
+      await db.auditLog.delete({ where: { id: attempt.id } }).catch(() => {});
+      throw new PortraitError("A cota de geração de imagens do servidor acabou por hoje. Tente de novo amanhã.");
+    }
+    if (e.kind === "blocked") throw new PortraitError("A IA não gerou a imagem (o pedido pode ter sido barrado pelo filtro de segurança). Tente outra descrição.");
+    throw new PortraitError("A IA não respondeu. Tente de novo em instantes.");
   }
-  if (!image?.data) throw new PortraitError("A IA não gerou a imagem (o pedido pode ter sido barrado pelo filtro de segurança). Tente outra descrição.");
 
-  const mime = image.mime_type === "image/jpeg" ? "image/jpeg" : image.mime_type === "image/webp" ? "image/webp" : "image/png";
   let blob: Awaited<ReturnType<typeof put>>;
   try {
-    blob = await put(`portraits/${characterId}/retrato.${mime.split("/")[1]}`, Buffer.from(image.data, "base64"), {
+    blob = await put(`portraits/${characterId}/retrato.${image.mime.split("/")[1]}`, image.data, {
       access: "private",
-      contentType: mime,
+      contentType: image.mime,
       addRandomSuffix: true,
     });
   } catch (e) {
@@ -168,7 +158,7 @@ export async function generatePortrait(characterId: string, userId: string, raw:
   const created = await db.$transaction(async (tx) => {
     await tx.avatarPortrait.updateMany({ where: { characterId, active: true }, data: { active: false } });
     return tx.avatarPortrait.create({
-      data: { characterId, ownerId: userId, url: blob.url, pathname: blob.pathname, style: input.style, description: input.description, model: MODEL, active: true },
+      data: { characterId, ownerId: userId, url: blob.url, pathname: blob.pathname, style: input.style, description: input.description, model: image.model, active: true },
     });
   });
 
