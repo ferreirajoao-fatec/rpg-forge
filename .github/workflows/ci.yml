@@ -57,3 +57,44 @@ jobs:
           name: playwright-rastros
           path: apps/web/test-results/
           retention-days: 7
+
+  # Deploy feito pelo Actions com o token do dono do projeto na Vercel. No plano Hobby a
+  # Vercel bloqueia deploys de repositório privado quando o autor do commit não é o dono;
+  # assim qualquer colaborador do GitHub publica. A integração Git da Vercel fica desligada
+  # em apps/web/vercel.json para não haver deploy em dobro.
+  deploy:
+    needs: verificar
+    # PRs de fork não recebem os secrets; só deploya push na main e PRs deste repositório.
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      pull-requests: write
+    env:
+      VERCEL_ORG_ID: ${{ vars.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ vars.VERCEL_PROJECT_ID }}
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      # O build roda na Vercel (mesma região, variáveis e OIDC de sempre); o runner só envia o código.
+      - name: Publicar na Vercel
+        id: publicar
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then ALVO="--prod"; else ALVO=""; fi
+          URL=$(npx --yes vercel@latest deploy $ALVO --yes --token "$VERCEL_TOKEN" \
+            --meta githubCommitSha=${{ github.sha }} \
+            --meta githubCommitAuthorLogin=${{ github.actor }})
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+          echo "Publicado em $URL" >> "$GITHUB_STEP_SUMMARY"
+      - name: Comentar o link de pré-visualização no PR
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr comment ${{ github.event.pull_request.number }} --repo ${{ github.repository }} \
+            --edit-last --create-if-none \
+            --body "Pré-visualização na Vercel: ${{ steps.publicar.outputs.url }} (commit ${{ github.sha }})"
