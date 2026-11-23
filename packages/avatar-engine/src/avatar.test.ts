@@ -297,4 +297,21 @@ describe("fase 5: aparência pelo equipamento", () => {
       expect(dressFromEquipment(base(), [{ name, category: "armadura" }]).config.slots.armor?.part, name).toBeTruthy();
     }
   });
+
+  it("suporta peças e equipamentos contemporâneos de Ordem Paranormal", () => {
+    for (const cls of ["combatente", "especialista", "ocultista", "sobrevivente"]) {
+      const { config, notes } = suggestFromCharacter(base(), { className: cls });
+      expect(notes).toHaveLength(1);
+      expect(checkAvatar(config)).toEqual([]);
+      expect(composeSvg(config)).toContain("<svg");
+    }
+    const dressed = dressFromEquipment(base(), [
+      { name: "Proteção leve", category: "armadura" },
+      { name: "Escudo balístico", category: "escudo" },
+      { name: "Sobretudo escuro", category: "vestuario" },
+    ]).config;
+    expect(dressed.slots.armor?.part).toBe("armor:colete-balistico");
+    expect(dressed.slots.shield?.part).toBe("shield:escudo-balistico");
+    expect(dressed.slots.torso?.part).toBe("torso:sobretudo");
+  });
 });

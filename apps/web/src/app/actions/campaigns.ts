@@ -15,6 +15,17 @@ import {
   regenerateInvite,
   removeMember,
 } from "@/server/campaigns";
+import { createBoardItem, deleteBoardItem, toggleBoardItemReveal } from "@/server/campaign-board";
+import { createCampaignHomebrew, deleteCampaignHomebrew } from "@/server/homebrew";
+import { decideApproval } from "@/server/approvals";
+import {
+  createDiaryEntry,
+  deleteDiaryEntry,
+  distributeCampaignReward,
+  updateCampaignOptionalRules,
+} from "@/server/campaign-diary";
+import { saveTacticalMap } from "@/server/campaign-map";
+import { setCampaignAmbientTrack, type AmbientTrackId } from "@/server/campaign-audio";
 import { ForbiddenError } from "@/server/characters";
 
 export type CampaignState = { errors?: Record<string, string[] | undefined>; message?: string } | undefined;
@@ -84,4 +95,84 @@ export async function deleteCampaignAction(campaignId: string) {
   const r = await run(() => deleteCampaign(campaignId, user.id), "/app/campanhas");
   if (!r) redirect("/app/campanhas");
   return r;
+}
+
+export async function createBoardItemAction(
+  campaignId: string,
+  kind: "clue" | "npc",
+  input: { title: string; description: string; tag: string; revealed: boolean },
+) {
+  const user = await requireUser();
+  return run(() => createBoardItem(campaignId, user.id, kind, input), `/app/campanhas/${campaignId}`);
+}
+
+export async function toggleBoardItemRevealAction(campaignId: string, eventId: string) {
+  const user = await requireUser();
+  return run(() => toggleBoardItemReveal(campaignId, eventId, user.id), `/app/campanhas/${campaignId}`);
+}
+
+export async function deleteBoardItemAction(campaignId: string, eventId: string) {
+  const user = await requireUser();
+  return run(() => deleteBoardItem(campaignId, eventId, user.id), `/app/campanhas/${campaignId}`);
+}
+
+export async function createHomebrewAction(campaignId: string, input: unknown) {
+  const user = await requireUser();
+  return run(() => createCampaignHomebrew(campaignId, user.id, input), `/app/campanhas/${campaignId}`);
+}
+
+export async function deleteHomebrewAction(campaignId: string, pk: string) {
+  const user = await requireUser();
+  return run(() => deleteCampaignHomebrew(campaignId, pk, user.id), `/app/campanhas/${campaignId}`);
+}
+
+export async function decideApprovalAction(campaignId: string, approvalId: string, decision: "approved" | "rejected") {
+  const user = await requireUser();
+  return run(() => decideApproval(campaignId, approvalId, user.id, decision), `/app/campanhas/${campaignId}`);
+}
+
+export async function createDiaryEntryAction(
+  campaignId: string,
+  kind: "session" | "milestone",
+  input: { title: string; notes: string; sessionNumber?: number },
+) {
+  const user = await requireUser();
+  return run(() => createDiaryEntry(campaignId, user.id, kind, input), `/app/campanhas/${campaignId}`);
+}
+
+export async function deleteDiaryEntryAction(campaignId: string, eventId: string) {
+  const user = await requireUser();
+  return run(() => deleteDiaryEntry(campaignId, eventId, user.id), `/app/campanhas/${campaignId}`);
+}
+
+export async function distributeRewardAction(
+  campaignId: string,
+  input: { mode: "xp" | "prestige"; amount: number; characterIds: string[]; note: string },
+) {
+  const user = await requireUser();
+  return run(() => distributeCampaignReward(campaignId, user.id, input), `/app/campanhas/${campaignId}`);
+}
+
+export async function updateCampaignOptionalRulesAction(campaignId: string, rules: string[]) {
+  const user = await requireUser();
+  return run(() => updateCampaignOptionalRules(campaignId, user.id, rules), `/app/campanhas/${campaignId}`);
+}
+
+export async function saveTacticalMapAction(campaignId: string, mapState: unknown) {
+  const user = await requireUser();
+  try {
+    const saved = await saveTacticalMap(campaignId, user.id, mapState);
+    revalidatePath(`/app/campanhas/${campaignId}`);
+    return { ok: true as const, map: saved };
+  } catch (e) {
+    if (e instanceof CampaignError || e instanceof ForbiddenError) return { ok: false as const, error: e.message };
+    throw e;
+  }
+}
+
+export async function setAmbientTrackAction(campaignId: string, track: AmbientTrackId) {
+  const user = await requireUser();
+  return run(async () => {
+    await setCampaignAmbientTrack(campaignId, user.id, track);
+  }, `/app/campanhas/${campaignId}`);
 }

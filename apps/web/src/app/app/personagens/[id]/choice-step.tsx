@@ -29,7 +29,13 @@ export function selectedIds(kind: string, data: CharacterData): string[] {
     case "background":
       return data.backgroundId ? [data.backgroundId] : [];
     default:
-      return data.choices.filter((ch) => ch.contentId.startsWith(`${kind}:`)).map((ch) => ch.contentId);
+      return [
+        ...new Set(
+          data.choices
+            .filter((ch) => ch.contentId.startsWith(`${kind}:`) && !ch.slot.startsWith("skill-rank:"))
+            .map((ch) => ch.contentId),
+        ),
+      ];
   }
 }
 
@@ -127,8 +133,11 @@ export function ChoiceStep({
   const { pages, current, slice } = paginate(shown, page, PAGE_SIZE);
   const hiddenOther = filterByFit && forYou ? rows.filter((r) => !r.chosen && !isForYou(r.fit.fit)).length : 0;
   const chosenEntries = rows.filter((r) => r.chosen).map((r) => r.entry);
-  // Perícias e poderes têm limite por nível (quando o sistema informa).
-  const limit = kind === "skill" || kind === "power" ? engine.choiceLimits?.(data, catalog).find((l) => l.kind === kind) : undefined;
+  // Perícias, poderes e rituais têm limite por nível/NEX (quando o sistema informa).
+  const limit =
+    kind === "skill" || kind === "power" || kind === "spell"
+      ? engine.choiceLimits?.(data, catalog).find((l) => l.kind === kind)
+      : undefined;
   const full = !!limit && limit.used >= limit.max;
   const go = (fn: () => void) => {
     fn();
@@ -156,8 +165,11 @@ export function ChoiceStep({
 
       {kind === "species" && <FlexibleBonus data={data} update={update} engine={engine} catalog={catalog} canEdit={canEdit} />}
       {kind === "species" && <SubspeciesPicker data={data} update={update} catalog={catalog} canEdit={canEdit} />}
-      {kind === "class" && <SubclassPicker data={data} update={update} catalog={catalog} canEdit={canEdit} />}
+      {kind === "class" && <SubclassPicker data={data} update={update} engine={engine} catalog={catalog} canEdit={canEdit} />}
       {kind === "skill" && <GrantedSkills data={data} catalog={catalog} />}
+      {kind === "skill" && engine.skillUpgradeBudget && (
+        <SkillUpgradePanel data={data} update={update} engine={engine} catalog={catalog} canEdit={canEdit} />
+      )}
       {limit && (
         <p
           role="status"
@@ -167,20 +179,24 @@ export function ChoiceStep({
           )}
         >
           <span className="font-medium">
-            {kind === "skill" ? "Perícias escolhidas" : "Poderes escolhidos"}: {limit.used} de {limit.max}
+            {kind === "skill" ? "Perícias escolhidas" : kind === "spell" ? "Rituais escolhidos" : "Poderes escolhidos"}: {limit.used} de {limit.max}
           </span>{" "}
           <span className="text-muted-foreground">
-            no {data.level}º nível ({limit.detail}).
+            {engine.formatLevel ? `em ${engine.formatLevel(data.level, data)}` : `no ${data.level}º nível`} ({limit.detail}).
             {limit.used > limit.max
               ? ` Remova ${limit.used - limit.max} para a ficha ficar válida.`
               : limit.max === 0
-                ? kind === "power"
-                  ? " Ainda não há poderes livres: o poder de classe começa no 2º nível (ou escolha uma divindade para receber um poder concedido)."
-                  : " Ainda não há perícias livres: escolha a classe primeiro."
+                ? kind === "spell"
+                  ? " Ainda não há rituais livres: escolha Ocultista ou o poder paranormal Aprender Ritual."
+                  : kind === "power"
+                    ? engine.formatLevel
+                      ? " Ainda não há poderes livres: o primeiro poder de classe chega em NEX 15%."
+                      : " Ainda não há poderes livres: o poder de classe começa no 2º nível (ou escolha uma divindade para receber um poder concedido)."
+                    : " Ainda não há perícias livres: escolha a classe primeiro."
                 : full
                   ? " Limite atingido: para trocar, remova uma escolha antes."
                   : ""}
-            {kind === "power" && " Benefícios da origem não entram nesta conta."}
+            {kind === "power" && !engine.formatLevel && " Benefícios da origem não entram nesta conta."}
           </span>
         </p>
       )}
@@ -193,8 +209,15 @@ export function ChoiceStep({
           <span>
             {ctx.className || ctx.speciesName
               ? `Mostrando primeiro o que combina com ${[ctx.speciesName, ctx.className, ctx.originName && `origem ${ctx.originName}`, ctx.deityName].filter(Boolean).join(", ")}.`
-              : "Escolha raça e classe nas etapas anteriores para ver primeiro as opções feitas para o seu personagem."}
-            {kind === "spell" && ctx.className && !ctx.classCasts && ` ${ctx.className} não lança magias: aqui aparecem só as que a raça ou outra habilidade concede.`}
+              : ctx.isOp
+                ? "Escolha origem e classe nas etapas anteriores para ver primeiro as opções feitas para o seu agente."
+                : "Escolha raça e classe nas etapas anteriores para ver primeiro as opções feitas para o seu personagem."}
+            {kind === "spell" &&
+              ctx.className &&
+              !ctx.classCasts &&
+              (ctx.isOp
+                ? ` ${ctx.className} não conjura rituais por padrão: use o poder paranormal Aprender Ritual (ou a trilha Esotérico de Sobrevivente).`
+                : ` ${ctx.className} não lança magias: aqui aparecem só as que a raça ou outra habilidade concede.`)}
             {hiddenOther > 0 && ` ${hiddenOther} opção(ões) de outras classes ou divindades estão ocultas.`}
           </span>
         </p>
@@ -412,7 +435,9 @@ function ClassOptions({ data, update, engine, catalog, canEdit }: { data: Charac
         const current = data.choices.find((ch) => ch.slot === slot)?.contentId;
         return (
           <fieldset key={group} className="rounded-md border p-3">
-            <legend className="px-1 text-sm font-medium">Escolha da classe</legend>
+            <legend className="px-1 text-sm font-medium">
+              {group === "afinidade" ? "Afinidade Elemental (NEX 50%)" : "Escolha da classe"}
+            </legend>
             <div className="mt-1 grid gap-2 sm:grid-cols-3">
               {list.map((e) => {
                 const on = current === e.id;
@@ -457,6 +482,10 @@ interface OriginData {
 function OriginBenefits({ data, update, catalog, canEdit }: { data: CharacterData; update: Update; catalog: Catalog; canEdit: boolean }) {
   const origin = data.backgroundId ? catalog.get(data.backgroundId) : undefined;
   if (!origin) return null;
+  // Origem de Ordem Paranormal: 2 perícias treinadas fixas + 1 poder exclusivo.
+  if (origin.data.power && typeof origin.data.power === "object") {
+    return <OpOriginBenefits origin={origin} catalog={catalog} />;
+  }
   // Antecedente do D&D: perícias fixas, bônus de atributo (2024), talento de origem e característica.
   if (Array.isArray(origin.data.skills)) return <DndBackground origin={origin} data={data} update={update} catalog={catalog} canEdit={canEdit} />;
   const od = origin.data as OriginData;
@@ -586,24 +615,39 @@ function SubspeciesPicker({ data, update, catalog, canEdit }: { data: CharacterD
   );
 }
 
-/** Subclasse, a partir do nível indicado pela classe. */
-function SubclassPicker({ data, update, catalog, canEdit }: { data: CharacterData; update: Update; catalog: Catalog; canEdit: boolean }) {
+/** Subclasse ou Trilha, a partir do nível/NEX indicado pela classe. */
+function SubclassPicker({
+  data,
+  update,
+  engine,
+  catalog,
+  canEdit,
+}: {
+  data: CharacterData;
+  update: Update;
+  engine: Engine;
+  catalog: Catalog;
+  canEdit: boolean;
+}) {
   const cl = data.classes[0];
   const cls = cl ? catalog.get(cl.classId) : undefined;
   const at = Number(cls?.data.subclassLevel ?? 0);
   if (!cl || !cls || !at) return null;
   const options = catalog.ofKind("subclass").filter((e) => e.data.classId === cls.id);
   if (!options.length) return null;
+  const isOp = catalog.rulesetId === "ordem-paranormal-1e";
+  const term = isOp ? "Trilha" : "Subclasse";
   if (cl.levels < at) {
+    const unlock = engine.formatLevel ? engine.formatLevel(at, data) : `${at}º nível`;
     return (
       <p className="rounded-md border p-3 text-sm text-muted-foreground">
-        {cls.name} escolhe a subclasse no {at}º nível ({options.map((o) => o.name).join(", ")}).
+        {cls.name} escolhe a {term.toLowerCase()} em {unlock} ({options.map((o) => o.name).join(", ")}).
       </p>
     );
   }
   return (
     <OptionGrid
-      legend={`Subclasse de ${cls.name}`}
+      legend={`${term} de ${cls.name}`}
       options={options}
       current={cl.subclassId}
       canEdit={canEdit}
@@ -612,18 +656,46 @@ function SubclassPicker({ data, update, catalog, canEdit }: { data: CharacterDat
   );
 }
 
-/** Perícias que já vêm treinadas pelo antecedente e pela raça (não contam na escolha da classe). */
+/** Perícias que já vêm treinadas pela origem/antecedente, raça ou classe. */
 function GrantedSkills({ data, catalog }: { data: CharacterData; catalog: Catalog }) {
   const bg = data.backgroundId ? catalog.get(data.backgroundId) : undefined;
   const sp = data.speciesId ? catalog.get(data.speciesId) : undefined;
   const cls = data.classes[0] ? catalog.get(data.classes[0].classId) : undefined;
   const fromBg = Array.isArray(bg?.data.skills) ? (bg.data.skills as string[]) : [];
   const fromSp = Array.isArray(sp?.data.skills) ? (sp.data.skills as string[]) : [];
+  const names = (ids: string[]) => ids.map((id) => catalog.get(id)?.name ?? slug(id)).join(", ");
+
+  if (catalog.rulesetId === "ordem-paranormal-1e") {
+    const opSkills = cls?.data.skills as { fixed?: string[]; oneOf?: string[][] } | undefined;
+    const fixed = opSkills?.fixed ?? [];
+    const oneOf = opSkills?.oneOf ?? [];
+    if (!fromBg.length && !fixed.length && !oneOf.length) return null;
+    return (
+      <div className="space-y-1 rounded-md border p-3 text-sm">
+        {bg && fromBg.length > 0 && (
+          <p className="text-muted-foreground">
+            <span className="font-medium text-foreground">Origem ({bg.name}):</span> {names(fromBg)} (já treinadas).
+          </p>
+        )}
+        {cls && fixed.length > 0 && (
+          <p className="text-muted-foreground">
+            <span className="font-medium text-foreground">{cls.name} (fixas):</span> {names(fixed)}.
+          </p>
+        )}
+        {cls && oneOf.length > 0 && (
+          <p className="text-muted-foreground">
+            <span className="font-medium text-foreground">{cls.name} (escolha uma de cada par):</span>{" "}
+            {oneOf.map((pair) => pair.map((id) => catalog.get(id)?.name ?? slug(id)).join(" ou ")).join("; ")}.
+          </p>
+        )}
+      </div>
+    );
+  }
+
   const skills = cls?.data.skills as { choose?: number; from?: string[] } | undefined;
   const flex = Number(sp?.data.flexibleSkills ?? 0);
   // Só no D&D: lá a lista da classe é "escolha N de", e antecedente/raça dão perícias fixas.
   if (!Array.isArray(skills?.from) || skills.choose === undefined || "fixed" in (skills ?? {})) return null;
-  const names = (ids: string[]) => ids.map((id) => catalog.get(id)?.name ?? slug(id)).join(", ");
   return (
     <div className="space-y-1 rounded-md border p-3 text-sm">
       {cls && (
@@ -643,6 +715,152 @@ function GrantedSkills({ data, catalog }: { data: CharacterData; catalog: Catalo
         </p>
       )}
     </div>
+  );
+}
+
+/** Benefícios da origem em Ordem Paranormal: 2 perícias treinadas + 1 poder exclusivo. */
+function OpOriginBenefits({ origin, catalog }: { origin: ContentEntry; catalog: Catalog }) {
+  const skills = Array.isArray(origin.data.skills) ? (origin.data.skills as string[]) : [];
+  const skillsNote = typeof origin.data.skillsNote === "string" ? origin.data.skillsNote : "";
+  const power = origin.data.power as { name: string; summary?: string; text?: string };
+  const skillNames = skills.length ? skills.map((id) => catalog.get(id)?.name ?? slug(id)).join(", ") : skillsNote || "Definidas com o mestre";
+  return (
+    <div className="space-y-1.5 rounded-md border p-3 text-sm">
+      <p>
+        <span className="font-medium">Perícias treinadas:</span> {skillNames}.
+      </p>
+      <div>
+        <span className="font-medium">Poder da origem — {power.name}:</span>{" "}
+        <span className="text-muted-foreground whitespace-pre-line">{power.text || power.summary}</span>
+      </div>
+    </div>
+  );
+}
+
+/** Grau de Treinamento (Ordem Paranormal): promove perícias treinadas para Veterano (+10) e Expert (+15). */
+function SkillUpgradePanel({
+  data,
+  update,
+  engine,
+  catalog,
+  canEdit,
+}: {
+  data: CharacterData;
+  update: Update;
+  engine: Engine;
+  catalog: Catalog;
+  canEdit: boolean;
+}) {
+  const budget = engine.skillUpgradeBudget?.(data, catalog);
+  if (!budget) return null;
+
+  // Lista todas as perícias atualmente treinadas (origem, fixas da classe e escolhidas).
+  const trainedSet = new Set<string>();
+  const bg = data.backgroundId ? catalog.get(data.backgroundId) : undefined;
+  const cls = data.classes[0] ? catalog.get(data.classes[0].classId) : undefined;
+  if (Array.isArray(bg?.data.skills)) for (const id of bg.data.skills as string[]) trainedSet.add(id);
+  const clsFixed = (cls?.data.skills as { fixed?: string[] } | undefined)?.fixed ?? [];
+  for (const id of clsFixed) trainedSet.add(id);
+  for (const ch of data.choices) {
+    if (ch.contentId.startsWith("skill:") && !ch.slot.startsWith("skill-rank:")) trainedSet.add(ch.contentId);
+  }
+  const trained = [...trainedSet]
+    .map((id) => ({ id, name: catalog.get(id)?.name ?? slug(id) }))
+    .sort((a, b) => a.name.localeCompare(b.name, "pt-BR"));
+
+  if (budget.max === 0 && budget.used === 0) {
+    return (
+      <p className="rounded-md border p-3 text-xs text-muted-foreground">
+        <span className="font-medium text-foreground">Grau de Treinamento:</span> {budget.detail}
+      </p>
+    );
+  }
+
+  const rankOf = (id: string): "treinado" | "veterano" | "expert" => {
+    if (data.choices.some((ch) => ch.slot === `skill-rank:expert:${id}`)) return "expert";
+    if (data.choices.some((ch) => ch.slot === `skill-rank:veterano:${id}`)) return "veterano";
+    return "treinado";
+  };
+
+  const setRank = (id: string, target: "treinado" | "veterano" | "expert") => {
+    const cleaned = data.choices.filter(
+      (ch) => ch.slot !== `skill-rank:veterano:${id}` && ch.slot !== `skill-rank:expert:${id}`,
+    );
+    if (target === "treinado") {
+      update({ choices: cleaned });
+    } else if (target === "veterano") {
+      update({ choices: [...cleaned, choice(`skill-rank:veterano:${id}`, id, data.level)] });
+    } else {
+      update({
+        choices: [
+          ...cleaned,
+          choice(`skill-rank:veterano:${id}`, id, data.level),
+          choice(`skill-rank:expert:${id}`, id, data.level),
+        ],
+      });
+    }
+  };
+
+  return (
+    <fieldset
+      className={cn(
+        "rounded-md border p-3",
+        budget.used > budget.max && "border-destructive/50 bg-destructive/5",
+      )}
+    >
+      <legend className="px-1 text-sm font-medium">
+        Grau de Treinamento: {budget.used} de {budget.max} aprimoramento(s)
+      </legend>
+      <p className="text-xs text-muted-foreground">{budget.detail}</p>
+      {trained.length === 0 ? (
+        <p className="mt-2 text-xs text-muted-foreground">Treine perícias abaixo para poder promovê-las.</p>
+      ) : (
+        <div className="mt-2 grid gap-2 sm:grid-cols-2">
+          {trained.map((sk) => {
+            const cur = rankOf(sk.id);
+            const vetDelta = cur === "treinado" ? 1 : cur === "expert" ? -1 : 0;
+            const expDelta = cur === "treinado" ? 2 : cur === "veterano" ? 1 : 0;
+            return (
+              <div key={sk.id} className="flex items-center justify-between gap-2 rounded-md border p-2 text-sm">
+                <span className="truncate font-medium">{sk.name}</span>
+                <div role="group" aria-label={`Grau de ${sk.name}`} className="inline-flex shrink-0 rounded-md border p-0.5">
+                  {(
+                    [
+                      { id: "treinado", label: "+5", disabled: !canEdit },
+                      {
+                        id: "veterano",
+                        label: "+10",
+                        disabled: !canEdit || budget.maxRank === "treinado" || (vetDelta > 0 && budget.used + vetDelta > budget.max),
+                      },
+                      {
+                        id: "expert",
+                        label: "+15",
+                        disabled: !canEdit || budget.maxRank !== "expert" || (expDelta > 0 && budget.used + expDelta > budget.max),
+                      },
+                    ] as const
+                  ).map((opt) => (
+                    <button
+                      key={opt.id}
+                      type="button"
+                      disabled={opt.disabled}
+                      aria-pressed={cur === opt.id}
+                      title={opt.id === "treinado" ? "Treinado (+5)" : opt.id === "veterano" ? "Veterano (+10, NEX 35%+)" : "Expert (+15, NEX 70%+)"}
+                      onClick={() => setRank(sk.id, opt.id)}
+                      className={cn(
+                        "rounded px-2 py-0.5 text-xs tabular-nums disabled:opacity-40",
+                        cur === opt.id ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground",
+                      )}
+                    >
+                      {opt.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </fieldset>
   );
 }
 

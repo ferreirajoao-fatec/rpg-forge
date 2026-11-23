@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { listEngines } from "@rpg-forge/rules-engine";
 import { db } from "@/server/db";
+import { loadCompendiumData } from "@/server/rulesets";
+import { Compendium } from "./compendium";
 
 export const metadata: Metadata = { title: "Regras e fontes" };
 
@@ -10,10 +12,13 @@ export const instant = false;
 
 export default async function RulesPage() {
   const engines = listEngines();
-  const versions = await db.rulesetVersion.findMany({
-    where: { isCurrent: true },
-    include: { _count: { select: { entries: true } } },
-  });
+  const [versions, compendium] = await Promise.all([
+    db.rulesetVersion.findMany({
+      where: { isCurrent: true },
+      include: { _count: { select: { entries: true } } },
+    }),
+    loadCompendiumData(),
+  ]);
   return (
     <div className="mx-auto max-w-4xl">
       <h1 className="text-2xl font-semibold">Regras e fontes</h1>
@@ -65,6 +70,7 @@ export default async function RulesPage() {
           );
         })}
       </div>
+      <Compendium catalogs={compendium} />
     </div>
   );
 }

@@ -38,6 +38,8 @@ export interface FitContext {
   dndArmor?: Set<string>;
   /** Perícias que a raça concede (D&D). */
   speciesSkills: Set<string>;
+  /** Modo Ordem Paranormal RPG. */
+  isOp: boolean;
 }
 
 const norm = (s: string) =>
@@ -55,23 +57,32 @@ export function fitContext(data: CharacterData, catalog: Catalog): FitContext {
   const skills = (cls?.data.skills ?? {}) as { fixed?: string[]; from?: string[]; oneOf?: string[][] };
   const traits = (sp?.data.traits as { name: string; summary: string }[] | undefined) ?? [];
   const dndArmor = Array.isArray(cls?.data.armor) ? new Set(cls.data.armor as string[]) : undefined;
-  const baseProfs = dndArmor ? [] : ["armas simples", "armaduras leves"];
+  const isOp = catalog.rulesetId === "ordem-paranormal-1e";
+  const baseProfs = dndArmor ? [] : isOp ? ["armas simples"] : ["armas simples", "armaduras leves"];
+  const chosenProfs = new Set<string>();
+  if (isOp) {
+    const chIds = new Set(data.choices.map((ch) => ch.contentId));
+    if (chIds.has("power:armamento-pesado")) chosenProfs.add("armas pesadas");
+    if (chIds.has("power:protecao-pesada")) chosenProfs.add("proteções pesadas");
+    if (chIds.has("power:balistica-avancada") || chIds.has("power:ninja-urbano")) chosenProfs.add("armas táticas");
+  }
   return {
     classId: cls?.id,
     className: cls?.name,
-    classCasts: !!cls?.data.spellcasting,
+    classCasts: !!cls?.data.spellcasting || (isOp && data.choices.some((ch) => ch.contentId === "power:aprender-ritual")),
     speciesName: sp?.name,
     speciesText: norm(traits.map((t) => `${t.name}. ${t.summary}`).join(" ")),
     deityId,
     deityName: deityId ? catalog.get(deityId)?.name : undefined,
     originName: origin?.name,
-    // Tormenta20: perícias que a origem oferece; D&D: perícias que o antecedente dá.
+    // Tormenta20: perícias que a origem oferece; D&D / OP: perícias fixas do antecedente/origem.
     originSkills: new Set([...((origin?.data.skillOptions as string[] | undefined) ?? []), ...(Array.isArray(origin?.data.skills) ? (origin.data.skills as string[]) : [])]),
     originPowerNames: new Set(((origin?.data.powerOptions as string[] | undefined) ?? []).map(norm)),
     classSkills: new Set([...(skills.fixed ?? []), ...(skills.from ?? []), ...(skills.oneOf ?? []).flat()]),
-    proficiencies: new Set([...baseProfs, ...((cls?.data.proficiencies as string[] | undefined) ?? [])]),
+    proficiencies: new Set([...baseProfs, ...((cls?.data.proficiencies as string[] | undefined) ?? []), ...chosenProfs]),
     dndArmor,
     speciesSkills: new Set(Array.isArray(sp?.data.skills) ? (sp.data.skills as string[]) : []),
+    isOp,
   };
 }
 
@@ -116,10 +127,20 @@ export function fitOf(kind: string, entry: ContentEntry, ctx: FitContext, catalo
       return { fit: "other", label: `De outra classe: ${names}` };
     }
     if (entry.data.group === "aberrante") return { fit: "general", label: "Poder da Tormenta (geral, com penalidade)" };
+    if (entry.data.group === "paranormal") {
+      const el = typeof entry.data.element === "string" && entry.data.element !== "variavel" ? entry.data.element[0].toUpperCase() + entry.data.element.slice(1) : "Paranormal";
+      return { fit: "general", label: `Paranormal · ${el} (Transcender)` };
+    }
     return { fit: "general", label: entry.data.group === "destino" ? "Poder geral de destino" : entry.data.group === "combate" ? "Poder geral de combate" : "Poder geral" };
   }
 
   if (kind === "spell") {
+    if (ctx.isOp) {
+      const circle = Number(entry.data.circle ?? 1);
+      const rawEl = typeof entry.data.element === "string" ? entry.data.element : "medo";
+      const el = rawEl === "variavel" ? "Variável" : rawEl[0].toUpperCase() + rawEl.slice(1);
+      return { fit: ctx.classCasts ? "class" : "general", label: `${circle}º círculo · ${el}` };
+    }
     if (citedBySpecies(entry, ctx)) return species;
     const { classes } = prereqRefs(entry);
     if (ctx.classId && classes.has(ctx.classId)) return fromClass;
@@ -129,6 +150,11 @@ export function fitOf(kind: string, entry: ContentEntry, ctx: FitContext, catalo
   }
 
   if (kind === "skill") {
+    if (ctx.isOp) {
+      if (ctx.originSkills.has(entry.id)) return { fit: "origin", label: `Já vem da origem: ${ctx.originName}` };
+      if (ctx.classSkills.has(entry.id)) return fromClass;
+      return { fit: "general", label: "Escolha livre (classe + Intelecto)" };
+    }
     if (ctx.dndArmor) {
       // D&D: antecedente e raça dão perícias prontas; a classe escolhe da própria lista.
       if (ctx.originSkills.has(entry.id)) return { fit: "origin", label: `Já vem do antecedente: ${ctx.originName}` };
@@ -143,6 +169,7 @@ export function fitOf(kind: string, entry: ContentEntry, ctx: FitContext, catalo
   }
 
   if (kind === "equipment" && ctx.dndArmor) return dndEquipmentFit(entry, ctx);
+  if (kind === "equipment" && ctx.isOp) return opEquipmentFit(entry, ctx);
 
   if (kind === "equipment") {
     const cat = String(entry.data.category);
@@ -190,6 +217,29 @@ function dndEquipmentFit(entry: ContentEntry, ctx: FitContext): FitInfo {
     return { fit: "other", label: "Sem proficiência com escudos" };
   }
   return { fit: "general", label: "Geral" };
+}
+
+/** Equipamento em Ordem Paranormal: proficiências (simples/táticas/pesadas, proteções leves/pesadas) e itens amaldiçoados. */
+function opEquipmentFit(entry: ContentEntry, ctx: FitContext): FitInfo {
+  const cat = String(entry.data.category);
+  if (cat === "item-amaldicoado") return { fit: "other", label: "Item amaldiçoado (Agente Especial+)" };
+  if (cat === "arma") {
+    const p = String(entry.data.proficiency ?? "simples");
+    const need = p === "taticas" ? "armas táticas" : p === "pesadas" ? "armas pesadas" : "armas simples";
+    if (need === "armas simples") return { fit: "general", label: "Arma simples (todos sabem usar)" };
+    if (ctx.proficiencies.has(need)) return { fit: "class", label: `Você tem proficiência (${need})` };
+    return { fit: "other", label: `Exige proficiência com ${need} (–2d20 sem ela)` };
+  }
+  if (cat === "armadura") {
+    const need = entry.data.armorType === "pesada" ? "proteções pesadas" : "proteções leves";
+    if (ctx.proficiencies.has(need)) return { fit: "class", label: `Você tem proficiência (${need})` };
+    return { fit: "other", label: `Exige proficiência com ${need}` };
+  }
+  if (cat === "escudo") {
+    if (ctx.proficiencies.has("proteções pesadas")) return { fit: "class", label: "Você tem proficiência (proteções pesadas)" };
+    return { fit: "other", label: "Exige proficiência com proteções pesadas" };
+  }
+  return { fit: "general", label: cat === "paranormal" ? "Item paranormal" : cat === "explosivo" ? "Explosivo" : "Geral" };
 }
 
 /** Opções que aparecem no modo "Para você": tudo menos o que é de outra classe, divindade etc. */

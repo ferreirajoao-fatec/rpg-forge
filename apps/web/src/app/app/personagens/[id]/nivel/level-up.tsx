@@ -34,9 +34,12 @@ export function LevelUp(props: {
   const [xp, setXp] = useState(props.data.experience);
 
   const plan = useMemo(() => engine.levelUpPlan({ ...props.data, experience: xp }, catalog), [engine, props.data, xp, catalog]);
-  const atMax = plan.to > engine.meta.levelRange.max;
+  const clsEntry = props.data.classes[0] ? catalog.get(props.data.classes[0].classId) : undefined;
+  const maxLvl = typeof clsEntry?.data.maxLevel === "number" ? clsEntry.data.maxLevel : engine.meta.levelRange.max;
+  const atMax = plan.to > maxLvl;
   const choices = plan.gains.filter((g) => g.kind === "choice");
   const name = props.data.name || "Seu personagem";
+  const fmtLvl = (n: number) => (engine.formatLevel ? engine.formatLevel(n, props.data) : `${n}º nível`);
 
   const confirm = () =>
     startTransition(async () => {
@@ -55,9 +58,9 @@ export function LevelUp(props: {
     <div className="space-y-6">
       <header>
         <p className="text-xs uppercase tracking-wide text-muted-foreground">{engine.meta.name}</p>
-        <h1 className="text-2xl font-semibold">Meu próximo nível</h1>
+        <h1 className="text-2xl font-semibold">{engine.formatLevel ? "Próximo avanço" : "Meu próximo nível"}</h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          {atMax ? `${name} já está no nível máximo.` : `O que ${name} ganha ao passar do ${plan.from}º para o ${plan.to}º nível.`}
+          {atMax ? `${name} já está no limite máximo (${fmtLvl(plan.from)}).` : `O que ${name} ganha ao passar de ${fmtLvl(plan.from)} para ${fmtLvl(plan.to)}.`}
         </p>
       </header>
 
@@ -121,7 +124,7 @@ export function LevelUp(props: {
         <div className="space-y-2">
           <div className="flex flex-wrap items-center gap-3">
             <Button onClick={confirm} disabled={!plan.canLevelUp || pending}>
-              <ArrowUpCircle /> {pending ? "Subindo…" : `Subir para o ${plan.to}º nível`}
+              <ArrowUpCircle /> {pending ? "Subindo…" : `Avançar para ${fmtLvl(plan.to)}`}
             </Button>
             {plan.blockedReason && <p className="text-sm text-muted-foreground">{plan.blockedReason}</p>}
             {error && (

@@ -73,9 +73,14 @@ export function NewCharacterForm({ systems }: { systems: SystemOption[] }) {
         <Input id="name" name="name" maxLength={80} placeholder="Você pode decidir depois" />
       </div>
 
-      <Button type="submit" disabled={pending || !selected}>
-        {pending ? "Criando…" : "Criar rascunho"}
-      </Button>
+      <div className="flex flex-wrap gap-2">
+        <Button type="submit" disabled={pending || !selected}>
+          {pending ? "Criando…" : "Criar rascunho"}
+        </Button>
+        <Button type="submit" name="randomize" value="1" variant="outline" disabled={pending || !selected}>
+          {pending ? "Gerando…" : "Criar já preenchido aleatoriamente"}
+        </Button>
+      </div>
     </form>
   );
 }

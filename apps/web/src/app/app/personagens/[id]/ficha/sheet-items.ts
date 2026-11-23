@@ -19,8 +19,11 @@ const GROUP_OF: Record<string, ItemGroup> = {
   alquimico: "consumivel",
   alimentacao: "consumivel",
   pocao: "consumivel",
+  explosivo: "consumivel",
   ferramenta: "ferramenta",
   kit: "ferramenta",
+  paranormal: "ferramenta",
+  "item-amaldicoado": "protecao",
   "arcane-foci": "ferramenta",
   "druidic-foci": "ferramenta",
   "holy-symbols": "ferramenta",
@@ -32,6 +35,7 @@ export interface SheetItem {
   quantity: number;
   equipped: boolean;
   weight?: number;
+  itemCategory?: number;
   detail?: string;
   /** Onde fica equipado: arma, armadura, escudo, acessório... */
   slot?: string;
@@ -43,7 +47,17 @@ export function sheetItems(rows: InventoryRow[] | undefined, catalog: Catalog): 
   return (rows ?? []).map((r) => {
     const category = catalog.get(r.entryId)?.data.category;
     const group = (typeof category === "string" && GROUP_OF[category]) || (r.slot === "arma" ? "arma" : r.slot ? "protecao" : "outro");
-    return { name: r.name, quantity: r.quantity, equipped: r.equipped, weight: r.weight, detail: r.detail, slot: r.slot, group, magic: r.magic };
+    return {
+      name: r.name,
+      quantity: r.quantity,
+      equipped: r.equipped,
+      weight: r.weight,
+      itemCategory: r.itemCategory,
+      detail: r.detail,
+      slot: r.slot,
+      group,
+      magic: r.magic,
+    };
   });
 }
 

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 768">
+  <defs>
+    <filter id="f-primary" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{primary-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="f-secondary" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="blur"/>
+      <feComposite in="SourceAlpha" in2="blur" operator="out" result="edge"/>
+      <feFlood flood-color="#{secondary-deep}" flood-opacity="0.6"/>
+      <feComposite in2="edge" operator="in" result="shade"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="shade"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <g data-anchor="torso">
+      <path fill="#{secondary}" stroke="#{secondary-deep}" stroke-width="1" filter="url(#f-secondary)" d="M256 204 L240 178 C226 184 212 188 200 190 L200 404 L312 404 L312 190 C300 188 286 184 272 178 Z"/>
+      <g id="coatSleeveL">
+        <path fill="#{primary}" stroke="#{primary-deep}" stroke-width="1" filter="url(#f-primary)" d="M206 186 C188 184 170 192 162 210 C156 228 155 268 157 322 C152 346 150 378 153 414 L182 414 C185 384 187 354 186 326 C190 296 195 256 200 218 Z"/>
+        <path fill="#{primary-deep}" opacity="0.3" filter="url(#soft)" d="M158 240 C156 280 156 310 159 340 L165 340 C163 310 163 280 164 240 Z"/>
+      </g>
+      <use href="#coatSleeveL" transform="matrix(-1 0 0 1 512 0)"/>
+      <path fill="#{primary}" stroke="#{primary-deep}" stroke-width="1" filter="url(#f-primary)" d="M242 179 C228 185 214 188 202 191 L197 340 C193 406 186 488 180 558 C206 566 226 566 244 562 L248 396 L248 228 Z"/>
+      <path fill="#{primary}" stroke="#{primary-deep}" stroke-width="1" filter="url(#f-primary)" d="M270 179 C284 185 298 188 310 191 L315 340 C319 406 326 488 332 558 C306 566 286 566 268 562 L264 396 L264 228 Z"/>
+      <path fill="#{primary-light}" stroke="#{primary-deep}" stroke-width="0.9" d="M242 179 L228 192 L242 240 L248 228 Z M270 179 L284 192 L270 240 L264 228 Z"/>
+      <path fill="none" stroke="#{primary-deep}" stroke-width="0.9" opacity="0.6" d="M204 336 L246 336 M266 336 L308 336 M206 420 L236 424 M306 420 L276 424"/>
+      <circle fill="#{metal}" stroke="#{metal-deep}" stroke-width="0.6" cx="242" cy="274" r="2.6"/>
+      <circle fill="#{metal}" stroke="#{metal-deep}" stroke-width="0.6" cx="242" cy="312" r="2.6"/>
+      <circle fill="#{metal}" stroke="#{metal-deep}" stroke-width="0.6" cx="242" cy="350" r="2.6"/>
+    </g>
+  </g>
+</svg>

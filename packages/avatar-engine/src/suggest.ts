@@ -70,6 +70,11 @@ const CLASSES: Record<string, Hint> = {
   ranger: { slots: { torso: "torso:tunica", hood: "hood:capuz", armor: "armor:couro", cape: "cape:capa" }, note: "Patrulheiro: capuz, couro e capa." },
   sorcerer: { slots: { torso: "torso:manto-longo", necklace: "necklace:pingente", armor: null }, note: "Feiticeiro: manto e amuleto." },
   warlock: { slots: { torso: "torso:manto-longo", hood: "hood:capuz", armor: null }, note: "Bruxo: manto longo e capuz." },
+  // Ordem Paranormal RPG
+  combatente: { slots: { torso: "torso:jaqueta-tatica", armor: "armor:colete-balistico", background: "background:escritorio-ordem" }, note: "Combatente: jaqueta tática e colete balístico." },
+  especialista: { slots: { torso: "torso:sobretudo", background: "background:escritorio-ordem" }, note: "Especialista: sobretudo de investigador." },
+  ocultista: { slots: { torso: "torso:terno-ordem", necklace: "necklace:pingente", background: "background:escritorio-ordem" }, note: "Ocultista: terno sóbrio e amuleto." },
+  sobrevivente: { slots: { torso: "torso:jaqueta-tatica", armor: null, background: "background:escritorio-ordem" }, note: "Sobrevivente: roupas urbanas comuns." },
 };
 
 function apply(config: AvatarConfig, hint: Hint): AvatarConfig {
@@ -112,6 +117,8 @@ const norm = (s: string) =>
     .toLowerCase();
 
 const ARMOR_RULES: { re: RegExp; part: string; label: string }[] = [
+  { re: /protecao pesada/, part: "armor:protecao-pesada", label: "proteção tática pesada" },
+  { re: /protecao leve|colete/, part: "armor:colete-balistico", label: "colete balístico" },
   { re: /placas|completa|loriga|meia armadura|couraca|peitoral|plate|splint|half|breastplate/, part: "armor:peitoral", label: "peitoral de placas" },
   { re: /malha|brunea|cota|chain|scale|ring/, part: "armor:cota-de-malha", label: "cota de malha" },
   { re: /couro|acolchoad|gibao|peles|leather|padded|hide|studded/, part: "armor:couro", label: "armadura de couro" },
@@ -143,14 +150,24 @@ export function dressFromEquipment(config: AvatarConfig, items: EquippedItem[]):
 
   const shield = items.find(isShield);
   if (shield) {
+    const ballistic = /balistic|tatic/.test(norm(shield.name));
     const heavy = /pesado|heavy|torre|tower/.test(norm(shield.name));
-    set("shield", heavy ? "shield:heraldico" : "shield:redondo");
-    notes.push(`${shield.name}: ${heavy ? "escudo heráldico" : "escudo redondo"}.`);
+    set("shield", ballistic ? "shield:escudo-balistico" : heavy ? "shield:heraldico" : "shield:redondo");
+    notes.push(`${shield.name}: ${ballistic ? "escudo balístico" : heavy ? "escudo heráldico" : "escudo redondo"}.`);
   } else set("shield", null);
 
   for (const item of items) {
     const n = norm(item.name);
-    if (/capa|manto|cloak|cape/.test(n) && !isArmor(item)) {
+    if (/sobretudo/.test(n)) {
+      set("torso", "torso:sobretudo");
+      notes.push(`${item.name}: sobretudo de investigador.`);
+    } else if (/terno|paleto/.test(n)) {
+      set("torso", "torso:terno-ordem");
+      notes.push(`${item.name}: terno de agente.`);
+    } else if (/jaqueta|tatic/.test(n) && !isArmor(item)) {
+      set("torso", "torso:jaqueta-tatica");
+      notes.push(`${item.name}: jaqueta tática.`);
+    } else if (/capa|manto|cloak|cape/.test(n) && !isArmor(item)) {
       set("cape", "cape:capa");
       notes.push(`${item.name}: capa.`);
     } else if (/traje da corte|nobre|noble|fine clothes/.test(n)) {

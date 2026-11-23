@@ -14,7 +14,7 @@ const out = path.join(import.meta.dirname, "../src/generated/assets.ts");
 const code = buildAssetModule(assetsDir, (file) => readFileSync(path.join(assetsDir, file), "utf8"));
 
 if (process.argv.includes("--check")) {
-  const current = readFileSync(out, "utf8");
+  const current = readFileSync(out, "utf8").replace(/\r\n/g, "\n");
   if (current !== code) {
     console.error("src/generated/assets.ts está desatualizado. Rode `pnpm assets:build`.");
     process.exit(1);

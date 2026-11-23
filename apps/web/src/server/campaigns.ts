@@ -1,8 +1,11 @@
 import "server-only";
 import { randomBytes } from "node:crypto";
-import { hasEngine } from "@rpg-forge/rules-engine";
+import { CharacterDataSchema, getEngine, hasEngine } from "@rpg-forge/rules-engine";
 import { db } from "@/server/db";
+import { portraitsFor } from "@/server/avatars";
 import { ForbiddenError } from "@/server/characters";
+import { publishCampaignEvent } from "@/server/realtime";
+import { loadCatalog } from "@/server/rulesets";
 
 /**
  * Campanhas: o mestre cria, convida por link e os jogadores entram e vinculam fichas
@@ -114,6 +117,7 @@ export async function attachCharacter(campaignId: string, characterId: string, u
   if (ch.campaignId && ch.campaignId !== campaignId) throw new CampaignError("A ficha já está em outra campanha. Tire-a de lá primeiro.");
   await db.character.update({ where: { id: characterId }, data: { campaignId } });
   await db.auditLog.create({ data: { userId, action: "campaign.attach_character", entityType: "Campaign", entityId: campaignId, diff: { characterId } } });
+  publishCampaignEvent(campaignId, "party", userId);
 }
 
 /** Tira a ficha da campanha: o dono da ficha ou o mestre. */
@@ -124,6 +128,7 @@ export async function detachCharacter(campaignId: string, characterId: string, u
   if (ch.ownerId !== userId && me.role !== "gm") throw new ForbiddenError("Só o dono da ficha ou o mestre pode tirá-la.");
   await db.character.update({ where: { id: characterId }, data: { campaignId: null } });
   await db.auditLog.create({ data: { userId, action: "campaign.detach_character", entityType: "Campaign", entityId: campaignId, diff: { characterId } } });
+  publishCampaignEvent(campaignId, "party", userId);
 }
 
 /** Tira um jogador (pelo mestre) ou sai da campanha (o próprio jogador). As fichas dele saem junto. */
@@ -156,4 +161,104 @@ export async function deleteCampaign(campaignId: string, userId: string) {
     db.campaign.delete({ where: { id: campaignId } }),
     db.auditLog.create({ data: { userId, action: "campaign.delete", entityType: "Campaign", entityId: campaignId } }),
   ]);
+}
+
+export interface PartyMemberOverview {
+  id: string;
+  name: string;
+  ownerName: string;
+  ownerId: string;
+  levelLabel: string;
+  portrait?: string;
+  hp: { current: number; max: number };
+  secondary?: { key: string; label: string; current: number; max: number };
+  sanity?: { current: number; max: number };
+  defense: number | null;
+  conditions: string[];
+  prestige: number;
+  xp: number;
+}
+
+/** Carrega o painel ao vivo do grupo para o Escudo do Mestre na campanha. */
+export async function loadCampaignParty(campaignId: string, userId: string): Promise<PartyMemberOverview[]> {
+  await membership(campaignId, userId);
+  const campaign = await db.campaign.findUniqueOrThrow({
+    where: { id: campaignId },
+    select: {
+      rulesetId: true,
+      characters: {
+        orderBy: { name: "asc" },
+        select: {
+          id: true,
+          name: true,
+          level: true,
+          ownerId: true,
+          rulesetVersionId: true,
+          data: true,
+          owner: { select: { displayName: true } },
+        },
+      },
+    },
+  });
+  if (!campaign.characters.length || !hasEngine(campaign.rulesetId)) return [];
+
+  const engine = getEngine(campaign.rulesetId);
+  const portraits = await portraitsFor(
+    campaign.characters.map((c) => c.id),
+    "portrait",
+  );
+  const versionIds = [...new Set(campaign.characters.map((c) => c.rulesetVersionId).filter((v): v is string => !!v))];
+  const catalogs = new Map(
+    await Promise.all(versionIds.map(async (vid) => [vid, await loadCatalog(campaign.rulesetId, vid, campaignId)] as const)),
+  );
+  const fallbackCatalog = await loadCatalog(campaign.rulesetId, undefined, campaignId);
+
+  return campaign.characters.map((ch) => {
+    const parsed = CharacterDataSchema.safeParse(ch.data);
+    const data = parsed.success ? parsed.data : CharacterDataSchema.parse({});
+    const catalog = (ch.rulesetVersionId && catalogs.get(ch.rulesetVersionId)) || fallbackCatalog;
+    const derived = engine.derive(data, catalog);
+
+    const numStat = (k: string) => {
+      const val = derived.stats?.find((s) => s.key === k)?.value;
+      const n = typeof val === "number" ? val : Number(val);
+      return Number.isFinite(n) ? n : null;
+    };
+
+    const maxHp = Math.max(1, numStat("hp") ?? 10);
+    const curHp = data.session.currentHp ?? maxHp;
+    const spent = data.session.spent ?? {};
+
+    let secondary: PartyMemberOverview["secondary"];
+    const pdMax = numStat("pd");
+    const mpMax = numStat("mp");
+    if (pdMax !== null) {
+      secondary = { key: "pd", label: "PD", max: pdMax, current: Math.max(0, pdMax - (spent.pd ?? 0)) };
+    } else if (mpMax !== null) {
+      const lbl = campaign.rulesetId === "ordem-paranormal-1e" ? "PE" : "PM";
+      secondary = { key: "mp", label: lbl, max: mpMax, current: Math.max(0, mpMax - (spent.mp ?? 0)) };
+    }
+
+    const sanMax = numStat("san");
+    const sanity =
+      sanMax !== null ? { max: sanMax, current: Math.max(0, sanMax - (spent.san ?? 0)) } : undefined;
+
+    const conditions = (data.session.conditions ?? []).map((id) => catalog.get(id)?.name ?? id);
+
+    return {
+      id: ch.id,
+      name: ch.name || "Sem nome",
+      ownerName: ch.owner.displayName,
+      ownerId: ch.ownerId,
+      levelLabel: engine.formatLevel ? engine.formatLevel(derived.level, data) : `Nível ${derived.level}`,
+      portrait: portraits[ch.id],
+      hp: { current: curHp, max: maxHp },
+      secondary,
+      sanity,
+      defense: numStat("defense"),
+      conditions,
+      prestige: data.currency?.pp ?? 0,
+      xp: data.experience ?? 0,
+    };
+  });
 }

@@ -31,8 +31,18 @@ import { InventoryGrid } from "./inventory-grid";
 const signed = (n: number | null) => (n === null ? "—" : n >= 0 ? `+${n}` : `${n}`);
 const fmtNumber = (n: number) => n.toLocaleString("pt-BR", { maximumFractionDigits: 2 });
 
-/** Ícone de cada atributo, pela abreviação (iguais em Tormenta20 e no D&D traduzido). */
-const ABILITY_ICON: Record<string, LucideIcon> = { FOR: BicepsFlexed, DES: Feather, CON: HeartPulse, INT: Brain, SAB: Eye, CAR: Crown };
+/** Ícone de cada atributo, pela abreviação (Tormenta20, D&D e Ordem Paranormal). */
+const ABILITY_ICON: Record<string, LucideIcon> = {
+  FOR: BicepsFlexed,
+  DES: Feather,
+  AGI: Feather,
+  CON: HeartPulse,
+  VIG: HeartPulse,
+  INT: Brain,
+  SAB: Eye,
+  PRE: Eye,
+  CAR: Crown,
+};
 function AbilityIcon({ abbr, className }: { abbr: string; className: string }) {
   return createElement(ABILITY_ICON[abbr.toUpperCase()] ?? Sparkles, { "aria-hidden": true, className });
 }
@@ -48,26 +58,44 @@ const STAT_ICON: Record<string, LucideIcon> = {
   spellAttack: Sparkles,
   spellSlots: Gem,
   stealth: Feather,
+  peLimit: Zap,
+  rd: Shield,
+  mentalRd: Brain,
+  credit: Coins,
 };
-/** Valores que já aparecem nas barras ou no escudo de defesa. */
-const STAT_ELSEWHERE = new Set(["hp", "mp", "defense", "hitDice"]);
+/** Valores que já aparecem nas barras, no cabeçalho ou no escudo de defesa. */
+const STAT_ELSEWHERE = new Set(["hp", "mp", "san", "pd", "defense", "hitDice", "rank"]);
 
-/** Painel com moldura dupla e título centralizado entre florões. */
-function Panel({ title, children, className }: { title: string; children: ReactNode; className?: string }) {
+const OP_RANK_TAG: Record<string, string> = { treinado: "T", veterano: "V", expert: "E" };
+
+/** Painel com moldura dupla e título centralizado (florões no pergaminho; limpo no dossiê OP). */
+function Panel({ title, children, className, op }: { title: string; children: ReactNode; className?: string; op?: boolean }) {
   return (
     <section className={cn("ficha-panel", className)}>
       <h2 className="ficha-panel-title">
-        <TitleFlourish />
+        {!op && <TitleFlourish />}
         <span>{title}</span>
-        <TitleFlourish flip />
+        {!op && <TitleFlourish flip />}
       </h2>
       {children}
     </section>
   );
 }
 
-/** Barra horizontal (XP, PV, PM...). `fill` de 0 a 1; `blank` deixa espaço para anotar o valor atual. */
-function Bar({ label, tone, fill, value, blank }: { label: string; tone: "xp" | "hp" | "mp" | "hd"; fill: number; value: ReactNode; blank?: boolean }) {
+/** Barra horizontal (XP, PV, PM, PE, SAN...). `fill` de 0 a 1; `blank` deixa espaço para anotar o valor atual. */
+function Bar({
+  label,
+  tone,
+  fill,
+  value,
+  blank,
+}: {
+  label: string;
+  tone: "xp" | "hp" | "mp" | "hd" | "pe" | "san" | "pd";
+  fill: number;
+  value: ReactNode;
+  blank?: boolean;
+}) {
   return (
     <div className="ficha-bar-row">
       <span className="ficha-bar-label">{label}</span>
@@ -82,14 +110,37 @@ function Bar({ label, tone, fill, value, blank }: { label: string; tone: "xp" | 
   );
 }
 
-function SkillRow({ name, ability, value, trained }: { name: string; ability: string; value: number | null; trained: boolean }) {
+function SkillRow({
+  name,
+  ability,
+  value,
+  trained,
+  rank,
+  dice,
+  op,
+}: {
+  name: string;
+  ability: string;
+  value: number | null;
+  trained: boolean;
+  rank?: string;
+  dice?: string;
+  op?: boolean;
+}) {
+  const rankTag = rank ? OP_RANK_TAG[rank] : undefined;
   return (
     <li className="ficha-skill">
       <AbilityIcon abbr={ability} className="size-3 shrink-0 text-[var(--sheet-bronze)]" />
       <span className={cn("truncate", trained && "font-semibold")}>{name}</span>
-      {trained && <span className="ficha-pip" title="Treinada" aria-label="treinada" />}
+      {op && rankTag ? (
+        <span className="ficha-rank-tag" title={rank} aria-label={rank}>
+          {rankTag}
+        </span>
+      ) : (
+        trained && <span className="ficha-pip" title="Treinada" aria-label="treinada" />
+      )}
       <span className="ml-auto text-[6.5pt] text-[var(--sheet-muted)]">{ability}</span>
-      <span className="ficha-skill-value">{signed(value)}</span>
+      <span className={cn("ficha-skill-value", op && "ficha-skill-dice")}>{op && dice ? dice : signed(value)}</span>
     </li>
   );
 }
@@ -145,13 +196,17 @@ function EquipmentRing({ items }: { items: SheetItem[] }) {
   );
 }
 
-/** Página de pergaminho com moldura, cantos e coluna de runas. */
-function Page({ children, label, className }: { children: ReactNode; label: string; className?: string }) {
+/** Página de pergaminho (T20/D&D) ou dossiê arquivístico (Ordem Paranormal). */
+function Page({ children, label, className, op }: { children: ReactNode; label: string; className?: string; op?: boolean }) {
   return (
     <article className={cn("ficha-page", className)} aria-label={label}>
-      <Parchment />
-      <Corners />
-      <RuneColumn />
+      {!op && (
+        <>
+          <Parchment />
+          <Corners />
+          <RuneColumn />
+        </>
+      )}
       <div className="ficha-content">{children}</div>
     </article>
   );
@@ -161,34 +216,44 @@ function Page({ children, label, className }: { children: ReactNode; label: stri
 export function CharacterSheet({ sheet: s, portrait }: { sheet: SheetData; portrait?: string }) {
   const stat = (k: string) => s.stats[k]?.value;
   const dnd = s.flavor === "dnd";
+  const op = s.flavor === "op";
   const classLine = [s.className, s.classOption].filter(Boolean).join(" · ");
-  const subtitle = [s.species, classLine, `Nível ${s.level}`].filter(Boolean).join("  •  ");
+  const subtitle = [s.species, classLine, s.levelLabel ?? `Nível ${s.level}`].filter(Boolean).join("  •  ");
   const otherStats = Object.entries(s.stats).filter(([k]) => !STAT_ELSEWHERE.has(k));
   const hp = stat("hp");
   const xp = s.xp;
+  const loadUnit = s.load?.unit ?? "kg";
 
   return (
-    <div className="ficha mx-auto space-y-6 print:space-y-0">
-      <ArchClipDef />
+    <div className={cn("ficha mx-auto space-y-6 print:space-y-0", op && "ficha-op")}>
+      {!op && <ArchClipDef />}
 
       {/* ------------------------------ Página 1 ------------------------------ */}
-      <Page label="Ficha do personagem, página 1">
+      <Page label="Ficha do personagem, página 1" op={op}>
+        {op && (
+          <div className="ficha-op-banner">
+            <span>ORDO REALITAS // DOSSIÊ DE AGENTE</span>
+            <span className="ficha-op-stamp">CONFIDENCIAL</span>
+          </div>
+        )}
         <header className="grid grid-cols-[46mm_1fr] gap-x-5">
-          <div className="ficha-portrait-frame">
-            <div className="ficha-portrait" style={{ clipPath: `url(#${ARCH_CLIP_ID})` }}>
+          <div className={cn("ficha-portrait-frame", op && "ficha-op-photo-frame")}>
+            <div className={cn("ficha-portrait", op && "ficha-op-photo")} style={op ? undefined : { clipPath: `url(#${ARCH_CLIP_ID})` }}>
               {portrait ? (
                 <div className="size-full" role="img" aria-label={`Retrato de ${s.name || "personagem"}`} dangerouslySetInnerHTML={{ __html: portrait }} />
               ) : (
                 <div className="grid size-full place-items-center text-center font-heading text-[7pt] uppercase tracking-wider text-[var(--sheet-muted)]">
-                  Espaço para o retrato
+                  {op ? "Foto do agente" : "Espaço para o retrato"}
                 </div>
               )}
             </div>
-            <ArchFrame />
+            {!op && <ArchFrame />}
           </div>
 
           <div className="flex min-w-0 flex-col pt-2">
-            <div className="font-heading text-[7pt] uppercase tracking-[0.25em] text-[var(--sheet-muted)]">Nome do personagem</div>
+            <div className="font-heading text-[7pt] uppercase tracking-[0.25em] text-[var(--sheet-muted)]">
+              {op ? "Identificação do agente" : "Nome do personagem"}
+            </div>
             <h1 className="ficha-name">{s.name}</h1>
             <p className="ficha-subtitle">{subtitle}</p>
             {s.concept && <p className="mt-0.5 truncate text-[8.5pt] italic text-[var(--sheet-muted)]">{s.concept}</p>}
@@ -203,12 +268,12 @@ export function CharacterSheet({ sheet: s, portrait }: { sheet: SheetData; portr
                 <dd>{s.origin || " "}</dd>
               </div>
               <div>
-                <dt>{dnd ? "Proficiência" : "Divindade"}</dt>
-                <dd>{dnd ? (stat("proficiency") ?? " ") : (s.deity ?? "Nenhuma")}</dd>
+                <dt>{op ? "Patente" : dnd ? "Proficiência" : "Divindade"}</dt>
+                <dd>{op ? (s.opMeta?.rank ?? "Recruta") : dnd ? (stat("proficiency") ?? " ") : (s.deity ?? "Nenhuma")}</dd>
               </div>
               <div>
-                <dt>Sistema</dt>
-                <dd>{s.system}</dd>
+                <dt>{op ? "Afinidade" : "Sistema"}</dt>
+                <dd>{op ? (s.opMeta?.affinity ?? "Nenhuma") : s.system}</dd>
               </div>
             </dl>
 
@@ -222,7 +287,16 @@ export function CharacterSheet({ sheet: s, portrait }: { sheet: SheetData; portr
                 />
               )}
               <Bar label="Vida" tone="hp" fill={1} blank value={`/ ${hp ?? "—"} PV`} />
-              {dnd ? (
+              {op ? (
+                stat("pd") !== undefined ? (
+                  <Bar label="Determinação" tone="pd" fill={1} blank value={`/ ${stat("pd") ?? "—"} PD`} />
+                ) : (
+                  <>
+                    <Bar label="Esforço" tone="pe" fill={1} blank value={`/ ${stat("mp") ?? "—"} PE`} />
+                    <Bar label="Sanidade" tone="san" fill={1} blank value={`/ ${stat("san") ?? "—"} SAN`} />
+                  </>
+                )
+              ) : dnd ? (
                 <Bar label="Dados de vida" tone="hd" fill={1} blank value={`/ ${stat("hitDice") ?? "—"}`} />
               ) : (
                 <Bar label="Mana" tone="mp" fill={1} blank value={`/ ${stat("mp") ?? "—"} PM`} />
@@ -232,22 +306,31 @@ export function CharacterSheet({ sheet: s, portrait }: { sheet: SheetData; portr
         </header>
 
         <div className="mt-4 grid grid-cols-[1fr_1fr_1fr] gap-3">
-          <Panel title="Atributos">
+          <Panel title="Atributos" op={op}>
             <ul className="space-y-1">
               {s.abilities.map((a) => {
                 return (
                   <li key={a.key} className="ficha-ability" title={a.label}>
                     <AbilityIcon abbr={a.abbr} className="size-4 text-[var(--sheet-bronze)]" />
                     <span className="truncate">{a.label}</span>
-                    <span className="ml-auto text-[7pt] tabular-nums text-[var(--sheet-muted)]">{a.score ?? "—"}</span>
-                    <span className="ficha-ability-mod">{signed(a.modifier)}</span>
+                    {op ? (
+                      <>
+                        <span className="ml-auto font-heading text-[10pt] font-bold tabular-nums">{a.score ?? "—"}</span>
+                        <span className="ficha-ability-mod ficha-ability-dice">{a.rollLabel ?? "—"}</span>
+                      </>
+                    ) : (
+                      <>
+                        <span className="ml-auto text-[7pt] tabular-nums text-[var(--sheet-muted)]">{a.score ?? "—"}</span>
+                        <span className="ficha-ability-mod">{signed(a.modifier)}</span>
+                      </>
+                    )}
                   </li>
                 );
               })}
             </ul>
           </Panel>
 
-          <Panel title="Defesa">
+          <Panel title="Defesa" op={op}>
             <div className="flex items-start gap-2">
               <div className="ficha-shield" aria-label={`${dnd ? "Classe de Armadura" : "Defesa"} ${stat("defense") ?? "—"}`}>
                 <span className="font-heading text-[6.5pt] uppercase tracking-wider">{dnd ? "CA" : "Defesa"}</span>
@@ -257,21 +340,25 @@ export function CharacterSheet({ sheet: s, portrait }: { sheet: SheetData; portr
                 {s.saves.map((sk) => (
                   <li key={sk.name} className="flex items-baseline gap-1">
                     <span className={cn("truncate", sk.trained && "font-semibold")}>{sk.name}</span>
-                    {sk.trained && <span className="ficha-pip" aria-label="proficiente" />}
-                    <span className="ml-auto font-heading font-semibold tabular-nums">{signed(sk.value)}</span>
+                    {op && sk.rank && OP_RANK_TAG[sk.rank] ? (
+                      <span className="ficha-rank-tag">{OP_RANK_TAG[sk.rank]}</span>
+                    ) : (
+                      sk.trained && <span className="ficha-pip" aria-label="proficiente" />
+                    )}
+                    <span className="ml-auto font-heading font-semibold tabular-nums">{op && sk.dice ? sk.dice : signed(sk.value)}</span>
                   </li>
                 ))}
               </ul>
             </div>
             <div className="mt-2 grid grid-cols-2 gap-x-2 text-[7pt] uppercase tracking-wider text-[var(--sheet-muted)]">
-              <span>PV temporários</span>
+              <span>{op ? "Bloqueio / Esquiva" : "PV temporários"}</span>
               <span>Condições</span>
               <span className="ficha-blank" />
               <span className="ficha-blank" />
             </div>
           </Panel>
 
-          <Panel title="Estatísticas">
+          <Panel title="Estatísticas" op={op}>
             <ul className="space-y-0.5 text-[8pt]">
               {otherStats.map(([k, v]) => {
                 const Icon = STAT_ICON[k] ?? Gauge;
@@ -289,6 +376,7 @@ export function CharacterSheet({ sheet: s, portrait }: { sheet: SheetData; portr
                   <span>Carga</span>
                   <span className="ml-auto font-semibold tabular-nums">
                     {fmtNumber(s.load.carried)} / {fmtNumber(s.load.light)}
+                    {op ? " esp." : ""}
                   </span>
                 </li>
               )}
@@ -297,30 +385,32 @@ export function CharacterSheet({ sheet: s, portrait }: { sheet: SheetData; portr
         </div>
 
         <div className="mt-3 grid grid-cols-[1.12fr_1fr] gap-3">
-          <Panel title="Perícias">
+          <Panel title="Perícias" op={op}>
             <ul className="columns-2 gap-3 text-[7.8pt]">
               {s.skills.map((sk) => (
-                <SkillRow key={sk.name} {...sk} />
+                <SkillRow key={sk.name} {...sk} op={op} />
               ))}
             </ul>
             <p className="mt-1 text-[6.3pt] leading-tight text-[var(--sheet-muted)]">
-              {dnd
-                ? `◆ proficiente. Valores já incluem atributo e proficiência.${stat("passivePerception") !== undefined ? ` Percepção passiva ${stat("passivePerception")}.` : ""}`
-                : "◆ treinada. Valores já incluem atributo, treino, metade do nível e penalidades."}
+              {op
+                ? "T Treinado (+5) · V Veterano (+10) · E Expert (+15). Valores mostram dados do atributo + bônus de grau e penalidades."
+                : dnd
+                  ? `◆ proficiente. Valores já incluem atributo e proficiência.${stat("passivePerception") !== undefined ? ` Percepção passiva ${stat("passivePerception")}.` : ""}`
+                  : "◆ treinada. Valores já incluem atributo, treino, metade do nível e penalidades."}
             </p>
           </Panel>
-          <Panel title="Equipamento">
+          <Panel title="Equipamento" op={op}>
             <EquipmentRing items={s.equipment} />
           </Panel>
         </div>
 
         <div className="mt-3 grid grid-cols-[1.12fr_1fr] gap-3">
-          <Panel title="Ataques">
+          <Panel title="Ataques" op={op}>
             <table className="w-full text-[8pt]">
               <thead>
                 <tr className="text-left font-heading text-[6.3pt] uppercase tracking-wider text-[var(--sheet-muted)]">
                   <th className="font-normal">Arma</th>
-                  <th className="w-11 px-1 text-center font-normal">{dnd ? "Ataque" : "Teste"}</th>
+                  <th className="w-16 px-1 text-center font-normal">{dnd ? "Ataque" : "Teste"}</th>
                   <th className="px-1 font-normal">Dano</th>
                   <th className="w-10 text-center font-normal">Crítico</th>
                 </tr>
@@ -334,7 +424,7 @@ export function CharacterSheet({ sheet: s, portrait }: { sheet: SheetData; portr
                         {[a.type, a.range && `alcance ${a.range.toLowerCase()}`].filter(Boolean).join(" · ")}
                       </span>
                     </td>
-                    <td className="text-center font-heading font-semibold tabular-nums">{signed(a.test)}</td>
+                    <td className="text-center font-heading font-semibold tabular-nums">{a.roll ?? signed(a.test)}</td>
                     <td className="px-1 tabular-nums">{a.damage}</td>
                     <td className="text-center tabular-nums">{a.critical}</td>
                   </tr>
@@ -342,7 +432,7 @@ export function CharacterSheet({ sheet: s, portrait }: { sheet: SheetData; portr
               </tbody>
             </table>
           </Panel>
-          <Panel title="Notas e história">
+          <Panel title="Notas e história" op={op}>
             {s.narrative.backstory || s.narrative.appearance ? (
               <p className="line-clamp-[10] whitespace-pre-line text-[8pt] leading-snug">
                 {[s.narrative.appearance, s.narrative.backstory].filter(Boolean).join("\n\n")}
@@ -355,19 +445,22 @@ export function CharacterSheet({ sheet: s, portrait }: { sheet: SheetData; portr
       </Page>
 
       {/* ------------------------------ Página 2 ------------------------------ */}
-      <Page label="Ficha do personagem, página 2" className="break-before-page">
+      <Page label="Ficha do personagem, página 2" className="break-before-page" op={op}>
         <div className="grid grid-cols-[1fr_42mm] gap-3">
-          <Panel title="Inventário">
+          <Panel title="Inventário" op={op}>
             <InventoryGrid items={s.equipment} />
             {s.load && (
               <p className="mt-1.5 text-[7pt] text-[var(--sheet-muted)]">
-                Carga: {fmtNumber(s.load.carried)} de {fmtNumber(s.load.light)} (leve) · máximo {fmtNumber(s.load.max)}
+                Carga: {fmtNumber(s.load.carried)} de {fmtNumber(s.load.light)} {loadUnit} · máximo {fmtNumber(s.load.max)} {loadUnit}
                 {s.load.state === "encumbered" ? " · sobrecarregado" : s.load.state === "overloaded" ? " · acima do máximo" : ""}
               </p>
             )}
+            {op && s.opMeta?.categorySummary && (
+              <p className="mt-0.5 text-[7pt] text-[var(--sheet-muted)]">{s.opMeta.categorySummary}</p>
+            )}
           </Panel>
           <div className="flex flex-col gap-3">
-            <Panel title="Bolsa">
+            <Panel title={op ? "Patente" : "Bolsa"} op={op}>
               <ul className="space-y-1.5">
                 {s.money.map((m) => (
                   <li key={m.abbr} className="flex items-center gap-2" title={m.label}>
@@ -379,14 +472,24 @@ export function CharacterSheet({ sheet: s, portrait }: { sheet: SheetData; portr
                   </li>
                 ))}
               </ul>
+              {op && s.opMeta && (
+                <div className="mt-2 space-y-0.5 text-[7pt]">
+                  <p>
+                    <span className="text-[var(--sheet-muted)]">Patente:</span> <span className="font-semibold">{s.opMeta.rank}</span>
+                  </p>
+                  <p>
+                    <span className="text-[var(--sheet-muted)]">Crédito:</span> <span className="font-semibold">{s.opMeta.credit}</span>
+                  </p>
+                </div>
+              )}
             </Panel>
-            <Panel title="Proficiências" className="flex-1">
+            <Panel title="Proficiências" className="flex-1" op={op}>
               <p className="text-[7.5pt] leading-snug">{s.proficiencies.join(", ")}.</p>
             </Panel>
           </div>
         </div>
 
-        <Panel title={dnd ? "Traços e características" : "Habilidades de raça, classe e origem"} className="mt-3">
+        <Panel title={op ? "Habilidades de origem, classe e trilha" : dnd ? "Traços e características" : "Habilidades de raça, classe e origem"} className="mt-3" op={op}>
           {s.traits.length ? (
             <ul className="columns-2 gap-5 text-[8pt] leading-snug">
               {s.traits.map((t, i) => (
@@ -400,7 +503,7 @@ export function CharacterSheet({ sheet: s, portrait }: { sheet: SheetData; portr
           )}
         </Panel>
 
-        <Panel title={dnd ? "Talentos" : "Poderes"} className="mt-3">
+        <Panel title={op ? "Poderes de classe, gerais e paranormais" : dnd ? "Talentos" : "Poderes"} className="mt-3" op={op}>
           {s.powers.length ? (
             <ul className="columns-2 gap-5 text-[8pt] leading-snug">
               {s.powers.map((p) => (
@@ -415,13 +518,14 @@ export function CharacterSheet({ sheet: s, portrait }: { sheet: SheetData; portr
         </Panel>
 
         {s.spells.length > 0 && (
-          <Panel title="Magias" className="mt-3">
+          <Panel title={op ? "Rituais" : "Magias"} className="mt-3" op={op}>
             <table className="w-full text-[8pt]">
               <thead>
                 <tr className="text-left font-heading text-[6.3pt] uppercase tracking-wider text-[var(--sheet-muted)]">
-                  <th className="font-normal">Magia</th>
+                  <th className="font-normal">{op ? "Ritual" : "Magia"}</th>
+                  {op && <th className="w-20 font-normal">Elemento</th>}
                   <th className="w-10 text-center font-normal">{dnd ? "Nível" : "Círc."}</th>
-                  {!dnd && <th className="w-8 text-center font-normal">PM</th>}
+                  {!dnd && <th className="w-8 text-center font-normal">{op ? "PE" : "PM"}</th>}
                   <th className="font-normal">Execução · alcance · duração</th>
                 </tr>
               </thead>
@@ -432,6 +536,7 @@ export function CharacterSheet({ sheet: s, portrait }: { sheet: SheetData; portr
                       <span className="font-semibold">{sp.name}</span>
                       <span className="block text-[7pt] leading-snug">{sp.text}</span>
                     </td>
+                    {op && <td className="text-[7pt] font-medium">{sp.element ?? "—"}</td>}
                     <td className="text-center tabular-nums">{dnd && sp.circle === 0 ? "Truque" : `${sp.circle}º`}</td>
                     {!dnd && <td className="text-center font-semibold tabular-nums">{sp.cost}</td>}
                     <td className="text-[7pt]">{[sp.execution, sp.range, sp.duration].filter(Boolean).join(" · ")}</td>
@@ -443,21 +548,21 @@ export function CharacterSheet({ sheet: s, portrait }: { sheet: SheetData; portr
         )}
 
         <div className="mt-3 grid grid-cols-2 gap-3">
-          <Panel title="Personalidade">
+          <Panel title="Personalidade" op={op}>
             <p className="min-h-16 whitespace-pre-line text-[8pt] leading-snug">{s.narrative.personality || " "}</p>
           </Panel>
-          <Panel title="Ideais, laços e defeitos">
+          <Panel title="Ideais, laços e defeitos" op={op}>
             <p className="min-h-16 whitespace-pre-line text-[8pt] leading-snug">
               {[s.narrative.ideals, s.narrative.bonds, s.narrative.flaws].filter(Boolean).join("\n\n") || " "}
             </p>
           </Panel>
         </div>
         {s.narrative.backstory && s.narrative.backstory.length > 600 && (
-          <Panel title="História completa" className="mt-3">
+          <Panel title="História completa" className="mt-3" op={op}>
             <p className="whitespace-pre-line text-[8pt] leading-snug">{s.narrative.backstory}</p>
           </Panel>
         )}
-        <Panel title="Anotações de jogo" className="mt-3">
+        <Panel title="Anotações de campo" className="mt-3" op={op}>
           <div className="ficha-lines h-28" />
         </Panel>
         {s.pending.length > 0 && <p className="mt-3 text-[7pt] text-[var(--sheet-muted)] print:hidden">Pendências: {s.pending.join(" ")}</p>}

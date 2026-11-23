@@ -42,9 +42,10 @@ next-env.d.ts
 
 /apps/web/src/generated/prisma
 
-# Tormenta20: o PDF do livro e o texto bruto extraído nunca entram no repositório
+# Tormenta20 e Ordem Paranormal: o PDF do livro e os dados extraídos nunca entram no repositório
 *.pdf
 __pycache__/
+content/ordem-paranormal-1e/data/
 
 !.env.example
 

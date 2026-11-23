@@ -136,3 +136,15 @@ export function d20Formula(modifier: number, mode: "normal" | "advantage" | "dis
   if (modifier === 0) return base;
   return `${base}${modifier > 0 ? "+" : "-"}${Math.abs(modifier)}`;
 }
+
+/**
+ * Fórmula de teste em Ordem Paranormal RPG:
+ * rola `atributo + dadosExtras` d20 e mantém o maior; se o total for ≤ 0,
+ * rola `2 - total` d20 e mantém o menor (ex.: atributo 0 → 2d20kl1).
+ */
+export function opDiceFormula(attribute: number, bonus = 0, extraDice = 0): string {
+  const dice = Math.trunc(attribute) + Math.trunc(extraDice);
+  const base = dice >= 1 ? `${dice}d20kh1` : `${2 - dice}d20kl1`;
+  if (bonus === 0) return base;
+  return `${base}${bonus > 0 ? "+" : "-"}${Math.abs(bonus)}`;
+}

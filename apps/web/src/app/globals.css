@@ -371,6 +371,18 @@
   --bar: #3f6b35;
   --bar-light: #74a362;
 }
+.ficha-bar-pe {
+  --bar: #9f6714;
+  --bar-light: #dfa03a;
+}
+.ficha-bar-san {
+  --bar: #4f2d7f;
+  --bar-light: #895cc7;
+}
+.ficha-bar-pd {
+  --bar: #2d5a7f;
+  --bar-light: #5c97c7;
+}
 .ficha-bar-fill {
   position: absolute;
   inset: 0 auto 0 0;
@@ -598,6 +610,124 @@
 .ficha-lines {
   background-image: repeating-linear-gradient(to bottom, transparent 0 17px, var(--sheet-line) 17px 18px);
   opacity: 0.45;
+}
+
+/* ------------------------------------------------------------------ */
+/* Dossiê Ordo Realitas (Ordem Paranormal RPG)                         */
+/* ------------------------------------------------------------------ */
+.ficha-op {
+  --sheet-paper: #f3f1ec;
+  --sheet-panel: #faf9f6;
+  --sheet-ink: #181a20;
+  --sheet-muted: #525764;
+  --sheet-line: #8f95a3;
+  --sheet-gold: #8b1e24;
+  --sheet-gold-deep: #2b2f3a;
+  --sheet-bronze: #8b1e24;
+  --sheet-accent: #8b1e24;
+}
+.ficha-op .ficha-page {
+  padding: 11mm 12mm 11mm 12mm;
+  background:
+    linear-gradient(to right, #8b1e24 0 4px, transparent 4px),
+    var(--sheet-paper);
+  border: 1px solid #c5c8d0;
+}
+.ficha-op-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #181a20;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 7.5pt;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #181a20;
+}
+.ficha-op-stamp {
+  border: 1.5px solid #8b1e24;
+  padding: 1px 6px;
+  color: #8b1e24;
+  font-size: 6.5pt;
+  letter-spacing: 0.2em;
+}
+.ficha-op .ficha-panel {
+  border: 1px solid #2b2f3a;
+  border-radius: 1px;
+  box-shadow: none;
+  background: var(--sheet-panel);
+}
+.ficha-op .ficha-panel-title {
+  justify-content: flex-start;
+  border-bottom: 1px solid #d5d8e0;
+  padding-bottom: 3px;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 7.5pt;
+  letter-spacing: 0.12em;
+  color: #181a20;
+}
+.ficha-op .ficha-op-photo-frame {
+  border: 1.5px solid #2b2f3a;
+  background: #e7e4dc;
+  padding: 4px;
+}
+.ficha-op .ficha-op-photo {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #eceae3;
+}
+.ficha-op .ficha-ability-mod {
+  border-color: #2b2f3a;
+  background: #181a20;
+  color: #f8f7f4;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 7.5pt;
+  min-width: 42px;
+  padding: 0 4px;
+}
+.ficha-op .ficha-shield {
+  background: linear-gradient(135deg, #2b2f3a, #14161c);
+  box-shadow: inset 0 0 0 2px #8b1e24;
+}
+.ficha-rank-tag {
+  display: inline-grid;
+  place-items: center;
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: #8b1e24;
+  color: #fff;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 6pt;
+  font-weight: 700;
+  line-height: 1;
+}
+.ficha-skill-dice {
+  min-width: 44px;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 6.8pt;
+}
+.ficha-op .ficha-coin {
+  border-color: #2b2f3a;
+  background: #181a20;
+  color: #f8f7f4;
+  font-family: var(--font-geist-mono), monospace;
+}
+.ficha-op .ficha-slot-full {
+  background: #f0eee8;
+}
+.ficha-op .ficha-slot-magic {
+  background: #ebe4f4;
+}
+.ficha-op .ficha-ring-slot-full {
+  background: #f0eee8;
+  box-shadow: 0 0 0 1.5px #8b1e24;
 }
 
 @media print {
