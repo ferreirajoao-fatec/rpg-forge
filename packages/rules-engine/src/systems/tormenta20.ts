@@ -6,6 +6,7 @@ import {
   type AbilityDef,
   type AbilityMethod,
   type Catalog,
+  type ChoiceLimit,
   type CreationStep,
   type DerivedStats,
   type RulesetMeta,
@@ -40,6 +41,19 @@ const ATTRIBUTES_SRC = t20Source(17, "Atributos Básicos");
 const RACES_SRC = t20Source(18, "Características das Raças");
 const LEVELS_SRC = t20Source(35, "Nível de Personagem");
 const SKILLS_SRC = t20Source(114, "Perícias");
+const POWERS_SRC = t20Source(124, "Poderes Gerais");
+
+/**
+ * Escolhas livres que a raça dá (p. 19 a 31). `either` = uma escolha que pode ser perícia ou poder
+ * (Humano: uma das duas perícias pode virar poder geral; Esqueleto Desperto: perícia ou poder geral).
+ * A Cria Aberrante pode trocar um bônus de Deformidade por um poder aberrante.
+ */
+const RACE_CHOICES: Record<string, { skills?: number; powers?: number; either?: number }> = {
+  "species:humano": { skills: 1, either: 1 },
+  "species:meio-gnomo": { skills: 1 },
+  "species:esqueleto-desperto": { either: 1 },
+  "species:cria-aberrante": { powers: 1 },
+};
 const DERIVED_SRC = t20Source(106, "Características Derivadas");
 
 export const T20_ABILITIES: AbilityDef[] = [
@@ -612,6 +626,65 @@ export class Tormenta20Engine extends BaseEngine {
     ];
   }
 
+  /**
+   * Escolhas livres de perícia e de poder. Não contam: perícias fixas da classe e os benefícios da
+   * origem (que têm contador próprio na etapa Origem).
+   * - Perícias: as da classe ("uma entre" + "escolha N"), mais o bônus de Inteligência, mais as da raça.
+   * - Poderes: um poder de classe por nível a partir do 2º (pode ser trocado por um poder geral),
+   *   um poder concedido para quem é devoto, e o poder "à escolha" de uma origem, quando escolhido como benefício.
+   * Escolhas de raça que podem ser perícia ou poder entram no contador de quem precisar delas.
+   */
+  choiceLimits(c: CharacterData, catalog: Catalog): ChoiceLimit[] {
+    const first = c.classes[0] ? catalog.get(c.classes[0].classId) : undefined;
+    const cd = first?.data as T20ClassData | undefined;
+    const fixed = new Set(cd?.skills?.fixed ?? []);
+    const free = c.choices.filter((ch) => !ch.slot.startsWith("origin-benefit:"));
+    const usedSkills = free.filter((ch) => ch.contentId.startsWith("skill:") && !fixed.has(ch.contentId)).length;
+    const usedPowers = free.filter((ch) => ch.contentId.startsWith("power:")).length;
+
+    const skillParts: string[] = [];
+    const powerParts: string[] = [];
+    let skills = 0;
+    let powers = 0;
+    const add = (kind: "skill" | "power", n: number, label: string) => {
+      if (n <= 0) return;
+      if (kind === "skill") {
+        skills += n;
+        skillParts.push(`${label} ${n}`);
+      } else {
+        powers += n;
+        powerParts.push(`${label} ${n}`);
+      }
+    };
+
+    if (cd?.skills) add("skill", (cd.skills.oneOf?.length ?? 0) + cd.skills.choose, "classe");
+    add("skill", bonus(this.finalAbilities(c, catalog).int), "Inteligência");
+    const race = (c.speciesId && RACE_CHOICES[c.speciesId]) || {};
+    add("skill", race.skills ?? 0, "raça");
+    add("power", race.powers ?? 0, "raça");
+
+    const classLevels = c.classes.length ? c.classes.reduce((n, cl) => n + Math.max(0, cl.levels - 1), 0) : 0;
+    add("power", classLevels, "de classe ou gerais");
+    if (c.choices.some((ch) => ch.slot === "deity")) add("power", 1, "concedido");
+    const originOpen = c.choices.filter((ch) => ch.slot.startsWith("origin-benefit:open:")).length;
+    add("power", originOpen, "da origem");
+    if (c.backgroundId === "origin:amnesico") {
+      add("skill", 1, "origem (o mestre escolhe)");
+      add("power", 1, "origem (o mestre escolhe)");
+    }
+
+    // Escolha "perícia ou poder": fica com quem ultrapassou o próprio limite primeiro.
+    const either = race.either ?? 0;
+    const takenBySkills = Math.min(either, Math.max(0, usedSkills - skills));
+    const takenByPowers = Math.min(either - takenBySkills, Math.max(0, usedPowers - powers));
+    const eitherNote = either ? ` + raça ${either} (perícia ou poder)` : "";
+    const fmt = (parts: string[]) => (parts.length ? parts.join(" + ") : "nenhuma escolha livre");
+    return [
+      { kind: "skill", used: usedSkills, max: skills + either - takenByPowers, detail: fmt(skillParts) + eitherNote },
+      { kind: "power", used: usedPowers, max: powers + either - takenBySkills, detail: fmt(powerParts) + eitherNote },
+    ];
+  }
+
   protected validateSystem(c: CharacterData, catalog: Catalog): ValidationIssue[] {
     const issues: ValidationIssue[] = [];
 
@@ -711,22 +784,17 @@ export class Tormenta20Engine extends BaseEngine {
       }
     }
 
-    // Perícias escolhidas além do máximo possível (classe + Int + raça + origem).
-    const first = c.classes[0] ? catalog.get(c.classes[0].classId) : undefined;
-    const cd = first?.data as T20ClassData | undefined;
-    if (cd?.skills) {
-      const chosen = c.choices.filter((ch) => ch.contentId.startsWith("skill:") && !cd.skills.fixed.includes(ch.contentId));
-      const intBonus = bonus(this.finalAbilities(c, catalog).int);
-      const max = (cd.skills.oneOf?.length ?? 0) + cd.skills.choose + intBonus + 2 /* origem */ + 2; /* raça (máx.) */
-      if (chosen.length > max) {
-        issues.push({
-          code: "skills.too_many",
-          severity: "warning",
-          message: `Há ${chosen.length} perícias treinadas escolhidas; o esperado é no máximo ${max}. Confira classe, Inteligência, raça e origem.`,
-          path: "choices",
-          source: SKILLS_SRC,
-        });
-      }
+    // Perícias e poderes além do que o nível permite (classe, Inteligência, raça, origem, devoção).
+    for (const lim of this.choiceLimits(c, catalog)) {
+      if (lim.used <= lim.max) continue;
+      const what = lim.kind === "skill" ? "perícias treinadas" : "poderes";
+      issues.push({
+        code: lim.kind === "skill" ? "skills.too_many" : "powers.too_many",
+        severity: "invalid",
+        message: `Há ${lim.used} ${what} escolhidos, mas no nível ${totalLevel(c)} o máximo é ${lim.max} (${lim.detail}). Remova ${lim.used - lim.max}.`,
+        path: "choices",
+        source: lim.kind === "skill" ? SKILLS_SRC : POWERS_SRC,
+      });
     }
 
     return issues;

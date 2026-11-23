@@ -167,6 +167,15 @@ export interface DerivedStats {
   inventory?: InventorySummary;
 }
 
+/** Limite de escolhas de um tipo (perícias, poderes) para o nível atual. */
+export interface ChoiceLimit {
+  kind: "skill" | "power";
+  used: number;
+  max: number;
+  /** De onde vem o limite, para mostrar ao jogador ("classe 2 + Inteligência 1 + raça 2"). */
+  detail: string;
+}
+
 export interface RulesEngine {
   readonly meta: RulesetMeta;
   readonly abilities: AbilityDef[];
@@ -192,6 +201,11 @@ export interface RulesEngine {
    * pode distribuir agora e o teto de cada atributo. Ausente = o sistema não usa.
    */
   levelBonusBudget?(c: CharacterData, catalog: Catalog): { points: number; max: number; detail: string };
+  /**
+   * Quantas escolhas livres de perícia e de poder a ficha tem no nível atual e quantas já usou.
+   * Ausente = o sistema não limita (ou limita de outro jeito, na validação).
+   */
+  choiceLimits?(c: CharacterData, catalog: Catalog): ChoiceLimit[];
   evaluateOption(c: CharacterData, entry: ContentEntry, catalog: Catalog): OptionEvaluation;
 }
 

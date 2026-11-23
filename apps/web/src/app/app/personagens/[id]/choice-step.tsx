@@ -127,6 +127,9 @@ export function ChoiceStep({
   const { pages, current, slice } = paginate(shown, page, PAGE_SIZE);
   const hiddenOther = filterByFit && forYou ? rows.filter((r) => !r.chosen && !isForYou(r.fit.fit)).length : 0;
   const chosenEntries = rows.filter((r) => r.chosen).map((r) => r.entry);
+  // Perícias e poderes têm limite por nível (quando o sistema informa).
+  const limit = kind === "skill" || kind === "power" ? engine.choiceLimits?.(data, catalog).find((l) => l.kind === kind) : undefined;
+  const full = !!limit && limit.used >= limit.max;
   const go = (fn: () => void) => {
     fn();
     setPage(1);
@@ -155,6 +158,32 @@ export function ChoiceStep({
       {kind === "species" && <SubspeciesPicker data={data} update={update} catalog={catalog} canEdit={canEdit} />}
       {kind === "class" && <SubclassPicker data={data} update={update} catalog={catalog} canEdit={canEdit} />}
       {kind === "skill" && <GrantedSkills data={data} catalog={catalog} />}
+      {limit && (
+        <p
+          role="status"
+          className={cn(
+            "rounded-md border p-3 text-sm",
+            limit.used > limit.max ? "border-destructive/50 bg-destructive/5 text-destructive" : full ? "border-primary/40 bg-primary/5" : "",
+          )}
+        >
+          <span className="font-medium">
+            {kind === "skill" ? "Perícias escolhidas" : "Poderes escolhidos"}: {limit.used} de {limit.max}
+          </span>{" "}
+          <span className="text-muted-foreground">
+            no {data.level}º nível ({limit.detail}).
+            {limit.used > limit.max
+              ? ` Remova ${limit.used - limit.max} para a ficha ficar válida.`
+              : limit.max === 0
+                ? kind === "power"
+                  ? " Ainda não há poderes livres: o poder de classe começa no 2º nível (ou escolha uma divindade para receber um poder concedido)."
+                  : " Ainda não há perícias livres: escolha a classe primeiro."
+                : full
+                  ? " Limite atingido: para trocar, remova uma escolha antes."
+                  : ""}
+            {kind === "power" && " Benefícios da origem não entram nesta conta."}
+          </span>
+        </p>
+      )}
       {(kind === "origin" || kind === "background") && <OriginBenefits data={data} update={update} catalog={catalog} canEdit={canEdit} />}
       {kind === "class" && <ClassOptions data={data} update={update} engine={engine} catalog={catalog} canEdit={canEdit} />}
 
@@ -243,8 +272,8 @@ export function ChoiceStep({
                           type="button"
                           size="sm"
                           variant={chosen ? "outline" : "default"}
-                          disabled={blocked}
-                          title={blocked ? "Pré-requisitos ainda não cumpridos" : undefined}
+                          disabled={blocked || (!chosen && full)}
+                          title={blocked ? "Pré-requisitos ainda não cumpridos" : !chosen && full ? "Limite deste nível atingido" : undefined}
                           onClick={() => update(toggleOption(kind, e, data))}
                           aria-pressed={chosen}
                         >

@@ -38,6 +38,13 @@ test("criar personagem, abrir a ficha e acessar um id inexistente", async ({ pag
   await page.goto(`/app/personagens/${id}/ficha`);
   await expect(page.getByText("Aventureira E2E").first()).toBeVisible();
 
+  // Sem classe, no 1º nível, não há poderes livres: o contador mostra 0 de 0 e "Adicionar" fica travado.
+  await page.goto(`/app/personagens/${id}?etapa=powers`);
+  await expect(page.getByRole("status").filter({ hasText: "Poderes escolhidos: 0 de 0" })).toBeVisible();
+  await page.getByRole("tab", { name: /^Tudo/ }).click();
+  await expect(page.getByRole("button", { name: "Adicionar" }).first()).toBeDisabled();
+  await page.screenshot({ path: "test-results/limite-poderes.png" });
+
   await page.goto("/app/personagens/nao-existe");
   await expect(page.getByRole("heading", { name: "Não encontramos isso" })).toBeVisible();
   await expect(page.getByRole("link", { name: "Mestre" })).toBeVisible(); // o menu continua lá
