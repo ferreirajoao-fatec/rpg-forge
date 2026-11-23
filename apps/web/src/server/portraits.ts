@@ -126,11 +126,26 @@ export async function generatePortrait(characterId: string, userId: string, raw:
   try {
     const interaction = await client.interactions.create({
       model: MODEL,
-      input: [{ type: "text", text: prompt }, ...(input.reference ? [{ type: "image" as const, mime_type: "image/jpeg" as const, data: input.reference }] : [])],
+      // API v1: a entrada é uma lista de passos; o texto e a imagem vão dentro de um passo "user_input".
+      input: [
+        {
+          type: "user_input",
+          content: [
+            { type: "text", text: prompt },
+            ...(input.reference ? [{ type: "image" as const, mime_type: "image/jpeg" as const, data: input.reference }] : []),
+          ],
+        },
+      ],
       response_format: { type: "image", aspect_ratio: "3:4", image_size: "1K" },
       store: false,
     });
-    image = interaction.output_image;
+    // A imagem vem em output_image; por garantia, procura também no último passo do modelo.
+    image =
+      interaction.output_image ??
+      interaction.steps
+        ?.filter((st) => st.type === "model_output")
+        .flatMap((st) => st.content ?? [])
+        .findLast((c) => c.type === "image");
   } catch (e) {
     console.error("[portraits] falha no Gemini", e);
     throw new PortraitError("O Gemini não respondeu. Tente de novo em instantes.");
